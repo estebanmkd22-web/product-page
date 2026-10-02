@@ -49,6 +49,16 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 Los estilos compartidos viven en `src/pp-base.css`. Después de cambiarlos, ejecuta
 `node tools/inline-base.mjs` para copiarlos dentro de cada sección.
 
+### Página para copiar el código
+
+El visor de archivos de la app corta los archivos largos. Para copiar cada sección completa:
+
+```bash
+node tools/build-copy-page.mjs salida.html
+```
+
+Genera una página con un botón "Copiar código completo" por sección.
+
 ### Vista previa local
 
 ```bash
