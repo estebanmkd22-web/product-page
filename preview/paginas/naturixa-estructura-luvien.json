@@ -1,0 +1,454 @@
+{
+  "titulo": "Naturixa · iD Whitening (estructura Luvien)",
+  "moneda": "Q",
+  "producto": {
+    "title": "iD Whitening - Cuidado Oral y Aliento Fresco",
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 21000,
+      "compare_at_price": null,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#d81f45",
+        "boton": "#fac559",
+        "boton_texto": "#1e1e1e",
+        "fondo_2": "#f5f3f3"
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#d81f45"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Guatemala 🚚"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "+5.600 clientes ya lo aprobaron ⭐⭐⭐⭐⭐"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagás al recibir 💵"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "imagen_1": {
+          "src": "../../imagenes/luvien/hero-pareja.webp",
+          "alt": "Pareja sonriendo"
+        },
+        "imagen_2": {
+          "src": "../../imagenes/luvien/hero-producto-vaso.webp",
+          "alt": "Frasco iD Whitening y vaso con residuos"
+        },
+        "imagen_3": {
+          "src": "../../imagenes/luvien/burbuja-residuos.webp",
+          "alt": "Residuos agrupados tras el enjuague"
+        },
+        "rating": "+5.600",
+        "rating_texto": "clientes felices",
+        "titulo": "Esa sensación de boca sucia <em>no siempre se va con el cepillo.</em>",
+        "texto": "Ayuda a enjuagar residuos que tu cepillo puede dejar atrás.",
+        "ahorro_texto": "Ahorrás",
+        "incluye_titulo": "Con tu pedido, te llevás:",
+        "boton_texto": "PEDIR CONTRA-ENTREGA",
+        "boton_subtexto": "Pagás al recibir",
+        "nota": "Te escribiremos por WhatsApp para confirmar tu pedido",
+        "mostrar_pagos": false,
+        "pagos_texto": "Contraentrega, PSE, Tarjeta",
+        "precio_antes": 290
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Retira residuos",
+            "icono": "diente"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Refresca el aliento",
+            "icono": "frescura"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Mantiene tu blancura",
+            "icono": "brillo"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Llega donde el cepillo no",
+            "icono": "lupa"
+          }
+        },
+        {
+          "type": "incluye",
+          "settings": {
+            "texto": "1 frasco iD Whitening (237 ml)"
+          }
+        },
+        {
+          "type": "incluye",
+          "settings": {
+            "texto": "Envío <strong>GRATIS</strong> a toda Guatemala"
+          }
+        },
+        {
+          "type": "incluye",
+          "settings": {
+            "texto": "Pago 100% contraentrega"
+          }
+        },
+        {
+          "type": "incluye",
+          "settings": {
+            "texto": "Si el producto llega regado o dañado, te lo reponemos"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problema",
+      "settings": {
+        "alineacion": "centro",
+        "etiqueta": "",
+        "titulo": "¿Te cepillas… pero aún sientes <em>la boca sucia?</em>",
+        "texto": "A veces quedan residuos en espacios donde el cepillo simplemente no alcanza. Ese residuo puede quedarse entre los dientes y dejar una sensación poco fresca."
+      }
+    },
+    {
+      "tipo": "pp-antes-despues",
+      "settings": {
+        "imagen": {
+          "src": "../../imagenes/luvien/antes-despues.webp",
+          "alt": ""
+        }
+      }
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "fondo": "oscuro",
+        "espacio": 28
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Limpieza"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "frescura",
+            "texto": "Frescura"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "sonrisa",
+            "texto": "Confianza"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-como-funciona",
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "Clientes reales",
+        "titulo": "Residuos que pueden quedar <em>entre tus dientes</em>",
+        "proporcion_punto": "4 / 3",
+        "flechas": true
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/ugc-residuos-vaso.webp",
+              "alt": ""
+            },
+            "titulo": "",
+            "texto": ""
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/ugc-residuos-dedo.webp",
+              "alt": ""
+            },
+            "titulo": "",
+            "texto": ""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-zonas",
+      "settings": {
+        "imagen": {
+          "src": "../../imagenes/luvien/boca-zonas.webp",
+          "alt": "Zonas donde el cepillo no llega"
+        }
+      },
+      "blocks": [
+        {
+          "type": "foto",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/zona-entre-dientes.webp",
+              "alt": ""
+            },
+            "texto": "Entre dientes"
+          }
+        },
+        {
+          "type": "foto",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/zona-molares.webp",
+              "alt": ""
+            },
+            "texto": "Molares"
+          }
+        },
+        {
+          "type": "foto",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/zona-lengua.webp",
+              "alt": ""
+            },
+            "texto": "Superficies orales"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-beneficios",
+      "settings": {
+        "imagen": {
+          "src": "../../imagenes/luvien/labios-enjuague.webp",
+          "alt": "Enjuague llevándose residuos"
+        },
+        "proporcion": "16 / 9"
+      }
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "titulo": "Modo <em>de uso</em>",
+        "texto": "Completa tu rutina de higiene bucal en 3 pasos.",
+        "proporcion": "4 / 3",
+        "fondo": "fondo-2"
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/paso-1-servir.webp",
+              "alt": ""
+            },
+            "titulo": "Agita y sirve",
+            "texto": "Agita el producto y llena la tapa con la cantidad indicada."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/paso-2-enjuagar.webp",
+              "alt": ""
+            },
+            "etiqueta": "30 seg",
+            "titulo": "Enjuaga",
+            "texto": "Haz buches durante 30 segundos para ayudar a retirar residuos y refrescar el aliento."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/paso-3-sonrisa.webp",
+              "alt": ""
+            },
+            "titulo": "Escupe y sigue tu rutina",
+            "texto": "Escupe el producto. Úsalo después del cepillado como complemento diario."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "tarjeta",
+        "fondo": "fondo-2",
+        "espacio": 8
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "brillo",
+            "texto": "Complementa tu cepillado"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "hoja",
+            "texto": "Refresca el aliento"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "diente",
+            "texto": "Ayuda a mantener tu blancura"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-secuencia",
+      "settings": {
+        "imagen": {
+          "src": "../../imagenes/luvien/burbuja-residuos.webp",
+          "alt": "Residuos agrupados en el enjuague"
+        }
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/secuencia-1-dispersos.webp",
+              "alt": ""
+            },
+            "texto": "Residuos dispersos"
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/secuencia-2-se-agrupan.webp",
+              "alt": ""
+            },
+            "texto": "Se agrupan"
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/luvien/secuencia-3-los-ves.webp",
+              "alt": ""
+            },
+            "texto": "Los puedes ver"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se usa antes o después del cepillado?",
+            "respuesta": "<p>Lo ideal es usarlo después del cepillado, como complemento de tu rutina de higiene bucal.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto tiempo debo enjuagarme?",
+            "respuesta": "<p>Aproximadamente 30 segundos por uso.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Ayuda a retirar residuos?",
+            "respuesta": "<p>Sí, ayuda a enjuagar residuos que pueden quedar en zonas donde el cepillo no siempre llega.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Ayuda a mantener la blancura de los dientes?",
+            "respuesta": "<p>Puede complementar tu rutina de cuidado para mantener una apariencia más limpia y cuidada.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se debe tragar?",
+            "respuesta": "<p>No. Después de enjuagarte, debes escupir el producto.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Reemplaza el cepillado?",
+            "respuesta": "<p>No. Se usa como complemento del cepillado, no como sustituto.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto producto debo usar?",
+            "respuesta": "<p>Usa la cantidad indicada en el envase o en la tapa medidora.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para hombres y mujeres?",
+            "respuesta": "<p>Sí, es un producto de higiene bucal de uso general.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "PEDIR CONTRA-ENTREGA",
+        "subtexto": "Envío gratis"
+      }
+    }
+  ],
+  "locale": "es-GT"
+}
