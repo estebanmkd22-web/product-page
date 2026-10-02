@@ -16,7 +16,7 @@ const SECCIONES = [
   { file: 'pp-problema', desc: 'Etiqueta, titular y hasta 3 fotos en fila. Ej: "El cepillo limpia dientes. No limpia esto."' },
   { file: 'pp-grid-dolores', desc: 'Tarjetas con foto, título rojo y texto en 2 columnas, más una frase de cierre.' },
   { file: 'pp-testimonio', desc: 'Pregunta que agita el dolor, cita de un cliente con estrellas y botón de compra.' },
-  { file: 'pp-como-funciona', desc: 'Imagen del producto y lista de puntos con imagen pequeña, título y texto.' },
+  { file: 'pp-como-funciona', desc: 'Slider de tarjetas con imagen, título y texto que se desliza de lado (o en lista).' },
   { file: 'pp-pasos', desc: 'Modo de uso en pasos numerados con foto y etiqueta (15 ml, 30 seg).' },
   { file: 'pp-faq', desc: 'Preguntas frecuentes que se abren y cierran. Ya trae tus 6 preguntas.' },
   { file: 'pp-boton-fijo', desc: 'Barra con el botón de compra pegada abajo del celular, aparece al pasar la oferta.' },

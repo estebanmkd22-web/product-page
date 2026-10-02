@@ -1,6 +1,7 @@
 {%- comment -%}
   PP · Cómo funciona
-  Imagen del producto + lista de puntos (imagen pequeña, título y texto).
+  Slider de tarjetas (imagen, título y texto) que se desliza de lado.
+  También puede mostrarse como lista. Imagen principal opcional arriba.
 {%- endcomment -%}
 
 <style>
@@ -229,26 +230,58 @@
 </style>
 
 <style>
-  .pp-como__grid { display: grid; gap: 28px; align-items: center; }
-  .pp-como__lista { display: grid; gap: 14px; }
-  .pp-como__item {
-    display: grid; grid-template-columns: 76px 1fr; gap: 14px; align-items: center;
-    padding: 12px; border-radius: var(--pp-radio); background: var(--pp-fondo);
+  #pp-como-{{ section.id }} { --como-card: {{ section.settings.fondo_tarjeta }}; --como-w: {{ section.settings.ancho_tarjeta }}%; }
+  #pp-como-{{ section.id }} .pp-como__media { aspect-ratio: {{ section.settings.proporcion }}; margin-bottom: 20px; }
+  #pp-como-{{ section.id }} .pp-como__foto { aspect-ratio: {{ section.settings.proporcion_punto }}; }
+  .pp-como__card h3 { font-size: 20px; font-weight: 800; line-height: 1.2; }
+  .pp-como__card p { font-size: 15px; color: var(--pp-texto-2); }
+  .pp-bg--oscuro .pp-como__card p { color: inherit; opacity: .8; }
+
+  /* ---- Diseño slider ---- */
+  .pp-como--slider .pp-como__track {
+    display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+    margin: 0 -16px; padding: 0 16px; scroll-padding: 0 16px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
   }
-  .pp-bg--fondo .pp-como__item { background: var(--pp-fondo-2); }
-  .pp-bg--oscuro .pp-como__item { background: rgba(255, 255, 255, .08); }
-  .pp-como__item .pp-img { aspect-ratio: 1 / 1; }
-  .pp-como__item h3 { font-size: 16px; font-weight: 800; line-height: 1.25; }
-  .pp-como__item p { margin-top: 2px; font-size: 14px; color: var(--pp-texto-2); }
-  .pp-bg--oscuro .pp-como__item p { color: inherit; opacity: .8; }
-  #pp-como-{{ section.id }} .pp-como__media { aspect-ratio: {{ section.settings.proporcion }}; }
+  .pp-como--slider .pp-como__track::-webkit-scrollbar { display: none; }
+  .pp-como--slider .pp-como__card {
+    flex: 0 0 var(--como-w); scroll-snap-align: start; overflow: hidden;
+    border-radius: var(--pp-radio); background: var(--como-card);
+  }
+  .pp-como--slider .pp-como__foto { border-radius: 0; }
+  .pp-como--slider .pp-como__txt { display: grid; gap: 6px; padding: 16px; }
+  .pp-como__nav { display: flex; align-items: center; justify-content: center; gap: 14px; margin-top: 14px; }
+  .pp-como__dots { display: flex; gap: 6px; }
+  .pp-como__dots button {
+    width: 7px; height: 7px; padding: 0; border: 0; border-radius: 99px;
+    background: var(--pp-borde); cursor: pointer; transition: width .2s, background .2s;
+  }
+  .pp-como__dots button[aria-current="true"] { width: 20px; background: var(--pp-acento); }
+  .pp-como__flecha {
+    display: grid; place-items: center; width: 36px; height: 36px; padding: 0;
+    border: 1px solid var(--pp-borde); border-radius: 99px; background: var(--pp-fondo);
+    color: var(--pp-texto); font-size: 18px; line-height: 1; cursor: pointer;
+  }
+  .pp-como__flecha:disabled { opacity: .35; cursor: default; }
+
+  /* ---- Diseño lista ---- */
+  .pp-como--lista .pp-como__track { display: grid; gap: 14px; }
+  .pp-como--lista .pp-como__card {
+    display: grid; grid-template-columns: 92px 1fr; gap: 14px; align-items: center;
+    padding: 12px; border-radius: var(--pp-radio); background: var(--como-card);
+  }
+  .pp-como--lista .pp-como__foto { aspect-ratio: 1 / 1; }
+  .pp-como--lista .pp-como__card h3 { font-size: 16px; }
+  .pp-como--lista .pp-como__card p { font-size: 14px; }
+
   @media (min-width: 750px) {
-    .pp-como__grid--con-img { grid-template-columns: 1fr 1.1fr; gap: 48px; }
-    .pp-como__item { grid-template-columns: 92px 1fr; padding: 14px; }
+    .pp-como--slider .pp-como__card { flex-basis: calc((100% - 36px) / {{ section.settings.tarjetas_pc }}); }
+    .pp-como--slider .pp-como__track { margin: 0; padding: 0; }
+    .pp-como--lista .pp-como__track { grid-template-columns: 1fr 1fr; }
   }
 </style>
 
-<div id="pp-como-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+<div id="pp-como-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }} pp-como--{{ section.settings.disenio }}">
   <div class="pp-wrap">
     <div class="pp-head">
       {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
@@ -256,33 +289,92 @@
       {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
     </div>
 
-    <div class="pp-como__grid{% if section.settings.imagen != blank %} pp-como__grid--con-img{% endif %}">
-      {%- if section.settings.imagen != blank -%}
-        <div class="pp-img pp-como__media">
-          {{ section.settings.imagen | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000', sizes: '(min-width: 750px) 520px, 100vw' }}
-        </div>
-      {%- endif -%}
-
-      <div class="pp-como__lista">
-        {%- for block in section.blocks -%}
-          <div class="pp-como__item" {{ block.shopify_attributes }}>
-            <div class="pp-img">
-              {%- if block.settings.imagen != blank -%}
-                {{ block.settings.imagen | image_url: width: 240 | image_tag: loading: 'lazy', widths: '120, 180, 240', sizes: '92px' }}
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag }}
-              {%- endif -%}
-            </div>
-            <div>
-              <h3>{{ block.settings.titulo }}</h3>
-              {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
-            </div>
-          </div>
-        {%- endfor -%}
+    {%- if section.settings.imagen != blank -%}
+      <div class="pp-img pp-como__media">
+        {{ section.settings.imagen | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000', sizes: '(min-width: 750px) 720px, 100vw' }}
       </div>
+    {%- endif -%}
+
+    <div class="pp-como__track" data-pp-como-track>
+      {%- for block in section.blocks -%}
+        <div class="pp-como__card" {{ block.shopify_attributes }}>
+          <div class="pp-img pp-como__foto">
+            {%- if block.settings.imagen != blank -%}
+              {{ block.settings.imagen | image_url: width: 900 | image_tag: loading: 'lazy', widths: '200, 400, 600, 900', sizes: '(min-width: 750px) 360px, 86vw', alt: block.settings.titulo }}
+            {%- else -%}
+              {{ 'image' | placeholder_svg_tag }}
+            {%- endif -%}
+          </div>
+          <div class="pp-como__txt">
+            <h3>{{ block.settings.titulo }}</h3>
+            {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
     </div>
+
+    {%- if section.settings.disenio == 'slider' and section.blocks.size > 1 -%}
+      <div class="pp-como__nav">
+        {%- if section.settings.flechas -%}<button type="button" class="pp-como__flecha" data-pp-como-prev aria-label="Anterior">‹</button>{%- endif -%}
+        <div class="pp-como__dots" data-pp-como-dots></div>
+        {%- if section.settings.flechas -%}<button type="button" class="pp-como__flecha" data-pp-como-next aria-label="Siguiente">›</button>{%- endif -%}
+      </div>
+    {%- endif -%}
   </div>
 </div>
+
+{%- if section.settings.disenio == 'slider' -%}
+<script>
+  (function () {
+    var root = document.getElementById('pp-como-{{ section.id }}');
+    if (!root) return;
+    var track = root.querySelector('[data-pp-como-track]');
+    var dotsBox = root.querySelector('[data-pp-como-dots]');
+    var prev = root.querySelector('[data-pp-como-prev]');
+    var next = root.querySelector('[data-pp-como-next]');
+    var cards = track ? track.children : [];
+    if (!dotsBox || cards.length < 2) return;
+    var dots = [];
+    var actual = 0;
+    function ir(n) {
+      n = Math.max(0, Math.min(cards.length - 1, n));
+      track.scrollTo({ left: cards[n].offsetLeft - cards[0].offsetLeft, behavior: 'smooth' });
+    }
+    for (var i = 0; i < cards.length; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Tarjeta ' + (i + 1));
+      b.addEventListener('click', (function (n) { return function () { ir(n); }; })(i));
+      dotsBox.appendChild(b);
+      dots.push(b);
+    }
+    function marcar() {
+      var paso = cards[1].offsetLeft - cards[0].offsetLeft;
+      actual = Math.round(track.scrollLeft / paso);
+      var fin = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      if (fin) actual = cards.length - 1;
+      dots.forEach(function (d, j) { d.setAttribute('aria-current', j === actual ? 'true' : 'false'); });
+      if (prev) prev.disabled = actual === 0;
+      if (next) next.disabled = fin;
+    }
+    if (prev) prev.addEventListener('click', function () { ir(actual - 1); });
+    if (next) next.addEventListener('click', function () { ir(actual + 1); });
+    track.addEventListener('scroll', function () { window.requestAnimationFrame(marcar); }, { passive: true });
+    marcar();
+
+    {%- if section.settings.autoplay %}
+    /* Avance automático: se detiene en cuanto el cliente toca el slider */
+    var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reducir) {
+      var timer = setInterval(function () { ir(actual >= cards.length - 1 ? 0 : actual + 1); }, {{ section.settings.segundos | times: 1000 }});
+      ['pointerdown', 'touchstart', 'wheel'].forEach(function (ev) {
+        track.addEventListener(ev, function () { clearInterval(timer); }, { passive: true, once: true });
+      });
+    }
+    {%- endif %}
+  })();
+</script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -291,7 +383,7 @@
   "class": "pp-como-section",
   "settings": [
     {
-      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
+      "type": "select", "id": "fondo", "label": "Fondo de la sección", "default": "fondo",
       "options": [
         { "value": "fondo", "label": "Blanco" },
         { "value": "fondo-2", "label": "Alterno (suave)" },
@@ -301,21 +393,54 @@
     { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Cómo funciona" },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "iD Whitening llega <em>a cada rincón</em>" },
     { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
-    { "type": "image_picker", "id": "imagen", "label": "Imagen principal (opcional)" },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen principal arriba (opcional)" },
     {
       "type": "select", "id": "proporcion", "label": "Formato de la imagen principal", "default": "4 / 5",
       "options": [
         { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "4 / 5", "label": "Vertical (4:5)" },
+        { "value": "16 / 9", "label": "Horizontal (16:9)" }
+      ]
+    },
+    { "type": "header", "content": "Tarjetas" },
+    {
+      "type": "select", "id": "disenio", "label": "Diseño", "default": "slider",
+      "options": [
+        { "value": "slider", "label": "Slider (se desliza de lado)" },
+        { "value": "lista", "label": "Lista (una debajo de otra)" }
+      ]
+    },
+    { "type": "color", "id": "fondo_tarjeta", "label": "Fondo de las tarjetas", "default": "#fff2f5" },
+    {
+      "type": "select", "id": "proporcion_punto", "label": "Formato de la imagen de cada tarjeta", "default": "2 / 1",
+      "options": [
+        { "value": "2 / 1", "label": "Panorámica (2:1)" },
+        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "4 / 3", "label": "Horizontal (4:3)" },
+        { "value": "16 / 9", "label": "Horizontal ancho (16:9)" },
         { "value": "4 / 5", "label": "Vertical (4:5)" }
       ]
-    }
+    },
+    { "type": "header", "content": "Slider" },
+    {
+      "type": "range", "id": "ancho_tarjeta", "label": "Ancho de cada tarjeta en celular",
+      "min": 70, "max": 100, "step": 2, "unit": "%", "default": 86,
+      "info": "Menos de 100% deja ver un pedazo de la siguiente tarjeta, así se nota que se desliza."
+    },
+    {
+      "type": "select", "id": "tarjetas_pc", "label": "Tarjetas visibles en computador", "default": "3",
+      "options": [ { "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" } ]
+    },
+    { "type": "checkbox", "id": "flechas", "label": "Mostrar flechas", "default": true },
+    { "type": "checkbox", "id": "autoplay", "label": "Avanzar solo", "default": false },
+    { "type": "range", "id": "segundos", "label": "Segundos por tarjeta", "min": 2, "max": 10, "step": 1, "unit": "s", "default": 4 }
   ],
   "blocks": [
     {
       "type": "punto",
-      "name": "Punto",
+      "name": "Tarjeta",
       "settings": [
-        { "type": "image_picker", "id": "imagen", "label": "Imagen pequeña (cuadrada)" },
+        { "type": "image_picker", "id": "imagen", "label": "Imagen" },
         { "type": "text", "id": "titulo", "label": "Título", "default": "Llega a cada rincón" },
         { "type": "textarea", "id": "texto", "label": "Texto" }
       ]

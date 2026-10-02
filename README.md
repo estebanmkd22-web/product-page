@@ -14,7 +14,7 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-problema.liquid` | PP · Problema | Etiqueta, titular y hasta 3 fotos en fila |
 | `sections/pp-grid-dolores.liquid` | PP · Grid de dolores | Tarjetas con foto, título y texto + frase de cierre |
 | `sections/pp-testimonio.liquid` | PP · Testimonio | Pregunta de agitación, cita de cliente y botón |
-| `sections/pp-como-funciona.liquid` | PP · Cómo funciona | Imagen del producto + puntos con imagen pequeña |
+| `sections/pp-como-funciona.liquid` | PP · Cómo funciona | Slider de tarjetas (imagen, título y texto) o lista |
 | `sections/pp-pasos.liquid` | PP · Pasos | Modo de uso en pasos numerados |
 | `sections/pp-faq.liquid` | PP · Preguntas | Preguntas frecuentes en acordeón |
 | `sections/pp-boton-fijo.liquid` | PP · Botón fijo | Botón de compra pegado abajo en celular |

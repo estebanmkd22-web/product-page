@@ -160,12 +160,7 @@
     },
     {
       "tipo": "pp-como-funciona",
-      "settings": {
-        "imagen": {
-          "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp",
-          "alt": ""
-        }
-      },
+      "settings": {},
       "blocks": [
         {
           "type": "punto",
