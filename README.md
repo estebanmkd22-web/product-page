@@ -10,6 +10,13 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-estilos.liquid` | PP · Estilos globales | (Opcional) Cambiar los colores de toda la página. Se agrega 1 vez, arriba |
 | `sections/pp-ticker.liquid` | PP · Barra animada | Franja con mensajes que se mueven |
 | `sections/pp-hero-oferta.liquid` | PP · Hero + Oferta | Galería, reseñas, titular, beneficios, precio, qué incluye y botón |
+| `sections/pp-problema.liquid` | PP · Problema | Etiqueta, titular y hasta 3 fotos en fila |
+| `sections/pp-grid-dolores.liquid` | PP · Grid de dolores | Tarjetas con foto, título y texto + frase de cierre |
+| `sections/pp-testimonio.liquid` | PP · Testimonio | Pregunta de agitación, cita de cliente y botón |
+| `sections/pp-como-funciona.liquid` | PP · Cómo funciona | Imagen del producto + puntos con imagen pequeña |
+| `sections/pp-pasos.liquid` | PP · Pasos | Modo de uso en pasos numerados |
+| `sections/pp-faq.liquid` | PP · Preguntas | Preguntas frecuentes en acordeón |
+| `sections/pp-boton-fijo.liquid` | PP · Botón fijo | Botón de compra pegado abajo en celular |
 
 ## Cómo instalar (una sola vez por tienda)
 
@@ -18,9 +25,11 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 Cada sección es **un solo archivo**, no depende de nada más.
 
 1. Shopify → **Tienda online → Temas → ⋯ → Editar código**.
-2. Carpeta **sections** → **Agregar una nueva sección** → nombre `pp-hero-oferta` → **Listo**.
-3. Borra todo lo que trae el archivo nuevo, pega el contenido de `sections/pp-hero-oferta.liquid` → **Guardar**.
+2. Clic derecho sobre la carpeta **sections** → **New File…** → nombre `pp-hero-oferta.liquid`.
+3. Pega el código completo de la sección y guarda con **Ctrl + S**.
 4. Repite con las demás secciones que quieras usar.
+
+Antes de entregar una sección nueva: `node tools/validar-schema.mjs` (límites de Shopify).
 
 ## Cómo armar la página de un producto
 

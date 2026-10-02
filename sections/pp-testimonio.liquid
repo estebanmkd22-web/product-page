@@ -1,0 +1,341 @@
+{%- comment -%}
+  PP · Testimonio
+  Pregunta que agita el dolor + texto + cita de un cliente + imagen + botón.
+  (ej: "¿Cuántas veces dudaste antes de acercarte a hablar?")
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   :where() deja estos colores con prioridad mínima, así
+   "PP · Estilos globales" siempre los reemplaza. */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+.pp {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pp img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pp h1,
+.pp h2,
+.pp h3,
+.pp p,
+.pp ul {
+  margin: 0;
+}
+
+.pp ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: usan la fuente de títulos del tema (Dawn) */
+.pp-h {
+  font-family: var(--font-heading-family, inherit);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  .pp-testi__grid { display: grid; gap: 24px; align-items: center; }
+  .pp-testi__quote {
+    position: relative; margin: 0; padding: 20px 20px 18px;
+    border-radius: var(--pp-radio); background: var(--pp-fondo);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .08);
+  }
+  .pp-bg--fondo .pp-testi__quote { background: var(--pp-fondo-2); box-shadow: none; }
+  .pp-bg--oscuro .pp-testi__quote { background: rgba(255, 255, 255, .08); box-shadow: none; }
+  .pp-testi__quote::before {
+    content: "\201C"; position: absolute; top: -14px; left: 16px;
+    font: 900 64px/1 Georgia, serif; color: var(--pp-acento);
+  }
+  .pp-testi__quote p { font-size: 17px; font-weight: 600; line-height: 1.45; }
+  .pp-testi__who { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-size: 14px; }
+  #pp-testi-{{ section.id }} .pp-img { aspect-ratio: {{ section.settings.proporcion }}; }
+  @media (min-width: 750px) {
+    .pp-testi__grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+    .pp-testi__grid--img-izq .pp-testi__media { order: -1; }
+    #pp-testi-{{ section.id }} .pp-head { text-align: left; margin-left: 0; }
+    #pp-testi-{{ section.id }} .pp-cta { margin-left: 0; }
+  }
+</style>
+
+<div id="pp-testi-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap pp-testi__grid{% if section.settings.imagen_izq %} pp-testi__grid--img-izq{% endif %}">
+    <div>
+      <div class="pp-head">
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
+
+      {%- if section.settings.cita != blank -%}
+        <figure class="pp-testi__quote">
+          <p>{{ section.settings.cita }}</p>
+          <figcaption class="pp-testi__who">
+            <span class="pp-stars" aria-label="5 estrellas">★★★★★</span>
+            <strong>{{ section.settings.autor }}</strong>
+          </figcaption>
+        </figure>
+      {%- endif -%}
+
+      {%- if section.settings.boton_modo != 'ninguno' -%}
+        <div class="pp-cta">
+          {%- case section.settings.boton_modo -%}
+            {%- when 'easysell' -%}
+              <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn pp-btn--pulse">{{ section.settings.boton_texto }}</a>
+            {%- when 'oferta' -%}
+              <a href="#oferta" class="pp-btn">{{ section.settings.boton_texto }}</a>
+            {%- else -%}
+              <a href="{{ section.settings.boton_enlace | default: '#' }}" class="pp-btn">{{ section.settings.boton_texto }}</a>
+          {%- endcase -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.imagen != blank -%}
+      <div class="pp-testi__media pp-img">
+        {{ section.settings.imagen | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000', sizes: '(min-width: 750px) 540px, 100vw' }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PP · Testimonio",
+  "tag": "section",
+  "class": "pp-testimonio-section",
+  "settings": [
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" },
+        { "value": "oscuro", "label": "Oscuro" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "¿Cuántas veces <em>dudaste</em> antes de acercarte a hablar?" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "El mal aliento no siempre se nota a tiempo — y esa duda de último segundo, esa mano que se levanta \"sin querer\" cerca de la boca, es más común de lo que se admite." },
+    { "type": "header", "content": "Cita del cliente" },
+    { "type": "textarea", "id": "cita", "label": "Lo que dijo el cliente", "default": "Lo veo como el paso final de mi rutina. Me ayuda a sentir que realmente terminé de limpiar toda mi boca." },
+    { "type": "text", "id": "autor", "label": "Nombre", "default": "Juan Miguel L." },
+    { "type": "header", "content": "Imagen" },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen (opcional)" },
+    { "type": "checkbox", "id": "imagen_izq", "label": "En computador, imagen a la izquierda", "default": false },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de la imagen", "default": "4 / 5",
+      "options": [
+        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "4 / 5", "label": "Vertical (4:5)" },
+        { "value": "4 / 3", "label": "Horizontal (4:3)" }
+      ]
+    },
+    { "type": "header", "content": "Botón" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "easysell",
+      "options": [
+        { "value": "ninguno", "label": "Sin botón" },
+        { "value": "easysell", "label": "Abrir formulario EasySell" },
+        { "value": "oferta", "label": "Subir a la caja de compra" },
+        { "value": "enlace", "label": "Ir a un enlace" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Ordena tu iD Whitening" },
+    { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" }
+  ],
+  "presets": [{ "name": "PP · Testimonio" }]
+}
+{% endschema %}

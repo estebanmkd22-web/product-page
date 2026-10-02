@@ -42,6 +42,169 @@
         },
         "proporcion": "4 / 5"
       }
+    },
+    {
+      "tipo": "pp-problema",
+      "settings": {
+        "imagen_1": {
+          "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_165727.png",
+          "alt": ""
+        },
+        "proporcion": "4 / 3"
+      }
+    },
+    {
+      "tipo": "pp-grid-dolores",
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_173239.png",
+              "alt": ""
+            },
+            "titulo": "Residuos que se quedan",
+            "texto": "Pequeños restos de comida pueden permanecer adheridos y acumularse durante el día."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_173425.png",
+              "alt": ""
+            },
+            "titulo": "Aliento que no se va",
+            "texto": "La acumulación de residuos y bacterias puede contribuir al mal aliento."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_173548.png",
+              "alt": ""
+            },
+            "titulo": "Una lengua que también acumula",
+            "texto": "La lengua puede acumular bacterias, proteínas y residuos que forman parte de la higiene oral diaria."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-09_152047.webp",
+              "alt": ""
+            },
+            "titulo": "Esa sensación de \"algo queda\"",
+            "texto": "Aunque te cepilles, puedes seguir sintiendo que tu boca no está completamente limpia."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-testimonio"
+    },
+    {
+      "tipo": "pp-como-funciona",
+      "settings": {
+        "imagen": {
+          "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp",
+          "alt": ""
+        }
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_175911.webp",
+              "alt": ""
+            },
+            "titulo": "Llega a cada rincón",
+            "texto": "A diferencia de un cepillo, que solo toca las superficies, la fórmula líquida recubre toda la boca — cada hueco, surco y grieta — en segundos."
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_180228.webp",
+              "alt": ""
+            },
+            "titulo": "Peróxido de hidrógeno + aceites esenciales",
+            "texto": "Elimina la suciedad oculta y ayuda a mantener los dientes más blancos, mientras refresca el aliento desde el primer uso."
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_180524.webp",
+              "alt": ""
+            },
+            "titulo": "Lengua, mejillas y encías",
+            "texto": "Actúa en las zonas donde se acumulan residuos y bacterias — la causa más común del mal aliento persistente."
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_180817.webp",
+              "alt": ""
+            },
+            "titulo": "Resultado inmediato",
+            "texto": "No hay que esperar semanas. La sensación de limpieza y frescura se nota desde el primer buche."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_181757.png",
+              "alt": ""
+            },
+            "titulo": "Prepara",
+            "etiqueta": "15 ml",
+            "texto": "Mide 15 ml. No necesitas diluirlo."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_181803.png",
+              "alt": ""
+            },
+            "titulo": "Enjuaga",
+            "etiqueta": "30 seg",
+            "texto": "Haz buches 30 segundos. Luego escupe."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_181815.png",
+              "alt": ""
+            },
+            "titulo": "Descubre",
+            "texto": "Mira lo que queda tras el enjuague."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq"
+    },
+    {
+      "tipo": "pp-boton-fijo"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {%- comment -%}
-  PP · Barra animada (ticker)
-  Franja con mensajes que se desplazan: envío gratis, clientes, garantía…
+  PP · Preguntas frecuentes
+  Acordeón de preguntas y respuestas (no necesita JavaScript).
 {%- endcomment -%}
 
 <style>
@@ -228,101 +228,82 @@
 /* PP-BASE:END */
 </style>
 
-{%- assign velocidad = section.settings.velocidad -%}
-{%- assign total = section.blocks.size -%}
-
 <style>
-  #pp-ticker-{{ section.id }} {
-    --tk-bg: {{ section.settings.fondo }};
-    --tk-fg: {{ section.settings.texto }};
-    --tk-dur: {{ velocidad }}s;
+  .pp-faq__lista { max-width: 760px; margin: 0 auto; display: grid; gap: 10px; }
+  .pp-faq__item {
+    border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
   }
-  .pp-ticker {
-    overflow: hidden;
-    background: var(--tk-bg);
-    color: var(--tk-fg);
-    font-size: {{ section.settings.tamano }}px;
-    font-weight: 700;
-    line-height: 1;
-    white-space: nowrap;
+  .pp-bg--oscuro .pp-faq__item { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .16); }
+  .pp-faq__item summary {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 16px; cursor: pointer; list-style: none;
+    font-size: 16px; font-weight: 700; line-height: 1.35;
   }
-  .pp-ticker__track {
-    display: flex;
-    width: max-content;
-    animation: pp-ticker var(--tk-dur) linear infinite;
+  .pp-faq__item summary::-webkit-details-marker { display: none; }
+  .pp-faq__item summary::after {
+    content: "+"; flex: 0 0 auto; font-size: 22px; font-weight: 400; line-height: 1;
+    color: var(--pp-acento); transition: transform .2s ease;
   }
-  .pp-ticker__group {
-    display: flex;
-    flex-shrink: 0;
-  }
-  .pp-ticker__item {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 11px 0;
-  }
-  .pp-ticker__item::after {
-    content: "{{ section.settings.separador | escape }}";
-    padding: 0 18px;
-    opacity: 0.6;
-  }
-  @keyframes pp-ticker {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .pp-ticker__track { animation: none; }
-  }
+  .pp-faq__item[open] summary::after { transform: rotate(45deg); }
+  .pp-faq__item summary:focus-visible { outline: 2px solid var(--pp-acento); outline-offset: 2px; border-radius: var(--pp-radio); }
+  .pp-faq__resp { padding: 0 16px 16px; font-size: 15px; color: var(--pp-texto-2); }
+  .pp-bg--oscuro .pp-faq__resp { color: inherit; opacity: .85; }
+  .pp-faq__resp p + p { margin-top: 8px; }
 </style>
 
-{%- if total > 0 -%}
-  <div id="pp-ticker-{{ section.id }}" class="pp pp-ticker" role="region" aria-label="Beneficios">
-    <div class="pp-ticker__track">
-      {%- comment -%} Dos copias idénticas para que el loop no tenga saltos {%- endcomment -%}
-      {%- for copia in (1..2) -%}
-        <div class="pp-ticker__group"{% if copia == 2 %} aria-hidden="true"{% endif %}>
-          {%- comment -%} Se repite el set para que llene pantallas anchas {%- endcomment -%}
-          {%- for rep in (1..4) -%}
-            {%- for block in section.blocks -%}
-              <span class="pp-ticker__item" {% if forloop.first and rep == 1 and copia == 1 %}{{ block.shopify_attributes }}{% endif %}>
-                {{- block.settings.texto -}}
-              </span>
-            {%- endfor -%}
-          {%- endfor -%}
-        </div>
+<div class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap">
+    <div class="pp-head">
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+    </div>
+    <div class="pp-faq__lista">
+      {%- for block in section.blocks -%}
+        <details class="pp-faq__item" {{ block.shopify_attributes }}{% if forloop.first and section.settings.abrir_primera %} open{% endif %}>
+          <summary>{{ block.settings.pregunta }}</summary>
+          <div class="pp-faq__resp">{{ block.settings.respuesta }}</div>
+        </details>
       {%- endfor -%}
     </div>
   </div>
-{%- endif -%}
+</div>
 
 {% schema %}
 {
-  "name": "PP · Barra animada",
+  "name": "PP · Preguntas",
   "tag": "section",
-  "class": "pp-ticker-section",
+  "class": "pp-faq-section",
   "settings": [
-    { "type": "color", "id": "fondo", "label": "Fondo", "default": "#c5453f" },
-    { "type": "color", "id": "texto", "label": "Texto", "default": "#ffffff" },
-    { "type": "range", "id": "tamano", "label": "Tamaño del texto", "min": 11, "max": 20, "step": 1, "unit": "px", "default": 14 },
-    { "type": "range", "id": "velocidad", "label": "Duración de una vuelta (más = más lento)", "min": 10, "max": 80, "step": 2, "unit": "s", "default": 30 },
-    { "type": "text", "id": "separador", "label": "Separador entre mensajes", "default": "•" }
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" },
+        { "value": "oscuro", "label": "Oscuro" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular", "default": "Preguntas frecuentes" },
+    { "type": "checkbox", "id": "abrir_primera", "label": "Dejar la primera pregunta abierta", "default": true }
   ],
   "blocks": [
     {
-      "type": "mensaje",
-      "name": "Mensaje",
+      "type": "pregunta",
+      "name": "Pregunta",
       "settings": [
-        { "type": "text", "id": "texto", "label": "Texto (puedes usar emojis)", "default": "Envío GRATIS a toda Guatemala 🚚" }
+        { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Cómo pago?" },
+        { "type": "richtext", "id": "respuesta", "label": "Respuesta", "default": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>" }
       ]
     }
   ],
   "presets": [
     {
-      "name": "PP · Barra animada",
+      "name": "PP · Preguntas",
       "blocks": [
-        { "type": "mensaje", "settings": { "texto": "Envío GRATIS a toda Guatemala 🚚" } },
-        { "type": "mensaje", "settings": { "texto": "Pagás al recibir 💵" } },
-        { "type": "mensaje", "settings": { "texto": "+5.600 clientes felices ⭐⭐⭐⭐⭐" } }
+        { "type": "pregunta", "settings": { "pregunta": "¿Por qué el líquido sale oscuro cuando lo escupís?", "respuesta": "<p>Así es la fórmula desde que sale del frasco. Ese color le permite adherirse a los residuos de lengua, mejillas y encías que el cepillo no alcanza — no es \"toda la suciedad de tu boca de golpe\".</p>" } },
+        { "type": "pregunta", "settings": { "pregunta": "¿Cuánto tarda en llegar mi pedido?", "respuesta": "<p>Entre 24 y 48 horas en la mayoría de zonas de Guatemala.</p>" } },
+        { "type": "pregunta", "settings": { "pregunta": "¿Cómo pago?", "respuesta": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>" } },
+        { "type": "pregunta", "settings": { "pregunta": "¿Qué pasa si mi pedido llega dañado?", "respuesta": "<p>Te lo reponemos sin costo. Escribinos por WhatsApp con tu número de pedido.</p>" } },
+        { "type": "pregunta", "settings": { "pregunta": "¿Reemplaza el cepillado normal?", "respuesta": "<p>No, lo complementa. Funciona mejor como parte de tu rutina diaria de cepillado, no como reemplazo.</p>" } },
+        { "type": "pregunta", "settings": { "pregunta": "¿Contiene alcohol?", "respuesta": "<p>No. Es una fórmula sin alcohol, apta para uso diario.</p>" } }
       ]
     }
   ]

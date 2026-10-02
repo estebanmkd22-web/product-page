@@ -52,7 +52,7 @@ engine.registerFilter('image_url', (img, ...args) => {
 });
 engine.registerFilter('image_tag', (url, ...args) => {
   const o = kw(args);
-  const attrs = Object.entries(o).filter(([k]) => k !== 'widths')
+  const attrs = Object.entries(o).filter(([k]) => k !== 'widths' && k !== 'loading')
     .map(([k, v]) => `${k}="${String(v).replace(/"/g, '&quot;')}"`).join(' ');
   return `<img src="${url}" ${attrs}>`;
 });
