@@ -174,33 +174,28 @@
 /* PP-BASE:END */
 </style>
 
-{%- liquid
-  assign p = section.settings.producto | default: product
-  assign variante = p.selected_or_first_available_variant
-
-  assign precio = variante.price
-  if section.settings.precio_manual != blank
-    assign precio = section.settings.precio_manual | times: 100
-  endif
-
-  assign precio_antes = 0
-  if variante.compare_at_price > precio
-    assign precio_antes = variante.compare_at_price
-  endif
-  if section.settings.precio_antes != blank
-    assign precio_antes = section.settings.precio_antes | times: 100
-  endif
-  assign ahorro = precio_antes | minus: precio
-
-  assign imagenes = ''
-  for i in (1..6)
-    assign key = 'imagen_' | append: i
-    if section.settings[key] != blank
-      assign imagenes = imagenes | append: key | append: ','
-    endif
-  endfor
-  assign imagenes = imagenes | split: ','
--%}
+{%- assign p = section.settings.producto | default: product -%}
+{%- assign variante = p.selected_or_first_available_variant -%}
+{%- assign precio = variante.price -%}
+{%- if section.settings.precio_manual != blank -%}
+{%- assign precio = section.settings.precio_manual | times: 100 -%}
+{%- endif -%}
+{%- assign precio_antes = 0 -%}
+{%- if variante.compare_at_price > precio -%}
+{%- assign precio_antes = variante.compare_at_price -%}
+{%- endif -%}
+{%- if section.settings.precio_antes != blank -%}
+{%- assign precio_antes = section.settings.precio_antes | times: 100 -%}
+{%- endif -%}
+{%- assign ahorro = precio_antes | minus: precio -%}
+{%- assign imagenes = '' -%}
+{%- for i in (1..6) -%}
+{%- assign key = 'imagen_' | append: i -%}
+{%- if section.settings[key] != blank -%}
+{%- assign imagenes = imagenes | append: key | append: ',' -%}
+{%- endif -%}
+{%- endfor -%}
+{%- assign imagenes = imagenes | split: ',' -%}
 
 <style>
   #pp-hero-{{ section.id }} { background: {{ section.settings.fondo }}; }

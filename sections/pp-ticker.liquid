@@ -171,10 +171,8 @@
 /* PP-BASE:END */
 </style>
 
-{%- liquid
-  assign velocidad = section.settings.velocidad
-  assign total = section.blocks.size
--%}
+{%- assign velocidad = section.settings.velocidad -%}
+{%- assign total = section.blocks.size -%}
 
 <style>
   #pp-ticker-{{ section.id }} {
