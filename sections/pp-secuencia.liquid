@@ -1,6 +1,7 @@
 {%- comment -%}
-  PP · Preguntas frecuentes
-  Acordeón de preguntas y respuestas (no necesita JavaScript).
+  PP · Secuencia
+  Etiqueta + titular + texto + imagen principal y una fila de 2 a 4 fotos
+  unidas con flechas (ej: "Residuos dispersos › Se agrupan › Los puedes ver").
 {%- endcomment -%}
 
 <style>
@@ -268,49 +269,68 @@
 </style>
 
 <style>
-  .pp-faq__lista { max-width: 760px; margin: 0 auto; display: grid; gap: 10px; }
-  .pp-faq__item {
-    border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
+  .pp-seq__pill {
+    justify-self: start; padding: 5px 12px; border-radius: 99px; background: var(--pp-acento); color: #fff;
+    font-size: 12px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
   }
-  .pp-bg--oscuro .pp-faq__item { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .16); }
-  .pp-faq__item summary {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    padding: 16px; cursor: pointer; list-style: none;
-    font-size: 16px; font-weight: 700; line-height: 1.35;
+  .pp-head:not(.pp-head--izq) .pp-seq__pill { justify-self: center; }
+  #pp-seq-{{ section.id }} .pp-seq__img { aspect-ratio: {{ section.settings.proporcion }}; max-width: 760px; margin: 0 auto; }
+  #pp-seq-{{ section.id }} .pp-head { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .pp-seq__fila { display: flex; align-items: flex-start; gap: 4px; max-width: 760px; margin: 18px auto 0; }
+  .pp-seq__paso { flex: 1 1 0; min-width: 0; }
+  .pp-seq__paso .pp-img { aspect-ratio: 4 / 3; }
+  .pp-seq__paso p { margin-top: 8px; text-align: center; font-size: 11px; font-weight: 800; line-height: 1.2; text-transform: uppercase; }
+  .pp-seq__flecha { flex: 0 0 auto; align-self: center; margin-top: -18px; color: var(--pp-acento); font-size: 22px; font-weight: 900; line-height: 1; }
+  @media (min-width: 750px) {
+    .pp-seq__fila { gap: 12px; margin-top: 24px; }
+    .pp-seq__paso p { font-size: 14px; }
+    .pp-seq__flecha { font-size: 30px; }
   }
-  .pp-faq__item summary::-webkit-details-marker { display: none; }
-  .pp-faq__item summary::after {
-    content: "+"; flex: 0 0 auto; font-size: 22px; font-weight: 400; line-height: 1;
-    color: var(--pp-acento); transition: transform .2s ease;
-  }
-  .pp-faq__item[open] summary::after { transform: rotate(45deg); }
-  .pp-faq__item summary:focus-visible { outline: 2px solid var(--pp-acento); outline-offset: 2px; border-radius: var(--pp-radio); }
-  .pp-faq__resp { padding: 0 16px 16px; font-size: 15px; color: var(--pp-texto-2); }
-  .pp-bg--oscuro .pp-faq__resp { color: inherit; opacity: .85; }
-  .pp-faq__resp p + p { margin-top: 8px; }
 </style>
 
-<div class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+<div id="pp-seq-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
   <div class="pp-wrap">
-    <div class="pp-head">
+    <div class="pp-head{% if section.settings.alineacion == 'izq' %} pp-head--izq{% endif %}">
+      {%- if section.settings.etiqueta != blank -%}<span class="pp-seq__pill">{{ section.settings.etiqueta }}</span>{%- endif -%}
       {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
     </div>
-    <div class="pp-faq__lista">
-      {%- for block in section.blocks -%}
-        <details class="pp-faq__item" {{ block.shopify_attributes }}{% if forloop.first and section.settings.abrir_primera %} open{% endif %}>
-          <summary>{{ block.settings.pregunta }}</summary>
-          <div class="pp-faq__resp">{{ block.settings.respuesta }}</div>
-        </details>
-      {%- endfor -%}
-    </div>
+
+    {%- if section.settings.imagen != blank -%}
+      <div class="pp-img pp-seq__img">
+        {{ section.settings.imagen | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000, 1400', sizes: '(min-width: 760px) 760px, 100vw' }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="pp-seq__fila">
+        {%- for block in section.blocks -%}
+          <div class="pp-seq__paso" {{ block.shopify_attributes }}>
+            <div class="pp-img">
+              {%- if block.settings.imagen != blank -%}
+                {{ block.settings.imagen | image_url: width: 500 | image_tag: loading: 'lazy', widths: '200, 350, 500', sizes: '(min-width: 760px) 240px, 30vw', alt: block.settings.texto }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag }}
+              {%- endif -%}
+            </div>
+            {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
+          </div>
+          {%- unless forloop.last -%}<span class="pp-seq__flecha" aria-hidden="true">›</span>{%- endunless -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.cierre != blank -%}
+      <p class="pp-cierre{% if section.settings.cierre_franja %} pp-cierre--franja{% endif %}">{{ section.settings.cierre }}</p>
+    {%- endif -%}
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "PP · Preguntas",
+  "name": "PP · Secuencia",
   "tag": "section",
-  "class": "pp-faq-section",
+  "class": "pp-secuencia-section",
   "settings": [
     {
       "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
@@ -320,29 +340,43 @@
         { "value": "oscuro", "label": "Oscuro" }
       ]
     },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular", "default": "Preguntas frecuentes" },
-    { "type": "checkbox", "id": "abrir_primera", "label": "Dejar la primera pregunta abierta", "default": true }
+    {
+      "type": "select", "id": "alineacion", "label": "Alineación del texto", "default": "izq",
+      "options": [ { "value": "izq", "label": "Izquierda" }, { "value": "centro", "label": "Centrado" } ]
+    },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta (sale en una cápsula de color)", "default": "La parte que tienes que ver" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "Enjuagas. Y lo que estaba ahí <em>empieza a aparecer.</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "La fórmula ayuda a agrupar residuos y partículas presentes en tu boca durante el enjuague." },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen principal" },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de la imagen principal", "default": "5 / 4",
+      "options": [
+        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "5 / 4", "label": "Casi cuadrado (5:4)" },
+        { "value": "16 / 9", "label": "Horizontal (16:9)" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "cierre", "label": "Frase de cierre (opcional)", "default": "Ahí entiendes por qué un cepillo no siempre cuenta toda la historia." },
+    { "type": "checkbox", "id": "cierre_franja", "label": "Frase de cierre en franja de color", "default": true }
   ],
   "blocks": [
     {
-      "type": "pregunta",
-      "name": "Pregunta",
+      "type": "paso",
+      "name": "Foto de la secuencia",
+      "limit": 4,
       "settings": [
-        { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Cómo pago?" },
-        { "type": "richtext", "id": "respuesta", "label": "Respuesta", "default": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>" }
+        { "type": "image_picker", "id": "imagen", "label": "Imagen" },
+        { "type": "text", "id": "texto", "label": "Texto debajo", "default": "Residuos dispersos" }
       ]
     }
   ],
   "presets": [
     {
-      "name": "PP · Preguntas",
+      "name": "PP · Secuencia",
       "blocks": [
-        { "type": "pregunta", "settings": { "pregunta": "¿Por qué el líquido sale oscuro cuando lo escupís?", "respuesta": "<p>Así es la fórmula desde que sale del frasco. Ese color le permite adherirse a los residuos de lengua, mejillas y encías que el cepillo no alcanza — no es \"toda la suciedad de tu boca de golpe\".</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Cuánto tarda en llegar mi pedido?", "respuesta": "<p>Entre 24 y 48 horas en la mayoría de zonas de Guatemala.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Cómo pago?", "respuesta": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Qué pasa si mi pedido llega dañado?", "respuesta": "<p>Te lo reponemos sin costo. Escribinos por WhatsApp con tu número de pedido.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Reemplaza el cepillado normal?", "respuesta": "<p>No, lo complementa. Funciona mejor como parte de tu rutina diaria de cepillado, no como reemplazo.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Contiene alcohol?", "respuesta": "<p>No. Es una fórmula sin alcohol, apta para uso diario.</p>" } }
+        { "type": "paso", "settings": { "texto": "Residuos dispersos" } },
+        { "type": "paso", "settings": { "texto": "Se agrupan" } },
+        { "type": "paso", "settings": { "texto": "Los puedes ver" } }
       ]
     }
   ]

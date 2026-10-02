@@ -1,6 +1,8 @@
 {%- comment -%}
-  PP · Pasos
-  Modo de uso en pasos numerados (ej: "3 pasos. 30 segundos.").
+  PP · Zonas del problema
+  Imagen grande con etiquetas que señalan puntos (posición en %),
+  fila de fotos de detalle con su nombre y frase de cierre.
+  (ej: "Ahí es donde empieza el problema")
 {%- endcomment -%}
 
 <style>
@@ -267,105 +269,130 @@
 /* PP-BASE:END */
 </style>
 
+{%- assign puntos = section.blocks | where: 'type', 'punto' -%}
+{%- assign fotos = section.blocks | where: 'type', 'foto' -%}
+
 <style>
-  .pp-pasos__lista { display: grid; gap: 14px; counter-reset: paso; }
-  .pp-pasos__item {
-    display: grid; grid-template-columns: 112px 1fr; gap: 14px; align-items: center;
-    counter-increment: paso;
+  .pp-zonas__mapa { position: relative; max-width: 760px; margin: 0 auto; }
+  .pp-zonas__mapa > img { width: 100%; height: auto; border-radius: var(--pp-radio); }
+  .pp-zonas__punto {
+    position: absolute; transform: translate(-6px, -50%);
+    display: flex; align-items: center; gap: 6px; white-space: nowrap;
   }
-  .pp-pasos__item .pp-img { position: relative; aspect-ratio: {{ section.settings.proporcion }}; }
-  .pp-pasos__badge {
-    position: absolute; right: 6px; bottom: 6px; padding: 3px 8px; border-radius: 99px;
-    background: var(--pp-texto); color: var(--pp-fondo); font-size: 12px; font-weight: 800;
+  .pp-zonas__punto::before {
+    content: ""; width: 12px; height: 12px; flex: 0 0 auto; border-radius: 50%;
+    background: var(--pp-acento); box-shadow: 0 0 0 4px rgba(255, 255, 255, .85);
   }
-  .pp-pasos__num {
-    display: block; font-size: 13px; font-weight: 800; letter-spacing: .06em; color: var(--pp-acento);
+  .pp-zonas__punto span {
+    padding: 4px 10px; border-radius: 99px; background: var(--pp-acento); color: #fff;
+    font-size: 11px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
   }
-  .pp-pasos__num::before { content: counter(paso, decimal-leading-zero); }
-  .pp-pasos__item h3 { font-size: 18px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
-  .pp-pasos__item p { font-size: 15px; color: var(--pp-texto-2); }
-  .pp-bg--oscuro .pp-pasos__item p { color: inherit; opacity: .8; }
+  .pp-zonas__punto--izq { flex-direction: row-reverse; transform: translate(calc(-100% + 6px), -50%); }
+  .pp-zonas__fotos { display: grid; gap: 10px; margin-top: 20px; }
+  #pp-zonas-{{ section.id }} .pp-zonas__fotos { grid-template-columns: repeat({{ fotos.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); }
+  .pp-zonas__foto { overflow: hidden; border-radius: var(--pp-radio); background: var(--pp-fondo); box-shadow: 0 6px 18px rgba(0, 0, 0, .08); }
+  .pp-zonas__foto .pp-img { aspect-ratio: 1 / 1; border-radius: 0; }
+  .pp-zonas__foto p { padding: 8px 4px; text-align: center; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
   @media (min-width: 750px) {
-    .pp-pasos__lista { grid-template-columns: repeat({{ section.blocks.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); gap: 24px; }
-    .pp-pasos__item { grid-template-columns: 1fr; text-align: center; }
+    .pp-zonas__punto span { font-size: 13px; }
+    .pp-zonas__fotos { max-width: 760px; margin: 24px auto 0; gap: 16px; }
+    .pp-zonas__foto p { font-size: 13px; }
   }
 </style>
 
-<div class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+<div id="pp-zonas-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
   <div class="pp-wrap">
     <div class="pp-head">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow" style="color:var(--pp-texto)">{{ section.settings.etiqueta }}</p>{%- endif -%}
       {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
       {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
     </div>
 
-    <ol class="pp-pasos__lista" style="list-style:none;margin:0;padding:0">
-      {%- for block in section.blocks -%}
-        <li class="pp-pasos__item" {{ block.shopify_attributes }}>
-          <div class="pp-img">
-            {%- if block.settings.imagen != blank -%}
-              {{ block.settings.imagen | image_url: width: 500 | image_tag: loading: 'lazy', widths: '200, 350, 500', sizes: '(min-width: 750px) 340px, 112px', alt: block.settings.titulo }}
-            {%- else -%}
-              {{ 'image' | placeholder_svg_tag }}
-            {%- endif -%}
-            {%- if block.settings.etiqueta != blank -%}<span class="pp-pasos__badge">{{ block.settings.etiqueta }}</span>{%- endif -%}
+    {%- if section.settings.imagen != blank -%}
+      <div class="pp-zonas__mapa">
+        {{ section.settings.imagen | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000, 1400', sizes: '(min-width: 760px) 760px, 100vw' }}
+        {%- for block in puntos -%}
+          <div class="pp-zonas__punto{% if block.settings.lado == 'izq' %} pp-zonas__punto--izq{% endif %}" style="left: {{ block.settings.x }}%; top: {{ block.settings.y }}%;" {{ block.shopify_attributes }}>
+            <span>{{ block.settings.texto }}</span>
           </div>
-          <div>
-            {%- if section.settings.numerar -%}<span class="pp-pasos__num"></span>{%- endif -%}
-            <h3>{{ block.settings.titulo }}</h3>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if fotos.size > 0 -%}
+      <div class="pp-zonas__fotos">
+        {%- for block in fotos -%}
+          <div class="pp-zonas__foto" {{ block.shopify_attributes }}>
+            <div class="pp-img">
+              {%- if block.settings.imagen != blank -%}
+                {{ block.settings.imagen | image_url: width: 500 | image_tag: loading: 'lazy', widths: '200, 350, 500', sizes: '(min-width: 760px) 250px, 33vw', alt: block.settings.texto }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag }}
+              {%- endif -%}
+            </div>
             {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
           </div>
-        </li>
-      {%- endfor -%}
-    </ol>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.cierre != blank -%}
+      <p class="pp-cierre{% if section.settings.cierre_franja %} pp-cierre--franja{% endif %}">{{ section.settings.cierre }}</p>
+    {%- endif -%}
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "PP · Pasos",
+  "name": "PP · Zonas",
   "tag": "section",
-  "class": "pp-pasos-section",
+  "class": "pp-zonas-section",
   "settings": [
     {
-      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
       "options": [
         { "value": "fondo", "label": "Blanco" },
         { "value": "fondo-2", "label": "Alterno (suave)" },
         { "value": "oscuro", "label": "Oscuro" }
       ]
     },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "3 pasos. 30 segundos. <em>Y listo.</em>" },
-    { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "Úsalo después de tu rutina de higiene oral." },
-    { "type": "checkbox", "id": "numerar", "label": "Mostrar número de paso (01, 02, 03)", "default": true },
-    {
-      "type": "select", "id": "proporcion", "label": "Formato de las imágenes", "default": "1 / 1",
-      "options": [
-        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
-        { "value": "4 / 3", "label": "Horizontal (4:3)" },
-        { "value": "4 / 5", "label": "Vertical (4:5)" }
-      ]
-    }
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Tu cepillo no llega igual a todas partes" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "<em>Ahí es donde empieza el problema</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen principal", "info": "Agrega bloques \"Etiqueta\" para señalar puntos sobre la imagen." },
+    { "type": "inline_richtext", "id": "cierre", "label": "Frase de cierre (opcional)", "default": "Cepillar es el comienzo. <em>Enjuagar completa la rutina.</em>" },
+    { "type": "checkbox", "id": "cierre_franja", "label": "Frase de cierre en franja de color", "default": false }
   ],
   "blocks": [
     {
-      "type": "paso",
-      "name": "Paso",
-      "limit": 4,
+      "type": "punto",
+      "name": "Etiqueta sobre la imagen",
+      "settings": [
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Entre dientes" },
+        { "type": "range", "id": "x", "label": "Posición horizontal", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 30 },
+        { "type": "range", "id": "y", "label": "Posición vertical", "min": 0, "max": 100, "step": 1, "unit": "%", "default": 30 },
+        {
+          "type": "select", "id": "lado", "label": "Texto a qué lado del punto", "default": "der",
+          "options": [ { "value": "der", "label": "Derecha" }, { "value": "izq", "label": "Izquierda" } ]
+        }
+      ]
+    },
+    {
+      "type": "foto",
+      "name": "Foto de detalle",
       "settings": [
         { "type": "image_picker", "id": "imagen", "label": "Imagen (cuadrada)" },
-        { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre la imagen (opcional, ej: 15 ml)" },
-        { "type": "text", "id": "titulo", "label": "Título", "default": "Prepara" },
-        { "type": "textarea", "id": "texto", "label": "Texto" }
+        { "type": "text", "id": "texto", "label": "Nombre", "default": "Entre dientes" }
       ]
     }
   ],
   "presets": [
     {
-      "name": "PP · Pasos",
+      "name": "PP · Zonas",
       "blocks": [
-        { "type": "paso", "settings": { "titulo": "Prepara", "etiqueta": "15 ml", "texto": "Mide 15 ml. No necesitas diluirlo." } },
-        { "type": "paso", "settings": { "titulo": "Enjuaga", "etiqueta": "30 seg", "texto": "Haz buches 30 segundos. Luego escupe." } },
-        { "type": "paso", "settings": { "titulo": "Descubre", "texto": "Mira lo que queda tras el enjuague." } }
+        { "type": "foto", "settings": { "texto": "Entre dientes" } },
+        { "type": "foto", "settings": { "texto": "Molares" } },
+        { "type": "foto", "settings": { "texto": "Superficies orales" } }
       ]
     }
   ]

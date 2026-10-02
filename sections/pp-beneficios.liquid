@@ -1,0 +1,403 @@
+{%- comment -%}
+  PP · Beneficios
+  Titular + imagen central rodeada de beneficios con ícono, título y texto.
+  En celular: imagen arriba y beneficios en 2 columnas.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: usan la fuente de títulos del tema (Dawn) */
+.pp-h {
+  font-family: var(--font-heading-family, inherit);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  .pp-bene__grid { display: grid; gap: 20px; align-items: center; }
+  .pp-bene__lista { display: grid; grid-template-columns: 1fr 1fr; gap: 22px 14px; }
+  .pp-bene__col { display: grid; gap: 22px; align-content: start; }
+  .pp-bene__item { display: grid; gap: 6px; align-content: start; }
+  .pp-bene__ico {
+    display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%;
+    background: var(--pp-acento); color: #fff; font-size: 26px;
+    box-shadow: 0 0 0 4px var(--pp-fondo), 0 0 0 5px var(--pp-borde);
+  }
+  .pp-bene__item h3 { margin-top: 4px; font-size: 14px; font-weight: 800; line-height: 1.2; text-transform: uppercase; }
+  .pp-bene__item p { font-size: 14px; color: var(--pp-texto-2); line-height: 1.4; }
+  .pp-bg--oscuro .pp-bene__item p { color: inherit; opacity: .8; }
+  #pp-bene-{{ section.id }} .pp-bene__img { aspect-ratio: {{ section.settings.proporcion }}; }
+  @media (min-width: 900px) {
+    .pp-bene__grid { grid-template-columns: 1fr 1.2fr 1fr; gap: 32px; }
+    .pp-bene__lista { display: contents; }
+    .pp-bene__col { display: grid; gap: 40px; }
+    .pp-bene__img { grid-column: 2; grid-row: 1; }
+    .pp-bene__item h3 { font-size: 16px; }
+  }
+</style>
+
+{%- assign mitad = section.blocks.size | plus: 1 | divided_by: 2 | floor -%}
+
+<div id="pp-bene-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap">
+    <div class="pp-head">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow" style="color:var(--pp-texto)">{{ section.settings.etiqueta }}</p>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+
+    <div class="pp-bene__grid">
+      {%- if section.settings.imagen != blank -%}
+        <div class="pp-img pp-bene__img">
+          {{ section.settings.imagen | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 600, 800, 1000', sizes: '(min-width: 900px) 440px, 100vw' }}
+        </div>
+      {%- endif -%}
+      <div class="pp-bene__lista">
+        {%- for block in section.blocks -%}
+          {%- if forloop.index0 == 0 or forloop.index0 == mitad -%}<div class="pp-bene__col">{%- endif -%}
+          <div class="pp-bene__item" {{ block.shopify_attributes }}>
+            <span class="pp-bene__ico">
+              {%- assign icono = block.settings.icono -%}
+              {%- comment -%}PP-ICONOS:START{%- endcomment -%}
+{%- case icono -%}
+{%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
+{%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+{%- when 'frescura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3 0 3-2 6-2s3 2 6 2 3-2 6-2M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg>
+{%- when 'hoja' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15"/><path d="M5 19l7-7"/></svg>
+{%- when 'sonrisa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></svg>
+{%- when 'brillo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7L19 16z"/></svg>
+{%- when 'check' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+{%- when 'reloj' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+{%- when 'gota' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z"/></svg>
+{%- when 'calendario' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>
+{%- when 'camion' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+{%- when 'pago' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+{%- when 'corazon' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+{%- when 'lupa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>
+{%- endcase -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}
+            </span>
+            <h3>{{ block.settings.titulo }}</h3>
+            {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
+          </div>
+          {%- assign siguiente = forloop.index0 | plus: 1 -%}
+          {%- if forloop.last or siguiente == mitad -%}</div>{%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    {%- if section.settings.cierre != blank -%}
+      <p class="pp-cierre{% if section.settings.cierre_franja %} pp-cierre--franja{% endif %}">{{ section.settings.cierre }}</p>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PP · Beneficios",
+  "tag": "section",
+  "class": "pp-beneficios-section",
+  "settings": [
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" },
+        { "value": "oscuro", "label": "Oscuro" }
+      ]
+    },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "No es solo sentir sabor a menta" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "Es sentir que por fin <em>terminaste de limpiar tu boca</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen central" },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de la imagen", "default": "4 / 3",
+      "options": [
+        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "4 / 3", "label": "Horizontal (4:3)" },
+        { "value": "16 / 9", "label": "Horizontal ancho (16:9)" },
+        { "value": "4 / 5", "label": "Vertical (4:5)" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "cierre", "label": "Frase de cierre (opcional)", "default": "Lo que antes sentías con la lengua, ahora puedes ayudar a enjuagarlo." },
+    { "type": "checkbox", "id": "cierre_franja", "label": "Frase de cierre en franja de color", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "beneficio",
+      "name": "Beneficio",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "diente", "options": [{"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}] },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Ayuda a retirar residuos" },
+        { "type": "textarea", "id": "texto", "label": "Texto" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Beneficios",
+      "blocks": [
+        { "type": "beneficio", "settings": { "icono": "brillo", "titulo": "Ayuda a retirar residuos", "texto": "El enjuague ayuda a llevarse el build-up que puede quedar después del cepillado." } },
+        { "type": "beneficio", "settings": { "icono": "hoja", "titulo": "Aliento realmente fresco", "texto": "Esa sensación que quieres antes de hablar cerca de alguien." } },
+        { "type": "beneficio", "settings": { "icono": "diente", "titulo": "Sonrisa con aspecto más limpio", "texto": "Ayuda a mantener visualmente la blancura dentro de tu rutina." } },
+        { "type": "beneficio", "settings": { "icono": "calendario", "titulo": "Sin otra rutina complicada", "texto": "Cepíllate. Enjuaga. Termina." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

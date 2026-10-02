@@ -17,6 +17,11 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-como-funciona.liquid` | PP · Cómo funciona | Slider de tarjetas (imagen, título y texto) o lista |
 | `sections/pp-pasos.liquid` | PP · Pasos | Modo de uso en pasos numerados |
 | `sections/pp-faq.liquid` | PP · Preguntas | Preguntas frecuentes en acordeón |
+| `sections/pp-antes-despues.liquid` | PP · Antes y después | Columnas Antes/Después, imagen comparativa y frase de cierre |
+| `sections/pp-iconos.liquid` | PP · Íconos | Franja de 2 a 4 íconos con texto |
+| `sections/pp-zonas.liquid` | PP · Zonas | Imagen con etiquetas posicionadas + fotos de detalle |
+| `sections/pp-beneficios.liquid` | PP · Beneficios | Imagen central rodeada de beneficios con ícono |
+| `sections/pp-secuencia.liquid` | PP · Secuencia | Imagen + fotos en secuencia con flechas |
 | `sections/pp-boton-fijo.liquid` | PP · Botón fijo | Botón de compra pegado abajo en celular |
 
 ## Cómo instalar (una sola vez por tienda)
@@ -56,8 +61,12 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 
 ## Para desarrollo
 
-Los estilos compartidos viven en `src/pp-base.css`. Después de cambiarlos, ejecuta
-`node tools/inline-base.mjs` para copiarlos dentro de cada sección.
+Los estilos compartidos viven en `src/pp-base.css` y los íconos en `src/pp-iconos.liquid`.
+Después de cambiarlos, ejecuta `node tools/inline-base.mjs` para copiarlos dentro de cada sección.
+Todo lo de la base va dentro de `:where()`: se repite en cada sección y nunca debe ganarle
+a los estilos propios de una sección.
+
+Fotos recortadas de las imágenes de Luvien (sin texto): `imagenes/luvien/` y `imagenes/fotos-luvien.zip`.
 
 ### Página para copiar el código
 

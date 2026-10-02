@@ -38,7 +38,7 @@ engine.registerTag('form', class extends RawBlock { constructor(t, r, l) { super
 const kw = (args) => Object.fromEntries(args.filter(Array.isArray));
 const money = (c) => {
   const v = Number(c || 0) / 100;
-  return (page.moneda || 'Q') + v.toLocaleString('es-GT', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  return (page.moneda || 'Q') + v.toLocaleString(page.locale || 'es-GT', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 };
 engine.registerFilter('money', money);
 engine.registerFilter('money_without_trailing_zeros', (c) => money(c).replace(/[.,]00$/, ''));

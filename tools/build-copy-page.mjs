@@ -19,6 +19,11 @@ const SECCIONES = [
   { file: 'pp-como-funciona', desc: 'Slider de tarjetas con imagen, título y texto que se desliza de lado (o en lista).' },
   { file: 'pp-pasos', desc: 'Modo de uso en pasos numerados con foto y etiqueta (15 ml, 30 seg).' },
   { file: 'pp-faq', desc: 'Preguntas frecuentes que se abren y cierran. Ya trae tus 6 preguntas.' },
+  { file: 'pp-antes-despues', desc: 'Nueva. Dos columnas Antes / Después con puntos, imagen comparativa y frase de cierre.' },
+  { file: 'pp-iconos', desc: 'Nueva. Franja de 2 a 4 íconos con texto (tarjeta o círculos grandes).' },
+  { file: 'pp-zonas', desc: 'Nueva. Imagen con etiquetas sobre puntos, fotos de detalle con nombre y frase de cierre.' },
+  { file: 'pp-beneficios', desc: 'Nueva. Imagen central rodeada de beneficios con ícono, título y texto.' },
+  { file: 'pp-secuencia', desc: 'Nueva. Imagen principal y fotos en secuencia con flechas (dispersos › se agrupan › los ves).' },
   { file: 'pp-boton-fijo', desc: 'Barra con el botón de compra pegada abajo del celular, aparece al pasar la oferta.' },
 ];
 

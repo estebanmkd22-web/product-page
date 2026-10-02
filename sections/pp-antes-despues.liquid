@@ -1,6 +1,7 @@
 {%- comment -%}
-  PP · Preguntas frecuentes
-  Acordeón de preguntas y respuestas (no necesita JavaScript).
+  PP · Antes y después
+  Dos columnas (Antes oscuro / Después claro) con lista de puntos,
+  imagen comparativa debajo y frase de cierre opcional.
 {%- endcomment -%}
 
 <style>
@@ -268,83 +269,66 @@
 </style>
 
 <style>
-  .pp-faq__lista { max-width: 760px; margin: 0 auto; display: grid; gap: 10px; }
-  .pp-faq__item {
-    border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
+  .pp-ad { padding-bottom: 40px; background: {{ section.settings.color_antes }}; }
+  .pp-ad__cols { display: grid; grid-template-columns: 1fr 1fr; }
+  .pp-ad__col { padding: 28px 14px 22px; text-align: center; }
+  .pp-ad__col--antes { background: {{ section.settings.color_antes }}; color: #fff; }
+  .pp-ad__col--despues { background: {{ section.settings.color_despues }}; color: var(--pp-texto); }
+  .pp-ad__col h2 { font-family: var(--font-heading-family, inherit); font-size: clamp(26px, 7vw, 44px); font-weight: 900; line-height: 1; margin-bottom: 12px; text-transform: uppercase; }
+  .pp-ad__col li { font-size: clamp(14px, 3.8vw, 18px); font-weight: 600; line-height: 1.3; }
+  .pp-ad__col li + li { margin-top: 8px; }
+  .pp-ad__col li::before { content: "• "; }
+  .pp-ad__img { display: block; width: 100%; height: auto; }
+  .pp-ad .pp-cierre { padding: 0 16px; color: #fff; }
+  @media (min-width: 750px) {
+    .pp-ad__inner { max-width: 960px; margin: 0 auto; }
+    .pp-ad__col { padding: 40px 28px 28px; }
   }
-  .pp-bg--oscuro .pp-faq__item { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .16); }
-  .pp-faq__item summary {
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-    padding: 16px; cursor: pointer; list-style: none;
-    font-size: 16px; font-weight: 700; line-height: 1.35;
-  }
-  .pp-faq__item summary::-webkit-details-marker { display: none; }
-  .pp-faq__item summary::after {
-    content: "+"; flex: 0 0 auto; font-size: 22px; font-weight: 400; line-height: 1;
-    color: var(--pp-acento); transition: transform .2s ease;
-  }
-  .pp-faq__item[open] summary::after { transform: rotate(45deg); }
-  .pp-faq__item summary:focus-visible { outline: 2px solid var(--pp-acento); outline-offset: 2px; border-radius: var(--pp-radio); }
-  .pp-faq__resp { padding: 0 16px 16px; font-size: 15px; color: var(--pp-texto-2); }
-  .pp-bg--oscuro .pp-faq__resp { color: inherit; opacity: .85; }
-  .pp-faq__resp p + p { margin-top: 8px; }
 </style>
 
-<div class="pp pp-section pp-bg--{{ section.settings.fondo }}">
-  <div class="pp-wrap">
-    <div class="pp-head">
-      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+<div class="pp pp-ad">
+  <div class="pp-ad__inner">
+    <div class="pp-ad__cols">
+      <div class="pp-ad__col pp-ad__col--antes">
+        <h2>{{ section.settings.titulo_antes }}</h2>
+        {%- assign puntos = section.settings.puntos_antes | newline_to_br | split: '<br />' -%}
+        <ul>{%- for p in puntos -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+      </div>
+      <div class="pp-ad__col pp-ad__col--despues">
+        <h2>{{ section.settings.titulo_despues }}</h2>
+        {%- assign puntos = section.settings.puntos_despues | newline_to_br | split: '<br />' -%}
+        <ul>{%- for p in puntos -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+      </div>
     </div>
-    <div class="pp-faq__lista">
-      {%- for block in section.blocks -%}
-        <details class="pp-faq__item" {{ block.shopify_attributes }}{% if forloop.first and section.settings.abrir_primera %} open{% endif %}>
-          <summary>{{ block.settings.pregunta }}</summary>
-          <div class="pp-faq__resp">{{ block.settings.respuesta }}</div>
-        </details>
-      {%- endfor -%}
-    </div>
+
+    {%- if section.settings.imagen != blank -%}
+      {{ section.settings.imagen | image_url: width: 1400 | image_tag: class: 'pp-ad__img', loading: 'lazy', widths: '400, 600, 800, 1000, 1400', sizes: '(min-width: 960px) 960px, 100vw' }}
+    {%- endif -%}
+
+    {%- if section.settings.cierre != blank -%}
+      <p class="pp-cierre">{{ section.settings.cierre }}</p>
+    {%- endif -%}
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "PP · Preguntas",
+  "name": "PP · Antes y después",
   "tag": "section",
-  "class": "pp-faq-section",
+  "class": "pp-ad-section",
   "settings": [
-    {
-      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
-      "options": [
-        { "value": "fondo", "label": "Blanco" },
-        { "value": "fondo-2", "label": "Alterno (suave)" },
-        { "value": "oscuro", "label": "Oscuro" }
-      ]
-    },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular", "default": "Preguntas frecuentes" },
-    { "type": "checkbox", "id": "abrir_primera", "label": "Dejar la primera pregunta abierta", "default": true }
+    { "type": "header", "content": "Antes" },
+    { "type": "text", "id": "titulo_antes", "label": "Título", "default": "Antes" },
+    { "type": "textarea", "id": "puntos_antes", "label": "Puntos (uno por línea)", "default": "Residuos que el cepillo puede dejar\nAliento que te hace dudar\nManchas que apagan tu sonrisa" },
+    { "type": "color", "id": "color_antes", "label": "Fondo", "default": "#1e1e1e" },
+    { "type": "header", "content": "Después" },
+    { "type": "text", "id": "titulo_despues", "label": "Título", "default": "Después" },
+    { "type": "textarea", "id": "puntos_despues", "label": "Puntos (uno por línea)", "default": "Sensación de limpieza completa\nAliento fresco\nSonrisa con aspecto más limpio" },
+    { "type": "color", "id": "color_despues", "label": "Fondo", "default": "#ffffff" },
+    { "type": "header", "content": "Imagen y cierre" },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen comparativa (antes | después)", "info": "Una sola imagen con las dos fotos lado a lado, sin texto." },
+    { "type": "inline_richtext", "id": "cierre", "label": "Frase de cierre (sale grande, en blanco)", "default": "No se trata solo de cepillarte. Se trata de <em>terminar de limpiar.</em>" }
   ],
-  "blocks": [
-    {
-      "type": "pregunta",
-      "name": "Pregunta",
-      "settings": [
-        { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Cómo pago?" },
-        { "type": "richtext", "id": "respuesta", "label": "Respuesta", "default": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>" }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "PP · Preguntas",
-      "blocks": [
-        { "type": "pregunta", "settings": { "pregunta": "¿Por qué el líquido sale oscuro cuando lo escupís?", "respuesta": "<p>Así es la fórmula desde que sale del frasco. Ese color le permite adherirse a los residuos de lengua, mejillas y encías que el cepillo no alcanza — no es \"toda la suciedad de tu boca de golpe\".</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Cuánto tarda en llegar mi pedido?", "respuesta": "<p>Entre 24 y 48 horas en la mayoría de zonas de Guatemala.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Cómo pago?", "respuesta": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Qué pasa si mi pedido llega dañado?", "respuesta": "<p>Te lo reponemos sin costo. Escribinos por WhatsApp con tu número de pedido.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Reemplaza el cepillado normal?", "respuesta": "<p>No, lo complementa. Funciona mejor como parte de tu rutina diaria de cepillado, no como reemplazo.</p>" } },
-        { "type": "pregunta", "settings": { "pregunta": "¿Contiene alcohol?", "respuesta": "<p>No. Es una fórmula sin alcohol, apta para uso diario.</p>" } }
-      ]
-    }
-  ]
+  "presets": [{ "name": "PP · Antes y después" }]
 }
 {% endschema %}

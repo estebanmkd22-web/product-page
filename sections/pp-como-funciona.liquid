@@ -8,8 +8,9 @@
 /* PP-BASE:START */
 /* PP · Base compartida. Fuente única: src/pp-base.css
    (tools/inline-base.mjs la copia dentro de cada sección).
-   :where() deja estos colores con prioridad mínima, así
-   "PP · Estilos globales" siempre los reemplaza. */
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
 :where(:root) {
   --pp-acento: #c5453f;
   --pp-acento-suave: #fbeceb;
@@ -33,7 +34,7 @@
   box-sizing: border-box;
 }
 
-.pp {
+:where(.pp) {
   color: var(--pp-texto);
   background: var(--pp-fondo);
   font-size: 16px;
@@ -41,21 +42,17 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.pp img {
+:where(.pp) img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-.pp h1,
-.pp h2,
-.pp h3,
-.pp p,
-.pp ul {
+:where(.pp) :where(h1, h2, h3, p, ul) {
   margin: 0;
 }
 
-.pp ul {
+:where(.pp) ul {
   padding: 0;
   list-style: none;
 }
@@ -226,6 +223,48 @@
   max-width: 480px;
   margin: 28px auto 0;
 }
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
 /* PP-BASE:END */
 </style>
 
@@ -305,10 +344,12 @@
               {{ 'image' | placeholder_svg_tag }}
             {%- endif -%}
           </div>
-          <div class="pp-como__txt">
-            <h3>{{ block.settings.titulo }}</h3>
-            {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
-          </div>
+          {%- if block.settings.titulo != blank or block.settings.texto != blank -%}
+            <div class="pp-como__txt">
+              {%- if block.settings.titulo != blank -%}<h3>{{ block.settings.titulo }}</h3>{%- endif -%}
+              {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
+            </div>
+          {%- endif -%}
         </div>
       {%- endfor -%}
     </div>
@@ -441,8 +482,8 @@
       "name": "Tarjeta",
       "settings": [
         { "type": "image_picker", "id": "imagen", "label": "Imagen" },
-        { "type": "text", "id": "titulo", "label": "Título", "default": "Llega a cada rincón" },
-        { "type": "textarea", "id": "texto", "label": "Texto" }
+        { "type": "text", "id": "titulo", "label": "Título (opcional)", "default": "Llega a cada rincón" },
+        { "type": "textarea", "id": "texto", "label": "Texto (opcional)" }
       ]
     }
   ],
