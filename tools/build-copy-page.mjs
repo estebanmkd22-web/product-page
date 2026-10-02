@@ -12,6 +12,7 @@ const SECCIONES = [
   { file: 'pp-hero-oferta', desc: 'Galería, estrellas, titular, beneficios y la caja de compra con el botón de EasySell.' },
   { file: 'pp-ticker', desc: 'Franja con mensajes que se mueven: envío gratis, pago al recibir, clientes felices.' },
   { file: 'pp-estilos', desc: 'Opcional. Cambia los colores de todas las secciones PP desde un solo lugar.' },
+  { file: 'pp-videos', desc: 'Carrusel de videos verticales que se reproducen solos. Va debajo de la caja de compra.' },
   { file: 'pp-problema', desc: 'Etiqueta, titular y hasta 3 fotos en fila. Ej: "El cepillo limpia dientes. No limpia esto."' },
   { file: 'pp-grid-dolores', desc: 'Tarjetas con foto, título rojo y texto en 2 columnas, más una frase de cierre.' },
   { file: 'pp-testimonio', desc: 'Pregunta que agita el dolor, cita de un cliente con estrellas y botón de compra.' },

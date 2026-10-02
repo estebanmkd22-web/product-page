@@ -56,6 +56,7 @@ engine.registerFilter('image_tag', (url, ...args) => {
     .map(([k, v]) => `${k}="${String(v).replace(/"/g, '&quot;')}"`).join(' ');
   return `<img src="${url}" ${attrs}>`;
 });
+engine.registerFilter('video_tag', (v) => `<video src="${v.src}" loop muted playsinline preload="none"></video>`);
 engine.registerFilter('placeholder_svg_tag', () => '<svg viewBox="0 0 10 10" style="width:100%;height:100%;background:#ddd"></svg>');
 engine.registerFilter('payment_type_svg_tag', (t) => `<span>${t}</span>`);
 engine.registerFilter('color_mix', (a, b, w) => {

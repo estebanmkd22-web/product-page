@@ -44,6 +44,59 @@
       }
     },
     {
+      "tipo": "pp-videos",
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "video": {
+              "src": "https://naturixa.com.co/cdn/shop/videos/c/o/v/a4932975bc7340f3a076defccf0fee6c.webm"
+            }
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video": {
+              "src": "https://naturixa.com.co/cdn/shop/videos/c/o/v/edf782a98c4d4a4d89e757d5f6bfc78b.webm"
+            }
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video": {
+              "src": "https://naturixa.com.co/cdn/shop/videos/c/o/v/a6224d5e9d404f859a80d3a30bbd4460.webm"
+            }
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video": {
+              "src": "https://naturixa.com.co/cdn/shop/videos/c/o/v/10d138f5f0c44a03846cb490845f21af.webm"
+            }
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video": {
+              "src": "https://naturixa.com.co/cdn/shop/videos/c/o/v/c9b959c3e5094932bfde48956f6c0e74.webm"
+            }
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "video": {
+              "src": "https://naturixa.com.co/cdn/shop/videos/c/o/v/dce62d968ff4457a94f41d252cadec93.webm"
+            }
+          }
+        }
+      ]
+    },
+    {
       "tipo": "pp-problema",
       "settings": {
         "imagen_1": {

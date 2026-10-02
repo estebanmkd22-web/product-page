@@ -1,0 +1,408 @@
+{%- comment -%}
+  PP · Videos
+  Carrusel deslizable de videos verticales (UGC, testimonios, demostración).
+  Se reproducen sin sonido solo cuando están en pantalla; al tocar uno se
+  activa su sonido.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   :where() deja estos colores con prioridad mínima, así
+   "PP · Estilos globales" siempre los reemplaza. */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+.pp {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pp img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.pp h1,
+.pp h2,
+.pp h3,
+.pp p,
+.pp ul {
+  margin: 0;
+}
+
+.pp ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: usan la fuente de títulos del tema (Dawn) */
+.pp-h {
+  font-family: var(--font-heading-family, inherit);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-videos-{{ section.id }} { --vid-w: {{ section.settings.ancho_movil }}%; }
+  .pp-videos { padding: {{ section.settings.espacio }}px 0; }
+  .pp-videos .pp-head { margin-bottom: 18px; }
+  .pp-videos__track {
+    display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 0 16px; scroll-padding: 0 16px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .pp-videos__track::-webkit-scrollbar { display: none; }
+  .pp-videos__item {
+    position: relative; flex: 0 0 var(--vid-w); scroll-snap-align: start;
+    aspect-ratio: 9 / 16; overflow: hidden; border-radius: var(--pp-radio);
+    background: var(--pp-fondo-2); cursor: pointer;
+  }
+  .pp-videos__item video, .pp-videos__item img {
+    display: block; width: 100%; height: 100%; object-fit: cover;
+  }
+  .pp-videos__sonido {
+    position: absolute; right: 8px; bottom: 8px; display: grid; place-items: center;
+    width: 32px; height: 32px; border: 0; border-radius: 99px; padding: 0;
+    background: rgba(0, 0, 0, .55); color: #fff; font-size: 15px; line-height: 1; pointer-events: none;
+  }
+  .pp-videos__etiqueta {
+    position: absolute; left: 8px; top: 8px; padding: 4px 8px; border-radius: 99px;
+    background: rgba(0, 0, 0, .55); color: #fff; font-size: 12px; font-weight: 700;
+  }
+  .pp-videos .pp-cta { padding: 0 16px; }
+  @media (min-width: 750px) {
+    .pp-videos__track { justify-content: safe center; gap: 14px; padding: 0 24px; }
+    .pp-videos__item { flex-basis: 220px; }
+  }
+</style>
+
+<div id="pp-videos-{{ section.id }}" class="pp pp-videos pp-bg--{{ section.settings.fondo }}">
+  {%- if section.settings.titulo != blank or section.settings.texto != blank -%}
+    <div class="pp-wrap">
+      <div class="pp-head">
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="pp-videos__track" data-pp-videos>
+    {%- for block in section.blocks -%}
+      <div class="pp-videos__item" {{ block.shopify_attributes }}>
+        {%- if block.settings.video != blank -%}
+          {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: false, playsinline: true, preload: 'none', image_size: '480x' }}
+          <span class="pp-videos__sonido" aria-hidden="true">🔇</span>
+        {%- elsif block.settings.video_url != blank -%}
+          <video src="{{ block.settings.video_url }}" loop muted playsinline preload="none"></video>
+          <span class="pp-videos__sonido" aria-hidden="true">🔇</span>
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag }}
+        {%- endif -%}
+        {%- if block.settings.etiqueta != blank -%}<span class="pp-videos__etiqueta">{{ block.settings.etiqueta }}</span>{%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+
+  {%- if section.settings.boton_modo != 'ninguno' -%}
+    <div class="pp-cta">
+      {%- case section.settings.boton_modo -%}
+        {%- when 'easysell' -%}
+          <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn pp-btn--pulse">{{ section.settings.boton_texto }}</a>
+        {%- when 'oferta' -%}
+          <a href="#oferta" class="pp-btn">{{ section.settings.boton_texto }}</a>
+        {%- else -%}
+          <a href="{{ section.settings.boton_enlace | default: '#' }}" class="pp-btn">{{ section.settings.boton_texto }}</a>
+      {%- endcase -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-videos-{{ section.id }}');
+    if (!root) return;
+    var videos = Array.prototype.slice.call(root.querySelectorAll('video'));
+    if (!videos.length) return;
+    var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function icono(v) {
+      var i = v.parentNode.querySelector('.pp-videos__sonido');
+      if (i) i.textContent = v.muted ? '🔇' : '🔊';
+    }
+
+    /* Solo reproduce los videos que están en pantalla: ahorra datos y batería */
+    if ('IntersectionObserver' in window && !reducir) {
+      var io = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (e) {
+          var v = e.target;
+          if (e.isIntersecting) {
+            if (v.preload === 'none') v.preload = 'auto';
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: 0.5 });
+      videos.forEach(function (v) { io.observe(v); });
+    }
+
+    /* Tocar un video: activa su sonido y silencia los demás */
+    videos.forEach(function (v) {
+      v.parentNode.addEventListener('click', function () {
+        var activar = v.muted;
+        videos.forEach(function (o) { o.muted = true; icono(o); });
+        v.muted = !activar;
+        icono(v);
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Videos",
+  "tag": "section",
+  "class": "pp-videos-section",
+  "settings": [
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" },
+        { "value": "oscuro", "label": "Oscuro" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    {
+      "type": "range", "id": "ancho_movil", "label": "Ancho de cada video en celular",
+      "min": 30, "max": 70, "step": 2, "unit": "%", "default": 40,
+      "info": "Con 40% se ven 2 videos y medio: así el cliente entiende que puede deslizar."
+    },
+    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 16 },
+    { "type": "header", "content": "Botón" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "ninguno",
+      "options": [
+        { "value": "ninguno", "label": "Sin botón" },
+        { "value": "easysell", "label": "Abrir formulario EasySell" },
+        { "value": "oferta", "label": "Subir a la caja de compra" },
+        { "value": "enlace", "label": "Ir a un enlace" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Quiero el mío" },
+    { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        { "type": "video", "id": "video", "label": "Video (de tus archivos de Shopify)" },
+        { "type": "url", "id": "video_url", "label": "O enlace directo a un .mp4 (opcional)" },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre el video (opcional)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Videos",
+      "blocks": [
+        { "type": "video" }, { "type": "video" }, { "type": "video" },
+        { "type": "video" }, { "type": "video" }, { "type": "video" }
+      ]
+    }
+  ]
+}
+{% endschema %}
