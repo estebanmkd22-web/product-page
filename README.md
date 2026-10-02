@@ -7,8 +7,7 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 
 | Archivo | Nombre en el personalizador | Para qué sirve |
 |---|---|---|
-| `assets/pp-base.css` | — | Estilos compartidos (obligatorio) |
-| `sections/pp-estilos.liquid` | PP · Estilos globales | Colores de toda la página. Se agrega 1 vez, arriba |
+| `sections/pp-estilos.liquid` | PP · Estilos globales | (Opcional) Cambiar los colores de toda la página. Se agrega 1 vez, arriba |
 | `sections/pp-ticker.liquid` | PP · Barra animada | Franja con mensajes que se mueven |
 | `sections/pp-hero-oferta.liquid` | PP · Hero + Oferta | Galería, reseñas, titular, beneficios, precio, qué incluye y botón |
 
@@ -16,10 +15,12 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 
 > Recomendado: primero haz **Acciones → Duplicar** sobre tu tema y trabaja en la copia.
 
+Cada sección es **un solo archivo**, no depende de nada más.
+
 1. Shopify → **Tienda online → Temas → ⋯ → Editar código**.
-2. Carpeta **assets** → *Agregar un nuevo recurso* → *Crear un archivo en blanco* → nombre `pp-base` y tipo `.css` → pega el contenido de `assets/pp-base.css` → **Guardar**.
-3. Carpeta **sections** → *Agregar una nueva sección* → tipo `liquid`, nombre `pp-estilos` → borra lo que trae, pega el contenido de `sections/pp-estilos.liquid` → **Guardar**.
-4. Repite el paso 3 con `pp-ticker` y `pp-hero-oferta` (y las que vayamos sumando).
+2. Carpeta **sections** → **Agregar una nueva sección** → nombre `pp-hero-oferta` → **Listo**.
+3. Borra todo lo que trae el archivo nuevo, pega el contenido de `sections/pp-hero-oferta.liquid` → **Guardar**.
+4. Repite con las demás secciones que quieras usar.
 
 ## Cómo armar la página de un producto
 
@@ -43,7 +44,12 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 - Hero: cuadrada **1:1** o vertical **4:5**, la misma proporción en todas.
 - Nada de capturas de pantalla en PNG: exporta la foto original.
 
-## Vista previa local (para desarrollo)
+## Para desarrollo
+
+Los estilos compartidos viven en `src/pp-base.css`. Después de cambiarlos, ejecuta
+`node tools/inline-base.mjs` para copiarlos dentro de cada sección.
+
+### Vista previa local
 
 ```bash
 npm install

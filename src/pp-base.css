@@ -1,11 +1,8 @@
-/* =========================================================
-   PP · Base compartida de las secciones de product page
-   Se carga desde cada sección (pp-*.liquid).
-   Los colores se cambian desde la sección "PP · Estilos globales"
-   en el personalizador; aquí solo están los valores por defecto.
-   ========================================================= */
-
-:root {
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   :where() deja estos colores con prioridad mínima, así
+   "PP · Estilos globales" siempre los reemplaza. */
+:where(:root) {
   --pp-acento: #c5453f;
   --pp-acento-suave: #fbeceb;
   --pp-texto: #1e1e1e;
