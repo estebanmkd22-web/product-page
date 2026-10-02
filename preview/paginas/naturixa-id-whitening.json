@@ -1,0 +1,24 @@
+{
+  "titulo": "Naturixa · iD Whitening",
+  "moneda": "Q",
+  "producto": {
+    "title": "iD Whitening - Cuidado Oral y Aliento Fresco",
+    "selected_or_first_available_variant": { "id": 1, "price": 21000, "compare_at_price": null, "available": true },
+    "media": [
+      { "preview_image": { "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp" } }
+    ]
+  },
+  "secciones": [
+    { "tipo": "pp-estilos" },
+    { "tipo": "pp-ticker" },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "precio_antes": 290,
+        "imagen_1": { "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp", "alt": "Frasco iD Whitening" },
+        "imagen_2": { "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_14_sept_2026_04_24_26_p.webp", "alt": "Beneficios iD Whitening" },
+        "imagen_3": { "src": "https://naturixa.com.co/cdn/shop/files/Captura_de_pantalla_2026-09-14_165727.png", "alt": "Lengua con residuos" }
+      }
+    }
+  ]
+}

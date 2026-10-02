@@ -1,0 +1,11 @@
+{
+  "name": "product-page",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "node preview/render.mjs"
+  },
+  "devDependencies": {
+    "liquidjs": "^10.21.0"
+  }
+}

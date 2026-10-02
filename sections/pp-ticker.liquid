@@ -1,0 +1,109 @@
+{%- comment -%}
+  PP · Barra animada (ticker)
+  Franja con mensajes que se desplazan: envío gratis, clientes, garantía…
+{%- endcomment -%}
+
+{{ 'pp-base.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign velocidad = section.settings.velocidad
+  assign total = section.blocks.size
+-%}
+
+<style>
+  #pp-ticker-{{ section.id }} {
+    --tk-bg: {{ section.settings.fondo }};
+    --tk-fg: {{ section.settings.texto }};
+    --tk-dur: {{ velocidad }}s;
+  }
+  .pp-ticker {
+    overflow: hidden;
+    background: var(--tk-bg);
+    color: var(--tk-fg);
+    font-size: {{ section.settings.tamano }}px;
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .pp-ticker__track {
+    display: flex;
+    width: max-content;
+    animation: pp-ticker var(--tk-dur) linear infinite;
+  }
+  .pp-ticker__group {
+    display: flex;
+    flex-shrink: 0;
+  }
+  .pp-ticker__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 0;
+  }
+  .pp-ticker__item::after {
+    content: "{{ section.settings.separador | escape }}";
+    padding: 0 18px;
+    opacity: 0.6;
+  }
+  @keyframes pp-ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .pp-ticker__track { animation: none; }
+  }
+</style>
+
+{%- if total > 0 -%}
+  <div id="pp-ticker-{{ section.id }}" class="pp pp-ticker" role="region" aria-label="Beneficios">
+    <div class="pp-ticker__track">
+      {%- comment -%} Dos copias idénticas para que el loop no tenga saltos {%- endcomment -%}
+      {%- for copia in (1..2) -%}
+        <div class="pp-ticker__group"{% if copia == 2 %} aria-hidden="true"{% endif %}>
+          {%- comment -%} Se repite el set para que llene pantallas anchas {%- endcomment -%}
+          {%- for rep in (1..4) -%}
+            {%- for block in section.blocks -%}
+              <span class="pp-ticker__item" {% if forloop.first and rep == 1 and copia == 1 %}{{ block.shopify_attributes }}{% endif %}>
+                {{- block.settings.texto -}}
+              </span>
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "PP · Barra animada",
+  "tag": "section",
+  "class": "pp-ticker-section",
+  "settings": [
+    { "type": "color", "id": "fondo", "label": "Fondo", "default": "#c5453f" },
+    { "type": "color", "id": "texto", "label": "Texto", "default": "#ffffff" },
+    { "type": "range", "id": "tamano", "label": "Tamaño del texto", "min": 11, "max": 20, "step": 1, "unit": "px", "default": 14 },
+    { "type": "range", "id": "velocidad", "label": "Duración de una vuelta (más = más lento)", "min": 10, "max": 80, "step": 2, "unit": "s", "default": 30 },
+    { "type": "text", "id": "separador", "label": "Separador entre mensajes", "default": "•" }
+  ],
+  "blocks": [
+    {
+      "type": "mensaje",
+      "name": "Mensaje",
+      "settings": [
+        { "type": "text", "id": "texto", "label": "Texto (puedes usar emojis)", "default": "Envío GRATIS a toda Guatemala 🚚" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Barra animada",
+      "blocks": [
+        { "type": "mensaje", "settings": { "texto": "Envío GRATIS a toda Guatemala 🚚" } },
+        { "type": "mensaje", "settings": { "texto": "Pagás al recibir 💵" } },
+        { "type": "mensaje", "settings": { "texto": "+5.600 clientes felices ⭐⭐⭐⭐⭐" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

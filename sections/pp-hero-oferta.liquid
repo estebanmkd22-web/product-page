@@ -1,0 +1,355 @@
+{%- comment -%}
+  PP · Hero + Oferta
+  Lo primero que ve el cliente: galería, reseñas, titular, beneficios
+  y la caja de compra (precio, ahorro, qué incluye, botón).
+  El botón puede abrir EasySell (contraentrega), agregar al carrito
+  o llevar a un enlace.
+{%- endcomment -%}
+
+{{ 'pp-base.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign p = section.settings.producto | default: product
+  assign variante = p.selected_or_first_available_variant
+
+  assign precio = variante.price
+  if section.settings.precio_manual != blank
+    assign precio = section.settings.precio_manual | times: 100
+  endif
+
+  assign precio_antes = 0
+  if variante.compare_at_price > precio
+    assign precio_antes = variante.compare_at_price
+  endif
+  if section.settings.precio_antes != blank
+    assign precio_antes = section.settings.precio_antes | times: 100
+  endif
+  assign ahorro = precio_antes | minus: precio
+
+  assign imagenes = ''
+  for i in (1..6)
+    assign key = 'imagen_' | append: i
+    if section.settings[key] != blank
+      assign imagenes = imagenes | append: key | append: ','
+    endif
+  endfor
+  assign imagenes = imagenes | split: ','
+-%}
+
+<style>
+  #pp-hero-{{ section.id }} { background: {{ section.settings.fondo }}; }
+  .pp-hero { padding: 0 0 36px; }
+  .pp-hero__grid { display: grid; gap: 20px; }
+  .pp-hero__media { margin: 0 -16px; position: relative; }
+  .pp-hero__slides {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .pp-hero__slides::-webkit-scrollbar { display: none; }
+  .pp-hero__slide { flex: 0 0 100%; scroll-snap-align: center; aspect-ratio: {{ section.settings.proporcion }}; background: var(--pp-fondo-2); }
+  .pp-hero__slide img { width: 100%; height: 100%; object-fit: cover; }
+  .pp-hero__dots { display: flex; justify-content: center; gap: 6px; padding-top: 10px; }
+  .pp-hero__dots button {
+    width: 7px; height: 7px; padding: 0; border: 0; border-radius: 99px;
+    background: var(--pp-borde); cursor: pointer; transition: width .2s, background .2s;
+  }
+  .pp-hero__dots button[aria-current="true"] { width: 20px; background: var(--pp-texto); }
+
+  .pp-hero__info { display: flex; flex-direction: column; gap: 14px; }
+  .pp-hero__rating { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+  .pp-hero__title { font-size: clamp(28px, 7.4vw, 44px); }
+  .pp-hero__text { font-size: 16px; }
+  .pp-hero__bens { display: grid; gap: 6px; font-size: 15px; font-weight: 600; }
+  .pp-hero__bens li { display: flex; align-items: flex-start; gap: 8px; }
+  .pp-hero__bens li::before {
+    content: "{{ section.settings.icono_beneficios }}"; flex: 0 0 auto;
+    color: var(--pp-acento); font-weight: 900; line-height: 1.5;
+  }
+
+  .pp-offer {
+    margin-top: 6px; padding: 18px 16px;
+    border: 1.5px solid var(--pp-acento); border-radius: var(--pp-radio);
+    background: var(--pp-fondo);
+  }
+  .pp-offer__price { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+  .pp-offer__now { font-size: 36px; font-weight: 900; line-height: 1; letter-spacing: -0.02em; }
+  .pp-offer__before { font-size: 20px; font-weight: 600; color: var(--pp-texto-2); text-decoration: line-through; }
+  .pp-offer__save {
+    padding: 5px 9px; border-radius: 6px; background: var(--pp-acento); color: #fff;
+    font-size: 12px; font-weight: 800; letter-spacing: .03em; text-transform: uppercase;
+  }
+  .pp .pp-offer__inc-title { margin: 18px 0 4px; font-size: 14px; font-weight: 600; }
+  .pp-offer__list li {
+    display: flex; gap: 10px; padding: 9px 0; font-size: 14px;
+    border-top: 1px solid var(--pp-borde);
+  }
+  .pp-offer__list li:first-child { border-top: 0; }
+  .pp-offer__list li::before { content: "✓"; color: var(--pp-ok); font-weight: 900; }
+  .pp-offer__cta { margin-top: 14px; }
+  .pp .pp-offer__note { margin-top: 10px; font-size: 13px; text-align: center; color: var(--pp-texto-2); }
+  .pp-offer__pay { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 12px; }
+  .pp-offer__pay svg { width: 38px; height: 24px; }
+  .pp-offer__pay span {
+    padding: 4px 8px; border: 1px solid var(--pp-borde); border-radius: 6px;
+    font-size: 11px; font-weight: 700; color: var(--pp-texto-2);
+  }
+
+  @media (min-width: 900px) {
+    .pp-hero { padding: 40px 0 64px; }
+    .pp-hero__grid { grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: start; }
+    .pp-hero__media { margin: 0; position: sticky; top: 24px; }
+    .pp-hero__slide, .pp-hero__slide img { border-radius: var(--pp-radio); }
+    .pp-hero__slides { gap: 12px; }
+  }
+</style>
+
+<div id="pp-hero-{{ section.id }}" class="pp pp-hero">
+  <div class="pp-wrap pp-hero__grid">
+
+    {%- comment -%} ===== Galería ===== {%- endcomment -%}
+    <div class="pp-hero__media">
+      <div class="pp-hero__slides" data-pp-slides>
+        {%- if imagenes.size > 0 -%}
+          {%- for key in imagenes -%}
+            {%- assign img = section.settings[key] -%}
+            {%- assign alt = img.alt | default: p.title -%}
+            <div class="pp-hero__slide">
+              {%- if forloop.first -%}
+                {{ img | image_url: width: 1200 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 900px) 560px, 100vw', widths: '400, 600, 800, 1000, 1200', alt: alt }}
+              {%- else -%}
+                {{ img | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 560px, 100vw', widths: '400, 600, 800, 1000, 1200', alt: alt }}
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        {%- else -%}
+          {%- for media in p.media limit: 6 -%}
+            <div class="pp-hero__slide">
+              {%- if forloop.first -%}
+                {{ media.preview_image | image_url: width: 1200 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '(min-width: 900px) 560px, 100vw', widths: '400, 600, 800, 1000, 1200' }}
+              {%- else -%}
+                {{ media.preview_image | image_url: width: 1200 | image_tag: loading: 'lazy', sizes: '(min-width: 900px) 560px, 100vw', widths: '400, 600, 800, 1000, 1200' }}
+              {%- endif -%}
+            </div>
+          {%- else -%}
+            <div class="pp-hero__slide">{{ 'product-1' | placeholder_svg_tag }}</div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+      <div class="pp-hero__dots" data-pp-dots></div>
+    </div>
+
+    {%- comment -%} ===== Información y oferta ===== {%- endcomment -%}
+    <div class="pp-hero__info">
+      {%- if section.settings.mostrar_rating -%}
+        <div class="pp-hero__rating">
+          <span class="pp-stars" aria-hidden="true">★★★★★</span>
+          <span><strong>{{ section.settings.rating }}</strong> <span class="pp-muted">{{ section.settings.rating_texto }}</span></span>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.titulo != blank -%}
+        <h1 class="pp-h pp-hero__title">{{ section.settings.titulo }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.texto != blank -%}
+        <p class="pp-hero__text pp-muted">{{ section.settings.texto }}</p>
+      {%- endif -%}
+
+      {%- assign bens = section.blocks | where: 'type', 'beneficio' -%}
+      {%- if bens.size > 0 -%}
+        <ul class="pp-hero__bens">
+          {%- for block in bens -%}
+            <li {{ block.shopify_attributes }}>{{ block.settings.texto }}</li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      <div class="pp-offer" id="oferta">
+        <div class="pp-offer__price">
+          <span class="pp-offer__now">{{ precio | money_without_trailing_zeros }}</span>
+          {%- if ahorro > 0 -%}
+            <span class="pp-offer__before">{{ precio_antes | money_without_trailing_zeros }}</span>
+            <span class="pp-offer__save">{{ section.settings.ahorro_texto }} {{ ahorro | money_without_trailing_zeros }}</span>
+          {%- endif -%}
+        </div>
+
+        {%- assign incluye = section.blocks | where: 'type', 'incluye' -%}
+        {%- if incluye.size > 0 -%}
+          {%- if section.settings.incluye_titulo != blank -%}
+            <p class="pp-offer__inc-title">{{ section.settings.incluye_titulo }}</p>
+          {%- endif -%}
+          <ul class="pp-offer__list">
+            {%- for block in incluye -%}
+              <li {{ block.shopify_attributes }}><span>{{ block.settings.texto }}</span></li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        <div class="pp-offer__cta">
+          {%- capture boton_contenido -%}
+            <span>{{ section.settings.boton_texto }}{% if section.settings.boton_subtexto != blank %}<small>{{ section.settings.boton_subtexto }}</small>{% endif %}</span>
+          {%- endcapture -%}
+          {%- assign pulse = '' -%}
+          {%- if section.settings.boton_pulse -%}{%- assign pulse = ' pp-btn--pulse' -%}{%- endif -%}
+
+          {%- case section.settings.boton_modo -%}
+            {%- when 'easysell' -%}
+              <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn{{ pulse }}">{{ boton_contenido }}</a>
+            {%- when 'carrito' -%}
+              {%- form 'product', p -%}
+                <input type="hidden" name="id" value="{{ variante.id }}">
+                {%- if section.settings.ir_a_checkout -%}<input type="hidden" name="return_to" value="/checkout">{%- endif -%}
+                <button type="submit" class="pp-btn{{ pulse }}"{% unless variante.available %} disabled{% endunless %}>{{ boton_contenido }}</button>
+              {%- endform -%}
+            {%- else -%}
+              <a href="{{ section.settings.boton_enlace | default: '#' }}" class="pp-btn{{ pulse }}">{{ boton_contenido }}</a>
+          {%- endcase -%}
+        </div>
+
+        {%- if section.settings.nota != blank -%}
+          <p class="pp-offer__note">{{ section.settings.nota }}</p>
+        {%- endif -%}
+
+        {%- if section.settings.mostrar_pagos -%}
+          <div class="pp-offer__pay">
+            {%- if section.settings.pagos_texto != blank -%}
+              {%- assign pagos = section.settings.pagos_texto | split: ',' -%}
+              {%- for pago in pagos -%}<span>{{ pago | strip }}</span>{%- endfor -%}
+            {%- else -%}
+              {%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag }}{%- endfor -%}
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-hero-{{ section.id }}');
+    if (!root) return;
+    var track = root.querySelector('[data-pp-slides]');
+    var dotsBox = root.querySelector('[data-pp-dots]');
+    var slides = track.children;
+    if (slides.length < 2) return;
+    var dots = [];
+    for (var i = 0; i < slides.length; i++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.setAttribute('aria-label', 'Imagen ' + (i + 1));
+      b.addEventListener('click', (function (n) {
+        return function () { track.scrollTo({ left: slides[n].offsetLeft - track.offsetLeft, behavior: 'smooth' }); };
+      })(i));
+      dotsBox.appendChild(b);
+      dots.push(b);
+    }
+    function marcar() {
+      var n = Math.round(track.scrollLeft / track.clientWidth);
+      dots.forEach(function (d, j) { d.setAttribute('aria-current', j === n ? 'true' : 'false'); });
+    }
+    track.addEventListener('scroll', function () { window.requestAnimationFrame(marcar); }, { passive: true });
+    marcar();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Hero + Oferta",
+  "tag": "section",
+  "class": "pp-hero-section",
+  "settings": [
+    { "type": "product", "id": "producto", "label": "Producto (vacío = el producto de esta página)" },
+    { "type": "color", "id": "fondo", "label": "Fondo de la sección", "default": "#ffffff" },
+
+    { "type": "header", "content": "Galería" },
+    { "type": "paragraph", "content": "Si no subes imágenes aquí, se usan las del producto. Usa fotos cuadradas o verticales SIN texto encima, en WebP, de máximo 1200 px." },
+    { "type": "image_picker", "id": "imagen_1", "label": "Imagen 1 (la principal)" },
+    { "type": "image_picker", "id": "imagen_2", "label": "Imagen 2" },
+    { "type": "image_picker", "id": "imagen_3", "label": "Imagen 3" },
+    { "type": "image_picker", "id": "imagen_4", "label": "Imagen 4" },
+    { "type": "image_picker", "id": "imagen_5", "label": "Imagen 5" },
+    { "type": "image_picker", "id": "imagen_6", "label": "Imagen 6" },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de las imágenes", "default": "1 / 1",
+      "options": [
+        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "4 / 5", "label": "Vertical (4:5)" },
+        { "value": "3 / 4", "label": "Vertical alto (3:4)" }
+      ]
+    },
+
+    { "type": "header", "content": "Reseñas y titular" },
+    { "type": "checkbox", "id": "mostrar_rating", "label": "Mostrar estrellas", "default": true },
+    { "type": "text", "id": "rating", "label": "Calificación", "default": "4.8/5" },
+    { "type": "text", "id": "rating_texto", "label": "Texto junto a la calificación", "default": "· 458 reseñas" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (lo que pongas en cursiva sale en color de acento)", "default": "El mal aliento no se va <em>solo con el cepillo.</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto debajo del titular", "default": "Llega a las zonas que tu cepillo no alcanza — lengua, mejillas y línea de encías — con una fórmula que actúa desde el primer uso." },
+    {
+      "type": "select", "id": "icono_beneficios", "label": "Viñeta de los beneficios", "default": "✚",
+      "options": [
+        { "value": "✚", "label": "Cruz ✚" },
+        { "value": "✓", "label": "Check ✓" },
+        { "value": "→", "label": "Flecha →" },
+        { "value": "•", "label": "Punto •" }
+      ]
+    },
+
+    { "type": "header", "content": "Precio" },
+    { "type": "paragraph", "content": "Por defecto se usa el precio del producto en Shopify y su 'precio de comparación'. Llena estos campos solo si quieres mostrar otro valor." },
+    { "type": "number", "id": "precio_manual", "label": "Precio a mostrar (opcional, ej: 210)" },
+    { "type": "number", "id": "precio_antes", "label": "Precio antes / tachado (opcional, ej: 290)" },
+    { "type": "text", "id": "ahorro_texto", "label": "Texto de la etiqueta de ahorro", "default": "Ahorrás" },
+    { "type": "text", "id": "incluye_titulo", "label": "Título de la lista de lo que incluye", "default": "Con tu pedido, te llevás:" },
+
+    { "type": "header", "content": "Botón de compra" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "easysell",
+      "options": [
+        { "value": "easysell", "label": "Abrir formulario EasySell (contraentrega)" },
+        { "value": "carrito", "label": "Agregar al carrito de Shopify" },
+        { "value": "enlace", "label": "Ir a un enlace" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Ordenar ahora — Pagás al recibir" },
+    { "type": "text", "id": "boton_subtexto", "label": "Texto pequeño debajo (opcional)" },
+    { "type": "checkbox", "id": "boton_pulse", "label": "Animación de latido", "default": true },
+    { "type": "checkbox", "id": "ir_a_checkout", "label": "Modo carrito: ir directo al pago", "default": true },
+    { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" },
+    { "type": "text", "id": "nota", "label": "Nota debajo del botón", "default": "Te escribiremos por WhatsApp para confirmar tu pedido" },
+    { "type": "checkbox", "id": "mostrar_pagos", "label": "Mostrar métodos de pago", "default": false },
+    { "type": "text", "id": "pagos_texto", "label": "Métodos de pago en texto, separados por coma (vacío = logos de Shopify)", "default": "Contraentrega, Efectivo, Tarjeta" }
+  ],
+  "blocks": [
+    {
+      "type": "beneficio",
+      "name": "Beneficio",
+      "settings": [
+        { "type": "inline_richtext", "id": "texto", "label": "Beneficio", "default": "Aliento fresco por más tiempo" }
+      ]
+    },
+    {
+      "type": "incluye",
+      "name": "Incluye (oferta)",
+      "settings": [
+        { "type": "inline_richtext", "id": "texto", "label": "Qué incluye", "default": "Envío <strong>GRATIS</strong> a toda Guatemala" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Hero + Oferta",
+      "blocks": [
+        { "type": "beneficio", "settings": { "texto": "Aliento fresco por más tiempo" } },
+        { "type": "beneficio", "settings": { "texto": "Más confianza al hablar de cerca" } },
+        { "type": "beneficio", "settings": { "texto": "Una rutina oral más completa" } },
+        { "type": "incluye", "settings": { "texto": "1 frasco iD Whitening (237 ml)" } },
+        { "type": "incluye", "settings": { "texto": "Envío <strong>GRATIS</strong> a toda Guatemala" } },
+        { "type": "incluye", "settings": { "texto": "Pago 100% contraentrega" } },
+        { "type": "incluye", "settings": { "texto": "Plan personalizado para aliento fresco + 15% off en tu próxima compra" } },
+        { "type": "incluye", "settings": { "texto": "Si el producto llega regado o dañado, te lo reponemos" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,52 @@
+{%- comment -%}
+  PP · Estilos globales
+  Agrégala UNA vez por plantilla (arriba del todo). No se ve en la página:
+  solo define los colores que usan todas las secciones PP.
+{%- endcomment -%}
+
+{{ 'pp-base.css' | asset_url | stylesheet_tag }}
+
+<style>
+  :root {
+    --pp-acento: {{ section.settings.acento }};
+    --pp-acento-suave: {{ section.settings.acento | color_mix: '#ffffff', 12 }};
+    --pp-texto: {{ section.settings.texto }};
+    --pp-texto-2: {{ section.settings.texto_2 }};
+    --pp-fondo: {{ section.settings.fondo }};
+    --pp-fondo-2: {{ section.settings.fondo_2 }};
+    --pp-ok: {{ section.settings.ok }};
+    --pp-estrella: {{ section.settings.estrella }};
+    --pp-boton: {{ section.settings.boton }};
+    --pp-boton-texto: {{ section.settings.boton_texto }};
+    --pp-radio: {{ section.settings.radio }}px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "PP · Estilos globales",
+  "tag": "div",
+  "class": "pp-estilos",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Colores de todas las secciones PP de esta página. Agrega esta sección una sola vez, arriba del todo."
+    },
+    { "type": "header", "content": "Marca" },
+    { "type": "color", "id": "acento", "label": "Color de acento (títulos resaltados, etiquetas)", "default": "#c5453f" },
+    { "type": "color", "id": "boton", "label": "Fondo del botón de compra", "default": "#c5453f" },
+    { "type": "color", "id": "boton_texto", "label": "Texto del botón de compra", "default": "#ffffff" },
+    { "type": "header", "content": "Texto y fondos" },
+    { "type": "color", "id": "texto", "label": "Texto principal", "default": "#1e1e1e" },
+    { "type": "color", "id": "texto_2", "label": "Texto secundario", "default": "#5c5c5c" },
+    { "type": "color", "id": "fondo", "label": "Fondo", "default": "#ffffff" },
+    { "type": "color", "id": "fondo_2", "label": "Fondo alterno (franjas)", "default": "#f7f4f0" },
+    { "type": "header", "content": "Detalles" },
+    { "type": "color", "id": "ok", "label": "Color de los checks ✓", "default": "#2e8b57" },
+    { "type": "color", "id": "estrella", "label": "Color de las estrellas", "default": "#f5b301" },
+    { "type": "range", "id": "radio", "label": "Redondeo de tarjetas e imágenes", "min": 0, "max": 28, "step": 2, "unit": "px", "default": 14 }
+  ],
+  "presets": [{ "name": "PP · Estilos globales" }]
+}
+{% endschema %}
