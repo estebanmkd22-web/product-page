@@ -66,12 +66,13 @@
   padding: 0 16px;
 }
 
-/* Títulos: usan la fuente de títulos del tema (Dawn) */
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
 .pp-h {
-  font-family: var(--font-heading-family, inherit);
-  font-weight: 800;
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
   color: var(--pp-texto);
 }
 
@@ -346,6 +347,11 @@
   .pp-offer__list li::before { content: "✓"; color: var(--pp-ok); font-weight: 900; }
   .pp-offer__cta { margin-top: 14px; }
   .pp .pp-offer__note { margin-top: 10px; font-size: 13px; text-align: center; color: var(--pp-texto-2); }
+  .pp-hero__trans { display: grid; gap: 10px; padding: 14px; border-radius: var(--pp-radio); background: var(--pp-fondo-2); font-size: 15px; }
+  .pp-hero__trans li { display: flex; align-items: flex-start; gap: 10px; }
+  .pp-hero__trans b { color: var(--pp-acento); }
+  .pp .pp-offer__entrega { display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 10px; font-size: 14px; color: var(--pp-texto-2); }
+  .pp-offer__entrega .pp-ico { font-size: 18px; color: var(--pp-acento); }
   .pp-offer__pay { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 12px; }
   .pp-offer__pay svg { width: 38px; height: 24px; }
   .pp-offer__pay span {
@@ -436,6 +442,9 @@
 {%- when 'pago' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
 {%- when 'corazon' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
 {%- when 'lupa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>
+{%- when 'regalo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9.5 8 12 8zm0 0c1.5-3 5-3.5 5-1.2C17 8 14.5 8 12 8z"/></svg>
+{%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
+{%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
 {%- endcase -%}
 {%- comment -%}PP-ICONOS:END{%- endcomment -%}</span>{%- endif -%}
               <span>{{ block.settings.texto }}</span>
@@ -444,6 +453,40 @@
         </ul>
       {%- endif -%}
 
+      {%- assign trans = section.blocks | where: 'type', 'transformacion' -%}
+      {%- if trans.size > 0 -%}
+        <ul class="pp-hero__trans">
+          {%- for block in trans -%}
+            <li {{ block.shopify_attributes }}>
+              {%- assign icono = block.settings.icono -%}
+              {%- if icono != 'ninguno' -%}<span class="pp-hero__ico">{%- comment -%}PP-ICONOS:START{%- endcomment -%}
+{%- case icono -%}
+{%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
+{%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+{%- when 'frescura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3 0 3-2 6-2s3 2 6 2 3-2 6-2M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg>
+{%- when 'hoja' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15"/><path d="M5 19l7-7"/></svg>
+{%- when 'sonrisa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></svg>
+{%- when 'brillo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7L19 16z"/></svg>
+{%- when 'check' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+{%- when 'reloj' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+{%- when 'gota' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z"/></svg>
+{%- when 'calendario' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>
+{%- when 'camion' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+{%- when 'pago' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+{%- when 'corazon' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+{%- when 'lupa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>
+{%- when 'regalo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9.5 8 12 8zm0 0c1.5-3 5-3.5 5-1.2C17 8 14.5 8 12 8z"/></svg>
+{%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
+{%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
+{%- endcase -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}</span>{%- endif -%}
+              <span>{{ block.settings.de }} <b aria-hidden="true">→</b> {{ block.settings.a }}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- if section.settings.mostrar_oferta -%}
       <div class="pp-offer" id="oferta">
         <div class="pp-offer__price">
           <span class="pp-offer__now">{{ precio | money_without_trailing_zeros }}</span>
@@ -500,7 +543,32 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        {%- if section.settings.entrega_texto != blank -%}
+          <p class="pp-offer__entrega">{%- assign icono = 'camion' -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
+{%- case icono -%}
+{%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
+{%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+{%- when 'frescura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3 0 3-2 6-2s3 2 6 2 3-2 6-2M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg>
+{%- when 'hoja' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15"/><path d="M5 19l7-7"/></svg>
+{%- when 'sonrisa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></svg>
+{%- when 'brillo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7L19 16z"/></svg>
+{%- when 'check' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+{%- when 'reloj' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+{%- when 'gota' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z"/></svg>
+{%- when 'calendario' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>
+{%- when 'camion' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+{%- when 'pago' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+{%- when 'corazon' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+{%- when 'lupa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>
+{%- when 'regalo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9.5 8 12 8zm0 0c1.5-3 5-3.5 5-1.2C17 8 14.5 8 12 8z"/></svg>
+{%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
+{%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
+{%- endcase -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}<span>{{ section.settings.entrega_texto }}</span></p>
+        {%- endif -%}
       </div>
+      {%- endif -%}
     </div>
   </div>
 </div>
@@ -576,6 +644,7 @@
     },
 
     { "type": "header", "content": "Precio" },
+    { "type": "checkbox", "id": "mostrar_oferta", "label": "Mostrar la caja de precio y botón", "default": true, "info": "Desactívala si usas la sección PP · Ofertas (selector de packs) justo debajo." },
     { "type": "paragraph", "content": "Por defecto se usa el precio del producto en Shopify y su 'precio de comparación'. Llena estos campos solo si quieres mostrar otro valor." },
     { "type": "number", "id": "precio_manual", "label": "Precio a mostrar (opcional, ej: 210)" },
     { "type": "number", "id": "precio_antes", "label": "Precio antes / tachado (opcional, ej: 290)" },
@@ -598,6 +667,7 @@
     { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" },
     { "type": "text", "id": "nota", "label": "Nota debajo del botón", "default": "Te escribiremos por WhatsApp para confirmar tu pedido" },
     { "type": "checkbox", "id": "mostrar_pagos", "label": "Mostrar métodos de pago", "default": false },
+    { "type": "text", "id": "entrega_texto", "label": "Línea de entrega (ej: Recibe en 2-3 días)" },
     { "type": "text", "id": "pagos_texto", "label": "Métodos de pago (separados por coma)", "info": "Déjalo vacío para mostrar los logos de pago de Shopify.", "default": "Contraentrega, Efectivo, Tarjeta" }
   ],
   "blocks": [
@@ -607,6 +677,15 @@
       "settings": [
         { "type": "inline_richtext", "id": "texto", "label": "Beneficio", "default": "Aliento fresco por más tiempo" },
         { "type": "select", "id": "icono", "label": "Ícono (opcional)", "default": "ninguno", "options": [{"value": "ninguno", "label": "Sin ícono (usa la viñeta)"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}] }
+      ]
+    },
+    {
+      "type": "transformacion",
+      "name": "De → a (transformación)",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "check", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}] },
+        { "type": "text", "id": "de", "label": "De (cómo está hoy)", "default": "De boca pesada" },
+        { "type": "text", "id": "a", "label": "A (cómo queda)", "default": "a sensación de limpieza completa" }
       ]
     },
     {

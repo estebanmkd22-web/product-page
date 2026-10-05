@@ -64,12 +64,13 @@
   padding: 0 16px;
 }
 
-/* Títulos: usan la fuente de títulos del tema (Dawn) */
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
 .pp-h {
-  font-family: var(--font-heading-family, inherit);
-  font-weight: 800;
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
   color: var(--pp-texto);
 }
 
@@ -281,8 +282,21 @@
     --pp-boton: {{ section.settings.boton }};
     --pp-boton-texto: {{ section.settings.boton_texto }};
     --pp-radio: {{ section.settings.radio }}px;
+    {%- if section.settings.fuente_propia %}
+    --pp-font-titulos: {{ section.settings.fuente_titulos.family }}, {{ section.settings.fuente_titulos.fallback_families }};
+    --pp-peso-titulos: {{ section.settings.fuente_titulos.weight }};
+    {%- endif %}
+    {%- if section.settings.mayusculas %}
+    --pp-mayus-titulos: uppercase;
+    --pp-espaciado-titulos: 0;
+    {%- endif %}
   }
 </style>
+{%- if section.settings.fuente_propia -%}
+<style>
+  {{ section.settings.fuente_titulos | font_face: font_display: 'swap' }}
+</style>
+{%- endif -%}
 
 {% schema %}
 {
@@ -307,7 +321,11 @@
     { "type": "header", "content": "Detalles" },
     { "type": "color", "id": "ok", "label": "Color de los checks ✓", "default": "#2e8b57" },
     { "type": "color", "id": "estrella", "label": "Color de las estrellas", "default": "#f5b301" },
-    { "type": "range", "id": "radio", "label": "Redondeo de tarjetas e imágenes", "min": 0, "max": 28, "step": 2, "unit": "px", "default": 14 }
+    { "type": "range", "id": "radio", "label": "Redondeo de tarjetas e imágenes", "min": 0, "max": 28, "step": 2, "unit": "px", "default": 14 },
+    { "type": "header", "content": "Títulos" },
+    { "type": "checkbox", "id": "fuente_propia", "label": "Usar otra fuente para los títulos", "default": false, "info": "Si no la activas, se usa la fuente de títulos de tu tema." },
+    { "type": "font_picker", "id": "fuente_titulos", "label": "Fuente de los títulos", "default": "helvetica_n7", "info": "Para un estilo deportivo prueba fuentes condensadas como Oswald." },
+    { "type": "checkbox", "id": "mayusculas", "label": "Títulos en MAYÚSCULAS", "default": false }
   ],
   "presets": [{ "name": "PP · Estilos globales" }]
 }

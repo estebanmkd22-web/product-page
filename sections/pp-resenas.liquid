@@ -1,0 +1,411 @@
+{%- comment -%}
+  PP · Reseñas
+  Calificación general + tarjetas de reseña (estrellas, fecha, texto,
+  nombre y ciudad). Muestra unas cuantas y el resto con "Ver más".
+  Usa solo reseñas reales de tus clientes.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  .pp-res__resumen { display: flex; align-items: center; gap: 14px; padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--pp-borde); }
+  .pp-res__nota { font-family: var(--pp-font-titulos, var(--font-heading-family, inherit)); font-size: 46px; font-weight: 900; line-height: 1; }
+  .pp-res__resumen .pp-stars { font-size: 20px; }
+  .pp-res__resumen small { display: block; margin-top: 4px; font-size: 14px; color: var(--pp-texto-2); }
+  .pp-res__lista { display: grid; gap: 14px; }
+  .pp-res__card {
+    display: grid; gap: 12px; padding: 20px; border-radius: calc(var(--pp-radio) + 4px);
+    background: var(--pp-fondo); box-shadow: 0 4px 18px rgba(0, 0, 0, .05);
+  }
+  .pp-bg--fondo .pp-res__card { background: var(--pp-fondo-2); box-shadow: none; }
+  .pp-res__card[hidden] { display: none; }
+  .pp-res__top { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+  .pp-res__top time { font-size: 13px; color: var(--pp-texto-2); }
+  .pp-res__card p { font-size: 15px; line-height: 1.55; }
+  .pp-res__autor { display: flex; align-items: center; gap: 12px; }
+  .pp-res__avatar {
+    display: grid; place-items: center; flex: 0 0 auto; width: 42px; height: 42px; overflow: hidden; border-radius: 50%;
+    background: var(--pp-texto); color: var(--pp-acento); font-size: 15px; font-weight: 900;
+  }
+  .pp-res__avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .pp-res__autor strong { display: block; font-size: 15px; }
+  .pp-res__autor div > span { font-size: 13px; color: var(--pp-texto-2); }
+  .pp-res__ok { color: #2e9e5b; font-weight: 700; }
+  .pp-res__mas { margin: 20px auto 0; max-width: 320px; }
+  .pp-res__mas button {
+    width: 100%; min-height: 48px; border: 1.5px solid var(--pp-texto); border-radius: 999px; background: transparent;
+    color: var(--pp-texto); font: inherit; font-size: 14px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; cursor: pointer;
+  }
+  @media (min-width: 750px) {
+    .pp-res__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+</style>
+
+{%- assign visibles = section.settings.visibles -%}
+
+<div id="pp-res-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap" style="max-width: 920px">
+    <div class="pp-head pp-head--izq">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow" style="color:var(--pp-texto-2)">{{ section.settings.etiqueta }}</p>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+    </div>
+
+    {%- if section.settings.nota != blank -%}
+      <div class="pp-res__resumen">
+        <span class="pp-res__nota">{{ section.settings.nota }}</span>
+        <div>
+          <span class="pp-stars" aria-hidden="true">★★★★★</span>
+          {%- if section.settings.cantidad != blank -%}<small>{{ section.settings.cantidad }}</small>{%- endif -%}
+        </div>
+      </div>
+    {%- endif -%}
+
+    <div class="pp-res__lista">
+      {%- for block in section.blocks -%}
+        <article class="pp-res__card"{% if forloop.index > visibles %} hidden data-pp-extra{% endif %} {{ block.shopify_attributes }}>
+          <div class="pp-res__top">
+            <span class="pp-stars" aria-label="{{ block.settings.estrellas }} de 5 estrellas">
+              {%- for i in (1..5) -%}{%- if i <= block.settings.estrellas -%}★{%- else -%}☆{%- endif -%}{%- endfor -%}
+            </span>
+            {%- if block.settings.fecha != blank -%}<time>{{ block.settings.fecha }}</time>{%- endif -%}
+          </div>
+          <p>“{{ block.settings.texto }}”</p>
+          <div class="pp-res__autor">
+            <span class="pp-res__avatar" aria-hidden="true">
+              {%- if block.settings.foto != blank -%}
+                {{ block.settings.foto | image_url: width: 100 | image_tag: loading: 'lazy', alt: '' }}
+              {%- else -%}
+                {{ block.settings.nombre | slice: 0 | upcase }}
+              {%- endif -%}
+            </span>
+            <div>
+              <strong>{{ block.settings.nombre }}</strong>
+              <span>{{ block.settings.ciudad }}{% if block.settings.verificado %}{% if block.settings.ciudad != blank %} · {% endif %}<span class="pp-res__ok">✓ Compra verificada</span>{% endif %}</span>
+            </div>
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.blocks.size > visibles -%}
+      <div class="pp-res__mas"><button type="button" data-pp-res-mas>{{ section.settings.boton_mas }}</button></div>
+    {%- endif -%}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-res-{{ section.id }}');
+    var btn = root && root.querySelector('[data-pp-res-mas]');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      root.querySelectorAll('[data-pp-extra]').forEach(function (el) { el.hidden = false; });
+      btn.parentNode.hidden = true;
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Reseñas",
+  "tag": "section",
+  "class": "pp-resenas-section",
+  "settings": [
+    { "type": "paragraph", "content": "Usa solo reseñas reales de tus clientes: copia el texto, el nombre y la ciudad tal como te los dieron." },
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" }
+      ]
+    },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Experiencias de clientes" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular", "default": "Lo que dicen quienes <em>ya lo probaron.</em>" },
+    { "type": "text", "id": "nota", "label": "Calificación general (ej: 4,8)", "default": "4,8" },
+    { "type": "text", "id": "cantidad", "label": "Texto junto a las estrellas", "default": "458 reseñas" },
+    { "type": "range", "id": "visibles", "label": "Reseñas visibles antes de \"Ver más\"", "min": 2, "max": 12, "step": 1, "default": 4 },
+    { "type": "text", "id": "boton_mas", "label": "Texto del botón", "default": "Ver más opiniones" }
+  ],
+  "blocks": [
+    {
+      "type": "resena",
+      "name": "Reseña",
+      "settings": [
+        { "type": "range", "id": "estrellas", "label": "Estrellas", "min": 1, "max": 5, "step": 1, "default": 5 },
+        { "type": "textarea", "id": "texto", "label": "Lo que dijo el cliente", "default": "Escribe aquí la reseña real de tu cliente." },
+        { "type": "text", "id": "nombre", "label": "Nombre", "default": "Nombre" },
+        { "type": "text", "id": "ciudad", "label": "Ciudad" },
+        { "type": "text", "id": "fecha", "label": "Fecha (ej: 12 sep 2026)" },
+        { "type": "image_picker", "id": "foto", "label": "Foto (opcional; sin foto sale la inicial)" },
+        { "type": "checkbox", "id": "verificado", "label": "Mostrar \"Compra verificada\"", "default": false }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "PP · Reseñas", "blocks": [ { "type": "resena" }, { "type": "resena" }, { "type": "resena" } ] }
+  ]
+}
+{% endschema %}

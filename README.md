@@ -22,6 +22,13 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-zonas.liquid` | PP · Zonas | Imagen con etiquetas posicionadas + fotos de detalle |
 | `sections/pp-beneficios.liquid` | PP · Beneficios | Imagen central rodeada de beneficios con ícono |
 | `sections/pp-secuencia.liquid` | PP · Secuencia | Imagen + fotos en secuencia con flechas |
+| `sections/pp-ofertas.liquid` | PP · Ofertas | Selector de packs con descuento, precio por porción y regalos |
+| `sections/pp-comparativa.liquid` | PP · Comparativa | Tabla tu producto vs. la competencia |
+| `sections/pp-datos.liquid` | PP · Datos | Tarjetas con un dato grande |
+| `sections/pp-tabs.liquid` | PP · Pestañas | "¿Te identificas?" con pestañas |
+| `sections/pp-timeline.liquid` | PP · Línea de tiempo | Etapas deslizables con barra de avance |
+| `sections/pp-destacado.liquid` | PP · Destacado | Lista con símbolos o tarjeta de color con firma |
+| `sections/pp-resenas.liquid` | PP · Reseñas | Calificación general + tarjetas de reseñas |
 | `sections/pp-boton-fijo.liquid` | PP · Botón fijo | Botón de compra pegado abajo en celular |
 
 ## Cómo instalar (una sola vez por tienda)

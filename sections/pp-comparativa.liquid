@@ -1,0 +1,425 @@
+{%- comment -%}
+  PP · Comparativa
+  Tabla "nosotros vs. la competencia": filas con check o equis en cada
+  columna, la columna de tu producto resaltada y una franja final.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-comp-{{ section.id }} { --comp-a: {{ section.settings.color_destacado }}; }
+  .pp-comp__tabla {
+    max-width: 860px; margin: 0 auto; overflow: hidden;
+    border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+  }
+  .pp-comp__fila { display: grid; grid-template-columns: 1.15fr 1fr 1fr; border-top: 1px solid var(--pp-borde); }
+  .pp-comp__fila > div { min-width: 0; padding: 14px 8px; }
+  .pp-comp__cab { border-top: 0; }
+  .pp-comp__cab > div { display: grid; align-content: end; justify-items: center; gap: 4px; text-align: center; padding-top: 18px; }
+  .pp-comp__cab img { width: 76px; height: 76px; object-fit: contain; margin-bottom: 6px; }
+  .pp-comp__cab strong { font-size: 13px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
+  .pp-comp__cab span { font-size: 11px; line-height: 1.3; color: var(--pp-texto-2); }
+  .pp-comp__a { background: color-mix(in srgb, var(--comp-a) 9%, var(--pp-fondo)); }
+  .pp-comp__cab .pp-comp__a { box-shadow: inset 0 4px 0 var(--comp-a); }
+  .pp-comp__b { background: color-mix(in srgb, var(--pp-texto) 3%, var(--pp-fondo)); }
+  .pp-comp__label { display: grid; align-content: center; gap: 3px; padding-left: 12px !important; }
+  .pp-comp__label strong { font-size: 13px; font-weight: 800; line-height: 1.25; }
+  .pp-comp__label span { font-size: 11px; line-height: 1.3; color: var(--pp-texto-2); }
+  .pp-comp__valor { display: grid; justify-items: center; align-content: center; gap: 4px; text-align: center; }
+  .pp-comp__valor strong { font-size: 13px; font-weight: 800; line-height: 1.25; }
+  .pp-comp__valor span { font-size: 11px; line-height: 1.3; color: var(--pp-texto-2); }
+  .pp-comp__ico { width: 22px; height: 22px; }
+  .pp-comp__pie {
+    display: flex; justify-content: space-between; gap: 10px; padding: 14px 12px;
+    border-top: 1px solid var(--pp-borde); font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  }
+  .pp-comp__pie span:last-child { color: var(--comp-a); text-align: right; }
+  @media (min-width: 750px) {
+    .pp-comp__fila > div { padding: 18px 16px; }
+    .pp-comp__label strong, .pp-comp__valor strong { font-size: 15px; }
+    .pp-comp__label span, .pp-comp__valor span { font-size: 13px; }
+    .pp-comp__cab img { width: 110px; height: 110px; }
+  }
+</style>
+
+<div id="pp-comp-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap">
+    <div class="pp-head">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+
+    <div class="pp-comp__tabla" role="table" aria-label="Comparativa">
+      <div class="pp-comp__fila pp-comp__cab" role="row">
+        <div role="columnheader"></div>
+        <div class="pp-comp__a" role="columnheader">
+          {%- if section.settings.imagen_a != blank -%}{{ section.settings.imagen_a | image_url: width: 240 | image_tag: loading: 'lazy', alt: section.settings.nombre_a }}{%- endif -%}
+          <strong>{{ section.settings.nombre_a }}</strong>
+          {%- if section.settings.sub_a != blank -%}<span>{{ section.settings.sub_a }}</span>{%- endif -%}
+        </div>
+        <div class="pp-comp__b" role="columnheader">
+          {%- if section.settings.imagen_b != blank -%}{{ section.settings.imagen_b | image_url: width: 240 | image_tag: loading: 'lazy', alt: section.settings.nombre_b }}{%- endif -%}
+          <strong>{{ section.settings.nombre_b }}</strong>
+          {%- if section.settings.sub_b != blank -%}<span>{{ section.settings.sub_b }}</span>{%- endif -%}
+        </div>
+      </div>
+
+      {%- for block in section.blocks -%}
+        <div class="pp-comp__fila" role="row" {{ block.shopify_attributes }}>
+          <div class="pp-comp__label" role="rowheader">
+            <strong>{{ block.settings.titulo }}</strong>
+            {%- if block.settings.subtitulo != blank -%}<span>{{ block.settings.subtitulo }}</span>{%- endif -%}
+          </div>
+          <div class="pp-comp__valor pp-comp__a" role="cell">
+            {%- if block.settings.ok_a -%}
+              <svg class="pp-comp__ico" viewBox="0 0 24 24" aria-label="Sí"><circle cx="12" cy="12" r="11" fill="#2e9e5b"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            {%- else -%}
+              <svg class="pp-comp__ico" viewBox="0 0 24 24" aria-label="No"><circle cx="12" cy="12" r="11" fill="#e0453b"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+            {%- endif -%}
+            {%- if block.settings.valor_a != blank -%}<strong>{{ block.settings.valor_a }}</strong>{%- endif -%}
+            {%- if block.settings.nota_a != blank -%}<span>{{ block.settings.nota_a }}</span>{%- endif -%}
+          </div>
+          <div class="pp-comp__valor pp-comp__b" role="cell">
+            {%- if block.settings.ok_b -%}
+              <svg class="pp-comp__ico" viewBox="0 0 24 24" aria-label="Sí"><circle cx="12" cy="12" r="11" fill="#2e9e5b"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            {%- else -%}
+              <svg class="pp-comp__ico" viewBox="0 0 24 24" aria-label="No"><circle cx="12" cy="12" r="11" fill="#e0453b"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+            {%- endif -%}
+            {%- if block.settings.valor_b != blank -%}<strong>{{ block.settings.valor_b }}</strong>{%- endif -%}
+            {%- if block.settings.nota_b != blank -%}<span>{{ block.settings.nota_b }}</span>{%- endif -%}
+          </div>
+        </div>
+      {%- endfor -%}
+
+      {%- if section.settings.pie_izq != blank or section.settings.pie_der != blank -%}
+        <div class="pp-comp__pie"><span>{{ section.settings.pie_izq }}</span><span>{{ section.settings.pie_der }}</span></div>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PP · Comparativa",
+  "tag": "section",
+  "class": "pp-comparativa-section",
+  "settings": [
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" },
+        { "value": "oscuro", "label": "Oscuro" }
+      ]
+    },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Comparativa" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "Más limpieza. <em>Menos complicaciones.</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "Misma categoría, un nivel muy diferente." },
+    { "type": "color", "id": "color_destacado", "label": "Color de tu columna", "default": "#8cc63f" },
+    { "type": "header", "content": "Tu producto (columna resaltada)" },
+    { "type": "text", "id": "nombre_a", "label": "Nombre", "default": "Tu producto" },
+    { "type": "text", "id": "sub_a", "label": "Descripción corta" },
+    { "type": "image_picker", "id": "imagen_a", "label": "Imagen (fondo transparente ideal)" },
+    { "type": "header", "content": "La competencia" },
+    { "type": "text", "id": "nombre_b", "label": "Nombre", "default": "Otros" },
+    { "type": "text", "id": "sub_b", "label": "Descripción corta" },
+    { "type": "image_picker", "id": "imagen_b", "label": "Imagen (opcional)" },
+    { "type": "header", "content": "Franja final (opcional)" },
+    { "type": "text", "id": "pie_izq", "label": "Texto izquierda" },
+    { "type": "text", "id": "pie_der", "label": "Texto derecha" }
+  ],
+  "blocks": [
+    {
+      "type": "fila",
+      "name": "Fila",
+      "settings": [
+        { "type": "text", "id": "titulo", "label": "Qué se compara", "default": "Sin alcohol" },
+        { "type": "text", "id": "subtitulo", "label": "Explicación corta (opcional)" },
+        { "type": "header", "content": "Tu producto" },
+        { "type": "checkbox", "id": "ok_a", "label": "Check verde (desmarcado = equis roja)", "default": true },
+        { "type": "text", "id": "valor_a", "label": "Valor" },
+        { "type": "text", "id": "nota_a", "label": "Nota pequeña" },
+        { "type": "header", "content": "La competencia" },
+        { "type": "checkbox", "id": "ok_b", "label": "Check verde (desmarcado = equis roja)", "default": false },
+        { "type": "text", "id": "valor_b", "label": "Valor" },
+        { "type": "text", "id": "nota_b", "label": "Nota pequeña" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Comparativa",
+      "blocks": [
+        { "type": "fila", "settings": { "titulo": "Fila 1" } },
+        { "type": "fila", "settings": { "titulo": "Fila 2" } },
+        { "type": "fila", "settings": { "titulo": "Fila 3" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

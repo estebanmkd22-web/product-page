@@ -1,7 +1,8 @@
 {%- comment -%}
-  PP · Íconos
-  Franja de 2 a 4 íconos con texto corto (ej: "Ayuda a retirar residuos ·
-  Refresca el aliento · Mantiene tu blancura").
+  PP · Datos
+  Tarjetas con un dato grande (ej: "1.000 mg · Potasio") y una explicación.
+  Estilo grande (2 columnas, una tarjeta puede ir resaltada) o compacto
+  (3 columnas con ícono). Nota al pie opcional.
 {%- endcomment -%}
 
 <style>
@@ -270,50 +271,45 @@
 </style>
 
 <style>
-  #pp-iconos-{{ section.id }} { padding: {{ section.settings.espacio }}px 0; }
-  #pp-iconos-{{ section.id }} .pp-iconos__fila { grid-template-columns: repeat({{ section.blocks.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); }
-  .pp-iconos__fila { display: grid; max-width: 860px; margin: 0 auto; }
-  .pp-iconos__item { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 13px; font-weight: 800; line-height: 1.2; text-transform: uppercase; }
-  .pp-iconos__ico { display: grid; place-items: center; flex: 0 0 auto; color: var(--pp-acento); font-size: 26px; }
-  .pp-iconos__ico img { width: 30px; height: 30px; object-fit: contain; }
-
-  /* Estilo tarjeta: una caja con divisiones (como debajo de una foto) */
-  .pp-iconos--tarjeta .pp-iconos__fila {
-    padding: 12px 8px; border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
-  }
-  .pp-iconos--tarjeta .pp-iconos__item { flex-direction: column; gap: 6px; padding: 2px 6px; text-align: center; font-size: 11px; overflow-wrap: anywhere; }
-  .pp-iconos--tarjeta .pp-iconos__item + .pp-iconos__item { border-left: 1px solid var(--pp-borde); }
-
-  /* Estilo círculos: ícono grande en círculo y texto debajo */
-  .pp-iconos--circulos .pp-iconos__fila { gap: 12px; }
-  .pp-iconos--circulos .pp-iconos__item { flex-direction: column; gap: 10px; text-align: center; font-size: 15px; letter-spacing: .02em; }
-  .pp-iconos--circulos .pp-iconos__ico {
-    width: 76px; height: 76px; border-radius: 50%; font-size: 36px;
-    background: var(--pp-fondo-2); color: var(--pp-texto);
-  }
-  .pp-bg--oscuro.pp-iconos--circulos .pp-iconos__ico { background: rgba(255, 255, 255, .85); color: #222; }
-
+  .pp-datos__grid { display: grid; gap: 12px; max-width: 920px; margin: 0 auto; }
+  #pp-datos-{{ section.id }} .pp-datos__grid { grid-template-columns: repeat({{ section.settings.columnas_movil }}, minmax(0, 1fr)); }
+  .pp-datos__card { display: grid; align-content: start; gap: 6px; min-width: 0; padding: 18px 16px; border-radius: calc(var(--pp-radio) + 4px); background: var(--pp-fondo); }
+  .pp-bg--fondo .pp-datos__card { background: var(--pp-fondo-2); }
+  .pp-datos__card--on { background: var(--pp-texto) !important; color: var(--pp-fondo); }
+  .pp-datos__card--on .pp-datos__txt { color: inherit; opacity: .8; }
+  .pp-datos__etq { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--pp-acento); }
+  .pp-datos__valor { font-family: var(--pp-font-titulos, var(--font-heading-family, inherit)); font-size: clamp(28px, 8vw, 40px); font-weight: 900; line-height: 1; letter-spacing: -.02em; }
+  .pp-datos__nombre { font-family: var(--pp-font-titulos, var(--font-heading-family, inherit)); font-size: 15px; font-weight: 900; text-transform: uppercase; }
+  .pp-datos__txt { font-size: 13px; line-height: 1.45; color: var(--pp-texto-2); }
+  .pp-datos__ico { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: color-mix(in srgb, var(--pp-acento) 18%, var(--pp-fondo)); color: var(--pp-texto); font-size: 20px; }
+  /* Compacto: centrado, valor en color */
+  .pp-datos--compacto .pp-datos__card { justify-items: center; text-align: center; padding: 16px 10px; border: 1px solid var(--pp-borde); }
+  .pp-datos--compacto .pp-datos__valor { font-size: 20px; color: var(--pp-acento); order: 3; }
+  .pp-datos--compacto .pp-datos__nombre { font-size: 12px; order: 2; }
+  .pp-datos--compacto .pp-datos__ico { order: 1; }
+  .pp-datos--compacto .pp-datos__txt { order: 4; font-size: 11px; }
+  .pp-datos__nota { max-width: 760px; margin: 18px auto 0; text-align: center; font-size: 11px; line-height: 1.5; color: var(--pp-texto-2); }
   @media (min-width: 750px) {
-    .pp-iconos__item { font-size: 15px; }
-    .pp-iconos--tarjeta .pp-iconos__item { flex-direction: row; gap: 10px; padding: 0 18px; justify-content: center; text-align: left; font-size: 14px; }
+    #pp-datos-{{ section.id }} .pp-datos__grid { grid-template-columns: repeat({{ section.settings.columnas_pc }}, minmax(0, 1fr)); gap: 16px; }
+    .pp-datos__card { padding: 24px 22px; }
   }
 </style>
 
-<div id="pp-iconos-{{ section.id }}" class="pp pp-bg--{{ section.settings.fondo }} pp-iconos--{{ section.settings.estilo }}">
+<div id="pp-datos-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }} pp-datos--{{ section.settings.estilo }}">
   <div class="pp-wrap">
-    {%- if section.settings.titulo != blank -%}
-      <div class="pp-head"><h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2></div>
+    {%- if section.settings.etiqueta != blank or section.settings.titulo != blank -%}
+      <div class="pp-head">
+        {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
     {%- endif -%}
-    <div class="pp-iconos__fila">
+
+    <div class="pp-datos__grid">
       {%- for block in section.blocks -%}
-        <div class="pp-iconos__item" {{ block.shopify_attributes }}>
-          <span class="pp-iconos__ico">
-            {%- if block.settings.imagen != blank -%}
-              {{ block.settings.imagen | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}
-            {%- else -%}
-              {%- assign icono = block.settings.icono -%}
-              {%- comment -%}PP-ICONOS:START{%- endcomment -%}
+        <div class="pp-datos__card{% if block.settings.resaltar %} pp-datos__card--on{% endif %}" {{ block.shopify_attributes }}>
+          {%- if block.settings.icono != 'ninguno' -%}
+            <span class="pp-datos__ico">{%- assign icono = block.settings.icono -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
 {%- case icono -%}
 {%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
 {%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -333,61 +329,69 @@
 {%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
 {%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
 {%- endcase -%}
-{%- comment -%}PP-ICONOS:END{%- endcomment -%}
-            {%- endif -%}
-          </span>
-          <span>{{ block.settings.texto }}</span>
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}</span>
+          {%- endif -%}
+          {%- if block.settings.etiqueta != blank -%}<span class="pp-datos__etq">{{ block.settings.etiqueta }}</span>{%- endif -%}
+          {%- if block.settings.valor != blank -%}<span class="pp-datos__valor">{{ block.settings.valor }}</span>{%- endif -%}
+          {%- if block.settings.nombre != blank -%}<span class="pp-datos__nombre">{{ block.settings.nombre }}</span>{%- endif -%}
+          {%- if block.settings.texto != blank -%}<span class="pp-datos__txt">{{ block.settings.texto }}</span>{%- endif -%}
         </div>
       {%- endfor -%}
     </div>
+
+    {%- if section.settings.nota != blank -%}<p class="pp-datos__nota">{{ section.settings.nota }}</p>{%- endif -%}
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "PP · Íconos",
+  "name": "PP · Datos",
   "tag": "section",
-  "class": "pp-iconos-section",
+  "class": "pp-datos-section",
   "settings": [
     {
-      "type": "select", "id": "estilo", "label": "Estilo", "default": "tarjeta",
+      "type": "select", "id": "estilo", "label": "Estilo", "default": "grande",
       "options": [
-        { "value": "tarjeta", "label": "Tarjeta con divisiones" },
-        { "value": "circulos", "label": "Círculos grandes" }
+        { "value": "grande", "label": "Dato grande" },
+        { "value": "compacto", "label": "Compacto con ícono" }
       ]
     },
     {
-      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo-2",
       "options": [
         { "value": "fondo", "label": "Blanco" },
-        { "value": "fondo-2", "label": "Alterno (suave)" },
-        { "value": "oscuro", "label": "Oscuro" }
+        { "value": "fondo-2", "label": "Alterno (suave)" }
       ]
     },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
-    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 20 }
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Lo que hay detrás" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "Una fórmula creada para <em>hacer más.</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    {
+      "type": "select", "id": "columnas_movil", "label": "Columnas en celular", "default": "2",
+      "options": [ { "value": "1", "label": "1" }, { "value": "2", "label": "2" }, { "value": "3", "label": "3" } ]
+    },
+    {
+      "type": "select", "id": "columnas_pc", "label": "Columnas en computador", "default": "4",
+      "options": [ { "value": "2", "label": "2" }, { "value": "3", "label": "3" }, { "value": "4", "label": "4" } ]
+    },
+    { "type": "textarea", "id": "nota", "label": "Nota al pie (opcional)" }
   ],
   "blocks": [
     {
-      "type": "icono",
-      "name": "Ícono",
-      "limit": 4,
+      "type": "dato",
+      "name": "Dato",
       "settings": [
-        { "type": "select", "id": "icono", "label": "Ícono", "default": "diente", "options": [{"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}] },
-        { "type": "image_picker", "id": "imagen", "label": "O sube tu propio ícono (opcional)" },
-        { "type": "text", "id": "texto", "label": "Texto", "default": "Ayuda a retirar residuos" }
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "ninguno", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}] },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña (ej: INGREDIENTE CLAVE)" },
+        { "type": "text", "id": "valor", "label": "Dato grande (ej: 237 ml)", "default": "237 ml" },
+        { "type": "text", "id": "nombre", "label": "Nombre (ej: Frasco)", "default": "Frasco" },
+        { "type": "textarea", "id": "texto", "label": "Explicación corta" },
+        { "type": "checkbox", "id": "resaltar", "label": "Resaltar (tarjeta oscura)", "default": false }
       ]
     }
   ],
   "presets": [
-    {
-      "name": "PP · Íconos",
-      "blocks": [
-        { "type": "icono", "settings": { "icono": "diente", "texto": "Ayuda a retirar residuos" } },
-        { "type": "icono", "settings": { "icono": "frescura", "texto": "Refresca el aliento" } },
-        { "type": "icono", "settings": { "icono": "brillo", "texto": "Mantiene tu blancura" } }
-      ]
-    }
+    { "name": "PP · Datos", "blocks": [ { "type": "dato", "settings": { "resaltar": true } }, { "type": "dato" }, { "type": "dato" }, { "type": "dato" } ] }
   ]
 }
 {% endschema %}

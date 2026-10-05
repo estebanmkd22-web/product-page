@@ -1,7 +1,8 @@
 {%- comment -%}
-  PP · Íconos
-  Franja de 2 a 4 íconos con texto corto (ej: "Ayuda a retirar residuos ·
-  Refresca el aliento · Mantiene tu blancura").
+  PP · Destacado
+  Titular + texto + lista de puntos (con símbolo o ícono) + imagen.
+  Estilo claro (ej: "Menos ruido. Más producto.") o tarjeta oscura con
+  firma (ej: "El experto detrás de la fórmula").
 {%- endcomment -%}
 
 <style>
@@ -270,50 +271,62 @@
 </style>
 
 <style>
-  #pp-iconos-{{ section.id }} { padding: {{ section.settings.espacio }}px 0; }
-  #pp-iconos-{{ section.id }} .pp-iconos__fila { grid-template-columns: repeat({{ section.blocks.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); }
-  .pp-iconos__fila { display: grid; max-width: 860px; margin: 0 auto; }
-  .pp-iconos__item { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 13px; font-weight: 800; line-height: 1.2; text-transform: uppercase; }
-  .pp-iconos__ico { display: grid; place-items: center; flex: 0 0 auto; color: var(--pp-acento); font-size: 26px; }
-  .pp-iconos__ico img { width: 30px; height: 30px; object-fit: contain; }
-
-  /* Estilo tarjeta: una caja con divisiones (como debajo de una foto) */
-  .pp-iconos--tarjeta .pp-iconos__fila {
-    padding: 12px 8px; border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+  #pp-dest-{{ section.id }} { --dest-c: {{ section.settings.color_tarjeta }}; }
+  .pp-dest__caja { display: grid; gap: 22px; max-width: 920px; margin: 0 auto; }
+  .pp-dest--tarjeta .pp-dest__caja {
+    overflow: hidden; padding: 0 0 28px; border-radius: calc(var(--pp-radio) + 10px);
+    background: linear-gradient(140deg, var(--dest-c), color-mix(in srgb, var(--dest-c) 55%, #000)); color: #fff;
   }
-  .pp-iconos--tarjeta .pp-iconos__item { flex-direction: column; gap: 6px; padding: 2px 6px; text-align: center; font-size: 11px; overflow-wrap: anywhere; }
-  .pp-iconos--tarjeta .pp-iconos__item + .pp-iconos__item { border-left: 1px solid var(--pp-borde); }
-
-  /* Estilo círculos: ícono grande en círculo y texto debajo */
-  .pp-iconos--circulos .pp-iconos__fila { gap: 12px; }
-  .pp-iconos--circulos .pp-iconos__item { flex-direction: column; gap: 10px; text-align: center; font-size: 15px; letter-spacing: .02em; }
-  .pp-iconos--circulos .pp-iconos__ico {
-    width: 76px; height: 76px; border-radius: 50%; font-size: 36px;
-    background: var(--pp-fondo-2); color: var(--pp-texto);
+  .pp-dest--tarjeta .pp-dest__cuerpo { padding: 0 22px; }
+  .pp-dest--tarjeta .pp-h, .pp-dest--tarjeta .pp-lead { color: inherit; }
+  .pp-dest--tarjeta .pp-lead { opacity: .9; }
+  .pp-dest__cuerpo { display: grid; gap: 14px; }
+  .pp-dest__lista { display: grid; gap: 18px; margin-top: 10px; }
+  .pp-dest__item { display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center; }
+  .pp-dest__sim {
+    display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
+    background: var(--pp-texto); color: var(--pp-acento); font-size: 20px; font-weight: 900;
   }
-  .pp-bg--oscuro.pp-iconos--circulos .pp-iconos__ico { background: rgba(255, 255, 255, .85); color: #222; }
-
+  .pp-dest--tarjeta .pp-dest__sim { width: 30px; height: 30px; background: rgba(255, 255, 255, .95); color: var(--dest-c); font-size: 16px; }
+  .pp-dest--tarjeta .pp-dest__item { grid-template-columns: 30px 1fr; align-items: start; }
+  .pp-dest__item h3 { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
+  .pp-dest--tarjeta .pp-dest__item h3 { font-size: 16px; text-transform: none; letter-spacing: 0; font-weight: 600; }
+  .pp-dest__item p { margin-top: 2px; font-size: 15px; color: var(--pp-texto-2); }
+  .pp-dest--tarjeta .pp-dest__item p { color: inherit; opacity: .85; }
+  .pp-dest__img img { width: 100%; height: auto; }
+  .pp-dest--claro .pp-dest__img img { border-radius: var(--pp-radio); }
+  .pp-dest__firma { display: grid; gap: 2px; margin-top: 6px; }
+  .pp-dest__firma strong { font-size: 16px; }
+  .pp-dest__firma span { font-size: 14px; opacity: .8; }
   @media (min-width: 750px) {
-    .pp-iconos__item { font-size: 15px; }
-    .pp-iconos--tarjeta .pp-iconos__item { flex-direction: row; gap: 10px; padding: 0 18px; justify-content: center; text-align: left; font-size: 14px; }
+    .pp-dest__caja--lado { grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; }
+    .pp-dest--tarjeta .pp-dest__caja--lado { padding: 0; }
+    .pp-dest--tarjeta .pp-dest__caja--lado .pp-dest__cuerpo { padding: 36px 36px 36px 0; }
+    .pp-dest__caja--lado .pp-dest__img { height: 100%; }
+    .pp-dest__caja--lado .pp-dest__img img { height: 100%; object-fit: cover; }
   }
 </style>
 
-<div id="pp-iconos-{{ section.id }}" class="pp pp-bg--{{ section.settings.fondo }} pp-iconos--{{ section.settings.estilo }}">
+{%- assign lado = false -%}
+{%- if section.settings.imagen != blank and section.settings.posicion == 'lado' -%}{%- assign lado = true -%}{%- endif -%}
+
+<div id="pp-dest-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }} pp-dest--{{ section.settings.estilo }}">
   <div class="pp-wrap">
-    {%- if section.settings.titulo != blank -%}
-      <div class="pp-head"><h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2></div>
-    {%- endif -%}
-    <div class="pp-iconos__fila">
-      {%- for block in section.blocks -%}
-        <div class="pp-iconos__item" {{ block.shopify_attributes }}>
-          <span class="pp-iconos__ico">
-            {%- if block.settings.imagen != blank -%}
-              {{ block.settings.imagen | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}
-            {%- else -%}
-              {%- assign icono = block.settings.icono -%}
-              {%- comment -%}PP-ICONOS:START{%- endcomment -%}
+    <div class="pp-dest__caja{% if lado %} pp-dest__caja--lado{% endif %}">
+      {%- if section.settings.imagen != blank and section.settings.posicion != 'abajo' -%}
+        <div class="pp-dest__img">{{ section.settings.imagen | image_url: width: 1100 | image_tag: loading: 'lazy', widths: '400, 700, 1100', sizes: '(min-width: 750px) 460px, 100vw' }}</div>
+      {%- endif -%}
+      <div class="pp-dest__cuerpo">
+        {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow"{% if section.settings.estilo == 'tarjeta' %} style="color:inherit;opacity:.75"{% endif %}>{{ section.settings.etiqueta }}</p>{%- endif -%}
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <div class="pp-dest__lista">
+            {%- for block in section.blocks -%}
+              <div class="pp-dest__item" {{ block.shopify_attributes }}>
+                <span class="pp-dest__sim" aria-hidden="true">
+                  {%- if block.settings.icono != 'ninguno' -%}
+                    {%- assign icono = block.settings.icono -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
 {%- case icono -%}
 {%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
 {%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -334,60 +347,79 @@
 {%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
 {%- endcase -%}
 {%- comment -%}PP-ICONOS:END{%- endcomment -%}
-            {%- endif -%}
-          </span>
-          <span>{{ block.settings.texto }}</span>
-        </div>
-      {%- endfor -%}
+                  {%- else -%}
+                    {{ block.settings.simbolo | default: '✓' }}
+                  {%- endif -%}
+                </span>
+                <div>
+                  <h3>{{ block.settings.titulo }}</h3>
+                  {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.firma != blank -%}
+          <div class="pp-dest__firma"><strong>{{ section.settings.firma }}</strong>{% if section.settings.cargo != blank %}<span>{{ section.settings.cargo }}</span>{% endif %}</div>
+        {%- endif -%}
+      </div>
+      {%- if section.settings.imagen != blank and section.settings.posicion == 'abajo' -%}
+        <div class="pp-dest__img">{{ section.settings.imagen | image_url: width: 1100 | image_tag: loading: 'lazy', widths: '400, 700, 1100', sizes: '(min-width: 750px) 920px, 100vw' }}</div>
+      {%- endif -%}
     </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "PP · Íconos",
+  "name": "PP · Destacado",
   "tag": "section",
-  "class": "pp-iconos-section",
+  "class": "pp-destacado-section",
   "settings": [
     {
-      "type": "select", "id": "estilo", "label": "Estilo", "default": "tarjeta",
+      "type": "select", "id": "estilo", "label": "Estilo", "default": "claro",
       "options": [
-        { "value": "tarjeta", "label": "Tarjeta con divisiones" },
-        { "value": "circulos", "label": "Círculos grandes" }
+        { "value": "claro", "label": "Claro (lista con círculos)" },
+        { "value": "tarjeta", "label": "Tarjeta de color (ej: el experto)" }
       ]
     },
+    { "type": "color", "id": "color_tarjeta", "label": "Color de la tarjeta", "default": "#1b7a35" },
     {
-      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "type": "select", "id": "fondo", "label": "Fondo de la sección", "default": "fondo",
       "options": [
         { "value": "fondo", "label": "Blanco" },
-        { "value": "fondo-2", "label": "Alterno (suave)" },
-        { "value": "oscuro", "label": "Oscuro" }
+        { "value": "fondo-2", "label": "Alterno (suave)" }
       ]
     },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
-    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 20 }
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Solo lo esencial" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "Menos ruido. <em>Más resultados.</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto" },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen (opcional)" },
+    {
+      "type": "select", "id": "posicion", "label": "Posición de la imagen", "default": "abajo",
+      "options": [
+        { "value": "arriba", "label": "Arriba" },
+        { "value": "abajo", "label": "Abajo" },
+        { "value": "lado", "label": "Al lado (en computador)" }
+      ]
+    },
+    { "type": "text", "id": "firma", "label": "Firma (opcional, ej: nombre del experto)" },
+    { "type": "text", "id": "cargo", "label": "Cargo o descripción de la firma" }
   ],
   "blocks": [
     {
-      "type": "icono",
-      "name": "Ícono",
-      "limit": 4,
+      "type": "punto",
+      "name": "Punto",
       "settings": [
-        { "type": "select", "id": "icono", "label": "Ícono", "default": "diente", "options": [{"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}] },
-        { "type": "image_picker", "id": "imagen", "label": "O sube tu propio ícono (opcional)" },
-        { "type": "text", "id": "texto", "label": "Texto", "default": "Ayuda a retirar residuos" }
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "ninguno", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}] },
+        { "type": "text", "id": "simbolo", "label": "O un símbolo corto (ej: 0, ∅, +)", "default": "✓" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Sin alcohol" },
+        { "type": "text", "id": "texto", "label": "Texto" }
       ]
     }
   ],
   "presets": [
-    {
-      "name": "PP · Íconos",
-      "blocks": [
-        { "type": "icono", "settings": { "icono": "diente", "texto": "Ayuda a retirar residuos" } },
-        { "type": "icono", "settings": { "icono": "frescura", "texto": "Refresca el aliento" } },
-        { "type": "icono", "settings": { "icono": "brillo", "texto": "Mantiene tu blancura" } }
-      ]
-    }
+    { "name": "PP · Destacado", "blocks": [ { "type": "punto" }, { "type": "punto" }, { "type": "punto" } ] }
   ]
 }
 {% endschema %}

@@ -63,12 +63,13 @@
   padding: 0 16px;
 }
 
-/* Títulos: usan la fuente de títulos del tema (Dawn) */
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
 .pp-h {
-  font-family: var(--font-heading-family, inherit);
-  font-weight: 800;
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
   color: var(--pp-texto);
 }
 
@@ -288,14 +289,28 @@
   .pp-faq__resp { padding: 0 16px 16px; font-size: 15px; color: var(--pp-texto-2); }
   .pp-bg--oscuro .pp-faq__resp { color: inherit; opacity: .85; }
   .pp-faq__resp p + p { margin-top: 8px; }
+  .pp-faq--lineas { gap: 0; }
+  .pp-faq--lineas .pp-faq__item { border: 0; border-bottom: 1px solid var(--pp-borde); border-radius: 0; background: transparent !important; }
+  .pp-faq--lineas .pp-faq__item summary { padding: 20px 2px; }
+  .pp-faq--lineas .pp-faq__resp { padding: 0 2px 20px; }
+  .pp-faq__wa {
+    justify-self: center; display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; padding: 12px 22px;
+    border-radius: 99px; background: #25d366; color: #fff; font-weight: 800; text-decoration: none;
+  }
 </style>
 
 <div class="pp pp-section pp-bg--{{ section.settings.fondo }}">
   <div class="pp-wrap">
     <div class="pp-head">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
       {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+      {%- if section.settings.whatsapp != blank -%}
+        {%- assign wa = section.settings.whatsapp | remove: '+' | remove: ' ' | remove: '-' -%}
+        <a class="pp-faq__wa" href="https://wa.me/{{ wa }}" target="_blank" rel="noopener">{{ section.settings.whatsapp_texto }}</a>
+      {%- endif -%}
     </div>
-    <div class="pp-faq__lista">
+    <div class="pp-faq__lista pp-faq--{{ section.settings.estilo }}">
       {%- for block in section.blocks -%}
         <details class="pp-faq__item" {{ block.shopify_attributes }}{% if forloop.first and section.settings.abrir_primera %} open{% endif %}>
           <summary>{{ block.settings.pregunta }}</summary>
@@ -320,7 +335,18 @@
         { "value": "oscuro", "label": "Oscuro" }
       ]
     },
+    {
+      "type": "select", "id": "estilo", "label": "Estilo", "default": "tarjetas",
+      "options": [
+        { "value": "tarjetas", "label": "Tarjetas" },
+        { "value": "lineas", "label": "Líneas" }
+      ]
+    },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña (opcional)" },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular", "default": "Preguntas frecuentes" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    { "type": "text", "id": "whatsapp", "label": "WhatsApp con código de país (opcional, ej: 50252309787)" },
+    { "type": "text", "id": "whatsapp_texto", "label": "Texto del botón de WhatsApp", "default": "Escríbenos por WhatsApp" },
     { "type": "checkbox", "id": "abrir_primera", "label": "Dejar la primera pregunta abierta", "default": true }
   ],
   "blocks": [

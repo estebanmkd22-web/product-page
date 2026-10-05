@@ -1,0 +1,520 @@
+{%- comment -%}
+  PP · Ofertas
+  Selector de packs (1 unidad, x2, x3…) con etiqueta, precio tachado,
+  % de descuento automático y precio por porción, más una fila de regalos.
+  El botón muestra el precio del pack elegido.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+{%- assign packs = section.blocks | where: 'type', 'pack' -%}
+{%- assign regalos = section.blocks | where: 'type', 'regalo' -%}
+{%- assign variante = product.selected_or_first_available_variant -%}
+{%- assign elegido = 0 -%}
+{%- for block in packs -%}{%- if block.settings.preseleccionado -%}{%- assign elegido = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+
+<style>
+  #pp-of-{{ section.id }} { --of-c: {{ section.settings.color_destacado }}; }
+  .pp-of { padding: {{ section.settings.espacio }}px 0; }
+  .pp-of__packs { display: grid; gap: 14px; max-width: 560px; margin: 0 auto; }
+  .pp-of__pack {
+    position: relative; display: grid; grid-template-columns: auto 52px 1fr auto; align-items: center; gap: 12px;
+    padding: 16px 14px; border: 1.5px solid var(--pp-borde); border-radius: calc(var(--pp-radio) + 2px);
+    background: var(--pp-fondo); cursor: pointer; transition: border-color .15s, background .15s;
+  }
+  .pp-of__pack input { position: absolute; opacity: 0; pointer-events: none; }
+  .pp-of__radio { width: 22px; height: 22px; border: 2px solid var(--pp-borde); border-radius: 50%; display: grid; place-items: center; }
+  .pp-of__radio::after { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--of-c); transform: scale(0); transition: transform .15s; }
+  .pp-of__pack.is-activo { border: 2px dashed var(--of-c); background: color-mix(in srgb, var(--of-c) 10%, var(--pp-fondo)); }
+  .pp-of__pack.is-activo .pp-of__radio { border-color: var(--of-c); }
+  .pp-of__pack.is-activo .pp-of__radio::after { transform: scale(1); }
+  .pp-of__pack:focus-within { outline: 2px solid var(--of-c); outline-offset: 2px; }
+  .pp-of__img { width: 52px; height: 52px; overflow: hidden; border-radius: 10px; background: var(--pp-fondo-2); }
+  .pp-of__img img { width: 100%; height: 100%; object-fit: cover; }
+  .pp-of__info { display: grid; gap: 3px; min-width: 0; }
+  .pp-of__info strong { font-size: 16px; font-weight: 800; line-height: 1.2; }
+  .pp-of__sub { font-size: 13px; font-weight: 700; color: var(--of-c); }
+  .pp-of__porcion { justify-self: start; padding: 2px 8px; border-radius: 99px; background: color-mix(in srgb, var(--of-c) 15%, var(--pp-fondo)); font-size: 11px; font-weight: 700; color: var(--pp-texto-2); text-transform: uppercase; }
+  .pp-of__precios { display: grid; justify-items: end; gap: 4px; text-align: right; }
+  .pp-of__precios strong { font-size: 17px; font-weight: 900; white-space: nowrap; }
+  .pp-of__precios s { font-size: 13px; color: var(--pp-texto-2); white-space: nowrap; }
+  .pp-of__off { padding: 2px 6px; border-radius: 6px; background: #fde4e2; color: #c0392b; font-size: 11px; font-weight: 900; white-space: nowrap; }
+  .pp-of__badge {
+    position: absolute; top: -11px; left: 16px; padding: 3px 10px; border-radius: 99px;
+    background: var(--of-c); color: #fff; font-size: 11px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase;
+  }
+  .pp-of__regalos-titulo { max-width: 560px; margin: 18px auto 8px; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; }
+  .pp-of__regalos { display: flex; gap: 10px; max-width: 560px; margin: 14px auto 0; padding: 12px 2px 4px; overflow-x: auto; scrollbar-width: none; }
+  .pp-of__regalos::-webkit-scrollbar { display: none; }
+  .pp-of__regalo {
+    position: relative; flex: 0 0 108px; display: grid; justify-items: center; align-content: start; gap: 6px; padding: 18px 8px 10px;
+    border: 1.5px solid var(--of-c); border-radius: 14px; background: color-mix(in srgb, var(--of-c) 7%, var(--pp-fondo)); text-align: center;
+  }
+  .pp-of__regalo-badge { position: absolute; top: -10px; padding: 2px 10px; border-radius: 99px; background: var(--of-c); color: #fff; font-size: 10px; font-weight: 900; }
+  .pp-of__regalo-badge s { opacity: .8; margin-left: 4px; font-weight: 700; }
+  .pp-of__regalo .pp-ico { font-size: 28px; color: var(--of-c); }
+  .pp-of__regalo img { width: 44px; height: 44px; object-fit: contain; }
+  .pp-of__regalo span { font-size: 12px; line-height: 1.25; }
+  .pp-of__cta { max-width: 560px; margin: 18px auto 0; }
+  .pp-of__nota { max-width: 560px; margin: 10px auto 0; text-align: center; font-size: 13px; color: var(--pp-texto-2); }
+</style>
+
+<div id="pp-of-{{ section.id }}" class="pp pp-of pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap">
+    {%- if section.settings.titulo != blank -%}
+      <div class="pp-head"><h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2></div>
+    {%- endif -%}
+
+    <div class="pp-of__packs" role="radiogroup" aria-label="Elige tu pack">
+      {%- for block in packs -%}
+        {%- assign precio = block.settings.precio | times: 100 -%}
+        {%- assign antes = block.settings.precio_antes | times: 100 -%}
+        {%- capture precio_txt -%}{{ precio | money_without_trailing_zeros }}{%- endcapture -%}
+        <label class="pp-of__pack{% if forloop.index0 == elegido %} is-activo{% endif %}" {{ block.shopify_attributes }}>
+          <input type="radio" name="pp-of-{{ section.id }}" value="{{ forloop.index0 }}"
+            data-precio="{{ precio_txt | escape }}" data-cantidad="{{ block.settings.cantidad | default: 1 }}" data-url="{{ block.settings.enlace }}"
+            {% if forloop.index0 == elegido %}checked{% endif %}>
+          {%- if block.settings.etiqueta != blank -%}<span class="pp-of__badge">{{ block.settings.etiqueta }}</span>{%- endif -%}
+          <span class="pp-of__radio" aria-hidden="true"></span>
+          <span class="pp-of__img">
+            {%- if block.settings.imagen != blank -%}
+              {{ block.settings.imagen | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}
+            {%- elsif product.featured_image -%}
+              {{ product.featured_image | image_url: width: 160 | image_tag: loading: 'lazy', alt: '' }}
+            {%- endif -%}
+          </span>
+          <span class="pp-of__info">
+            <strong>{{ block.settings.titulo }}</strong>
+            {%- if block.settings.subtitulo != blank -%}<span class="pp-of__sub">{{ block.settings.subtitulo }}</span>{%- endif -%}
+            {%- if block.settings.por_porcion != blank -%}<span class="pp-of__porcion">{{ block.settings.por_porcion }}</span>{%- endif -%}
+          </span>
+          <span class="pp-of__precios">
+            <strong>{{ precio_txt }}</strong>
+            {%- if antes > precio -%}
+              {%- assign pct = antes | minus: precio | times: 100 | divided_by: antes | round -%}
+              <span><span class="pp-of__off">{{ pct }}% OFF</span> <s>{{ antes | money_without_trailing_zeros }}</s></span>
+            {%- endif -%}
+          </span>
+        </label>
+      {%- endfor -%}
+    </div>
+
+    {%- if regalos.size > 0 -%}
+      <div class="pp-of__regalos">
+        {%- for block in regalos -%}
+          <div class="pp-of__regalo" {{ block.shopify_attributes }}>
+            <span class="pp-of__regalo-badge">GRATIS{% if block.settings.valor != blank %}<s>{{ block.settings.valor }}</s>{% endif %}</span>
+            {%- if block.settings.imagen != blank -%}
+              {{ block.settings.imagen | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}
+            {%- else -%}
+              {%- assign icono = block.settings.icono -%}
+              {%- comment -%}PP-ICONOS:START{%- endcomment -%}
+{%- case icono -%}
+{%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
+{%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+{%- when 'frescura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3 0 3-2 6-2s3 2 6 2 3-2 6-2M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg>
+{%- when 'hoja' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15"/><path d="M5 19l7-7"/></svg>
+{%- when 'sonrisa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></svg>
+{%- when 'brillo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7L19 16z"/></svg>
+{%- when 'check' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+{%- when 'reloj' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+{%- when 'gota' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z"/></svg>
+{%- when 'calendario' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>
+{%- when 'camion' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+{%- when 'pago' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+{%- when 'corazon' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+{%- when 'lupa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>
+{%- when 'regalo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9.5 8 12 8zm0 0c1.5-3 5-3.5 5-1.2C17 8 14.5 8 12 8z"/></svg>
+{%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
+{%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
+{%- endcase -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}
+            {%- endif -%}
+            <span>{{ block.settings.titulo }}</span>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    <div class="pp-of__cta">
+      {%- capture contenido -%}<span>{{ section.settings.boton_texto }}{% if section.settings.precio_en_boton %} <span data-pp-of-precio></span>{% endif %}</span>{%- endcapture -%}
+      {%- case section.settings.boton_modo -%}
+        {%- when 'easysell' -%}
+          <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn pp-btn--pulse">{{ contenido }}</a>
+        {%- when 'carrito' -%}
+          {%- form 'product', product -%}
+            <input type="hidden" name="id" value="{{ variante.id }}">
+            <input type="hidden" name="quantity" value="1" data-pp-of-cantidad>
+            <input type="hidden" name="return_to" value="/checkout">
+            <button type="submit" class="pp-btn pp-btn--pulse"{% unless variante.available %} disabled{% endunless %}>{{ contenido }}</button>
+          {%- endform -%}
+        {%- else -%}
+          <a href="#" class="pp-btn pp-btn--pulse" data-pp-of-enlace>{{ contenido }}</a>
+      {%- endcase -%}
+    </div>
+    {%- if section.settings.nota != blank -%}<p class="pp-of__nota">{{ section.settings.nota }}</p>{%- endif -%}
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-of-{{ section.id }}');
+    if (!root) return;
+    var radios = root.querySelectorAll('.pp-of__pack input');
+    var precio = root.querySelector('[data-pp-of-precio]');
+    var cantidad = root.querySelector('[data-pp-of-cantidad]');
+    var enlace = root.querySelector('[data-pp-of-enlace]');
+    function aplicar() {
+      radios.forEach(function (r) {
+        r.closest('.pp-of__pack').classList.toggle('is-activo', r.checked);
+        if (!r.checked) return;
+        if (precio) precio.textContent = '· ' + r.dataset.precio;
+        if (cantidad) cantidad.value = r.dataset.cantidad || 1;
+        if (enlace) enlace.href = r.dataset.url || '#';
+      });
+    }
+    radios.forEach(function (r) { r.addEventListener('change', aplicar); });
+    aplicar();
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Ofertas",
+  "tag": "section",
+  "class": "pp-ofertas-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Los precios aquí son los que ve el cliente. Si usas el modo carrito, crea el descuento por cantidad en Shopify (Descuentos) para que el total coincida."
+    },
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
+    { "type": "color", "id": "color_destacado", "label": "Color de los packs", "default": "#2db34a" },
+    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 24 },
+    { "type": "header", "content": "Botón" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "easysell",
+      "options": [
+        { "value": "easysell", "label": "Abrir formulario EasySell" },
+        { "value": "carrito", "label": "Agregar al carrito la cantidad del pack" },
+        { "value": "enlace", "label": "Ir al enlace de cada pack" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Pedir ahora" },
+    { "type": "checkbox", "id": "precio_en_boton", "label": "Mostrar el precio del pack en el botón", "default": true },
+    { "type": "text", "id": "nota", "label": "Nota debajo del botón", "default": "Pagás al recibir · Envío gratis" }
+  ],
+  "blocks": [
+    {
+      "type": "pack",
+      "name": "Pack",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "titulo", "label": "Nombre del pack", "default": "1 frasco" },
+        { "type": "text", "id": "subtitulo", "label": "Línea en color (ej: Envío gratis)" },
+        { "type": "text", "id": "por_porcion", "label": "Precio por unidad o porción (opcional)" },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta arriba (ej: MÁS VENDIDO)" },
+        { "type": "image_picker", "id": "imagen", "label": "Imagen (vacío = foto del producto)" },
+        { "type": "number", "id": "precio", "label": "Precio (ej: 210)", "default": 210 },
+        { "type": "number", "id": "precio_antes", "label": "Precio antes / tachado (opcional)" },
+        { "type": "number", "id": "cantidad", "label": "Unidades del pack (modo carrito)", "default": 1 },
+        { "type": "url", "id": "enlace", "label": "Enlace del pack (modo enlace)" },
+        { "type": "checkbox", "id": "preseleccionado", "label": "Elegido por defecto", "default": false }
+      ]
+    },
+    {
+      "type": "regalo",
+      "name": "Regalo / incluido",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "camion", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}] },
+        { "type": "image_picker", "id": "imagen", "label": "O una imagen (opcional)" },
+        { "type": "text", "id": "titulo", "label": "Qué incluye", "default": "Envío gratis" },
+        { "type": "text", "id": "valor", "label": "Valor tachado (opcional, ej: Q30)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Ofertas",
+      "blocks": [
+        { "type": "pack", "settings": { "titulo": "1 frasco", "subtitulo": "Envío gratis", "precio": 210, "precio_antes": 290 } },
+        { "type": "pack", "settings": { "titulo": "2 frascos", "subtitulo": "Envío gratis", "etiqueta": "Más vendido", "precio": 380, "precio_antes": 580, "cantidad": 2, "preseleccionado": true } },
+        { "type": "pack", "settings": { "titulo": "3 frascos", "subtitulo": "Envío gratis", "etiqueta": "Mejor precio", "precio": 520, "precio_antes": 870, "cantidad": 3 } },
+        { "type": "regalo", "settings": { "icono": "camion", "titulo": "Envío gratis" } },
+        { "type": "regalo", "settings": { "icono": "pago", "titulo": "Pago al recibir" } },
+        { "type": "regalo", "settings": { "icono": "chat", "titulo": "Atención por WhatsApp" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -57,6 +57,7 @@ engine.registerFilter('image_tag', (url, ...args) => {
   return `<img src="${url}" ${attrs}>`;
 });
 engine.registerFilter('video_tag', (v) => `<video src="${v.src}" loop muted playsinline preload="none"></video>`);
+engine.registerFilter('font_face', () => '');
 engine.registerFilter('placeholder_svg_tag', () => '<svg viewBox="0 0 10 10" style="width:100%;height:100%;background:#ddd"></svg>');
 engine.registerFilter('payment_type_svg_tag', (t) => `<span>${t}</span>`);
 engine.registerFilter('color_mix', (a, b, w) => {
@@ -93,5 +94,5 @@ for (const [i, sec] of page.secciones.entries()) {
 const out = path.join(ROOT, 'preview', 'out', path.basename(process.argv[2], '.json') + '.html');
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${page.titulo || 'Vista previa'}</title>
-<style>body{margin:0;font-family:Assistant,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}:root{--font-heading-family:Assistant,system-ui,sans-serif}</style></head><body>${html}</body></html>`);
+<style>body{margin:0;font-family:Assistant,system-ui,-apple-system,Segoe UI,Roboto,sans-serif}:root{--font-heading-family:Assistant,system-ui,sans-serif}</style>${page.head_extra || ''}</head><body>${html}</body></html>`);
 console.log('OK →', path.relative(ROOT, out));

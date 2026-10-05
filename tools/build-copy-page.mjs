@@ -24,6 +24,13 @@ const SECCIONES = [
   { file: 'pp-zonas', desc: 'Nueva. Imagen con etiquetas sobre puntos, fotos de detalle con nombre y frase de cierre.' },
   { file: 'pp-beneficios', desc: 'Nueva. Imagen central rodeada de beneficios con ícono, título y texto.' },
   { file: 'pp-secuencia', desc: 'Nueva. Imagen principal y fotos en secuencia con flechas (dispersos › se agrupan › los ves).' },
+  { file: 'pp-ofertas', desc: 'Nueva. Selector de packs (1, x2, x3) con etiqueta, % de descuento, precio por porción y regalos GRATIS.' },
+  { file: 'pp-comparativa', desc: 'Nueva. Tabla tu producto vs. la competencia con checks y equis.' },
+  { file: 'pp-datos', desc: 'Nueva. Tarjetas con un dato grande (237 ml, 30 seg, 0% alcohol…).' },
+  { file: 'pp-tabs', desc: 'Nueva. "¿Te identificas?": pestañas tipo cápsula que cambian la lista de puntos.' },
+  { file: 'pp-timeline', desc: 'Nueva. Línea de tiempo deslizable por etapas con barra de avance.' },
+  { file: 'pp-destacado', desc: 'Nueva. Lista con símbolos ("Menos ruido…") o tarjeta de color con firma (el experto).' },
+  { file: 'pp-resenas', desc: 'Nueva. Calificación general y tarjetas de reseñas reales con "Ver más".' },
   { file: 'pp-boton-fijo', desc: 'Barra con el botón de compra pegada abajo del celular, aparece al pasar la oferta.' },
 ];
 

@@ -1,0 +1,517 @@
+{
+  "titulo": "Demo · Estilo HYDRA/Greens",
+  "moneda": "Q",
+  "locale": "es-GT",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Oswald',sans-serif;--pp-peso-titulos:700;--pp-mayus-titulos:uppercase;--pp-espaciado-titulos:0}</style>",
+  "producto": {
+    "title": "iD Whitening",
+    "featured_image": {
+      "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp"
+    },
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 21000,
+      "compare_at_price": null,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#7cb518",
+        "texto": "#13284b",
+        "texto_2": "#5b6475",
+        "fondo_2": "#f4f0e8",
+        "boton": "#13284b",
+        "boton_texto": "#ffffff",
+        "estrella": "#e3a008"
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#13284b"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Guatemala"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "+5.600 clientes felices"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagás al recibir"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "mostrar_oferta": false,
+        "imagen_1": {
+          "src": "../../imagenes/luvien/hero-producto-vaso.webp"
+        },
+        "imagen_2": {
+          "src": "../../imagenes/luvien/burbuja-residuos.webp"
+        },
+        "imagen_3": {
+          "src": "../../imagenes/luvien/hero-pareja.webp"
+        },
+        "rating": "4.8",
+        "rating_texto": "(458 reseñas)",
+        "titulo": "iD Whitening",
+        "texto": "<strong>El paso que le falta a tu cepillado.</strong>"
+      },
+      "blocks": [
+        {
+          "type": "transformacion",
+          "settings": {
+            "icono": "diente",
+            "de": "De boca pesada",
+            "a": "a sensación de limpieza completa"
+          }
+        },
+        {
+          "type": "transformacion",
+          "settings": {
+            "icono": "frescura",
+            "de": "De dudar al hablar de cerca",
+            "a": "a aliento fresco por más tiempo"
+          }
+        },
+        {
+          "type": "transformacion",
+          "settings": {
+            "icono": "lupa",
+            "de": "De residuos que no ves",
+            "a": "a ver lo que se lleva el enjuague"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-ofertas",
+      "settings": {
+        "color_destacado": "#7cb518",
+        "boton_texto": "Pedir ahora",
+        "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "titulo": "1 frasco",
+            "subtitulo": "Envío gratis",
+            "por_porcion": "237 ml",
+            "precio": 210,
+            "precio_antes": 290
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "titulo": "2 frascos",
+            "subtitulo": "Envío gratis",
+            "etiqueta": "Más vendido",
+            "por_porcion": "Precio de ejemplo",
+            "precio": 380,
+            "precio_antes": 580,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "titulo": "3 frascos",
+            "subtitulo": "Envío gratis",
+            "etiqueta": "Mejor precio",
+            "por_porcion": "Precio de ejemplo",
+            "precio": 520,
+            "precio_antes": 870,
+            "cantidad": 3
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "icono": "pago",
+            "titulo": "Pago al recibir"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "icono": "chat",
+            "titulo": "Atención por WhatsApp"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Reposición si llega dañado"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "tarjeta",
+        "espacio": 8
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "gota",
+            "texto": "Sin alcohol"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "reloj",
+            "texto": "30 segundos"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagás al recibir"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-datos",
+      "settings": {
+        "etiqueta": "Conoce iD Whitening",
+        "titulo": "Una forma más <em>completa</em> de limpiar tu boca.",
+        "texto": "Fórmula líquida que recubre toda la boca en segundos.",
+        "columnas_pc": "4",
+        "nota": "Úsalo después del cepillado como complemento de tu rutina de higiene oral."
+      },
+      "blocks": [
+        {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Por frasco",
+            "valor": "237 ml",
+            "nombre": "Contenido",
+            "texto": "Para usar todos los días después del cepillado.",
+            "resaltar": true
+          }
+        },
+        {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Por uso",
+            "valor": "30 seg",
+            "nombre": "Enjuague",
+            "texto": "Haz buches 30 segundos y escupe."
+          }
+        },
+        {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Fórmula",
+            "valor": "0%",
+            "nombre": "Alcohol",
+            "texto": "Apta para uso diario."
+          }
+        },
+        {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Por enjuague",
+            "valor": "15 ml",
+            "nombre": "Medida",
+            "texto": "No necesitas diluirlo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "Comparativa",
+        "titulo": "Más limpieza. <em>Menos complicaciones.</em>",
+        "texto": "Misma categoría, un nivel muy diferente.",
+        "color_destacado": "#7cb518",
+        "nombre_a": "iD Whitening",
+        "sub_a": "Enjuague con peróxido",
+        "imagen_a": {
+          "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp"
+        },
+        "nombre_b": "Enjuague común",
+        "sub_b": "De supermercado",
+        "pie_izq": "iD Whitening",
+        "pie_der": "El paso que faltaba"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sin alcohol",
+            "subtitulo": "Apto para uso diario",
+            "ok_a": true,
+            "valor_a": "0% alcohol",
+            "ok_b": false,
+            "valor_b": "Muchos lo contienen"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Ves lo que se lleva",
+            "subtitulo": "La fórmula se adhiere a residuos",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "No"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Ayuda con la blancura",
+            "subtitulo": "Peróxido de hidrógeno",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "No siempre"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Pago al recibir",
+            "subtitulo": "Nada por adelantado",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "Pago en tienda"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-tabs",
+      "settings": {
+        "color_fondo": "#13284b",
+        "color_activo": "#7cb518",
+        "titulo": "iD Whitening es para ti si…"
+      },
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "nombre": "Aliento que no dura",
+            "puntos": "Sientes que el aliento no te dura fresco\nDudas antes de hablar de cerca con alguien"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "nombre": "Algo queda",
+            "puntos": "Aunque te cepilles, sientes que la boca no queda limpia\nNotas residuos en la lengua y entre los dientes"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "nombre": "Manchas",
+            "puntos": "Quieres mantener tus dientes con aspecto más limpio\nBuscas una rutina sencilla que complemente tu cepillado"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-timeline",
+      "settings": {
+        "color_tarjeta": "#7cb518",
+        "etiqueta": "Qué esperar",
+        "titulo": "Tu rutina, <em>paso a paso</em>"
+      },
+      "blocks": [
+        {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Primer uso",
+            "icono": "brillo",
+            "titulo": "Sensación de limpieza inmediata",
+            "texto": "La frescura se nota desde el primer buche."
+          }
+        },
+        {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Primera semana",
+            "icono": "frescura",
+            "titulo": "Aliento fresco por más tiempo",
+            "texto": "Lo usas después de cepillarte y se vuelve parte de tu rutina."
+          }
+        },
+        {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Uso diario",
+            "icono": "sonrisa",
+            "titulo": "Una rutina oral más completa",
+            "texto": "Llegas a lengua, mejillas y encías, donde el cepillo no alcanza."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-destacado",
+      "settings": {
+        "etiqueta": "Solo lo esencial",
+        "titulo": "Menos ruido. <em>Más limpieza.</em>",
+        "texto": "Una fórmula enfocada en completar tu cepillado, sin complicar tu rutina.",
+        "imagen": {
+          "src": "../../imagenes/luvien/labios-enjuague.webp"
+        },
+        "posicion": "abajo"
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "simbolo": "0",
+            "titulo": "0% alcohol",
+            "texto": "Apta para uso diario."
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "simbolo": "3",
+            "titulo": "3 pasos, 30 segundos",
+            "texto": "Mide, enjuaga y escupe."
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "simbolo": "+",
+            "titulo": "Peróxido + aceites esenciales",
+            "texto": "Ayuda a mantener la blancura y refresca el aliento."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "numeros",
+        "fondo": "oscuro",
+        "titulo": "Prepara tu enjuague <em>en 30 segundos</em>",
+        "texto": ""
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Mide 15 ml en la tapa.",
+            "texto": ""
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Haz buches 30 segundos y escupe.",
+            "texto": ""
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Mira lo que se llevó el enjuague.",
+            "texto": ""
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Experiencias con iD Whitening",
+        "titulo": "Lo que dicen <em>quienes lo prueban.</em>",
+        "nota": "4,8",
+        "cantidad": "458 reseñas",
+        "visibles": 2
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Lo veo como el paso final de mi rutina. Me ayuda a sentir que realmente terminé de limpiar toda mi boca.",
+            "nombre": "Juan Miguel L.",
+            "ciudad": "Guatemala"
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Reseña de ejemplo: reemplázala por una reseña real de tu cliente.",
+            "nombre": "Ejemplo",
+            "ciudad": "Ciudad"
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Reseña de ejemplo: reemplázala por una reseña real de tu cliente.",
+            "nombre": "Ejemplo",
+            "ciudad": "Ciudad"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "lineas",
+        "fondo": "fondo",
+        "etiqueta": "¿Tienes dudas?",
+        "titulo": "Pregúntanos lo que sea.",
+        "texto": "Si algo no está claro, aquí lo resolvemos.",
+        "whatsapp": "50252309787",
+        "abrir_primera": false
+      }
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_modo": "oferta",
+        "boton_texto": "Elegir mi pack",
+        "subtexto": "Envío gratis"
+      }
+    }
+  ]
+}

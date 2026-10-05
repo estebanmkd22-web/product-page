@@ -1,7 +1,7 @@
 {%- comment -%}
-  PP · Íconos
-  Franja de 2 a 4 íconos con texto corto (ej: "Ayuda a retirar residuos ·
-  Refresca el aliento · Mantiene tu blancura").
+  PP · Pestañas
+  "¿Te identificas?": botones tipo cápsula que cambian una lista de puntos.
+  Cada pestaña es un perfil o problema distinto.
 {%- endcomment -%}
 
 <style>
@@ -270,50 +270,50 @@
 </style>
 
 <style>
-  #pp-iconos-{{ section.id }} { padding: {{ section.settings.espacio }}px 0; }
-  #pp-iconos-{{ section.id }} .pp-iconos__fila { grid-template-columns: repeat({{ section.blocks.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); }
-  .pp-iconos__fila { display: grid; max-width: 860px; margin: 0 auto; }
-  .pp-iconos__item { display: flex; align-items: center; gap: 8px; min-width: 0; font-size: 13px; font-weight: 800; line-height: 1.2; text-transform: uppercase; }
-  .pp-iconos__ico { display: grid; place-items: center; flex: 0 0 auto; color: var(--pp-acento); font-size: 26px; }
-  .pp-iconos__ico img { width: 30px; height: 30px; object-fit: contain; }
-
-  /* Estilo tarjeta: una caja con divisiones (como debajo de una foto) */
-  .pp-iconos--tarjeta .pp-iconos__fila {
-    padding: 12px 8px; border: 1px solid var(--pp-borde); border-radius: var(--pp-radio); background: var(--pp-fondo);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, .06);
+  #pp-tabs-{{ section.id }} { background: {{ section.settings.color_fondo }}; color: {{ section.settings.color_texto }}; }
+  #pp-tabs-{{ section.id }} .pp-h { color: inherit; }
+  #pp-tabs-{{ section.id }} .pp-eyebrow { color: {{ section.settings.color_activo }}; }
+  .pp-tabs__chips { display: flex; gap: 8px; margin: 0 -16px 18px; padding: 0 16px; overflow-x: auto; scrollbar-width: none; }
+  .pp-tabs__chips::-webkit-scrollbar { display: none; }
+  .pp-tabs__chip {
+    flex: 0 0 auto; min-height: 42px; padding: 8px 18px; border: 0; border-radius: 99px;
+    background: rgba(255, 255, 255, .16); color: inherit; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; white-space: nowrap;
   }
-  .pp-iconos--tarjeta .pp-iconos__item { flex-direction: column; gap: 6px; padding: 2px 6px; text-align: center; font-size: 11px; overflow-wrap: anywhere; }
-  .pp-iconos--tarjeta .pp-iconos__item + .pp-iconos__item { border-left: 1px solid var(--pp-borde); }
-
-  /* Estilo círculos: ícono grande en círculo y texto debajo */
-  .pp-iconos--circulos .pp-iconos__fila { gap: 12px; }
-  .pp-iconos--circulos .pp-iconos__item { flex-direction: column; gap: 10px; text-align: center; font-size: 15px; letter-spacing: .02em; }
-  .pp-iconos--circulos .pp-iconos__ico {
-    width: 76px; height: 76px; border-radius: 50%; font-size: 36px;
-    background: var(--pp-fondo-2); color: var(--pp-texto);
-  }
-  .pp-bg--oscuro.pp-iconos--circulos .pp-iconos__ico { background: rgba(255, 255, 255, .85); color: #222; }
-
+  #pp-tabs-{{ section.id }} .pp-tabs__chip[aria-selected="true"] { background: {{ section.settings.color_activo }}; color: #fff; }
+  .pp-tabs__chip:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  .pp-tabs__panel { display: grid; gap: 18px; }
+  .pp-tabs__panel[hidden] { display: none; }
+  .pp-tabs__lista { display: grid; gap: 12px; }
+  .pp-tabs__lista li { display: flex; gap: 12px; align-items: flex-start; font-size: 17px; line-height: 1.4; }
+  #pp-tabs-{{ section.id }} .pp-tabs__lista .pp-ico { margin-top: 2px; font-size: 22px; color: {{ section.settings.color_activo }}; }
+  .pp-tabs__img { overflow: hidden; border-radius: var(--pp-radio); }
+  .pp-tabs__img img { width: 100%; height: auto; }
   @media (min-width: 750px) {
-    .pp-iconos__item { font-size: 15px; }
-    .pp-iconos--tarjeta .pp-iconos__item { flex-direction: row; gap: 10px; padding: 0 18px; justify-content: center; text-align: left; font-size: 14px; }
+    .pp-tabs__panel--img { grid-template-columns: 1.2fr 1fr; align-items: center; gap: 40px; }
   }
 </style>
 
-<div id="pp-iconos-{{ section.id }}" class="pp pp-bg--{{ section.settings.fondo }} pp-iconos--{{ section.settings.estilo }}">
-  <div class="pp-wrap">
-    {%- if section.settings.titulo != blank -%}
-      <div class="pp-head"><h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2></div>
-    {%- endif -%}
-    <div class="pp-iconos__fila">
+<div id="pp-tabs-{{ section.id }}" class="pp pp-section">
+  <div class="pp-wrap" style="max-width: 920px">
+    <div class="pp-head pp-head--izq">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+    </div>
+
+    <div class="pp-tabs__chips" role="tablist">
       {%- for block in section.blocks -%}
-        <div class="pp-iconos__item" {{ block.shopify_attributes }}>
-          <span class="pp-iconos__ico">
-            {%- if block.settings.imagen != blank -%}
-              {{ block.settings.imagen | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}
-            {%- else -%}
-              {%- assign icono = block.settings.icono -%}
-              {%- comment -%}PP-ICONOS:START{%- endcomment -%}
+        <button type="button" class="pp-tabs__chip" role="tab" id="pp-tab-{{ block.id }}" aria-controls="pp-panel-{{ block.id }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.nombre }}</button>
+      {%- endfor -%}
+    </div>
+
+    {%- for block in section.blocks -%}
+      <div class="pp-tabs__panel{% if block.settings.imagen != blank %} pp-tabs__panel--img{% endif %}" role="tabpanel" id="pp-panel-{{ block.id }}" aria-labelledby="pp-tab-{{ block.id }}"{% unless forloop.first %} hidden{% endunless %}>
+        {%- assign puntos = block.settings.puntos | newline_to_br | split: '<br />' -%}
+        <ul class="pp-tabs__lista">
+          {%- for p in puntos -%}
+            {%- assign t = p | strip -%}
+            {%- if t != blank -%}
+              <li>{%- assign icono = 'check' -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
 {%- case icono -%}
 {%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
 {%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -333,61 +333,61 @@
 {%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
 {%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
 {%- endcase -%}
-{%- comment -%}PP-ICONOS:END{%- endcomment -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}<span>{{ t }}</span></li>
             {%- endif -%}
-          </span>
-          <span>{{ block.settings.texto }}</span>
-        </div>
-      {%- endfor -%}
-    </div>
+          {%- endfor -%}
+        </ul>
+        {%- if block.settings.imagen != blank -%}
+          <div class="pp-tabs__img">{{ block.settings.imagen | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 750px) 380px, 100vw' }}</div>
+        {%- endif -%}
+      </div>
+    {%- endfor -%}
   </div>
 </div>
 
+<script>
+  (function () {
+    var root = document.getElementById('pp-tabs-{{ section.id }}');
+    if (!root) return;
+    var tabs = root.querySelectorAll('[role="tab"]');
+    tabs.forEach(function (t) {
+      t.addEventListener('click', function () {
+        tabs.forEach(function (o) {
+          var activo = o === t;
+          o.setAttribute('aria-selected', activo ? 'true' : 'false');
+          var panel = document.getElementById(o.getAttribute('aria-controls'));
+          if (panel) panel.hidden = !activo;
+        });
+      });
+    });
+  })();
+</script>
+
 {% schema %}
 {
-  "name": "PP · Íconos",
+  "name": "PP · Pestañas",
   "tag": "section",
-  "class": "pp-iconos-section",
+  "class": "pp-tabs-section",
   "settings": [
-    {
-      "type": "select", "id": "estilo", "label": "Estilo", "default": "tarjeta",
-      "options": [
-        { "value": "tarjeta", "label": "Tarjeta con divisiones" },
-        { "value": "circulos", "label": "Círculos grandes" }
-      ]
-    },
-    {
-      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
-      "options": [
-        { "value": "fondo", "label": "Blanco" },
-        { "value": "fondo-2", "label": "Alterno (suave)" },
-        { "value": "oscuro", "label": "Oscuro" }
-      ]
-    },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
-    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 20 }
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#0b2a17" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#ffffff" },
+    { "type": "color", "id": "color_activo", "label": "Color de la pestaña activa y los checks", "default": "#2db34a" },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "¿Te identificas?" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular", "default": "Esto es para ti si…" }
   ],
   "blocks": [
     {
-      "type": "icono",
-      "name": "Ícono",
-      "limit": 4,
+      "type": "tab",
+      "name": "Pestaña",
       "settings": [
-        { "type": "select", "id": "icono", "label": "Ícono", "default": "diente", "options": [{"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}] },
-        { "type": "image_picker", "id": "imagen", "label": "O sube tu propio ícono (opcional)" },
-        { "type": "text", "id": "texto", "label": "Texto", "default": "Ayuda a retirar residuos" }
+        { "type": "text", "id": "nombre", "label": "Nombre de la pestaña", "default": "Pestaña" },
+        { "type": "textarea", "id": "puntos", "label": "Puntos (uno por línea)", "default": "Primer punto\nSegundo punto" },
+        { "type": "image_picker", "id": "imagen", "label": "Imagen (opcional)" }
       ]
     }
   ],
   "presets": [
-    {
-      "name": "PP · Íconos",
-      "blocks": [
-        { "type": "icono", "settings": { "icono": "diente", "texto": "Ayuda a retirar residuos" } },
-        { "type": "icono", "settings": { "icono": "frescura", "texto": "Refresca el aliento" } },
-        { "type": "icono", "settings": { "icono": "brillo", "texto": "Mantiene tu blancura" } }
-      ]
-    }
+    { "name": "PP · Pestañas", "blocks": [ { "type": "tab" }, { "type": "tab" }, { "type": "tab" } ] }
   ]
 }
 {% endschema %}

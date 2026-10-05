@@ -63,12 +63,13 @@
   padding: 0 16px;
 }
 
-/* Títulos: usan la fuente de títulos del tema (Dawn) */
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
 .pp-h {
-  font-family: var(--font-heading-family, inherit);
-  font-weight: 800;
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
   line-height: 1.1;
-  letter-spacing: -0.01em;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
   color: var(--pp-texto);
 }
 
@@ -285,6 +286,14 @@
   .pp-pasos__item h3 { font-size: 18px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
   .pp-pasos__item p { font-size: 15px; color: var(--pp-texto-2); }
   .pp-bg--oscuro .pp-pasos__item p { color: inherit; opacity: .8; }
+  .pp-pasos--numeros .pp-pasos__item { grid-template-columns: 44px 1fr; align-items: center; }
+  .pp-pasos--numeros .pp-img, .pp-pasos--numeros .pp-pasos__num { display: none; }
+  .pp-pasos__circulo { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: var(--pp-acento); color: #fff; font-weight: 900; }
+  .pp-pasos--numeros .pp-pasos__item h3 { font-size: 17px; text-transform: none; letter-spacing: 0; }
+  @media (min-width: 750px) {
+    .pp-pasos--numeros { grid-template-columns: 1fr !important; max-width: 640px; margin: 0 auto; }
+    .pp-pasos--numeros .pp-pasos__item { grid-template-columns: 44px 1fr !important; text-align: left !important; }
+  }
   @media (min-width: 750px) {
     .pp-pasos__lista { grid-template-columns: repeat({{ section.blocks.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); gap: 24px; }
     .pp-pasos__item { grid-template-columns: 1fr; text-align: center; }
@@ -298,9 +307,10 @@
       {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
     </div>
 
-    <ol class="pp-pasos__lista" style="list-style:none;margin:0;padding:0">
+    <ol class="pp-pasos__lista pp-pasos--{{ section.settings.estilo }}" style="list-style:none;margin:0;padding:0">
       {%- for block in section.blocks -%}
         <li class="pp-pasos__item" {{ block.shopify_attributes }}>
+          {%- if section.settings.estilo == 'numeros' -%}<span class="pp-pasos__circulo" aria-hidden="true">{{ forloop.index }}</span>{%- endif -%}
           <div class="pp-img">
             {%- if block.settings.imagen != blank -%}
               {{ block.settings.imagen | image_url: width: 500 | image_tag: loading: 'lazy', widths: '200, 350, 500', sizes: '(min-width: 750px) 340px, 112px', alt: block.settings.titulo }}
@@ -336,6 +346,13 @@
     },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "3 pasos. 30 segundos. <em>Y listo.</em>" },
     { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "Úsalo después de tu rutina de higiene oral." },
+    {
+      "type": "select", "id": "estilo", "label": "Estilo", "default": "fotos",
+      "options": [
+        { "value": "fotos", "label": "Con fotos" },
+        { "value": "numeros", "label": "Números en círculo (sin fotos)" }
+      ]
+    },
     { "type": "checkbox", "id": "numerar", "label": "Mostrar número de paso (01, 02, 03)", "default": true },
     {
       "type": "select", "id": "proporcion", "label": "Formato de las imágenes", "default": "1 / 1",
