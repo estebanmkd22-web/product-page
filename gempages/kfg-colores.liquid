@@ -18,6 +18,7 @@
     --kfgc-acento: #a0521d;      /* 2ª línea del titular */
     --kfgc-acento-2: #c8732a;    /* "A TU GUSTO." */
     --kfgc-tarjeta: #ffffff;     /* fondo de las tarjetas */
+    --kfgc-arco: #c8732a;        /* color del arco de luz del fondo */
     --kfgc-fuente: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
     --kfgc-titulo-max: 72px;     /* tamaño máximo del titular en PC */
     --kfgc-radio: 18px;          /* redondeo de las tarjetas */
@@ -45,7 +46,7 @@
       radial-gradient(60% 35% at 0% 38%, rgba(255, 255, 255, 0.85), transparent 70%),
       linear-gradient(180deg, #f8f8f8, var(--kfgc-fondo) 55%, #f4f4f4);
   }
-  /* Arcoíris tenue a la derecha */
+  /* Arco de luz de un solo color a la derecha (color en --kfgc-arco) */
   .kfgc::before {
     content: '';
     position: absolute;
@@ -54,11 +55,10 @@
     pointer-events: none;
     background: radial-gradient(circle at 105% 42%,
       transparent 44%,
-      rgba(255, 90, 90, 0.07) 45.5%,
-      rgba(255, 210, 80, 0.07) 47%,
-      rgba(80, 210, 140, 0.07) 48.5%,
-      rgba(90, 150, 255, 0.07) 50%,
-      transparent 52%);
+      color-mix(in srgb, var(--kfgc-arco) 18%, transparent) 46.5%,
+      color-mix(in srgb, var(--kfgc-arco) 18%, transparent) 49%,
+      transparent 51.5%);
+    filter: blur(2px);
   }
   .kfgc__wrap { max-width: var(--kfgc-ancho); margin: 0 auto; padding: 0 16px; }
 
