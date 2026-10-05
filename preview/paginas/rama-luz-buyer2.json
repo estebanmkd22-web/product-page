@@ -47,19 +47,19 @@
         {
           "type": "mensaje",
           "settings": {
+            "texto": "🚚 Envío GRATIS a toda Colombia"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
             "texto": "💵 Pagas al recibir"
           }
         },
         {
           "type": "mensaje",
           "settings": {
-            "texto": "🚚 Envíos a toda Colombia"
-          }
-        },
-        {
-          "type": "mensaje",
-          "settings": {
-            "texto": "✨ +1.000 hogares iluminados"
+            "texto": "🛡️ Garantía de 30 días"
           }
         }
       ]
@@ -83,7 +83,13 @@
         "rating": "4.9",
         "rating_texto": "(1.240 hogares iluminados)",
         "titulo": "Esta Navidad, convierte cualquier rincón en <em>tu lugar favorito.</em>",
-        "texto": "Una rama de <strong>2.5 m con 144 luces LED cálidas</strong> que cambia por completo tu espacio cuando cae la noche. Se conecta por USB, se moldea a tu gusto y no la vas a querer guardar en enero."
+        "texto": "Una rama de <strong>2.5 m con 144 luces LED cálidas</strong> que cambia por completo tu espacio cuando cae la noche. Se conecta por USB, se moldea a tu gusto y no la vas a querer guardar en enero.",
+        "imagen_5": {
+          "src": "../../imagenes/rama-ejemplo/rincon.webp"
+        },
+        "imagen_6": {
+          "src": "../../imagenes/rama-ejemplo/habitacion.webp"
+        }
       },
       "blocks": [
         {
@@ -118,31 +124,45 @@
         "titulo": "Elige tu <em>pack navideño</em>",
         "color_destacado": "#c8873a",
         "boton_texto": "La quiero — Pago contra entrega",
-        "nota": "Pagas al recibir · Envío a toda Colombia · Unidades limitadas por temporada"
+        "nota": "Envío GRATIS · Pagas al recibir · Garantía de 30 días"
       },
       "blocks": [
         {
           "type": "pack",
           "settings": {
             "titulo": "1 rama",
-            "subtitulo": "Para tu rincón favorito",
+            "subtitulo": "Envío gratis",
             "por_porcion": "144 LED · 2.5 m",
             "precio": 144900,
             "precio_antes": 229900,
-            "cantidad": 1
+            "cantidad": 1,
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/producto.webp"
+            }
           }
         },
         {
           "type": "pack",
           "settings": {
             "titulo": "2 ramas",
-            "subtitulo": "Habitación + sala, o para regalar",
+            "subtitulo": "Envío gratis · para ti y para regalar",
             "etiqueta": "Favorito en Navidad",
             "por_porcion": "$124.950 c/u",
             "precio": 249900,
             "precio_antes": 459800,
             "cantidad": 2,
-            "preseleccionado": true
+            "preseleccionado": true,
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/producto.webp"
+            }
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "insignia": ""
           }
         },
         {
@@ -156,8 +176,8 @@
         {
           "type": "regalo",
           "settings": {
-            "icono": "camion",
-            "titulo": "Envío a toda Colombia",
+            "icono": "escudo",
+            "titulo": "Garantía 30 días",
             "insignia": ""
           }
         },
@@ -168,13 +188,38 @@
             "titulo": "Lista para regalar",
             "insignia": ""
           }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Así se ve <em>cuando cae la noche</em>",
+        "texto": "Toca un video para activar el sonido."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Habitación"
+          }
         },
         {
-          "type": "regalo",
+          "type": "video",
           "settings": {
-            "icono": "chat",
-            "titulo": "Atención por WhatsApp",
-            "insignia": ""
+            "etiqueta": "Sala"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Rincón"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Unboxing"
           }
         }
       ]
@@ -203,8 +248,8 @@
         {
           "type": "icono",
           "settings": {
-            "icono": "brillo",
-            "texto": "8 modos de luz"
+            "icono": "escudo",
+            "texto": "Garantía 30 días"
           }
         }
       ]
@@ -223,28 +268,40 @@
           "type": "tab",
           "settings": {
             "nombre": "Tu habitación",
-            "puntos": "Sobre el espaldar de la cama o enmarcando la ventana\nLuz cálida para leer, ver series o simplemente desconectarte"
+            "puntos": "Sobre el espaldar de la cama o enmarcando la ventana\nLuz cálida para leer, ver series o simplemente desconectarte",
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/habitacion.webp"
+            }
           }
         },
         {
           "type": "tab",
           "settings": {
             "nombre": "La sala",
-            "puntos": "Sobre el televisor, una repisa o el espejo\nTu sala en modo Navidad sin llenarla de adornos"
+            "puntos": "Sobre el televisor, una repisa o el espejo\nTu sala en modo Navidad sin llenarla de adornos",
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/sala.webp"
+            }
           }
         },
         {
           "type": "tab",
           "settings": {
             "nombre": "Ese rincón vacío",
-            "puntos": "Esa pared que llevas meses sin saber cómo decorar\nUna planta, una silla y la rama: rincón aesthetic listo"
+            "puntos": "Esa pared que llevas meses sin saber cómo decorar\nUna planta, una silla y la rama: rincón aesthetic listo",
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/rincon.webp"
+            }
           }
         },
         {
           "type": "tab",
           "settings": {
             "nombre": "Tu escritorio",
-            "puntos": "Rodeando el escritorio o un estante\nComo funciona con USB, la conectas al computador"
+            "puntos": "Rodeando el escritorio o un estante\nComo funciona con USB, la conectas al computador",
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/hero-3.webp"
+            }
           }
         }
       ]
@@ -258,7 +315,11 @@
         "titulo": "Tu habitación no necesita una remodelación. <em>Necesita esta Navidad.</em>",
         "texto": "Diciembre es el mes en que todos quieren que su casa se sienta distinta. La diferencia es que esta rama no se guarda en una caja el 7 de enero: se queda contigo todo el año.",
         "firma": "Pide hoy y llega antes de Navidad",
-        "cargo": "Unidades limitadas por temporada"
+        "cargo": "Unidades limitadas por temporada",
+        "imagen": {
+          "src": "../../imagenes/rama-ejemplo/sala.webp"
+        },
+        "posicion": "arriba"
       },
       "blocks": [
         {
@@ -358,6 +419,17 @@
             "valor_a": "8 modos",
             "ok_b": false,
             "valor_b": "1 o 2"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Envío y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Gratis + 30 días",
+            "ok_b": false,
+            "valor_b": "Depende"
           }
         }
       ]
@@ -482,7 +554,7 @@
         {
           "type": "paso",
           "settings": {
-            "titulo": "Conéctala por USB y elige uno de los 8 modos.",
+            "titulo": "Conéctala al USB y elige uno de los 8 modos.",
             "texto": ""
           }
         }
@@ -555,7 +627,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo se conecta?",
-            "respuesta": "<p>Por USB. Puedes usar el cargador de tu celular, un computador o un power bank.</p>"
+            "respuesta": "<p>Tiene conexión USB: la conectas al adaptador de pared de tu celular, a un computador o a un power bank. Así la pones donde quieras, sin depender de un enchufe especial.</p>"
           }
         },
         {
@@ -576,7 +648,14 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Si haces tu pedido ahora, sí. Despachamos a toda Colombia.</p>"
+            "respuesta": "<p>Si haces tu pedido ahora, sí. El envío es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Tiene garantía?",
+            "respuesta": "<p>Sí. Tienes <strong>30 días de garantía</strong> por cualquier daño de fábrica.</p>"
           }
         },
         {
@@ -593,7 +672,7 @@
       "settings": {
         "boton_modo": "oferta",
         "boton_texto": "Elegir mi pack",
-        "subtexto": "Pagas al recibir"
+        "subtexto": "Envío gratis · Pagas al recibir"
       }
     }
   ]
