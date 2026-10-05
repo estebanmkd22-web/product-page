@@ -1,0 +1,16 @@
+{
+  "titulo": "KFG · Colores y tarjetas",
+  "moneda": "$",
+  "producto": { "title": "Audífonos KFG", "selected_or_first_available_variant": { "id": 1, "price": 0, "compare_at_price": null, "available": true }, "media": [] },
+  "secciones": [
+    {
+      "tipo": "pp-colores",
+      "blocks": [
+        { "type": "variante", "settings": { "nombre": "Verde", "color_linea": "#5f6b38", "imagen": { "src": "../../imagenes/kfg/variante-verde.webp" } } },
+        { "type": "variante", "settings": { "nombre": "Naranja", "color_linea": "#b25a1f", "imagen": { "src": "../../imagenes/kfg/variante-naranja.webp" } } },
+        { "type": "tarjeta", "settings": { "titulo": "Estilo.", "texto": "<strong>Un diseño único que te acompaña</strong> todos los días.", "imagen": { "src": "../../imagenes/kfg/tarjeta-estilo.webp" } } },
+        { "type": "tarjeta", "settings": { "titulo": "Calidad.", "texto": "<strong>Materiales premium, pensados para</strong> durar.", "imagen": { "src": "../../imagenes/kfg/tarjeta-calidad.webp" } } }
+      ]
+    }
+  ]
+}

@@ -22,6 +22,7 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-zonas.liquid` | PP · Zonas | Imagen con etiquetas posicionadas + fotos de detalle |
 | `sections/pp-beneficios.liquid` | PP · Beneficios | Imagen central rodeada de beneficios con ícono |
 | `sections/pp-secuencia.liquid` | PP · Secuencia | Imagen + fotos en secuencia con flechas |
+| `sections/pp-colores.liquid` | PP · Colores y tarjetas | Titular en 2 líneas, variantes de color (foto + nombre subrayado) y tarjetas con foto y titular grande. Fuente Manrope |
 | `sections/pp-boton-fijo.liquid` | PP · Botón fijo | Botón de compra pegado abajo en celular |
 
 ## Cómo instalar (una sola vez por tienda)
@@ -67,6 +68,7 @@ Todo lo de la base va dentro de `:where()`: se repite en cada sección y nunca d
 a los estilos propios de una sección.
 
 Fotos recortadas de las imágenes de Luvien (sin texto): `imagenes/luvien/` y `imagenes/fotos-luvien.zip`.
+Fotos de los audífonos KFG (variantes sin fondo + tarjetas): `imagenes/kfg/`.
 
 ### Página para copiar el código
 
