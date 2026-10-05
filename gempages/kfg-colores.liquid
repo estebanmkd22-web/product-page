@@ -1,8 +1,9 @@
 <!-- ============================================================
   GEMPAGES · Elemento "Liquid" (Custom code)
   Bloque: Diseño que se ve / Colores / Estilo y Calidad
-  1) Sube las 4 fotos en Shopify > Contenido > Archivos con estos nombres:
-     variante-verde.webp, variante-naranja.webp, tarjeta-estilo.webp, tarjeta-calidad.webp
+  1) Sube las 4 fotos en Shopify > Contenido > Archivos y copia el enlace de cada una
+     (botón de copiar enlace, empieza con https://cdn.shopify.com/...).
+     Pega cada enlace donde dice PEGA_AQUI_URL_... (entre las comillas de src="").
   2) Pega TODO este código en el elemento Liquid de GemPages.
   Los textos se editan directo abajo. Los colores y tamaños, en :root (.kfgc).
 ============================================================= -->
@@ -193,11 +194,11 @@
     <!-- ===== VARIANTES (cambia la foto, el nombre y el color de la línea) ===== -->
     <div class="kfgc__variantes">
       <div class="kfgc__var" style="--kfgc-linea: #5f6b38;">
-        <img src="{{ 'variante-verde.webp' | file_url }}" alt="Estuche color verde" width="380" height="300" loading="lazy">
+        <img src="PEGA_AQUI_URL_VARIANTE_VERDE" alt="Estuche color verde" width="380" height="300" loading="lazy">
         <span class="kfgc__nombre">Verde</span>
       </div>
       <div class="kfgc__var" style="--kfgc-linea: #b25a1f;">
-        <img src="{{ 'variante-naranja.webp' | file_url }}" alt="Estuche color naranja" width="380" height="300" loading="lazy">
+        <img src="PEGA_AQUI_URL_VARIANTE_NARANJA" alt="Estuche color naranja" width="380" height="300" loading="lazy">
         <span class="kfgc__nombre">Naranja</span>
       </div>
     </div>
@@ -206,7 +207,7 @@
     <div class="kfgc__tarjetas">
       <div class="kfgc__card">
         <div class="kfgc__foto">
-          <img src="{{ 'tarjeta-estilo.webp' | file_url }}" alt="Audífonos junto a una radio vintage" width="506" height="412" loading="lazy">
+          <img src="PEGA_AQUI_URL_TARJETA_ESTILO" alt="Audífonos junto a una radio vintage" width="506" height="412" loading="lazy">
         </div>
         <div class="kfgc__cuerpo">
           <h3 class="kfgc__card-titulo">Estilo.</h3>
@@ -215,7 +216,7 @@
       </div>
       <div class="kfgc__card">
         <div class="kfgc__foto">
-          <img src="{{ 'tarjeta-calidad.webp' | file_url }}" alt="Estuche verde de materiales premium" width="514" height="412" loading="lazy">
+          <img src="PEGA_AQUI_URL_TARJETA_CALIDAD" alt="Estuche verde de materiales premium" width="514" height="412" loading="lazy">
         </div>
         <div class="kfgc__cuerpo">
           <h3 class="kfgc__card-titulo">Calidad.</h3>
