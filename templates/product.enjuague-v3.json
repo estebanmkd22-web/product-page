@@ -1,24 +1,7 @@
 {
-  "titulo": "Demo · Estilo HYDRA/Greens",
-  "moneda": "Q",
-  "locale": "es-GT",
-  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Oswald',sans-serif;--pp-peso-titulos:700;--pp-mayus-titulos:uppercase;--pp-espaciado-titulos:0}</style>",
-  "producto": {
-    "title": "iD Whitening",
-    "featured_image": {
-      "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp"
-    },
-    "selected_or_first_available_variant": {
-      "id": 1,
-      "price": 21000,
-      "compare_at_price": null,
-      "available": true
-    },
-    "media": []
-  },
-  "secciones": [
-    {
-      "tipo": "pp-estilos",
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
       "settings": {
         "acento": "#7cb518",
         "texto": "#13284b",
@@ -29,52 +12,48 @@
         "estrella": "#e3a008"
       }
     },
-    {
-      "tipo": "pp-ticker",
+    "ticker": {
+      "type": "pp-ticker",
       "settings": {
         "fondo": "#13284b"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "mensaje_1": {
           "type": "mensaje",
           "settings": {
             "texto": "Envío GRATIS a toda Guatemala"
           }
         },
-        {
+        "mensaje_2": {
           "type": "mensaje",
           "settings": {
             "texto": "+5.600 clientes felices"
           }
         },
-        {
+        "mensaje_3": {
           "type": "mensaje",
           "settings": {
             "texto": "Pagás al recibir"
           }
         }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3"
       ]
     },
-    {
-      "tipo": "pp-hero-oferta",
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
       "settings": {
         "mostrar_oferta": false,
-        "imagen_1": {
-          "src": "../../imagenes/luvien/hero-producto-vaso.webp"
-        },
-        "imagen_2": {
-          "src": "../../imagenes/luvien/burbuja-residuos.webp"
-        },
-        "imagen_3": {
-          "src": "../../imagenes/luvien/hero-pareja.webp"
-        },
         "rating": "4.8",
         "rating_texto": "(458 reseñas)",
         "titulo": "iD Whitening",
         "texto": "<strong>El paso que le falta a tu cepillado.</strong>"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "transformacion_1": {
           "type": "transformacion",
           "settings": {
             "icono": "diente",
@@ -82,7 +61,7 @@
             "a": "a sensación de limpieza completa"
           }
         },
-        {
+        "transformacion_2": {
           "type": "transformacion",
           "settings": {
             "icono": "frescura",
@@ -90,7 +69,7 @@
             "a": "a aliento fresco por más tiempo"
           }
         },
-        {
+        "transformacion_3": {
           "type": "transformacion",
           "settings": {
             "icono": "lupa",
@@ -98,17 +77,22 @@
             "a": "a ver lo que se lleva el enjuague"
           }
         }
+      },
+      "block_order": [
+        "transformacion_1",
+        "transformacion_2",
+        "transformacion_3"
       ]
     },
-    {
-      "tipo": "pp-ofertas",
+    "ofertas": {
+      "type": "pp-ofertas",
       "settings": {
         "color_destacado": "#7cb518",
         "boton_texto": "Pedir ahora",
         "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "pack_1": {
           "type": "pack",
           "settings": {
             "titulo": "1 frasco",
@@ -118,7 +102,7 @@
             "precio_antes": 290
           }
         },
-        {
+        "pack_2": {
           "type": "pack",
           "settings": {
             "titulo": "2 frascos",
@@ -131,7 +115,7 @@
             "preseleccionado": true
           }
         },
-        {
+        "pack_3": {
           "type": "pack",
           "settings": {
             "titulo": "3 frascos",
@@ -143,7 +127,7 @@
             "cantidad": 3
           }
         },
-        {
+        "regalo_4": {
           "type": "regalo",
           "settings": {
             "icono": "camion",
@@ -151,7 +135,7 @@
             "insignia": ""
           }
         },
-        {
+        "regalo_5": {
           "type": "regalo",
           "settings": {
             "icono": "pago",
@@ -159,7 +143,7 @@
             "insignia": ""
           }
         },
-        {
+        "regalo_6": {
           "type": "regalo",
           "settings": {
             "icono": "chat",
@@ -167,7 +151,7 @@
             "insignia": ""
           }
         },
-        {
+        "regalo_7": {
           "type": "regalo",
           "settings": {
             "icono": "escudo",
@@ -175,67 +159,86 @@
             "insignia": ""
           }
         }
+      },
+      "block_order": [
+        "pack_1",
+        "pack_2",
+        "pack_3",
+        "regalo_4",
+        "regalo_5",
+        "regalo_6",
+        "regalo_7"
       ]
     },
-    {
-      "tipo": "pp-videos",
+    "videos": {
+      "type": "pp-videos",
       "settings": {
         "titulo": "Mirá lo que <em>se lleva</em>",
         "texto": "Tocá un video para activar el sonido."
       },
-      "blocks": [
-        {
+      "blocks": {
+        "video_1": {
           "type": "video",
           "settings": {
             "etiqueta": "Primer uso"
           }
         },
-        {
+        "video_2": {
           "type": "video",
           "settings": {
             "etiqueta": "Rutina diaria"
           }
         },
-        {
+        "video_3": {
           "type": "video",
           "settings": {
             "etiqueta": "Reseña"
           }
         }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
       ]
     },
-    {
-      "tipo": "pp-iconos",
+    "iconos": {
+      "type": "pp-iconos",
       "settings": {
         "estilo": "tarjeta",
         "espacio": 8
       },
-      "blocks": [
-        {
+      "blocks": {
+        "icono_1": {
           "type": "icono",
           "settings": {
             "icono": "gota",
             "texto": "Sin alcohol"
           }
         },
-        {
+        "icono_2": {
           "type": "icono",
           "settings": {
             "icono": "reloj",
             "texto": "30 segundos"
           }
         },
-        {
+        "icono_3": {
           "type": "icono",
           "settings": {
             "icono": "pago",
             "texto": "Pagás al recibir"
           }
         }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
       ]
     },
-    {
-      "tipo": "pp-datos",
+    "datos": {
+      "type": "pp-datos",
       "settings": {
         "etiqueta": "Conoce iD Whitening",
         "titulo": "Una forma más <em>completa</em> de limpiar tu boca.",
@@ -243,8 +246,8 @@
         "columnas_pc": "4",
         "nota": "Úsalo después del cepillado como complemento de tu rutina de higiene oral."
       },
-      "blocks": [
-        {
+      "blocks": {
+        "dato_1": {
           "type": "dato",
           "settings": {
             "etiqueta": "Por frasco",
@@ -254,7 +257,7 @@
             "resaltar": true
           }
         },
-        {
+        "dato_2": {
           "type": "dato",
           "settings": {
             "etiqueta": "Por uso",
@@ -263,7 +266,7 @@
             "texto": "Haz buches 30 segundos y escupe."
           }
         },
-        {
+        "dato_3": {
           "type": "dato",
           "settings": {
             "etiqueta": "Fórmula",
@@ -272,7 +275,7 @@
             "texto": "Apta para uso diario."
           }
         },
-        {
+        "dato_4": {
           "type": "dato",
           "settings": {
             "etiqueta": "Por enjuague",
@@ -281,10 +284,16 @@
             "texto": "No necesitas diluirlo."
           }
         }
+      },
+      "block_order": [
+        "dato_1",
+        "dato_2",
+        "dato_3",
+        "dato_4"
       ]
     },
-    {
-      "tipo": "pp-comparativa",
+    "comparativa": {
+      "type": "pp-comparativa",
       "settings": {
         "etiqueta": "Comparativa",
         "titulo": "Más limpieza. <em>Menos complicaciones.</em>",
@@ -292,16 +301,13 @@
         "color_destacado": "#7cb518",
         "nombre_a": "iD Whitening",
         "sub_a": "Enjuague con peróxido",
-        "imagen_a": {
-          "src": "https://naturixa.com.co/cdn/shop/files/ChatGPT_Image_9_sept_2026_11_25_10_a.webp"
-        },
         "nombre_b": "Enjuague común",
         "sub_b": "De supermercado",
         "pie_izq": "iD Whitening",
         "pie_der": "El paso que faltaba"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "fila_1": {
           "type": "fila",
           "settings": {
             "titulo": "Sin alcohol",
@@ -312,7 +318,7 @@
             "valor_b": "Muchos lo contienen"
           }
         },
-        {
+        "fila_2": {
           "type": "fila",
           "settings": {
             "titulo": "Ves lo que se lleva",
@@ -323,7 +329,7 @@
             "valor_b": "No"
           }
         },
-        {
+        "fila_3": {
           "type": "fila",
           "settings": {
             "titulo": "Ayuda con la blancura",
@@ -334,7 +340,7 @@
             "valor_b": "No siempre"
           }
         },
-        {
+        "fila_4": {
           "type": "fila",
           "settings": {
             "titulo": "Pago al recibir",
@@ -345,48 +351,59 @@
             "valor_b": "Pago en tienda"
           }
         }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4"
       ]
     },
-    {
-      "tipo": "pp-tabs",
+    "tabs": {
+      "type": "pp-tabs",
       "settings": {
         "color_fondo": "#13284b",
         "color_activo": "#7cb518",
         "titulo": "iD Whitening es para ti si…"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "tab_1": {
           "type": "tab",
           "settings": {
             "nombre": "Aliento que no dura",
             "puntos": "Sientes que el aliento no te dura fresco\nDudas antes de hablar de cerca con alguien"
           }
         },
-        {
+        "tab_2": {
           "type": "tab",
           "settings": {
             "nombre": "Algo queda",
             "puntos": "Aunque te cepilles, sientes que la boca no queda limpia\nNotas residuos en la lengua y entre los dientes"
           }
         },
-        {
+        "tab_3": {
           "type": "tab",
           "settings": {
             "nombre": "Manchas",
             "puntos": "Quieres mantener tus dientes con aspecto más limpio\nBuscas una rutina sencilla que complemente tu cepillado"
           }
         }
+      },
+      "block_order": [
+        "tab_1",
+        "tab_2",
+        "tab_3"
       ]
     },
-    {
-      "tipo": "pp-timeline",
+    "timeline": {
+      "type": "pp-timeline",
       "settings": {
         "color_tarjeta": "#7cb518",
         "etiqueta": "Qué esperar",
         "titulo": "Tu rutina, <em>paso a paso</em>"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "etapa_1": {
           "type": "etapa",
           "settings": {
             "periodo": "Primer uso",
@@ -395,7 +412,7 @@
             "texto": "La frescura se nota desde el primer buche."
           }
         },
-        {
+        "etapa_2": {
           "type": "etapa",
           "settings": {
             "periodo": "Primera semana",
@@ -404,7 +421,7 @@
             "texto": "Lo usas después de cepillarte y se vuelve parte de tu rutina."
           }
         },
-        {
+        "etapa_3": {
           "type": "etapa",
           "settings": {
             "periodo": "Uso diario",
@@ -413,21 +430,23 @@
             "texto": "Llegas a lengua, mejillas y encías, donde el cepillo no alcanza."
           }
         }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3"
       ]
     },
-    {
-      "tipo": "pp-destacado",
+    "destacado": {
+      "type": "pp-destacado",
       "settings": {
         "etiqueta": "Solo lo esencial",
         "titulo": "Menos ruido. <em>Más limpieza.</em>",
         "texto": "Una fórmula enfocada en completar tu cepillado, sin complicar tu rutina.",
-        "imagen": {
-          "src": "../../imagenes/luvien/labios-enjuague.webp"
-        },
         "posicion": "abajo"
       },
-      "blocks": [
-        {
+      "blocks": {
+        "punto_1": {
           "type": "punto",
           "settings": {
             "simbolo": "0",
@@ -435,7 +454,7 @@
             "texto": "Apta para uso diario."
           }
         },
-        {
+        "punto_2": {
           "type": "punto",
           "settings": {
             "simbolo": "3",
@@ -443,7 +462,7 @@
             "texto": "Mide, enjuaga y escupe."
           }
         },
-        {
+        "punto_3": {
           "type": "punto",
           "settings": {
             "simbolo": "+",
@@ -451,42 +470,52 @@
             "texto": "Ayuda a mantener la blancura y refresca el aliento."
           }
         }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
       ]
     },
-    {
-      "tipo": "pp-pasos",
+    "pasos": {
+      "type": "pp-pasos",
       "settings": {
         "estilo": "numeros",
         "fondo": "oscuro",
         "titulo": "Prepara tu enjuague <em>en 30 segundos</em>",
         "texto": ""
       },
-      "blocks": [
-        {
+      "blocks": {
+        "paso_1": {
           "type": "paso",
           "settings": {
             "titulo": "Mide 15 ml en la tapa.",
             "texto": ""
           }
         },
-        {
+        "paso_2": {
           "type": "paso",
           "settings": {
             "titulo": "Haz buches 30 segundos y escupe.",
             "texto": ""
           }
         },
-        {
+        "paso_3": {
           "type": "paso",
           "settings": {
             "titulo": "Mira lo que se llevó el enjuague.",
             "texto": ""
           }
         }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
       ]
     },
-    {
-      "tipo": "pp-resenas",
+    "resenas": {
+      "type": "pp-resenas",
       "settings": {
         "etiqueta": "Experiencias con iD Whitening",
         "titulo": "Lo que dicen <em>quienes lo prueban.</em>",
@@ -494,8 +523,8 @@
         "cantidad": "458 reseñas",
         "visibles": 2
       },
-      "blocks": [
-        {
+      "blocks": {
+        "resena_1": {
           "type": "resena",
           "settings": {
             "estrellas": 5,
@@ -504,7 +533,7 @@
             "ciudad": "Guatemala"
           }
         },
-        {
+        "resena_2": {
           "type": "resena",
           "settings": {
             "estrellas": 5,
@@ -513,7 +542,7 @@
             "ciudad": "Ciudad"
           }
         },
-        {
+        "resena_3": {
           "type": "resena",
           "settings": {
             "estrellas": 5,
@@ -522,10 +551,15 @@
             "ciudad": "Ciudad"
           }
         }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3"
       ]
     },
-    {
-      "tipo": "pp-faq",
+    "faq": {
+      "type": "pp-faq",
       "settings": {
         "estilo": "lineas",
         "fondo": "fondo",
@@ -535,58 +569,83 @@
         "whatsapp": "50252309787",
         "abrir_primera": false
       },
-      "blocks": [
-        {
+      "blocks": {
+        "pregunta_1": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Por qué el líquido sale oscuro cuando lo escupís?",
             "respuesta": "<p>Así es la fórmula desde que sale del frasco. Ese color le permite adherirse a los residuos de lengua, mejillas y encías que el cepillo no alcanza — no es \"toda la suciedad de tu boca de golpe\".</p>"
           }
         },
-        {
+        "pregunta_2": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto tarda en llegar mi pedido?",
             "respuesta": "<p>Entre 24 y 48 horas en la mayoría de zonas de Guatemala.</p>"
           }
         },
-        {
+        "pregunta_3": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
             "respuesta": "<p>Contraentrega. Pagás directo al mensajero cuando recibís tu pedido — nada por adelantado.</p>"
           }
         },
-        {
+        "pregunta_4": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Qué pasa si mi pedido llega dañado?",
             "respuesta": "<p>Te lo reponemos sin costo. Escribinos por WhatsApp con tu número de pedido.</p>"
           }
         },
-        {
+        "pregunta_5": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Reemplaza el cepillado normal?",
             "respuesta": "<p>No, lo complementa. Funciona mejor como parte de tu rutina diaria de cepillado, no como reemplazo.</p>"
           }
         },
-        {
+        "pregunta_6": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Contiene alcohol?",
             "respuesta": "<p>No. Es una fórmula sin alcohol, apta para uso diario.</p>"
           }
         }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6"
       ]
     },
-    {
-      "tipo": "pp-boton-fijo",
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
       "settings": {
         "boton_modo": "oferta",
         "boton_texto": "Elegir mi pack",
         "subtexto": "Envío gratis"
       }
     }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "ofertas",
+    "videos",
+    "iconos",
+    "datos",
+    "comparativa",
+    "tabs",
+    "timeline",
+    "destacado",
+    "pasos",
+    "resenas",
+    "faq",
+    "boton_fijo"
   ]
 }

@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.enjuague-v3', dir: 'templates', ext: '.json', name: 'Plantilla · Enjuague (estilo HYDRA)', desc: 'Página completa de iD Whitening para Naturixa con textos, packs, preguntas y colores. Va en la carpeta templates: abre product.enjuague-v3.json, borra todo, pega y guarda.' },
   { file: 'product.rama-luz', dir: 'templates', ext: '.json', name: 'Plantilla · Rama de Luz LED', desc: 'Página completa de la Rama con textos, precios y colores. Va en la carpeta templates: abre product.rama-luz.json, borra todo, pega y guarda. Antes deben estar pegadas las 15 secciones.' },
   { file: 'pp-hero-oferta', desc: 'Galería, estrellas, titular, beneficios y la caja de compra con el botón de EasySell.' },
   { file: 'pp-ticker', desc: 'Franja con mensajes que se mueven: envío gratis, pago al recibir, clientes felices.' },
