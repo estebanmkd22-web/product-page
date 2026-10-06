@@ -282,11 +282,10 @@
   #pp-tabs-{{ section.id }} { background: {{ section.settings.color_fondo }}; color: {{ section.settings.color_texto }}; }
   #pp-tabs-{{ section.id }} .pp-h { color: inherit; }
   #pp-tabs-{{ section.id }} .pp-eyebrow { color: {{ section.settings.color_activo }}; }
-  .pp-tabs__chips { display: flex; gap: 8px; margin: 0 -16px 18px; padding: 0 16px; overflow-x: auto; scrollbar-width: none; }
-  .pp-tabs__chips::-webkit-scrollbar { display: none; }
+  .pp-tabs__chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
   .pp-tabs__chip {
-    flex: 0 0 auto; min-height: 42px; padding: 8px 18px; border: 0; border-radius: 99px;
-    background: rgba(255, 255, 255, .16); color: inherit; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; white-space: nowrap;
+    flex: 0 1 auto; min-height: 40px; padding: 8px 16px; border: 0; border-radius: 99px;
+    background: rgba(255, 255, 255, .16); color: inherit; font: inherit; font-size: 15px; font-weight: 700; line-height: 1.2; cursor: pointer;
   }
   #pp-tabs-{{ section.id }} .pp-tabs__chip[aria-selected="true"] { background: {{ section.settings.color_activo }}; color: #fff; }
   .pp-tabs__chip:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
