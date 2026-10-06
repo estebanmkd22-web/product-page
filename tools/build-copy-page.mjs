@@ -15,6 +15,7 @@ const SECCIONES = [
   { file: 'pp-ticker', desc: 'Franja con mensajes que se mueven: envío gratis, pago al recibir, clientes felices.' },
   { file: 'pp-estilos', desc: 'Opcional. Cambia los colores de todas las secciones PP desde un solo lugar.' },
   { file: 'pp-videos', desc: 'Carrusel de videos verticales que se reproducen solos. Va debajo de la caja de compra.' },
+  { file: 'pp-videos-rama', desc: 'Solo para la Rama de Luz (tienda de Colombia). Carrusel de videos con el estilo de la Rama: franja oscura, acento ámbar y brillo cálido. Es independiente de PP · Videos.' },
   { file: 'pp-problema', desc: 'Etiqueta, titular y hasta 3 fotos en fila. Ej: "El cepillo limpia dientes. No limpia esto."' },
   { file: 'pp-grid-dolores', desc: 'Tarjetas con foto, título rojo y texto en 2 columnas, más una frase de cierre.' },
   { file: 'pp-testimonio', desc: 'Pregunta que agita el dolor, cita de un cliente con estrellas y botón de compra.' },

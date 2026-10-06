@@ -10,7 +10,8 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-estilos.liquid` | PP · Estilos globales | (Opcional) Cambiar los colores de toda la página. Se agrega 1 vez, arriba |
 | `sections/pp-ticker.liquid` | PP · Barra animada | Franja con mensajes que se mueven |
 | `sections/pp-hero-oferta.liquid` | PP · Hero + Oferta | Galería, reseñas, titular, beneficios, precio, qué incluye y botón |
-| `sections/pp-videos.liquid` | PP · Videos | Carrusel de videos verticales (UGC) que se reproducen en pantalla |
+| `sections/pp-videos.liquid` | PP · Videos | Carrusel de videos verticales (UGC) con flechas, barra y avance automático |
+| `sections/pp-videos-rama.liquid` | PP · Videos Rama | El mismo carrusel con el estilo de la Rama de Luz (franja oscura y acento ámbar) |
 | `sections/pp-problema.liquid` | PP · Problema | Etiqueta, titular y hasta 3 fotos en fila |
 | `sections/pp-grid-dolores.liquid` | PP · Grid de dolores | Tarjetas con foto, título y texto + frase de cierre |
 | `sections/pp-testimonio.liquid` | PP · Testimonio | Pregunta de agitación, cita de cliente y botón |

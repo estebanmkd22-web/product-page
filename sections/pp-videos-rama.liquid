@@ -1,0 +1,532 @@
+{%- comment -%}
+  PP · Videos Rama
+  Versión de PP · Videos con el estilo de la Rama de Luz: franja oscura de noche,
+  acento ámbar y tarjetas con brillo cálido. Carrusel de videos verticales.
+  Se reproducen sin sonido solo cuando están en pantalla; al tocar uno se
+  activa su sonido.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-vr-{{ section.id }} {
+    --vid-w: {{ section.settings.ancho_movil }}%;
+    --vr-bg: {{ section.settings.color_fondo }}; --vr-tx: {{ section.settings.color_texto }}; --vr-ac: {{ section.settings.color_acento }};
+    background: var(--vr-bg); color: var(--vr-tx);
+  }
+  #pp-vr-{{ section.id }} .pp-h { color: var(--vr-tx); }
+  #pp-vr-{{ section.id }} .pp-h em, #pp-vr-{{ section.id }} .pp-eyebrow { color: var(--vr-ac); }
+  #pp-vr-{{ section.id }} .pp-lead { color: var(--vr-tx); opacity: .8; }
+  .pp-vr { padding: {{ section.settings.espacio }}px 0; }
+  .pp-vr .pp-head { margin-bottom: 18px; }
+  .pp-vr__track {
+    display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 0 16px; scroll-padding: 0 16px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .pp-vr__track::-webkit-scrollbar { display: none; }
+  .pp-vr__item {
+    position: relative; flex: 0 0 var(--vid-w, 40%); scroll-snap-align: start;
+    aspect-ratio: 9 / 16; overflow: hidden; border-radius: calc(var(--pp-radio) + 4px);
+    background: color-mix(in srgb, var(--vr-tx) 8%, var(--vr-bg)); cursor: pointer;
+    border: 1px solid color-mix(in srgb, var(--vr-ac) 40%, transparent);
+    box-shadow: 0 14px 34px -14px color-mix(in srgb, var(--vr-ac) 55%, transparent);
+  }
+  #pp-vr-{{ section.id }} .pp-vr__item > svg { width: 100%; height: 100%; background: transparent !important; fill: color-mix(in srgb, var(--vr-tx) 14%, transparent); }
+  #pp-vr-{{ section.id }} .pp-vr__track { padding-top: 6px; padding-bottom: 26px; margin-bottom: -16px; }
+  .pp-vr__item video, .pp-vr__item img {
+    display: block; width: 100%; height: 100%; object-fit: cover;
+  }
+  .pp-vr__sonido {
+    position: absolute; right: 8px; bottom: 8px; display: grid; place-items: center;
+    width: 32px; height: 32px; border: 0; border-radius: 99px; padding: 0;
+    background: rgba(0, 0, 0, .55); color: #fff; font-size: 15px; line-height: 1; pointer-events: none;
+  }
+  .pp-vr__etiqueta {
+    position: absolute; left: 8px; top: 8px; padding: 4px 8px; border-radius: 99px;
+    background: var(--vr-ac); color: var(--vr-bg); font-size: 12px; font-weight: 800;
+  }
+  .pp-vr .pp-cta { padding: 0 16px; }
+  .pp-vr__carrusel { position: relative; }
+  .pp-vr__flecha {
+    position: absolute; top: 50%; z-index: 2; display: grid; place-items: center;
+    width: 38px; height: 38px; margin-top: -19px; padding: 0; border: 0; border-radius: 99px;
+    background: var(--vr-ac); color: var(--vr-bg); box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+    font: 700 22px/1 Arial, sans-serif; cursor: pointer; transition: opacity .2s;
+  }
+  .pp-vr__flecha--prev { left: 6px; }
+  .pp-vr__flecha--next { right: 6px; }
+  .pp-vr__flecha[disabled] { opacity: 0; pointer-events: none; }
+  .pp-vr__barra { max-width: 240px; height: 4px; margin: 14px auto 0; border-radius: 99px; background: color-mix(in srgb, var(--vr-ac) 22%, transparent); overflow: hidden; }
+  .pp-vr__barra span { display: block; width: 30%; height: 100%; border-radius: inherit; background: var(--vr-ac); transition: width .15s linear; }
+  .pp-vr--quieto .pp-vr__flecha, .pp-vr--quieto .pp-vr__barra { display: none; }
+  .pp-vr--quieto .pp-vr__track { justify-content: safe center; }
+  @media (min-width: 750px) {
+    .pp-vr__track { gap: 14px; padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); scroll-padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); }
+    .pp-vr__item { flex-basis: 270px; }
+    .pp-vr__flecha { width: 44px; height: 44px; margin-top: -22px; }
+    .pp-vr__flecha--prev { left: max(8px, calc((100% - var(--pp-ancho)) / 2)); }
+    .pp-vr__flecha--next { right: max(8px, calc((100% - var(--pp-ancho)) / 2)); }
+  }
+</style>
+
+<div id="pp-vr-{{ section.id }}" class="pp pp-vr">
+  {%- if section.settings.etiqueta != blank or section.settings.titulo != blank or section.settings.texto != blank -%}
+    <div class="pp-wrap">
+      <div class="pp-head">
+        {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="pp-vr__carrusel">
+  <button type="button" class="pp-vr__flecha pp-vr__flecha--prev" aria-label="Video anterior" data-pp-vr-prev>&lsaquo;</button>
+  <div class="pp-vr__track" data-pp-vr>
+    {%- for block in section.blocks -%}
+      <div class="pp-vr__item" {{ block.shopify_attributes }}>
+        {%- if block.settings.video != blank -%}
+          {{ block.settings.video | video_tag: autoplay: false, loop: true, muted: true, controls: false, playsinline: true, preload: 'none', image_size: '480x' }}
+          <span class="pp-vr__sonido" aria-hidden="true">🔇</span>
+        {%- elsif block.settings.video_url != blank -%}
+          <video src="{{ block.settings.video_url }}" loop muted playsinline preload="none"></video>
+          <span class="pp-vr__sonido" aria-hidden="true">🔇</span>
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag }}
+        {%- endif -%}
+        {%- if block.settings.etiqueta != blank -%}<span class="pp-vr__etiqueta">{{ block.settings.etiqueta }}</span>{%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+  <button type="button" class="pp-vr__flecha pp-vr__flecha--next" aria-label="Video siguiente" data-pp-vr-next>&rsaquo;</button>
+  </div>
+  <div class="pp-vr__barra" aria-hidden="true"><span data-pp-vr-barra></span></div>
+
+  {%- if section.settings.boton_modo != 'ninguno' -%}
+    <div class="pp-cta">
+      {%- case section.settings.boton_modo -%}
+        {%- when 'easysell' -%}
+          <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn pp-btn--pulse">{{ section.settings.boton_texto }}</a>
+        {%- when 'oferta' -%}
+          <a href="#oferta" class="pp-btn">{{ section.settings.boton_texto }}</a>
+        {%- else -%}
+          <a href="{{ section.settings.boton_enlace | default: '#' }}" class="pp-btn">{{ section.settings.boton_texto }}</a>
+      {%- endcase -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-vr-{{ section.id }}');
+    if (!root) return;
+    var track = root.querySelector('[data-pp-vr]');
+    var prev = root.querySelector('[data-pp-vr-prev]');
+    var next = root.querySelector('[data-pp-vr-next]');
+    var barra = root.querySelector('[data-pp-vr-barra]');
+    var items = track.children;
+    function paso() { return items.length > 1 ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth; }
+    function estado() {
+      var max = track.scrollWidth - track.clientWidth;
+      root.classList.toggle('pp-vr--quieto', max < 4);
+      prev.disabled = track.scrollLeft < 4;
+      next.disabled = track.scrollLeft > max - 4;
+      var visible = track.clientWidth / track.scrollWidth;
+      barra.style.width = Math.min(100, (visible + (1 - visible) * (max > 0 ? track.scrollLeft / max : 1)) * 100) + '%';
+    }
+    function mover(dir) {
+      var max = track.scrollWidth - track.clientWidth;
+      var destino = track.scrollLeft + dir * paso();
+      if (dir > 0 && track.scrollLeft > max - 4) destino = 0;
+      track.scrollTo({ left: destino, behavior: 'smooth' });
+    }
+    prev.addEventListener('click', function () { parar(); mover(-1); });
+    next.addEventListener('click', function () { parar(); mover(1); });
+    track.addEventListener('scroll', estado, { passive: true });
+    window.addEventListener('resize', estado);
+    estado();
+    var auto = null;
+    function parar() { if (auto) { clearInterval(auto); auto = null; } }
+    {%- if section.settings.auto_avance %}
+    if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+      auto = setInterval(function () {
+        var r = root.getBoundingClientRect();
+        if (r.bottom > 0 && r.top < window.innerHeight && !root.classList.contains('pp-vr--quieto')) mover(1);
+      }, {{ section.settings.auto_segundos | times: 1000 }});
+      ['touchstart', 'pointerdown', 'wheel'].forEach(function (ev) { track.addEventListener(ev, parar, { passive: true }); });
+    }
+    {%- endif %}
+    var irOferta = root.querySelector('.pp-cta a[href="#oferta"]');
+    var destino = document.getElementById('oferta') || document.querySelector('.pp-of');
+    if (irOferta && destino) irOferta.addEventListener('click', function (ev) { ev.preventDefault(); destino.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+    var videos = Array.prototype.slice.call(root.querySelectorAll('video'));
+    if (!videos.length) return;
+    var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function icono(v) {
+      var i = v.parentNode.querySelector('.pp-vr__sonido');
+      if (i) i.textContent = v.muted ? '🔇' : '🔊';
+    }
+
+    /* Solo reproduce los videos que están en pantalla: ahorra datos y batería */
+    if ('IntersectionObserver' in window && !reducir) {
+      var io = new IntersectionObserver(function (entradas) {
+        entradas.forEach(function (e) {
+          var v = e.target;
+          if (e.isIntersecting) {
+            if (v.preload === 'none') v.preload = 'auto';
+            var p = v.play();
+            if (p && p.catch) p.catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: 0.5 });
+      videos.forEach(function (v) { io.observe(v); });
+    }
+
+    /* Tocar un video: activa su sonido y silencia los demás */
+    videos.forEach(function (v) {
+      v.parentNode.addEventListener('click', function () {
+        parar();
+        var activar = v.muted;
+        videos.forEach(function (o) { o.muted = true; icono(o); });
+        v.muted = !activar;
+        icono(v);
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Videos Rama",
+  "tag": "section",
+  "class": "pp-vr-section",
+  "settings": [
+    { "type": "header", "content": "Colores" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#221b17" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#f7e7c6" },
+    { "type": "color", "id": "color_acento", "label": "Acento (flechas, barra, etiquetas)", "default": "#d9a04e" },
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña (opcional)", "default": "En video" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en el color de acento)", "default": "Así se ve <em>cuando cae la noche</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)", "default": "Toca un video para activar el sonido." },
+    {
+      "type": "range", "id": "ancho_movil", "label": "Ancho de cada video en celular",
+      "min": 30, "max": 70, "step": 2, "unit": "%", "default": 40,
+      "info": "Con 40% se ven 2 videos y medio: así el cliente entiende que puede deslizar. En computador cada video mide 270 px."
+    },
+    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 80, "step": 4, "unit": "px", "default": 44 },
+    { "type": "checkbox", "id": "auto_avance", "label": "Avanzar solo (se detiene al tocarlo)", "default": true },
+    { "type": "range", "id": "auto_segundos", "label": "Segundos entre cada avance", "min": 2, "max": 10, "step": 1, "unit": "s", "default": 4 },
+    { "type": "header", "content": "Botón" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "ninguno",
+      "options": [
+        { "value": "ninguno", "label": "Sin botón" },
+        { "value": "easysell", "label": "Abrir formulario EasySell" },
+        { "value": "oferta", "label": "Subir a la caja de compra" },
+        { "value": "enlace", "label": "Ir a un enlace" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Quiero el mío" },
+    { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        { "type": "video", "id": "video", "label": "Video (de tus archivos de Shopify)" },
+        { "type": "url", "id": "video_url", "label": "O enlace directo a un .mp4 (opcional)" },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre el video (opcional)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Videos Rama",
+      "blocks": [
+        { "type": "video" }, { "type": "video" }, { "type": "video" },
+        { "type": "video" }, { "type": "video" }, { "type": "video" }
+      ]
+    }
+  ]
+}
+{% endschema %}

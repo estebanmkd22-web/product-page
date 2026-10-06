@@ -169,9 +169,10 @@
         "regalo_6"
       ]
     },
-    "videos": {
-      "type": "pp-videos",
+    "videos_rama": {
+      "type": "pp-videos-rama",
       "settings": {
+        "etiqueta": "En video",
         "titulo": "Así se ve <em>cuando cae la noche</em>",
         "texto": "Toca un video para activar el sonido."
       },
@@ -702,7 +703,7 @@
     "ticker",
     "hero_oferta",
     "ofertas",
-    "videos",
+    "videos_rama",
     "iconos",
     "tabs",
     "destacado",
