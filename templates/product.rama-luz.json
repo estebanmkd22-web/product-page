@@ -1,0 +1,717 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#b97a2c",
+        "texto": "#221b17",
+        "texto_2": "#6e625a",
+        "fondo": "#fbf6ef",
+        "fondo_2": "#f2e8da",
+        "boton": "#c8873a",
+        "boton_texto": "#ffffff",
+        "estrella": "#e0a03a",
+        "ok": "#2f6b4f"
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "settings": {
+        "fondo": "#1f3a2e",
+        "texto": "#f7e7c6"
+      },
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🎄 Pide hoy y tenla antes de Navidad"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🚚 Envío GRATIS a toda Colombia"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "💵 Pagas al recibir"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🛡️ Garantía de 30 días"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4"
+      ]
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "settings": {
+        "mostrar_oferta": false,
+        "rating": "4.9",
+        "rating_texto": "(1.240 hogares iluminados)",
+        "titulo": "Esta Navidad, convierte cualquier rincón en <em>tu lugar favorito.</em>",
+        "texto": "Una rama de <strong>2.5 m con 144 luces LED cálidas</strong> que cambia por completo tu espacio cuando cae la noche. Se conecta por USB, se moldea a tu gusto y no la vas a querer guardar en enero."
+      },
+      "blocks": {
+        "transformacion_1": {
+          "type": "transformacion",
+          "settings": {
+            "icono": "casa",
+            "de": "De esa pared vacía",
+            "a": "a el rincón que todos quieren fotografiar"
+          }
+        },
+        "transformacion_2": {
+          "type": "transformacion",
+          "settings": {
+            "icono": "arbol",
+            "de": "De la Navidad de siempre",
+            "a": "a una decoración que sí se ve aesthetic"
+          }
+        },
+        "transformacion_3": {
+          "type": "transformacion",
+          "settings": {
+            "icono": "usb",
+            "de": "De pensar en remodelar",
+            "a": "a conectar un USB y listo"
+          }
+        }
+      },
+      "block_order": [
+        "transformacion_1",
+        "transformacion_2",
+        "transformacion_3"
+      ]
+    },
+    "ofertas": {
+      "type": "pp-ofertas",
+      "settings": {
+        "titulo": "Elige tu <em>pack navideño</em>",
+        "color_destacado": "#c8873a",
+        "boton_texto": "La quiero — Pago contra entrega",
+        "nota": "Envío GRATIS · Pagas al recibir · Garantía de 30 días"
+      },
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "titulo": "1 rama",
+            "subtitulo": "Envío gratis",
+            "por_porcion": "144 LED · 2.5 m",
+            "precio": 144900,
+            "precio_antes": 229900,
+            "cantidad": 1
+          }
+        },
+        "pack_2": {
+          "type": "pack",
+          "settings": {
+            "titulo": "2 ramas",
+            "subtitulo": "Envío gratis · para ti y para regalar",
+            "etiqueta": "Favorito en Navidad",
+            "por_porcion": "$124.950 c/u",
+            "precio": 249900,
+            "precio_antes": 459800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "insignia": ""
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "insignia": ""
+          }
+        },
+        "regalo_5": {
+          "type": "regalo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía 30 días",
+            "insignia": ""
+          }
+        },
+        "regalo_6": {
+          "type": "regalo",
+          "settings": {
+            "icono": "regalo",
+            "titulo": "Lista para regalar",
+            "insignia": ""
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "pack_2",
+        "regalo_3",
+        "regalo_4",
+        "regalo_5",
+        "regalo_6"
+      ]
+    },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Así se ve <em>cuando cae la noche</em>",
+        "texto": "Toca un video para activar el sonido."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Habitación"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Sala"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Rincón"
+          }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Unboxing"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3",
+        "video_4"
+      ]
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "settings": {
+        "estilo": "tarjeta",
+        "espacio": 8
+      },
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "bombillo",
+            "texto": "144 LED cálidos"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "usb",
+            "texto": "Conexión USB"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 30 días"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ]
+    },
+    "tabs": {
+      "type": "pp-tabs",
+      "settings": {
+        "color_fondo": "#221b17",
+        "color_texto": "#f7e7c6",
+        "color_activo": "#d9a04e",
+        "titulo": "¿Dónde la <em>pones?</em>",
+        "etiqueta": "Ideas para tu casa"
+      },
+      "blocks": {
+        "tab_1": {
+          "type": "tab",
+          "settings": {
+            "nombre": "Tu habitación",
+            "puntos": "Sobre el espaldar de la cama o enmarcando la ventana\nLuz cálida para leer, ver series o simplemente desconectarte"
+          }
+        },
+        "tab_2": {
+          "type": "tab",
+          "settings": {
+            "nombre": "La sala",
+            "puntos": "Sobre el televisor, una repisa o el espejo\nTu sala en modo Navidad sin llenarla de adornos"
+          }
+        },
+        "tab_3": {
+          "type": "tab",
+          "settings": {
+            "nombre": "Ese rincón vacío",
+            "puntos": "Esa pared que llevas meses sin saber cómo decorar\nUna planta, una silla y la rama: rincón aesthetic listo"
+          }
+        },
+        "tab_4": {
+          "type": "tab",
+          "settings": {
+            "nombre": "Tu escritorio",
+            "puntos": "Rodeando el escritorio o un estante\nComo funciona con USB, la conectas al computador"
+          }
+        }
+      },
+      "block_order": [
+        "tab_1",
+        "tab_2",
+        "tab_3",
+        "tab_4"
+      ]
+    },
+    "destacado": {
+      "type": "pp-destacado",
+      "settings": {
+        "estilo": "tarjeta",
+        "color_tarjeta": "#221b17",
+        "etiqueta": "La oportunidad de diciembre",
+        "titulo": "Tu habitación no necesita una remodelación. <em>Necesita esta Navidad.</em>",
+        "texto": "Diciembre es el mes en que todos quieren que su casa se sienta distinta. La diferencia es que esta rama no se guarda en una caja el 7 de enero: se queda contigo todo el año.",
+        "firma": "Pide hoy y llega antes de Navidad",
+        "cargo": "Unidades limitadas por temporada",
+        "posicion": "arriba"
+      },
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "En diciembre",
+            "texto": "Tu casa en modo Navidad sin árbol gigante ni cajas de adornos."
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "casa",
+            "titulo": "Después de Navidad",
+            "texto": "Sigue siendo la luz cálida de tu rincón favorito."
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "regalo",
+            "titulo": "Para regalar",
+            "texto": "Un detalle bonito que sí se usa todo el año."
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ]
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "settings": {
+        "etiqueta": "Decora diferente",
+        "titulo": "Menos adornos. <em>Más ambiente.</em>",
+        "texto": "Lo que cambia frente a la decoración navideña de siempre.",
+        "color_destacado": "#c8873a",
+        "nombre_a": "Rama de Luz LED",
+        "sub_a": "2.5 m · 144 LED",
+        "nombre_b": "Decoración tradicional",
+        "sub_b": "Árbol y adornos",
+        "pie_izq": "Rama de Luz",
+        "pie_der": "Para todo el año"
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "La usas todo el año",
+            "subtitulo": "No se guarda en enero",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "Solo diciembre"
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Espacio que ocupa",
+            "subtitulo": "Ideal para apartamentos",
+            "ok_a": true,
+            "valor_a": "Va en la pared",
+            "ok_b": false,
+            "valor_b": "Medio rincón"
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Instalación",
+            "subtitulo": "Sin herramientas",
+            "ok_a": true,
+            "valor_a": "2 minutos",
+            "ok_b": false,
+            "valor_b": "Una tarde"
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Se adapta a tu espacio",
+            "subtitulo": "Flexible y moldeable",
+            "ok_a": true,
+            "valor_a": "Le das la forma",
+            "ok_b": false,
+            "valor_b": "Forma fija"
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Modos de luz",
+            "subtitulo": "Fija, intermitente, suave…",
+            "ok_a": true,
+            "valor_a": "8 modos",
+            "ok_b": false,
+            "valor_b": "1 o 2"
+          }
+        },
+        "fila_6": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Envío y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Gratis + 30 días",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5",
+        "fila_6"
+      ]
+    },
+    "datos": {
+      "type": "pp-datos",
+      "settings": {
+        "etiqueta": "Conoce tu rama",
+        "titulo": "Pequeña en la caja. <em>Enorme en tu pared.</em>",
+        "columnas_pc": "4",
+        "nota": "Funciona con cualquier puerto USB: cargador de celular, computador o power bank."
+      },
+      "blocks": {
+        "dato_1": {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Luces",
+            "valor": "144",
+            "nombre": "LED cálidos",
+            "texto": "Luz cálida que no se siente fría ni de oficina.",
+            "resaltar": true
+          }
+        },
+        "dato_2": {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Largo",
+            "valor": "2.5 m",
+            "nombre": "De rama",
+            "texto": "Para una pared, un espejo o una ventana."
+          }
+        },
+        "dato_3": {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Ambiente",
+            "valor": "8",
+            "nombre": "Modos de luz",
+            "texto": "Fija, suave, intermitente y más."
+          }
+        },
+        "dato_4": {
+          "type": "dato",
+          "settings": {
+            "etiqueta": "Conexión",
+            "valor": "USB",
+            "nombre": "Sin enchufe especial",
+            "texto": "La conectas donde cargas tu celular."
+          }
+        }
+      },
+      "block_order": [
+        "dato_1",
+        "dato_2",
+        "dato_3",
+        "dato_4"
+      ]
+    },
+    "timeline": {
+      "type": "pp-timeline",
+      "settings": {
+        "color_tarjeta": "#c8873a",
+        "etiqueta": "Lo que viene",
+        "titulo": "De tu pedido a <em>tu lugar favorito</em>"
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Hoy",
+            "icono": "regalo",
+            "titulo": "La pides sin pagar nada",
+            "texto": "Pagas solo cuando la recibes en tu casa."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "En pocos días",
+            "icono": "camion",
+            "titulo": "Te llega a la puerta",
+            "texto": "La desenrollas, le das forma y la conectas."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Diciembre",
+            "icono": "arbol",
+            "titulo": "Tu casa en modo Navidad",
+            "texto": "Novenas, visitas y fotos con el ambiente que siempre quisiste."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Todo el año",
+            "icono": "casa",
+            "titulo": "Tu rincón favorito",
+            "texto": "Se queda contigo mucho después de guardar el pesebre."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4"
+      ]
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "settings": {
+        "estilo": "numeros",
+        "fondo": "oscuro",
+        "titulo": "Lista <em>en 2 minutos</em>",
+        "texto": ""
+      },
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Desenróllala.",
+            "texto": ""
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Dale la forma que quieras: es flexible.",
+            "texto": ""
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conéctala al USB y elige uno de los 8 modos.",
+            "texto": ""
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ]
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "settings": {
+        "etiqueta": "Hogares iluminados",
+        "titulo": "“Ahora sí sé qué hacer <em>con esa pared.</em>”",
+        "nota": "4,9",
+        "cantidad": "1.240 reseñas",
+        "visibles": 3
+      },
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Llevaba meses sin saber qué poner arriba de mi cama. La puse en forma de arco y mi cuarto parece de Pinterest.",
+            "nombre": "Valentina R.",
+            "ciudad": "Bogotá",
+            "verificado": true
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Vivo en apartaestudio y no tenía espacio para un árbol. Con la rama en la pared mi casa se siente navideña igual.",
+            "nombre": "Laura M.",
+            "ciudad": "Medellín",
+            "verificado": true
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "La conecté al cargador del celular y ya. Compré dos: una para mí y otra para regalar a mi mamá.",
+            "nombre": "Daniela C.",
+            "ciudad": "Cali",
+            "verificado": true
+          }
+        },
+        "resena_4": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Reseña de ejemplo: reemplázala por una real.",
+            "nombre": "Ejemplo",
+            "ciudad": "Ciudad"
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3",
+        "resena_4"
+      ]
+    },
+    "faq": {
+      "type": "pp-faq",
+      "settings": {
+        "estilo": "lineas",
+        "fondo": "fondo",
+        "etiqueta": "¿Tienes dudas?",
+        "titulo": "Pregúntanos lo que sea.",
+        "texto": "",
+        "whatsapp": "",
+        "abrir_primera": true
+      },
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo se conecta?",
+            "respuesta": "<p>Tiene conexión USB: la conectas al adaptador de pared de tu celular, a un computador o a un power bank. Así la pones donde quieras, sin depender de un enchufe especial.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Puedo darle la forma que quiera?",
+            "respuesta": "<p>Sí. La rama es flexible: arco, ventana, espejo, repisa o como mejor quede en tu espacio.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Qué modos de luz tiene?",
+            "respuesta": "<p>8 modos: desde luz fija cálida hasta efectos suaves e intermitentes.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Si haces tu pedido ahora, sí. El envío es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Tiene garantía?",
+            "respuesta": "<p>Sí. Tienes <strong>30 días de garantía</strong> por cualquier daño de fábrica.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Pagas en efectivo cuando la recibes en tu casa. No pagas nada por adelantado.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6"
+      ]
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "boton_modo": "oferta",
+        "boton_texto": "Elegir mi pack",
+        "subtexto": "Envío gratis · Pagas al recibir"
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "ofertas",
+    "videos",
+    "iconos",
+    "tabs",
+    "destacado",
+    "comparativa",
+    "datos",
+    "timeline",
+    "pasos",
+    "resenas",
+    "faq",
+    "boton_fijo"
+  ]
+}

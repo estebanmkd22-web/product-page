@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.rama-luz', dir: 'templates', ext: '.json', name: 'Plantilla · Rama de Luz LED', desc: 'Página completa de la Rama con textos, precios y colores. Va en la carpeta templates: abre product.rama-luz.json, borra todo, pega y guarda. Antes deben estar pegadas las 15 secciones.' },
   { file: 'pp-hero-oferta', desc: 'Galería, estrellas, titular, beneficios y la caja de compra con el botón de EasySell.' },
   { file: 'pp-ticker', desc: 'Franja con mensajes que se mueven: envío gratis, pago al recibir, clientes felices.' },
   { file: 'pp-estilos', desc: 'Opcional. Cambia los colores de todas las secciones PP desde un solo lugar.' },
@@ -37,8 +38,9 @@ const SECCIONES = [
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
 const cards = SECCIONES.map(({ file, desc }, i) => {
-  const src = fs.readFileSync(path.join(ROOT, 'sections', file + '.liquid'), 'utf8');
-  const name = JSON.parse(src.match(/{%-?\s*schema\s*-?%}([\s\S]*?){%-?\s*endschema\s*-?%}/)[1]).name;
+  const { dir = 'sections', ext = '.liquid' } = SECCIONES[i];
+  const src = fs.readFileSync(path.join(ROOT, dir, file + ext), 'utf8');
+  const name = SECCIONES[i].name || JSON.parse(src.match(/{%-?\s*schema\s*-?%}([\s\S]*?){%-?\s*endschema\s*-?%}/)[1]).name;
   const lines = src.split('\n').length;
   return `
   <article class="card" id="${file}">
@@ -51,8 +53,8 @@ const cards = SECCIONES.map(({ file, desc }, i) => {
     </header>
     <div class="row">
       <span class="label">Nombre del archivo</span>
-      <code class="fname">${file}.liquid</code>
-      <button class="btn btn-ghost" type="button" data-copy-text="${file}.liquid" id="copy-name-${i}">Copiar nombre</button>
+      <code class="fname">${file}${ext}</code>
+      <button class="btn btn-ghost" type="button" data-copy-text="${file}${ext}" id="copy-name-${i}">Copiar nombre</button>
     </div>
     <button class="btn btn-main" type="button" data-copy-target="code-${file}" id="copy-code-${i}">Copiar código completo</button>
     <details>
