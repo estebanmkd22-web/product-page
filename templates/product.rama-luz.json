@@ -42,7 +42,7 @@
         "mensaje_4": {
           "type": "mensaje",
           "settings": {
-            "texto": "🛡️ Garantía de 30 días"
+            "texto": "🛡️ Garantía de 60 días"
           }
         }
       },
@@ -100,7 +100,7 @@
         "titulo": "Elige tu <em>pack navideño</em>",
         "color_destacado": "#c8873a",
         "boton_texto": "La quiero — Pago contra entrega",
-        "nota": "Envío GRATIS · Pagas al recibir · Garantía de 30 días"
+        "nota": "Envío GRATIS · Pagas al recibir · Garantía de 60 días"
       },
       "blocks": {
         "pack_1": {
@@ -147,15 +147,15 @@
           "type": "regalo",
           "settings": {
             "icono": "escudo",
-            "titulo": "Garantía 30 días",
+            "titulo": "Garantía 60 días",
             "insignia": ""
           }
         },
         "regalo_6": {
           "type": "regalo",
           "settings": {
-            "icono": "regalo",
-            "titulo": "Lista para regalar",
+            "icono": "manual",
+            "titulo": "Manual de uso e instalación",
             "insignia": ""
           }
         }
@@ -233,7 +233,7 @@
           "type": "icono",
           "settings": {
             "icono": "escudo",
-            "texto": "Garantía 30 días"
+            "texto": "Garantía 60 días"
           }
         }
       },
@@ -409,7 +409,7 @@
             "titulo": "Envío y garantía",
             "subtitulo": "Compra sin riesgo",
             "ok_a": true,
-            "valor_a": "Gratis + 30 días",
+            "valor_a": "Gratis + 60 días",
             "ok_b": false,
             "valor_b": "Depende"
           }
@@ -668,7 +668,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Tiene garantía?",
-            "respuesta": "<p>Sí. Tienes <strong>30 días de garantía</strong> por cualquier daño de fábrica.</p>"
+            "respuesta": "<p>Sí. Tienes <strong>60 días de garantía</strong> por cualquier daño de fábrica.</p>"
           }
         },
         "pregunta_6": {
