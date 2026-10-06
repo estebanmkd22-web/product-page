@@ -89,7 +89,8 @@
       "settings": {
         "color_destacado": "#7cb518",
         "boton_texto": "Pedir ahora",
-        "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h"
+        "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h",
+        "boton_modo": "easysell"
       },
       "blocks": {
         "pack_1": {
@@ -99,7 +100,8 @@
             "subtitulo": "Envío gratis",
             "por_porcion": "237 ml",
             "precio": 210,
-            "precio_antes": 290
+            "precio_antes": 290,
+            "cantidad": 1
           }
         },
         "pack_2": {
@@ -108,26 +110,14 @@
             "titulo": "2 frascos",
             "subtitulo": "Envío gratis",
             "etiqueta": "Más vendido",
-            "por_porcion": "Precio de ejemplo",
-            "precio": 380,
+            "por_porcion": "Q175 c/u",
+            "precio": 350,
             "precio_antes": 580,
             "cantidad": 2,
             "preseleccionado": true
           }
         },
-        "pack_3": {
-          "type": "pack",
-          "settings": {
-            "titulo": "3 frascos",
-            "subtitulo": "Envío gratis",
-            "etiqueta": "Mejor precio",
-            "por_porcion": "Precio de ejemplo",
-            "precio": 520,
-            "precio_antes": 870,
-            "cantidad": 3
-          }
-        },
-        "regalo_4": {
+        "regalo_3": {
           "type": "regalo",
           "settings": {
             "icono": "camion",
@@ -135,7 +125,7 @@
             "insignia": ""
           }
         },
-        "regalo_5": {
+        "regalo_4": {
           "type": "regalo",
           "settings": {
             "icono": "pago",
@@ -143,7 +133,7 @@
             "insignia": ""
           }
         },
-        "regalo_6": {
+        "regalo_5": {
           "type": "regalo",
           "settings": {
             "icono": "chat",
@@ -151,7 +141,7 @@
             "insignia": ""
           }
         },
-        "regalo_7": {
+        "regalo_6": {
           "type": "regalo",
           "settings": {
             "icono": "escudo",
@@ -163,11 +153,10 @@
       "block_order": [
         "pack_1",
         "pack_2",
-        "pack_3",
+        "regalo_3",
         "regalo_4",
         "regalo_5",
-        "regalo_6",
-        "regalo_7"
+        "regalo_6"
       ]
     },
     "videos": {

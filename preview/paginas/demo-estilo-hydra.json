@@ -105,7 +105,8 @@
       "settings": {
         "color_destacado": "#7cb518",
         "boton_texto": "Pedir ahora",
-        "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h"
+        "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h",
+        "boton_modo": "easysell"
       },
       "blocks": [
         {
@@ -115,7 +116,8 @@
             "subtitulo": "Envío gratis",
             "por_porcion": "237 ml",
             "precio": 210,
-            "precio_antes": 290
+            "precio_antes": 290,
+            "cantidad": 1
           }
         },
         {
@@ -124,23 +126,11 @@
             "titulo": "2 frascos",
             "subtitulo": "Envío gratis",
             "etiqueta": "Más vendido",
-            "por_porcion": "Precio de ejemplo",
-            "precio": 380,
+            "por_porcion": "Q175 c/u",
+            "precio": 350,
             "precio_antes": 580,
             "cantidad": 2,
             "preseleccionado": true
-          }
-        },
-        {
-          "type": "pack",
-          "settings": {
-            "titulo": "3 frascos",
-            "subtitulo": "Envío gratis",
-            "etiqueta": "Mejor precio",
-            "por_porcion": "Precio de ejemplo",
-            "precio": 520,
-            "precio_antes": 870,
-            "cantidad": 3
           }
         },
         {
