@@ -321,6 +321,20 @@
     background: var(--pp-borde); cursor: pointer; transition: width .2s, background .2s;
   }
   .pp-hero__dots button[aria-current="true"] { width: 20px; background: var(--pp-texto); }
+  .pp-hero__thumbs-wrap { display: flex; align-items: center; gap: 4px; padding: 10px 16px 0; }
+  .pp-hero__thumbs { flex: 1 1 auto; display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; padding: 2px; }
+  .pp-hero__thumbs::-webkit-scrollbar { display: none; }
+  .pp-hero__thumb {
+    flex: 0 0 calc((100% - 32px) / 5); aspect-ratio: 1 / 1; padding: 0; overflow: hidden; scroll-snap-align: start;
+    border: 2px solid transparent; border-radius: 8px; background: var(--pp-fondo-2); cursor: pointer; opacity: .7;
+    transition: border-color .2s, opacity .2s;
+  }
+  .pp-hero__thumb img, .pp-hero__thumb svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .pp-hero__thumb[aria-current="true"] { border-color: var(--pp-texto); opacity: 1; }
+  .pp-hero__tflecha {
+    flex: 0 0 26px; height: 40px; padding: 0; border: 0; background: none; color: var(--pp-texto);
+    font: 400 26px/1 Arial, sans-serif; cursor: pointer;
+  }
 
   .pp-hero__info { display: flex; flex-direction: column; gap: 14px; }
   .pp-hero__rating { display: flex; align-items: center; gap: 8px; font-size: 14px; }
@@ -409,7 +423,25 @@
           {%- endfor -%}
         {%- endif -%}
       </div>
-      <div class="pp-hero__dots" data-pp-dots></div>
+      {%- if section.settings.navegacion == 'miniaturas' -%}
+        <div class="pp-hero__thumbs-wrap">
+          <button type="button" class="pp-hero__tflecha" aria-label="Imagen anterior" data-pp-tprev>&lsaquo;</button>
+          <div class="pp-hero__thumbs" data-pp-thumbs>
+            {%- if imagenes.size > 0 -%}
+              {%- for key in imagenes -%}
+                <button type="button" class="pp-hero__thumb" aria-label="Ver imagen {{ forloop.index }}">{{ section.settings[key] | image_url: width: 200 | image_tag: loading: 'lazy', widths: '100, 200', sizes: '80px', alt: '' }}</button>
+              {%- endfor -%}
+            {%- else -%}
+              {%- for media in p.media limit: 6 -%}
+                <button type="button" class="pp-hero__thumb" aria-label="Ver imagen {{ forloop.index }}">{{ media.preview_image | image_url: width: 200 | image_tag: loading: 'lazy', widths: '100, 200', sizes: '80px', alt: '' }}</button>
+              {%- endfor -%}
+            {%- endif -%}
+          </div>
+          <button type="button" class="pp-hero__tflecha" aria-label="Imagen siguiente" data-pp-tnext>&rsaquo;</button>
+        </div>
+      {%- else -%}
+        <div class="pp-hero__dots" data-pp-dots></div>
+      {%- endif -%}
     </div>
 
     {%- comment -%} ===== Información y oferta ===== {%- endcomment -%}
@@ -606,22 +638,41 @@
     if (!root) return;
     var track = root.querySelector('[data-pp-slides]');
     var dotsBox = root.querySelector('[data-pp-dots]');
+    var thumbsBox = root.querySelector('[data-pp-thumbs]');
     var slides = track.children;
-    if (slides.length < 2) return;
-    var dots = [];
-    for (var i = 0; i < slides.length; i++) {
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.setAttribute('aria-label', 'Imagen ' + (i + 1));
-      b.addEventListener('click', (function (n) {
-        return function () { track.scrollTo({ left: slides[n].offsetLeft - track.offsetLeft, behavior: 'smooth' }); };
-      })(i));
-      dotsBox.appendChild(b);
-      dots.push(b);
+    var wrap = thumbsBox && thumbsBox.parentNode;
+    if (slides.length < 2) { if (wrap) wrap.style.display = 'none'; return; }
+    var actual = 0;
+    function ir(n) {
+      n = (n + slides.length) % slides.length;
+      track.scrollTo({ left: slides[n].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+    }
+    var marcas = [];
+    if (thumbsBox) {
+      marcas = Array.prototype.slice.call(thumbsBox.children);
+      marcas.forEach(function (t, j) { t.addEventListener('click', function () { ir(j); }); });
+      root.querySelector('[data-pp-tprev]').addEventListener('click', function () { ir(actual - 1); });
+      root.querySelector('[data-pp-tnext]').addEventListener('click', function () { ir(actual + 1); });
+    } else if (dotsBox) {
+      for (var i = 0; i < slides.length; i++) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.setAttribute('aria-label', 'Imagen ' + (i + 1));
+        b.addEventListener('click', (function (n) { return function () { ir(n); }; })(i));
+        dotsBox.appendChild(b);
+        marcas.push(b);
+      }
     }
     function marcar() {
       var n = Math.round(track.scrollLeft / track.clientWidth);
-      dots.forEach(function (d, j) { d.setAttribute('aria-current', j === n ? 'true' : 'false'); });
+      if (n === actual && marcas[n] && marcas[n].getAttribute('aria-current') === 'true') return;
+      actual = n;
+      marcas.forEach(function (d, j) { d.setAttribute('aria-current', j === n ? 'true' : 'false'); });
+      if (thumbsBox && marcas[n]) {
+        var t = marcas[n];
+        var izq = t.offsetLeft - thumbsBox.offsetLeft - (thumbsBox.clientWidth - t.clientWidth) / 2;
+        thumbsBox.scrollTo({ left: izq, behavior: 'smooth' });
+      }
     }
     track.addEventListener('scroll', function () { window.requestAnimationFrame(marcar); }, { passive: true });
     marcar();
@@ -645,6 +696,13 @@
     { "type": "image_picker", "id": "imagen_4", "label": "Imagen 4" },
     { "type": "image_picker", "id": "imagen_5", "label": "Imagen 5" },
     { "type": "image_picker", "id": "imagen_6", "label": "Imagen 6" },
+    {
+      "type": "select", "id": "navegacion", "label": "Debajo de la imagen principal", "default": "miniaturas",
+      "options": [
+        { "value": "miniaturas", "label": "Miniaturas de todas las fotos" },
+        { "value": "puntos", "label": "Puntos" }
+      ]
+    },
     {
       "type": "select", "id": "proporcion", "label": "Formato de las imágenes", "default": "4 / 5",
       "options": [

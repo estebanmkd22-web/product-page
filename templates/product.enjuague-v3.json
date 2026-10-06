@@ -50,7 +50,9 @@
         "rating": "4.8",
         "rating_texto": "(458 reseñas)",
         "titulo": "iD Whitening",
-        "texto": "<strong>El paso que le falta a tu cepillado.</strong>"
+        "texto": "<strong>El paso que le falta a tu cepillado.</strong>",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
       },
       "blocks": {
         "transformacion_1": {
