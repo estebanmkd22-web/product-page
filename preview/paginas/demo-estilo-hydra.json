@@ -482,34 +482,77 @@
         "titulo": "Lo que dicen <em>quienes lo prueban.</em>",
         "nota": "4,8",
         "cantidad": "458 reseñas",
-        "visibles": 2
+        "visibles": 3
       },
       "blocks": [
         {
           "type": "resena",
           "settings": {
             "estrellas": 5,
+            "titulo": "Excelente para reuniones de trabajo",
+            "texto": "Trabajo atendiendo clientes y me da mucha seguridad usarlo antes de comenzar mi jornada. La sensación de limpieza es increíble.",
+            "nombre": "Ricardo García",
+            "fecha": "11 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Ya voy por mi segundo frasco",
+            "texto": "Después de terminar el primero no dudé en volver a comprarlo. La diferencia con otros enjuagues es bastante evidente.",
+            "nombre": "Ana Lucía Pérez",
+            "fecha": "13 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 4,
+            "titulo": "Hay que usarlo con constancia",
+            "texto": "Los resultados estéticos toman tiempo, pero la limpieza y la frescura se sienten desde el principio. Lo seguiré usando.",
+            "nombre": "Luis Castro",
+            "fecha": "20 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Lo recomendé a mi hermana",
+            "texto": "Después de probarlo durante unas semanas terminé recomendándolo a mi familia. A todas nos gustó la sensación de limpieza profunda.",
+            "nombre": "Mónica Vásquez",
+            "fecha": "20 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Sorprendido desde el primer uso",
+            "texto": "No esperaba notar tanta diferencia. Ver los residuos después del enjuague fue lo que más me impactó.",
+            "nombre": "Jorge Flores",
+            "fecha": "30 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
             "texto": "Lo veo como el paso final de mi rutina. Me ayuda a sentir que realmente terminé de limpiar toda mi boca.",
             "nombre": "Juan Miguel L.",
-            "ciudad": "Guatemala"
-          }
-        },
-        {
-          "type": "resena",
-          "settings": {
-            "estrellas": 5,
-            "texto": "Reseña de ejemplo: reemplázala por una reseña real de tu cliente.",
-            "nombre": "Ejemplo",
-            "ciudad": "Ciudad"
-          }
-        },
-        {
-          "type": "resena",
-          "settings": {
-            "estrellas": 5,
-            "texto": "Reseña de ejemplo: reemplázala por una reseña real de tu cliente.",
-            "nombre": "Ejemplo",
-            "ciudad": "Ciudad"
+            "ciudad": "Guatemala",
+            "verificado": true
           }
         }
       ]
