@@ -290,7 +290,7 @@
   }
   .pp-videos__track::-webkit-scrollbar { display: none; }
   .pp-videos__item {
-    position: relative; flex: 0 0 var(--vid-w); scroll-snap-align: start;
+    position: relative; flex: 0 0 var(--vid-w, 40%); scroll-snap-align: start;
     aspect-ratio: 9 / 16; overflow: hidden; border-radius: var(--pp-radio);
     background: var(--pp-fondo-2); cursor: pointer;
   }
@@ -307,9 +307,26 @@
     background: rgba(0, 0, 0, .55); color: #fff; font-size: 12px; font-weight: 700;
   }
   .pp-videos .pp-cta { padding: 0 16px; }
+  .pp-videos__carrusel { position: relative; }
+  .pp-videos__flecha {
+    position: absolute; top: 50%; z-index: 2; display: grid; place-items: center;
+    width: 38px; height: 38px; margin-top: -19px; padding: 0; border: 0; border-radius: 99px;
+    background: rgba(255, 255, 255, .92); color: #111; box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+    font: 700 22px/1 Arial, sans-serif; cursor: pointer; transition: opacity .2s;
+  }
+  .pp-videos__flecha--prev { left: 6px; }
+  .pp-videos__flecha--next { right: 6px; }
+  .pp-videos__flecha[disabled] { opacity: 0; pointer-events: none; }
+  .pp-videos__barra { max-width: 240px; height: 4px; margin: 14px auto 0; border-radius: 99px; background: color-mix(in srgb, var(--pp-acento) 22%, transparent); overflow: hidden; }
+  .pp-videos__barra span { display: block; width: 30%; height: 100%; border-radius: inherit; background: var(--pp-acento); transition: width .15s linear; }
+  .pp-videos--quieto .pp-videos__flecha, .pp-videos--quieto .pp-videos__barra { display: none; }
+  .pp-videos--quieto .pp-videos__track { justify-content: safe center; }
   @media (min-width: 750px) {
-    .pp-videos__track { justify-content: safe center; gap: 14px; padding: 0 24px; }
-    .pp-videos__item { flex-basis: 220px; }
+    .pp-videos__track { gap: 14px; padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); scroll-padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); }
+    .pp-videos__item { flex-basis: 270px; }
+    .pp-videos__flecha { width: 44px; height: 44px; margin-top: -22px; }
+    .pp-videos__flecha--prev { left: max(8px, calc((100% - var(--pp-ancho)) / 2)); }
+    .pp-videos__flecha--next { right: max(8px, calc((100% - var(--pp-ancho)) / 2)); }
   }
 </style>
 
@@ -323,6 +340,8 @@
     </div>
   {%- endif -%}
 
+  <div class="pp-videos__carrusel">
+  <button type="button" class="pp-videos__flecha pp-videos__flecha--prev" aria-label="Video anterior" data-pp-vid-prev>&lsaquo;</button>
   <div class="pp-videos__track" data-pp-videos>
     {%- for block in section.blocks -%}
       <div class="pp-videos__item" {{ block.shopify_attributes }}>
@@ -339,6 +358,9 @@
       </div>
     {%- endfor -%}
   </div>
+  <button type="button" class="pp-videos__flecha pp-videos__flecha--next" aria-label="Video siguiente" data-pp-vid-next>&rsaquo;</button>
+  </div>
+  <div class="pp-videos__barra" aria-hidden="true"><span data-pp-vid-barra></span></div>
 
   {%- if section.settings.boton_modo != 'ninguno' -%}
     <div class="pp-cta">
@@ -358,6 +380,42 @@
   (function () {
     var root = document.getElementById('pp-videos-{{ section.id }}');
     if (!root) return;
+    var track = root.querySelector('[data-pp-videos]');
+    var prev = root.querySelector('[data-pp-vid-prev]');
+    var next = root.querySelector('[data-pp-vid-next]');
+    var barra = root.querySelector('[data-pp-vid-barra]');
+    var items = track.children;
+    function paso() { return items.length > 1 ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth; }
+    function estado() {
+      var max = track.scrollWidth - track.clientWidth;
+      root.classList.toggle('pp-videos--quieto', max < 4);
+      prev.disabled = track.scrollLeft < 4;
+      next.disabled = track.scrollLeft > max - 4;
+      var visible = track.clientWidth / track.scrollWidth;
+      barra.style.width = Math.min(100, (visible + (1 - visible) * (max > 0 ? track.scrollLeft / max : 1)) * 100) + '%';
+    }
+    function mover(dir) {
+      var max = track.scrollWidth - track.clientWidth;
+      var destino = track.scrollLeft + dir * paso();
+      if (dir > 0 && track.scrollLeft > max - 4) destino = 0;
+      track.scrollTo({ left: destino, behavior: 'smooth' });
+    }
+    prev.addEventListener('click', function () { parar(); mover(-1); });
+    next.addEventListener('click', function () { parar(); mover(1); });
+    track.addEventListener('scroll', estado, { passive: true });
+    window.addEventListener('resize', estado);
+    estado();
+    var auto = null;
+    function parar() { if (auto) { clearInterval(auto); auto = null; } }
+    {%- if section.settings.auto_avance %}
+    if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+      auto = setInterval(function () {
+        var r = root.getBoundingClientRect();
+        if (r.bottom > 0 && r.top < window.innerHeight && !root.classList.contains('pp-videos--quieto')) mover(1);
+      }, {{ section.settings.auto_segundos | times: 1000 }});
+      ['touchstart', 'pointerdown', 'wheel'].forEach(function (ev) { track.addEventListener(ev, parar, { passive: true }); });
+    }
+    {%- endif %}
     var videos = Array.prototype.slice.call(root.querySelectorAll('video'));
     if (!videos.length) return;
     var reducir = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -387,6 +445,7 @@
     /* Tocar un video: activa su sonido y silencia los demás */
     videos.forEach(function (v) {
       v.parentNode.addEventListener('click', function () {
+        parar();
         var activar = v.muted;
         videos.forEach(function (o) { o.muted = true; icono(o); });
         v.muted = !activar;
@@ -417,9 +476,11 @@
     {
       "type": "range", "id": "ancho_movil", "label": "Ancho de cada video en celular",
       "min": 30, "max": 70, "step": 2, "unit": "%", "default": 40,
-      "info": "Con 40% se ven 2 videos y medio: así el cliente entiende que puede deslizar."
+      "info": "Con 40% se ven 2 videos y medio: así el cliente entiende que puede deslizar. En computador cada video mide 270 px."
     },
     { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 16 },
+    { "type": "checkbox", "id": "auto_avance", "label": "Avanzar solo (se detiene al tocarlo)", "default": true },
+    { "type": "range", "id": "auto_segundos", "label": "Segundos entre cada avance", "min": 2, "max": 10, "step": 1, "unit": "s", "default": 4 },
     { "type": "header", "content": "Botón" },
     {
       "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "ninguno",
