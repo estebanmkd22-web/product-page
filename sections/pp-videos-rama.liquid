@@ -1,7 +1,7 @@
 {%- comment -%}
   PP · Videos Rama
-  Versión de PP · Videos con el estilo de la Rama de Luz: franja oscura de noche,
-  acento ámbar y tarjetas con brillo cálido. Carrusel de videos verticales.
+  Carrusel de videos verticales con el estilo de la Rama de Luz: fondo crema,
+  acento ámbar, flechas siempre visibles y avance automático.
   Se reproducen sin sonido solo cuando están en pantalla; al tocar uno se
   activa su sonido.
 {%- endcomment -%}
@@ -301,8 +301,7 @@
     position: relative; flex: 0 0 var(--vid-w, 40%); scroll-snap-align: start;
     aspect-ratio: 9 / 16; overflow: hidden; border-radius: calc(var(--pp-radio) + 4px);
     background: color-mix(in srgb, var(--vr-tx) 8%, var(--vr-bg)); cursor: pointer;
-    border: 1px solid color-mix(in srgb, var(--vr-ac) 40%, transparent);
-    box-shadow: 0 14px 34px -14px color-mix(in srgb, var(--vr-ac) 55%, transparent);
+    box-shadow: 0 10px 24px -12px rgba(0, 0, 0, .35);
   }
   #pp-vr-{{ section.id }} .pp-vr__item > svg { width: 100%; height: 100%; background: transparent !important; fill: color-mix(in srgb, var(--vr-tx) 14%, transparent); }
   #pp-vr-{{ section.id }} .pp-vr__track { padding-top: 6px; padding-bottom: 26px; margin-bottom: -16px; }
@@ -316,22 +315,23 @@
   }
   .pp-vr__etiqueta {
     position: absolute; left: 8px; top: 8px; padding: 4px 8px; border-radius: 99px;
-    background: var(--vr-ac); color: var(--vr-bg); font-size: 12px; font-weight: 800;
+    background: rgba(0, 0, 0, .55); color: #fff; font-size: 12px; font-weight: 700;
   }
   .pp-vr .pp-cta { padding: 0 16px; }
   .pp-vr__carrusel { position: relative; }
   .pp-vr__flecha {
     position: absolute; top: 50%; z-index: 2; display: grid; place-items: center;
     width: 38px; height: 38px; margin-top: -19px; padding: 0; border: 0; border-radius: 99px;
-    background: var(--vr-ac); color: var(--vr-bg); box-shadow: 0 4px 16px rgba(0, 0, 0, .35);
+    background: var(--vr-ac); color: #fff; box-shadow: 0 4px 14px rgba(0, 0, 0, .25);
     font: 700 22px/1 Arial, sans-serif; cursor: pointer; transition: opacity .2s;
   }
   .pp-vr__flecha--prev { left: 6px; }
   .pp-vr__flecha--next { right: 6px; }
-  .pp-vr__flecha[disabled] { opacity: 0; pointer-events: none; }
+  .pp-vr__flecha[disabled] { opacity: .35; pointer-events: none; }
   .pp-vr__barra { max-width: 240px; height: 4px; margin: 14px auto 0; border-radius: 99px; background: color-mix(in srgb, var(--vr-ac) 22%, transparent); overflow: hidden; }
   .pp-vr__barra span { display: block; width: 30%; height: 100%; border-radius: inherit; background: var(--vr-ac); transition: width .15s linear; }
   .pp-vr--quieto .pp-vr__flecha, .pp-vr--quieto .pp-vr__barra { display: none; }
+  .pp-vr__flecha { font-size: 26px; }
   .pp-vr--quieto .pp-vr__track { justify-content: safe center; }
   @media (min-width: 750px) {
     .pp-vr__track { gap: 14px; padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); scroll-padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); }
@@ -403,7 +403,7 @@
       var max = track.scrollWidth - track.clientWidth;
       root.classList.toggle('pp-vr--quieto', max < 4);
       prev.disabled = track.scrollLeft < 4;
-      next.disabled = track.scrollLeft > max - 4;
+      next.disabled = false;
       var visible = track.clientWidth / track.scrollWidth;
       barra.style.width = Math.min(100, (visible + (1 - visible) * (max > 0 ? track.scrollLeft / max : 1)) * 100) + '%';
     }
@@ -480,19 +480,19 @@
   "class": "pp-vr-section",
   "settings": [
     { "type": "header", "content": "Colores" },
-    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#221b17" },
-    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#f7e7c6" },
-    { "type": "color", "id": "color_acento", "label": "Acento (flechas, barra, etiquetas)", "default": "#d9a04e" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#fbf6ef" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#221b17" },
+    { "type": "color", "id": "color_acento", "label": "Acento (título, flechas y barra)", "default": "#c8873a" },
     { "type": "header", "content": "Textos" },
-    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña (opcional)", "default": "En video" },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña (opcional)" },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en el color de acento)", "default": "Así se ve <em>cuando cae la noche</em>" },
-    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)", "default": "Toca un video para activar el sonido." },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)", "default": "Un espacio que inspira" },
     {
       "type": "range", "id": "ancho_movil", "label": "Ancho de cada video en celular",
       "min": 30, "max": 70, "step": 2, "unit": "%", "default": 40,
       "info": "Con 40% se ven 2 videos y medio: así el cliente entiende que puede deslizar. En computador cada video mide 270 px."
     },
-    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 80, "step": 4, "unit": "px", "default": 44 },
+    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 80, "step": 4, "unit": "px", "default": 24 },
     { "type": "checkbox", "id": "auto_avance", "label": "Avanzar solo (se detiene al tocarlo)", "default": true },
     { "type": "range", "id": "auto_segundos", "label": "Segundos entre cada avance", "min": 2, "max": 10, "step": 1, "unit": "s", "default": 4 },
     { "type": "header", "content": "Botón" },

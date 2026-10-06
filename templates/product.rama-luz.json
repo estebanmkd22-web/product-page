@@ -172,9 +172,8 @@
     "videos_rama": {
       "type": "pp-videos-rama",
       "settings": {
-        "etiqueta": "En video",
         "titulo": "Así se ve <em>cuando cae la noche</em>",
-        "texto": "Toca un video para activar el sonido."
+        "texto": "Un espacio que inspira"
       },
       "blocks": {
         "video_1": {
