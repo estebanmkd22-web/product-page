@@ -193,6 +193,54 @@
         "video_3"
       ]
     },
+    "grid_dolores": {
+      "type": "pp-grid-dolores",
+      "settings": {
+        "titulo": "Lo que <em>no limpias</em>, también cuenta.",
+        "texto": "Cada día pueden quedar residuos y acumulación en tu boca que tu rutina habitual no elimina por completo.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "Y todo esto <em>se va acumulando</em>",
+        "cierre_estilo": "franja"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "titulo": "Residuos que se quedan",
+            "texto": "Pequeños restos de comida pueden permanecer adheridos y acumularse durante el día."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "titulo": "Aliento que no se va",
+            "texto": "La acumulación de residuos y bacterias puede contribuir al mal aliento."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "titulo": "Una lengua que también acumula",
+            "texto": "La lengua puede acumular bacterias, proteínas y residuos que forman parte de la higiene oral diaria."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "titulo": "Esa sensación de \"algo queda\"",
+            "texto": "Aunque te cepilles, puedes seguir sintiendo que tu boca no está completamente limpia."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
     "iconos": {
       "type": "pp-iconos",
       "settings": {
@@ -674,6 +722,7 @@
     "hero_oferta",
     "ofertas",
     "videos",
+    "grid_dolores",
     "iconos",
     "datos",
     "comparativa",

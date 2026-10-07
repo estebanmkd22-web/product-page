@@ -294,10 +294,16 @@
   .pp-bg--oscuro .pp-dolores__item p { color: inherit; opacity: .8; }
   .pp .pp-dolores__cierre {
     margin-top: 32px; text-align: center;
-    font-family: var(--font-heading-family, inherit);
-    font-size: clamp(22px, 5.6vw, 32px); font-weight: 800; line-height: 1.15;
+    font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+    font-size: clamp(22px, 5.6vw, 32px); font-weight: var(--pp-peso-titulos, 800); line-height: 1.15;
+    text-transform: var(--pp-mayus-titulos, none); letter-spacing: var(--pp-espaciado-titulos, normal);
   }
   .pp-dolores__cierre em { font-style: normal; color: var(--pp-acento); }
+  .pp .pp-dolores__cierre--franja {
+    max-width: 560px; margin: 28px auto 0; padding: 12px 22px; border-radius: 99px;
+    background: color-mix(in srgb, var(--pp-acento) 16%, var(--pp-fondo)); color: var(--pp-texto);
+    font-size: clamp(16px, 4.4vw, 22px);
+  }
   @media (min-width: 750px) {
     #pp-dolores-{{ section.id }} .pp-dolores__grid { grid-template-columns: repeat({{ section.settings.columnas_pc }}, minmax(0, 1fr)); gap: 32px 24px; }
   }
@@ -328,7 +334,7 @@
     </div>
 
     {%- if section.settings.cierre != blank -%}
-      <p class="pp-dolores__cierre">{{ section.settings.cierre }}</p>
+      <p class="pp-dolores__cierre{% if section.settings.cierre_estilo == 'franja' %} pp-dolores__cierre--franja{% endif %}">{{ section.settings.cierre }}</p>
     {%- endif -%}
   </div>
 </div>
@@ -366,7 +372,14 @@
         { "value": "4 / 3", "label": "Horizontal (4:3)" }
       ]
     },
-    { "type": "inline_richtext", "id": "cierre", "label": "Frase de cierre (opcional, sale grande)", "default": "Y todo esto <em>se va acumulando.</em>" }
+    { "type": "inline_richtext", "id": "cierre", "label": "Frase de cierre (opcional, sale grande)", "default": "Y todo esto <em>se va acumulando.</em>" },
+    {
+      "type": "select", "id": "cierre_estilo", "label": "Estilo de la frase de cierre", "default": "texto",
+      "options": [
+        { "value": "texto", "label": "Texto grande" },
+        { "value": "franja", "label": "Franja redondeada de color" }
+      ]
+    }
   ],
   "blocks": [
     {
