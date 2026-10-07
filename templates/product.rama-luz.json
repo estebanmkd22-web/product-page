@@ -68,7 +68,7 @@
           "settings": {
             "icono": "casa",
             "de": "De esa pared vacía",
-            "a": "a el rincón que todos quieren fotografiar"
+            "a": "al rincón que todos quieren fotografiar"
           }
         },
         "transformacion_2": {
@@ -118,7 +118,7 @@
           "type": "pack",
           "settings": {
             "titulo": "2 ramas",
-            "subtitulo": "Envío gratis · para ti y para regalar",
+            "subtitulo": "Envío gratis",
             "etiqueta": "Favorito en Navidad",
             "por_porcion": "$124.950 c/u",
             "precio": 249900,
@@ -606,22 +606,12 @@
             "ciudad": "Cali",
             "verificado": true
           }
-        },
-        "resena_4": {
-          "type": "resena",
-          "settings": {
-            "estrellas": 5,
-            "texto": "Reseña de ejemplo: reemplázala por una real.",
-            "nombre": "Ejemplo",
-            "ciudad": "Ciudad"
-          }
         }
       },
       "block_order": [
         "resena_1",
         "resena_2",
-        "resena_3",
-        "resena_4"
+        "resena_3"
       ]
     },
     "faq": {
