@@ -286,7 +286,7 @@
 
 <style>
   .pp-fijo {
-    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 9990;
     padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
     background: var(--pp-fondo); box-shadow: 0 -6px 20px rgba(0, 0, 0, .12);
     transform: translateY(110%); transition: transform .25s ease;
@@ -333,22 +333,18 @@
     if (packs) { packs.addEventListener('change', precioPack); precioPack(); }
     var irOferta = barra.querySelector('a[href="#oferta"]');
     if (irOferta && oferta) irOferta.addEventListener('click', function (ev) { ev.preventDefault(); oferta.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
-    var pasoOferta = !oferta;
-    var ofertaVisible = false;
+    var heroConOferta = !!document.getElementById('oferta');
     function actualizar() {
-      if (!oferta) pasoOferta = window.scrollY > window.innerHeight * 0.8;
-      barra.classList.toggle('is-visible', pasoOferta && !ofertaVisible);
+      var bajo = !heroConOferta || window.scrollY > Math.min(250, window.innerHeight * 0.3);
+      var tapa = false;
+      if (oferta) {
+        var r = oferta.getBoundingClientRect();
+        tapa = r.top < window.innerHeight * 0.75 && r.bottom > window.innerHeight * 0.3;
+      }
+      barra.classList.toggle('is-visible', bajo && !tapa);
     }
-    if (oferta && 'IntersectionObserver' in window) {
-      new IntersectionObserver(function (entradas) {
-        var e = entradas[0];
-        ofertaVisible = e.isIntersecting;
-        pasoOferta = e.isIntersecting || e.boundingClientRect.top < 0;
-        actualizar();
-      }).observe(oferta);
-    } else {
-      window.addEventListener('scroll', actualizar, { passive: true });
-    }
+    window.addEventListener('scroll', function () { window.requestAnimationFrame(actualizar); }, { passive: true });
+    window.addEventListener('resize', actualizar);
     actualizar();
   })();
 </script>
