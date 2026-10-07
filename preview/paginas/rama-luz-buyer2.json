@@ -89,7 +89,9 @@
         },
         "imagen_6": {
           "src": "../../imagenes/rama-ejemplo/habitacion.webp"
-        }
+        },
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
       },
       "blocks": [
         {
@@ -220,6 +222,50 @@
           "type": "video",
           "settings": {
             "etiqueta": "Unboxing"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-galeria-ideas",
+      "settings": {
+        "etiqueta": "Ideas para decorar",
+        "titulo": "Un rincón mágico <em>en cada espacio</em>",
+        "proporcion": "4 / 3",
+        "nieve": true
+      },
+      "blocks": [
+        {
+          "type": "idea",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/sala.webp"
+            },
+            "etiqueta": "Sala",
+            "titulo": "Protagonista de la pared",
+            "texto": "Una sola rama basta para vestir una pared entera de luz."
+          }
+        },
+        {
+          "type": "idea",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/habitacion.webp"
+            },
+            "etiqueta": "Habitación",
+            "titulo": "Un cabecero que brilla",
+            "texto": "Enmarca tu cama y convierte la noche en tu momento favorito."
+          }
+        },
+        {
+          "type": "idea",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/rincon.webp"
+            },
+            "etiqueta": "Rincón",
+            "titulo": "Esa esquina que nadie miraba",
+            "texto": "Una planta, una silla y la rama: rincón aesthetic listo."
           }
         }
       ]
@@ -601,6 +647,21 @@
           }
         }
       ]
+    },
+    {
+      "tipo": "pp-arco",
+      "settings": {
+        "imagen": {
+          "src": "../../imagenes/rama-ejemplo/hero-2.webp"
+        },
+        "etiqueta": "Esta Navidad",
+        "titulo": "Haz que esta Navidad <em>se sienta diferente</em>",
+        "texto": "Agrega la Rama LED a tu decoración y crea tu propio rincón navideño.",
+        "boton_modo": "oferta",
+        "boton_texto": "La quiero para mi casa",
+        "nota": "Envío gratis · Pagas al recibir · Garantía 60 días",
+        "nieve": true
+      }
     },
     {
       "tipo": "pp-faq",

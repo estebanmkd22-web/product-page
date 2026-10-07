@@ -30,6 +30,8 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-timeline.liquid` | PP · Línea de tiempo | Etapas deslizables con barra de avance |
 | `sections/pp-destacado.liquid` | PP · Destacado | Lista con símbolos o tarjeta de color con firma |
 | `sections/pp-resenas.liquid` | PP · Reseñas | Calificación general + tarjetas de reseñas |
+| `sections/pp-galeria-ideas.liquid` | PP · Galería ideas | Tarjetas grandes con foto y texto encima (ideas de uso por espacio) |
+| `sections/pp-arco.liquid` | PP · Imagen en arco | Franja de color con foto en arco, titular, texto y botón |
 | `sections/pp-boton-fijo.liquid` | PP · Botón fijo | Botón de compra pegado abajo en celular |
 
 ## Cómo instalar (una sola vez por tienda)

@@ -1,0 +1,411 @@
+{%- comment -%}
+  PP · Galería ideas
+  Tarjetas grandes con foto y texto encima: etiqueta (ej: SALÓN), título y frase.
+  Pensada para mostrar el producto en distintos espacios ("Un rincón mágico en cada espacio").
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-gi-{{ section.id }} {
+    --gi-bg: {{ section.settings.color_fondo }}; --gi-tx: {{ section.settings.color_texto }}; --gi-ac: {{ section.settings.color_acento }};
+    background: var(--gi-bg); color: var(--gi-tx);
+  }
+  #pp-gi-{{ section.id }} .pp-h { color: var(--gi-tx); font-size: clamp(30px, 8vw, 46px); line-height: 1.08; }
+  #pp-gi-{{ section.id }} .pp-h em { font-style: italic; color: var(--gi-ac); }
+  .pp-gi__eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--gi-ac); }
+  .pp-gi__eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+  .pp-gi__head--centro { text-align: center; }
+  .pp-gi__head--centro .pp-gi__eyebrow { justify-content: center; }
+  .pp-gi__head--centro .pp-gi__eyebrow::after { content: ""; width: 28px; height: 1px; background: currentColor; }
+  .pp-gi__lead { margin-top: 12px; max-width: 620px; font-size: 16px; opacity: .8; }
+  .pp-gi__head--centro .pp-gi__lead { margin-left: auto; margin-right: auto; }
+  .pp-gi__grid { display: grid; gap: 18px; margin-top: 28px; }
+  .pp-gi__card {
+    position: relative; overflow: hidden; border-radius: 22px; aspect-ratio: {{ section.settings.proporcion }};
+    background: color-mix(in srgb, var(--gi-tx) 10%, var(--gi-bg)); box-shadow: 0 16px 34px -18px rgba(0, 0, 0, .45);
+  }
+  .pp-gi__card img, .pp-gi__card > svg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .pp-gi__card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 38%, rgba(0,0,0,.72) 100%); }
+  .pp-gi__info { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 22px 22px 24px; color: #fff; }
+  .pp-gi__chip {
+    display: inline-block; margin-bottom: 12px; padding: 6px 14px; border-radius: 99px;
+    background: rgba(255, 255, 255, .18); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
+  }
+  #pp-gi-{{ section.id }} .pp-gi__titulo { color: #fff; font-size: clamp(24px, 6.6vw, 32px); line-height: 1.1; }
+  .pp-gi__texto { margin-top: 6px; font-size: 15px; line-height: 1.45; opacity: .88; }
+  @media (min-width: 750px) {
+    .pp-gi__grid { grid-template-columns: repeat({{ section.settings.columnas_pc }}, minmax(0, 1fr)); gap: 22px; }
+  }
+  .pp-nieve { position: relative; overflow: hidden; }
+  .pp-nieve > * { position: relative; z-index: 1; }
+  .pp-nieve::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -100%; height: 200%; pointer-events: none; z-index: 0;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.9), transparent),
+      radial-gradient(1.5px 1.5px at 90px 120px, rgba(255,255,255,.7), transparent),
+      radial-gradient(2.5px 2.5px at 160px 60px, rgba(255,255,255,.8), transparent),
+      radial-gradient(1.5px 1.5px at 230px 170px, rgba(255,255,255,.6), transparent),
+      radial-gradient(2px 2px at 300px 90px, rgba(255,255,255,.8), transparent);
+    background-size: 340px 220px; opacity: .55; animation: pp-nieve 22s linear infinite;
+  }
+  @keyframes pp-nieve { to { transform: translateY(50%); } }
+  @media (prefers-reduced-motion: reduce) { .pp-nieve::before { animation: none; } }
+</style>
+
+<div id="pp-gi-{{ section.id }}" class="pp pp-section{% if section.settings.nieve %} pp-nieve{% endif %}">
+  <div class="pp-wrap">
+    <div class="pp-gi__head{% if section.settings.alineacion == 'centro' %} pp-gi__head--centro{% endif %}">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-gi__eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h">{{ section.settings.titulo }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="pp-gi__lead">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <div class="pp-gi__grid">
+      {%- for block in section.blocks -%}
+        <article class="pp-gi__card" {{ block.shopify_attributes }}>
+          {%- if block.settings.imagen != blank -%}
+            {{ block.settings.imagen | image_url: width: 1100 | image_tag: loading: 'lazy', widths: '400, 700, 1100', sizes: '(min-width: 750px) 50vw, 100vw', alt: block.settings.titulo }}
+          {%- else -%}
+            {{ 'lifestyle-1' | placeholder_svg_tag }}
+          {%- endif -%}
+          <div class="pp-gi__info">
+            {%- if block.settings.etiqueta != blank -%}<span class="pp-gi__chip">{{ block.settings.etiqueta }}</span>{%- endif -%}
+            {%- if block.settings.titulo != blank -%}<h3 class="pp-h pp-gi__titulo">{{ block.settings.titulo }}</h3>{%- endif -%}
+            {%- if block.settings.texto != blank -%}<p class="pp-gi__texto">{{ block.settings.texto }}</p>{%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PP · Galería ideas",
+  "tag": "section",
+  "class": "pp-galeria-ideas-section",
+  "settings": [
+    { "type": "header", "content": "Colores" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#f6eee3" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#221b17" },
+    { "type": "color", "id": "color_acento", "label": "Acento (etiqueta y cursiva del título)", "default": "#c8873a" },
+    { "type": "checkbox", "id": "nieve", "label": "Nieve suave de fondo", "default": true },
+    { "type": "header", "content": "Textos" },
+    {
+      "type": "select", "id": "alineacion", "label": "Alineación del encabezado", "default": "izq",
+      "options": [ { "value": "izq", "label": "Izquierda" }, { "value": "centro", "label": "Centrado" } ]
+    },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Ideas para decorar" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en el color de acento)", "default": "Un rincón mágico <em>en cada espacio</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    { "type": "header", "content": "Tarjetas" },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de las fotos", "default": "4 / 3",
+      "options": [
+        { "value": "4 / 3", "label": "Horizontal (4:3)" },
+        { "value": "1 / 1", "label": "Cuadrado (1:1)" },
+        { "value": "4 / 5", "label": "Vertical (4:5)" }
+      ]
+    },
+    {
+      "type": "select", "id": "columnas_pc", "label": "Columnas en computador", "default": "3",
+      "options": [ { "value": "2", "label": "2" }, { "value": "3", "label": "3" } ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "idea",
+      "name": "Tarjeta",
+      "settings": [
+        { "type": "image_picker", "id": "imagen", "label": "Foto (sin texto)" },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta (ej: SALÓN)", "default": "Sala" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Protagonista de la pared" },
+        { "type": "textarea", "id": "texto", "label": "Texto", "default": "Una sola rama basta para vestir una pared entera de luz." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Galería ideas",
+      "blocks": [
+        { "type": "idea", "settings": { "etiqueta": "Sala", "titulo": "Protagonista de la pared", "texto": "Una sola rama basta para vestir una pared entera de luz." } },
+        { "type": "idea", "settings": { "etiqueta": "Habitación", "titulo": "Un cabecero que brilla", "texto": "Enmarca tu cama y convierte la noche en tu momento favorito." } },
+        { "type": "idea", "settings": { "etiqueta": "Rincón", "titulo": "Esa esquina que nadie miraba", "texto": "Una planta, una silla y la rama: rincón aesthetic listo." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

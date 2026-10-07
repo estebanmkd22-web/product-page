@@ -1,0 +1,412 @@
+{%- comment -%}
+  PP · Imagen en arco
+  Franja de color con una foto en forma de arco, etiqueta con línea, titular con
+  cursiva de acento, texto y botón (ej: "Haz que esta Navidad se sienta diferente").
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-arco-{{ section.id }} {
+    --ar-bg: {{ section.settings.color_fondo }}; --ar-tx: {{ section.settings.color_texto }}; --ar-ac: {{ section.settings.color_acento }};
+    background: var(--ar-bg); color: var(--ar-tx);
+  }
+  .pp-arco__grid { display: grid; gap: 28px; align-items: center; }
+  .pp-arco__media { position: relative; max-width: 460px; width: 100%; margin: 0 auto; padding: 8px; border: 1px solid color-mix(in srgb, var(--ar-ac) 45%, transparent); }
+  .pp-arco__img { overflow: hidden; aspect-ratio: {{ section.settings.proporcion }}; background: color-mix(in srgb, var(--ar-tx) 10%, var(--ar-bg)); }
+  .pp-arco--arco .pp-arco__media, .pp-arco--arco .pp-arco__img { border-radius: 999px 999px 18px 18px; }
+  .pp-arco--rect .pp-arco__media, .pp-arco--rect .pp-arco__img { border-radius: 22px; }
+  .pp-arco__img img, .pp-arco__img svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .pp-arco__eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 12px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--ar-ac); }
+  .pp-arco__eyebrow::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+  #pp-arco-{{ section.id }} .pp-h { color: var(--ar-tx); font-size: clamp(32px, 8.6vw, 50px); line-height: 1.08; }
+  #pp-arco-{{ section.id }} .pp-h em { font-style: italic; color: var(--ar-ac); }
+  .pp-arco__texto { margin-top: 14px; font-size: 16px; line-height: 1.55; opacity: .85; }
+  .pp-arco__cta { margin-top: 24px; max-width: 420px; }
+  .pp-arco__nota { margin-top: 10px; font-size: 13px; opacity: .7; }
+  @media (min-width: 750px) {
+    .pp-arco__grid { grid-template-columns: 1fr 1fr; gap: 56px; }
+    .pp-arco--der .pp-arco__media { order: 2; }
+  }
+  .pp-nieve { position: relative; overflow: hidden; }
+  .pp-nieve > * { position: relative; z-index: 1; }
+  .pp-nieve::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -100%; height: 200%; pointer-events: none; z-index: 0;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.9), transparent),
+      radial-gradient(1.5px 1.5px at 90px 120px, rgba(255,255,255,.7), transparent),
+      radial-gradient(2.5px 2.5px at 160px 60px, rgba(255,255,255,.8), transparent),
+      radial-gradient(1.5px 1.5px at 230px 170px, rgba(255,255,255,.6), transparent),
+      radial-gradient(2px 2px at 300px 90px, rgba(255,255,255,.8), transparent);
+    background-size: 340px 220px; opacity: .55; animation: pp-nieve 22s linear infinite;
+  }
+  @keyframes pp-nieve { to { transform: translateY(50%); } }
+  @media (prefers-reduced-motion: reduce) { .pp-nieve::before { animation: none; } }
+</style>
+
+<div id="pp-arco-{{ section.id }}" class="pp pp-section pp-arco--{{ section.settings.forma }} pp-arco--{{ section.settings.lado }}{% if section.settings.nieve %} pp-nieve{% endif %}">
+  <div class="pp-wrap">
+    <div class="pp-arco__grid">
+      <div class="pp-arco__media">
+        <div class="pp-arco__img">
+          {%- if section.settings.imagen != blank -%}
+            {{ section.settings.imagen | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '400, 700, 1000', sizes: '(min-width: 750px) 460px, 100vw', alt: section.settings.imagen.alt }}
+          {%- else -%}
+            {{ 'lifestyle-2' | placeholder_svg_tag }}
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="pp-arco__info">
+        {%- if section.settings.etiqueta != blank -%}<p class="pp-arco__eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-arco__texto">{{ section.settings.texto }}</p>{%- endif -%}
+        {%- if section.settings.boton_modo != 'ninguno' -%}
+          <div class="pp-arco__cta">
+            {%- case section.settings.boton_modo -%}
+              {%- when 'easysell' -%}
+                <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn pp-btn--pulse">{{ section.settings.boton_texto }}</a>
+              {%- when 'oferta' -%}
+                <a href="#oferta" class="pp-btn pp-btn--pulse" data-pp-arco-oferta>{{ section.settings.boton_texto }}</a>
+              {%- else -%}
+                <a href="{{ section.settings.boton_enlace | default: '#' }}" class="pp-btn pp-btn--pulse">{{ section.settings.boton_texto }}</a>
+            {%- endcase -%}
+            {%- if section.settings.nota != blank -%}<p class="pp-arco__nota">{{ section.settings.nota }}</p>{%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-arco-{{ section.id }}');
+    var btn = root && root.querySelector('[data-pp-arco-oferta]');
+    if (!btn) return;
+    btn.addEventListener('click', function (ev) {
+      var destino = document.getElementById('oferta') || document.querySelector('.pp-of');
+      if (!destino) return;
+      ev.preventDefault();
+      destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Imagen en arco",
+  "tag": "section",
+  "class": "pp-arco-section",
+  "settings": [
+    { "type": "header", "content": "Colores" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#1f3a2e" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#f7efe2" },
+    { "type": "color", "id": "color_acento", "label": "Acento (etiqueta, cursiva y borde)", "default": "#d9a04e" },
+    { "type": "checkbox", "id": "nieve", "label": "Nieve suave de fondo", "default": true },
+    { "type": "header", "content": "Imagen" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto (sin texto)" },
+    {
+      "type": "select", "id": "forma", "label": "Forma de la foto", "default": "arco",
+      "options": [ { "value": "arco", "label": "Arco" }, { "value": "rect", "label": "Rectángulo redondeado" } ]
+    },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de la foto", "default": "4 / 5",
+      "options": [ { "value": "4 / 5", "label": "Vertical (4:5)" }, { "value": "3 / 4", "label": "Vertical alto (3:4)" }, { "value": "1 / 1", "label": "Cuadrado (1:1)" } ]
+    },
+    {
+      "type": "select", "id": "lado", "label": "En computador, la foto va a la", "default": "izq",
+      "options": [ { "value": "izq", "label": "Izquierda" }, { "value": "der", "label": "Derecha" } ]
+    },
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Esta Navidad" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en el color de acento)", "default": "Haz que esta Navidad <em>se sienta diferente</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "Agrega la Rama LED a tu decoración y crea tu propio rincón navideño." },
+    { "type": "header", "content": "Botón" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "oferta",
+      "options": [
+        { "value": "ninguno", "label": "Sin botón" },
+        { "value": "oferta", "label": "Bajar o subir a los packs" },
+        { "value": "easysell", "label": "Abrir formulario EasySell" },
+        { "value": "enlace", "label": "Ir a un enlace" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "La quiero para mi casa" },
+    { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" },
+    { "type": "text", "id": "nota", "label": "Nota debajo del botón (opcional)", "default": "Envío gratis · Pagas al recibir" }
+  ],
+  "presets": [{ "name": "PP · Imagen en arco" }]
+}
+{% endschema %}

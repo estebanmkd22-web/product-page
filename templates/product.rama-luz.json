@@ -60,7 +60,9 @@
         "rating": "4.9",
         "rating_texto": "(1.240 hogares iluminados)",
         "titulo": "Esta Navidad, convierte cualquier rincón en <em>tu lugar favorito.</em>",
-        "texto": "Una rama de <strong>2.5 m con 144 luces LED cálidas</strong> que cambia por completo tu espacio cuando cae la noche. Se conecta por USB, se moldea a tu gusto y no la vas a querer guardar en enero."
+        "texto": "Una rama de <strong>2.5 m con 144 luces LED cálidas</strong> que cambia por completo tu espacio cuando cae la noche. Se conecta por USB, se moldea a tu gusto y no la vas a querer guardar en enero.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
       },
       "blocks": {
         "transformacion_1": {
@@ -206,6 +208,46 @@
         "video_2",
         "video_3",
         "video_4"
+      ]
+    },
+    "galeria_ideas": {
+      "type": "pp-galeria-ideas",
+      "settings": {
+        "etiqueta": "Ideas para decorar",
+        "titulo": "Un rincón mágico <em>en cada espacio</em>",
+        "proporcion": "4 / 3",
+        "nieve": true
+      },
+      "blocks": {
+        "idea_1": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Sala",
+            "titulo": "Protagonista de la pared",
+            "texto": "Una sola rama basta para vestir una pared entera de luz."
+          }
+        },
+        "idea_2": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Habitación",
+            "titulo": "Un cabecero que brilla",
+            "texto": "Enmarca tu cama y convierte la noche en tu momento favorito."
+          }
+        },
+        "idea_3": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Rincón",
+            "titulo": "Esa esquina que nadie miraba",
+            "texto": "Una planta, una silla y la rama: rincón aesthetic listo."
+          }
+        }
+      },
+      "block_order": [
+        "idea_1",
+        "idea_2",
+        "idea_3"
       ]
     },
     "iconos": {
@@ -614,6 +656,18 @@
         "resena_3"
       ]
     },
+    "arco": {
+      "type": "pp-arco",
+      "settings": {
+        "etiqueta": "Esta Navidad",
+        "titulo": "Haz que esta Navidad <em>se sienta diferente</em>",
+        "texto": "Agrega la Rama LED a tu decoración y crea tu propio rincón navideño.",
+        "boton_modo": "oferta",
+        "boton_texto": "La quiero para mi casa",
+        "nota": "Envío gratis · Pagas al recibir · Garantía 60 días",
+        "nieve": true
+      }
+    },
     "faq": {
       "type": "pp-faq",
       "settings": {
@@ -693,6 +747,7 @@
     "hero_oferta",
     "ofertas",
     "videos_rama",
+    "galeria_ideas",
     "iconos",
     "tabs",
     "destacado",
@@ -701,6 +756,7 @@
     "timeline",
     "pasos",
     "resenas",
+    "arco",
     "faq",
     "boton_fijo"
   ]
