@@ -107,8 +107,8 @@
       "settings": {
         "color_acento": "#7cb518",
         "color_pestana": "#13284b",
-        "valor_tachado": "Q85",
-        "boton_texto": "Ordenar ahora — Pagás al recibir"
+        "boton_texto": "Ordenar ahora — Pagás al recibir",
+        "entrega": "Entrega de 1 a 3 días"
       },
       "blocks": [
         {
@@ -645,7 +645,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto tarda en llegar mi pedido?",
-            "respuesta": "<p>Entre 24 y 48 horas en la mayoría de zonas de Guatemala.</p>"
+            "respuesta": "<p>Entre 1 y 3 días en la mayoría de zonas de Guatemala.</p>"
           }
         },
         {
