@@ -323,11 +323,11 @@
   (function () {
     var barra = document.getElementById('pp-fijo-{{ section.id }}');
     if (!barra) return;
-    var oferta = document.getElementById('oferta') || document.querySelector('.pp-of');
-    var packs = document.querySelector('.pp-of');
+    var oferta = document.getElementById('oferta') || document.querySelector('.pp-of, [data-pp-oferta]');
+    var packs = document.querySelector('.pp-of, [data-pp-oferta]');
     var precioFijo = barra.querySelector('.pp-fijo__precio strong');
     function precioPack() {
-      var r = packs && packs.querySelector('.pp-of__pack input:checked');
+      var r = packs && packs.querySelector('input[data-precio]:checked');
       if (r && precioFijo && r.dataset.precio) precioFijo.textContent = r.dataset.precio;
     }
     if (packs) { packs.addEventListener('change', precioPack); precioPack(); }

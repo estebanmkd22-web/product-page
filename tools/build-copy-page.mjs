@@ -18,6 +18,7 @@ const SECCIONES = [
   { file: 'pp-videos-rama', desc: 'Solo para la Rama de Luz (tienda de Colombia). Carrusel de videos de la Rama: fondo crema, flechas ámbar siempre visibles, barra de avance y movimiento automático. Es independiente de PP · Videos.' },
   { file: 'pp-galeria-ideas', desc: 'Nueva. "Ideas para decorar": tarjetas grandes con foto, etiqueta (SALA), título y frase encima. Nieve suave opcional.' },
   { file: 'pp-arco', desc: 'Nueva. "Esta Navidad": franja de color con foto en arco, titular con cursiva dorada y botón a los packs. Nieve suave opcional.' },
+  { file: 'pp-oferta-tabs', desc: 'Nueva. Oferta con pestañas (1 / 2 frascos), tarjeta del pack, "Incluido en tu pedido" con contador y regalos que se desbloquean, valor tachado y botón con precio.' },
   { file: 'pp-problema', desc: 'Etiqueta, titular y hasta 3 fotos en fila. Ej: "El cepillo limpia dientes. No limpia esto."' },
   { file: 'pp-grid-dolores', desc: 'Tarjetas con foto, título rojo y texto en 2 columnas, más una frase de cierre.' },
   { file: 'pp-testimonio', desc: 'Pregunta que agita el dolor, cita de un cliente con estrellas y botón de compra.' },

@@ -430,7 +430,7 @@
     }
     {%- endif %}
     var irOferta = root.querySelector('.pp-cta a[href="#oferta"]');
-    var destino = document.getElementById('oferta') || document.querySelector('.pp-of');
+    var destino = document.getElementById('oferta') || document.querySelector('.pp-of, [data-pp-oferta]');
     if (irOferta && destino) irOferta.addEventListener('click', function (ev) { ev.preventDefault(); destino.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     var videos = Array.prototype.slice.call(root.querySelectorAll('video'));
     if (!videos.length) return;

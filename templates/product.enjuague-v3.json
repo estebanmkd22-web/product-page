@@ -86,21 +86,23 @@
         "transformacion_3"
       ]
     },
-    "ofertas": {
-      "type": "pp-ofertas",
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
       "settings": {
-        "color_destacado": "#7cb518",
-        "boton_texto": "Pedir ahora",
-        "nota": "Pagás al recibir · Envío gratis · Recibe en 24-48 h",
-        "boton_modo": "easysell"
+        "color_acento": "#7cb518",
+        "color_pestana": "#13284b",
+        "valor_tachado": "Q85",
+        "boton_texto": "Ordenar ahora — Pagás al recibir"
       },
       "blocks": {
         "pack_1": {
           "type": "pack",
           "settings": {
-            "titulo": "1 frasco",
-            "subtitulo": "Envío gratis",
-            "por_porcion": "237 ml",
+            "pestana": "1 frasco",
+            "etiqueta": "Elimina la suciedad acumulada",
+            "titulo": "iD Whitening (1 frasco 275 ml)",
+            "linea_regalo": "🎁 Con los 3 beneficios incluidos",
+            "detalle": "1 frasco · 1 mes",
             "precio": 210,
             "precio_antes": 290,
             "cantidad": 1
@@ -109,10 +111,12 @@
         "pack_2": {
           "type": "pack",
           "settings": {
-            "titulo": "2 frascos",
-            "subtitulo": "Envío gratis",
-            "etiqueta": "Más vendido",
-            "por_porcion": "Q175 c/u",
+            "pestana": "2 frascos",
+            "destacar": "Ahorra",
+            "etiqueta": "Más vendido · Tratamiento completo",
+            "titulo": "iD Whitening (2 frascos 275 ml)",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "2 frascos · 2 meses · Q175 c/u",
             "precio": 350,
             "precio_antes": 580,
             "cantidad": 2,
@@ -122,33 +126,38 @@
         "regalo_3": {
           "type": "regalo",
           "settings": {
+            "insignia": "Gratis",
             "icono": "camion",
             "titulo": "Envío gratis",
-            "insignia": ""
+            "texto": "A todo Guatemala"
           }
         },
         "regalo_4": {
           "type": "regalo",
           "settings": {
-            "icono": "pago",
-            "titulo": "Pago al recibir",
-            "insignia": ""
+            "insignia": "Gratis",
+            "icono": "brillo",
+            "titulo": "Plan personalizado",
+            "texto": "Rutina para un aliento más fresco"
           }
         },
         "regalo_5": {
           "type": "regalo",
           "settings": {
-            "icono": "chat",
-            "titulo": "Atención por WhatsApp",
-            "insignia": ""
+            "insignia": "Exclusivo",
+            "emoji": "%",
+            "titulo": "15% OFF",
+            "texto": "En tu próxima compra"
           }
         },
         "regalo_6": {
           "type": "regalo",
           "settings": {
-            "icono": "escudo",
-            "titulo": "Reposición si llega dañado",
-            "insignia": ""
+            "insignia": "Solo x2",
+            "icono": "regalo",
+            "titulo": "Guía 60 días",
+            "texto": "Para mantener tu sonrisa",
+            "desde": 2
           }
         }
       },
@@ -720,7 +729,7 @@
     "estilos",
     "ticker",
     "hero_oferta",
-    "ofertas",
+    "oferta_tabs",
     "videos",
     "grid_dolores",
     "iconos",

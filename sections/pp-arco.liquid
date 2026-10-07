@@ -356,7 +356,7 @@
     var btn = root && root.querySelector('[data-pp-arco-oferta]');
     if (!btn) return;
     btn.addEventListener('click', function (ev) {
-      var destino = document.getElementById('oferta') || document.querySelector('.pp-of');
+      var destino = document.getElementById('oferta') || document.querySelector('.pp-of, [data-pp-oferta]');
       if (!destino) return;
       ev.preventDefault();
       destino.scrollIntoView({ behavior: 'smooth', block: 'start' });
