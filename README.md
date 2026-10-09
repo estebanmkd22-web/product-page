@@ -25,6 +25,8 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-secuencia.liquid` | PP · Secuencia | Imagen + fotos en secuencia con flechas |
 | `sections/pp-ofertas.liquid` | PP · Ofertas | Selector de packs con descuento, precio por porción y regalos |
 | `sections/pp-oferta-tabs.liquid` | PP · Oferta con pestañas | Pestañas por pack, regalos incluidos con contador (algunos solo desde 2 unidades) y botón con precio |
+| `sections/pp-circulos.liquid` | PP · Círculos destacados | Titular con laureles, foto con bordes difuminados y círculos con foto, ícono, título y texto |
+| `sections/pp-problemas-filas.liquid` | PP · Problemas en filas | Filas alternadas foto + tarjeta (ícono, título, divisor dorado, puntos con check) |
 | `sections/pp-comparativa.liquid` | PP · Comparativa | Tabla tu producto vs. la competencia |
 | `sections/pp-datos.liquid` | PP · Datos | Tarjetas con un dato grande |
 | `sections/pp-tabs.liquid` | PP · Pestañas | "¿Te identificas?" con pestañas |

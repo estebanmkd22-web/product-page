@@ -1,0 +1,561 @@
+{
+  "titulo": "Rama Luz Compacta 1.5 m",
+  "moneda": "$",
+  "locale": "es-CO",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&display=swap'><style>:root{--pp-font-titulos:'Cormorant Garamond',serif;--pp-peso-titulos:700;--pp-espaciado-titulos:0}</style>",
+  "producto": {
+    "title": "Rama Luz Compacta 1.5 m",
+    "featured_image": {
+      "src": "../../imagenes/rama-ejemplo/producto.webp"
+    },
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 11990000,
+      "compare_at_price": 18990000,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#8e3b2a",
+        "texto": "#3d3530",
+        "texto_2": "#7a6e66",
+        "fondo": "#f8f4ee",
+        "fondo_2": "#efe7dc",
+        "boton": "#8e3b2a",
+        "boton_texto": "#ffffff",
+        "estrella": "#b8924a",
+        "ok": "#6f8a6a",
+        "radio": 18
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#8e3b2a",
+        "texto": "#f8efe4",
+        "separador": "✦"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Colombia"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir en casa"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Perfecta para espacios pequeños"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de 60 días"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#f8f4ee",
+        "mostrar_oferta": false,
+        "imagen_1": {
+          "src": "../../imagenes/rama-ejemplo/hero-2.webp"
+        },
+        "imagen_2": {
+          "src": "../../imagenes/rama-ejemplo/rincon.webp"
+        },
+        "imagen_3": {
+          "src": "../../imagenes/rama-ejemplo/habitacion.webp"
+        },
+        "imagen_4": {
+          "src": "../../imagenes/rama-ejemplo/producto.webp"
+        },
+        "imagen_5": {
+          "src": "../../imagenes/rama-ejemplo/sala.webp"
+        },
+        "rating": "4.9",
+        "rating_texto": "(860 clientas felices)",
+        "titulo": "Pequeña en tamaño, <em>enorme en estilo.</em>",
+        "texto": "La <strong>rama de luz compacta de 1.5 m</strong>: la medida justa para la cabecera de tu cama, un espejo o esa pared pequeña que no sabes cómo decorar.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>1.5 m</strong>: cabe en cualquier rincón"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Luz cálida que se siente <strong>acogedora</strong>"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Se moldea a tu gusto, <strong>sin herramientas</strong>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#b8924a",
+        "color_pestana": "#8e3b2a",
+        "titulo": "Elige tu <em>rama compacta</em>",
+        "boton_texto": "La quiero — Pago al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Colombia"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 rama",
+            "etiqueta": "Ideal para un rincón",
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/producto.webp"
+            },
+            "titulo": "Rama Luz Compacta 1.5 m",
+            "linea_regalo": "🎁 Envío gratis incluido",
+            "detalle": "1 rama · 1.5 m",
+            "precio": 119900,
+            "precio_antes": 189900,
+            "cantidad": 1
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 ramas",
+            "destacar": "Más elegido",
+            "etiqueta": "Para dos espacios (o para regalar)",
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/producto.webp"
+            },
+            "titulo": "2 Ramas Luz Compactas 1.5 m",
+            "linea_regalo": "🎁 Todo incluido + mejor precio",
+            "detalle": "2 ramas · $99.950 c/u",
+            "precio": 199900,
+            "precio_antes": 379800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de decoración",
+            "texto": "Ideas para ubicarla"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-circulos",
+      "settings": {
+        "color_fondo": "#f8f4ee",
+        "color_titulo": "#8e3b2a",
+        "color_dorado": "#b8924a",
+        "color_texto": "#3d3530",
+        "titulo_1": "La pieza de diseño definitiva",
+        "titulo_2": "que redefine la elegancia",
+        "titulo_3": "en tu hogar",
+        "imagen": {
+          "src": "../../imagenes/rama-ejemplo/habitacion.webp"
+        }
+      },
+      "blocks": [
+        {
+          "type": "circulo",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/rincon.webp"
+            },
+            "icono": "altura",
+            "titulo": "1.5 metros compactos",
+            "texto": "La medida justa para cabeceras, espejos y paredes pequeñas."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/hero-2.webp"
+            },
+            "icono": "bombillo",
+            "titulo": "Luz LED cálida",
+            "texto": "Iluminación dorada y acogedora para cualquier espacio."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/sala.webp"
+            },
+            "icono": "hoja",
+            "titulo": "Aspecto botánico natural",
+            "texto": "Ramas flexibles que se moldean a tu gusto."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#efe7dc",
+        "color_tarjeta": "#fffdf9",
+        "color_acento": "#8e3b2a",
+        "color_dorado": "#b8924a",
+        "color_texto": "#3d3530",
+        "cierre": "La Rama Compacta lo resuelve en 2 minutos."
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/sala.webp"
+            },
+            "icono": "arbol",
+            "titulo": "Espacio saturado",
+            "puntos": "El árbol grande no cabe en tu sala o apartamento."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/antes.webp"
+            },
+            "icono": "enredo",
+            "titulo": "Cables y enredos molestos",
+            "puntos": "Horas desenredando luces que al final no prenden."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/rincon.webp"
+            },
+            "icono": "casa",
+            "titulo": "Rincones apagados",
+            "puntos": "Espacios sin vida que no reflejan tu estilo."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Mírala <em>encendida</em>",
+        "texto": "Así se ve en casas reales."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cabecera"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Espejo"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Repisa"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "titulo": "Pensada para <em>espacios pequeños</em>"
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "altura",
+            "texto": "1.5 m compacta"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "hoja",
+            "texto": "Ramas flexibles"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 60 días"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo",
+        "titulo": "Lista en <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/producto.webp"
+            },
+            "titulo": "Sácala de la caja",
+            "texto": "Llega lista para usar."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/rincon.webp"
+            },
+            "titulo": "Dale forma",
+            "texto": "Arco, espejo o repisa: tú decides."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "imagen": {
+              "src": "../../imagenes/rama-ejemplo/habitacion.webp"
+            },
+            "titulo": "Conéctala y disfruta",
+            "texto": "Tu rincón listo en minutos."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "Compacta, <em>no simple.</em>",
+        "texto": "Frente a la decoración navideña de siempre.",
+        "color_destacado": "#8e3b2a",
+        "nombre_a": "Rama Compacta",
+        "sub_a": "1.5 m",
+        "imagen_a": {
+          "src": "../../imagenes/rama-ejemplo/producto.webp"
+        },
+        "nombre_b": "Árbol tradicional",
+        "sub_b": "Y adornos",
+        "pie_izq": "Rama Compacta",
+        "pie_der": "Para todo el año"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Espacio que ocupa",
+            "subtitulo": "Ideal para apartamentos",
+            "ok_a": true,
+            "valor_a": "Va en la pared",
+            "ok_b": false,
+            "valor_b": "Medio rincón"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "La usas todo el año",
+            "subtitulo": "No se guarda en enero",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "Solo diciembre"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Instalación",
+            "subtitulo": "Sin herramientas",
+            "ok_a": true,
+            "valor_a": "Minutos",
+            "ok_b": false,
+            "valor_b": "Una tarde"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Envío y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Gratis + 60 días",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Justo lo que mi cuarto <em>necesitaba.</em>”",
+        "nota": "4,9",
+        "cantidad": "860 reseñas",
+        "visibles": 3
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Perfecta para mi cabecera",
+            "texto": "La de 1.5 m quedó exacta sobre mi cama. No ocupa nada y el cuarto se ve otro.",
+            "nombre": "Camila T.",
+            "ciudad": "Bogotá",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Ideal para apartamento",
+            "texto": "Vivo en un apartamento pequeño y no quería un árbol. La puse alrededor del espejo y me encantó.",
+            "nombre": "Natalia G.",
+            "ciudad": "Bucaramanga",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pedí dos",
+            "texto": "Una para la sala y otra para regalarle a mi hermana. Llegó rápido y pagué al recibir.",
+            "nombre": "Paola V.",
+            "ciudad": "Barranquilla",
+            "verificado": true
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto mide?",
+            "respuesta": "<p>Mide <strong>1.5 metros</strong>. Es la versión compacta: ideal para cabeceras, espejos, repisas y paredes pequeñas.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Puedo darle la forma que quiera?",
+            "respuesta": "<p>Sí. Las ramas son flexibles: arco, espejo, ventana o repisa, como mejor quede en tu espacio.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿El envío tiene costo?",
+            "respuesta": "<p>No. El envío es <strong>gratis a toda Colombia</strong> y te confirmamos el pedido por WhatsApp.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Tiene garantía?",
+            "respuesta": "<p>Sí, <strong>60 días de garantía</strong> por cualquier daño de fábrica.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Pagas en efectivo cuando la recibes en tu casa. No pagas nada por adelantado.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "La quiero",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 199900
+      }
+    }
+  ]
+}

@@ -9,6 +9,9 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.rama-compacta', dir: 'templates', ext: '.json', name: 'Plantilla · Rama Compacta 1.5 m', desc: 'Nueva. Página completa de la Rama Compacta (terracota + nórdico, 119.900 / 199.900). Va en templates: crea la plantilla rama-compacta, borra todo, pega y guarda. Antes pega pp-circulos y pp-problemas-filas.' },
+  { file: 'pp-circulos', desc: 'Nueva. "La pieza de diseño definitiva": titular con laureles, foto grande con bordes difuminados y 3 círculos con ícono dorado.' },
+  { file: 'pp-problemas-filas', desc: 'Nueva. "¿Cansada de pasar horas…?": filas alternadas de foto + tarjeta con ícono terracota, título y check.' },
   { file: 'product.enjuague-v3', dir: 'templates', ext: '.json', name: 'Plantilla · Enjuague (estilo HYDRA)', desc: 'Página completa de iD Whitening para Naturixa con textos, packs, preguntas y colores. Va en la carpeta templates: abre product.enjuague-v3.json, borra todo, pega y guarda.' },
   { file: 'product.rama-luz', dir: 'templates', ext: '.json', name: 'Plantilla · Rama de Luz LED', desc: 'Página completa de la Rama con textos, precios y colores. Va en la carpeta templates: abre product.rama-luz.json, borra todo, pega y guarda. Antes deben estar pegadas las 15 secciones.' },
   { file: 'pp-hero-oferta', desc: 'Galería, estrellas, titular, beneficios y la caja de compra con el botón de EasySell.' },

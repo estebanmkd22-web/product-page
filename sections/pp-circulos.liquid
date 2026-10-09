@@ -1,0 +1,431 @@
+{%- comment -%}
+  PP · Círculos destacados
+  Titular de 3 líneas con laureles, foto principal con bordes difuminados y
+  círculos con foto, ícono, título y texto (ej: "La pieza de diseño definitiva").
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-cd-{{ section.id }} {
+    --cd-bg: {{ section.settings.color_fondo }}; --cd-t1: {{ section.settings.color_titulo }}; --cd-au: {{ section.settings.color_dorado }}; --cd-tx: {{ section.settings.color_texto }};
+    background: var(--cd-bg); color: var(--cd-tx);
+  }
+  .pp-cd__head { position: relative; display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; gap: 6px; text-align: center; }
+  .pp-cd__laurel { width: 44px; height: 44px; color: var(--cd-au); }
+  .pp-cd__laurel--der { transform: scaleX(-1); }
+  .pp-cd__orn { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--cd-au); font-size: 14px; }
+  .pp-cd__orn::before, .pp-cd__orn::after { content: ""; width: 70px; height: 1px; background: linear-gradient(90deg, transparent, currentColor, transparent); }
+  #pp-cd-{{ section.id }} .pp-cd__t { margin: 0; line-height: 1.05; }
+  #pp-cd-{{ section.id }} .pp-cd__t1 { color: var(--cd-t1); font-size: clamp(28px, 7.6vw, 48px); }
+  #pp-cd-{{ section.id }} .pp-cd__t2 { margin-top: 4px; color: var(--cd-au); font-size: clamp(22px, 6vw, 38px); }
+  #pp-cd-{{ section.id }} .pp-cd__t3 { margin-top: 2px; color: var(--cd-t1); font-size: clamp(28px, 7.6vw, 48px); font-style: italic; }
+  .pp-cd__t3wrap { display: flex; align-items: center; justify-content: center; gap: 12px; color: var(--cd-au); }
+  .pp-cd__t3wrap::before, .pp-cd__t3wrap::after { content: "✦"; font-size: 12px; }
+  .pp-cd__foto { margin: 22px -16px 0; aspect-ratio: {{ section.settings.proporcion }}; overflow: hidden; }
+  .pp-cd__foto img, .pp-cd__foto svg { width: 100%; height: 100%; object-fit: cover; }
+  .pp-cd--fade .pp-cd__foto { -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 12%, #000 86%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 12%, #000 86%, transparent 100%); }
+  .pp-cd__items { display: grid; grid-template-columns: repeat({{ section.blocks.size | at_least: 1 | at_most: 4 }}, minmax(0, 1fr)); margin-top: 22px; }
+  .pp-cd__item { position: relative; display: grid; justify-items: center; align-content: start; padding: 0 6px; text-align: center; }
+  .pp-cd__item + .pp-cd__item::before { content: ""; position: absolute; left: 0; top: 18%; bottom: 8%; width: 1px; background: linear-gradient(180deg, transparent, color-mix(in srgb, var(--cd-au) 55%, transparent), transparent); }
+  .pp-cd__circ { position: relative; width: min(100%, 150px); aspect-ratio: 1; }
+  .pp-cd__circ-img { width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 3px solid color-mix(in srgb, var(--cd-au) 70%, #fff); box-shadow: 0 8px 22px -10px rgba(0,0,0,.45); background: color-mix(in srgb, var(--cd-tx) 8%, var(--cd-bg)); }
+  .pp-cd__circ-img img, .pp-cd__circ-img svg { width: 100%; height: 100%; object-fit: cover; }
+  .pp-cd__badge { position: absolute; left: 50%; bottom: -16px; transform: translateX(-50%); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--cd-au); color: #fff; font-size: 20px; box-shadow: 0 0 0 3px var(--cd-bg); }
+  #pp-cd-{{ section.id }} .pp-cd__titulo { margin-top: 24px; color: var(--cd-t1); font-size: clamp(14px, 3.9vw, 20px); line-height: 1.15; }
+  .pp-cd__div { margin: 6px auto; color: var(--cd-au); font-size: 9px; display: flex; align-items: center; gap: 6px; }
+  .pp-cd__div::before, .pp-cd__div::after { content: ""; width: 22px; height: 1px; background: currentColor; }
+  .pp-cd__texto { font-size: clamp(11.5px, 3.2vw, 15px); line-height: 1.4; opacity: .85; }
+  @media (min-width: 750px) { .pp-cd__foto { margin: 30px 0 0; border-radius: 24px; } .pp-cd__items { gap: 24px; margin-top: 36px; } }
+</style>
+
+<div id="pp-cd-{{ section.id }}" class="pp pp-section{% if section.settings.difuminar %} pp-cd--fade{% endif %}">
+  <div class="pp-wrap">
+    {%- if section.settings.ornamento -%}<p class="pp-cd__orn" aria-hidden="true">✦</p>{%- endif -%}
+    <div class="pp-cd__head">
+      {%- if section.settings.ornamento -%}<svg class="pp-cd__laurel" viewBox="0 0 64 64" aria-hidden="true"><path d="M50 58C34 50 24 36 22 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M23 16c-6-2-10-7-10-12 6 1 10 6 10 12zM25 26c-7-1-12-5-13-11 7 0 12 5 13 11zM29 36c-7 0-13-4-15-10 7-1 13 4 15 10zM35 45c-7 1-14-2-17-8 7-2 14 2 17 8zM43 53c-6 2-14 0-18-6 7-3 14 0 18 6zM26 14c4-5 9-6 13-5-2 5-7 7-13 5zM29 24c4-4 10-5 14-3-3 4-8 6-14 3zM33 34c5-4 11-4 14-2-3 5-9 6-14 2zM39 43c5-3 11-3 14 0-4 4-10 4-14 0z" fill="currentColor"/></svg>{%- else -%}<span></span>{%- endif -%}
+      <div>
+        {%- if section.settings.titulo_1 != blank -%}<h2 class="pp-h pp-cd__t pp-cd__t1">{{ section.settings.titulo_1 }}</h2>{%- endif -%}
+        {%- if section.settings.titulo_2 != blank -%}<p class="pp-h pp-cd__t pp-cd__t2">{{ section.settings.titulo_2 }}</p>{%- endif -%}
+        {%- if section.settings.titulo_3 != blank -%}<div class="pp-cd__t3wrap"><p class="pp-h pp-cd__t pp-cd__t3">{{ section.settings.titulo_3 }}</p></div>{%- endif -%}
+      </div>
+      {%- if section.settings.ornamento -%}<svg class="pp-cd__laurel pp-cd__laurel--der" viewBox="0 0 64 64" aria-hidden="true"><path d="M50 58C34 50 24 36 22 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M23 16c-6-2-10-7-10-12 6 1 10 6 10 12zM25 26c-7-1-12-5-13-11 7 0 12 5 13 11zM29 36c-7 0-13-4-15-10 7-1 13 4 15 10zM35 45c-7 1-14-2-17-8 7-2 14 2 17 8zM43 53c-6 2-14 0-18-6 7-3 14 0 18 6zM26 14c4-5 9-6 13-5-2 5-7 7-13 5zM29 24c4-4 10-5 14-3-3 4-8 6-14 3zM33 34c5-4 11-4 14-2-3 5-9 6-14 2zM39 43c5-3 11-3 14 0-4 4-10 4-14 0z" fill="currentColor"/></svg>{%- else -%}<span></span>{%- endif -%}
+    </div>
+    {%- if section.settings.imagen != blank -%}
+      <div class="pp-cd__foto">{{ section.settings.imagen | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1400', sizes: '(min-width: 1120px) 1088px, 100vw', alt: section.settings.titulo_1 }}</div>
+    {%- endif -%}
+    {%- if section.blocks.size > 0 -%}
+      <div class="pp-cd__items">
+        {%- for block in section.blocks -%}
+          <div class="pp-cd__item" {{ block.shopify_attributes }}>
+            <div class="pp-cd__circ">
+              <div class="pp-cd__circ-img">
+                {%- if block.settings.imagen != blank -%}
+                  {{ block.settings.imagen | image_url: width: 400 | image_tag: loading: 'lazy', widths: '200, 400', sizes: '150px', alt: block.settings.titulo }}
+                {%- else -%}
+                  {{ 'image' | placeholder_svg_tag }}
+                {%- endif -%}
+              </div>
+              {%- if block.settings.icono != 'ninguno' -%}
+                <span class="pp-cd__badge">{%- assign icono = block.settings.icono -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
+{%- case icono -%}
+{%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
+{%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+{%- when 'frescura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3 0 3-2 6-2s3 2 6 2 3-2 6-2M3 15c3 0 3-2 6-2s3 2 6 2 3-2 6-2"/></svg>
+{%- when 'hoja' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19C5 11 10 5 20 5c0 10-6 15-14 15"/><path d="M5 19l7-7"/></svg>
+{%- when 'sonrisa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 1.5 2.4 2.2 4 2.2s3-.7 4-2.2M9 9.5h.01M15 9.5h.01"/></svg>
+{%- when 'brillo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3zM19 16l.7 1.8 1.8.7-1.8.7L19 21l-.7-1.8-1.8-.7 1.8-.7L19 16z"/></svg>
+{%- when 'check' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+{%- when 'reloj' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+{%- when 'gota' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c3 4 6 7.5 6 11a6 6 0 01-12 0c0-3.5 3-7 6-11z"/></svg>
+{%- when 'calendario' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4M9 15l2 2 4-4"/></svg>
+{%- when 'camion' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3zM14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>
+{%- when 'pago' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>
+{%- when 'corazon' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/></svg>
+{%- when 'lupa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M16 16l4 4"/></svg>
+{%- when 'regalo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8c-1.5-3-5-3.5-5-1.2C7 8 9.5 8 12 8zm0 0c1.5-3 5-3.5 5-1.2C17 8 14.5 8 12 8z"/></svg>
+{%- when 'chat' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-3.9-1L4 20z"/></svg>
+{%- when 'rayo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z"/></svg>
+{%- when 'bombillo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></svg>
+{%- when 'usb' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V5"/><path d="M9 6l3-3 3 3"/><path d="M12 15l-4-3V9"/><circle cx="8" cy="8" r="1.4"/><path d="M12 13l4-2.5V8.5"/><path d="M14.8 7h2.4v2.4h-2.4z"/><circle cx="12" cy="20" r="1.4"/></svg>
+{%- when 'casa' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></svg>
+{%- when 'arbol' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l4 5h-2.5l4 5h-2.5l4 5H5l4-5H6.5l4-5H8l4-5z"/><path d="M12 18v3"/></svg>
+{%- when 'estrella' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3z"/></svg>
+{%- when 'manual' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C4 4.7 4.7 4 5.5 4H11v16H5.5c-.8 0-1.5-.7-1.5-1.5v-13z"/><path d="M20 5.5c0-.8-.7-1.5-1.5-1.5H13v16h5.5c.8 0 1.5-.7 1.5-1.5v-13z"/><path d="M6.5 8H9M6.5 11H9M15 8h2.5M15 11h2.5"/></svg>
+{%- when 'altura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M8.5 6.5L12 3l3.5 3.5"/><path d="M8.5 17.5L12 21l3.5-3.5"/><path d="M5 3h3M5 21h3"/></svg>
+{%- when 'enredo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c0-4 3-7 7-7 3 0 5 2 5 4.5S14 14 11.5 14 8 12 9 10s4-2 6 0 3 5 1 7-6 2-8 0"/><path d="M16 17l3 3M4 12l-1 3"/></svg>
+{%- endcase -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}</span>
+              {%- endif -%}
+            </div>
+            {%- if block.settings.titulo != blank -%}<h3 class="pp-h pp-cd__titulo">{{ block.settings.titulo }}</h3>{%- endif -%}
+            <span class="pp-cd__div" aria-hidden="true">✦</span>
+            {%- if block.settings.texto != blank -%}<p class="pp-cd__texto">{{ block.settings.texto }}</p>{%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "PP · Círculos destacados",
+  "tag": "section",
+  "class": "pp-circulos-section",
+  "settings": [
+    { "type": "header", "content": "Colores" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#f8f4ee" },
+    { "type": "color", "id": "color_titulo", "label": "Títulos (principal)", "default": "#8e3b2a" },
+    { "type": "color", "id": "color_dorado", "label": "Dorado (2.ª línea, íconos y adornos)", "default": "#b8924a" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#3d3530" },
+    { "type": "checkbox", "id": "ornamento", "label": "Mostrar laureles y adornos", "default": true },
+    { "type": "header", "content": "Titular" },
+    { "type": "text", "id": "titulo_1", "label": "Línea 1 (grande)", "default": "La pieza de diseño definitiva" },
+    { "type": "text", "id": "titulo_2", "label": "Línea 2 (dorada)", "default": "que transforma cualquier rincón" },
+    { "type": "text", "id": "titulo_3", "label": "Línea 3 (cursiva)", "default": "de tu hogar" },
+    { "type": "header", "content": "Foto principal" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto (sin texto)" },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de la foto", "default": "1 / 1",
+      "options": [ { "value": "1 / 1", "label": "Cuadrado (1:1)" }, { "value": "4 / 5", "label": "Vertical (4:5)" }, { "value": "4 / 3", "label": "Horizontal (4:3)" } ]
+    },
+    { "type": "checkbox", "id": "difuminar", "label": "Difuminar bordes de la foto", "default": true }
+  ],
+  "blocks": [
+    {
+      "type": "circulo",
+      "name": "Círculo",
+      "limit": 4,
+      "settings": [
+        { "type": "image_picker", "id": "imagen", "label": "Foto del círculo" },
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "bombillo", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}, {"value": "bombillo", "label": "Bombillo / luz"}, {"value": "usb", "label": "USB"}, {"value": "casa", "label": "Casa"}, {"value": "arbol", "label": "Árbol de Navidad"}, {"value": "estrella", "label": "Estrella"}, {"value": "manual", "label": "Manual / guía"}, {"value": "altura", "label": "Altura / medida"}, {"value": "enredo", "label": "Cables enredados"}] },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Luz LED cálida" },
+        { "type": "textarea", "id": "texto", "label": "Texto", "default": "Iluminación dorada y acogedora que transforma cualquier espacio." }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Círculos destacados",
+      "blocks": [
+        { "type": "circulo", "settings": { "icono": "altura", "titulo": "1.5 metros compactos", "texto": "La medida justa para cabeceras, espejos y paredes pequeñas, sin saturar el espacio." } },
+        { "type": "circulo", "settings": { "icono": "bombillo", "titulo": "Luz LED cálida", "texto": "Iluminación dorada y acogedora que transforma cualquier espacio en un ambiente mágico." } },
+        { "type": "circulo", "settings": { "icono": "hoja", "titulo": "Aspecto botánico natural", "texto": "Textura realista y ramas flexibles que se moldean fácilmente a tu espacio." } }
+      ]
+    }
+  ]
+}
+{% endschema %}

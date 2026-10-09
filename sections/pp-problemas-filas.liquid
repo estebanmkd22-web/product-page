@@ -1,10 +1,8 @@
 {%- comment -%}
-  PP · Destacado
-  Titular + texto + lista de puntos (con símbolo o ícono) + imagen.
-  Estilo claro (ej: "Menos ruido. Más producto.") o tarjeta oscura con
-  firma (ej: "El experto detrás de la fórmula").
+  PP · Problemas en filas
+  Titular con palabra destacada y filas alternadas de foto + tarjeta
+  (ícono en círculo, título, divisor dorado y puntos con check).
 {%- endcomment -%}
-
 <style>
 /* PP-BASE:START */
 /* PP · Base compartida. Fuente única: src/pp-base.css
@@ -278,65 +276,61 @@
 }
 /* PP-BASE:END */
 </style>
-
 <style>
-  #pp-dest-{{ section.id }} { --dest-c: {{ section.settings.color_tarjeta }}; }
-  .pp-dest__caja { display: grid; gap: 22px; max-width: 920px; margin: 0 auto; }
-  .pp-dest--tarjeta .pp-dest__caja {
-    overflow: hidden; padding: 0 0 28px; border-radius: calc(var(--pp-radio) + 10px);
-    background: linear-gradient(140deg, var(--dest-c), color-mix(in srgb, var(--dest-c) 55%, #000)); color: #fff;
+  #pp-pf-{{ section.id }} {
+    --pf-bg: {{ section.settings.color_fondo }}; --pf-card: {{ section.settings.color_tarjeta }}; --pf-ac: {{ section.settings.color_acento }}; --pf-au: {{ section.settings.color_dorado }}; --pf-tx: {{ section.settings.color_texto }};
+    background: var(--pf-bg); color: var(--pf-tx);
   }
-  .pp-dest--tarjeta .pp-dest__cuerpo { padding: 0 22px; }
-  .pp-dest--tarjeta .pp-dest__cuerpo:first-child { padding-top: 28px; }
-  .pp-dest--tarjeta .pp-h, .pp-dest--tarjeta .pp-lead { color: inherit; }
-  .pp-dest--tarjeta .pp-lead { opacity: .9; }
-  .pp-dest__cuerpo { display: grid; gap: 14px; }
-  .pp-dest__lista { display: grid; gap: 18px; margin-top: 10px; }
-  .pp-dest__item { display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center; }
-  .pp-dest__sim {
-    display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%;
-    background: var(--pp-texto); color: var(--pp-acento); font-size: 20px; font-weight: 900;
-  }
-  .pp-dest--tarjeta .pp-dest__sim { width: 30px; height: 30px; background: rgba(255, 255, 255, .95); color: var(--dest-c); font-size: 16px; }
-  .pp-dest--tarjeta .pp-dest__item { grid-template-columns: 30px 1fr; align-items: start; }
-  .pp-dest__item h3 { font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
-  .pp-dest--tarjeta .pp-dest__item h3 { font-size: 16px; text-transform: none; letter-spacing: 0; font-weight: 600; }
-  .pp-dest__item p { margin-top: 2px; font-size: 15px; color: var(--pp-texto-2); }
-  .pp-dest--tarjeta .pp-dest__item p { color: inherit; opacity: .85; }
-  .pp-dest__img img { width: 100%; height: auto; }
-  .pp-dest--claro .pp-dest__img img { border-radius: var(--pp-radio); }
-  .pp-dest__firma { display: grid; gap: 2px; margin-top: 6px; }
-  .pp-dest__firma strong { font-size: 16px; }
-  .pp-dest__firma span { font-size: 14px; opacity: .8; }
+  .pp-pf__head { text-align: center; }
+  .pp-pf__deco { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--pf-au); font-size: 13px; margin-bottom: 8px; }
+  .pp-pf__deco::before, .pp-pf__deco::after { content: ""; width: 60px; height: 1px; background: linear-gradient(90deg, transparent, currentColor, transparent); }
+  #pp-pf-{{ section.id }} .pp-pf__titulo { margin: 0 auto; max-width: 20ch; color: var(--pf-ac); font-size: clamp(25px, 6.8vw, 42px); line-height: 1.12; }
+  #pp-pf-{{ section.id }} .pp-pf__titulo em { color: var(--pf-au); font-style: italic; }
+  .pp-pf__sub { margin: 10px auto 0; max-width: 46ch; font-size: clamp(14px, 3.8vw, 17px); line-height: 1.45; opacity: .85; }
+  .pp-pf__filas { display: grid; gap: 16px; margin-top: 24px; }
+  .pp-pf__fila { display: grid; grid-template-columns: 1fr 1fr; align-items: stretch; border-radius: 20px; overflow: hidden; background: var(--pf-card); box-shadow: 0 10px 28px -18px rgba(60, 35, 20, .5); }
+  .pp-pf__fila:nth-child(even) .pp-pf__foto { order: 2; }
+  .pp-pf__foto { position: relative; min-height: 190px; }
+  .pp-pf__foto img, .pp-pf__foto svg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .pp-pf--fade .pp-pf__foto img, .pp-pf--fade .pp-pf__foto svg { -webkit-mask-image: linear-gradient(90deg, #000 70%, transparent); mask-image: linear-gradient(90deg, #000 70%, transparent); }
+  .pp-pf--fade .pp-pf__fila:nth-child(even) .pp-pf__foto img, .pp-pf--fade .pp-pf__fila:nth-child(even) .pp-pf__foto svg { -webkit-mask-image: linear-gradient(270deg, #000 70%, transparent); mask-image: linear-gradient(270deg, #000 70%, transparent); }
+  .pp-pf__card { display: grid; align-content: center; justify-items: center; gap: 6px; padding: 18px 12px; text-align: center; }
+  .pp-pf__ico { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: var(--pf-ac); color: #fff; font-size: 22px; box-shadow: 0 0 0 4px color-mix(in srgb, var(--pf-ac) 18%, transparent); }
+  #pp-pf-{{ section.id }} .pp-pf__t { margin: 4px 0 0; color: var(--pf-ac); font-size: clamp(16px, 4.4vw, 22px); line-height: 1.15; }
+  .pp-pf__div { display: flex; align-items: center; gap: 6px; color: var(--pf-au); font-size: 8px; }
+  .pp-pf__div::before, .pp-pf__div::after { content: ""; width: 24px; height: 1px; background: currentColor; }
+  .pp-pf__puntos { display: grid; gap: 6px; margin: 2px 0 0; padding: 0; list-style: none; text-align: left; }
+  .pp-pf__puntos li { display: grid; grid-template-columns: 16px 1fr; gap: 6px; align-items: start; font-size: clamp(12px, 3.3vw, 15px); line-height: 1.35; }
+  .pp-pf__puntos li::before { content: "✓"; display: grid; place-items: center; width: 16px; height: 16px; margin-top: 1px; border-radius: 50%; background: var(--pf-au); color: #fff; font-size: 10px; font-weight: 700; }
+  .pp-pf__cierre { margin: 22px auto 0; max-width: 40ch; text-align: center; color: var(--pf-ac); font-size: clamp(16px, 4.4vw, 20px); line-height: 1.35; }
   @media (min-width: 750px) {
-    .pp-dest__caja--lado { grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; }
-    .pp-dest--tarjeta .pp-dest__caja--lado { padding: 0; }
-    .pp-dest--tarjeta .pp-dest__caja--lado .pp-dest__cuerpo { padding: 36px 36px 36px 0; }
-    .pp-dest__caja--lado .pp-dest__img { height: 100%; }
-    .pp-dest__caja--lado .pp-dest__img img { height: 100%; object-fit: cover; }
+    .pp-pf__filas { gap: 22px; margin-top: 36px; }
+    .pp-pf__foto { min-height: 300px; }
+    .pp-pf__card { padding: 28px 32px; gap: 10px; }
+    .pp-pf__ico { width: 58px; height: 58px; font-size: 28px; }
   }
 </style>
-
-{%- assign lado = false -%}
-{%- if section.settings.imagen != blank and section.settings.posicion == 'lado' -%}{%- assign lado = true -%}{%- endif -%}
-
-<div id="pp-dest-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }} pp-dest--{{ section.settings.estilo }}">
+<div id="pp-pf-{{ section.id }}" class="pp pp-section{% if section.settings.difuminar %} pp-pf--fade{% endif %}">
   <div class="pp-wrap">
-    <div class="pp-dest__caja{% if lado %} pp-dest__caja--lado{% endif %}">
-      {%- if section.settings.imagen != blank and section.settings.posicion != 'abajo' -%}
-        <div class="pp-dest__img">{{ section.settings.imagen | image_url: width: 1100 | image_tag: loading: 'lazy', widths: '400, 700, 1100', sizes: '(min-width: 750px) 460px, 100vw' }}</div>
-      {%- endif -%}
-      <div class="pp-dest__cuerpo">
-        {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow"{% if section.settings.estilo == 'tarjeta' %} style="color:inherit;opacity:.75"{% endif %}>{{ section.settings.etiqueta }}</p>{%- endif -%}
-        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
-        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
-        {%- if section.blocks.size > 0 -%}
-          <div class="pp-dest__lista">
-            {%- for block in section.blocks -%}
-              <div class="pp-dest__item" {{ block.shopify_attributes }}>
-                <span class="pp-dest__sim" aria-hidden="true">
-                  {%- if block.settings.icono != 'ninguno' -%}
-                    {%- assign icono = block.settings.icono -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
+    <div class="pp-pf__head">
+      {%- if section.settings.adorno -%}<p class="pp-pf__deco" aria-hidden="true">✦</p>{%- endif -%}
+      {%- if section.settings.titulo != blank or section.settings.titulo_dorado != blank -%}<h2 class="pp-h pp-pf__titulo">{{ section.settings.titulo }}{% if section.settings.titulo_dorado != blank %} <em>{{ section.settings.titulo_dorado }}</em>{% endif %}{{ section.settings.titulo_fin }}</h2>{%- endif -%}
+      {%- if section.settings.subtitulo != blank -%}<p class="pp-pf__sub">{{ section.settings.subtitulo }}</p>{%- endif -%}
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <div class="pp-pf__filas">
+        {%- for block in section.blocks -%}
+          <div class="pp-pf__fila" {{ block.shopify_attributes }}>
+            <div class="pp-pf__foto">
+              {%- if block.settings.imagen != blank -%}
+                {{ block.settings.imagen | image_url: width: 900 | image_tag: loading: 'lazy', widths: '400, 600, 900', sizes: '(min-width: 1120px) 544px, 50vw', alt: block.settings.titulo }}
+              {%- else -%}
+                {{ 'image' | placeholder_svg_tag }}
+              {%- endif -%}
+            </div>
+            <div class="pp-pf__card">
+              {%- if block.settings.icono != 'ninguno' -%}
+                <span class="pp-pf__ico">{%- assign icono = block.settings.icono -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
 {%- case icono -%}
 {%- when 'diente' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3C5 3 3.5 4.6 3.5 7c0 2 1 3.4 1.6 5.4.5 1.7.6 3.6 1 5.6.3 1.6.8 3 1.9 3 1.4 0 1.4-3.6 2-5.4.3-1 .9-1.6 2-1.6s1.7.6 2 1.6c.6 1.8.6 5.4 2 5.4 1.1 0 1.6-1.4 1.9-3 .4-2 .5-3.9 1-5.6.6-2 1.6-3.4 1.6-5.4 0-2.4-1.5-4-3.5-4-1.8 0-2.8 1-5 1S8.8 3 7 3z"/></svg>
 {%- when 'escudo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
@@ -364,80 +358,67 @@
 {%- when 'altura' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18"/><path d="M8.5 6.5L12 3l3.5 3.5"/><path d="M8.5 17.5L12 21l3.5-3.5"/><path d="M5 3h3M5 21h3"/></svg>
 {%- when 'enredo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c0-4 3-7 7-7 3 0 5 2 5 4.5S14 14 11.5 14 8 12 9 10s4-2 6 0 3 5 1 7-6 2-8 0"/><path d="M16 17l3 3M4 12l-1 3"/></svg>
 {%- endcase -%}
-{%- comment -%}PP-ICONOS:END{%- endcomment -%}
-                  {%- else -%}
-                    {{ block.settings.simbolo | default: '✓' }}
-                  {%- endif -%}
-                </span>
-                <div>
-                  <h3>{{ block.settings.titulo }}</h3>
-                  {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
-                </div>
-              </div>
-            {%- endfor -%}
+{%- comment -%}PP-ICONOS:END{%- endcomment -%}</span>
+              {%- endif -%}
+              {%- if block.settings.titulo != blank -%}<h3 class="pp-h pp-pf__t">{{ block.settings.titulo }}</h3>{%- endif -%}
+              <span class="pp-pf__div" aria-hidden="true">✦</span>
+              {%- assign puntos = block.settings.puntos | newline_to_br | split: '<br />' -%}
+              {%- if block.settings.puntos != blank -%}
+                <ul class="pp-pf__puntos">
+                  {%- for p in puntos -%}{%- assign pt = p | strip -%}{%- if pt != blank -%}<li>{{ pt }}</li>{%- endif -%}{%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </div>
           </div>
-        {%- endif -%}
-        {%- if section.settings.firma != blank -%}
-          <div class="pp-dest__firma"><strong>{{ section.settings.firma }}</strong>{% if section.settings.cargo != blank %}<span>{{ section.settings.cargo }}</span>{% endif %}</div>
-        {%- endif -%}
+        {%- endfor -%}
       </div>
-      {%- if section.settings.imagen != blank and section.settings.posicion == 'abajo' -%}
-        <div class="pp-dest__img">{{ section.settings.imagen | image_url: width: 1100 | image_tag: loading: 'lazy', widths: '400, 700, 1100', sizes: '(min-width: 750px) 920px, 100vw' }}</div>
-      {%- endif -%}
-    </div>
+    {%- endif -%}
+    {%- if section.settings.cierre != blank -%}<p class="pp-h pp-pf__cierre">{{ section.settings.cierre }}</p>{%- endif -%}
   </div>
 </div>
-
 {% schema %}
 {
-  "name": "PP · Destacado",
+  "name": "PP · Problemas en filas",
   "tag": "section",
-  "class": "pp-destacado-section",
+  "class": "pp-problemas-filas-section",
   "settings": [
-    {
-      "type": "select", "id": "estilo", "label": "Estilo", "default": "claro",
-      "options": [
-        { "value": "claro", "label": "Claro (lista con círculos)" },
-        { "value": "tarjeta", "label": "Tarjeta de color (ej: el experto)" }
-      ]
-    },
-    { "type": "color", "id": "color_tarjeta", "label": "Color de la tarjeta", "default": "#1b7a35" },
-    {
-      "type": "select", "id": "fondo", "label": "Fondo de la sección", "default": "fondo",
-      "options": [
-        { "value": "fondo", "label": "Blanco" },
-        { "value": "fondo-2", "label": "Alterno (suave)" }
-      ]
-    },
-    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Solo lo esencial" },
-    { "type": "inline_richtext", "id": "titulo", "label": "Titular (la cursiva sale en color de acento)", "default": "Menos ruido. <em>Más resultados.</em>" },
-    { "type": "inline_richtext", "id": "texto", "label": "Texto" },
-    { "type": "image_picker", "id": "imagen", "label": "Imagen (opcional)" },
-    {
-      "type": "select", "id": "posicion", "label": "Posición de la imagen", "default": "abajo",
-      "options": [
-        { "value": "arriba", "label": "Arriba" },
-        { "value": "abajo", "label": "Abajo" },
-        { "value": "lado", "label": "Al lado (en computador)" }
-      ]
-    },
-    { "type": "text", "id": "firma", "label": "Firma (opcional, ej: nombre del experto)" },
-    { "type": "text", "id": "cargo", "label": "Cargo o descripción de la firma" }
+    { "type": "header", "content": "Colores" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo", "default": "#f8f4ee" },
+    { "type": "color", "id": "color_tarjeta", "label": "Fondo de las tarjetas", "default": "#ffffff" },
+    { "type": "color", "id": "color_acento", "label": "Títulos y círculo del ícono", "default": "#8e3b2a" },
+    { "type": "color", "id": "color_dorado", "label": "Dorado (palabra destacada, checks, adornos)", "default": "#b8924a" },
+    { "type": "color", "id": "color_texto", "label": "Texto", "default": "#3d3530" },
+    { "type": "checkbox", "id": "adorno", "label": "Mostrar adorno sobre el título", "default": true },
+    { "type": "checkbox", "id": "difuminar", "label": "Difuminar el borde de las fotos", "default": true },
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "titulo", "label": "Título (inicio)", "default": "¿Cansada de pasar horas intentando que tu casa luzca" },
+    { "type": "text", "id": "titulo_dorado", "label": "Título (parte dorada en cursiva)", "default": "festiva y elegante" },
+    { "type": "text", "id": "titulo_fin", "label": "Título (final)", "default": "?" },
+    { "type": "textarea", "id": "subtitulo", "label": "Subtítulo" },
+    { "type": "text", "id": "cierre", "label": "Frase de cierre" }
   ],
   "blocks": [
     {
-      "type": "punto",
-      "name": "Punto",
+      "type": "fila",
+      "name": "Fila",
+      "limit": 6,
       "settings": [
-        { "type": "select", "id": "icono", "label": "Ícono", "default": "ninguno", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}, {"value": "bombillo", "label": "Bombillo / luz"}, {"value": "usb", "label": "USB"}, {"value": "casa", "label": "Casa"}, {"value": "arbol", "label": "Árbol de Navidad"}, {"value": "estrella", "label": "Estrella"}, {"value": "manual", "label": "Manual / guía"}, {"value": "altura", "label": "Altura / medida"}, {"value": "enredo", "label": "Cables enredados"}] },
-        { "type": "text", "id": "simbolo", "label": "O un símbolo corto (ej: 0, ∅, +)", "default": "✓" },
-        { "type": "text", "id": "titulo", "label": "Título", "default": "Sin alcohol" },
-        { "type": "text", "id": "texto", "label": "Texto" }
+        { "type": "image_picker", "id": "imagen", "label": "Foto" },
+        { "type": "select", "id": "icono", "label": "Ícono", "default": "casa", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}, {"value": "bombillo", "label": "Bombillo / luz"}, {"value": "usb", "label": "USB"}, {"value": "casa", "label": "Casa"}, {"value": "arbol", "label": "Árbol de Navidad"}, {"value": "estrella", "label": "Estrella"}, {"value": "manual", "label": "Manual / guía"}, {"value": "altura", "label": "Altura / medida"}, {"value": "enredo", "label": "Cables enredados"}] },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Rincones apagados" },
+        { "type": "textarea", "id": "puntos", "label": "Puntos con check (uno por línea)", "default": "Espacios sin vida que no reflejan tu estilo." }
       ]
     }
   ],
   "presets": [
-    { "name": "PP · Destacado", "blocks": [ { "type": "punto" }, { "type": "punto" }, { "type": "punto" } ] }
+    {
+      "name": "PP · Problemas en filas",
+      "blocks": [
+        { "type": "fila", "settings": { "icono": "arbol", "titulo": "Espacio saturado", "puntos": "El árbol grande no cabe en tu sala o apartamento." } },
+        { "type": "fila", "settings": { "icono": "enredo", "titulo": "Cables y enredos molestos", "puntos": "Horas desenredando luces que luego no funcionan." } },
+        { "type": "fila", "settings": { "icono": "casa", "titulo": "Rincones apagados", "puntos": "Espacios sin vida que no reflejan tu estilo." } }
+      ]
+    }
   ]
 }
 {% endschema %}
