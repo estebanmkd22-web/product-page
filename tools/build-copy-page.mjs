@@ -9,7 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
-  { file: 'product.rama-compacta', dir: 'templates', ext: '.json', name: 'Plantilla · Rama Compacta 1.5 m', desc: 'Nueva. Página completa de la Rama Compacta (terracota + nórdico, 119.900 / 199.900). Va en templates: crea la plantilla rama-compacta, borra todo, pega y guarda. Antes pega pp-circulos y pp-problemas-filas.' },
+  { file: 'product.rama-compacta', dir: 'templates', ext: '.json', name: 'Plantilla · Rama de Luz 1.5 m', desc: 'Nueva. Página completa de la rama de 1.5 m (terracota + nórdico, 119.900 / 199.900). Va en templates: crea la plantilla rama-compacta (el nombre del archivo no lo ve el cliente), borra todo, pega y guarda. Antes crea pp-circulos, pp-problemas-filas, pp-oferta-tabs y pp-videos, y vuelve a pegar pp-iconos.' },
   { file: 'pp-circulos', desc: 'Nueva. "La pieza de diseño definitiva": titular con laureles, foto grande con bordes difuminados y 3 círculos con ícono dorado.' },
   { file: 'pp-problemas-filas', desc: 'Nueva. "¿Cansada de pasar horas…?": filas alternadas de foto + tarjeta con ícono terracota, título y check.' },
   { file: 'product.enjuague-v3', dir: 'templates', ext: '.json', name: 'Plantilla · Enjuague (estilo HYDRA)', desc: 'Página completa de iD Whitening para Naturixa con textos, packs, preguntas y colores. Va en la carpeta templates: abre product.enjuague-v3.json, borra todo, pega y guarda.' },
