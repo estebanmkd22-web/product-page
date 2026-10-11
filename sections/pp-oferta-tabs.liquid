@@ -294,6 +294,10 @@
   .pp-ot__tabs { display: grid; grid-template-columns: repeat({{ packs.size | at_least: 1 }}, 1fr); gap: 4px; padding: 4px; border-radius: 14px; background: color-mix(in srgb, var(--pp-texto) 7%, var(--pp-fondo)); }
   .pp-ot__tab { position: relative; display: grid; place-items: center; min-height: 46px; padding: 8px; border-radius: 11px; cursor: pointer; font-size: 16px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; color: var(--pp-texto); transition: background .2s, color .2s; }
   .pp-ot__tab input { position: absolute; opacity: 0; pointer-events: none; }
+  .pp-ot__colores { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px; margin-top: 12px; font-size: 13px; }
+  .pp-ot__colores p { margin: 0; width: 100%; text-align: center; color: var(--pp-texto-2, var(--pp-texto)); }
+  .pp-ot__color { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
+  .pp-ot__color i { width: 18px; height: 18px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px var(--pp-fondo), 0 0 0 3px color-mix(in srgb, var(--pp-texto) 25%, transparent); }
   .pp-ot__tab.is-activo { background: var(--ot-tab); color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
   .pp-ot__tab small { position: absolute; top: -9px; right: 8px; padding: 2px 8px; border-radius: 99px; background: var(--ot-ac); color: #fff; font-size: 10px; letter-spacing: .04em; }
   .pp-ot__card { display: none; margin-top: 14px; padding: 18px 16px; border: 1.5px solid var(--ot-ac); border-radius: 18px; background: var(--pp-fondo); }
@@ -352,6 +356,14 @@
         </label>
       {%- endfor -%}
     </div>
+
+    {%- if section.settings.color_1_nombre != blank or section.settings.color_2_nombre != blank -%}
+      <div class="pp-ot__colores">
+        {%- if section.settings.colores_texto != blank -%}<p>{{ section.settings.colores_texto }}</p>{%- endif -%}
+        {%- if section.settings.color_1_nombre != blank -%}<span class="pp-ot__color"><i style="--c: {{ section.settings.color_1 }}"></i>{{ section.settings.color_1_nombre }}</span>{%- endif -%}
+        {%- if section.settings.color_2_nombre != blank -%}<span class="pp-ot__color"><i style="--c: {{ section.settings.color_2 }}"></i>{{ section.settings.color_2_nombre }}</span>{%- endif -%}
+      </div>
+    {%- endif -%}
 
     {%- for block in packs -%}
       {%- assign precio = block.settings.precio | times: 100 -%}
@@ -604,6 +616,12 @@
     },
     { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 20 },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
+    { "type": "header", "content": "Colores disponibles (debajo de las pestañas)" },
+    { "type": "text", "id": "colores_texto", "label": "Frase", "info": "Se muestra solo si escribes el nombre de al menos un color." },
+    { "type": "text", "id": "color_1_nombre", "label": "Color 1: nombre" },
+    { "type": "color", "id": "color_1", "label": "Color 1: círculo", "default": "#8a4b2a" },
+    { "type": "text", "id": "color_2_nombre", "label": "Color 2: nombre" },
+    { "type": "color", "id": "color_2", "label": "Color 2: círculo", "default": "#6b7a3c" },
     { "type": "checkbox", "id": "mostrar_ahorro", "label": "Mostrar \"Ahorras Q…\" en cada pack", "default": true },
     { "type": "header", "content": "Incluido en tu pedido" },
     { "type": "text", "id": "incluye_titulo", "label": "Título de la caja", "default": "Incluido en tu pedido" },

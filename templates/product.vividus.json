@@ -102,7 +102,12 @@
         "boton_texto": "Ordenar ahora — Pago al recibir",
         "valor_texto": "",
         "nota": "Eliges tu color (Café o Verde) en el formulario",
-        "entrega": "Envío gratis a toda Colombia"
+        "entrega": "Envío gratis a toda Colombia",
+        "colores_texto": "Disponible en 2 colores: elige el que va con tu estilo",
+        "color_1_nombre": "Marrón",
+        "color_1": "#8a4b2a",
+        "color_2_nombre": "Verde",
+        "color_2": "#6b7a3c"
       },
       "blocks": {
         "pack_1": {
