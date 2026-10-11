@@ -43,25 +43,25 @@
         {
           "type": "mensaje",
           "settings": {
+            "texto": "🎧 Audífonos + estuche retro, todo incluido"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
             "texto": "🚚 Envío GRATIS a toda Colombia"
           }
         },
         {
           "type": "mensaje",
           "settings": {
-            "texto": "📷 Estuche de cámara retro incluido"
+            "texto": "🚫 Sin comprar funda aparte"
           }
         },
         {
           "type": "mensaje",
           "settings": {
             "texto": "💵 Pagas al recibir"
-          }
-        },
-        {
-          "type": "mensaje",
-          "settings": {
-            "texto": "🛡️ 90 días de garantía"
           }
         }
       ]
@@ -86,7 +86,7 @@
         "rating": "4.8",
         "rating_texto": "(Clientes en toda Colombia)",
         "titulo": "Todos tienen audífonos blancos. <em>Tú no.</em>",
-        "texto": "Los <strong>VIVIDUS 86 V2</strong> traen un <strong>estuche de cámara retro ya incluido</strong>: el accesorio que todos voltean a mirar, sin pagar fundas aparte.",
+        "texto": "Los <strong>VIVIDUS 86 V2</strong> traen el <strong>estuche de cámara retro incluido</strong>: no necesitas comprar audífonos por un lado y funda por otro. Todo viene en la caja.",
         "proporcion": "1 / 1",
         "navegacion": "miniaturas"
       },
@@ -94,7 +94,7 @@
         {
           "type": "beneficio",
           "settings": {
-            "texto": "Estuche de cámara retro <strong>incluido</strong>, sin fundas que se caen"
+            "texto": "Audífonos + estuche retro <strong>en un solo precio</strong>"
           }
         },
         {
@@ -116,24 +116,24 @@
       "settings": {
         "color_acento": "#e0662f",
         "color_pestana": "#7a3f22",
-        "titulo": "Elige tu <em>pack</em>",
+        "titulo": "Audífonos + estuche retro: <em>todo incluido</em>",
         "boton_texto": "Ordenar ahora — Pago al recibir",
         "valor_texto": "",
-        "nota": "Eliges tu color (Café o Verde) en el formulario",
+        "nota": "Sin funda aparte · Eliges tu color (Café o Verde) en el formulario",
         "entrega": "Envío gratis a toda Colombia"
       },
       "blocks": [
         {
           "type": "pack",
           "settings": {
-            "pestana": "1 unidad",
-            "etiqueta": "Estilo único, precio justo",
+            "pestana": "1 VIVIDUS",
+            "etiqueta": "Todo incluido: audífonos + estuche",
             "imagen": {
               "src": "../../imagenes/vividus/f1.jpg"
             },
-            "titulo": "VIVIDUS 86 V2 + estuche retro",
-            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
-            "detalle": "Café o Verde",
+            "titulo": "VIVIDUS + estuche retro",
+            "linea_regalo": "🎁 No pagas funda aparte + 4 beneficios",
+            "detalle": "Café o Verde · listos para usar",
             "precio": 89900,
             "precio_antes": 119900,
             "cantidad": 1
@@ -142,14 +142,14 @@
         {
           "type": "pack",
           "settings": {
-            "pestana": "2 unidades",
+            "pestana": "2 VIVIDUS",
             "destacar": "Ahorra más",
             "etiqueta": "Uno para ti y otro para regalar",
             "imagen": {
               "src": "../../imagenes/vividus/f4.jpg"
             },
-            "titulo": "2 VIVIDUS 86 V2 + estuches retro",
-            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "titulo": "2 VIVIDUS + 2 estuches retro",
+            "linea_regalo": "🎁 2 estuches incluidos + 4 beneficios",
             "detalle": "Combina colores · $79.950 c/u",
             "precio": 159900,
             "precio_antes": 239800,
@@ -191,6 +191,33 @@
             "icono": "chat",
             "titulo": "Soporte por WhatsApp",
             "texto": "Te ayudamos cuando lo necesites"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Audífonos + estuche, <em>todo en uno</em>",
+        "texto": "Míralos en la vida real: no necesitas comprar nada más."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Unboxing"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el día a día"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Café vs Verde"
           }
         }
       ]
@@ -382,33 +409,6 @@
       ]
     },
     {
-      "tipo": "pp-videos",
-      "settings": {
-        "titulo": "Míralos <em>en acción</em>",
-        "texto": "Así se ven en la vida real."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "settings": {
-            "etiqueta": "Unboxing"
-          }
-        },
-        {
-          "type": "video",
-          "settings": {
-            "etiqueta": "En el día a día"
-          }
-        },
-        {
-          "type": "video",
-          "settings": {
-            "etiqueta": "Café vs Verde"
-          }
-        }
-      ]
-    },
-    {
       "tipo": "pp-iconos",
       "settings": {
         "estilo": "circulos",
@@ -491,7 +491,7 @@
       "settings": {
         "estilo": "fotos",
         "fondo": "fondo",
-        "titulo": "Listos en <em>3 pasos</em>",
+        "titulo": "Todo viene en la caja: <em>listos en 3 pasos</em>",
         "texto": ""
       },
       "blocks": [
@@ -638,7 +638,7 @@
       "tipo": "pp-boton-fijo",
       "settings": {
         "boton_texto": "Los quiero",
-        "subtexto": "Envío gratis · Pagas al recibir",
+        "subtexto": "Todo incluido · Envío gratis · Pagas al recibir",
         "precio_manual": 159900
       }
     }
