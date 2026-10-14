@@ -1,0 +1,545 @@
+{
+  "titulo": "Guirnalda Luz de Hadas 600 LED",
+  "moneda": "$",
+  "locale": "es-CO",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,600&display=swap'><style>:root{--pp-font-titulos:'Playfair Display',serif;--pp-peso-titulos:700;--pp-espaciado-titulos:0}</style>",
+  "producto": {
+    "title": "Guirnalda Luz de Hadas 600 LED · 20 m",
+    "featured_image": null,
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 13990000,
+      "compare_at_price": 19990000,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#e2b65c",
+        "texto": "#f4ead8",
+        "texto_2": "#b9b2a6",
+        "fondo": "#0f1626",
+        "fondo_2": "#18223a",
+        "boton": "#e2b65c",
+        "boton_texto": "#141b2c",
+        "estrella": "#e2b65c",
+        "ok": "#7fc69a",
+        "radio": 18
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#e2b65c",
+        "texto": "#141b2c",
+        "separador": "✦"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "✨ 600 luces cálidas en 20 metros"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🚚 Envío GRATIS a toda Colombia"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🎄 Pide hoy y tenla antes de Navidad"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "💵 Pagas al recibir"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#0f1626",
+        "mostrar_oferta": false,
+        "rating": "4.9",
+        "rating_texto": "(Hogares iluminados en Colombia)",
+        "titulo": "La guirnalda que hace que tu árbol <em>se vea de revista.</em>",
+        "texto": "<strong>600 luces cálidas en 20 metros</strong> de alambre de cobre que moldeas como quieras: en espiral sobre el árbol, en corona, en la pared o en el jardín. Se conecta por USB.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>600 luces</strong> que llenan de brillo todo el árbol"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>8 modos de luz</strong> con un solo botón"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Por <strong>USB</strong>: funciona con power bank, sin buscar enchufe"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#e2b65c",
+        "color_pestana": "#b8862f",
+        "titulo": "Elige tu <em>pack navideño</em>",
+        "boton_texto": "La quiero — Pago al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Colombia"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 guirnalda",
+            "etiqueta": "Para un árbol mediano o un espacio",
+            "titulo": "Guirnalda Luz de Hadas 600 LED · 20 m",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "600 luces · 20 m · 8 modos",
+            "precio": 139900,
+            "precio_antes": 199900,
+            "cantidad": 1
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 guirnaldas",
+            "destacar": "Más elegido",
+            "etiqueta": "Para un árbol grande (o árbol + pared)",
+            "titulo": "2 Guirnaldas Luz de Hadas 600 LED · 20 m",
+            "linea_regalo": "🎁 1.200 luces y 40 metros de brillo",
+            "detalle": "2 guirnaldas · $114.950 c/u",
+            "precio": 229900,
+            "precio_antes": 399800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de ideas",
+            "texto": "Formas para decorar"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-circulos",
+      "settings": {
+        "color_fondo": "#0f1626",
+        "color_titulo": "#f4ead8",
+        "color_dorado": "#e2b65c",
+        "color_texto": "#d6cfc3",
+        "titulo_1": "Una sola guirnalda,",
+        "titulo_2": "mil formas de brillar",
+        "titulo_3": "esta Navidad",
+        "proporcion": "1 / 1"
+      },
+      "blocks": [
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "600 luces cálidas",
+            "texto": "Luz abundante, suave y nada deslumbrante."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "altura",
+            "titulo": "20 metros",
+            "texto": "Alcanza para todo el árbol o para varios espacios."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "estrella",
+            "titulo": "8 modos de luz",
+            "texto": "Fija, degradado y más, con un solo botón."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#18223a",
+        "color_tarjeta": "#1c2742",
+        "color_acento": "#e2b65c",
+        "color_dorado": "#e2b65c",
+        "color_texto": "#f4ead8",
+        "titulo": "¿Tu árbol se ve",
+        "titulo_dorado": "apagado y sin magia",
+        "titulo_fin": "?",
+        "cierre": "Con 600 luces en 20 metros, tu árbol se ve otro."
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "Árbol sin brillo",
+            "puntos": "Las luces de siempre dejan zonas oscuras y se ve vacío."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "enredo",
+            "titulo": "Cables gruesos que se notan",
+            "puntos": "Cables verdes o blancos que dañan la decoración."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "usb",
+            "titulo": "Atada al enchufe",
+            "puntos": "Solo puedes decorar donde hay un tomacorriente cerca."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Mírala <em>encendida</em>",
+        "texto": "Así brilla en casas reales."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el árbol"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En corona"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En la pared"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "titulo": "Hecha para <em>brillar donde quieras</em>"
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "usb",
+            "texto": "Conexión USB"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "casa",
+            "texto": "Interior y exterior"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "hoja",
+            "texto": "Cobre moldeable"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo",
+        "titulo": "Lista en <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Desenróllala",
+            "texto": "Viene en su carrete, sin enredos."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Dale forma",
+            "texto": "Espiral en el árbol, corona, pared o jardín."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conéctala y elige el modo",
+            "texto": "Al USB y con el botón eliges entre 8 modos de luz."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "No son las luces <em>de siempre.</em>",
+        "texto": "Frente a la instalación navideña tradicional.",
+        "color_destacado": "#e2b65c",
+        "nombre_a": "Luz de Hadas",
+        "sub_a": "600 LED · 20 m",
+        "nombre_b": "Luces comunes",
+        "sub_b": "Cable grueso",
+        "pie_izq": "Luz de Hadas",
+        "pie_der": "Navidad y todo el año"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Cantidad de luces",
+            "subtitulo": "Brillo en todo el árbol",
+            "ok_a": true,
+            "valor_a": "600 LED",
+            "ok_b": false,
+            "valor_b": "Pocas"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Cable",
+            "subtitulo": "Que no se note",
+            "ok_a": true,
+            "valor_a": "Cobre delgado",
+            "ok_b": false,
+            "valor_b": "Grueso y visible"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Dónde la pones",
+            "subtitulo": "Sin depender del enchufe",
+            "ok_a": true,
+            "valor_a": "USB / power bank",
+            "ok_b": false,
+            "valor_b": "Cerca al toma"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Formas",
+            "subtitulo": "Árbol, corona, pared…",
+            "ok_a": true,
+            "valor_a": "Se moldea",
+            "ok_b": false,
+            "valor_b": "Solo en línea"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Modos de luz",
+            "subtitulo": "Un botón junto al USB",
+            "ok_a": true,
+            "valor_a": "8 modos",
+            "ok_b": false,
+            "valor_b": "1 o 2"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Envío y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Gratis + 60 días",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Mi árbol nunca se había visto <em>así.</em>”",
+        "nota": "4,9",
+        "cantidad": "reseñas verificadas",
+        "visibles": 3
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Quedó como el de los videos",
+            "texto": "La puse en espiral sobre el árbol y quedó igualito a los que veía en TikTok.",
+            "nombre": "Daniela P.",
+            "ciudad": "Bogotá",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Muchísimas luces",
+            "texto": "Son un montón de luces y el cable casi no se ve. La conecto a un power bank.",
+            "nombre": "Carolina M.",
+            "ciudad": "Medellín",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pedí dos",
+            "texto": "Una para el árbol y otra para la baranda del balcón. Llegaron rápido y pagué al recibir.",
+            "nombre": "Andrea L.",
+            "ciudad": "Cali",
+            "verificado": true
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuántas luces y cuánto mide?",
+            "respuesta": "<p>Trae <strong>600 luces cálidas</strong> en <strong>20 metros</strong> de alambre de cobre delgado.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo se conecta?",
+            "respuesta": "<p>Por <strong>USB</strong>: al cargador de tu celular, a un computador o a un power bank. Así la pones donde quieras, sin depender de un enchufe.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo cambio los modos de luz?",
+            "respuesta": "<p>Con el <strong>botón que está junto a la conexión USB</strong>. Tiene <strong>8 modos</strong>: luz fija, degradado y más.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se puede usar en exteriores?",
+            "respuesta": "<p>Sí, puedes usarla en <strong>interior y exterior</strong>: árbol, pared, balcón o jardín.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Puedo darle la forma que quiera?",
+            "respuesta": "<p>Sí. El alambre de cobre es delgado y se moldea fácil: espiral, corona, corazón o como quieras.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Tiene garantía?",
+            "respuesta": "<p>Sí, <strong>60 días de garantía</strong> por cualquier daño de fábrica.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Pagas en efectivo cuando la recibes. El envío es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "La quiero",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 229900
+      }
+    }
+  ]
+}
