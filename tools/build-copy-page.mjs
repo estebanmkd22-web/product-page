@@ -9,6 +9,8 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.arven', dir: 'templates', ext: '.json', name: 'Plantilla · ARVEN Comfort Cream', desc: 'Nueva. ARVEN (verde bosque + crema, maqueta de la rama 1.5 m, 99.900 / 159.900). Antes crea la sección pp-split. Va en templates: crea la plantilla arven, borra todo, pega y guarda.' },
+  { file: 'pp-split', desc: 'Nueva. "Seamos honestos": foto a un lado y panel de color con etiqueta, título grande, texto, puntos en 2 columnas y botón.' },
   { file: 'product.guirnalda', dir: 'templates', ext: '.json', name: 'Plantilla · Guirnalda Luz de Hadas', desc: 'Nueva. Guirnalda 600 LED · 20 m (azul noche + dorado, maqueta de la rama 1.5 m, 139.900 / 229.900). Va en templates: crea la plantilla guirnalda, borra todo, pega y guarda.' },
   { file: 'product.vividus', dir: 'templates', ext: '.json', name: 'Plantilla · Audífonos VIVIDUS', desc: 'Nueva. Página completa de los VIVIDUS 86 V2 (café cuero + naranja, misma maqueta de la rama 1.5 m). Va en templates: crea la plantilla vividus, borra todo, pega y guarda.' },
   { file: 'product.rama-compacta', dir: 'templates', ext: '.json', name: 'Plantilla · Rama de Luz 1.5 m', desc: 'Nueva. Página completa de la rama de 1.5 m (terracota + nórdico, 119.900 / 199.900). Va en templates: crea la plantilla rama-compacta (el nombre del archivo no lo ve el cliente), borra todo, pega y guarda. Antes crea pp-circulos, pp-problemas-filas, pp-oferta-tabs y pp-videos, y vuelve a pegar pp-iconos.' },

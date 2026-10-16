@@ -1,0 +1,619 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#2f3a33",
+        "texto": "#232a25",
+        "texto_2": "#5c635d",
+        "fondo": "#f4f1ec",
+        "fondo_2": "#e8e1d8",
+        "boton": "#2f3a33",
+        "boton_texto": "#ffffff",
+        "estrella": "#c99a3b",
+        "ok": "#4f7a52",
+        "radio": 14
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "settings": {
+        "fondo": "#2f3a33",
+        "texto": "#f4f1ec",
+        "separador": "✦"
+      },
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Colombia"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Te llega en 3 a 5 días"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de satisfacción 60 días"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4"
+      ]
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#f4f1ec",
+        "mostrar_oferta": false,
+        "rating": "4.8",
+        "rating_texto": "(Hombres que ya lo usan en Colombia)",
+        "titulo": "La mejor defensa contra <em>el sudor, las rozaduras y el mal olor.</em>",
+        "texto": "<strong>ARVEN Comfort Cream</strong>: una capa ligera en la mañana y tu entrepierna se siente más seca y con menos roce toda la jornada. Se seca sobre la piel, sin pegote.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Menos humedad y mal olor</strong> aunque apriete el calor"
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Menos roce:</strong> dile adiós a las peladuras"
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>No se apelmaza</strong> ni forma grumos como el talco"
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3"
+      ]
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#2f3a33",
+        "color_pestana": "#2f3a33",
+        "titulo": "Tu jornada <em>sin roce ni humedad</em>",
+        "boton_texto": "Ordena ahora — Paga en casa",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Entrega de 3 a 5 días"
+      },
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 crema",
+            "etiqueta": "Para empezar",
+            "titulo": "1 ARVEN Comfort Cream · 100 g",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "Rinde más de 30 días",
+            "precio": 99900,
+            "precio_antes": 139900,
+            "cantidad": 1
+          }
+        },
+        "pack_2": {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 cremas",
+            "destacar": "Más vendido",
+            "etiqueta": "Más de 2 meses cubierto",
+            "titulo": "2 ARVEN Comfort Cream · 100 g",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "2 tubos · $79.950 c/u",
+            "precio": 159900,
+            "precio_antes": 279800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "emoji": "%",
+            "titulo": "15% de ahorro",
+            "texto": "En tu próxima compra"
+          }
+        },
+        "regalo_5": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de cuidado",
+            "texto": "Para la sudoración"
+          }
+        },
+        "regalo_6": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Si no te funciona, te devolvemos tu dinero"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "pack_2",
+        "regalo_3",
+        "regalo_4",
+        "regalo_5",
+        "regalo_6"
+      ]
+    },
+    "split": {
+      "type": "pp-split",
+      "settings": {
+        "color_fondo": "#2f3a33",
+        "color_texto": "#ffffff",
+        "color_acento": "#b7c7a8",
+        "color_boton": "#e8e1d8",
+        "color_boton_texto": "#2f3a33",
+        "posicion": "izq",
+        "proporcion_movil": "1 / 1",
+        "etiqueta": "Seamos honestos",
+        "titulo": "Sabes perfectamente de qué estamos hablando.",
+        "mayusculas": true,
+        "texto": "Sudor. Rozaduras. Esa humedad a media tarde que te obliga a acomodarte la ropa a cada rato. Llevas años con talco y vaselina, y ninguno fue hecho para esto. No es un hongo: es el calor que genera humedad, y la humedad trae peladuras y mal olor.",
+        "puntos": "Controla la humedad desde la mañana\nReduce el roce durante todo el día\nAyuda a controlar el mal olor\nNo se apelmaza ni forma grumos",
+        "boton_modo": "oferta",
+        "boton_texto": "Quiero estar seco"
+      }
+    },
+    "circulos": {
+      "type": "pp-circulos",
+      "settings": {
+        "color_fondo": "#f4f1ec",
+        "color_titulo": "#2f3a33",
+        "color_dorado": "#8a9a7e",
+        "color_texto": "#232a25",
+        "titulo_1": "Una capa en la mañana",
+        "titulo_2": "y te olvidas del roce",
+        "titulo_3": "todo el día",
+        "proporcion": "1 / 1"
+      },
+      "blocks": {
+        "circulo_1": {
+          "type": "circulo",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Acabado seco",
+            "texto": "Se seca sobre la piel y no atrapa más sudor."
+          }
+        },
+        "circulo_2": {
+          "type": "circulo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Menos roce",
+            "texto": "Caminas, trabajas y entrenas con menos fricción."
+          }
+        },
+        "circulo_3": {
+          "type": "circulo",
+          "settings": {
+            "icono": "frescura",
+            "titulo": "Controla olores",
+            "texto": "Ayuda a cuidar la piel y a controlar el mal olor."
+          }
+        }
+      },
+      "block_order": [
+        "circulo_1",
+        "circulo_2",
+        "circulo_3"
+      ]
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#e8e1d8",
+        "color_tarjeta": "#fbfaf7",
+        "color_acento": "#2f3a33",
+        "color_dorado": "#8a9a7e",
+        "color_texto": "#232a25",
+        "titulo": "¿Cansado de",
+        "titulo_dorado": "acomodarte la ropa a cada rato",
+        "titulo_fin": "?",
+        "cierre": "ARVEN se seca sobre la piel: menos humedad, menos roce, menos olor."
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "Te acomodas todo el día",
+            "puntos": "La humedad hace que la ropa se pegue y tengas que acomodarte a cada rato."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "check",
+            "titulo": "Cambias de ropa por la tela",
+            "puntos": "Dejas de usar jeans o prendas ajustadas porque te rozan."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Peladuras y mal olor",
+            "puntos": "No es un hongo: es el calor que genera humedad y termina en peladuras."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3"
+      ]
+    },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Hombres que <em>ya lo probaron</em>",
+        "texto": "Así lo usan en su día a día."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cómo aplicarla"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el trabajo"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Reseña"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ]
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "titulo": "Hecha para <em>tu día a día</em>"
+      },
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "check",
+            "texto": "No se apelmaza"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "gota",
+            "texto": "Fácil de aplicar"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "calendario",
+            "texto": "Rinde +30 días"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ]
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo",
+        "titulo": "Así de fácil: <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Después del baño",
+            "texto": "Sobre la piel limpia y seca."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Una capa ligera",
+            "texto": "En la ingle y la cara interna de los muslos."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Déjala secar y vístete",
+            "texto": "Sin pegote: sigues con tu día."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ]
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "settings": {
+        "etiqueta": "Frente a lo de siempre",
+        "titulo": "Lo que ya probaste <em>vs. ARVEN</em>",
+        "texto": "Talco y vaselina nunca fueron hechos para la entrepierna.",
+        "color_destacado": "#2f3a33",
+        "nombre_a": "ARVEN",
+        "sub_a": "Comfort Cream",
+        "nombre_b": "Talco o vaselina",
+        "sub_b": "Lo de siempre",
+        "pie_izq": "ARVEN",
+        "pie_der": "Seco y sin roce todo el día"
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sensación seca",
+            "subtitulo": "Cuando aprieta el calor",
+            "ok_a": true,
+            "valor_a": "Todo el día",
+            "ok_b": false,
+            "valor_b": "Solo al inicio"
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Menos roce",
+            "subtitulo": "Al caminar y trabajar",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sin capa grasosa",
+            "subtitulo": "No atrapa más sudor",
+            "ok_a": true,
+            "valor_a": "Acabado seco",
+            "ok_b": false,
+            "valor_b": "Vaselina grasosa"
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sin grumos",
+            "subtitulo": "Ni se apelmaza",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "El talco sí"
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Hecha para la entrepierna",
+            "subtitulo": "Pensada para esa zona",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "No"
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5"
+      ]
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "settings": {
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Me deja con una sensación <em>seca todo el día.</em>”",
+        "nota": "4,8",
+        "cantidad": "reseñas verificadas",
+        "visibles": 3
+      },
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Me deja seco todo el día",
+            "texto": "Yo, que soy de estar en la calle trabajando, con esta crema mejoró mucho esa humedad y el estar pelado en el muslo. Me deja con una sensación seca todo el día.",
+            "nombre": "Luis Pérez",
+            "ciudad": "Tolima",
+            "verificado": true
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "No queda pegajosa",
+            "texto": "Pensé que iba a ser grasosa como la vaselina y no: se seca rápido y ya no me rozo al caminar.",
+            "nombre": "Jaen Ramírez",
+            "ciudad": "Fusagasugá",
+            "verificado": true
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Adiós al talco",
+            "texto": "Dejé el talco porque se me hacían grumos. Con ARVEN aguanto la jornada sin acomodarme a cada rato.",
+            "nombre": "Marlon Junior",
+            "ciudad": "Medellín",
+            "verificado": true
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3"
+      ]
+    },
+    "faq": {
+      "type": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Queda grasosa o pegajosa?",
+            "respuesta": "<p>No. Se aplica una capa ligera que se seca sobre la piel. No suma humedad ni deja la sensación pegajosa de la vaselina, y no se apelmaza como el talco.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo me la aplico?",
+            "respuesta": "<p>Después del baño, sobre la piel limpia y seca de la ingle y la cara interna de los muslos. Distribuye una pequeña cantidad y deja que se seque antes de vestirte.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para los hongos?",
+            "respuesta": "<p>No es un tratamiento para hongos. Muchas veces la molestia no es un hongo, sino el calor que genera humedad y roce, y eso termina en peladuras y mal olor. ARVEN ayuda a controlar esa humedad y ese roce.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto me dura un tubo?",
+            "respuesta": "<p>Con uso diario, un tubo de 100 g rinde más de 30 días.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿La puedo usar si ya tengo la piel irritada?",
+            "respuesta": "<p>Es de uso externo. No la apliques sobre heridas abiertas, evita ojos y mucosas, y suspende su uso si notas irritación.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago y cuándo me llega?",
+            "respuesta": "<p>Pagas en efectivo al recibir. Te llega en <strong>3 a 5 días</strong> y el envío es gratis.</p>"
+          }
+        },
+        "pregunta_7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si no me funciona?",
+            "respuesta": "<p>Tienes <strong>garantía de satisfacción de 60 días</strong>: si no te funciona, te devolvemos tu dinero. Y si te llega regado, dañado o equivocado, te lo cambiamos sin costo.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6",
+        "pregunta_7"
+      ]
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "Ordenar ahora",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 159900
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "oferta_tabs",
+    "split",
+    "circulos",
+    "problemas_filas",
+    "videos",
+    "iconos",
+    "pasos",
+    "comparativa",
+    "resenas",
+    "faq",
+    "boton_fijo"
+  ]
+}
