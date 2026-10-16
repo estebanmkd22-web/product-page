@@ -219,6 +219,18 @@
           "settings": {
             "etiqueta": "Reseña"
           }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Antes y después"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Opinión real"
+          }
         }
       ]
     },

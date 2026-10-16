@@ -203,12 +203,26 @@
           "settings": {
             "etiqueta": "Reseña"
           }
+        },
+        "video_4": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Antes y después"
+          }
+        },
+        "video_5": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Opinión real"
+          }
         }
       },
       "block_order": [
         "video_1",
         "video_2",
-        "video_3"
+        "video_3",
+        "video_4",
+        "video_5"
       ]
     },
     "split": {
