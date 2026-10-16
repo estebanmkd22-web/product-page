@@ -179,6 +179,38 @@
         "regalo_6"
       ]
     },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Hombres que <em>ya lo probaron</em>",
+        "texto": "Así lo usan en su día a día."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cómo aplicarla"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el trabajo"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Reseña"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ]
+    },
     "split": {
       "type": "pp-split",
       "settings": {
@@ -285,38 +317,6 @@
         "fila_1",
         "fila_2",
         "fila_3"
-      ]
-    },
-    "videos": {
-      "type": "pp-videos",
-      "settings": {
-        "titulo": "Hombres que <em>ya lo probaron</em>",
-        "texto": "Así lo usan en su día a día."
-      },
-      "blocks": {
-        "video_1": {
-          "type": "video",
-          "settings": {
-            "etiqueta": "Cómo aplicarla"
-          }
-        },
-        "video_2": {
-          "type": "video",
-          "settings": {
-            "etiqueta": "En el trabajo"
-          }
-        },
-        "video_3": {
-          "type": "video",
-          "settings": {
-            "etiqueta": "Reseña"
-          }
-        }
-      },
-      "block_order": [
-        "video_1",
-        "video_2",
-        "video_3"
       ]
     },
     "iconos": {
@@ -605,10 +605,10 @@
     "ticker",
     "hero_oferta",
     "oferta_tabs",
+    "videos",
     "split",
     "circulos",
     "problemas_filas",
-    "videos",
     "iconos",
     "pasos",
     "comparativa",

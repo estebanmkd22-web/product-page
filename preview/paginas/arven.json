@@ -196,6 +196,33 @@
       ]
     },
     {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Hombres que <em>ya lo probaron</em>",
+        "texto": "Así lo usan en su día a día."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cómo aplicarla"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el trabajo"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Reseña"
+          }
+        }
+      ]
+    },
+    {
       "tipo": "pp-split",
       "settings": {
         "color_fondo": "#2f3a33",
@@ -304,33 +331,6 @@
             "icono": "gota",
             "titulo": "Peladuras y mal olor",
             "puntos": "No es un hongo: es el calor que genera humedad y termina en peladuras."
-          }
-        }
-      ]
-    },
-    {
-      "tipo": "pp-videos",
-      "settings": {
-        "titulo": "Hombres que <em>ya lo probaron</em>",
-        "texto": "Así lo usan en su día a día."
-      },
-      "blocks": [
-        {
-          "type": "video",
-          "settings": {
-            "etiqueta": "Cómo aplicarla"
-          }
-        },
-        {
-          "type": "video",
-          "settings": {
-            "etiqueta": "En el trabajo"
-          }
-        },
-        {
-          "type": "video",
-          "settings": {
-            "etiqueta": "Reseña"
           }
         }
       ]
