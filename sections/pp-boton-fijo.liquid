@@ -326,11 +326,15 @@
     var oferta = document.getElementById('oferta') || document.querySelector('.pp-of, [data-pp-oferta]');
     var packs = document.querySelector('.pp-of, [data-pp-oferta]');
     var precioFijo = barra.querySelector('.pp-fijo__precio strong');
-    function precioPack() {
-      var r = packs && packs.querySelector('input[data-precio]:checked');
+    function precioPack(r) {
+      r = r || (packs && packs.querySelector('input[data-precio]:checked')) || document.querySelector('input[data-precio]:checked');
       if (r && precioFijo && r.dataset.precio) precioFijo.textContent = r.dataset.precio;
     }
-    if (packs) { packs.addEventListener('change', precioPack); precioPack(); }
+    document.addEventListener('change', function (ev) {
+      var t = ev.target;
+      if (t && t.matches && t.matches('input[data-precio]') && t.checked) precioPack(t);
+    });
+    precioPack();
     var irOferta = barra.querySelector('a[href="#oferta"]');
     if (irOferta && oferta) irOferta.addEventListener('click', function (ev) { ev.preventDefault(); oferta.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     var heroConOferta = !!document.getElementById('oferta');
