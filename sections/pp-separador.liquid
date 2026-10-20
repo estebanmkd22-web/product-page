@@ -282,6 +282,7 @@
 {%- assign cc = section.settings.color_cable | replace: '#', '%23' -%}
 <style>
   #pp-se-{{ section.id }} { background: {% if section.settings.color_fondo != blank and section.settings.color_fondo != 'rgba(0,0,0,0)' %}{{ section.settings.color_fondo }}{% else %}var(--pp-fondo){% endif %}; padding: {{ section.settings.espacio }}px 0; }
+  .pp-se__luces, .pp-se__copos { display: block !important; }
   .pp-se__luces { height: 46px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='46' viewBox='0 0 240 46'%3E%3Cpath d='M0 8 Q30 22 60 8 Q90 22 120 8 Q150 22 180 8 Q210 22 240 8' fill='none' stroke='{{ cc }}' stroke-width='1.6'/%3E%3Cg%3E%3Ccircle cx='30' cy='30' r='11' fill='{{ c1 }}' opacity='.16'/%3E%3Crect x='27' y='14' width='6' height='5' rx='1' fill='{{ cc }}'/%3E%3Cellipse cx='30' cy='28' rx='5.5' ry='8.5' fill='{{ c1 }}'/%3E%3Ccircle cx='90' cy='30' r='11' fill='{{ c2 }}' opacity='.18'/%3E%3Crect x='87' y='14' width='6' height='5' rx='1' fill='{{ cc }}'/%3E%3Cellipse cx='90' cy='28' rx='5.5' ry='8.5' fill='{{ c2 }}'/%3E%3Ccircle cx='150' cy='30' r='11' fill='{{ c3 }}' opacity='.18'/%3E%3Crect x='147' y='14' width='6' height='5' rx='1' fill='{{ cc }}'/%3E%3Cellipse cx='150' cy='28' rx='5.5' ry='8.5' fill='{{ c3 }}'/%3E%3Ccircle cx='210' cy='30' r='11' fill='{{ c2 }}' opacity='.18'/%3E%3Crect x='207' y='14' width='6' height='5' rx='1' fill='{{ cc }}'/%3E%3Cellipse cx='210' cy='28' rx='5.5' ry='8.5' fill='{{ c2 }}'/%3E%3C/g%3E%3C/svg%3E") repeat-x center top; }
   .pp-se__copos { height: 40px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Cg stroke='{{ c1 }}' stroke-width='1.6' stroke-linecap='round' fill='none'%3E%3Cpath d='M30 10v20M21.3 15l17.4 10M21.3 25l17.4-10M27 11l3 3 3-3M27 29l3-3 3 3'/%3E%3C/g%3E%3Cg stroke='{{ c2 }}' stroke-width='1.3' stroke-linecap='round' fill='none'%3E%3Cpath d='M90 14v12M84.8 17l10.4 6M84.8 23l10.4-6'/%3E%3C/g%3E%3Ccircle cx='60' cy='20' r='2' fill='{{ c3 }}'/%3E%3Ccircle cx='8' cy='12' r='1.4' fill='{{ c2 }}'/%3E%3Ccircle cx='112' cy='28' r='1.4' fill='{{ c1 }}'/%3E%3C/svg%3E") repeat-x center; opacity: .85; }
   .pp-se__acebo { display: flex; align-items: center; justify-content: center; gap: 14px; }
@@ -291,11 +292,11 @@
 <div id="pp-se-{{ section.id }}" class="pp pp-se" aria-hidden="true">
   {%- case section.settings.estilo -%}
     {%- when 'copos' -%}
-      <div class="pp-se__copos"></div>
+      <div class="pp-se__copos"><span></span></div>
     {%- when 'acebo' -%}
       <div class="pp-wrap"><div class="pp-se__acebo"><svg viewBox="0 0 80 50"><path d="M40 30C33 22 22 18 8 20c3 3 2 6-2 8 4 1 5 4 3 7 4-1 7 1 8 4 3-3 7-3 10-1 1-4 5-5 13-8z" fill="{{ section.settings.color_3 }}"/><path d="M40 30c7-8 18-12 32-10-3 3-2 6 2 8-4 1-5 4-3 7-4-1-7 1-8 4-3-3-7-3-10-1-1-4-5-5-13-8z" fill="{{ section.settings.color_3 }}"/><path d="M38 29C29 25 20 23 12 23M42 29c9-4 18-6 26-6" stroke="#ffffff" stroke-opacity=".35" stroke-width="1" fill="none"/><circle cx="36" cy="27" r="4.2" fill="{{ section.settings.color_1 }}"/><circle cx="44" cy="27" r="4.2" fill="{{ section.settings.color_1 }}"/><circle cx="40" cy="33" r="4.2" fill="{{ section.settings.color_1 }}"/><circle cx="35" cy="25.6" r="1.2" fill="#ffffff" fill-opacity=".6"/><circle cx="43" cy="25.6" r="1.2" fill="#ffffff" fill-opacity=".6"/></svg></div></div>
     {%- else -%}
-      <div class="pp-se__luces"></div>
+      <div class="pp-se__luces"><span></span></div>
   {%- endcase -%}
 </div>
 {% schema %}
