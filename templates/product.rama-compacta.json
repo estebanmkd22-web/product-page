@@ -435,6 +435,42 @@
         "fila_4"
       ]
     },
+    "garantia": {
+      "type": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#a5660f",
+        "color_sello": "#a5660f",
+        "texto": "Si no estás satisfecho con la Rama de Luz 1.5 m, puedes devolverla dentro de los 30 días para un reembolso completo."
+      },
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "30 días para devoluciones"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "cambio",
+            "texto": "Calidad garantizada"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención al cliente dedicada"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ]
+    },
     "resenas": {
       "type": "pp-resenas",
       "settings": {
@@ -560,6 +596,7 @@
     "iconos",
     "pasos",
     "comparativa",
+    "garantia",
     "resenas",
     "faq",
     "boton_fijo"

@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'pp-garantia', desc: 'Nueva. Tarjeta de garantía con sello circular (30 días), título, texto y píldoras con ícono.' },
   { file: 'product.arven', dir: 'templates', ext: '.json', name: 'Plantilla · ARVEN Comfort Cream', desc: 'Nueva. ARVEN (verde bosque + crema, maqueta de la rama 1.5 m, 99.900 / 159.900). Antes crea la sección pp-split. Va en templates: crea la plantilla arven, borra todo, pega y guarda.' },
   { file: 'pp-split', desc: 'Nueva. "Seamos honestos": foto a un lado y panel de color con etiqueta, título grande, texto, puntos en 2 columnas y botón.' },
   { file: 'product.guirnalda', dir: 'templates', ext: '.json', name: 'Plantilla · Guirnalda Luz de Hadas', desc: 'Nueva. Guirnalda 600 LED · 20 m (azul noche + dorado, maqueta de la rama 1.5 m, 139.900 / 229.900). Va en templates: crea la plantilla guirnalda, borra todo, pega y guarda.' },
