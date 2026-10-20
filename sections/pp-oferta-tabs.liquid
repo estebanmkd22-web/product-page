@@ -300,7 +300,8 @@
   .pp-ot__color i { width: 18px; height: 18px; border-radius: 50%; background: var(--c); box-shadow: 0 0 0 2px var(--pp-fondo), 0 0 0 3px color-mix(in srgb, var(--pp-texto) 25%, transparent); }
   .pp-ot__tab.is-activo { background: var(--ot-tab); color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
   .pp-ot__tab small { position: absolute; top: -9px; right: 8px; padding: 2px 8px; border-radius: 99px; background: var(--ot-ac); color: #fff; font-size: 10px; letter-spacing: .04em; }
-  .pp-ot__card { display: none; margin-top: 14px; padding: 18px 16px; border: 1.5px solid var(--ot-ac); border-radius: 18px; background: var(--pp-fondo); }
+  .pp-ot__acebo { position: absolute; top: -18px; right: -6px; width: 64px; height: 40px; transform: rotate(14deg); pointer-events: none; }
+  .pp-ot__card { position: relative; display: none; margin-top: 14px; padding: 18px 16px; border: 1.5px solid var(--ot-ac); border-radius: 18px; background: var(--pp-fondo); }
   .pp-ot__card.is-activo { display: block; }
   .pp-ot__badge { display: inline-block; margin-bottom: 12px; padding: 5px 12px; border-radius: 99px; background: var(--ot-suave); color: var(--ot-ac); font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
   .pp-ot__fila { display: grid; grid-template-columns: 84px 1fr auto; gap: 12px; align-items: center; }
@@ -369,6 +370,7 @@
       {%- assign precio = block.settings.precio | times: 100 -%}
       {%- assign antes = block.settings.precio_antes | times: 100 -%}
       <div class="pp-ot__card{% if forloop.index0 == elegido %} is-activo{% endif %}" data-pp-ot-card="{{ forloop.index0 }}">
+        {%- if section.settings.acebo -%}<svg class="pp-ot__acebo" viewBox="0 0 80 50" aria-hidden="true"><path d="M40 30C33 22 22 18 8 20c3 3 2 6-2 8 4 1 5 4 3 7 4-1 7 1 8 4 3-3 7-3 10-1 1-4 5-5 13-8z" fill="#5b7a55"/><path d="M40 30c7-8 18-12 32-10-3 3-2 6 2 8-4 1-5 4-3 7-4-1-7 1-8 4-3-3-7-3-10-1-1-4-5-5-13-8z" fill="#5b7a55"/><circle cx="36" cy="27" r="4.2" fill="#b0302a"/><circle cx="44" cy="27" r="4.2" fill="#b0302a"/><circle cx="40" cy="33" r="4.2" fill="#b0302a"/></svg>{%- endif -%}
         {%- if block.settings.etiqueta != blank -%}<span class="pp-ot__badge">{{ block.settings.etiqueta }}</span>{%- endif -%}
         <div class="pp-ot__fila">
           <div class="pp-ot__img">
@@ -626,6 +628,7 @@
     { "type": "color", "id": "color_1", "label": "Color 1: círculo", "default": "#8a4b2a" },
     { "type": "text", "id": "color_2_nombre", "label": "Color 2: nombre" },
     { "type": "color", "id": "color_2", "label": "Color 2: círculo", "default": "#6b7a3c" },
+    { "type": "checkbox", "id": "acebo", "label": "Ramita de acebo navideño en la tarjeta del pack", "default": false },
     { "type": "checkbox", "id": "mostrar_ahorro", "label": "Mostrar \"Ahorras Q…\" en cada pack", "default": true },
     { "type": "header", "content": "Incluido en tu pedido" },
     { "type": "text", "id": "incluye_titulo", "label": "Título de la caja", "default": "Incluido en tu pedido" },

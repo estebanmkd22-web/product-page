@@ -9,7 +9,8 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
-  { file: 'product.fuegos', dir: 'templates', ext: '.json', name: 'Plantilla · Luces Fuegos Artificiales', desc: 'Nueva. Luces fuegos artificiales 600 LED (colores de la rama 1.5 m con toques navideños, 149.900 / 239.900). Va en templates: crea la plantilla fuegos, borra todo, pega y guarda. Antes vuelve a pegar pp-garantia.' },
+  { file: 'pp-separador', desc: 'Nueva. Separador navideño entre secciones: guirnalda de bombillos, copos de nieve o ramita de acebo.' },
+  { file: 'product.fuegos', dir: 'templates', ext: '.json', name: 'Plantilla · Luces Fuegos Artificiales', desc: 'Nueva. Luces fuegos artificiales 600 LED (colores de la rama 1.5 m con toques navideños, 149.900 / 239.900). Va en templates: crea la plantilla fuegos, borra todo, pega y guarda. Antes crea pp-separador y vuelve a pegar pp-garantia, pp-circulos y pp-oferta-tabs.' },
   { file: 'pp-garantia', desc: 'Nueva. Tarjeta de garantía con sello circular (30 días), título, texto y píldoras con ícono.' },
   { file: 'product.arven', dir: 'templates', ext: '.json', name: 'Plantilla · ARVEN Comfort Cream', desc: 'Nueva. ARVEN (verde bosque + crema, maqueta de la rama 1.5 m, 99.900 / 159.900). Antes crea la sección pp-split. Va en templates: crea la plantilla arven, borra todo, pega y guarda.' },
   { file: 'pp-split', desc: 'Nueva. "Seamos honestos": foto a un lado y panel de color con etiqueta, título grande, texto, puntos en 2 columnas y botón.' },

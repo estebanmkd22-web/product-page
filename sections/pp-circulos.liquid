@@ -286,6 +286,7 @@
   .pp-cd__head { position: relative; display: grid; grid-template-columns: 44px 1fr 44px; align-items: center; gap: 6px; text-align: center; }
   .pp-cd__laurel { width: 44px; height: 44px; color: var(--cd-au); }
   .pp-cd__laurel--der { transform: scaleX(-1); }
+  .pp-cd__acebo { width: 52px; height: 34px; }
   .pp-cd__orn { display: flex; align-items: center; justify-content: center; gap: 10px; color: var(--cd-au); font-size: 14px; }
   .pp-cd__orn::before, .pp-cd__orn::after { content: ""; width: 70px; height: 1px; background: linear-gradient(90deg, transparent, currentColor, transparent); }
   #pp-cd-{{ section.id }} .pp-cd__t { margin: 0; line-height: 1.05; }
@@ -315,13 +316,13 @@
   <div class="pp-wrap">
     {%- if section.settings.ornamento -%}<p class="pp-cd__orn" aria-hidden="true">✦</p>{%- endif -%}
     <div class="pp-cd__head">
-      {%- if section.settings.ornamento -%}<svg class="pp-cd__laurel" viewBox="0 0 64 64" aria-hidden="true"><path d="M50 58C34 50 24 36 22 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M23 16c-6-2-10-7-10-12 6 1 10 6 10 12zM25 26c-7-1-12-5-13-11 7 0 12 5 13 11zM29 36c-7 0-13-4-15-10 7-1 13 4 15 10zM35 45c-7 1-14-2-17-8 7-2 14 2 17 8zM43 53c-6 2-14 0-18-6 7-3 14 0 18 6zM26 14c4-5 9-6 13-5-2 5-7 7-13 5zM29 24c4-4 10-5 14-3-3 4-8 6-14 3zM33 34c5-4 11-4 14-2-3 5-9 6-14 2zM39 43c5-3 11-3 14 0-4 4-10 4-14 0z" fill="currentColor"/></svg>{%- else -%}<span></span>{%- endif -%}
+      {%- if section.settings.ornamento -%}{%- if section.settings.adorno_tipo == 'acebo' -%}<svg class="pp-cd__laurel pp-cd__acebo" viewBox="0 0 80 50" aria-hidden="true"><path d="M40 30C33 22 22 18 8 20c3 3 2 6-2 8 4 1 5 4 3 7 4-1 7 1 8 4 3-3 7-3 10-1 1-4 5-5 13-8z" fill="#5b7a55"/><path d="M40 30c7-8 18-12 32-10-3 3-2 6 2 8-4 1-5 4-3 7-4-1-7 1-8 4-3-3-7-3-10-1-1-4-5-5-13-8z" fill="#5b7a55"/><circle cx="36" cy="27" r="4.2" fill="var(--cd-t1)"/><circle cx="44" cy="27" r="4.2" fill="var(--cd-t1)"/><circle cx="40" cy="33" r="4.2" fill="var(--cd-t1)"/></svg>{%- else -%}<svg class="pp-cd__laurel" viewBox="0 0 64 64" aria-hidden="true"><path d="M50 58C34 50 24 36 22 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M23 16c-6-2-10-7-10-12 6 1 10 6 10 12zM25 26c-7-1-12-5-13-11 7 0 12 5 13 11zM29 36c-7 0-13-4-15-10 7-1 13 4 15 10zM35 45c-7 1-14-2-17-8 7-2 14 2 17 8zM43 53c-6 2-14 0-18-6 7-3 14 0 18 6zM26 14c4-5 9-6 13-5-2 5-7 7-13 5zM29 24c4-4 10-5 14-3-3 4-8 6-14 3zM33 34c5-4 11-4 14-2-3 5-9 6-14 2zM39 43c5-3 11-3 14 0-4 4-10 4-14 0z" fill="currentColor"/></svg>{%- endif -%}{%- else -%}<span></span>{%- endif -%}
       <div>
         {%- if section.settings.titulo_1 != blank -%}<h2 class="pp-h pp-cd__t pp-cd__t1">{{ section.settings.titulo_1 }}</h2>{%- endif -%}
         {%- if section.settings.titulo_2 != blank -%}<p class="pp-h pp-cd__t pp-cd__t2">{{ section.settings.titulo_2 }}</p>{%- endif -%}
         {%- if section.settings.titulo_3 != blank -%}<div class="pp-cd__t3wrap"><p class="pp-h pp-cd__t pp-cd__t3">{{ section.settings.titulo_3 }}</p></div>{%- endif -%}
       </div>
-      {%- if section.settings.ornamento -%}<svg class="pp-cd__laurel pp-cd__laurel--der" viewBox="0 0 64 64" aria-hidden="true"><path d="M50 58C34 50 24 36 22 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M23 16c-6-2-10-7-10-12 6 1 10 6 10 12zM25 26c-7-1-12-5-13-11 7 0 12 5 13 11zM29 36c-7 0-13-4-15-10 7-1 13 4 15 10zM35 45c-7 1-14-2-17-8 7-2 14 2 17 8zM43 53c-6 2-14 0-18-6 7-3 14 0 18 6zM26 14c4-5 9-6 13-5-2 5-7 7-13 5zM29 24c4-4 10-5 14-3-3 4-8 6-14 3zM33 34c5-4 11-4 14-2-3 5-9 6-14 2zM39 43c5-3 11-3 14 0-4 4-10 4-14 0z" fill="currentColor"/></svg>{%- else -%}<span></span>{%- endif -%}
+      {%- if section.settings.ornamento -%}{%- if section.settings.adorno_tipo == 'acebo' -%}<svg class="pp-cd__laurel pp-cd__acebo" viewBox="0 0 80 50" aria-hidden="true"><path d="M40 30C33 22 22 18 8 20c3 3 2 6-2 8 4 1 5 4 3 7 4-1 7 1 8 4 3-3 7-3 10-1 1-4 5-5 13-8z" fill="#5b7a55"/><path d="M40 30c7-8 18-12 32-10-3 3-2 6 2 8-4 1-5 4-3 7-4-1-7 1-8 4-3-3-7-3-10-1-1-4-5-5-13-8z" fill="#5b7a55"/><circle cx="36" cy="27" r="4.2" fill="var(--cd-t1)"/><circle cx="44" cy="27" r="4.2" fill="var(--cd-t1)"/><circle cx="40" cy="33" r="4.2" fill="var(--cd-t1)"/></svg>{%- else -%}<svg class="pp-cd__laurel pp-cd__laurel--der" viewBox="0 0 64 64" aria-hidden="true"><path d="M50 58C34 50 24 36 22 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M23 16c-6-2-10-7-10-12 6 1 10 6 10 12zM25 26c-7-1-12-5-13-11 7 0 12 5 13 11zM29 36c-7 0-13-4-15-10 7-1 13 4 15 10zM35 45c-7 1-14-2-17-8 7-2 14 2 17 8zM43 53c-6 2-14 0-18-6 7-3 14 0 18 6zM26 14c4-5 9-6 13-5-2 5-7 7-13 5zM29 24c4-4 10-5 14-3-3 4-8 6-14 3zM33 34c5-4 11-4 14-2-3 5-9 6-14 2zM39 43c5-3 11-3 14 0-4 4-10 4-14 0z" fill="currentColor"/></svg>{%- endif -%}{%- else -%}<span></span>{%- endif -%}
     </div>
     {%- if section.settings.imagen != blank -%}
       <div class="pp-cd__foto">{{ section.settings.imagen | image_url: width: 1400 | image_tag: loading: 'lazy', widths: '600, 900, 1400', sizes: '(min-width: 1120px) 1088px, 100vw', alt: section.settings.titulo_1 }}</div>
@@ -393,6 +394,10 @@
     { "type": "color", "id": "color_dorado", "label": "Dorado (2.ª línea, íconos y adornos)", "default": "#b8924a" },
     { "type": "color", "id": "color_texto", "label": "Texto", "default": "#3d3530" },
     { "type": "checkbox", "id": "ornamento", "label": "Mostrar laureles y adornos", "default": true },
+    {
+      "type": "select", "id": "adorno_tipo", "label": "Tipo de adorno a los lados", "default": "laureles",
+      "options": [ { "value": "laureles", "label": "Laureles dorados" }, { "value": "acebo", "label": "Acebo navideño" } ]
+    },
     { "type": "header", "content": "Titular" },
     { "type": "text", "id": "titulo_1", "label": "Línea 1 (grande)", "default": "La pieza de diseño definitiva" },
     { "type": "text", "id": "titulo_2", "label": "Línea 2 (dorada)", "default": "que transforma cualquier rincón" },

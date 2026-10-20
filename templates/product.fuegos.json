@@ -93,6 +93,12 @@
         "beneficio_3"
       ]
     },
+    "separador": {
+      "type": "pp-separador",
+      "settings": {
+        "estilo": "luces"
+      }
+    },
     "oferta_tabs": {
       "type": "pp-oferta-tabs",
       "settings": {
@@ -102,7 +108,8 @@
         "boton_texto": "La quiero — Pago al recibir",
         "valor_texto": "",
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
-        "entrega": "Envío gratis a toda Colombia"
+        "entrega": "Envío gratis a toda Colombia",
+        "acebo": true
       },
       "blocks": {
         "pack_1": {
@@ -220,7 +227,8 @@
         "color_texto": "#3d3530",
         "titulo_1": "Lo nuevo de esta Navidad",
         "titulo_2": "que todos van a querer tener",
-        "titulo_3": "primero en tu casa"
+        "titulo_3": "primero en tu casa",
+        "adorno_tipo": "acebo"
       },
       "blocks": {
         "circulo_1": {
@@ -253,6 +261,12 @@
         "circulo_2",
         "circulo_3"
       ]
+    },
+    "separador_2": {
+      "type": "pp-separador",
+      "settings": {
+        "estilo": "copos"
+      }
     },
     "problemas_filas": {
       "type": "pp-problemas-filas",
@@ -551,6 +565,13 @@
         "resena_3"
       ]
     },
+    "separador_3": {
+      "type": "pp-separador",
+      "settings": {
+        "estilo": "acebo",
+        "espacio": 16
+      }
+    },
     "faq": {
       "type": "pp-faq",
       "settings": {
@@ -643,15 +664,18 @@
     "estilos",
     "ticker",
     "hero_oferta",
+    "separador",
     "oferta_tabs",
     "videos",
     "circulos",
+    "separador_2",
     "problemas_filas",
     "iconos",
     "pasos",
     "comparativa",
     "garantia",
     "resenas",
+    "separador_3",
     "faq",
     "boton_fijo"
   ]
