@@ -279,6 +279,20 @@
 <style>
   #pp-ga-{{ section.id }} { --ga-card: {{ section.settings.color_tarjeta }}; --ga-tx: {{ section.settings.color_texto }}; --ga-sello: {{ section.settings.color_sello }}; }
   .pp-ga__card { max-width: 760px; margin: 0 auto; padding: 34px 20px 30px; border-radius: 28px; background: var(--ga-card); color: var(--ga-tx); text-align: center; box-shadow: 0 18px 40px -26px rgba(0,0,0,.45); }
+  .pp-ga__card.pp-nieve { position: relative; overflow: hidden; }
+  .pp-ga__card.pp-nieve > * { position: relative; z-index: 1; }
+  .pp-ga__card.pp-nieve::before {
+    content: ""; position: absolute; left: 0; right: 0; top: -100%; height: 200%; pointer-events: none; z-index: 0;
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,.9), transparent),
+      radial-gradient(1.5px 1.5px at 90px 120px, rgba(255,255,255,.7), transparent),
+      radial-gradient(2.5px 2.5px at 160px 60px, rgba(255,255,255,.8), transparent),
+      radial-gradient(1.5px 1.5px at 230px 170px, rgba(255,255,255,.6), transparent),
+      radial-gradient(2px 2px at 300px 90px, rgba(255,255,255,.8), transparent);
+    background-size: 340px 220px; opacity: .55; animation: pp-ga-nieve 22s linear infinite;
+  }
+  @keyframes pp-ga-nieve { to { transform: translateY(50%); } }
+  @media (prefers-reduced-motion: reduce) { .pp-ga__card.pp-nieve::before { animation: none; } }
   .pp-ga__sello { position: relative; display: grid; place-content: center; width: 156px; height: 156px; margin: 0 auto; border-radius: 50%; background: #fff; color: var(--ga-sello); line-height: 1; }
   .pp-ga__sello::before { content: ""; position: absolute; inset: 10px; border: 2px dashed color-mix(in srgb, var(--ga-sello) 40%, #fff); border-radius: 50%; }
   .pp-ga__sello small { font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -292,7 +306,7 @@
 </style>
 <div id="pp-ga-{{ section.id }}" class="pp pp-section">
   <div class="pp-wrap">
-    <div class="pp-ga__card">
+    <div class="pp-ga__card{% if section.settings.nieve %} pp-nieve{% endif %}">
       <div class="pp-ga__sello" aria-hidden="true">
         {%- if section.settings.sello_arriba != blank -%}<small>{{ section.settings.sello_arriba }}</small>{%- endif -%}
         <b>{{ section.settings.sello_numero }}</b>
@@ -353,6 +367,7 @@
     { "type": "color", "id": "color_tarjeta", "label": "Fondo de la tarjeta", "default": "#a5660f" },
     { "type": "color", "id": "color_texto", "label": "Texto", "default": "#ffffff" },
     { "type": "color", "id": "color_sello", "label": "Texto del sello", "default": "#a5660f" },
+    { "type": "checkbox", "id": "nieve", "label": "Nieve cayendo en la tarjeta", "default": false },
     { "type": "header", "content": "Sello" },
     { "type": "text", "id": "sello_arriba", "label": "Texto arriba", "default": "Garantía" },
     { "type": "text", "id": "sello_numero", "label": "Número", "default": "60" },

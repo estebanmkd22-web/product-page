@@ -1,0 +1,566 @@
+{
+  "titulo": "Luces Fuegos Artificiales Navideñas",
+  "moneda": "$",
+  "locale": "es-CO",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&display=swap'><style>:root{--pp-font-titulos:'Cormorant Garamond',serif;--pp-peso-titulos:700;--pp-espaciado-titulos:0}</style>",
+  "producto": {
+    "title": "Luces Fuegos Artificiales Navideñas",
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 14990000,
+      "compare_at_price": 21990000,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#8e3b2a",
+        "texto": "#3d3530",
+        "texto_2": "#7a6e66",
+        "fondo": "#f8f4ee",
+        "fondo_2": "#efe7dc",
+        "boton": "#8e3b2a",
+        "boton_texto": "#ffffff",
+        "estrella": "#b8924a",
+        "ok": "#6f8a6a",
+        "radio": 18
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#8e3b2a",
+        "texto": "#f8efe4",
+        "separador": "✦"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🎄 Pide hoy y tenla antes de Navidad"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🚚 Envío GRATIS a toda Colombia"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🎆 600 luces en efecto fuegos artificiales"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "💵 Pagas al recibir"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#f8f4ee",
+        "mostrar_oferta": false,
+        "rating": "4.9",
+        "rating_texto": "(Hogares que ya brillan esta Navidad)",
+        "titulo": "Esta Navidad, <em>fuegos artificiales dentro de tu casa.</em>",
+        "texto": "<strong>600 luces cálidas</strong> en 6 espigas que estallan como fuegos artificiales. Cuélgalas en la sala, el árbol, la ventana o el balcón y crea esa magia navideña que todos van a querer fotografiar.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>600 luces</strong> con efecto fuegos artificiales"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Control remoto</strong> para cambiar los modos de luz"
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Luz suave que <strong>no se calienta</strong> ni deslumbra"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#b8924a",
+        "color_pestana": "#8e3b2a",
+        "titulo": "Elige tu <em>pack navideño</em>",
+        "boton_texto": "La quiero — Pago al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Colombia"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 unidad",
+            "etiqueta": "Ilumina tu Navidad",
+            "titulo": "Luces Fuegos Artificiales · 600 LED",
+            "linea_regalo": "🎁 Envío gratis incluido",
+            "detalle": "6 espigas · 3 m · control remoto",
+            "precio": 149900,
+            "precio_antes": 219900,
+            "cantidad": 1
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 unidades",
+            "destacar": "Oferta navideña",
+            "etiqueta": "Para la sala y el balcón (o para regalar)",
+            "titulo": "2 Luces Fuegos Artificiales · 600 LED",
+            "linea_regalo": "🎁 1.200 luces para tu Navidad",
+            "detalle": "2 unidades · $119.950 c/u",
+            "precio": 239900,
+            "precio_antes": 439800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de ideas navideñas",
+            "texto": "Formas de colgarlas"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Mira la <em>magia encendida</em>",
+        "texto": "Así brillan en casas reales esta Navidad."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En la sala"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el árbol"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En la ventana"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-circulos",
+      "settings": {
+        "color_fondo": "#f8f4ee",
+        "color_titulo": "#8e3b2a",
+        "color_dorado": "#b8924a",
+        "color_texto": "#3d3530",
+        "titulo_1": "La decoración navideña",
+        "titulo_2": "que nadie más tiene",
+        "titulo_3": "en tu hogar"
+      },
+      "blocks": [
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "600 luces cálidas",
+            "texto": "Un estallido de luz suave que no deslumbra."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "estrella",
+            "titulo": "Efecto fuegos artificiales",
+            "texto": "6 espigas que moldeas como estallido o ramo de flores."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "rayo",
+            "titulo": "Control remoto",
+            "texto": "Cambia entre los modos de luz desde el sofá."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#efe7dc",
+        "color_tarjeta": "#fffdf9",
+        "color_acento": "#8e3b2a",
+        "color_dorado": "#b8924a",
+        "color_texto": "#3d3530",
+        "cierre": "Con 600 luces en efecto fuegos artificiales, tu Navidad se ve de otro nivel.",
+        "titulo": "¿Quieres que tu casa luzca",
+        "titulo_dorado": "mágica esta Navidad",
+        "titulo_fin": "?"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "La misma decoración de cada año",
+            "puntos": "Las luces de siempre ya no sorprenden a nadie."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "casa",
+            "titulo": "Espacios sin vida",
+            "puntos": "Rincones, techos y ventanas que se quedan apagados."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "estrella",
+            "titulo": "Sin ese efecto wow",
+            "puntos": "Quieres que tu casa brille como en las películas de Navidad."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "titulo": "Hecha para <em>brillar en Navidad</em>"
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "brillo",
+            "texto": "600 luces LED"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "hoja",
+            "texto": "Espigas moldeables"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "No se calienta"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo",
+        "titulo": "Tu Navidad lista <em>en 3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Dale forma",
+            "texto": "Abre las espigas en estallido o en ramo de flores."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Cuélgala",
+            "texto": "En el techo, la ventana, el árbol o el balcón."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conéctala y elige el modo",
+            "texto": "Con el control remoto cambias los modos de luz."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "Navidad diferente",
+        "titulo": "No son las luces <em>de siempre.</em>",
+        "texto": "Frente a las series navideñas tradicionales.",
+        "color_destacado": "#8e3b2a",
+        "nombre_a": "Fuegos Artificiales",
+        "sub_a": "600 LED · 6 espigas",
+        "nombre_b": "Luces comunes",
+        "sub_b": "En hilera",
+        "pie_izq": "Fuegos Artificiales",
+        "pie_der": "El efecto wow de tu Navidad"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Efecto",
+            "subtitulo": "Lo que ven tus visitas",
+            "ok_a": true,
+            "valor_a": "Fuegos artificiales",
+            "ok_b": false,
+            "valor_b": "Hilera simple"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Cantidad de luces",
+            "subtitulo": "Brillo que llena el espacio",
+            "ok_a": true,
+            "valor_a": "600 LED",
+            "ok_b": false,
+            "valor_b": "Pocas"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Formas",
+            "subtitulo": "Estallido o ramo",
+            "ok_a": true,
+            "valor_a": "Se moldea",
+            "ok_b": false,
+            "valor_b": "Solo en línea"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Modos de luz",
+            "subtitulo": "Sin pararte del sofá",
+            "ok_a": true,
+            "valor_a": "Control remoto",
+            "ok_b": false,
+            "valor_b": "Botón o ninguno"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Envío y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Gratis + 60 días",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#8e3b2a",
+        "color_sello": "#8e3b2a",
+        "texto": "Si tus luces llegan con algún daño de fábrica, te las cambiamos dentro de los 60 días. Compras tranquilo.",
+        "sello_numero": "60",
+        "nieve": true,
+        "titulo": "Compra con total tranquilidad"
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "60 días de garantía"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Mi sala parece <em>de película navideña.</em>”",
+        "nota": "4,9",
+        "cantidad": "reseñas verificadas",
+        "visibles": 3
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Todos preguntan dónde las compré",
+            "texto": "Las colgué del techo de la sala y cuando llegan visitas es lo primero que miran.",
+            "nombre": "Valentina G.",
+            "ciudad": "Bogotá",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Se ven espectaculares",
+            "texto": "Les di forma de estallido y con el control cambio el modo de luz desde el sofá.",
+            "nombre": "Paola R.",
+            "ciudad": "Medellín",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pedí dos",
+            "texto": "Una para la sala y otra para la ventana. Llegaron rápido y pagué al recibir.",
+            "nombre": "Diana M.",
+            "ciudad": "Barranquilla",
+            "verificado": true
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuántas luces tiene y cuánto mide?",
+            "respuesta": "<p>Tiene <strong>600 luces</strong> repartidas en <strong>6 espigas</strong>. El cable mide <strong>3 metros</strong> de largo y la caída de luz es de unos <strong>45 cm</strong>.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo se conecta?",
+            "respuesta": "<p>Se conecta a la <strong>corriente (110 V)</strong>. Consume solo 6 W.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo cambio los modos de luz?",
+            "respuesta": "<p>Con el <strong>control remoto</strong>. Tiene entre 6 y 8 modos de iluminación.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se calienta?",
+            "respuesta": "<p>No se sobrecalienta: es seguro al tacto y da una luz suave que no deslumbra.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Puedo darle la forma que quiera?",
+            "respuesta": "<p>Sí. Las espigas de alambre se doblan fácil: en estallido de fuegos artificiales, en ramo de flores o como quieras.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Si haces tu pedido ahora, sí. El envío es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Pagas en efectivo cuando la recibes. No pagas nada por adelantado.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "La quiero",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 239900
+      }
+    }
+  ]
+}
