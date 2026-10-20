@@ -440,14 +440,15 @@
       "settings": {
         "color_tarjeta": "#a5660f",
         "color_sello": "#a5660f",
-        "texto": "Si no estás satisfecho con la Rama de Luz 1.5 m, puedes devolverla dentro de los 30 días para un reembolso completo."
+        "texto": "Si no estás satisfecho con la Rama de Luz 1.5 m, puedes devolverla dentro de los 60 días para un reembolso completo.",
+        "sello_numero": "60"
       },
       "blocks": {
         "punto_1": {
           "type": "punto",
           "settings": {
             "icono": "pago",
-            "texto": "30 días para devoluciones"
+            "texto": "60 días para devoluciones"
           }
         },
         "punto_2": {
