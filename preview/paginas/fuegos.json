@@ -40,19 +40,19 @@
         {
           "type": "mensaje",
           "settings": {
-            "texto": "🎄 Pide hoy y tenla antes de Navidad"
-          }
-        },
-        {
-          "type": "mensaje",
-          "settings": {
-            "texto": "🚚 Envío GRATIS a toda Colombia"
+            "texto": "✨ La tendencia de esta Navidad"
           }
         },
         {
           "type": "mensaje",
           "settings": {
             "texto": "🎆 600 luces en efecto fuegos artificiales"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🚚 Envío GRATIS a toda Colombia"
           }
         },
         {
@@ -69,9 +69,9 @@
         "fondo": "#f8f4ee",
         "mostrar_oferta": false,
         "rating": "4.9",
-        "rating_texto": "(Hogares que ya brillan esta Navidad)",
-        "titulo": "Que cuando llegue la familia en Nochebuena, <em>lo primero que digan sea “¡qué lindo!”</em>",
-        "texto": "Diciembre es para recibir a los tuyos. <strong>600 luces cálidas</strong> que cuelgas en minutos en la sala, la ventana o el balcón, y tu casa se convierte en el lugar donde todos quieren estar y tomarse la foto.",
+        "rating_texto": "(Casas que ya tienen la tendencia)",
+        "titulo": "Este año, la casa que todos van a querer copiar <em>es la tuya.</em>",
+        "texto": "Las luces <strong>fuegos artificiales</strong> son la tendencia de esta Navidad: <strong>600 luces cálidas</strong> en 6 espigas que moldeas como quieras. En el techo, la ventana, el árbol o el balcón, siempre se ven diferentes.",
         "proporcion": "1 / 1",
         "navegacion": "miniaturas"
       },
@@ -79,19 +79,19 @@
         {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>600 luces</strong> con efecto fuegos artificiales"
+            "texto": "<strong>Lo nuevo de esta Navidad:</strong> el efecto que nadie más tiene en su casa."
           }
         },
         {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Control remoto</strong> para cambiar los modos de luz"
+            "texto": "<strong>Una pieza, mil formas:</strong> estallido, ramo de flores, en el árbol o en el balcón."
           }
         },
         {
           "type": "beneficio",
           "settings": {
-            "texto": "Luz suave que <strong>no se calienta</strong> ni deslumbra"
+            "texto": "<strong>600 luces</strong> que todos van a querer fotografiar."
           }
         }
       ]
@@ -101,7 +101,7 @@
       "settings": {
         "color_acento": "#b8924a",
         "color_pestana": "#8e3b2a",
-        "titulo": "Elige tu <em>pack navideño</em>",
+        "titulo": "Ten la tendencia <em>antes que todos</em>",
         "boton_texto": "La quiero — Pago al recibir",
         "valor_texto": "",
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
@@ -112,7 +112,7 @@
           "type": "pack",
           "settings": {
             "pestana": "1 unidad",
-            "etiqueta": "Ilumina tu Navidad",
+            "etiqueta": "Lo nuevo de esta Navidad",
             "titulo": "Luces Fuegos Artificiales · 600 LED",
             "linea_regalo": "🎁 Envío gratis incluido",
             "detalle": "6 espigas · 3 m · control remoto",
@@ -125,10 +125,10 @@
           "type": "pack",
           "settings": {
             "pestana": "2 unidades",
-            "destacar": "Oferta navideña",
-            "etiqueta": "Para la sala y el balcón (o para regalar)",
+            "destacar": "La más elegida",
+            "etiqueta": "Una para la sala y otra para el balcón",
             "titulo": "2 Luces Fuegos Artificiales · 600 LED",
-            "linea_regalo": "🎁 1.200 luces para tu Navidad",
+            "linea_regalo": "🎁 1.200 luces: doble efecto wow",
             "detalle": "2 unidades · $119.950 c/u",
             "precio": 239900,
             "precio_antes": 439800,
@@ -168,8 +168,8 @@
           "settings": {
             "insignia": "Gratis",
             "icono": "manual",
-            "titulo": "Guía de ideas navideñas",
-            "texto": "Formas de colgarlas"
+            "titulo": "Guía de formas",
+            "texto": "Estallido, ramo y más ideas"
           }
         }
       ]
@@ -177,14 +177,14 @@
     {
       "tipo": "pp-videos",
       "settings": {
-        "titulo": "Mira la <em>magia encendida</em>",
-        "texto": "Así brillan en casas reales esta Navidad."
+        "titulo": "Una pieza, <em>mil formas</em>",
+        "texto": "Así se ven en casas reales: cada una distinta."
       },
       "blocks": [
         {
           "type": "video",
           "settings": {
-            "etiqueta": "En la sala"
+            "etiqueta": "En el techo"
           }
         },
         {
@@ -196,7 +196,7 @@
         {
           "type": "video",
           "settings": {
-            "etiqueta": "En la ventana"
+            "etiqueta": "En forma de ramo"
           }
         }
       ]
@@ -208,33 +208,33 @@
         "color_titulo": "#8e3b2a",
         "color_dorado": "#b8924a",
         "color_texto": "#3d3530",
-        "titulo_1": "La decoración navideña",
-        "titulo_2": "que nadie más tiene",
-        "titulo_3": "en tu hogar"
+        "titulo_1": "Lo nuevo de esta Navidad",
+        "titulo_2": "que todos van a querer tener",
+        "titulo_3": "primero en tu casa"
       },
       "blocks": [
         {
           "type": "circulo",
           "settings": {
+            "icono": "estrella",
+            "titulo": "Efecto que nadie tiene",
+            "texto": "No es otra serie de luces: es un estallido de luz que se roba las miradas."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "hoja",
+            "titulo": "Una pieza, mil formas",
+            "texto": "Estallido, ramo de flores o en el árbol: la moldeas como quieras."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
             "icono": "brillo",
             "titulo": "600 luces cálidas",
-            "texto": "Un estallido de luz suave que no deslumbra."
-          }
-        },
-        {
-          "type": "circulo",
-          "settings": {
-            "icono": "estrella",
-            "titulo": "Efecto fuegos artificiales",
-            "texto": "6 espigas que moldeas como estallido o ramo de flores."
-          }
-        },
-        {
-          "type": "circulo",
-          "settings": {
-            "icono": "rayo",
-            "titulo": "Control remoto",
-            "texto": "Cambia entre los modos de luz desde el sofá."
+            "texto": "Luz suave que se ve increíble en fotos y videos."
           }
         }
       ]
@@ -247,9 +247,9 @@
         "color_acento": "#8e3b2a",
         "color_dorado": "#b8924a",
         "color_texto": "#3d3530",
-        "cierre": "Con 600 luces en efecto fuegos artificiales, tu Navidad se ve de otro nivel.",
-        "titulo": "¿Quieres que tu casa luzca",
-        "titulo_dorado": "mágica esta Navidad",
+        "cierre": "Este año, la casa que todos van a querer copiar es la tuya.",
+        "titulo": "¿Cansada de que tu Navidad se vea",
+        "titulo_dorado": "igual a la de todos",
         "titulo_fin": "?"
       },
       "blocks": [
@@ -257,24 +257,24 @@
           "type": "fila",
           "settings": {
             "icono": "arbol",
-            "titulo": "La misma decoración de cada año",
-            "puntos": "Las luces de siempre ya no sorprenden a nadie."
+            "titulo": "Las mismas luces de siempre",
+            "puntos": "La misma serie en hilera que tiene todo el mundo."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "lupa",
+            "titulo": "Nada que llame la atención",
+            "puntos": "Las visitas entran y nadie nota la decoración."
           }
         },
         {
           "type": "fila",
           "settings": {
             "icono": "casa",
-            "titulo": "Espacios sin vida",
-            "puntos": "Rincones, techos y ventanas que se quedan apagados."
-          }
-        },
-        {
-          "type": "fila",
-          "settings": {
-            "icono": "estrella",
-            "titulo": "Sin ese efecto wow",
-            "puntos": "Quieres que tu casa brille como en las películas de Navidad."
+            "titulo": "Decoración que no sirve para nada más",
+            "puntos": "Adornos que solo se ven de una forma, en un solo lugar."
           }
         }
       ]
@@ -283,28 +283,28 @@
       "tipo": "pp-iconos",
       "settings": {
         "estilo": "circulos",
-        "titulo": "Hecha para <em>brillar en Navidad</em>"
+        "titulo": "Tendencia que <em>sí se nota</em>"
       },
       "blocks": [
         {
           "type": "icono",
           "settings": {
-            "icono": "brillo",
-            "texto": "600 luces LED"
+            "icono": "estrella",
+            "texto": "Lo nuevo de la temporada"
           }
         },
         {
           "type": "icono",
           "settings": {
             "icono": "hoja",
-            "texto": "Espigas moldeables"
+            "texto": "Se moldea a tu gusto"
           }
         },
         {
           "type": "icono",
           "settings": {
-            "icono": "escudo",
-            "texto": "No se calienta"
+            "icono": "brillo",
+            "texto": "600 luces LED"
           }
         }
       ]
@@ -314,29 +314,29 @@
       "settings": {
         "estilo": "fotos",
         "fondo": "fondo",
-        "titulo": "Tu Navidad lista <em>en 3 pasos</em>",
+        "titulo": "Tu decoración de tendencia <em>en 3 pasos</em>",
         "texto": ""
       },
       "blocks": [
         {
           "type": "paso",
           "settings": {
-            "titulo": "Dale forma",
-            "texto": "Abre las espigas en estallido o en ramo de flores."
+            "titulo": "Elige la forma",
+            "texto": "Estallido de fuegos artificiales o ramo de flores."
           }
         },
         {
           "type": "paso",
           "settings": {
-            "titulo": "Cuélgala",
-            "texto": "En el techo, la ventana, el árbol o el balcón."
+            "titulo": "Cuélgala donde quieras",
+            "texto": "Techo, ventana, árbol o balcón."
           }
         },
         {
           "type": "paso",
           "settings": {
             "titulo": "Conéctala y elige el modo",
-            "texto": "Con el control remoto cambias los modos de luz."
+            "texto": "Con el control remoto cambias el efecto de luz."
           }
         }
       ]
@@ -344,45 +344,45 @@
     {
       "tipo": "pp-comparativa",
       "settings": {
-        "etiqueta": "Navidad diferente",
-        "titulo": "No son las luces <em>de siempre.</em>",
-        "texto": "Frente a las series navideñas tradicionales.",
+        "etiqueta": "Lo nuevo vs. lo de siempre",
+        "titulo": "No es otra serie de luces. <em>Es lo nuevo de esta Navidad.</em>",
+        "texto": "Frente a las luces que tiene todo el mundo.",
         "color_destacado": "#8e3b2a",
         "nombre_a": "Fuegos Artificiales",
         "sub_a": "600 LED · 6 espigas",
         "nombre_b": "Luces comunes",
         "sub_b": "En hilera",
         "pie_izq": "Fuegos Artificiales",
-        "pie_der": "El efecto wow de tu Navidad"
+        "pie_der": "La tendencia de esta Navidad"
       },
       "blocks": [
         {
           "type": "fila",
           "settings": {
-            "titulo": "Efecto",
-            "subtitulo": "Lo que ven tus visitas",
+            "titulo": "Lo que ven tus visitas",
+            "subtitulo": "El efecto al entrar",
             "ok_a": true,
             "valor_a": "Fuegos artificiales",
             "ok_b": false,
-            "valor_b": "Hilera simple"
+            "valor_b": "Lo de siempre"
           }
         },
         {
           "type": "fila",
           "settings": {
-            "titulo": "Cantidad de luces",
-            "subtitulo": "Brillo que llena el espacio",
+            "titulo": "Tendencia",
+            "subtitulo": "Lo nuevo de la temporada",
             "ok_a": true,
-            "valor_a": "600 LED",
+            "valor_a": "Sí",
             "ok_b": false,
-            "valor_b": "Pocas"
+            "valor_b": "Todos la tienen"
           }
         },
         {
           "type": "fila",
           "settings": {
             "titulo": "Formas",
-            "subtitulo": "Estallido o ramo",
+            "subtitulo": "Estallido, ramo y más",
             "ok_a": true,
             "valor_a": "Se moldea",
             "ok_b": false,
@@ -392,12 +392,23 @@
         {
           "type": "fila",
           "settings": {
-            "titulo": "Modos de luz",
-            "subtitulo": "Sin pararte del sofá",
+            "titulo": "Dónde la pones",
+            "subtitulo": "Techo, ventana, árbol, balcón",
             "ok_a": true,
-            "valor_a": "Control remoto",
+            "valor_a": "Donde quieras",
             "ok_b": false,
-            "valor_b": "Botón o ninguno"
+            "valor_b": "Donde quepa"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Cantidad de luces",
+            "subtitulo": "Brillo que se nota",
+            "ok_a": true,
+            "valor_a": "600 LED",
+            "ok_b": false,
+            "valor_b": "Pocas"
           }
         },
         {
@@ -451,7 +462,7 @@
       "tipo": "pp-resenas",
       "settings": {
         "etiqueta": "Lo que dicen",
-        "titulo": "“Mi sala parece <em>de película navideña.</em>”",
+        "titulo": "“Todos me preguntan <em>dónde las compré.</em>”",
         "nota": "4,9",
         "cantidad": "reseñas verificadas",
         "visibles": 3
@@ -461,8 +472,8 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Todos preguntan dónde las compré",
-            "texto": "Las colgué del techo de la sala y cuando llegan visitas es lo primero que miran.",
+            "titulo": "Nadie las tenía",
+            "texto": "Las colgué del techo de la sala y cuando llegaron las visitas todas preguntaron dónde las había comprado.",
             "nombre": "Valentina G.",
             "ciudad": "Bogotá",
             "verificado": true
@@ -472,8 +483,8 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Se ven espectaculares",
-            "texto": "Les di forma de estallido y con el control cambio el modo de luz desde el sofá.",
+            "titulo": "Las uso de mil formas",
+            "texto": "Primero las puse en estallido y ahora en forma de ramo en la ventana. Se ven increíbles en fotos.",
             "nombre": "Paola R.",
             "ciudad": "Medellín",
             "verificado": true
@@ -484,7 +495,7 @@
           "settings": {
             "estrellas": 5,
             "titulo": "Pedí dos",
-            "texto": "Una para la sala y otra para la ventana. Llegaron rápido y pagué al recibir.",
+            "texto": "Una para la sala y otra para el balcón. Ahora mi casa es la que todos quieren copiar.",
             "nombre": "Diana M.",
             "ciudad": "Barranquilla",
             "verificado": true
@@ -534,6 +545,13 @@
         {
           "type": "pregunta",
           "settings": {
+            "pregunta": "¿En qué lugares la puedo usar?",
+            "respuesta": "<p>Donde quieras: <strong>colgada del techo, en la ventana, en el árbol, en el balcón</strong> o en la mesa de la cena. Y como las espigas se moldean, cada vez se puede ver diferente.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
             "pregunta": "¿Puedo darle la forma que quiera?",
             "respuesta": "<p>Sí. Las espigas de alambre se doblan fácil: en estallido de fuegos artificiales, en ramo de flores o como quieras.</p>"
           }
@@ -558,7 +576,7 @@
       "tipo": "pp-boton-fijo",
       "settings": {
         "boton_texto": "La quiero",
-        "subtexto": "Envío gratis · Pagas al recibir",
+        "subtexto": "La tendencia de esta Navidad · Envío gratis",
         "precio_manual": 239900
       }
     }
