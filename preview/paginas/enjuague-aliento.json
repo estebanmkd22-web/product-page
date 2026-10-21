@@ -1,0 +1,582 @@
+{
+  "titulo": "iD Whitening · Mal aliento",
+  "moneda": "Q",
+  "locale": "es-GT",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+  "producto": {
+    "title": "iD Whitening - Elimina sarro, suciedad y controla el mal aliento",
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 21000,
+      "compare_at_price": 29000,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#b02a3c",
+        "texto": "#1f1f1f",
+        "texto_2": "#5f5f63",
+        "fondo": "#ffffff",
+        "fondo_2": "#f2f1f1",
+        "boton": "#b02a3c",
+        "boton_texto": "#ffffff",
+        "estrella": "#e0a03a",
+        "ok": "#2f8a57",
+        "radio": 16
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#b02a3c",
+        "texto": "#ffffff",
+        "separador": "✦"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Guatemala"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagás al recibir"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de 30 días por producto dañado"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "15% de descuento en tu segunda compra"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#ffffff",
+        "mostrar_oferta": false,
+        "rating": "4.8",
+        "rating_texto": "(458 reseñas)",
+        "titulo": "Nadie te va a decir que tenés mal aliento. <em>Por eso tenés que estar seguro vos.</em>",
+        "texto": "La menta lo tapa un rato. <strong>iD Whitening lo ataca desde la raíz</strong> y además te deja los <strong>dientes más blancos</strong>, en 30 segundos después de cepillarte.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Aliento fresco por horas</strong>, no por minutos como el chicle."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Dientes más blancos</strong> con cada enjuague."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Por qué funciona:</strong> limpia los residuos que el cepillo no alcanza."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#b02a3c",
+        "color_pestana": "#2b2b2e",
+        "titulo": "Hablá de cerca <em>sin pensarlo dos veces</em>",
+        "boton_texto": "Ordená ahora — Pagás al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Guatemala"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 frasco",
+            "etiqueta": "Para empezar a notar el cambio",
+            "titulo": "iD Whitening · 237 ml",
+            "linea_regalo": "🎁 Con los 3 beneficios incluidos",
+            "detalle": "1 frasco",
+            "precio": 210,
+            "precio_antes": 290,
+            "cantidad": 1
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 frascos",
+            "destacar": "Más vendido",
+            "etiqueta": "Tratamiento completo",
+            "titulo": "2 iD Whitening · 237 ml",
+            "linea_regalo": "🎁 Con los 3 beneficios incluidos",
+            "detalle": "2 frascos · Q175 c/u",
+            "precio": 350,
+            "precio_antes": 580,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Guatemala"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluida",
+            "icono": "manual",
+            "titulo": "Guía personalizada",
+            "texto": "Para cuidar mejor tu aliento"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Exclusivo",
+            "emoji": "%",
+            "titulo": "15% de descuento",
+            "texto": "En tu próxima compra"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Mirá lo que <em>sale después del enjuague</em>",
+        "texto": "Lo que el cepillo dejó y vos no veías."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Primer uso"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Lo que queda"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Reseña"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-antes-despues",
+      "settings": {
+        "titulo_antes": "Antes",
+        "puntos_antes": "Te tapás la boca al reírte\nChicle o menta antes de hablar de cerca\nLa duda de siempre: “¿me huele?”",
+        "color_antes": "#2b2b2e",
+        "titulo_despues": "Ahora",
+        "puntos_despues": "Hablás de cerca sin pensarlo\nTe reís con ganas, sin taparte\nDientes más blancos y boca que se siente limpia",
+        "color_despues": "#ffffff",
+        "cierre": "No se trata de taparlo. Se trata de <em>eliminarlo desde la raíz.</em>"
+      }
+    },
+    {
+      "tipo": "pp-circulos",
+      "settings": {
+        "color_fondo": "#f2f1f1",
+        "color_titulo": "#b02a3c",
+        "color_dorado": "#8c8c91",
+        "color_texto": "#1f1f1f",
+        "ornamento": false,
+        "titulo_1": "Lo que vas a notar",
+        "titulo_2": "desde los primeros días",
+        "titulo_3": "",
+        "proporcion": "1 / 1"
+      },
+      "blocks": [
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "frescura",
+            "titulo": "Aliento fresco por horas",
+            "texto": "No es un golpe de menta que se va en minutos."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "sonrisa",
+            "titulo": "Dientes más blancos",
+            "texto": "Las manchas se ven menos y tu sonrisa más limpia."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "chat",
+            "titulo": "Confianza al hablar",
+            "texto": "En el trabajo, en una cita o con la familia."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#ffffff",
+        "color_tarjeta": "#f2f1f1",
+        "color_acento": "#b02a3c",
+        "color_dorado": "#b02a3c",
+        "color_texto": "#1f1f1f",
+        "adorno": false,
+        "titulo": "Por qué iD Whitening",
+        "titulo_dorado": "sí funciona",
+        "titulo_fin": "",
+        "cierre": "No enmascara el mal aliento: limpia donde se genera."
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "lupa",
+            "titulo": "Gunk Removal®",
+            "puntos": "Desprende la suciedad de la lengua, las encías y entre los dientes, donde el cepillo no llega."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Peróxido de hidrógeno",
+            "puntos": "Ayuda a remover manchas para que tus dientes se vean más blancos."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "hoja",
+            "titulo": "Aceites esenciales",
+            "puntos": "Mantienen la frescura por horas en toda la boca."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo-2",
+        "titulo": "3 pasos. 30 segundos. <em>Y listo.</em>",
+        "texto": "Usalo después de cepillarte."
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Prepará",
+            "texto": "Medí 15 ml. No necesitás diluirlo."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Enjuagá",
+            "texto": "Hacé gárgaras 30 segundos y escupí."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Descubrí",
+            "texto": "Mirá lo que queda tras el enjuague."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "La menta lo tapa. <em>iD Whitening lo elimina.</em>",
+        "texto": "Frente al chicle, las pastillas de menta y el enjuague común.",
+        "color_destacado": "#b02a3c",
+        "nombre_a": "iD Whitening",
+        "sub_a": "237 ml",
+        "nombre_b": "Menta o enjuague común",
+        "sub_b": "Lo de siempre",
+        "pie_izq": "iD Whitening",
+        "pie_der": "Aliento fresco y dientes más blancos"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Mal aliento",
+            "subtitulo": "Qué hace con él",
+            "ok_a": true,
+            "valor_a": "Lo ataca desde la raíz",
+            "ok_b": false,
+            "valor_b": "Lo tapa un rato"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Frescura",
+            "subtitulo": "Cuánto dura",
+            "ok_a": true,
+            "valor_a": "Por horas",
+            "ok_b": false,
+            "valor_b": "Minutos"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Residuos",
+            "subtitulo": "Lengua, encías, entre dientes",
+            "ok_a": true,
+            "valor_a": "Los desprende",
+            "ok_b": false,
+            "valor_b": "Se quedan"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Dientes más blancos",
+            "subtitulo": "Manchas que se ven menos",
+            "ok_a": true,
+            "valor_a": "Sí",
+            "ok_b": false,
+            "valor_b": "No"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Alcohol",
+            "subtitulo": "¿Arde?",
+            "ok_a": true,
+            "valor_a": "Sin alcohol",
+            "ok_b": false,
+            "valor_b": "Muchos sí"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Me da mucha seguridad <em>antes de hablar con clientes.</em>”",
+        "nota": "4,8",
+        "cantidad": "458 reseñas",
+        "visibles": 3
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Excelente para reuniones de trabajo",
+            "texto": "Trabajo atendiendo clientes y me da mucha seguridad usarlo antes de comenzar mi jornada. La sensación de limpieza es increíble.",
+            "nombre": "Ricardo García",
+            "fecha": "11 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Ya voy por mi segundo frasco",
+            "texto": "Después de terminar el primero no dudé en volver a comprarlo. La diferencia con otros enjuagues es bastante evidente.",
+            "nombre": "Ana Lucía Pérez",
+            "fecha": "13 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 4,
+            "titulo": "Hay que usarlo con constancia",
+            "texto": "Los resultados estéticos toman tiempo, pero la limpieza y la frescura se sienten desde el principio. Lo seguiré usando.",
+            "nombre": "Luis Castro",
+            "fecha": "20 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Lo recomendé a mi hermana",
+            "texto": "Después de probarlo durante unas semanas terminé recomendándolo a mi familia. A todas nos gustó la sensación de limpieza profunda.",
+            "nombre": "Mónica Vásquez",
+            "fecha": "20 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Sorprendido desde el primer uso",
+            "texto": "No esperaba notar tanta diferencia. Ver los residuos después del enjuague fue lo que más me impactó.",
+            "nombre": "Jorge Flores",
+            "fecha": "30 sep 2026",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "texto": "Lo veo como el paso final de mi rutina. Me ayuda a sentir que realmente terminé de limpiar toda mi boca.",
+            "nombre": "Juan Miguel L.",
+            "ciudad": "Guatemala",
+            "verificado": true
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "¿Tenés dudas?",
+        "titulo": "Te las resolvemos",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Si ya me cepillo bien, ¿para qué lo necesito?",
+            "respuesta": "<p>Porque el cepillo trabaja sobre las superficies que alcanza. El enjuague recorre toda la boca: la <strong>lengua, las encías y los espacios entre los dientes</strong>, donde se acumulan los residuos que causan el mal aliento. No reemplaza el cepillado: lo completa.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Qué tan rápido voy a notar el cambio?",
+            "respuesta": "<p>Desde los primeros usos podés notar la <strong>sensación de limpieza y frescura</strong>. El cambio en el tono de los dientes puede tomar más tiempo con uso constante.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me va a arder? Tengo encías sensibles",
+            "respuesta": "<p>iD Whitening <strong>no contiene alcohol</strong>. Aun así, cada boca reacciona distinto: si tenés sensibilidad o alguna condición oral, seguí las indicaciones y consultá con tu odontólogo.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me daña el esmalte si lo uso todos los días?",
+            "respuesta": "<p>Está diseñado para tu rutina diaria siguiendo las instrucciones. No necesitás usar más producto del indicado. Si tenés desgaste dental o sensibilidad importante, consultá con tu odontólogo antes de usarlo.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuál es la diferencia con un enjuague común?",
+            "respuesta": "<p>Combina <strong>Gunk Removal®, peróxido de hidrógeno y aceites esenciales</strong>: ayuda con los residuos acumulados, contribuye a unos dientes más blancos y mantiene la frescura por horas.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto me dura un frasco?",
+            "respuesta": "<p>Cada frasco trae <strong>237 ml</strong>. Lo que dura depende de cuánto y cada cuánto lo usés; seguí la cantidad recomendada.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Pagás en efectivo cuando lo recibís. El envío es <strong>gratis a toda Guatemala</strong> y te escribimos por WhatsApp para confirmar.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#b02a3c",
+        "color_texto": "#ffffff",
+        "color_sello": "#b02a3c",
+        "sello_arriba": "Garantía",
+        "sello_numero": "30",
+        "sello_abajo": "Días",
+        "etiqueta": "Tu aliento, sin dudas",
+        "titulo": "Pedí hoy y pagá cuando te llegue",
+        "texto": "Si tu iD Whitening llega dañado, te lo cambiamos dentro de los 30 días. Con envío gratis a toda Guatemala."
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "30 días por producto dañado"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagás al recibir"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "Lo quiero",
+        "subtexto": "Envío gratis · Pagás al recibir",
+        "precio_manual": 350
+      }
+    }
+  ]
+}

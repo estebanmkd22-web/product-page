@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.enjuague-aliento', dir: 'templates', ext: '.json', name: 'Plantilla · iD Whitening (mal aliento)', desc: 'Nueva. iD Whitening con ángulo de mal aliento y estructura ATIDCOA (rojo, grises, maqueta de la rama 1.5 m, Q210 / Q350). Para Naturixa. Antes crea pp-circulos, pp-problemas-filas, pp-garantia y revisa pp-antes-despues, pp-oferta-tabs y pp-boton-fijo.' },
   { file: 'pp-separador', desc: 'Nueva. Separador navideño entre secciones: guirnalda de bombillos, copos de nieve o ramita de acebo.' },
   { file: 'product.fuegos', dir: 'templates', ext: '.json', name: 'Plantilla · Luces Fuegos Artificiales', desc: 'Nueva. Luces fuegos artificiales 600 LED (colores de la rama 1.5 m con toques navideños, 149.900 / 239.900). Va en templates: crea la plantilla fuegos, borra todo, pega y guarda. Antes crea pp-separador y vuelve a pegar pp-garantia, pp-circulos y pp-oferta-tabs.' },
   { file: 'pp-garantia', desc: 'Nueva. Tarjeta de garantía con sello circular (30 días), título, texto y píldoras con ícono.' },
