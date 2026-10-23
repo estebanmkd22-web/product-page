@@ -55,6 +55,13 @@
         "mensaje_4"
       ]
     },
+    "logo": {
+      "type": "pp-logo",
+      "settings": {
+        "ancho_movil": 110,
+        "ancho_pc": 140
+      }
+    },
     "hero_oferta": {
       "type": "pp-hero-oferta",
       "settings": {
@@ -617,6 +624,7 @@
   "order": [
     "estilos",
     "ticker",
+    "logo",
     "hero_oferta",
     "oferta_tabs",
     "videos",

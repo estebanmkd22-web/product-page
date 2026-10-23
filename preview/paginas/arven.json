@@ -67,6 +67,17 @@
       ]
     },
     {
+      "tipo": "pp-logo",
+      "settings": {
+        "imagen": {
+          "src": "../../imagenes/arven/arven-logo.png",
+          "alt": "ARVEN"
+        },
+        "ancho_movil": 110,
+        "ancho_pc": 140
+      }
+    },
+    {
       "tipo": "pp-hero-oferta",
       "settings": {
         "fondo": "#f4f1ec",

@@ -30,6 +30,7 @@ Todas empiezan con `pp-` y comparten colores desde una sola sección.
 | `sections/pp-split.liquid` | PP · Imagen + texto | Foto a un lado y panel de color con etiqueta, título, texto, puntos en 2 columnas y botón |
 | `sections/pp-garantia.liquid` | PP · Garantía | Tarjeta de color con sello circular, título, texto y píldoras con ícono |
 | `sections/pp-separador.liquid` | PP · Separador navideño | Franja decorativa: guirnalda de bombillos, copos de nieve o acebo |
+| `sections/pp-logo.liquid` | PP · Logo | Logo centrado arriba del hero con ancho controlado |
 | `sections/pp-comparativa.liquid` | PP · Comparativa | Tabla tu producto vs. la competencia |
 | `sections/pp-datos.liquid` | PP · Datos | Tarjetas con un dato grande |
 | `sections/pp-tabs.liquid` | PP · Pestañas | "¿Te identificas?" con pestañas |
