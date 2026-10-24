@@ -301,6 +301,11 @@
     {%- endif %}
   }
 </style>
+{%- if section.settings.cursiva -%}
+<style>
+  .pp .pp-h, .pp .pp-h em, .pp .pp-h i { font-style: italic; }
+</style>
+{%- endif -%}
 {%- if section.settings.fuente_propia -%}
 <style>
   {{ section.settings.fuente_titulos | font_face: font_display: 'swap' }}
@@ -334,7 +339,8 @@
     { "type": "header", "content": "Títulos" },
     { "type": "checkbox", "id": "fuente_propia", "label": "Usar otra fuente para los títulos", "default": false, "info": "Si no la activas, se usa la fuente de títulos de tu tema." },
     { "type": "font_picker", "id": "fuente_titulos", "label": "Fuente de los títulos", "default": "helvetica_n7", "info": "Para un estilo deportivo prueba fuentes condensadas como Oswald." },
-    { "type": "checkbox", "id": "mayusculas", "label": "Títulos en MAYÚSCULAS", "default": false }
+    { "type": "checkbox", "id": "mayusculas", "label": "Títulos en MAYÚSCULAS", "default": false },
+    { "type": "checkbox", "id": "cursiva", "label": "Títulos en cursiva (estilo deportivo)", "default": false }
   ],
   "presets": [{ "name": "PP · Estilos globales" }]
 }

@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.banda', dir: 'templates', ext: '.json', name: 'Plantilla · Banda Rotuliana', desc: 'Nueva. Banda rotuliana ajustable (azul marino + naranja, títulos en cursiva, maqueta de la rama 1.5 m, estructura ATIDCOA, 84.900 / 129.900). Antes vuelve a pegar pp-estilos y revisa pp-antes-despues.' },
   { file: 'pp-logo', desc: 'Nueva. Logo de la marca arriba del hero, con ancho controlado para celular y computador.' },
   { file: 'product.enjuague-aliento', dir: 'templates', ext: '.json', name: 'Plantilla · iD Whitening (mal aliento)', desc: 'Nueva. iD Whitening con ángulo de mal aliento y estructura ATIDCOA (rojo, grises, maqueta de la rama 1.5 m, Q210 / Q350). Para Naturixa. Antes crea pp-circulos, pp-problemas-filas, pp-garantia y revisa pp-antes-despues, pp-oferta-tabs y pp-boton-fijo.' },
   { file: 'pp-separador', desc: 'Nueva. Separador navideño entre secciones: guirnalda de bombillos, copos de nieve o ramita de acebo.' },

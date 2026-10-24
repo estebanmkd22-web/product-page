@@ -1,0 +1,555 @@
+{
+  "titulo": "Banda Rotuliana Ajustable",
+  "moneda": "$",
+  "locale": "es-CO",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Oswald',sans-serif;--pp-peso-titulos:700}</style>",
+  "producto": {
+    "title": "Banda Rotuliana Ajustable",
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 8490000,
+      "compare_at_price": 11990000,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#f26b1d",
+        "texto": "#0f1b3d",
+        "texto_2": "#4a5268",
+        "fondo": "#ffffff",
+        "fondo_2": "#eef0f3",
+        "boton": "#f26b1d",
+        "boton_texto": "#ffffff",
+        "estrella": "#f26b1d",
+        "ok": "#1f9d55",
+        "radio": 14,
+        "mayusculas": true,
+        "cursiva": true
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#0f1b3d",
+        "texto": "#ffffff",
+        "separador": "✦"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Colombia"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de 60 días"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Talla única ajustable"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#ffffff",
+        "mostrar_oferta": false,
+        "mostrar_rating": false,
+        "titulo": "No te pierdas de jugar, entrenar o caminar <em>por un dolor de tu tendón rotuliano.</em>",
+        "texto": "Banda rotuliana ajustable que da <strong>soporte justo debajo de la rótula</strong> mientras corres, saltas o subes escaleras. Te la pones en segundos.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Sigue en la cancha, la pista o el gimnasio</strong> con más confianza en cada movimiento."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Talla única que se ajusta:</strong> de 33 a 48 cm de contorno de rodilla."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Por qué funciona:</strong> presión localizada sobre el tendón, justo debajo de la rótula."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#f26b1d",
+        "color_pestana": "#0f1b3d",
+        "titulo": "Vuelve a moverte <em>con confianza</em>",
+        "boton_texto": "La quiero — Pago al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Colombia"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 banda",
+            "etiqueta": "Para una rodilla",
+            "titulo": "Banda Rotuliana Ajustable",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "Talla única · 33 a 48 cm",
+            "precio": 84900,
+            "precio_antes": 119900,
+            "cantidad": 1
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 bandas",
+            "destacar": "Más elegido",
+            "etiqueta": "Para las dos rodillas",
+            "titulo": "2 Bandas Rotulianas Ajustables",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "2 bandas · $64.950 c/u",
+            "precio": 129900,
+            "precio_antes": 239800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de ajuste",
+            "texto": "Para ponértela bien"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Mírala <em>en acción</em>",
+        "texto": "Así se pone y así se usa."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cómo ponértela"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En la cancha"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el día a día"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-antes-despues",
+      "settings": {
+        "titulo_antes": "Antes",
+        "puntos_antes": "Te duele al bajar escaleras\nDejas el partido o el entreno a la mitad\nPiensas en tu rodilla en cada salto",
+        "color_antes": "#0f1b3d",
+        "titulo_despues": "Ahora",
+        "puntos_despues": "Soporte justo donde lo necesitas\nSigues tu rutina con más confianza\nTe mueves sin pensar en cada paso",
+        "color_despues": "#ffffff",
+        "cierre": "No se trata de aguantar el dolor. Se trata de <em>darle soporte a tu rodilla.</em>"
+      }
+    },
+    {
+      "tipo": "pp-circulos",
+      "settings": {
+        "color_fondo": "#eef0f3",
+        "color_titulo": "#0f1b3d",
+        "color_dorado": "#f26b1d",
+        "color_texto": "#0f1b3d",
+        "ornamento": false,
+        "titulo_1": "Lo que vas a sentir",
+        "titulo_2": "desde la primera vez",
+        "titulo_3": "",
+        "proporcion": "1 / 1"
+      },
+      "blocks": [
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Soporte estable",
+            "texto": "Apoyo firme justo debajo de la rótula."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "check",
+            "titulo": "No se mueve",
+            "texto": "Se queda en su sitio aunque corras o saltes."
+          }
+        },
+        {
+          "type": "circulo",
+          "settings": {
+            "icono": "frescura",
+            "titulo": "Cómoda y transpirable",
+            "texto": "La usas en el deporte y en el día a día."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#ffffff",
+        "color_tarjeta": "#eef0f3",
+        "color_acento": "#0f1b3d",
+        "color_dorado": "#f26b1d",
+        "color_texto": "#0f1b3d",
+        "adorno": false,
+        "titulo": "Por qué",
+        "titulo_dorado": "sí funciona",
+        "titulo_fin": "",
+        "cierre": "Soporte donde duele, sin limitar tu movimiento."
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Presión localizada",
+            "puntos": "Se apoya sobre el tendón rotuliano, justo debajo de la rótula."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Pad de silicona",
+            "puntos": "Ayuda a amortiguar el impacto al correr y saltar."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "check",
+            "titulo": "Ajuste en V con velcro",
+            "puntos": "La ajustas a tu medida y se queda firme en su lugar."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo-2",
+        "titulo": "Póntela en <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ubícala",
+            "texto": "Justo debajo de la rótula, sobre el tendón."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ajusta el velcro",
+            "texto": "Firme, pero sin que apriete de más."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Muévete",
+            "texto": "Juega, entrena o camina con más confianza."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "Soporte justo donde duele, <em>no en toda la rodilla.</em>",
+        "texto": "Frente a una rodillera completa.",
+        "color_destacado": "#f26b1d",
+        "nombre_a": "Banda Rotuliana",
+        "sub_a": "Ajustable",
+        "nombre_b": "Rodillera completa",
+        "sub_b": "Tipo manga",
+        "pie_izq": "Banda Rotuliana",
+        "pie_der": "Soporte sin limitar tu movimiento"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Dónde da soporte",
+            "subtitulo": "Zona del tendón",
+            "ok_a": true,
+            "valor_a": "Justo en el tendón",
+            "ok_b": false,
+            "valor_b": "En toda la rodilla"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Movilidad",
+            "subtitulo": "Correr, saltar, flexionar",
+            "ok_a": true,
+            "valor_a": "Libre",
+            "ok_b": false,
+            "valor_b": "Puede limitar"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Calor",
+            "subtitulo": "En el deporte",
+            "ok_a": true,
+            "valor_a": "Transpirable",
+            "ok_b": false,
+            "valor_b": "Acalora más"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Talla",
+            "subtitulo": "Que te quede bien",
+            "ok_a": true,
+            "valor_a": "Ajustable 33–48 cm",
+            "ok_b": false,
+            "valor_b": "Tallas fijas"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Envío y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Gratis + 60 días",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Opiniones",
+        "titulo": "“Volví a jugar <em>sin pensar en la rodilla.</em>”",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 3
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Ya termino los partidos",
+            "texto": "Juego fútbol los domingos y me molestaba debajo de la rótula. Con la banda siento más soporte y no se me corre.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Bogotá",
+            "verificado": false
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Para las escaleras",
+            "texto": "Trabajo subiendo y bajando escaleras todo el día. Me la pongo en la mañana y casi ni la siento.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Medellín",
+            "verificado": false
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pedí dos",
+            "texto": "Una para cada rodilla para salir a correr. Llegaron rápido y pagué al recibir.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Cali",
+            "verificado": false
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me va a quedar? ¿Se desliza al correr?",
+            "respuesta": "<p>Es <strong>talla única ajustable</strong>: sirve para rodillas de <strong>33 a 48 cm de contorno</strong>. El cierre de velcro con ajuste en V te deja apretarla a tu medida para que se quede en su lugar.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Dónde se pone?",
+            "respuesta": "<p><strong>Justo debajo de la rótula</strong>, sobre el tendón rotuliano. Ajústala firme, pero sin que te apriete de más.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para cualquier dolor de rodilla?",
+            "respuesta": "<p>No. Las molestias de rodilla tienen causas diferentes y no todas responden a una banda rotuliana. Está pensada para dar soporte en la zona del tendón, debajo de la rótula. Si el dolor es fuerte o no mejora, consulta con un profesional de la salud.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿La puedo usar para jugar fútbol, correr o en el gimnasio?",
+            "respuesta": "<p>Sí. Está hecha para actividades que implican <strong>correr, saltar o flexionar las rodillas</strong>, y también para el día a día, como subir y bajar escaleras.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Compro una o dos?",
+            "respuesta": "<p>Cada banda es para una rodilla. Si sientes molestias en las dos, o quieres tener una de repuesto, el pack de 2 te sale a <strong>$64.950 c/u</strong>.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Tiene garantía?",
+            "respuesta": "<p>Sí, <strong>60 días de garantía</strong> por cualquier daño de fábrica.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Pagas en efectivo cuando la recibes. El envío es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#0f1b3d",
+        "color_texto": "#ffffff",
+        "color_sello": "#0f1b3d",
+        "sello_arriba": "Garantía",
+        "sello_numero": "60",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra sin riesgo",
+        "titulo": "Vuelve a lo tuyo, con soporte",
+        "texto": "Si tu banda llega con algún daño de fábrica, te la cambiamos dentro de los 60 días. Envío gratis y pagas al recibir."
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "60 días de garantía"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "La quiero",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 129900
+      }
+    }
+  ]
+}
