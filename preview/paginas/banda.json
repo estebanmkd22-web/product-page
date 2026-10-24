@@ -403,7 +403,7 @@
       "tipo": "pp-resenas",
       "settings": {
         "etiqueta": "Opiniones",
-        "titulo": "“Volví a jugar <em>sin pensar en la rodilla.</em>”",
+        "titulo": "“Se me olvida <em>que la tengo puesta.</em>”",
         "nota": "",
         "cantidad": "",
         "visibles": 3
@@ -413,10 +413,10 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Ya termino los partidos",
-            "texto": "Juego fútbol los domingos y me molestaba debajo de la rótula. Con la banda siento más soporte y no se me corre.",
-            "nombre": "Testimonio de ejemplo",
-            "ciudad": "Bogotá",
+            "titulo": "No aprieta de más",
+            "texto": "Me daba un poco de miedo que apretara demasiado o terminara molestando al entrenar, pero se ajusta muy bien. La uso para correr y siento la rodilla más sujeta, sobre todo cuando llevo un buen rato. Además, no es tan aparatosa como otras rodilleras que había probado.",
+            "nombre": "Cliente",
+            "ciudad": "",
             "verificado": false
           }
         },
@@ -424,10 +424,10 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Para las escaleras",
-            "texto": "Trabajo subiendo y bajando escaleras todo el día. Me la pongo en la mañana y casi ni la siento.",
-            "nombre": "Testimonio de ejemplo",
-            "ciudad": "Medellín",
+            "titulo": "Volví a entrenar con confianza",
+            "texto": "La compré porque últimamente andaba con poca confianza en la rodilla al hacer ejercicio. Es muy fácil de poner y puedes regular bien la presión. La uso para el gimnasio y para caminar, y por ahora estoy muy contenta con la sensación de soporte.",
+            "nombre": "Cliente",
+            "ciudad": "",
             "verificado": false
           }
         },
@@ -435,10 +435,32 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Pedí dos",
-            "texto": "Una para cada rodilla para salir a correr. Llegaron rápido y pagué al recibir.",
-            "nombre": "Testimonio de ejemplo",
-            "ciudad": "Cali",
+            "titulo": "Simple, pero se nota",
+            "texto": "Al verla pensé que de pronto era demasiado simple para notar la diferencia, pero me sorprendió. La parte que va debajo de la rótula queda firme y no tengo que estarla acomodando a cada rato. Lo mejor es poder entrenar más tranquilo sin llevar toda la rodilla cubierta.",
+            "nombre": "Cliente",
+            "ciudad": "",
+            "verificado": false
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Se me olvida que la tengo puesta",
+            "texto": "He probado muchísimas rodilleras y esta es la primera que de verdad se me olvida que llevo puesta. Hacía años no sentía la rodilla tan bien.",
+            "nombre": "Cliente",
+            "ciudad": "",
+            "verificado": false
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Volví a correr 5K",
+            "texto": "Volví a correr carreras de 5 km después de 8 meses parado. La compresión es perfecta: lo suficientemente firme para sentir la rodilla sujeta y lo suficientemente ligera para moverme con libertad.",
+            "nombre": "Cliente",
+            "ciudad": "",
             "verificado": false
           }
         }
