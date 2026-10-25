@@ -338,14 +338,22 @@
     var irOferta = barra.querySelector('a[href="#oferta"]');
     if (irOferta && oferta) irOferta.addEventListener('click', function (ev) { ev.preventDefault(); oferta.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     var heroConOferta = !!document.getElementById('oferta');
+    var modo = '{{ section.settings.aparecer }}';
     function actualizar() {
-      var bajo = !heroConOferta || window.scrollY > Math.min(250, window.innerHeight * 0.3);
-      var tapa = false;
-      if (oferta) {
+      var visible;
+      if (oferta && modo !== 'siempre') {
         var r = oferta.getBoundingClientRect();
-        tapa = r.top < window.innerHeight * 0.75 && r.bottom > window.innerHeight * 0.3;
+        visible = r.bottom < window.innerHeight * 0.35;
+      } else {
+        var bajo = !heroConOferta || window.scrollY > Math.min(250, window.innerHeight * 0.3);
+        var tapa = false;
+        if (oferta) {
+          var o = oferta.getBoundingClientRect();
+          tapa = o.top < window.innerHeight * 0.75 && o.bottom > window.innerHeight * 0.3;
+        }
+        visible = bajo && !tapa;
       }
-      barra.classList.toggle('is-visible', bajo && !tapa);
+      barra.classList.toggle('is-visible', visible);
     }
     window.addEventListener('scroll', function () { window.requestAnimationFrame(actualizar); }, { passive: true });
     window.addEventListener('resize', actualizar);
@@ -360,6 +368,13 @@
   "class": "pp-fijo-section",
   "settings": [
     { "type": "paragraph", "content": "Barra pegada abajo con el botón de compra. Aparece cuando el cliente pasa la caja de compra del Hero." },
+    {
+      "type": "select", "id": "aparecer", "label": "¿Cuándo aparece?", "default": "despues_oferta",
+      "options": [
+        { "value": "despues_oferta", "label": "Después de pasar la oferta (recomendado)" },
+        { "value": "siempre", "label": "Al bajar un poco (oculto sobre la oferta)" }
+      ]
+    },
     { "type": "checkbox", "id": "solo_movil", "label": "Mostrar solo en celular", "default": true },
     { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar el precio", "default": true },
     { "type": "number", "id": "precio_manual", "label": "Precio a mostrar (opcional, ej: 210)" },
