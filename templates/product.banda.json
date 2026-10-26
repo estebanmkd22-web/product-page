@@ -63,10 +63,11 @@
         "fondo": "#ffffff",
         "mostrar_oferta": false,
         "mostrar_rating": false,
-        "titulo": "Ese dolor debajo de la rodilla al correr o bajar escaleras <em>no tiene por qué obligarte a parar.</em>",
-        "texto": "Una banda que se pone <strong>justo debajo de la rótula</strong> y le da soporte a esa zona mientras te mueves. Te la pones en segundos.",
+        "titulo": "Que el dolor de rodilla <em>no te obligue a parar.</em>",
+        "texto": "Para ese dolor <strong>debajo de la rótula</strong> al correr, saltar o bajar escaleras: soporte justo en la zona que molesta. Te la pones en segundos.",
         "proporcion": "1 / 1",
-        "navegacion": "miniaturas"
+        "navegacion": "miniaturas",
+        "tamano_titulo": 26
       },
       "blocks": {
         "beneficio_1": {

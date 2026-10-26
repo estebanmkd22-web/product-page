@@ -391,6 +391,12 @@
   }
 </style>
 
+{%- if section.settings.tamano_titulo != blank -%}
+<style>
+  #pp-hero-{{ section.id }} .pp-hero__title { font-size: {{ section.settings.tamano_titulo }}px; }
+  @media (min-width: 750px) { #pp-hero-{{ section.id }} .pp-hero__title { font-size: {{ section.settings.tamano_titulo | times: 1.4 | round }}px; } }
+</style>
+{%- endif -%}
 <div id="pp-hero-{{ section.id }}" class="pp pp-hero">
   <div class="pp-wrap pp-hero__grid">
 
@@ -726,6 +732,7 @@
     { "type": "text", "id": "rating", "label": "Calificación", "default": "4.8/5" },
     { "type": "text", "id": "rating_texto", "label": "Texto junto a la calificación", "default": "· 458 reseñas" },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (lo que pongas en cursiva sale en color de acento)", "default": "El mal aliento no se va <em>solo con el cepillo.</em>" },
+    { "type": "range", "id": "tamano_titulo", "label": "Tamaño del titular en celular", "min": 20, "max": 40, "step": 1, "unit": "px", "default": 29 },
     { "type": "inline_richtext", "id": "texto", "label": "Texto debajo del titular", "default": "Llega a las zonas que tu cepillo no alcanza — lengua, mejillas y línea de encías — con una fórmula que actúa desde el primer uso." },
     {
       "type": "select", "id": "icono_beneficios", "label": "Viñeta de los beneficios", "default": "✚",
