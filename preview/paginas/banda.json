@@ -71,8 +71,8 @@
         "fondo": "#ffffff",
         "mostrar_oferta": false,
         "mostrar_rating": false,
-        "titulo": "No te pierdas de jugar, entrenar o caminar <em>por un dolor de tu tendón rotuliano.</em>",
-        "texto": "Banda rotuliana ajustable que da <strong>soporte justo debajo de la rótula</strong> mientras corres, saltas o subes escaleras. Te la pones en segundos.",
+        "titulo": "Ese dolor debajo de la rodilla al correr o bajar escaleras <em>no tiene por qué obligarte a parar.</em>",
+        "texto": "Una banda que se pone <strong>justo debajo de la rótula</strong> y le da soporte a esa zona mientras te mueves. Te la pones en segundos.",
         "proporcion": "1 / 1",
         "navegacion": "miniaturas"
       },
@@ -80,19 +80,19 @@
         {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Sigue en la cancha, la pista o el gimnasio</strong> con más confianza en cada movimiento."
+            "texto": "<strong>Sigue jugando, entrenando o caminando</strong> con más confianza."
           }
         },
         {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Talla única que se ajusta:</strong> de 33 a 48 cm de contorno de rodilla."
+            "texto": "<strong>Talla única ajustable</strong> (33 a 48 cm) que no se corre con el movimiento."
           }
         },
         {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Por qué funciona:</strong> presión localizada sobre el tendón, justo debajo de la rótula."
+            "texto": "<strong>Por qué funciona:</strong> presión justo en la zona que molesta, debajo de la rótula."
           }
         }
       ]
