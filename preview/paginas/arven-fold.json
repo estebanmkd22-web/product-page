@@ -1,0 +1,729 @@
+{
+  "titulo": "ARVEN Fold Care",
+  "moneda": "$",
+  "locale": "es-CO",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+  "producto": {
+    "title": "ARVEN Fold Care · Relief Cream",
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 9990000,
+      "compare_at_price": 13990000,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
+      "settings": {
+        "acento": "#7a2e44",
+        "texto": "#3a2a2e",
+        "texto_2": "#7a6268",
+        "fondo": "#fbf6f4",
+        "fondo_2": "#f4e9e7",
+        "boton": "#7a2e44",
+        "boton_texto": "#ffffff",
+        "estrella": "#d39a4a",
+        "ok": "#5a8a6a",
+        "radio": 18
+      }
+    },
+    {
+      "tipo": "pp-logo",
+      "settings": {
+        "ancho_movil": 110,
+        "ancho_pc": 140
+      }
+    },
+    {
+      "tipo": "pp-ticker",
+      "settings": {
+        "fondo": "#7a2e44",
+        "texto": "#ffffff",
+        "separador": "✦"
+      },
+      "blocks": [
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Colombia"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de satisfacción 60 días"
+          }
+        },
+        {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Sin corticoides · Sin parabenos"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#fbf6f4",
+        "mostrar_oferta": false,
+        "mostrar_rating": false,
+        "tamano_titulo": 26,
+        "titulo": "Se aplica como crema. Se seca como polvo. <em>Tus pliegues quedan secos y protegidos del roce.</em>",
+        "texto": "",
+        "zonas_titulo": "Funciona en",
+        "zonas": "Debajo del busto, Entrepierna, Muslos, Abdomen, Axilas",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": [
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Seca la humedad del pliegue:</strong> sílice y almidón de tapioca absorben el sudor y dejan un acabado seco, sin el polvo que se hace pasta."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Barrera entre piel y piel:</strong> el óxido de zinc forma una capa protectora que reduce el roce donde la piel se toca."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Calma la piel irritada por el sudor:</strong> hamamelis y glicerina vegetal, sin corticoides y sin sensación grasosa."
+          }
+        },
+        {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Una sola crema para todos los pliegues:</strong> busto, abdomen, entrepierna y axilas, sin que se note ni manche la ropa."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "espacio": 8,
+        "titulo": ""
+      },
+      "blocks": [
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "gota",
+            "texto": "Acabado seco"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Sin corticoides"
+          }
+        },
+        {
+          "type": "icono",
+          "settings": {
+            "icono": "frescura",
+            "texto": "Fragancia suave"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#7a2e44",
+        "color_pestana": "#7a2e44",
+        "titulo": "Tus pliegues, <em>secos todo el día</em>",
+        "boton_texto": "Ordena ahora — Paga en casa",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Colombia"
+      },
+      "blocks": [
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 crema",
+            "etiqueta": "Ideal para una zona",
+            "titulo": "ARVEN Fold Care · Relief Cream 100 g",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "1 tubo de 100 g",
+            "precio": 99900,
+            "precio_antes": 139900,
+            "cantidad": 1
+          }
+        },
+        {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 cremas",
+            "destacar": "Más elegido",
+            "etiqueta": "Ideal para varias zonas",
+            "titulo": "2 ARVEN Fold Care · Relief Cream",
+            "linea_regalo": "🎁 Con los 4 beneficios incluidos",
+            "detalle": "2 tubos · $79.950 c/u",
+            "precio": 159900,
+            "precio_antes": 279800,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de cuidado",
+            "texto": "Para tus pliegues"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Si no te funciona, te devolvemos tu dinero"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-videos",
+      "settings": {
+        "titulo": "Mira cómo <em>se seca como polvo</em>",
+        "texto": "Mujeres reales, pliegues reales."
+      },
+      "blocks": [
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cómo aplicarla"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Se seca en segundos"
+          }
+        },
+        {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Mi experiencia"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resultados-zona",
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#7a2e44",
+        "etiqueta": "Resultados",
+        "titulo": "Cada pliegue, <em>seco y cómodo</em>",
+        "texto": "Elige tu zona.",
+        "proporcion": "1 / 1",
+        "nota": "Imágenes ilustrativas. Testimonios de ejemplo."
+      },
+      "blocks": [
+        {
+          "type": "zona",
+          "settings": {
+            "zona": "Debajo del busto",
+            "titulo": "Ya aguanto el brasier",
+            "texto": "En calor, debajo del busto me quedaba rojo y húmedo todo el día. Ahora me la pongo después del baño y me siento seca hasta la noche.",
+            "nombre": "Testimonio de ejemplo"
+          }
+        },
+        {
+          "type": "zona",
+          "settings": {
+            "zona": "Entrepierna",
+            "titulo": "Camino sin roce",
+            "texto": "Me rozaba al caminar y terminaba pelada. Desde que la uso, la entrepierna se siente seca y ya no me arde.",
+            "nombre": "Testimonio de ejemplo"
+          }
+        },
+        {
+          "type": "zona",
+          "settings": {
+            "zona": "Abdomen",
+            "titulo": "Seca todo el día",
+            "texto": "En el pliegue del abdomen siempre tenía humedad y olor. Se seca como polvo y no se siente grasosa.",
+            "nombre": "Testimonio de ejemplo"
+          }
+        },
+        {
+          "type": "zona",
+          "settings": {
+            "zona": "Axilas",
+            "titulo": "Sin irritación",
+            "texto": "Después de depilarme me irritaba con el sudor. Me calma y no me mancha la ropa.",
+            "nombre": "Testimonio de ejemplo"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-grid-dolores",
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "El problema",
+        "titulo": "“Ya uso talco y crema para pañal. <em>¿Por qué esto sería diferente?</em>”",
+        "texto": "Porque esos productos no fueron hechos para pliegues adultos que pasan el día calientes, húmedos y rozándose.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "Tu pliegue no solo está húmedo: <em>también hay roce y calor.</em>",
+        "cierre_estilo": "texto"
+      },
+      "blocks": [
+        {
+          "type": "item",
+          "settings": {
+            "titulo": "Talco o maicena",
+            "texto": "Absorbe un rato, pero con el sudor se hace pasta."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "titulo": "Crema para pañal",
+            "texto": "Espesa y pegajosa: se queda encima y no se seca."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "titulo": "Cremas con corticoide",
+            "texto": "Calman rápido, pero no son para uso diario."
+          }
+        },
+        {
+          "type": "item",
+          "settings": {
+            "titulo": "Antitranspirante",
+            "texto": "Bloquea el sudor un rato, pero no está hecho para pliegues."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-galeria-ideas",
+      "settings": {
+        "color_fondo": "#f4e9e7",
+        "color_texto": "#3a2a2e",
+        "color_acento": "#7a2e44",
+        "nieve": false,
+        "etiqueta": "Dónde se usa",
+        "titulo": "Donde la piel toca la piel, <em>ARVEN funciona</em>",
+        "texto": "Un solo tubo. Todos tus pliegues.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "3"
+      },
+      "blocks": [
+        {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Busto",
+            "titulo": "Debajo del busto",
+            "texto": "Para el ardor y la humedad del brasier en días de calor."
+          }
+        },
+        {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Entrepierna",
+            "titulo": "Entrepierna y muslos",
+            "texto": "Menos roce al caminar, sin la pasta del talco."
+          }
+        },
+        {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Abdomen",
+            "titulo": "Pliegues del abdomen",
+            "texto": "Seca la humedad que se queda atrapada todo el día."
+          }
+        },
+        {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Axilas",
+            "titulo": "Axilas",
+            "texto": "Calma la irritación del sudor y la depilación."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-timeline",
+      "settings": {
+        "fondo": "fondo",
+        "color_tarjeta": "#7a2e44",
+        "etiqueta": "Cómo funciona",
+        "titulo": "De crema a polvo <em>en minutos</em>",
+        "texto": "Así trabaja ARVEN sobre tu piel."
+      },
+      "blocks": [
+        {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Al aplicarla",
+            "icono": "gota",
+            "titulo": "Se extiende como crema",
+            "texto": "Una capa ligera, fácil de poner en cualquier pliegue."
+          }
+        },
+        {
+          "type": "etapa",
+          "settings": {
+            "periodo": "En minutos",
+            "icono": "brillo",
+            "titulo": "Se seca como polvo",
+            "texto": "Sílice y tapioca absorben el sudor y dejan un acabado seco."
+          }
+        },
+        {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Todo el día",
+            "icono": "escudo",
+            "titulo": "Barrera contra el roce",
+            "texto": "El óxido de zinc protege donde la piel toca la piel."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#f4e9e7",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#7a2e44",
+        "color_dorado": "#c97f8e",
+        "color_texto": "#3a2a2e",
+        "adorno": false,
+        "titulo": "Ingredientes que",
+        "titulo_dorado": "trabajan por ti",
+        "titulo_fin": "",
+        "cierre": "Sin corticoides · Sin parabenos · Sin talco · Fragancia suave"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Sílice + almidón de tapioca",
+            "puntos": "El secante: absorben el sudor y dejan un acabado como polvo."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Óxido de zinc",
+            "puntos": "El escudo: forma una barrera que reduce el roce entre piel y piel."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "hoja",
+            "titulo": "Hamamelis + glicerina vegetal",
+            "puntos": "El calmante: alivian la piel irritada por el sudor, sin sensación grasosa."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo",
+        "titulo": "Así de fácil: <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": [
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Limpia y seca",
+            "texto": "Lava la zona y sécala muy bien."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Aplica una capa fina",
+            "texto": "Extiéndela sobre el pliegue y alrededor."
+          }
+        },
+        {
+          "type": "paso",
+          "settings": {
+            "titulo": "Deja que se seque",
+            "texto": "En minutos se vuelve polvo. Vístete y sigue tu día."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "ARVEN vs. <em>lo que ya probaste</em>",
+        "texto": "Frente al talco y la crema para pañal.",
+        "color_destacado": "#7a2e44",
+        "nombre_a": "ARVEN",
+        "sub_a": "Fold Care",
+        "nombre_b": "Talco o crema de pañal",
+        "sub_b": "Lo de siempre",
+        "pie_izq": "ARVEN",
+        "pie_der": "Seca, sin roce y sin grasa"
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Acabado",
+            "subtitulo": "Cómo queda en la piel",
+            "ok_a": true,
+            "valor_a": "Seco, como polvo",
+            "ok_b": false,
+            "valor_b": "Pasta o grasa"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Con el sudor",
+            "subtitulo": "Durante el día",
+            "ok_a": true,
+            "valor_a": "Sigue seco",
+            "ok_b": false,
+            "valor_b": "Se apelmaza"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Roce",
+            "subtitulo": "Piel con piel",
+            "ok_a": true,
+            "valor_a": "Barrera de zinc",
+            "ok_b": false,
+            "valor_b": "Poco o nada"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Piel irritada",
+            "subtitulo": "Sensación",
+            "ok_a": true,
+            "valor_a": "Calma",
+            "ok_b": false,
+            "valor_b": "Puede arder"
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "titulo": "Ropa",
+            "subtitulo": "Manchas",
+            "ok_a": true,
+            "valor_a": "No mancha",
+            "ok_b": false,
+            "valor_b": "Deja rastro"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-resenas",
+      "settings": {
+        "etiqueta": "Opiniones",
+        "titulo": "“Por fin me siento <em>seca todo el día.</em>”",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 3
+      },
+      "blocks": [
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Adiós al talco",
+            "texto": "Usaba talco y con el calor se me hacía pasta. Esta se seca como polvo y dura todo el día.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Barranquilla",
+            "verificado": false
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "No arde",
+            "texto": "Tenía la piel irritada debajo del busto y pensé que me iba a arder. Al contrario, se siente fresca.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Cali",
+            "verificado": false
+          }
+        },
+        {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Una para todo",
+            "texto": "La uso en la entrepierna y en el abdomen. No se nota y no mancha la ropa.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Medellín",
+            "verificado": false
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo-2",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": [
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Andrea de Cali pregunta: ya probé talco y cremas, ¿por qué esta sería diferente?",
+            "respuesta": "<p>Porque el talco con el sudor se hace pasta y las cremas comunes se quedan grasosas. ARVEN <strong>se aplica como crema y se seca como polvo</strong>: absorbe la humedad, deja una barrera contra el roce y calma la piel.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Diana de Bogotá pregunta: ¿me va a arder si tengo la piel irritada?",
+            "respuesta": "<p>Tiene hamamelis y glicerina vegetal para calmar la piel, y es <strong>sin corticoides</strong>. No la apliques sobre heridas abiertas, y si notas molestia, suspende su uso.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Carolina de Medellín pregunta: ¿mancha la ropa o se nota?",
+            "respuesta": "<p>No. Se seca como polvo invisible y no deja sensación grasosa, así que te puedes vestir enseguida.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Paola de Bucaramanga pregunta: ¿sirve para los hongos?",
+            "respuesta": "<p>No es un tratamiento para hongos. Ayuda a mantener el pliegue <strong>seco y protegido del roce</strong>, que es lo que produce la irritación del calor. Si tienes una infección, consulta con tu médico.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Natalia de Cartagena pregunta: ¿en qué zonas la puedo usar?",
+            "respuesta": "<p>Debajo del busto, abdomen, entrepierna, muslos y axilas: donde la piel toque la piel.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Laura de Pereira pregunta: ¿tiene olor?",
+            "respuesta": "<p>Tiene una fragancia suave que da sensación de frescura, nada fuerte.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sandra de Ibagué pregunta: ¿cómo pago y cuándo me llega?",
+            "respuesta": "<p>Pagas en efectivo cuando la recibes. El envío es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#7a2e44",
+        "color_texto": "#ffffff",
+        "color_sello": "#7a2e44",
+        "sello_arriba": "Garantía",
+        "sello_numero": "60",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra sin riesgo",
+        "titulo": "Tus pliegues secos, o te devolvemos tu dinero",
+        "texto": "Pruébala 60 días. Si no te funciona, te devolvemos tu dinero. Envío gratis y pagas al recibir."
+      },
+      "blocks": [
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía de satisfacción 60 días"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        },
+        {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "La quiero",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 159900
+      }
+    }
+  ]
+}

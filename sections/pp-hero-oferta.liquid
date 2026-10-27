@@ -340,6 +340,9 @@
   .pp-hero__rating { display: flex; align-items: center; gap: 8px; font-size: 14px; }
   .pp-hero__title { font-size: clamp(28px, 7.4vw, 44px); }
   .pp-hero__text { font-size: 16px; }
+  .pp-hero__zonas p { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--pp-texto-2); }
+  .pp-hero__zonas ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .pp-hero__zonas li { padding: 6px 12px; border: 1px solid color-mix(in srgb, var(--pp-acento) 35%, transparent); border-radius: 99px; background: color-mix(in srgb, var(--pp-acento) 8%, var(--pp-fondo)); color: var(--pp-acento); font-size: 13px; font-weight: 700; }
   .pp-hero__bens { display: grid; gap: 6px; font-size: 15px; font-weight: 600; }
   .pp-hero__bens li { display: flex; align-items: flex-start; gap: 8px; }
   .pp-hero__bens li.pp-hero__ben--ico::before { content: none; }
@@ -507,6 +510,14 @@
             </li>
           {%- endfor -%}
         </ul>
+      {%- endif -%}
+
+      {%- if section.settings.zonas != blank -%}
+        {%- assign zonas = section.settings.zonas | split: ',' -%}
+        <div class="pp-hero__zonas">
+          {%- if section.settings.zonas_titulo != blank -%}<p>{{ section.settings.zonas_titulo }}</p>{%- endif -%}
+          <ul>{%- for z in zonas -%}{%- assign zz = z | strip -%}{%- if zz != blank -%}<li>{{ zz }}</li>{%- endif -%}{%- endfor -%}</ul>
+        </div>
       {%- endif -%}
 
       {%- assign trans = section.blocks | where: 'type', 'transformacion' -%}
@@ -732,6 +743,8 @@
     { "type": "text", "id": "rating", "label": "Calificación", "default": "4.8/5" },
     { "type": "text", "id": "rating_texto", "label": "Texto junto a la calificación", "default": "· 458 reseñas" },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (lo que pongas en cursiva sale en color de acento)", "default": "El mal aliento no se va <em>solo con el cepillo.</em>" },
+    { "type": "text", "id": "zonas_titulo", "label": "Título de las zonas (ej: Funciona en)" },
+    { "type": "text", "id": "zonas", "label": "Zonas o usos, separados por coma (salen como etiquetas)" },
     { "type": "range", "id": "tamano_titulo", "label": "Tamaño del titular en celular", "min": 20, "max": 40, "step": 1, "unit": "px", "default": 29 },
     { "type": "inline_richtext", "id": "texto", "label": "Texto debajo del titular", "default": "Llega a las zonas que tu cepillo no alcanza — lengua, mejillas y línea de encías — con una fórmula que actúa desde el primer uso." },
     {
