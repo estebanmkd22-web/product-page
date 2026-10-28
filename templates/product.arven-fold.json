@@ -482,7 +482,7 @@
         "titulo": "Ingredientes que",
         "titulo_dorado": "trabajan por ti",
         "titulo_fin": "",
-        "cierre": "Sin corticoides · Sin parabenos · Sin talco · Fragancia suave"
+        "cierre": ""
       },
       "blocks": {
         "fila_1": {
@@ -514,6 +514,58 @@
         "fila_1",
         "fila_2",
         "fila_3"
+      ]
+    },
+    "libre": {
+      "type": "pp-libre",
+      "settings": {
+        "color_texto": "#3a2a2e",
+        "color_fondo": "#f4e9e7",
+        "espacio": 8
+      },
+      "blocks": {
+        "sello_1": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_esteroides",
+            "texto": "Sin esteroides"
+          }
+        },
+        "sello_2": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_parabenos",
+            "texto": "Sin parabenos"
+          }
+        },
+        "sello_3": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_talco",
+            "texto": "Sin talco"
+          }
+        },
+        "sello_4": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_petroleo",
+            "texto": "Libre de petróleo"
+          }
+        },
+        "sello_5": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_crueldad",
+            "texto": "Libre de crueldad animal"
+          }
+        }
+      },
+      "block_order": [
+        "sello_1",
+        "sello_2",
+        "sello_3",
+        "sello_4",
+        "sello_5"
       ]
     },
     "pasos": {
@@ -817,6 +869,7 @@
     "galeria_ideas",
     "timeline",
     "problemas_filas",
+    "libre",
     "pasos",
     "comparativa",
     "resenas",

@@ -443,7 +443,7 @@
         "titulo": "Ingredientes que",
         "titulo_dorado": "trabajan por ti",
         "titulo_fin": "",
-        "cierre": "Sin corticoides · Sin parabenos · Sin talco · Fragancia suave"
+        "cierre": ""
       },
       "blocks": [
         {
@@ -468,6 +468,51 @@
             "icono": "hoja",
             "titulo": "Hamamelis + glicerina vegetal",
             "puntos": "El calmante: alivian la piel irritada por el sudor, sin sensación grasosa."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "pp-libre",
+      "settings": {
+        "color_texto": "#3a2a2e",
+        "color_fondo": "#f4e9e7",
+        "espacio": 8
+      },
+      "blocks": [
+        {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_esteroides",
+            "texto": "Sin esteroides"
+          }
+        },
+        {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_parabenos",
+            "texto": "Sin parabenos"
+          }
+        },
+        {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_talco",
+            "texto": "Sin talco"
+          }
+        },
+        {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_petroleo",
+            "texto": "Libre de petróleo"
+          }
+        },
+        {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_crueldad",
+            "texto": "Libre de crueldad animal"
           }
         }
       ]

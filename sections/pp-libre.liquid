@@ -1,0 +1,361 @@
+{%- comment -%}
+  PP · Sellos "libre de"
+  Fila de íconos de línea con texto (Sin esteroides, Sin parabenos, Sin talco…)
+  separados por líneas verticales.
+{%- endcomment -%}
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+<style>
+  #pp-li-{{ section.id }} { background: {% if section.settings.color_fondo != blank and section.settings.color_fondo != 'rgba(0,0,0,0)' %}{{ section.settings.color_fondo }}{% else %}var(--pp-fondo){% endif %}; color: {{ section.settings.color_texto }}; padding: {{ section.settings.espacio }}px 0; }
+  #pp-li-{{ section.id }} .pp-li__titulo { margin: 0 0 18px; text-align: center; color: inherit; font-size: clamp(20px, 5.4vw, 28px); }
+  .pp-li__lista { display: flex; flex-wrap: wrap; justify-content: center; margin: 0; padding: 0; list-style: none; row-gap: 18px; }
+  .pp-li__item { display: grid; justify-items: center; align-content: start; gap: 8px; flex: 0 0 33.33%; padding: 0 6px; text-align: center; font-size: 13px; font-weight: 700; line-height: 1.25; }
+  .pp-li__item .pp-ico { width: 40px; height: 40px; stroke-width: 1.2; }
+  @media (min-width: 750px) {
+    .pp-li__item { flex: 0 0 auto; min-width: 150px; padding: 0 22px; font-size: 15px; }
+    .pp-li__item + .pp-li__item { border-left: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
+    .pp-li__item .pp-ico { width: 46px; height: 46px; }
+  }
+</style>
+{%- if section.blocks.size > 0 -%}
+<div id="pp-li-{{ section.id }}" class="pp pp-li">
+  <div class="pp-wrap">
+    {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-li__titulo">{{ section.settings.titulo }}</h2>{%- endif -%}
+    <ul class="pp-li__lista">
+      {%- for block in section.blocks -%}
+        <li class="pp-li__item" {{ block.shopify_attributes }}>
+          {%- assign icono = block.settings.icono -%}
+          {%- case icono -%}
+            {%- when 'sin_esteroides' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.7 16.3l7.6-7.6a3 3 0 0 0-4.3-4.3l-7.6 7.6a3 3 0 0 0 4.3 4.3z"/><path d="M8.2 8.2l4.3 4.3"/><path d="M3 3l18 18"/></svg>
+            {%- when 'sin_parabenos' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6"/><path d="M10 3v6.2L5.3 17.6A2.3 2.3 0 0 0 7.3 21h9.4a2.3 2.3 0 0 0 2-3.4L14 9.2V3"/><path d="M7.4 14.5h9.2"/><path d="M11 17h.01M13.5 18.2h.01"/><path d="M3 3l18 18"/></svg>
+            {%- when 'sin_talco' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 8.5h6.5v11a1.5 1.5 0 0 1-1.5 1.5h-3.5a1.5 1.5 0 0 1-1.5-1.5z"/><path d="M10.8 8.5l.7-3h3.5l.7 3"/><path d="M11.5 5.5V4h3.5v1.5"/><path d="M6.5 11h.01M5 13.5h.01M7 15h.01M5.5 17.5h.01M7.5 19h.01"/><path d="M3 3l18 18"/></svg>
+            {%- when 'sin_petroleo' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5c3 4.2 5.8 7.6 5.8 11a5.8 5.8 0 0 1-11.6 0c0-3.4 2.8-6.8 5.8-11z"/><path d="M9.2 15.2a3 3 0 0 0 2.8 2.5"/><path d="M3 3l18 18"/></svg>
+            {%- when 'sin_perfume' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 11.5h9v7.3a2.2 2.2 0 0 1-2.2 2.2H9.7a2.2 2.2 0 0 1-2.2-2.2z"/><path d="M10 11.5V9h4v2.5"/><path d="M10.5 9V7h3v2"/><path d="M16 6.5h2M16.3 4.3l1.6-.9M16.3 8.7l1.6.9"/><path d="M3 3l18 18"/></svg>
+            {%- when 'sin_crueldad' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.6 9.3C8.2 7.4 7.8 4.7 8.6 3.4c1.3.1 2.4 2.6 2.4 5.3"/><path d="M11 8.7c.2-2.5 1.3-4.6 2.5-4.6.6 1.4-.1 3.8-1.6 5.4"/><path d="M8.8 12.2a2.6 2.6 0 1 1 3.8 2.2"/><path d="M9.4 11.6h.01"/><path d="M12.4 14.3c-1.6 1.2-2.1 3.3-1.2 5h7.1c1.7 0 2.6-1.5 2.2-3.1-.6-2.5-3-4.2-5.5-4.2-1 0-1.9.3-2.6.8"/><path d="M14.5 19.3c-.2-1.1.2-2 1.1-2.6"/><path d="M20.5 15.5h.8"/></svg>
+            {%- when 'sin_alcohol' -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3h6l-.5 5a3 3 0 0 1-5 0z"/><path d="M12 11v8M9 21h6"/><path d="M3 3l18 18"/></svg>
+            {%- else -%}<svg class="pp-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          {%- endcase -%}
+          <span>{{ block.settings.texto }}</span>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+</div>
+{%- endif -%}
+{% schema %}
+{
+  "name": "PP · Sellos libre de",
+  "tag": "section",
+  "class": "pp-libre-section",
+  "settings": [
+    { "type": "text", "id": "titulo", "label": "Título (opcional)" },
+    { "type": "color", "id": "color_texto", "label": "Color de íconos y texto", "default": "#1f3d3a" },
+    { "type": "color", "id": "color_fondo", "label": "Fondo (vacío = el de la página)" },
+    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 60, "step": 4, "unit": "px", "default": 24 }
+  ],
+  "blocks": [
+    {
+      "type": "sello",
+      "name": "Sello",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "select", "id": "icono", "label": "Ícono", "default": "sin_esteroides",
+          "options": [
+            { "value": "sin_esteroides", "label": "Pastilla tachada (sin esteroides)" },
+            { "value": "sin_parabenos", "label": "Matraz tachado (sin parabenos)" },
+            { "value": "sin_talco", "label": "Talco tachado" },
+            { "value": "sin_petroleo", "label": "Gota tachada (sin petróleo)" },
+            { "value": "sin_perfume", "label": "Perfume tachado" },
+            { "value": "sin_crueldad", "label": "Conejo (libre de crueldad animal)" },
+            { "value": "sin_alcohol", "label": "Copa tachada (sin alcohol)" },
+            { "value": "check", "label": "Check" }
+          ]
+        },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Sin esteroides" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Sellos libre de",
+      "blocks": [
+        { "type": "sello", "settings": { "icono": "sin_esteroides", "texto": "Sin esteroides" } },
+        { "type": "sello", "settings": { "icono": "sin_parabenos", "texto": "Sin parabenos" } },
+        { "type": "sello", "settings": { "icono": "sin_talco", "texto": "Sin talco" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

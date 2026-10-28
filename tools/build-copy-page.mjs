@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'pp-libre', desc: 'Nueva. Sellos "libre de": íconos de línea (sin esteroides, sin parabenos, sin talco, libre de petróleo, sin perfume, cruelty free) con texto.' },
   { file: 'product.arven-fold', dir: 'templates', ext: '.json', name: 'Plantilla · ARVEN Fold Care', desc: 'Nueva. ARVEN Fold Care para mujeres (rosa vino, ATIDCOA + secciones de la referencia). Antes crea pp-resultados-zona y pp-grid-dolores (si no existe) y vuelve a pegar pp-hero-oferta.' },
   { file: 'pp-resultados-zona', desc: 'Nueva. Resultados por zona: pestañas por zona del cuerpo con foto antes/después y testimonio corto.' },
   { file: 'product.banda', dir: 'templates', ext: '.json', name: 'Plantilla · Banda Rotuliana', desc: 'Nueva. Banda rotuliana ajustable (azul marino + naranja, títulos en cursiva, maqueta de la rama 1.5 m, estructura ATIDCOA, 84.900 / 129.900). Antes vuelve a pegar pp-estilos y revisa pp-antes-despues.' },
