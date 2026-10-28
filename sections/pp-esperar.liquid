@@ -1,0 +1,396 @@
+{%- comment -%}
+  PP · Qué esperar día a día
+  Línea de tiempo vertical: la línea se va llenando al bajar; cada etapa con
+  su ícono y periodo a un lado y la tarjeta de texto al otro (alternados).
+{%- endcomment -%}
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+<style>
+  #pp-es-{{ section.id }} { --es-ac: {{ section.settings.color_acento }}; --es-suave: color-mix(in srgb, var(--es-ac) 16%, var(--pp-fondo)); }
+  .pp-es__lista { position: relative; margin: 28px 0 0; padding: 0; list-style: none; }
+  .pp-es__linea, .pp-es__lleno { position: absolute; left: 21px; top: 8px; width: 3px; border-radius: 3px; }
+  .pp-es__linea { bottom: 8px; background: var(--es-suave); }
+  .pp-es__lleno { height: 0; background: var(--es-ac); transition: height .15s linear; }
+  .pp-es__etapa { position: relative; display: grid; grid-template-columns: 44px 1fr; gap: 6px 14px; padding-bottom: 30px; }
+  .pp-es__punto { grid-row: 1 / span 2; justify-self: center; width: 22px; height: 22px; margin-top: 2px; border-radius: 50%; background: var(--pp-fondo); border: 4px solid var(--es-suave); box-shadow: 0 0 0 4px var(--pp-fondo); z-index: 1; transition: background .3s, border-color .3s; }
+  .pp-es__etapa.is-on .pp-es__punto { background: var(--es-ac); border-color: var(--es-suave); }
+  .pp-es__cuando { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 17px; color: var(--pp-texto); }
+  .pp-es__cuando svg { width: 34px; height: 34px; flex: 0 0 auto; }
+  .pp-es__card { position: relative; padding: 14px 16px; border: 1.5px solid color-mix(in srgb, var(--es-ac) 70%, transparent); border-radius: 14px; background: var(--pp-fondo); font-size: 15px; line-height: 1.55; color: var(--pp-texto); }
+  .pp-es__card::before { content: ""; position: absolute; left: -8px; top: 14px; width: 14px; height: 14px; background: var(--pp-fondo); border-left: 1.5px solid color-mix(in srgb, var(--es-ac) 70%, transparent); border-bottom: 1.5px solid color-mix(in srgb, var(--es-ac) 70%, transparent); transform: rotate(45deg); }
+  @media (min-width: 750px) {
+    .pp-es__linea, .pp-es__lleno { left: 50%; margin-left: -1.5px; }
+    .pp-es__etapa { grid-template-columns: 1fr 60px 1fr; gap: 0 24px; padding-bottom: 56px; align-items: start; }
+    .pp-es__punto { grid-row: 1; grid-column: 2; }
+    .pp-es__cuando { grid-row: 1; grid-column: 1; justify-content: flex-end; padding-top: 0; }
+    .pp-es__card { grid-row: 1; grid-column: 3; max-width: 360px; }
+    .pp-es__etapa:nth-child(even) .pp-es__cuando { grid-column: 3; justify-content: flex-start; }
+    .pp-es__etapa:nth-child(even) .pp-es__card { grid-column: 1; justify-self: end; }
+    .pp-es__etapa:nth-child(even) .pp-es__card::before { left: auto; right: -8px; transform: rotate(-135deg); }
+  }
+</style>
+<div id="pp-es-{{ section.id }}" class="pp pp-section pp-bg--{{ section.settings.fondo }}">
+  <div class="pp-wrap">
+    <div class="pp-head">
+      {%- if section.settings.etiqueta != blank -%}<p class="pp-eyebrow">{{ section.settings.etiqueta }}</p>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <ol class="pp-es__lista">
+        <span class="pp-es__linea" aria-hidden="true"></span><span class="pp-es__lleno" aria-hidden="true"></span>
+        {%- for block in section.blocks -%}
+          <li class="pp-es__etapa{% if forloop.first %} is-on{% endif %}" {{ block.shopify_attributes }}>
+            <span class="pp-es__punto" aria-hidden="true"></span>
+            <div class="pp-es__cuando">
+              {%- if block.settings.icono == 'reloj' -%}
+                <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="18" r="11" fill="#fff" stroke="currentColor" stroke-width="2"/><path d="M16 18V9a9 9 0 0 1 9 9z" fill="{{ section.settings.color_icono }}"/><path d="M13 3.5h6M16 3.5V7M25.5 8.5l2 -2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              {%- else -%}
+                <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="7" width="24" height="21" rx="3" fill="#f3f3f3" stroke="#cfcfcf"/><path d="M4 10a3 3 0 0 1 3-3h18a3 3 0 0 1 3 3v3H4z" fill="{{ section.settings.color_icono }}"/><path d="M10 4.5v5M16 4.5v5M22 4.5v5" stroke="#5a5a5a" stroke-width="2" stroke-linecap="round"/><g fill="#d6d6d6"><rect x="8" y="16" width="4" height="3" rx=".6"/><rect x="14" y="16" width="4" height="3" rx=".6"/><rect x="20" y="16" width="4" height="3" rx=".6"/><rect x="8" y="21" width="4" height="3" rx=".6"/><rect x="14" y="21" width="4" height="3" rx=".6"/><rect x="20" y="21" width="4" height="3" rx=".6"/></g><rect x="14" y="16" width="4" height="3" rx=".6" fill="{{ section.settings.color_icono }}"/></svg>
+              {%- endif -%}
+              <span>{{ block.settings.periodo }}</span>
+            </div>
+            {%- if block.settings.texto != blank -%}<div class="pp-es__card">{{ block.settings.texto }}</div>{%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ol>
+    {%- endif -%}
+  </div>
+</div>
+<script>
+  (function () {
+    var root = document.getElementById('pp-es-{{ section.id }}');
+    if (!root) return;
+    var lista = root.querySelector('.pp-es__lista');
+    var lleno = root.querySelector('.pp-es__lleno');
+    var etapas = root.querySelectorAll('.pp-es__etapa');
+    if (!lista || !lleno) return;
+    function pintar() {
+      var r = lista.getBoundingClientRect();
+      var marca = window.innerHeight * 0.6;
+      var alto = Math.max(0, Math.min(r.height - 16, marca - r.top));
+      lleno.style.height = alto + 'px';
+      etapas.forEach(function (e) {
+        var y = e.getBoundingClientRect().top;
+        e.classList.toggle('is-on', y < marca);
+      });
+    }
+    window.addEventListener('scroll', function () { window.requestAnimationFrame(pintar); }, { passive: true });
+    window.addEventListener('resize', pintar);
+    pintar();
+  })();
+</script>
+{% schema %}
+{
+  "name": "PP · Qué esperar",
+  "tag": "section",
+  "class": "pp-esperar-section",
+  "settings": [
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "options": [ { "value": "fondo", "label": "Blanco" }, { "value": "fondo-2", "label": "Alterno (suave)" } ]
+    },
+    { "type": "color", "id": "color_acento", "label": "Color de la línea y tarjetas", "default": "#7a2e44" },
+    { "type": "color", "id": "color_icono", "label": "Color de los íconos (reloj y calendario)", "default": "#d9534f" },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Cronograma de resultados" },
+    { "type": "inline_richtext", "id": "titulo", "label": "Título", "default": "Qué esperar <em>día a día</em>" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto" }
+  ],
+  "blocks": [
+    {
+      "type": "etapa",
+      "name": "Etapa",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "select", "id": "icono", "label": "Ícono", "default": "calendario",
+          "options": [ { "value": "reloj", "label": "Cronómetro" }, { "value": "calendario", "label": "Calendario" } ]
+        },
+        { "type": "text", "id": "periodo", "label": "Cuándo (ej: En 60 segundos, Día 1)", "default": "Día 1" },
+        { "type": "textarea", "id": "texto", "label": "Qué se nota" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Qué esperar",
+      "blocks": [
+        { "type": "etapa", "settings": { "icono": "reloj", "periodo": "En 60 segundos" } },
+        { "type": "etapa", "settings": { "periodo": "Día 1" } },
+        { "type": "etapa", "settings": { "periodo": "Día 2-3" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -605,6 +605,66 @@
         "paso_3"
       ]
     },
+    "esperar": {
+      "type": "pp-esperar",
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#7a2e44",
+        "color_icono": "#c9536a",
+        "etiqueta": "Cronograma de resultados",
+        "titulo": "Qué esperar <em>día a día</em>",
+        "texto": "El primer minuto se siente diferente. Los primeros días se notan diferentes. Esto es lo que puedes esperar usándola a diario."
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "En 60 segundos",
+            "texto": "Se siente fresca al aplicarla y se seca como polvo: sin sensación grasosa ni pegajosa."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Día 1",
+            "texto": "El pliegue se mantiene seco por más tiempo y sientes menos roce durante el día."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Día 2-3",
+            "texto": "La piel se siente más cómoda y menos irritada por el sudor y el calor."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Semana 1",
+            "texto": "Ya es parte de tu rutina: pliegues secos y protegidos, sin pensar en el roce."
+          }
+        },
+        "etapa_5": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Uso continuo",
+            "texto": "Mantén tus pliegues secos y cómodos, incluso en los días de más calor."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4",
+        "etapa_5"
+      ]
+    },
     "comparativa": {
       "type": "pp-comparativa",
       "settings": {
@@ -871,6 +931,7 @@
     "problemas_filas",
     "libre",
     "pasos",
+    "esperar",
     "comparativa",
     "resenas",
     "faq",
