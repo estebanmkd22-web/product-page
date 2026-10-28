@@ -32,8 +32,13 @@
     {
       "tipo": "pp-logo",
       "settings": {
-        "ancho_movil": 110,
-        "ancho_pc": 140
+        "ancho_movil": 190,
+        "ancho_pc": 240,
+        "imagen": {
+          "src": "../../imagenes/arven/arven-fold-logo.png",
+          "alt": "ARVEN Fold Care"
+        },
+        "espacio": 14
       }
     },
     {
