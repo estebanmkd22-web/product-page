@@ -151,7 +151,9 @@
         "boton_texto": "Ordena ahora — Paga en casa",
         "valor_texto": "",
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
-        "entrega": "Envío gratis a toda Colombia"
+        "entrega": "Envío gratis a toda Colombia",
+        "etiquetas_titulo": "Funciona en",
+        "etiquetas": "Debajo del busto, Entrepierna, Muslos, Abdomen, Axilas"
       },
       "blocks": [
         {

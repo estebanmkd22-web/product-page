@@ -294,6 +294,10 @@
   .pp-ot__tabs { display: grid; grid-template-columns: repeat({{ packs.size | at_least: 1 }}, 1fr); gap: 4px; padding: 4px; border-radius: 14px; background: color-mix(in srgb, var(--pp-texto) 7%, var(--pp-fondo)); }
   .pp-ot__tab { position: relative; display: grid; place-items: center; min-height: 46px; padding: 8px; border-radius: 11px; cursor: pointer; font-size: 16px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; color: var(--pp-texto); transition: background .2s, color .2s; }
   .pp-ot__tab input { position: absolute; opacity: 0; pointer-events: none; }
+  .pp-ot__etqs { margin-top: 12px; text-align: center; }
+  .pp-ot__etqs p { margin: 0 0 8px; font-size: 12px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--pp-texto-2, var(--pp-texto)); }
+  .pp-ot__etqs ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin: 0; padding: 0; list-style: none; }
+  .pp-ot__etqs li { padding: 6px 12px; border: 1px solid color-mix(in srgb, var(--ot-ac) 35%, transparent); border-radius: 99px; background: color-mix(in srgb, var(--ot-ac) 8%, var(--pp-fondo)); color: var(--ot-ac); font-size: 13px; font-weight: 700; }
   .pp-ot__colores { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px 14px; margin-top: 12px; font-size: 13px; }
   .pp-ot__colores p { margin: 0; width: 100%; text-align: center; color: var(--pp-texto-2, var(--pp-texto)); }
   .pp-ot__color { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; }
@@ -363,6 +367,14 @@
         {%- if section.settings.colores_texto != blank -%}<p>{{ section.settings.colores_texto }}</p>{%- endif -%}
         {%- if section.settings.color_1_nombre != blank -%}<span class="pp-ot__color"><i style="--c: {{ section.settings.color_1 }}"></i>{{ section.settings.color_1_nombre }}</span>{%- endif -%}
         {%- if section.settings.color_2_nombre != blank -%}<span class="pp-ot__color"><i style="--c: {{ section.settings.color_2 }}"></i>{{ section.settings.color_2_nombre }}</span>{%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.etiquetas != blank -%}
+      {%- assign etqs = section.settings.etiquetas | split: ',' -%}
+      <div class="pp-ot__etqs">
+        {%- if section.settings.etiquetas_titulo != blank -%}<p>{{ section.settings.etiquetas_titulo }}</p>{%- endif -%}
+        <ul>{%- for e in etqs -%}{%- assign ee = e | strip -%}{%- if ee != blank -%}<li>{{ ee }}</li>{%- endif -%}{%- endfor -%}</ul>
       </div>
     {%- endif -%}
 
@@ -622,6 +634,9 @@
     },
     { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 20 },
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
+    { "type": "header", "content": "Etiquetas (debajo de las pestañas)" },
+    { "type": "text", "id": "etiquetas_titulo", "label": "Título de las etiquetas (ej: Funciona en)" },
+    { "type": "text", "id": "etiquetas", "label": "Etiquetas separadas por coma" },
     { "type": "header", "content": "Colores disponibles (debajo de las pestañas)" },
     { "type": "text", "id": "colores_texto", "label": "Frase", "info": "Se muestra solo si escribes el nombre de al menos un color." },
     { "type": "text", "id": "color_1_nombre", "label": "Color 1: nombre" },
