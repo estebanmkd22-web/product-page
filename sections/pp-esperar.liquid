@@ -365,7 +365,7 @@
     { "type": "color", "id": "color_icono", "label": "Color de los íconos (reloj y calendario)", "default": "#d9534f" },
     { "type": "text", "id": "etiqueta", "label": "Etiqueta pequeña", "default": "Cronograma de resultados" },
     { "type": "inline_richtext", "id": "titulo", "label": "Título", "default": "Qué esperar <em>día a día</em>" },
-    { "type": "inline_richtext", "id": "texto", "label": "Texto" }
+    { "type": "inline_richtext", "id": "texto", "label": "Texto", "default": "Esto es lo que puedes esperar usándola a diario." }
   ],
   "blocks": [
     {
@@ -378,7 +378,7 @@
           "options": [ { "value": "reloj", "label": "Cronómetro" }, { "value": "calendario", "label": "Calendario" } ]
         },
         { "type": "text", "id": "periodo", "label": "Cuándo (ej: En 60 segundos, Día 1)", "default": "Día 1" },
-        { "type": "textarea", "id": "texto", "label": "Qué se nota" }
+        { "type": "textarea", "id": "texto", "label": "Qué se nota", "default": "Escribe aquí lo que la clienta nota en esta etapa." }
       ]
     }
   ],
@@ -386,9 +386,11 @@
     {
       "name": "PP · Qué esperar",
       "blocks": [
-        { "type": "etapa", "settings": { "icono": "reloj", "periodo": "En 60 segundos" } },
-        { "type": "etapa", "settings": { "periodo": "Día 1" } },
-        { "type": "etapa", "settings": { "periodo": "Día 2-3" } }
+        { "type": "etapa", "settings": { "icono": "reloj", "periodo": "En 60 segundos", "texto": "Se siente fresca al aplicarla y se seca como polvo: sin sensación grasosa ni pegajosa." } },
+        { "type": "etapa", "settings": { "periodo": "Día 1", "texto": "El pliegue se mantiene seco por más tiempo y sientes menos roce durante el día." } },
+        { "type": "etapa", "settings": { "periodo": "Día 2-3", "texto": "La piel se siente más cómoda y menos irritada por el sudor y el calor." } },
+        { "type": "etapa", "settings": { "periodo": "Semana 1", "texto": "Ya es parte de tu rutina: pliegues secos y protegidos, sin pensar en el roce." } },
+        { "type": "etapa", "settings": { "periodo": "Uso continuo", "texto": "Mantén tus pliegues secos y cómodos, incluso en los días de más calor." } }
       ]
     }
   ]
