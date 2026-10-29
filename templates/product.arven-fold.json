@@ -239,7 +239,8 @@
       "type": "pp-videos",
       "settings": {
         "titulo": "Mira cómo <em>se seca como polvo</em>",
-        "texto": "Mujeres reales, pliegues reales."
+        "texto": "Así se ve en la piel.",
+        "proporcion": "4 / 5"
       },
       "blocks": {
         "video_1": {
@@ -251,13 +252,13 @@
         "video_2": {
           "type": "video",
           "settings": {
-            "etiqueta": "Se seca en segundos"
+            "etiqueta": "Acabado seco"
           }
         },
         "video_3": {
           "type": "video",
           "settings": {
-            "etiqueta": "Mi experiencia"
+            "etiqueta": "En el día a día"
           }
         }
       },

@@ -232,25 +232,35 @@
       "tipo": "pp-videos",
       "settings": {
         "titulo": "Mira cómo <em>se seca como polvo</em>",
-        "texto": "Mujeres reales, pliegues reales."
+        "texto": "Así se ve en la piel.",
+        "proporcion": "4 / 5"
       },
       "blocks": [
         {
           "type": "video",
           "settings": {
-            "etiqueta": "Cómo aplicarla"
+            "etiqueta": "Cómo aplicarla",
+            "imagen": {
+              "src": "../../imagenes/arven/g2.jpg"
+            }
           }
         },
         {
           "type": "video",
           "settings": {
-            "etiqueta": "Se seca en segundos"
+            "etiqueta": "Acabado seco",
+            "imagen": {
+              "src": "../../imagenes/arven/g3.jpg"
+            }
           }
         },
         {
           "type": "video",
           "settings": {
-            "etiqueta": "Mi experiencia"
+            "etiqueta": "En el día a día",
+            "imagen": {
+              "src": "../../imagenes/arven/g4.jpg"
+            }
           }
         }
       ]
