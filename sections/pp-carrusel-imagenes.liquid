@@ -1,0 +1,476 @@
+{%- comment -%}
+  PP · Carrusel imágenes
+  Carrusel deslizable de imágenes con flechas, barra de avance y etiquetas.
+{%- endcomment -%}
+
+<style>
+/* PP-BASE:START */
+/* PP · Base compartida. Fuente única: src/pp-base.css
+   (tools/inline-base.mjs la copia dentro de cada sección).
+   Todo va dentro de :where() para tener prioridad mínima: como esta base
+   se repite en cada sección, nunca debe pisar los estilos propios de una
+   sección ni los colores de "PP · Estilos globales". */
+:where(:root) {
+  --pp-acento: #c5453f;
+  --pp-acento-suave: #fbeceb;
+  --pp-texto: #1e1e1e;
+  --pp-texto-2: #5c5c5c;
+  --pp-fondo: #ffffff;
+  --pp-fondo-2: #f7f4f0;
+  --pp-borde: rgba(0, 0, 0, 0.1);
+  --pp-ok: #2e8b57;
+  --pp-estrella: #f5b301;
+  --pp-boton: #c5453f;
+  --pp-boton-texto: #ffffff;
+  --pp-radio: 14px;
+  --pp-ancho: 1120px;
+}
+
+.pp,
+.pp *,
+.pp *::before,
+.pp *::after {
+  box-sizing: border-box;
+}
+
+:where(.pp) {
+  color: var(--pp-texto);
+  background: var(--pp-fondo);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+:where(.pp) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:where(.pp) :where(h1, h2, h3, p, ul) {
+  margin: 0;
+}
+
+/* Dawn pinta todos los h1-h5 con su color y fuente de títulos. Esta regla
+   (especificidad de un solo elemento, igual a la de Dawn pero declarada después)
+   hace que hereden de la sección; cualquier regla con clase le sigue ganando. */
+:where(.pp) :is(h1, h2, h3, h4, h5) {
+  color: inherit;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+:where(.pp) ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pp-wrap {
+  width: 100%;
+  max-width: var(--pp-ancho);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Títulos: fuente propia (PP · Estilos globales) o la de títulos del tema */
+.pp-h {
+  font-family: var(--pp-font-titulos, var(--font-heading-family, inherit));
+  font-weight: var(--pp-peso-titulos, 800);
+  line-height: 1.1;
+  letter-spacing: var(--pp-espaciado-titulos, -0.01em);
+  text-transform: var(--pp-mayus-titulos, none);
+  color: var(--pp-texto);
+}
+
+.pp-h em,
+.pp-h i {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pp-acento);
+}
+
+.pp-muted {
+  color: var(--pp-texto-2);
+}
+
+/* Estrellas */
+.pp-stars {
+  display: inline-flex;
+  gap: 1px;
+  color: var(--pp-estrella);
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+/* Botón principal */
+.pp-btn,
+.pp .es-popup-button-overwrite {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 14px 20px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: var(--pp-boton) !important;
+  color: var(--pp-boton-texto) !important;
+  font-family: inherit !important;
+  font-size: 17px !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.14) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.pp-btn:active,
+.pp .es-popup-button-overwrite:active {
+  transform: scale(0.98);
+}
+
+.pp-btn small {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
+
+.pp-btn--pulse {
+  animation: pp-pulse 2s ease-in-out infinite;
+}
+
+@keyframes pp-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pp-btn--pulse {
+    animation: none;
+  }
+}
+
+/* Espaciado vertical estándar de sección */
+.pp-section {
+  padding: 40px 0;
+}
+
+@media (min-width: 750px) {
+  .pp-section {
+    padding: 64px 0;
+  }
+}
+
+/* Fondos de franja (para alternar secciones) */
+.pp-bg--fondo-2 {
+  background: var(--pp-fondo-2);
+}
+
+.pp-bg--oscuro {
+  background: var(--pp-texto);
+  color: var(--pp-fondo);
+}
+
+.pp-bg--oscuro .pp-h,
+.pp-bg--oscuro .pp-muted {
+  color: inherit;
+}
+
+/* Encabezado de sección */
+.pp-head {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.pp-head--izq {
+  margin-left: 0;
+  text-align: left;
+}
+
+.pp-title {
+  font-size: clamp(26px, 6.6vw, 40px);
+}
+
+.pp-lead {
+  font-size: 16px;
+  color: var(--pp-texto-2);
+}
+
+/* Contenedor de imagen con proporción fija */
+.pp-img {
+  overflow: hidden;
+  border-radius: var(--pp-radio);
+  background: var(--pp-fondo-2);
+}
+
+.pp-img img,
+.pp-img svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pp-cta {
+  max-width: 480px;
+  margin: 28px auto 0;
+}
+
+/* Íconos de línea (se eligen en el panel) */
+.pp-ico {
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+/* Frase de cierre al final de una sección */
+.pp .pp-cierre {
+  margin: 28px auto 0;
+  max-width: 760px;
+  text-align: center;
+  font-family: var(--font-heading-family, inherit);
+  font-size: clamp(20px, 5.2vw, 28px);
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.pp-cierre em {
+  font-style: normal;
+  color: var(--pp-acento);
+}
+
+.pp-cierre--franja {
+  padding: 16px 18px;
+  border-radius: var(--pp-radio);
+  background: var(--pp-acento);
+  color: #fff;
+  font-size: clamp(16px, 4.4vw, 22px);
+}
+
+.pp-cierre--franja em {
+  color: inherit;
+  text-decoration: underline;
+}
+/* PP-BASE:END */
+</style>
+
+<style>
+  #pp-ci-{{ section.id }} { --vid-w: {{ section.settings.ancho_movil }}%; }
+  .pp-ci { padding: {{ section.settings.espacio }}px 0; }
+  .pp-ci .pp-head { margin-bottom: 18px; }
+  .pp-ci__track {
+    display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 0 16px; scroll-padding: 0 16px;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .pp-ci__track::-webkit-scrollbar { display: none; }
+  .pp-ci__item {
+    position: relative; flex: 0 0 var(--vid-w, 40%); scroll-snap-align: start;
+    aspect-ratio: {{ section.settings.proporcion | default: '9 / 16' }}; overflow: hidden; border-radius: var(--pp-radio);
+    background: var(--pp-fondo-2); cursor: pointer;
+  }
+  .pp-ci__item video, .pp-ci__item img {
+    display: block; width: 100%; height: 100%; object-fit: cover;
+  }
+  .pp-ci__sonido {
+    position: absolute; right: 8px; bottom: 8px; display: grid; place-items: center;
+    width: 32px; height: 32px; border: 0; border-radius: 99px; padding: 0;
+    background: rgba(0, 0, 0, .55); color: #fff; font-size: 15px; line-height: 1; pointer-events: none;
+  }
+  .pp-ci__etiqueta {
+    position: absolute; left: 8px; top: 8px; padding: 4px 8px; border-radius: 99px;
+    background: rgba(0, 0, 0, .55); color: #fff; font-size: 12px; font-weight: 700;
+  }
+  .pp-ci .pp-cta { padding: 0 16px; }
+  .pp-ci__carrusel { position: relative; }
+  .pp-ci__flecha {
+    position: absolute; top: 50%; z-index: 2; display: grid; place-items: center;
+    width: 38px; height: 38px; margin-top: -19px; padding: 0; border: 0; border-radius: 99px;
+    background: rgba(255, 255, 255, .92); color: #111; box-shadow: 0 2px 10px rgba(0, 0, 0, .18);
+    font: 700 22px/1 Arial, sans-serif; cursor: pointer; transition: opacity .2s;
+  }
+  .pp-ci__flecha--prev { left: 6px; }
+  .pp-ci__flecha--next { right: 6px; }
+  .pp-ci__flecha[disabled] { opacity: 0; pointer-events: none; }
+  .pp-ci__barra { max-width: 240px; height: 4px; margin: 14px auto 0; border-radius: 99px; background: color-mix(in srgb, var(--pp-acento) 22%, transparent); overflow: hidden; }
+  .pp-ci__barra span { display: block; width: 30%; height: 100%; border-radius: inherit; background: var(--pp-acento); transition: width .15s linear; }
+  .pp-ci--quieto .pp-ci__flecha, .pp-ci--quieto .pp-ci__barra { display: none; }
+  .pp-ci--quieto .pp-ci__track { justify-content: safe center; }
+  @media (min-width: 750px) {
+    .pp-ci__track { gap: 14px; padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); scroll-padding: 0 max(24px, calc((100% - var(--pp-ancho)) / 2 + 16px)); }
+    .pp-ci__item { flex-basis: 270px; }
+    .pp-ci__flecha { width: 44px; height: 44px; margin-top: -22px; }
+    .pp-ci__flecha--prev { left: max(8px, calc((100% - var(--pp-ancho)) / 2)); }
+    .pp-ci__flecha--next { right: max(8px, calc((100% - var(--pp-ancho)) / 2)); }
+  }
+</style>
+
+<div id="pp-ci-{{ section.id }}" class="pp pp-ci pp-bg--{{ section.settings.fondo }}">
+  {%- if section.settings.titulo != blank or section.settings.texto != blank -%}
+    <div class="pp-wrap">
+      <div class="pp-head">
+        {%- if section.settings.titulo != blank -%}<h2 class="pp-h pp-title">{{ section.settings.titulo }}</h2>{%- endif -%}
+        {%- if section.settings.texto != blank -%}<p class="pp-lead">{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="pp-ci__carrusel">
+  <button type="button" class="pp-ci__flecha pp-ci__flecha--prev" aria-label="Imagen anterior" data-pp-ci-prev>&lsaquo;</button>
+  <div class="pp-ci__track" data-pp-ci-track>
+    {%- for block in section.blocks -%}
+      <div class="pp-ci__item" {{ block.shopify_attributes }}>
+        {%- if block.settings.imagen != blank -%}
+          {{ block.settings.imagen | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400, 600, 800', sizes: '(min-width: 750px) 270px, 45vw', alt: block.settings.etiqueta | default: section.settings.titulo }}
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag }}
+        {%- endif -%}
+        {%- if block.settings.etiqueta != blank -%}<span class="pp-ci__etiqueta">{{ block.settings.etiqueta }}</span>{%- endif -%}
+      </div>
+    {%- endfor -%}
+  </div>
+  <button type="button" class="pp-ci__flecha pp-ci__flecha--next" aria-label="Imagen siguiente" data-pp-ci-next>&rsaquo;</button>
+  </div>
+  <div class="pp-ci__barra" aria-hidden="true"><span data-pp-ci-barra></span></div>
+
+  {%- if section.settings.boton_modo != 'ninguno' -%}
+    <div class="pp-cta">
+      {%- case section.settings.boton_modo -%}
+        {%- when 'easysell' -%}
+          <a href="javascript:void(0);" class="es-popup-button-overwrite pp-btn pp-btn--pulse">{{ section.settings.boton_texto }}</a>
+        {%- when 'oferta' -%}
+          <a href="#oferta" class="pp-btn">{{ section.settings.boton_texto }}</a>
+        {%- else -%}
+          <a href="{{ section.settings.boton_enlace | default: '#' }}" class="pp-btn">{{ section.settings.boton_texto }}</a>
+      {%- endcase -%}
+    </div>
+  {%- endif -%}
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('pp-ci-{{ section.id }}');
+    if (!root) return;
+    var track = root.querySelector('[data-pp-ci-track]');
+    var prev = root.querySelector('[data-pp-ci-prev]');
+    var next = root.querySelector('[data-pp-ci-next]');
+    var barra = root.querySelector('[data-pp-ci-barra]');
+    var items = track.children;
+    function paso() { return items.length > 1 ? items[1].offsetLeft - items[0].offsetLeft : track.clientWidth; }
+    function estado() {
+      var max = track.scrollWidth - track.clientWidth;
+      root.classList.toggle('pp-ci--quieto', max < 4);
+      prev.disabled = track.scrollLeft < 4;
+      next.disabled = track.scrollLeft > max - 4;
+      var visible = track.clientWidth / track.scrollWidth;
+      barra.style.width = Math.min(100, (visible + (1 - visible) * (max > 0 ? track.scrollLeft / max : 1)) * 100) + '%';
+    }
+    function mover(dir) {
+      var max = track.scrollWidth - track.clientWidth;
+      var destino = track.scrollLeft + dir * paso();
+      if (dir > 0 && track.scrollLeft > max - 4) destino = 0;
+      track.scrollTo({ left: destino, behavior: 'smooth' });
+    }
+    prev.addEventListener('click', function () { parar(); mover(-1); });
+    next.addEventListener('click', function () { parar(); mover(1); });
+    track.addEventListener('scroll', estado, { passive: true });
+    window.addEventListener('resize', estado);
+    estado();
+    var auto = null;
+    function parar() { if (auto) { clearInterval(auto); auto = null; } }
+    {%- if section.settings.auto_avance %}
+    if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+      auto = setInterval(function () {
+        var r = root.getBoundingClientRect();
+        if (r.bottom > 0 && r.top < window.innerHeight && !root.classList.contains('pp-ci--quieto')) mover(1);
+      }, {{ section.settings.auto_segundos | times: 1000 }});
+      ['touchstart', 'pointerdown', 'wheel'].forEach(function (ev) { track.addEventListener(ev, parar, { passive: true }); });
+    }
+    {%- endif %}
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "PP · Carrusel imágenes",
+  "tag": "section",
+  "class": "pp-carrusel-imagenes-section",
+  "settings": [
+    {
+      "type": "select", "id": "fondo", "label": "Fondo", "default": "fondo",
+      "options": [
+        { "value": "fondo", "label": "Blanco" },
+        { "value": "fondo-2", "label": "Alterno (suave)" },
+        { "value": "oscuro", "label": "Oscuro" }
+      ]
+    },
+    { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
+    { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
+    {
+      "type": "select", "id": "proporcion", "label": "Formato de cada tarjeta", "default": "4 / 5",
+      "options": [ { "value": "9 / 16", "label": "Vertical alto (9:16)" }, { "value": "4 / 5", "label": "Vertical (4:5)" }, { "value": "1 / 1", "label": "Cuadrado (1:1)" } ]
+    },
+    {
+      "type": "range", "id": "ancho_movil", "label": "Ancho de cada imagen en celular",
+      "min": 30, "max": 70, "step": 2, "unit": "%", "default": 40,
+      "info": "Con 40% se ven 2 imágenes y media: así el cliente entiende que puede deslizar. En computador cada una mide 270 px."
+    },
+    { "type": "range", "id": "espacio", "label": "Espacio arriba y abajo", "min": 0, "max": 64, "step": 4, "unit": "px", "default": 16 },
+    { "type": "checkbox", "id": "auto_avance", "label": "Avanzar solo (se detiene al tocarlo)", "default": true },
+    { "type": "range", "id": "auto_segundos", "label": "Segundos entre cada avance", "min": 2, "max": 10, "step": 1, "unit": "s", "default": 4 },
+    { "type": "header", "content": "Botón" },
+    {
+      "type": "select", "id": "boton_modo", "label": "¿Qué hace el botón?", "default": "ninguno",
+      "options": [
+        { "value": "ninguno", "label": "Sin botón" },
+        { "value": "easysell", "label": "Abrir formulario EasySell" },
+        { "value": "oferta", "label": "Subir a la caja de compra" },
+        { "value": "enlace", "label": "Ir a un enlace" }
+      ]
+    },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Quiero el mío" },
+    { "type": "url", "id": "boton_enlace", "label": "Modo enlace: URL de destino" }
+  ],
+  "blocks": [
+    {
+      "type": "imagen",
+      "name": "Imagen",
+      "settings": [
+        { "type": "image_picker", "id": "imagen", "label": "Imagen" },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre la imagen (opcional)" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "PP · Carrusel imágenes",
+      "blocks": [
+        { "type": "imagen" }, { "type": "imagen" }, { "type": "imagen" }, { "type": "imagen" }
+]
+    }
+  ]
+}
+{% endschema %}

@@ -229,7 +229,7 @@
       ]
     },
     {
-      "tipo": "pp-videos",
+      "tipo": "pp-carrusel-imagenes",
       "settings": {
         "titulo": "Mira cómo <em>se seca como polvo</em>",
         "texto": "Así se ve en la piel.",
@@ -237,7 +237,7 @@
       },
       "blocks": [
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "Cómo aplicarla",
             "imagen": {
@@ -246,7 +246,7 @@
           }
         },
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "Acabado seco",
             "imagen": {
@@ -255,7 +255,7 @@
           }
         },
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "En el día a día",
             "imagen": {

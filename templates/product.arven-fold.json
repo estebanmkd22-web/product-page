@@ -235,37 +235,37 @@
         "regalo_6"
       ]
     },
-    "videos": {
-      "type": "pp-videos",
+    "carrusel_imagenes": {
+      "type": "pp-carrusel-imagenes",
       "settings": {
         "titulo": "Mira cómo <em>se seca como polvo</em>",
         "texto": "Así se ve en la piel.",
         "proporcion": "4 / 5"
       },
       "blocks": {
-        "video_1": {
-          "type": "video",
+        "imagen_1": {
+          "type": "imagen",
           "settings": {
             "etiqueta": "Cómo aplicarla"
           }
         },
-        "video_2": {
-          "type": "video",
+        "imagen_2": {
+          "type": "imagen",
           "settings": {
             "etiqueta": "Acabado seco"
           }
         },
-        "video_3": {
-          "type": "video",
+        "imagen_3": {
+          "type": "imagen",
           "settings": {
             "etiqueta": "En el día a día"
           }
         }
       },
       "block_order": [
-        "video_1",
-        "video_2",
-        "video_3"
+        "imagen_1",
+        "imagen_2",
+        "imagen_3"
       ]
     },
     "resultados_zona": {
@@ -925,7 +925,7 @@
     "hero_oferta",
     "iconos",
     "oferta_tabs",
-    "videos",
+    "carrusel_imagenes",
     "resultados_zona",
     "grid_dolores",
     "galeria_ideas",

@@ -291,7 +291,7 @@
   .pp-videos__track::-webkit-scrollbar { display: none; }
   .pp-videos__item {
     position: relative; flex: 0 0 var(--vid-w, 40%); scroll-snap-align: start;
-    aspect-ratio: {{ section.settings.proporcion | default: '9 / 16' }}; overflow: hidden; border-radius: var(--pp-radio);
+    aspect-ratio: 9 / 16; overflow: hidden; border-radius: var(--pp-radio);
     background: var(--pp-fondo-2); cursor: pointer;
   }
   .pp-videos__item video, .pp-videos__item img {
@@ -351,8 +351,6 @@
         {%- elsif block.settings.video_url != blank -%}
           <video src="{{ block.settings.video_url }}" loop muted playsinline preload="none"></video>
           <span class="pp-videos__sonido" aria-hidden="true">🔇</span>
-        {%- elsif block.settings.imagen != blank -%}
-          {{ block.settings.imagen | image_url: width: 800 | image_tag: loading: 'lazy', widths: '400, 600, 800', sizes: '(min-width: 750px) 270px, 45vw', alt: block.settings.etiqueta | default: section.settings.titulo }}
         {%- else -%}
           {{ 'image' | placeholder_svg_tag }}
         {%- endif -%}
@@ -476,10 +474,6 @@
     { "type": "inline_richtext", "id": "titulo", "label": "Titular (opcional)" },
     { "type": "inline_richtext", "id": "texto", "label": "Texto (opcional)" },
     {
-      "type": "select", "id": "proporcion", "label": "Formato de cada tarjeta", "default": "9 / 16",
-      "options": [ { "value": "9 / 16", "label": "Vertical tipo video (9:16)" }, { "value": "4 / 5", "label": "Vertical (4:5)" }, { "value": "1 / 1", "label": "Cuadrado (1:1)" } ]
-    },
-    {
       "type": "range", "id": "ancho_movil", "label": "Ancho de cada video en celular",
       "min": 30, "max": 70, "step": 2, "unit": "%", "default": 40,
       "info": "Con 40% se ven 2 videos y medio: así el cliente entiende que puede deslizar. En computador cada video mide 270 px."
@@ -507,7 +501,6 @@
       "settings": [
         { "type": "video", "id": "video", "label": "Video (de tus archivos de Shopify)" },
         { "type": "url", "id": "video_url", "label": "O enlace directo a un .mp4 (opcional)" },
-        { "type": "image_picker", "id": "imagen", "label": "O una imagen (si no tienes video)" },
         { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre el video (opcional)" }
       ]
     }
