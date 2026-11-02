@@ -85,6 +85,7 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 1. `node tools/espacios-imagenes.mjs preview/paginas/X.json imagenes-ia/X-espacios.json` lista cada espacio de imagen de la página (sección, bloque, formato y píxeles).
 2. En `imagenes-ia/X-prompts.json` va la ficha visual de la landing y un prompt por espacio.
 3. `node tools/build-kit-imagenes.mjs imagenes-ia/X-espacios.json imagenes-ia/X-prompts.json kit.html` arma el prompt final de cada espacio (`imagenes-ia/X-final.json`) y la página de revisión, y avisa si algún espacio quedó sin prompt.
+4. Las personas salen del banco de avatares (`avatares/banco.json`): cada avatar tiene 4 fotos de referencia (frente, tres cuartos, medio cuerpo y cuerpo entero) que se adjuntan en cada imagen donde aparece. La landing elige su avatar con `"avatar"` en su archivo de prompts; sin fotos aprobadas, esas imágenes no se generan.
 
 ## Para desarrollo
 

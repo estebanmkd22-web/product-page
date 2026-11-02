@@ -1,0 +1,29 @@
+{
+  "_nota": "Banco de avatares: personajes fijos con fotos de referencia. Cada prompt con persona adjunta estas fotos para que siempre salga la misma persona.",
+  "avatares": {
+    "co-mama-01": {
+      "nombre": "Marta",
+      "mercado": "Colombia",
+      "perfil": "Mamá cabeza de hogar, 35 a 50 años, estrato 1 a 3, cocina para la familia todos los días.",
+      "descripcion": "Mujer colombiana de unos 42 años, piel morena clara, cabello oscuro ondulado recogido en moño bajo, contextura media, sonrisa cálida, ropa de casa sencilla (blusa de algodón de colores suaves, delantal opcional), maquillaje natural.",
+      "descripcion_en": "Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.",
+      "usos": [
+        "estufa"
+      ],
+      "estado": "pendiente",
+      "referencias": {
+        "frente": "",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      }
+    }
+  },
+  "prompt_referencias_en": "Character reference photo of {descripcion_en} {toma}. Plain light-grey studio background, soft even daylight, photorealistic, sharp focus on the face, natural skin texture, no text, no logos.",
+  "tomas_en": {
+    "frente": "front-facing head-and-shoulders portrait, neutral friendly expression, looking at the camera",
+    "tres_cuartos": "three-quarter view head-and-shoulders portrait, slight smile",
+    "medio_cuerpo": "waist-up shot, arms relaxed, natural pose",
+    "cuerpo_entero": "full-body shot standing, relaxed natural pose, simple flat shoes"
+  }
+}

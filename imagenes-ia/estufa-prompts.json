@@ -3,7 +3,7 @@
   "referencia_producto": "Foto real de la estufa Sokany (negra, 3 quemadores, tapa acanalada). Se adjunta en cada imagen donde aparece la estufa.",
   "ficha": {
     "producto": "Estufa de mesa negra de 3 quemadores: 2 grandes a los lados y 1 pequeño en el centro, 3 perillas al frente y tapa negra acanalada que se levanta. Debe verse idéntica a la foto real, sin quemadores ni perillas de más.",
-    "persona": "La misma mujer en todas las fotos: colombiana de 35 a 50 años, morena clara, cabello oscuro recogido, ropa de casa sencilla (blusa de algodón, delantal opcional), maquillaje natural. Real, no modelo de revista.",
+    "persona": "Avatar del banco: Marta (co-mama-01). Se adjuntan sus fotos de referencia en cada imagen donde aparece.",
     "escenario": "Cocina pequeña de apartamento colombiano estrato 2 o 3: mesón de granito o baldosa, pared con baldosa blanca, ventana pequeña, calderos y ollas de aluminio, utensilios de uso diario. Ordenada pero vivida.",
     "comida": "Almuerzo colombiano de diario: arroz blanco, sopa (sancocho o de verduras), principio (fríjoles o lentejas), pollo o carne.",
     "luz": "Luz natural cálida de mediodía entrando por la ventana. Foto realista tipo celular de buena calidad, no de estudio.",
@@ -12,123 +12,146 @@
   },
   "estilo_en": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look.",
   "producto_en": "The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color.",
-  "persona_en": "The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model.",
   "reglas_en": "No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers.",
   "espacios": {
     "hero-oferta.imagen_1": {
       "que": "La principal: la estufa con los 3 puestos cocinando a la vez (arroz, sopa y principio) y la mamá sirviendo al fondo, desenfocada. Es el hero: deseo + promesa.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "Hero product shot. The stove sits on the kitchen countertop with all three burners lit at the same time: a small aluminium caldero of white rice on the small center burner, a pot of steaming soup on one large burner and a pan of beans on the other. Steam rising, blue flames visible. The woman stands slightly behind, out of focus, ladling soup into a plate, smiling calmly. The stove is the sharp focal point, front three-quarter angle, filling most of the frame."
     },
     "hero-oferta.imagen_2": {
       "que": "La estufa apagada con la tapa cerrada sobre un mesón ordenado: «se ve fina incluso apagada».",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "The stove switched off with its black ribbed lid closed, sitting on a clean, tidy countertop next to a small fruit bowl and a wooden cutting board. Calm, orderly, elegant kitchen corner. Eye-level front view, stove centered."
     },
     "hero-oferta.imagen_3": {
       "que": "Primer plano de las llamas azules de los 3 quemadores, con la tapa levantada. Muestra potencia.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "Close-up of the stove with the lid raised and the three burners lit with strong, even blue flames, no pots on top. Slightly high angle so all three burners and the front knobs are visible. Dark, moody background of the kitchen softly blurred to make the flames glow."
     },
     "hero-oferta.imagen_4": {
       "que": "Las manos de la mamá sacando la parrilla superior para lavarla en el lavaplatos: limpieza fácil.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "The woman's hands lifting the top grate off the stove and carrying it to the kitchen sink, where a sponge and soapy water are waiting. The stove is visible next to the sink with its burners exposed and easy to wipe. Natural, everyday moment, medium close-up."
     },
     "hero-oferta.imagen_5": {
       "que": "El almuerzo completo servido en la mesa familiar, con la estufa al fondo: el resultado.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "A simple family dining table set for lunch: plates with white rice, beans, chicken and a bowl of soup for each person, a jug of juice. The woman places the last plate on the table, two family members already seated and happy. In the background, slightly blurred, the stove on the countertop with its pots. Warm, homey atmosphere."
     },
     "hero-oferta.imagen_6": {
       "que": "Vista amplia de una cocina pequeña con la estufa en el mesón: muestra el tamaño y que cabe en cualquier apartamento.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "Wide shot of a small, narrow apartment kitchen showing the stove placed on the countertop, with space to spare around it. Shows the real scale of the stove relative to the countertop, sink and upper cabinets. Clean and bright, straight-on view."
     },
     "grid-dolores.item1": {
       "que": "Dolor «cocinas por turnos»: una estufa vieja de un puesto con una olla y las demás esperando en el mesón; la mamá cansada esperando.",
-      "producto": false, "persona": true,
+      "producto": false,
+      "persona": true,
       "prompt": "An old, worn single-burner gas stove with one pot cooking, while two other pots (rice and soup ingredients) wait uncooked on the countertop. The woman leans on the counter with arms crossed, tired and impatient, looking at the pot. Slightly desaturated, frustrating mood. Do not show the new stove."
     },
     "grid-dolores.item2": {
       "que": "Dolor «el almuerzo sale tarde»: la familia sentada esperando con platos vacíos y el reloj pasado de la una.",
-      "producto": false, "persona": true,
+      "producto": false,
+      "persona": true,
       "prompt": "A family of three seated at a dining table with empty plates, looking bored and hungry, one child resting the head on the hand. A wall clock shows ten past one. In the background the woman is still busy at an old stove. Slightly cool, impatient mood. Do not show the new stove."
     },
     "grid-dolores.item3": {
       "que": "Dolor «algo se enfría»: el arroz ya servido y frío (sin vapor) mientras la sopa apenas empieza a hervir.",
-      "producto": false, "persona": false,
+      "producto": false,
+      "persona": false,
       "prompt": "Close-up of a plate of white rice already served on the counter, clearly cold with no steam, while behind it a pot of soup is only just starting to boil on an old stove. Contrast between the cold plate in front and the pot still cooking. Do not show the new stove."
     },
     "grid-dolores.item4": {
       "que": "Dolor «la de piso no cabe»: una estufa de piso grande que ocupa toda una cocina estrecha y no deja moverse.",
-      "producto": false, "persona": true,
+      "producto": false,
+      "persona": true,
       "prompt": "A very narrow apartment kitchen where a large white four-burner floor-standing stove with oven takes up almost all the space; the open oven door nearly hits the opposite cabinet. The woman squeezes sideways to get past, annoyed. Cramped feeling. Do not show the new stove."
     },
     "galeria-ideas.idea1": {
       "que": "Cocinas pequeñas: la estufa en el mesón de una cocina de apartamento pequeña. Lleva texto encima en la parte de abajo.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "The stove on the countertop of a compact apartment kitchen, cooking a pot of soup, with the window and a small plant in view. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition, stove in the upper-center."
     },
     "galeria-ideas.idea2": {
       "que": "Si vives en arriendo: mudanza, cajas de trasteo y la mamá poniendo la estufa en el mesón de la nueva cocina. Lleva texto abajo.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "Moving day in a rented apartment: cardboard moving boxes on the floor, and the woman placing the stove on the countertop of her new kitchen, smiling and relieved. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition."
     },
     "galeria-ideas.idea3": {
       "que": "Almuerzo para todos: vista desde arriba de los 3 puestos con ollas humeando. Lleva texto abajo.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "Top-down view of the stove with all three burners in use: rice on the small center burner, soup and beans on the large ones, steam rising from each pot. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition."
     },
     "galeria-ideas.idea4": {
       "que": "Cocina ordenada: la estufa con la tapa cerrada sobre un mesón limpio. Lleva texto abajo.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "The stove with its black ribbed lid closed on a spotless countertop, with a fruit bowl and a small coffee maker beside it; an orderly, pleasant kitchen in the afternoon. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition."
     },
     "problemas-filas.fila1": {
       "que": "Quemador grande con llama fuerte y una olla de sopa hirviendo.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "Close-up of one of the large side burners of the stove with a strong blue flame under a big aluminium pot of boiling soup, steam rising. Subject centered so it can be cropped square."
     },
     "problemas-filas.fila2": {
       "que": "Quemador pequeño del centro con llama baja y el caldero de arroz.",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "Close-up of the small center burner of the stove with a gentle low blue flame under a small aluminium caldero of rice with the lid slightly open. Subject centered so it can be cropped square."
     },
     "problemas-filas.fila3": {
       "que": "Una mano bajando la tapa acanalada sobre los quemadores.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "The woman's hand lowering the black ribbed lid over the burners of the stove, mid-motion, the stove clean and switched off. Subject centered so it can be cropped square."
     },
     "problemas-filas.fila4": {
       "que": "La parrilla dentro del lavaplatos con esponja y espuma.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "The stove's black top grate being washed in the kitchen sink with a sponge and soap foam, the woman's hands scrubbing it. Subject centered so it can be cropped square."
     },
     "pasos.paso1": {
       "que": "Paso 1: manos poniendo la estufa sobre el mesón.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "The woman's hands placing the stove onto a clean kitchen countertop, simple and easy. Clear, instructional framing, stove centered."
     },
     "pasos.paso2": {
       "que": "Paso 2: la manguera de gas conectada de la llave de la pared a la estufa.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "The woman's hands connecting a flexible gas hose from the wall gas valve to the back of the stove, tightening it calmly. Clear, instructional framing showing the valve, hose and stove."
     },
     "pasos.paso3": {
       "que": "Paso 3: mano girando una perilla y los 3 quemadores encendidos.",
-      "producto": true, "persona": true,
+      "producto": true,
+      "persona": true,
       "prompt": "The woman's hand turning one of the front knobs of the stove, with the three burners lit with blue flames. Clear, instructional framing, stove centered."
     },
     "comparativa.imagen_a": {
       "que": "Columna «Nuestra estufa»: la estufa sola, de frente, sobre fondo blanco (después se le quita el fondo).",
-      "producto": true, "persona": false,
+      "producto": true,
+      "persona": false,
       "prompt": "Product cut-out shot of the stove alone, front view with the lid raised, on a plain pure white background, soft even light, no props, no shadow clutter."
     },
     "comparativa.imagen_b": {
       "que": "Columna «Estufa de piso»: una estufa de piso genérica de 4 puestos con horno, sobre fondo blanco.",
-      "producto": false, "persona": false,
+      "producto": false,
+      "persona": false,
       "prompt": "Product cut-out shot of a generic white four-burner floor-standing gas stove with oven, front view, on a plain pure white background, soft even light, no brand logos, no props."
     }
-  }
+  },
+  "avatar": "co-mama-01"
 }

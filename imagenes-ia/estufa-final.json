@@ -5,7 +5,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. Hero product shot. The stove sits on the kitchen countertop with all three burners lit at the same time: a small aluminium caldero of white rice on the small center burner, a pot of steaming soup on one large burner and a pan of beans on the other. Steam rising, blue flames visible. The woman stands slightly behind, out of focus, ladling soup into a plate, smiling calmly. The stove is the sharp focal point, front three-quarter angle, filling most of the frame. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. Hero product shot. The stove sits on the kitchen countertop with all three burners lit at the same time: a small aluminium caldero of white rice on the small center burner, a pot of steaming soup on one large burner and a pan of beans on the other. Steam rising, blue flames visible. The woman stands slightly behind, out of focus, ladling soup into a plate, smiling calmly. The stove is the sharp focal point, front three-quarter angle, filling most of the frame. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 2,
@@ -13,6 +15,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The stove switched off with its black ribbed lid closed, sitting on a clean, tidy countertop next to a small fruit bowl and a wooden cutting board. Calm, orderly, elegant kitchen corner. Eye-level front view, stove centered. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -21,6 +25,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. Close-up of the stove with the lid raised and the three burners lit with strong, even blue flames, no pots on top. Slightly high angle so all three burners and the front knobs are visible. Dark, moody background of the kitchen softly blurred to make the flames glow. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -29,7 +35,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. The woman's hands lifting the top grate off the stove and carrying it to the kitchen sink, where a sponge and soapy water are waiting. The stove is visible next to the sink with its burners exposed and easy to wipe. Natural, everyday moment, medium close-up. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. The woman's hands lifting the top grate off the stove and carrying it to the kitchen sink, where a sponge and soapy water are waiting. The stove is visible next to the sink with its burners exposed and easy to wipe. Natural, everyday moment, medium close-up. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 5,
@@ -37,7 +45,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. A simple family dining table set for lunch: plates with white rice, beans, chicken and a bowl of soup for each person, a jug of juice. The woman places the last plate on the table, two family members already seated and happy. In the background, slightly blurred, the stove on the countertop with its pots. Warm, homey atmosphere. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. A simple family dining table set for lunch: plates with white rice, beans, chicken and a bowl of soup for each person, a jug of juice. The woman places the last plate on the table, two family members already seated and happy. In the background, slightly blurred, the stove on the countertop with its pots. Warm, homey atmosphere. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 6,
@@ -45,6 +55,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. Wide shot of a small, narrow apartment kitchen showing the stove placed on the countertop, with space to spare around it. Shows the real scale of the stove relative to the countertop, sink and upper cabinets. Clean and bright, straight-on view. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -53,7 +65,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": false,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. An old, worn single-burner gas stove with one pot cooking, while two other pots (rice and soup ingredients) wait uncooked on the countertop. The woman leans on the counter with arms crossed, tired and impatient, looking at the pot. Slightly desaturated, frustrating mood. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. An old, worn single-burner gas stove with one pot cooking, while two other pots (rice and soup ingredients) wait uncooked on the countertop. The woman leans on the counter with arms crossed, tired and impatient, looking at the pot. Slightly desaturated, frustrating mood. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 8,
@@ -61,7 +75,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": false,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. A family of three seated at a dining table with empty plates, looking bored and hungry, one child resting the head on the hand. A wall clock shows ten past one. In the background the woman is still busy at an old stove. Slightly cool, impatient mood. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. A family of three seated at a dining table with empty plates, looking bored and hungry, one child resting the head on the hand. A wall clock shows ten past one. In the background the woman is still busy at an old stove. Slightly cool, impatient mood. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 9,
@@ -69,6 +85,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. Close-up of a plate of white rice already served on the counter, clearly cold with no steam, while behind it a pot of soup is only just starting to boil on an old stove. Contrast between the cold plate in front and the pot still cooking. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -77,7 +95,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": false,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. A very narrow apartment kitchen where a large white four-burner floor-standing stove with oven takes up almost all the space; the open oven door nearly hits the opposite cabinet. The woman squeezes sideways to get past, annoyed. Cramped feeling. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. A very narrow apartment kitchen where a large white four-burner floor-standing stove with oven takes up almost all the space; the open oven door nearly hits the opposite cabinet. The woman squeezes sideways to get past, annoyed. Cramped feeling. Do not show the new stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 11,
@@ -85,6 +105,8 @@
     "proporcion": "4 / 3",
     "pixeles": "1200 × 900",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The stove on the countertop of a compact apartment kitchen, cooking a pot of soup, with the window and a small plant in view. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition, stove in the upper-center. Aspect ratio 4/3. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -93,7 +115,9 @@
     "proporcion": "4 / 3",
     "pixeles": "1200 × 900",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. Moving day in a rented apartment: cardboard moving boxes on the floor, and the woman placing the stove on the countertop of her new kitchen, smiling and relieved. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition. Aspect ratio 4/3. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. Moving day in a rented apartment: cardboard moving boxes on the floor, and the woman placing the stove on the countertop of her new kitchen, smiling and relieved. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition. Aspect ratio 4/3. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 13,
@@ -101,6 +125,8 @@
     "proporcion": "4 / 3",
     "pixeles": "1200 × 900",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. Top-down view of the stove with all three burners in use: rice on the small center burner, soup and beans on the large ones, steam rising from each pot. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition. Aspect ratio 4/3. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -109,6 +135,8 @@
     "proporcion": "4 / 3",
     "pixeles": "1200 × 900",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The stove with its black ribbed lid closed on a spotless countertop, with a fruit bowl and a small coffee maker beside it; an orderly, pleasant kitchen in the afternoon. Keep the lower third of the image simple and slightly darker because text will be placed over it. Landscape composition. Aspect ratio 4/3. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -117,6 +145,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. Close-up of one of the large side burners of the stove with a strong blue flame under a big aluminium pot of boiling soup, steam rising. Subject centered so it can be cropped square. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -125,6 +155,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. Close-up of the small center burner of the stove with a gentle low blue flame under a small aluminium caldero of rice with the lid slightly open. Subject centered so it can be cropped square. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -133,7 +165,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. The woman's hand lowering the black ribbed lid over the burners of the stove, mid-motion, the stove clean and switched off. Subject centered so it can be cropped square. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. The woman's hand lowering the black ribbed lid over the burners of the stove, mid-motion, the stove clean and switched off. Subject centered so it can be cropped square. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 18,
@@ -141,7 +175,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. The stove's black top grate being washed in the kitchen sink with a sponge and soap foam, the woman's hands scrubbing it. Subject centered so it can be cropped square. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. The stove's black top grate being washed in the kitchen sink with a sponge and soap foam, the woman's hands scrubbing it. Subject centered so it can be cropped square. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 19,
@@ -149,7 +185,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. The woman's hands placing the stove onto a clean kitchen countertop, simple and easy. Clear, instructional framing, stove centered. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. The woman's hands placing the stove onto a clean kitchen countertop, simple and easy. Clear, instructional framing, stove centered. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 20,
@@ -157,7 +195,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. The woman's hands connecting a flexible gas hose from the wall gas valve to the back of the stove, tightening it calmly. Clear, instructional framing showing the valve, hose and stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. The woman's hands connecting a flexible gas hose from the wall gas valve to the back of the stove, tightening it calmly. Clear, instructional framing showing the valve, hose and stove. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 21,
@@ -165,7 +205,9 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
-    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The same woman in every image: Colombian, 35 to 50 years old, light-brown skin, dark hair tied back, simple homewear (cotton blouse, optional apron), natural makeup, relatable, not a fashion model. The woman's hand turning one of the front knobs of the stove, with the three burners lit with blue flames. Clear, instructional framing, stove centered. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
+    "avatar": "co-mama-01",
+    "referencias_avatar": [],
+    "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. The woman must be exactly the same person as in the attached character reference photos (Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.) — same face, skin tone, hair and build. The woman's hand turning one of the front knobs of the stove, with the three burners lit with blue flames. Clear, instructional framing, stove centered. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
     "n": 22,
@@ -173,6 +215,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. The stove must look exactly like the attached reference photo: black tabletop gas stove with 3 burners (two large on the sides, one small in the center), 3 front knobs and a black ribbed lid that lifts up. Do not add or remove burners or knobs, do not change its shape or color. Product cut-out shot of the stove alone, front view with the lid raised, on a plain pure white background, soft even light, no props, no shadow clutter. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   },
   {
@@ -181,6 +225,8 @@
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
     "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
     "prompt": "Photorealistic smartphone-style photo, natural warm midday window light, small Colombian apartment kitchen (granite or tiled countertop, white wall tiles, aluminium pots), warm palette of wood, terracotta and white. Real people, no studio look. Product cut-out shot of a generic white four-burner floor-standing gas stove with oven, front view, on a plain pure white background, soft even light, no brand logos, no props. Aspect ratio 1/1. No text, no captions, no signs, no third-party logos. No electric or induction stoves. Natural hands and fingers."
   }
 ]
