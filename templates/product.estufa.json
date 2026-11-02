@@ -1,0 +1,752 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#c2562b",
+        "texto": "#2a2624",
+        "texto_2": "#6f6560",
+        "fondo": "#faf6f1",
+        "fondo_2": "#f2e9df",
+        "boton": "#c2562b",
+        "boton_texto": "#ffffff",
+        "estrella": "#e0a030",
+        "ok": "#4f8a5b",
+        "radio": 18
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "settings": {
+        "fondo": "#2a2624",
+        "texto": "#ffffff",
+        "separador": "✦"
+      },
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Colombia"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía 60 días"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "3 puestos a gas natural"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4"
+      ]
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#faf6f1",
+        "mostrar_oferta": false,
+        "mostrar_rating": false,
+        "tamano_titulo": 27,
+        "titulo": "Cocina el almuerzo completo a la vez, <em>sin pagar una estufa de piso.</em>",
+        "texto": "Deja de cocinar por turnos: la recibes, la conectas y la pagas cuando te llega.",
+        "zonas_titulo": "Al mismo tiempo",
+        "zonas": "Arroz, Principio, Sopa",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>3 puestos al mismo tiempo:</strong> 2 quemadores de alto rendimiento y 1 pequeño para arroz, principio y sopa."
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Funciona con tu gas natural:</strong> 5.5 kW de potencia total, conéctala y empieza a cocinar."
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Se ve fina incluso apagada:</strong> la cubierta desmontable tapa los quemadores y deja tu cocina ordenada."
+          }
+        },
+        "beneficio_4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Limpieza fácil:</strong> la parrilla superior se saca y se lava aparte."
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3",
+        "beneficio_4"
+      ]
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "espacio": 8,
+        "titulo": ""
+      },
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "check",
+            "texto": "3 puestos"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "brillo",
+            "texto": "5.5 kW de potencia"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ]
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#c2562b",
+        "color_pestana": "#c2562b",
+        "titulo": "Tu cocina completa, <em>en una sola compra</em>",
+        "boton_texto": "La quiero — Pago en casa",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío gratis a toda Colombia",
+        "mostrar_ahorro": true,
+        "incluye_titulo": "Todo esto viene con tu estufa"
+      },
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "Oferta única",
+            "destacar": "Precio de lanzamiento",
+            "etiqueta": "Para cocinar en familia todos los días",
+            "titulo": "Estufa 3 puestos a gas",
+            "linea_regalo": "🎁 Cubierta incluida",
+            "detalle": "3 puestos · 5.5 kW",
+            "precio": 149900,
+            "precio_antes": 219900,
+            "cantidad": 1,
+            "preseleccionado": true
+          }
+        },
+        "regalo_2": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagas al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluida",
+            "icono": "casa",
+            "titulo": "Cubierta desmontable",
+            "texto": "Tapa los quemadores"
+          }
+        },
+        "regalo_5": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "regalo_2",
+        "regalo_3",
+        "regalo_4",
+        "regalo_5"
+      ]
+    },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Mírala <em>en tu cocina</em>",
+        "texto": "Así enciende y así cocina."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Los 3 puestos"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "La cubierta"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "En el día a día"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ]
+    },
+    "grid_dolores": {
+      "type": "pp-grid-dolores",
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "Lo que te pasa hoy",
+        "titulo": "Cocinar por turnos <em>te roba el mediodía</em>",
+        "texto": "Cuando la estufa ya no da, todo se demora y algo siempre se enfría.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "No necesitas una estufa de piso. <em>Necesitas tres puestos que sí te den.</em>",
+        "cierre_estilo": "texto"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "titulo": "Cocinas por turnos",
+            "texto": "Primero el arroz, después la sopa, al final el principio."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "titulo": "El almuerzo sale tarde",
+            "texto": "Todos esperando y tú todavía en la estufa."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "titulo": "Algo se enfría",
+            "texto": "Lo primero que hiciste ya no está caliente cuando sirves."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "titulo": "La de piso no cabe",
+            "texto": "Ni en la cocina ni en el presupuesto."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "galeria_ideas": {
+      "type": "pp-galeria-ideas",
+      "settings": {
+        "color_fondo": "#f2e9df",
+        "color_texto": "#2a2624",
+        "color_acento": "#c2562b",
+        "nieve": false,
+        "etiqueta": "Para tu espacio",
+        "titulo": "Hecha para cocinas <em>de verdad</em>",
+        "texto": "Va sobre el mesón y no necesita instalación de estufa de piso.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "3"
+      },
+      "blocks": {
+        "idea_1": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Apartamento",
+            "titulo": "Cocinas pequeñas",
+            "texto": "Tres puestos sin ocupar el espacio de una estufa de piso."
+          }
+        },
+        "idea_2": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Arriendo",
+            "titulo": "Si vives en arriendo",
+            "texto": "Si te mudas, te la llevas: la desconectas y listo."
+          }
+        },
+        "idea_3": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Familia",
+            "titulo": "Almuerzo para todos",
+            "texto": "Arroz, principio y sopa listos al mismo tiempo."
+          }
+        },
+        "idea_4": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Orden",
+            "titulo": "Cocina ordenada",
+            "texto": "Con la cubierta puesta, se ve fina incluso apagada."
+          }
+        }
+      },
+      "block_order": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4"
+      ]
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#faf6f1",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#c2562b",
+        "color_dorado": "#e08a5c",
+        "color_texto": "#2a2624",
+        "adorno": false,
+        "titulo": "Pensada para",
+        "titulo_dorado": "cómo cocinas tú",
+        "titulo_fin": "",
+        "cierre": ""
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "rayo",
+            "titulo": "2 quemadores de alto rendimiento",
+            "puntos": "Para lo que necesita fuego fuerte: el seco, la sopa, la carne."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "1 quemador pequeño",
+            "puntos": "Para lo que va a fuego bajo, como el arroz o calentar."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "casa",
+            "titulo": "Cubierta desmontable",
+            "puntos": "Tapa los quemadores cuando no cocinas y deja tu cocina ordenada."
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Parrilla que se saca",
+            "puntos": "Se lava aparte, sin pelear con la grasa entre los quemadores."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4"
+      ]
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo-2",
+        "titulo": "Lista en <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ponla en el mesón",
+            "texto": "Escoge el lugar donde vas a cocinar."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conéctala al gas natural",
+            "texto": "A tu punto de gas, como una estufa normal."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Enciende y cocina",
+            "texto": "Los tres puestos, al mismo tiempo."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ]
+    },
+    "esperar": {
+      "type": "pp-esperar",
+      "settings": {
+        "fondo": "fondo",
+        "color_acento": "#c2562b",
+        "color_icono": "#e08a5c",
+        "etiqueta": "Tu pedido",
+        "titulo": "Qué pasa <em>después de pedirla</em>",
+        "texto": "Sin pagar nada por adelantado, de principio a fin."
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "Hoy",
+            "texto": "Haces tu pedido en un minuto, sin tarjeta y sin pagar nada."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Mismo día",
+            "texto": "Te escribimos por WhatsApp para confirmar tus datos y tu dirección."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "En pocos días",
+            "texto": "La estufa llega a tu casa con envío gratis."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Al recibir",
+            "texto": "La revisas y pagas en ese momento."
+          }
+        },
+        "etapa_5": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Ese mismo día",
+            "texto": "La conectas y cocinas el almuerzo completo a la vez."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4",
+        "etapa_5"
+      ]
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "Tres puestos vs. <em>una estufa de piso</em>",
+        "texto": "Lo que de verdad necesitas para cocinar todos los días.",
+        "color_destacado": "#c2562b",
+        "nombre_a": "Nuestra estufa",
+        "sub_a": "3 puestos",
+        "nombre_b": "Estufa de piso",
+        "sub_b": "Lo tradicional",
+        "pie_izq": "Nuestra estufa",
+        "pie_der": "Cocina completa, sin pagar de más"
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Precio",
+            "subtitulo": "Lo que pagas",
+            "ok_a": true,
+            "valor_a": "$149.900",
+            "ok_b": false,
+            "valor_b": "Mucho más"
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Espacio",
+            "subtitulo": "En tu cocina",
+            "ok_a": true,
+            "valor_a": "Va en el mesón",
+            "ok_b": false,
+            "valor_b": "Ocupa piso"
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Si te mudas",
+            "subtitulo": "Arriendo",
+            "ok_a": true,
+            "valor_a": "Te la llevas fácil",
+            "ok_b": false,
+            "valor_b": "Pesada de mover"
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Almuerzo a la vez",
+            "subtitulo": "Arroz, principio y sopa",
+            "ok_a": true,
+            "valor_a": "3 puestos",
+            "ok_b": true,
+            "valor_b": "Sí"
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4"
+      ]
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "settings": {
+        "etiqueta": "Opiniones",
+        "titulo": "“Ahora el almuerzo <em>sale a tiempo.</em>”",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 3
+      },
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Ya no cocino por turnos",
+            "texto": "Con la vieja hacía una cosa a la vez. Ahora pongo el arroz, la sopa y el principio juntos.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Bogotá",
+            "verificado": false
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Se ve muy fina",
+            "texto": "Con la tapa puesta la cocina se ve ordenada. Me gustó más de lo que esperaba.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Medellín",
+            "verificado": false
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pagué al recibir",
+            "texto": "Me daba desconfianza comprar por internet, pero me la entregaron y pagué ahí mismo.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Cali",
+            "verificado": false
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3"
+      ]
+    },
+    "faq": {
+      "type": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo-2",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Marta de Bogotá pregunta: ¿sirve con pipeta?",
+            "respuesta": "<p>Viene para <strong>gas natural</strong>. Si en tu casa usas pipeta, escríbenos por WhatsApp antes de pedirla y te asesoramos.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Luz de Medellín pregunta: ¿tres puestos sí me alcanzan?",
+            "respuesta": "<p>Sí. Tiene <strong>2 quemadores de alto rendimiento y 1 pequeño</strong>: puedes tener el arroz, el principio y la sopa al mismo tiempo, con 5.5 kW de potencia total.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sandra de Cali pregunta: ¿cómo se limpia?",
+            "respuesta": "<p>La parrilla superior se saca y se lava aparte. La cubierta tapa los quemadores cuando no la usas, así se ensucia menos.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Gloria de Barranquilla pregunta: ¿tengo que pagar por adelantado?",
+            "respuesta": "<p>No. <strong>Pagas cuando la recibes</strong> en tu casa. Antes te escribimos por WhatsApp para confirmar tu pedido.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Patricia de Bucaramanga pregunta: ¿y si llega con algún daño?",
+            "respuesta": "<p>Tiene <strong>garantía de 60 días por daños de fábrica</strong>. Nos escribes por WhatsApp y te ayudamos.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Claudia de Pereira pregunta: ¿cuánto cuesta el envío?",
+            "respuesta": "<p>El envío es <strong>gratis a toda Colombia</strong>. Al confirmar tu pedido te decimos el tiempo de entrega para tu ciudad.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6"
+      ]
+    },
+    "garantia": {
+      "type": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#2a2624",
+        "color_texto": "#ffffff",
+        "color_sello": "#c2562b",
+        "sello_arriba": "Garantía",
+        "sello_numero": "60",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra sin riesgo",
+        "titulo": "Si llega con un daño de fábrica, te respondemos",
+        "texto": "60 días de garantía por daños de fábrica. Envío gratis y pagas al recibir."
+      },
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 60 días por daños de fábrica"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ]
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "La quiero",
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "precio_manual": 149900
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "iconos",
+    "oferta_tabs",
+    "videos",
+    "grid_dolores",
+    "galeria_ideas",
+    "problemas_filas",
+    "pasos",
+    "esperar",
+    "comparativa",
+    "resenas",
+    "faq",
+    "garantia",
+    "boton_fijo"
+  ]
+}
