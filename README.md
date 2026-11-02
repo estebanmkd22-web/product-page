@@ -80,6 +80,12 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 - Hero: cuadrada **1:1** o vertical **4:5**, la misma proporción en todas.
 - Nada de capturas de pantalla en PNG: exporta la foto original.
 
+## Kit de imágenes con IA
+
+1. `node tools/espacios-imagenes.mjs preview/paginas/X.json imagenes-ia/X-espacios.json` lista cada espacio de imagen de la página (sección, bloque, formato y píxeles).
+2. En `imagenes-ia/X-prompts.json` va la ficha visual de la landing y un prompt por espacio.
+3. `node tools/build-kit-imagenes.mjs imagenes-ia/X-espacios.json imagenes-ia/X-prompts.json kit.html` arma el prompt final de cada espacio (`imagenes-ia/X-final.json`) y la página de revisión, y avisa si algún espacio quedó sin prompt.
+
 ## Para desarrollo
 
 Los estilos compartidos viven en `src/pp-base.css` y los íconos en `src/pp-iconos.liquid`.

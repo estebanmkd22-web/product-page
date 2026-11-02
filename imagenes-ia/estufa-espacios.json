@@ -1,0 +1,247 @@
+[
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocina el almuerzo completo a la vez, sin pagar una estufa de piso.",
+    "id": "hero-oferta.imagen_1",
+    "donde": "Imagen 1 (la principal)",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocina el almuerzo completo a la vez, sin pagar una estufa de piso.",
+    "id": "hero-oferta.imagen_2",
+    "donde": "Imagen 2",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocina el almuerzo completo a la vez, sin pagar una estufa de piso.",
+    "id": "hero-oferta.imagen_3",
+    "donde": "Imagen 3",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocina el almuerzo completo a la vez, sin pagar una estufa de piso.",
+    "id": "hero-oferta.imagen_4",
+    "donde": "Imagen 4",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocina el almuerzo completo a la vez, sin pagar una estufa de piso.",
+    "id": "hero-oferta.imagen_5",
+    "donde": "Imagen 5",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocina el almuerzo completo a la vez, sin pagar una estufa de piso.",
+    "id": "hero-oferta.imagen_6",
+    "donde": "Imagen 6",
+    "n": 6
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocinar por turnos te roba el mediodía",
+    "id": "grid-dolores.item1",
+    "donde": "Tarjeta 1 · Cocinas por turnos",
+    "contexto": "Cocinas por turnos — Primero el arroz, después la sopa, al final el principio.",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocinar por turnos te roba el mediodía",
+    "id": "grid-dolores.item2",
+    "donde": "Tarjeta 2 · El almuerzo sale tarde",
+    "contexto": "El almuerzo sale tarde — Todos esperando y tú todavía en la estufa.",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocinar por turnos te roba el mediodía",
+    "id": "grid-dolores.item3",
+    "donde": "Tarjeta 3 · Algo se enfría",
+    "contexto": "Algo se enfría — Lo primero que hiciste ya no está caliente cuando sirves.",
+    "n": 9
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cocinar por turnos te roba el mediodía",
+    "id": "grid-dolores.item4",
+    "donde": "Tarjeta 4 · La de piso no cabe",
+    "contexto": "La de piso no cabe — Ni en la cocina ni en el presupuesto.",
+    "n": 10
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Hecha para cocinas de verdad",
+    "id": "galeria-ideas.idea1",
+    "donde": "Tarjeta 1 · Cocinas pequeñas",
+    "contexto": "Cocinas pequeñas — Tres puestos sin ocupar el espacio de una estufa de piso.",
+    "n": 11
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Hecha para cocinas de verdad",
+    "id": "galeria-ideas.idea2",
+    "donde": "Tarjeta 2 · Si vives en arriendo",
+    "contexto": "Si vives en arriendo — Si te mudas, te la llevas: la desconectas y listo.",
+    "n": 12
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Hecha para cocinas de verdad",
+    "id": "galeria-ideas.idea3",
+    "donde": "Tarjeta 3 · Almuerzo para todos",
+    "contexto": "Almuerzo para todos — Arroz, principio y sopa listos al mismo tiempo.",
+    "n": 13
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Hecha para cocinas de verdad",
+    "id": "galeria-ideas.idea4",
+    "donde": "Tarjeta 4 · Cocina ordenada",
+    "contexto": "Cocina ordenada — Con la cubierta puesta, se ve fina incluso apagada.",
+    "n": 14
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensada para",
+    "id": "problemas-filas.fila1",
+    "donde": "Fila 1 · 2 quemadores de alto rendimiento",
+    "contexto": "2 quemadores de alto rendimiento — Para lo que necesita fuego fuerte: el seco, la sopa, la carne.",
+    "n": 15
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensada para",
+    "id": "problemas-filas.fila2",
+    "donde": "Fila 2 · 1 quemador pequeño",
+    "contexto": "1 quemador pequeño — Para lo que va a fuego bajo, como el arroz o calentar.",
+    "n": 16
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensada para",
+    "id": "problemas-filas.fila3",
+    "donde": "Fila 3 · Cubierta desmontable",
+    "contexto": "Cubierta desmontable — Tapa los quemadores cuando no cocinas y deja tu cocina ordenada.",
+    "n": 17
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensada para",
+    "id": "problemas-filas.fila4",
+    "donde": "Fila 4 · Parrilla que se saca",
+    "contexto": "Parrilla que se saca — Se lava aparte, sin pelear con la grasa entre los quemadores.",
+    "n": 18
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lista en 3 pasos",
+    "id": "pasos.paso1",
+    "donde": "Paso 1 · Ponla en el mesón",
+    "contexto": "Ponla en el mesón — Escoge el lugar donde vas a cocinar.",
+    "n": 19
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lista en 3 pasos",
+    "id": "pasos.paso2",
+    "donde": "Paso 2 · Conéctala al gas natural",
+    "contexto": "Conéctala al gas natural — A tu punto de gas, como una estufa normal.",
+    "n": 20
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lista en 3 pasos",
+    "id": "pasos.paso3",
+    "donde": "Paso 3 · Enciende y cocina",
+    "contexto": "Enciende y cocina — Los tres puestos, al mismo tiempo.",
+    "n": 21
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Tres puestos vs. una estufa de piso",
+    "id": "comparativa.imagen_a",
+    "donde": "Imagen (fondo transparente ideal)",
+    "n": 22
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Tres puestos vs. una estufa de piso",
+    "id": "comparativa.imagen_b",
+    "donde": "Imagen (opcional)",
+    "n": 23
+  }
+]
