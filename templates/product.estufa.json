@@ -143,24 +143,24 @@
       "settings": {
         "color_acento": "#c2562b",
         "color_pestana": "#c2562b",
-        "titulo": "Tu cocina completa, <em>en una sola compra</em>",
+        "titulo": "Precio único: <em>todo incluido</em>",
         "boton_texto": "La quiero — Pago en casa",
-        "valor_texto": "",
-        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "valor_texto": "Recetarios + guía",
+        "nota": "💵 Pagas solo cuando la recibes en tu casa.",
         "entrega": "Envío gratis a toda Colombia",
         "mostrar_ahorro": true,
-        "incluye_titulo": "Todo esto viene con tu estufa"
+        "incluye_titulo": "Tu pedido incluye"
       },
       "blocks": {
         "pack_1": {
           "type": "pack",
           "settings": {
-            "pestana": "Oferta única",
-            "destacar": "Precio de lanzamiento",
-            "etiqueta": "Para cocinar en familia todos los días",
-            "titulo": "Estufa 3 puestos a gas",
-            "linea_regalo": "🎁 Cubierta incluida",
-            "detalle": "3 puestos · 5.5 kW",
+            "pestana": "Precio único",
+            "destacar": "Todo incluido",
+            "etiqueta": "Menos de lo que cuesta una estufa de piso",
+            "titulo": "Estufa Sokany 3 puestos a gas natural",
+            "linea_regalo": "🎁 Con 2 recetarios y guía de regalo",
+            "detalle": "",
             "precio": 149900,
             "precio_antes": 219900,
             "cantidad": 1,
@@ -170,37 +170,55 @@
         "regalo_2": {
           "type": "regalo",
           "settings": {
-            "insignia": "Gratis",
-            "icono": "camion",
-            "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
+            "insignia": "Incluida",
+            "icono": "casa",
+            "titulo": "Cubierta protectora",
+            "texto": "Desmontable"
           }
         },
         "regalo_3": {
           "type": "regalo",
           "settings": {
-            "insignia": "Incluido",
-            "icono": "pago",
-            "titulo": "Pagas al recibir",
-            "texto": "Nada por adelantado"
+            "insignia": "Incluida",
+            "icono": "check",
+            "titulo": "Parrilla superior",
+            "texto": "Extraíble, se lava aparte"
           }
         },
         "regalo_4": {
           "type": "regalo",
           "settings": {
-            "insignia": "Incluida",
-            "icono": "casa",
-            "titulo": "Cubierta desmontable",
-            "texto": "Tapa los quemadores"
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Recetario “Almuerzo completo en 3 ollas”",
+            "texto": "Te llega por WhatsApp al confirmar"
           }
         },
         "regalo_5": {
           "type": "regalo",
           "settings": {
+            "insignia": "Gratis",
+            "icono": "regalo",
+            "titulo": "Recetario “Diciembre en familia”",
+            "texto": "Para las comidas de fin de año"
+          }
+        },
+        "regalo_6": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía “Instálala y úsala tranquila”",
+            "texto": "Paso a paso"
+          }
+        },
+        "regalo_7": {
+          "type": "regalo",
+          "settings": {
             "insignia": "Incluido",
             "icono": "escudo",
-            "titulo": "Garantía 60 días",
-            "texto": "Por daños de fábrica"
+            "titulo": "6 meses de garantía",
+            "texto": "Y acompañamiento por WhatsApp"
           }
         }
       },
@@ -209,7 +227,9 @@
         "regalo_2",
         "regalo_3",
         "regalo_4",
-        "regalo_5"
+        "regalo_5",
+        "regalo_6",
+        "regalo_7"
       ]
     },
     "videos": {
