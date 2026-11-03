@@ -1,13 +1,10 @@
 {
-  "titulo": "ARVEN Men · Hipótesis A (roce)",
+  "titulo": "ARVEN Fold Care · Hipótesis A (roce)",
   "moneda": "$",
   "locale": "es-CO",
   "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Barlow Condensed',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:0}</style>",
   "producto": {
-    "title": "ARVEN Comfort Cream Men",
-    "featured_image": {
-      "src": "../../imagenes/arven/g1.jpg"
-    },
+    "title": "ARVEN Fold Care",
     "selected_or_first_available_variant": {
       "id": 1,
       "price": 8990000,
@@ -35,11 +32,11 @@
     {
       "tipo": "pp-logo",
       "settings": {
-        "ancho_movil": 130,
-        "ancho_pc": 160,
+        "ancho_movil": 190,
+        "ancho_pc": 240,
         "imagen": {
-          "src": "../../imagenes/arven/arven-logo.png",
-          "alt": "ARVEN"
+          "src": "../../imagenes/arven/arven-fold-logo.png",
+          "alt": "ARVEN Fold Care"
         },
         "espacio": 14
       }
@@ -90,19 +87,7 @@
         "zonas_titulo": "",
         "zonas": "",
         "proporcion": "1 / 1",
-        "navegacion": "miniaturas",
-        "imagen_1": {
-          "src": "../../imagenes/arven/g1.jpg"
-        },
-        "imagen_2": {
-          "src": "../../imagenes/arven/g2.jpg"
-        },
-        "imagen_3": {
-          "src": "../../imagenes/arven/g3.jpg"
-        },
-        "imagen_4": {
-          "src": "../../imagenes/arven/g4.jpg"
-        }
+        "navegacion": "miniaturas"
       },
       "blocks": [
         {
@@ -182,7 +167,7 @@
           "settings": {
             "pestana": "1 crema",
             "etiqueta": "Para empezar",
-            "titulo": "1 Comfort Cream",
+            "titulo": "1 Fold Care",
             "linea_regalo": "🎁 Con los 4 beneficios incluidos",
             "detalle": "1 tubo de 100 g",
             "precio": 89900,
@@ -196,7 +181,7 @@
             "pestana": "2 cremas",
             "destacar": "Más elegido",
             "etiqueta": "Más de 2 meses cubierto",
-            "titulo": "2 Comfort Cream",
+            "titulo": "2 Fold Care",
             "linea_regalo": "🎁 Con los 4 beneficios incluidos",
             "detalle": "2 tubos de 100 g · $74.950 c/u",
             "precio": 149900,
@@ -636,7 +621,7 @@
         "texto": "Frente al talco y la vaselina.",
         "color_destacado": "#2c4a35",
         "nombre_a": "ARVEN",
-        "sub_a": "Comfort Cream",
+        "sub_a": "Fold Care",
         "nombre_b": "Talco o vaselina",
         "sub_b": "Lo de siempre",
         "pie_izq": "ARVEN",
@@ -782,6 +767,13 @@
           "settings": {
             "pregunta": "Paola de Bucaramanga pregunta: ¿sirve para los hongos?",
             "respuesta": "<p>No es un tratamiento para hongos. Ayuda a mantener la entrepierna <strong>seca y protegida del roce</strong>. Si tienes una infección, consulta con tu médico.</p>"
+          }
+        },
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Natalia de Santa Marta pregunta: ¿la puedo usar en otras zonas?",
+            "respuesta": "<p>Sí. Además de la entrepierna y los muslos, sirve en cualquier pliegue donde la piel toque la piel: debajo del busto, abdomen y axilas.</p>"
           }
         },
         {

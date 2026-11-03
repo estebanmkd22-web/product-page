@@ -1,7 +1,21 @@
 {
-  "sections": {
-    "estilos": {
-      "type": "pp-estilos",
+  "titulo": "ARVEN Fold Care · Hipótesis B (humedad y olor)",
+  "moneda": "$",
+  "locale": "es-CO",
+  "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Barlow Condensed',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:0}</style>",
+  "producto": {
+    "title": "ARVEN Fold Care",
+    "selected_or_first_available_variant": {
+      "id": 1,
+      "price": 8990000,
+      "compare_at_price": 0,
+      "available": true
+    },
+    "media": []
+  },
+  "secciones": [
+    {
+      "tipo": "pp-estilos",
       "settings": {
         "acento": "#2c4a35",
         "texto": "#1f2a22",
@@ -15,143 +29,130 @@
         "radio": 14
       }
     },
-    "logo": {
-      "type": "pp-logo",
+    {
+      "tipo": "pp-logo",
       "settings": {
-        "ancho_movil": 130,
-        "ancho_pc": 160,
+        "ancho_movil": 190,
+        "ancho_pc": 240,
+        "imagen": {
+          "src": "../../imagenes/arven/arven-fold-logo.png",
+          "alt": "ARVEN Fold Care"
+        },
         "espacio": 14
       }
     },
-    "ticker": {
-      "type": "pp-ticker",
+    {
+      "tipo": "pp-ticker",
       "settings": {
         "fondo": "#2c4a35",
         "texto": "#ffffff",
         "separador": "✦"
       },
-      "blocks": {
-        "mensaje_1": {
+      "blocks": [
+        {
           "type": "mensaje",
           "settings": {
             "texto": "Envío GRATIS a toda Colombia"
           }
         },
-        "mensaje_2": {
+        {
           "type": "mensaje",
           "settings": {
             "texto": "Pagas al recibir"
           }
         },
-        "mensaje_3": {
+        {
           "type": "mensaje",
           "settings": {
             "texto": "Te llega en 3 a 5 días"
           }
         },
-        "mensaje_4": {
+        {
           "type": "mensaje",
           "settings": {
             "texto": "Garantía de satisfacción 60 días"
           }
         }
-      },
-      "block_order": [
-        "mensaje_1",
-        "mensaje_2",
-        "mensaje_3",
-        "mensaje_4"
       ]
     },
-    "hero_oferta": {
-      "type": "pp-hero-oferta",
+    {
+      "tipo": "pp-hero-oferta",
       "settings": {
         "fondo": "#f5f3ee",
         "mostrar_oferta": false,
         "mostrar_rating": false,
         "tamano_titulo": 26,
-        "titulo": "Que el roce <em>no te frene la jornada.</em>",
+        "titulo": "Una capa en la mañana. <em>Piel seca hasta la noche.</em>",
         "texto": "",
         "zonas_titulo": "",
         "zonas": "",
         "proporcion": "1 / 1",
         "navegacion": "miniaturas"
       },
-      "blocks": {
-        "beneficio_1": {
+      "blocks": [
+        {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Menos roce al caminar:</strong> una capa ligera protege la cara interna del muslo durante toda la jornada."
+            "texto": "<strong>Piel seca desde temprano:</strong> una capa después del baño y la entrepierna se siente seca aunque apriete el calor."
           }
         },
-        "beneficio_2": {
+        {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Aguanta el trabajo pesado:</strong> calle, moto u obra, con menos fricción y menos peladuras."
+            "texto": "<strong>Ayuda a controlar el mal olor:</strong> menos humedad acumulada, menos olor a media tarde."
           }
         },
-        "beneficio_3": {
+        {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Piel seca aunque sudes:</strong> se seca sobre la piel y no atrapa más sudor."
+            "texto": "<strong>Nadie lo nota:</strong> acabado seco, sin brillo ni sensación grasosa."
           }
         },
-        "beneficio_4": {
+        {
           "type": "beneficio",
           "settings": {
             "texto": "<strong>Ni grasa ni grumos:</strong> no pega como la vaselina ni se apelmaza como el talco."
           }
         }
-      },
-      "block_order": [
-        "beneficio_1",
-        "beneficio_2",
-        "beneficio_3",
-        "beneficio_4"
       ]
     },
-    "iconos": {
-      "type": "pp-iconos",
+    {
+      "tipo": "pp-iconos",
       "settings": {
         "estilo": "circulos",
         "espacio": 8,
         "titulo": ""
       },
-      "blocks": {
-        "icono_1": {
+      "blocks": [
+        {
           "type": "icono",
           "settings": {
             "icono": "gota",
             "texto": "Acabado seco"
           }
         },
-        "icono_2": {
+        {
           "type": "icono",
           "settings": {
             "icono": "escudo",
             "texto": "Menos roce"
           }
         },
-        "icono_3": {
+        {
           "type": "icono",
           "settings": {
             "icono": "frescura",
             "texto": "Sin grasa"
           }
         }
-      },
-      "block_order": [
-        "icono_1",
-        "icono_2",
-        "icono_3"
       ]
     },
-    "oferta_tabs": {
-      "type": "pp-oferta-tabs",
+    {
+      "tipo": "pp-oferta-tabs",
       "settings": {
         "color_acento": "#2c4a35",
         "color_pestana": "#2c4a35",
-        "titulo": "Tu jornada <em>con menos roce</em>",
+        "titulo": "Tu entrepierna <em>seca hasta la noche</em>",
         "boton_texto": "Ordena ahora — Paga en casa",
         "valor_texto": "",
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
@@ -160,13 +161,13 @@
         "etiquetas": "Trabajo en la calle, Moto, Gimnasio, Clima caliente",
         "etiquetas_estilo": "iconos"
       },
-      "blocks": {
-        "pack_1": {
+      "blocks": [
+        {
           "type": "pack",
           "settings": {
             "pestana": "1 crema",
             "etiqueta": "Para empezar",
-            "titulo": "1 Comfort Cream",
+            "titulo": "1 Fold Care",
             "linea_regalo": "🎁 Con los 4 beneficios incluidos",
             "detalle": "1 tubo de 100 g",
             "precio": 89900,
@@ -174,13 +175,13 @@
             "cantidad": 1
           }
         },
-        "pack_2": {
+        {
           "type": "pack",
           "settings": {
             "pestana": "2 cremas",
             "destacar": "Más elegido",
             "etiqueta": "Más de 2 meses cubierto",
-            "titulo": "2 Comfort Cream",
+            "titulo": "2 Fold Care",
             "linea_regalo": "🎁 Con los 4 beneficios incluidos",
             "detalle": "2 tubos de 100 g · $74.950 c/u",
             "precio": 149900,
@@ -189,7 +190,7 @@
             "preseleccionado": true
           }
         },
-        "regalo_3": {
+        {
           "type": "regalo",
           "settings": {
             "insignia": "Gratis",
@@ -198,7 +199,7 @@
             "texto": "A toda Colombia"
           }
         },
-        "regalo_4": {
+        {
           "type": "regalo",
           "settings": {
             "insignia": "Incluido",
@@ -207,7 +208,7 @@
             "texto": "Nada por adelantado"
           }
         },
-        "regalo_5": {
+        {
           "type": "regalo",
           "settings": {
             "insignia": "Gratis",
@@ -216,7 +217,7 @@
             "texto": "Para el sudor y el roce"
           }
         },
-        "regalo_6": {
+        {
           "type": "regalo",
           "settings": {
             "insignia": "Incluido",
@@ -225,57 +226,43 @@
             "texto": "Si no te funciona, te devolvemos tu dinero"
           }
         }
-      },
-      "block_order": [
-        "pack_1",
-        "pack_2",
-        "regalo_3",
-        "regalo_4",
-        "regalo_5",
-        "regalo_6"
       ]
     },
-    "videos": {
-      "type": "pp-videos",
+    {
+      "tipo": "pp-videos",
       "settings": {
-        "titulo": "Quienes ya la usan, <em>sin roce</em>",
-        "texto": "Así la usan en su jornada."
+        "titulo": "Mira cómo <em>se seca sobre la piel</em>",
+        "texto": "Así se ve en el día a día."
       },
-      "blocks": {
-        "video_1": {
+      "blocks": [
+        {
           "type": "video",
           "settings": {
             "etiqueta": "Cómo aplicarla"
           }
         },
-        "video_2": {
+        {
           "type": "video",
           "settings": {
             "etiqueta": "Acabado seco"
           }
         },
-        "video_3": {
+        {
           "type": "video",
           "settings": {
             "etiqueta": "En la jornada"
           }
         },
-        "video_4": {
+        {
           "type": "video",
           "settings": {
             "etiqueta": "Opinión real"
           }
         }
-      },
-      "block_order": [
-        "video_1",
-        "video_2",
-        "video_3",
-        "video_4"
       ]
     },
-    "resultados_zona": {
-      "type": "pp-resultados-zona",
+    {
+      "tipo": "pp-resultados-zona",
       "settings": {
         "fondo": "fondo-2",
         "color_acento": "#2c4a35",
@@ -285,8 +272,8 @@
         "proporcion": "1 / 1",
         "nota": "Imágenes ilustrativas. Testimonios de ejemplo."
       },
-      "blocks": {
-        "zona_1": {
+      "blocks": [
+        {
           "type": "zona",
           "settings": {
             "zona": "En la calle",
@@ -295,7 +282,7 @@
             "nombre": "Testimonio de ejemplo"
           }
         },
-        "zona_2": {
+        {
           "type": "zona",
           "settings": {
             "zona": "En moto",
@@ -304,7 +291,7 @@
             "nombre": "Testimonio de ejemplo"
           }
         },
-        "zona_3": {
+        {
           "type": "zona",
           "settings": {
             "zona": "En el gym",
@@ -313,7 +300,7 @@
             "nombre": "Testimonio de ejemplo"
           }
         },
-        "zona_4": {
+        {
           "type": "zona",
           "settings": {
             "zona": "En la oficina",
@@ -322,79 +309,67 @@
             "nombre": "Testimonio de ejemplo"
           }
         }
-      },
-      "block_order": [
-        "zona_1",
-        "zona_2",
-        "zona_3",
-        "zona_4"
       ]
     },
-    "grid_dolores": {
-      "type": "pp-grid-dolores",
+    {
+      "tipo": "pp-grid-dolores",
       "settings": {
         "fondo": "fondo",
         "etiqueta": "El problema",
-        "titulo": "“Siempre me he rozado. <em>Es normal.</em>”",
-        "texto": "No lo es. Caminar todo el día con humedad y calor termina en peladuras, y lo de siempre no fue hecho para esa zona.",
+        "titulo": "“Ya uso talco. <em>Aguanto un rato.</em>”",
+        "texto": "Un rato no alcanza. A media tarde vuelve la humedad, el olor y las ganas de acomodarte la ropa.",
         "columnas_movil": "2",
         "columnas_pc": "4",
         "proporcion": "1 / 1",
-        "cierre": "No es solo sudor: <em>es roce todo el día.</em>",
+        "cierre": "No es solo sudor: <em>es humedad atrapada todo el día.</em>",
         "cierre_estilo": "texto"
       },
-      "blocks": {
-        "item_1": {
+      "blocks": [
+        {
           "type": "item",
           "settings": {
             "titulo": "Talco",
             "texto": "Absorbe un rato, pero con el sudor se hace pasta y grumos."
           }
         },
-        "item_2": {
+        {
           "type": "item",
           "settings": {
             "titulo": "Vaselina",
             "texto": "Grasosa: se queda encima y atrapa más sudor."
           }
         },
-        "item_3": {
+        {
           "type": "item",
           "settings": {
             "titulo": "Antitranspirante",
             "texto": "Bloquea el sudor un rato, pero no está hecho para la entrepierna."
           }
         },
-        "item_4": {
+        {
           "type": "item",
           "settings": {
             "titulo": "Aguantar",
             "texto": "Acomodarte la ropa todo el día y terminar con la piel pelada."
           }
         }
-      },
-      "block_order": [
-        "item_1",
-        "item_2",
-        "item_3",
-        "item_4"
       ]
     },
-    "galeria_ideas": {
-      "type": "pp-galeria-ideas",
+    {
+      "tipo": "pp-galeria-ideas",
       "settings": {
         "color_fondo": "#e3e8df",
         "color_texto": "#1f2a22",
         "color_acento": "#2c4a35",
         "nieve": false,
         "etiqueta": "Dónde se usa",
-        "titulo": "Donde tu jornada aprieta, <em>ARVEN aguanta</em>",
+        "titulo": "Donde el calor aprieta, <em>tu piel sigue seca</em>",
         "texto": "Un tubo para todo el día.",
         "proporcion": "4 / 3",
         "columnas_pc": "3"
       },
-      "blocks": {
-        "idea_1": {
+      "blocks": [
+        {
           "type": "idea",
           "settings": {
             "etiqueta": "Calle",
@@ -402,7 +377,7 @@
             "texto": "Menos roce al caminar todo el día."
           }
         },
-        "idea_2": {
+        {
           "type": "idea",
           "settings": {
             "etiqueta": "Moto",
@@ -410,7 +385,7 @@
             "texto": "Menos humedad atrapada con el calor."
           }
         },
-        "idea_3": {
+        {
           "type": "idea",
           "settings": {
             "etiqueta": "Gym",
@@ -418,7 +393,7 @@
             "texto": "Piel seca aunque sudes, sin la pasta del talco."
           }
         },
-        "idea_4": {
+        {
           "type": "idea",
           "settings": {
             "etiqueta": "Calor",
@@ -426,16 +401,10 @@
             "texto": "Una capa en la mañana y sigues tu día."
           }
         }
-      },
-      "block_order": [
-        "idea_1",
-        "idea_2",
-        "idea_3",
-        "idea_4"
       ]
     },
-    "timeline": {
-      "type": "pp-timeline",
+    {
+      "tipo": "pp-timeline",
       "settings": {
         "fondo": "fondo",
         "color_tarjeta": "#2c4a35",
@@ -443,8 +412,8 @@
         "titulo": "De crema a seco <em>en minutos</em>",
         "texto": "Así trabaja ARVEN sobre tu piel."
       },
-      "blocks": {
-        "etapa_1": {
+      "blocks": [
+        {
           "type": "etapa",
           "settings": {
             "periodo": "Al aplicarla",
@@ -453,7 +422,7 @@
             "texto": "Una capa ligera, fácil de poner en cualquier pliegue."
           }
         },
-        "etapa_2": {
+        {
           "type": "etapa",
           "settings": {
             "periodo": "En minutos",
@@ -462,7 +431,7 @@
             "texto": "Sílice y tapioca absorben el sudor y dejan un acabado seco."
           }
         },
-        "etapa_3": {
+        {
           "type": "etapa",
           "settings": {
             "periodo": "Todo el día",
@@ -471,15 +440,10 @@
             "texto": "El óxido de zinc protege donde la piel toca la piel."
           }
         }
-      },
-      "block_order": [
-        "etapa_1",
-        "etapa_2",
-        "etapa_3"
       ]
     },
-    "problemas_filas": {
-      "type": "pp-problemas-filas",
+    {
+      "tipo": "pp-problemas-filas",
       "settings": {
         "color_fondo": "#e3e8df",
         "color_tarjeta": "#ffffff",
@@ -492,8 +456,8 @@
         "titulo_fin": "",
         "cierre": ""
       },
-      "blocks": {
-        "fila_1": {
+      "blocks": [
+        {
           "type": "fila",
           "settings": {
             "icono": "gota",
@@ -501,7 +465,7 @@
             "puntos": "El secante: absorben el sudor y dejan un acabado como polvo."
           }
         },
-        "fila_2": {
+        {
           "type": "fila",
           "settings": {
             "icono": "escudo",
@@ -509,7 +473,7 @@
             "puntos": "El escudo: forma una barrera que reduce el roce entre piel y piel."
           }
         },
-        "fila_3": {
+        {
           "type": "fila",
           "settings": {
             "icono": "hoja",
@@ -517,104 +481,87 @@
             "puntos": "El calmante: alivian la piel irritada por el sudor, sin sensación grasosa."
           }
         }
-      },
-      "block_order": [
-        "fila_1",
-        "fila_2",
-        "fila_3"
       ]
     },
-    "libre": {
-      "type": "pp-libre",
+    {
+      "tipo": "pp-libre",
       "settings": {
         "color_texto": "#1f2a22",
         "color_fondo": "#e3e8df",
         "espacio": 8
       },
-      "blocks": {
-        "sello_1": {
+      "blocks": [
+        {
           "type": "sello",
           "settings": {
             "icono": "sin_esteroides",
             "texto": "Sin esteroides"
           }
         },
-        "sello_2": {
+        {
           "type": "sello",
           "settings": {
             "icono": "sin_parabenos",
             "texto": "Sin parabenos"
           }
         },
-        "sello_3": {
+        {
           "type": "sello",
           "settings": {
             "icono": "sin_talco",
             "texto": "Sin talco"
           }
         },
-        "sello_4": {
+        {
           "type": "sello",
           "settings": {
             "icono": "sin_petroleo",
             "texto": "Libre de petróleo"
           }
         },
-        "sello_5": {
+        {
           "type": "sello",
           "settings": {
             "icono": "sin_crueldad",
             "texto": "Libre de crueldad animal"
           }
         }
-      },
-      "block_order": [
-        "sello_1",
-        "sello_2",
-        "sello_3",
-        "sello_4",
-        "sello_5"
       ]
     },
-    "pasos": {
-      "type": "pp-pasos",
+    {
+      "tipo": "pp-pasos",
       "settings": {
         "estilo": "fotos",
         "fondo": "fondo",
         "titulo": "Así de fácil: <em>3 pasos</em>",
         "texto": ""
       },
-      "blocks": {
-        "paso_1": {
+      "blocks": [
+        {
           "type": "paso",
           "settings": {
             "titulo": "Después del baño",
             "texto": "Sobre la piel limpia y bien seca."
           }
         },
-        "paso_2": {
+        {
           "type": "paso",
           "settings": {
             "titulo": "Una capa ligera",
             "texto": "En la ingle y la cara interna de los muslos."
           }
         },
-        "paso_3": {
+        {
           "type": "paso",
           "settings": {
             "titulo": "Déjala secar y vístete",
             "texto": "En minutos queda seca. Sigue tu día."
           }
         }
-      },
-      "block_order": [
-        "paso_1",
-        "paso_2",
-        "paso_3"
       ]
     },
-    "esperar": {
-      "type": "pp-esperar",
+    {
+      "tipo": "pp-esperar",
       "settings": {
         "fondo": "fondo-2",
         "color_acento": "#2c4a35",
@@ -623,8 +570,8 @@
         "titulo": "Qué esperar <em>día a día</em>",
         "texto": "El primer minuto se siente diferente. Los primeros días se notan diferentes. Esto es lo que puedes esperar usándola a diario."
       },
-      "blocks": {
-        "etapa_1": {
+      "blocks": [
+        {
           "type": "etapa",
           "settings": {
             "icono": "reloj",
@@ -632,7 +579,7 @@
             "texto": "Se siente fresca al aplicarla y se seca sobre la piel: sin sensación grasosa ni pegajosa."
           }
         },
-        "etapa_2": {
+        {
           "type": "etapa",
           "settings": {
             "icono": "calendario",
@@ -640,7 +587,7 @@
             "texto": "La entrepierna se mantiene seca por más tiempo y sientes menos roce en la jornada."
           }
         },
-        "etapa_3": {
+        {
           "type": "etapa",
           "settings": {
             "icono": "calendario",
@@ -648,7 +595,7 @@
             "texto": "La piel se siente más cómoda y menos irritada por el sudor y el calor."
           }
         },
-        "etapa_4": {
+        {
           "type": "etapa",
           "settings": {
             "icono": "calendario",
@@ -656,7 +603,7 @@
             "texto": "Ya es parte de tu rutina: te vistes y no vuelves a pensar en el roce."
           }
         },
-        "etapa_5": {
+        {
           "type": "etapa",
           "settings": {
             "icono": "calendario",
@@ -664,31 +611,24 @@
             "texto": "Mantén la entrepierna seca y cómoda, incluso en los días de más calor."
           }
         }
-      },
-      "block_order": [
-        "etapa_1",
-        "etapa_2",
-        "etapa_3",
-        "etapa_4",
-        "etapa_5"
       ]
     },
-    "comparativa": {
-      "type": "pp-comparativa",
+    {
+      "tipo": "pp-comparativa",
       "settings": {
         "etiqueta": "La diferencia",
         "titulo": "ARVEN vs. <em>lo que ya probaste</em>",
         "texto": "Frente al talco y la vaselina.",
         "color_destacado": "#2c4a35",
         "nombre_a": "ARVEN",
-        "sub_a": "Comfort Cream",
+        "sub_a": "Fold Care",
         "nombre_b": "Talco o vaselina",
         "sub_b": "Lo de siempre",
         "pie_izq": "ARVEN",
-        "pie_der": "Menos roce, todo el día"
+        "pie_der": "Piel seca hasta la noche"
       },
-      "blocks": {
-        "fila_1": {
+      "blocks": [
+        {
           "type": "fila",
           "settings": {
             "titulo": "Acabado",
@@ -699,7 +639,7 @@
             "valor_b": "Pasta o grasa"
           }
         },
-        "fila_2": {
+        {
           "type": "fila",
           "settings": {
             "titulo": "Con el sudor",
@@ -710,7 +650,7 @@
             "valor_b": "Se apelmaza"
           }
         },
-        "fila_3": {
+        {
           "type": "fila",
           "settings": {
             "titulo": "Roce",
@@ -721,7 +661,7 @@
             "valor_b": "Poco o nada"
           }
         },
-        "fila_4": {
+        {
           "type": "fila",
           "settings": {
             "titulo": "Piel irritada",
@@ -732,7 +672,7 @@
             "valor_b": "Puede arder"
           }
         },
-        "fila_5": {
+        {
           "type": "fila",
           "settings": {
             "titulo": "Hecha para",
@@ -743,26 +683,19 @@
             "valor_b": "Otra cosa"
           }
         }
-      },
-      "block_order": [
-        "fila_1",
-        "fila_2",
-        "fila_3",
-        "fila_4",
-        "fila_5"
       ]
     },
-    "resenas": {
-      "type": "pp-resenas",
+    {
+      "tipo": "pp-resenas",
       "settings": {
         "etiqueta": "Opiniones",
-        "titulo": "“Ya camino toda la jornada <em>sin rozarme.</em>”",
+        "titulo": "“Llego a la noche <em>sin humedad ni olor.</em>”",
         "nota": "",
         "cantidad": "",
         "visibles": 3
       },
-      "blocks": {
-        "resena_1": {
+      "blocks": [
+        {
           "type": "resena",
           "settings": {
             "estrellas": 5,
@@ -773,7 +706,7 @@
             "verificado": false
           }
         },
-        "resena_2": {
+        {
           "type": "resena",
           "settings": {
             "estrellas": 5,
@@ -784,7 +717,7 @@
             "verificado": false
           }
         },
-        "resena_3": {
+        {
           "type": "resena",
           "settings": {
             "estrellas": 5,
@@ -795,15 +728,10 @@
             "verificado": false
           }
         }
-      },
-      "block_order": [
-        "resena_1",
-        "resena_2",
-        "resena_3"
       ]
     },
-    "faq": {
-      "type": "pp-faq",
+    {
+      "tipo": "pp-faq",
       "settings": {
         "estilo": "tarjetas",
         "fondo": "fondo-2",
@@ -812,69 +740,67 @@
         "texto": "",
         "abrir_primera": true
       },
-      "blocks": {
-        "pregunta_1": {
+      "blocks": [
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Andrés de Cali pregunta: ya probé talco y vaselina, ¿por qué esta sería diferente?",
             "respuesta": "<p>Porque el talco con el sudor se hace pasta y la vaselina atrapa más humedad. ARVEN <strong>se aplica como crema y se seca sobre la piel</strong>: absorbe la humedad y deja una barrera contra el roce.</p>"
           }
         },
-        "pregunta_2": {
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Diana de Bogotá pregunta: ¿queda grasosa o pegajosa?",
             "respuesta": "<p>No. Es una capa ligera que se seca en minutos. Te puedes vestir enseguida.</p>"
           }
         },
-        "pregunta_3": {
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Carlos de Medellín pregunta: ¿me va a arder si ya tengo la piel rozada?",
             "respuesta": "<p>Tiene hamamelis y glicerina vegetal para calmar la piel, y es <strong>sin corticoides</strong>. No la apliques sobre heridas abiertas, y si notas molestia, suspende su uso.</p>"
           }
         },
-        "pregunta_4": {
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Paola de Bucaramanga pregunta: ¿sirve para los hongos?",
             "respuesta": "<p>No es un tratamiento para hongos. Ayuda a mantener la entrepierna <strong>seca y protegida del roce</strong>. Si tienes una infección, consulta con tu médico.</p>"
           }
         },
-        "pregunta_5": {
+        {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Natalia de Santa Marta pregunta: ¿la puedo usar en otras zonas?",
+            "respuesta": "<p>Sí. Además de la entrepierna y los muslos, sirve en cualquier pliegue donde la piel toque la piel: debajo del busto, abdomen y axilas.</p>"
+          }
+        },
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Fabián de Cartagena pregunta: ¿cuánto me dura un tubo?",
             "respuesta": "<p>Con uso diario, un tubo de 100 g rinde más de 30 días.</p>"
           }
         },
-        "pregunta_6": {
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Laura de Ibagué pregunta: ¿cómo pago y cuándo me llega?",
             "respuesta": "<p>Pagas en efectivo cuando la recibes. Te llega en <strong>3 a 5 días</strong> y el envío es <strong>gratis a toda Colombia</strong>.</p>"
           }
         },
-        "pregunta_7": {
+        {
           "type": "pregunta",
           "settings": {
             "pregunta": "Sebastián de Pereira pregunta: ¿y si no me funciona?",
             "respuesta": "<p>Tienes <strong>garantía de satisfacción de 60 días</strong>: si no te funciona, te devolvemos tu dinero.</p>"
           }
         }
-      },
-      "block_order": [
-        "pregunta_1",
-        "pregunta_2",
-        "pregunta_3",
-        "pregunta_4",
-        "pregunta_5",
-        "pregunta_6",
-        "pregunta_7"
       ]
     },
-    "garantia": {
-      "type": "pp-garantia",
+    {
+      "tipo": "pp-garantia",
       "settings": {
         "color_tarjeta": "#2c4a35",
         "color_texto": "#ffffff",
@@ -883,67 +809,40 @@
         "sello_numero": "60",
         "sello_abajo": "Días",
         "etiqueta": "Compra sin riesgo",
-        "titulo": "Menos roce en tu jornada, o te devolvemos tu dinero",
+        "titulo": "Piel seca hasta la noche, o te devolvemos tu dinero",
         "texto": "Pruébala 60 días. Si no te funciona, te devolvemos tu dinero. Envío gratis, te llega en 3 a 5 días y pagas al recibir."
       },
-      "blocks": {
-        "punto_1": {
+      "blocks": [
+        {
           "type": "punto",
           "settings": {
             "icono": "escudo",
             "texto": "Garantía de satisfacción 60 días"
           }
         },
-        "punto_2": {
+        {
           "type": "punto",
           "settings": {
             "icono": "pago",
             "texto": "Pagas al recibir"
           }
         },
-        "punto_3": {
+        {
           "type": "punto",
           "settings": {
             "icono": "chat",
             "texto": "Atención por WhatsApp"
           }
         }
-      },
-      "block_order": [
-        "punto_1",
-        "punto_2",
-        "punto_3"
       ]
     },
-    "boton_fijo": {
-      "type": "pp-boton-fijo",
+    {
+      "tipo": "pp-boton-fijo",
       "settings": {
-        "boton_texto": "La quiero",
+        "boton_texto": "Lo quiero",
         "subtexto": "Envío gratis · Pagas al recibir",
         "precio_manual": 149900
       }
     }
-  },
-  "order": [
-    "estilos",
-    "logo",
-    "ticker",
-    "hero_oferta",
-    "iconos",
-    "oferta_tabs",
-    "videos",
-    "resultados_zona",
-    "grid_dolores",
-    "galeria_ideas",
-    "timeline",
-    "problemas_filas",
-    "libre",
-    "pasos",
-    "esperar",
-    "comparativa",
-    "resenas",
-    "faq",
-    "garantia",
-    "boton_fijo"
   ]
 }
