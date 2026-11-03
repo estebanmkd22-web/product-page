@@ -43,7 +43,7 @@ const FORMATO_CHATGPT = (p) => {
   if (a === b) return { pedir: 'cuadrada (1:1)', recorte: '' };
   return a < b ? { pedir: 'vertical (2:3)', recorte: p === '2/3' ? '' : `recórtala a ${p.replace('/', ':')}` } : { pedir: 'horizontal (3:2)', recorte: p === '3/2' ? '' : `recórtala a ${p.replace('/', ':')}` };
 };
-const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avDe(p) ? `la foto de ${avDe(p).nombre}` : ''].filter(Boolean);
+const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avDe(p) ? `la foto de ${avDe(p).nombre}` : '', ...(p.adjuntar || [])].filter(Boolean);
 const promptV2 = (e, p) => {
   const f = FORMATO_CHATGPT(e.proporcion.replace(/\s/g, ''));
   const adj = adjuntosDe(p);

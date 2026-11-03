@@ -36,7 +36,7 @@
       "que": "Atención: antes y después que muestra el mecanismo (absorbe el sudor microgota a microgota), sin darle peso a la humedad. Imagen ilustrativa.",
       "producto": true,
       "persona": false,
-      "escena": "Imagen publicitaria de cuidado de la piel, con el mismo diseño de la imagen de referencia de antes y después que te adjunto (úsala solo para la composición, no copies sus textos ni sus colores). Fondo claro con hojas verdes desenfocadas. Arriba, centrado, el logo \"ARVEN FOLD CARE\" como en el empaque. Debajo, el titular en dos líneas: \"ABSORBE EL SUDOR\" en verde bosque y \"MICROGOTA A MICROGOTA.\" en verde salvia. A la izquierda, dos recuadros redondeados uno encima del otro, con el mismo primer plano del pliegue de la cintura (abdomen y borde de una camiseta gris de algodón, sin rostro, piel trigueña natural): recuadro de arriba con la etiqueta \"ANTES\" y abajo la franja \"Sudor + roce\": la piel con pequeñas gotas de sudor brillantes y un leve tono rosado por el roce, sin heridas ni irritación fuerte; recuadro de abajo con la etiqueta \"DESPUÉS\" y abajo la franja \"Seco, suave y cómodo.\": la misma piel lisa, mate y sin gotas. A la derecha, una mano neutra (sin uñas pintadas ni joyas) sostiene el tubo de frente. Abajo, de lado a lado, 3 etiquetas redondeadas en fila: \"SIN GRASA\", \"SIN GRUMOS\", \"NO MANCHA\". En una esquina, en letra pequeña: \"Imagen ilustrativa\". Etiquetas y franjas en verde bosque con letra blanca. Los textos van en español, escritos exactamente así, en letra gruesa y legible en celular.",
+      "escena": "Imagen publicitaria de cuidado de la piel, con el mismo diseño de la imagen de referencia de antes y después (úsala solo para la composición, no copies sus textos ni sus colores). Fondo claro con hojas verdes desenfocadas. Arriba, centrado, el logo \"ARVEN FOLD CARE\" como en el empaque. Debajo, el titular en dos líneas: \"ABSORBE EL SUDOR\" en verde bosque y \"MICROGOTA A MICROGOTA.\" en verde salvia. A la izquierda, dos recuadros redondeados uno encima del otro, con el mismo primer plano del pliegue de la cintura (abdomen y borde de una camiseta gris de algodón, sin rostro, piel trigueña natural): recuadro de arriba con la etiqueta \"ANTES\" y abajo la franja \"Sudor + roce\": la piel con pequeñas gotas de sudor brillantes y un leve tono rosado por el roce, sin heridas ni irritación fuerte; recuadro de abajo con la etiqueta \"DESPUÉS\" y abajo la franja \"Seco, suave y cómodo.\": la misma piel lisa, mate y sin gotas. A la derecha, una mano neutra (sin uñas pintadas ni joyas) sostiene el tubo de frente. Abajo, de lado a lado, 3 etiquetas redondeadas en fila: \"SIN GRASA\", \"SIN GRUMOS\", \"NO MANCHA\". En una esquina, en letra pequeña: \"Imagen ilustrativa\". Etiquetas y franjas en verde bosque con letra blanca. Los textos van en español, escritos exactamente así, en letra gruesa y legible en celular.",
       "historial": [
         {
           "fecha": "2026-11-03",
@@ -54,7 +54,10 @@
           "cambio": "Sin el escenario general (baño o exterior): la escena pasa en diseño publicitario con fondo claro."
         }
       ],
-      "sin_escenario": true
+      "sin_escenario": true,
+      "adjuntar": [
+        "la imagen del antes y después"
+      ]
     },
     "hero-oferta.imagen_4": {
       "que": "Deseo: protección diaria contra el roce de la ropa y el calor. \"Tu escudo diario invisible.\"",
@@ -144,11 +147,22 @@
       "ambiente": "Calle de ciudad colombiana en clima caliente, sol de mediodía, colores reales de la calle. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "resultados-zona.zona1": {
-      "que": "Transformación: entrepierna seca y sin roce (imagen ilustrativa).",
+      "que": "Transformación: antes y después en la entrepierna (zona del muslo interno), con la composición de la imagen de referencia para que no la rechacen. Imagen ilustrativa.",
       "producto": false,
       "persona": false,
-      "escena": "Encuadre cerrado de la parte alta de las piernas con pantaloneta gris de algodón, de pie en un baño luminoso, piel lisa y seca, sin enrojecimiento. Sin rostro. El tubo sobre el lavamanos al fondo, desenfocado.",
-      "historial": []
+      "escena": "Imagen de cuidado de la piel dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano lateral de la parte alta del muslo de una persona de pie, justo donde termina el borde de una pantaloneta deportiva de algodón que llega a mitad del muslo; solo se ven el muslo y la tela, sin rostro y sin otras partes del cuerpo. Mitad izquierda: pantaloneta gris oscuro y, en la piel junto al borde de la tela, una zona rosada y enrojecida por el roce, sin heridas ni piel abierta. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: pantaloneta gris claro y la misma piel lisa, pareja y sin enrojecimiento. Arriba a la izquierda de esa mitad, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono de piel en las dos mitades. Los textos van en español, escritos exactamente así.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Antes y después en dos mitades (muslo junto al borde de la pantaloneta), tomando como base la imagen de referencia, para evitar el rechazo."
+        }
+      ],
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro beige claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.",
+      "adjuntar": [
+        "la imagen del antes y después"
+      ]
     },
     "resultados-zona.zona2": {
       "que": "Transformación: muslos que ya no se rozan al caminar.",
