@@ -1,5 +1,7 @@
 // Arma el kit de imágenes de una landing: une los espacios (tools/espacios-imagenes.mjs) con la ficha
 // visual y los prompts, arma el prompt final de cada espacio y genera la página de revisión.
+// Versión 2 (kit.version = 2): prompts en español para usar a mano en ChatGPT, divididos en partes
+// (escena y persona por imagen; ficha, producto y reglas para toda la landing) con historial de cambios.
 // Uso: node tools/build-kit-imagenes.mjs imagenes-ia/estufa-espacios.json imagenes-ia/estufa-prompts.json salida.html
 import fs from 'node:fs';
 
@@ -27,7 +29,33 @@ export const promptFinal = (e, p) => [
   kit.reglas_en,
 ].filter(Boolean).join(' ');
 
-const items = espacios.map((e) => ({ ...e, ...(kit.espacios[e.id] || {}), final: kit.espacios[e.id] ? promptFinal(e, kit.espacios[e.id]) : '' }));
+// ChatGPT genera cuadrada, vertical u horizontal; el resto se recorta después.
+const FORMATO_CHATGPT = (p) => {
+  const [a, b] = p.split('/').map(Number);
+  if (a === b) return { pedir: 'cuadrada (1:1)', recorte: '' };
+  return a < b ? { pedir: 'vertical (2:3)', recorte: p === '2/3' ? '' : `recórtala a ${p.replace('/', ':')}` } : { pedir: 'horizontal (3:2)', recorte: p === '3/2' ? '' : `recórtala a ${p.replace('/', ':')}` };
+};
+const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avatar ? `la foto de ${avatar.nombre}` : ''].filter(Boolean);
+const promptV2 = (e, p) => {
+  const f = FORMATO_CHATGPT(e.proporcion.replace(/\s/g, ''));
+  const adj = adjuntosDe(p);
+  return [
+    adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
+    p.producto ? `Producto: ${kit.producto}` : '',
+    p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
+    `Escena: ${p.escena}`,
+    `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
+    `Formato: imagen ${f.pedir}.`,
+    `Reglas: ${kit.reglas}`,
+  ].filter(Boolean).join('\n\n');
+};
+const V2 = kit.version === 2;
+const items = espacios.map((e) => {
+  const p = kit.espacios[e.id];
+  if (!p) return { ...e, final: '' };
+  const extra = V2 ? { formato: FORMATO_CHATGPT(e.proporcion.replace(/\s/g, '')), adjuntos: adjuntosDe(p) } : {};
+  return { ...e, ...p, ...extra, final: V2 ? promptV2(e, p) : promptFinal(e, p) };
+});
 fs.writeFileSync(fPrompts.replace(/-prompts\.json$/, '-final.json'), JSON.stringify(items.map(({ n, id, proporcion, pixeles, producto, persona, final }) => ({ n, id, proporcion, pixeles, producto: !!producto, avatar: persona ? kit.avatar : null, referencias_avatar: persona ? refsAvatar : [], prompt: final })), null, 2) + '\n');
 
 const grupos = [];
@@ -36,7 +64,8 @@ for (const it of items) {
   if (!g) grupos.push(g = { seccion: it.seccion, titulo: it.titulo_seccion, items: [] });
   g.items.push(it);
 }
-const ficha = Object.entries(kit.ficha).map(([k, v]) => `<div class="f"><b>${esc(k[0].toUpperCase() + k.slice(1))}</b><p>${esc(v)}</p></div>`).join('');
+const fichaV = V2 ? { ...kit.ficha, producto: kit.producto, reglas: kit.reglas } : kit.ficha;
+const ficha = Object.entries(fichaV).map(([k, v]) => `<div class="f"><b>${esc(k[0].toUpperCase() + k.slice(1))}</b><p>${esc(v)}</p></div>`).join('');
 const refs = avatar ? Object.entries(avatar.referencias).map(([k, v]) => `<figure>${v ? `<img src="${esc(v)}" alt="">` : '<div class="vacio">Pendiente</div>'}<figcaption>${esc(k.replace('_', ' '))}</figcaption></figure>`).join('') : '';
 const bloqueAvatar = avatar ? `<div class="avatar"><h2>Avatar: ${esc(avatar.nombre)} <small>${esc(kit.avatar)} · ${esc(avatar.estado)}</small></h2><p>${esc(avatar.descripcion)}</p><div class="refs">${refs}</div>${refsAvatar.length ? '' : '<p class="aviso">Sin fotos de referencia todavía: las imágenes con la mamá no se generan hasta crear y aprobar el avatar.</p>'}</div>` : '';
 const tarjetas = grupos.map((g) => `
@@ -44,10 +73,12 @@ const tarjetas = grupos.map((g) => `
   <h2>${esc(g.seccion)}${g.titulo ? `<small>${esc(g.titulo)}</small>` : ''}</h2>
   ${g.items.map((it) => `
   <article class="card${it.final ? '' : ' falta'}">
-    <div class="top"><span class="n">${it.n}</span><div><h3>${esc(it.donde)}</h3>
+    <div class="top"><span class="n">${it.n}</span><div><h3>${esc(it.donde)}${(it.historial || []).length ? ' <span class="mod">Modificada</span>' : ''}</h3>
       <div class="chips"><span>${esc(it.proporcion.replace(/\s/g, ''))}</span>${it.pixeles ? `<span>${esc(it.pixeles)} px</span>` : ''}${it.producto ? '<span class="ref">Con foto del producto</span>' : ''}${it.persona && avatar ? `<span class="ref">Con ${esc(avatar.nombre)}</span>` : ''}</div></div></div>
     <p class="que">${esc(it.que || 'Falta el prompt de este espacio.')}</p>
-    ${it.final ? `<details><summary>Ver prompt</summary><pre>${esc(it.final)}</pre><button data-copy="${esc(it.final)}">Copiar</button></details>` : ''}
+    ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd><dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
+    ${(it.historial || []).length ? `<ul class="hist">${it.historial.map((h) => `<li><b>${esc(h.fecha)}</b> · ${esc(h.parte)}: ${esc(h.cambio)}</li>`).join('')}</ul>` : ''}
+    ${it.final ? `<details><summary>Ver prompt completo</summary><pre>${esc(it.final)}</pre><button data-copy="${esc(it.final)}">Copiar</button></details>` : ''}
   </article>`).join('')}
 </section>`).join('');
 
@@ -69,12 +100,14 @@ h1{font-size:26px;margin:0 0 4px}.sub{color:var(--tx2);margin:0 0 20px}
 .card{background:var(--card);border:1px solid var(--borde);border-radius:14px;padding:14px;margin-bottom:10px}.card.falta{border-color:#d33}
 .top{display:flex;gap:12px;align-items:flex-start}.n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--ac);color:#fff;font-weight:800;display:grid;place-items:center}
 h3{margin:4px 0 6px;font-size:15px}.chips{display:flex;gap:6px;flex-wrap:wrap}.chips span{font-size:12px;border:1px solid var(--borde);border-radius:99px;padding:1px 8px;color:var(--tx2)}.chips .ref{border-color:var(--ac);color:var(--ac)}
-.que{margin:10px 0 0}details{margin-top:8px}summary{cursor:pointer;color:var(--ac);font-weight:600}
+.que{margin:10px 0 0}.mod{font-size:11px;background:var(--ac);color:#fff;border-radius:99px;padding:1px 8px;vertical-align:middle}
+.partes{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:10px 0 0;font-size:14px}.partes dt{font-weight:700;color:var(--ac)}.partes dd{margin:0;color:var(--tx2)}
+.hist{margin:10px 0 0;padding:8px 10px 8px 26px;background:var(--suave);border-radius:10px;font-size:13px}details{margin-top:8px}summary{cursor:pointer;color:var(--ac);font-weight:600}
 pre{white-space:pre-wrap;word-break:break-word;background:var(--bg);border:1px solid var(--borde);border-radius:10px;padding:10px;font-size:12.5px;margin:8px 0}
 button{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer}
 </style></head><body><div class="wrap">
 <h1>Kit de imágenes · ${esc(kit.landing)}</h1>
-<p class="sub">Espacios sacados de la plantilla, en el orden en que aparecen en el personalizador. Revisa los prompts antes de generar.</p>
+<p class="sub">${V2 ? 'Para hacer a mano en ChatGPT, en una misma conversación y en este orden. Para cambiar algo, indica el número de la imagen y la parte (escena, persona o formato).' : 'Espacios sacados de la plantilla, en el orden en que aparecen en el personalizador. Revisa los prompts antes de generar.'}</p>
 <div class="resumen"><span>${items.length} imágenes</span><span>${items.filter((i) => i.producto).length} con foto del producto</span>${faltan.length ? `<span>${faltan.length} sin prompt</span>` : ''}</div>
 <div class="ficha"><h2>Ficha visual</h2>${ficha}</div>
 ${bloqueAvatar}
