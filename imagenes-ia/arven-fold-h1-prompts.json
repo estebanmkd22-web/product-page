@@ -190,11 +190,22 @@
       "ambiente": "Fondo neutro de pared clara, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "resultados-zona.zona4": {
-      "que": "Transformación: pliegue del abdomen seco y cómodo.",
+      "que": "Transformación: antes y después en el pliegue del abdomen, con la composición de la imagen de referencia. Imagen ilustrativa.",
       "producto": false,
       "persona": false,
-      "escena": "Abdomen con camiseta blanca levantada un poco por una mano, encuadre de la cintura, piel lisa y seca, sin rojeces. Sin rostro, baño luminoso al fondo.",
-      "historial": []
+      "escena": "Imagen de cuidado de la piel dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano frontal de la parte baja del abdomen: dos manos levantan un poco una camiseta gris de algodón y abajo se ve la pretina ancha de una pantaloneta negra de algodón; solo se ven las manos, la franja de piel del abdomen y la tela, sin rostro. Manos sin anillos, sin joyas y sin uñas pintadas. Mitad izquierda: en la franja de piel justo encima de la pretina, una zona rosada y enrojecida por el roce y el sudor, sin heridas ni piel abierta. Arriba, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: la misma piel lisa, pareja y sin enrojecimiento. Arriba, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono de piel en las dos mitades. Los textos van en español, escritos exactamente así.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Antes y después del abdomen en dos mitades, tomando como base la imagen de referencia."
+        }
+      ],
+      "sin_escenario": true,
+      "adjuntar": [
+        "la imagen del antes y después"
+      ],
+      "ambiente": "Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "grid-dolores.item1": {
       "que": "Interés: el dolor del talco que se hace pasta. Sin el producto nuevo.",
