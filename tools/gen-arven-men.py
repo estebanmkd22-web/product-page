@@ -12,10 +12,10 @@ H = {
    hero_bullets=[
      '<strong>Menos roce al caminar:</strong> una capa ligera protege la cara interna del muslo durante toda la jornada.',
      '<strong>Aguanta el trabajo pesado:</strong> calle, moto u obra, con menos fricción y menos peladuras.',
-     '<strong>Piel seca aunque sudes:</strong> se seca sobre la piel y no atrapa más sudor.',
+     '<strong>Seco aunque sudes:</strong> se seca sobre la piel y no atrapa más sudor.',
      '<strong>Ni grasa ni grumos:</strong> no pega como la vaselina ni se apelmaza como el talco.'],
    oferta='Tu jornada <em>con menos roce</em>',
-   videos=('Quienes ya la usan, <em>sin roce</em>', 'Así la usan en su jornada.'),
+   videos=('Hombres que <em>ya no se rozan</em>', 'Así la usan en su jornada.'),
    dolores_titulo='“Siempre me he rozado. <em>Es normal.</em>”',
    dolores_texto='No lo es. Caminar todo el día con humedad y calor termina en peladuras, y lo de siempre no fue hecho para esa zona.',
    dolores_cierre='No es solo sudor: <em>es roce todo el día.</em>',
@@ -27,9 +27,9 @@ H = {
  ),
  'b': dict(
    nombre='ARVEN Men · Hipótesis B (humedad y olor)',
-   hero_titulo='Una capa en la mañana. <em>Piel seca hasta la noche.</em>',
+   hero_titulo='Una capa en la mañana. <em>Seco hasta la noche.</em>',
    hero_bullets=[
-     '<strong>Piel seca desde temprano:</strong> una capa después del baño y la entrepierna se siente seca aunque apriete el calor.',
+     '<strong>Seco desde temprano:</strong> una capa después del baño y la entrepierna se siente seca aunque apriete el calor.',
      '<strong>Ayuda a controlar el mal olor:</strong> menos humedad acumulada, menos olor a media tarde.',
      '<strong>Nadie lo nota:</strong> acabado seco, sin brillo ni sensación grasosa.',
      '<strong>Ni grasa ni grumos:</strong> no pega como la vaselina ni se apelmaza como el talco.'],
@@ -38,10 +38,10 @@ H = {
    dolores_titulo='“Ya uso talco. <em>Aguanto un rato.</em>”',
    dolores_texto='Un rato no alcanza. A media tarde vuelve la humedad, el olor y las ganas de acomodarte la ropa.',
    dolores_cierre='No es solo sudor: <em>es humedad atrapada todo el día.</em>',
-   galeria=('Donde el calor aprieta, <em>tu piel sigue seca</em>', 'Un tubo para todo el día.'),
-   resenas='“Llego a la noche <em>sin humedad ni olor.</em>”',
-   garantia='Piel seca hasta la noche, o te devolvemos tu dinero',
-   pie='Piel seca hasta la noche',
+   galeria=('Donde el calor aprieta, <em>tú sigues seco</em>', 'Un tubo para todo el día.'),
+   resenas='“Llego a la noche <em>seco y sin olor.</em>”',
+   garantia='Seco hasta la noche, o te devolvemos tu dinero',
+   pie='Seco hasta la noche',
    fijo='Lo quiero',
  ),
 }
@@ -85,9 +85,9 @@ for k, h in H.items():
         elif t == 'pp-resultados-zona':
             st.update(color_acento=AC, etiqueta='Resultados', titulo='Tu día, <em>seco y sin roce</em>', texto='Elige tu jornada.')
             s['blocks'] = [
-              blk('zona', zona='En la calle', titulo='Aguanto toda la jornada', texto='Camino todo el día y terminaba con la piel pelada en el muslo. Ahora me la aplico en la mañana y llego a la noche con la piel seca.', nombre='Testimonio de ejemplo'),
+              blk('zona', zona='En la calle', titulo='Aguanto toda la jornada', texto='Camino todo el día y terminaba pelado en el muslo. Ahora me la pongo en la mañana y llego a la noche más seco.', nombre='Testimonio de ejemplo'),
               blk('zona', zona='En moto', titulo='Menos humedad sentado', texto='Horas en la moto con el calor y la entrepierna se mojaba. Con ARVEN la siento seca y sin ese roce.', nombre='Testimonio de ejemplo'),
-              blk('zona', zona='En el gym', titulo='Entreno sin rozarme', texto='En pierna siempre terminaba con roce. Se seca rápido y no se siente grasosa.', nombre='Testimonio de ejemplo'),
+              blk('zona', zona='En el gym', titulo='Entreno sin rozarme', texto='En pierna siempre terminaba rozado. Se seca rápido y no se siente grasosa.', nombre='Testimonio de ejemplo'),
               blk('zona', zona='En la oficina', titulo='Ya no me acomodo', texto='Con el pantalón de tela me tocaba acomodarme a cada rato. Ahora no lo pienso.', nombre='Testimonio de ejemplo')]
         elif t == 'pp-grid-dolores':
             st.update(titulo=h['dolores_titulo'], texto=h['dolores_texto'], cierre=h['dolores_cierre'])
@@ -95,13 +95,13 @@ for k, h in H.items():
               blk('item', titulo='Talco', texto='Absorbe un rato, pero con el sudor se hace pasta y grumos.'),
               blk('item', titulo='Vaselina', texto='Grasosa: se queda encima y atrapa más sudor.'),
               blk('item', titulo='Antitranspirante', texto='Bloquea el sudor un rato, pero no está hecho para la entrepierna.'),
-              blk('item', titulo='Aguantar', texto='Acomodarte la ropa todo el día y terminar con la piel pelada.')]
+              blk('item', titulo='Aguantar', texto='Acomodarte la ropa todo el día y terminar pelado.')]
         elif t == 'pp-galeria-ideas':
             st.update(color_fondo=F2, color_texto=TX, color_acento=AC, etiqueta='Dónde se usa', titulo=h['galeria'][0], texto=h['galeria'][1])
             s['blocks'] = [
               blk('idea', etiqueta='Calle', titulo='Jornadas a pie', texto='Menos roce al caminar todo el día.'),
               blk('idea', etiqueta='Moto', titulo='Horas sentado', texto='Menos humedad atrapada con el calor.'),
-              blk('idea', etiqueta='Gym', titulo='Entrenamiento', texto='Piel seca aunque sudes, sin la pasta del talco.'),
+              blk('idea', etiqueta='Gym', titulo='Entrenamiento', texto='Seco aunque sudes, sin la pasta del talco.'),
               blk('idea', etiqueta='Calor', titulo='Clima caliente', texto='Una capa en la mañana y sigues tu día.')]
         elif t == 'pp-timeline':
             st.update(color_tarjeta=AC, titulo='De crema a seco <em>en minutos</em>')
@@ -138,11 +138,11 @@ for k, h in H.items():
         elif t == 'pp-faq':
             s['blocks'] = [
               blk('pregunta', pregunta='Andrés de Cali pregunta: ya probé talco y vaselina, ¿por qué esta sería diferente?', respuesta='<p>Porque el talco con el sudor se hace pasta y la vaselina atrapa más humedad. ARVEN <strong>se aplica como crema y se seca sobre la piel</strong>: absorbe la humedad y deja una barrera contra el roce.</p>'),
-              blk('pregunta', pregunta='Diana de Bogotá pregunta: ¿queda grasosa o pegajosa?', respuesta='<p>No. Es una capa ligera que se seca en minutos. Te puedes vestir enseguida.</p>'),
-              blk('pregunta', pregunta='Carlos de Medellín pregunta: ¿me va a arder si ya tengo la piel rozada?', respuesta='<p>Tiene hamamelis y glicerina vegetal para calmar la piel, y es <strong>sin corticoides</strong>. No la apliques sobre heridas abiertas, y si notas molestia, suspende su uso.</p>'),
-              blk('pregunta', pregunta='Paola de Bucaramanga pregunta: ¿sirve para los hongos?', respuesta='<p>No es un tratamiento para hongos. Ayuda a mantener la entrepierna <strong>seca y protegida del roce</strong>. Si tienes una infección, consulta con tu médico.</p>'),
+              blk('pregunta', pregunta='Jhon de Bogotá pregunta: ¿queda grasosa o pegajosa?', respuesta='<p>No. Es una capa ligera que se seca en minutos. Te puedes vestir enseguida.</p>'),
+              blk('pregunta', pregunta='Carlos de Medellín pregunta: ¿me va a arder si ya estoy rozado?', respuesta='<p>Tiene hamamelis y glicerina vegetal para calmar la piel, y es <strong>sin corticoides</strong>. No la apliques sobre heridas abiertas, y si notas molestia, suspende su uso.</p>'),
+              blk('pregunta', pregunta='Diego de Bucaramanga pregunta: ¿sirve para los hongos?', respuesta='<p>No es un tratamiento para hongos. Ayuda a mantener la entrepierna <strong>seca y protegida del roce</strong>. Si tienes una infección, consulta con tu médico.</p>'),
               blk('pregunta', pregunta='Fabián de Cartagena pregunta: ¿cuánto me dura un tubo?', respuesta='<p>Con uso diario, un tubo de 100 g rinde más de 30 días.</p>'),
-              blk('pregunta', pregunta='Laura de Ibagué pregunta: ¿cómo pago y cuándo me llega?', respuesta='<p>Pagas en efectivo cuando la recibes. Te llega en <strong>3 a 5 días</strong> y el envío es <strong>gratis a toda Colombia</strong>.</p>'),
+              blk('pregunta', pregunta='Mauricio de Ibagué pregunta: ¿cómo pago y cuándo me llega?', respuesta='<p>Pagas en efectivo cuando la recibes. Te llega en <strong>3 a 5 días</strong> y el envío es <strong>gratis a toda Colombia</strong>.</p>'),
               blk('pregunta', pregunta='Sebastián de Pereira pregunta: ¿y si no me funciona?', respuesta='<p>Tienes <strong>garantía de satisfacción de 60 días</strong>: si no te funciona, te devolvemos tu dinero.</p>')]
         elif t == 'pp-garantia':
             st.update(color_tarjeta=AC, color_sello=AC, titulo=h['garantia'], texto='Pruébala 60 días. Si no te funciona, te devolvemos tu dinero. Envío gratis, te llega en 3 a 5 días y pagas al recibir.')
