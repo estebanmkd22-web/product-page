@@ -86,6 +86,7 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 2. En `imagenes-ia/X-prompts.json` va la ficha visual de la landing y un prompt por espacio.
 3. `node tools/build-kit-imagenes.mjs imagenes-ia/X-espacios.json imagenes-ia/X-prompts.json kit.html` arma el prompt final de cada espacio (`imagenes-ia/X-final.json`) y la página de revisión, y avisa si algún espacio quedó sin prompt.
 4. Las personas salen del banco de avatares (`avatares/banco.json`): cada avatar tiene 4 fotos de referencia (frente, tres cuartos, medio cuerpo y cuerpo entero) que se adjuntan en cada imagen donde aparece. La landing elige su avatar con `"avatar"` en su archivo de prompts; sin fotos aprobadas, esas imágenes no se generan. Las fotos están en `avatares/fotos/` y `node tools/build-banco-avatares.mjs banco.html` arma la página del banco.
+5. `NODE_USE_ENV_PROXY=1 node --no-warnings tools/kie.mjs imagenes-ia/X-prompts.json --n 1,7 --modelos sunburst,flare --res 1K` genera esos espacios con GPT Image 2.5 (image-to-image) en Kie, con la foto del producto y la del avatar como referencia, y los guarda en `imagenes-ia/X/prueba/`. La clave de Kie es un secreto de red del entorno, permitido para `api.kie.ai` y `kieai.redpandaai.co`.
 
 ## Para desarrollo
 
