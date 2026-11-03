@@ -120,7 +120,7 @@
         {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Seco aunque sudes:</strong> se seca sobre la piel y no atrapa más sudor."
+            "texto": "<strong>Piel seca aunque sudes:</strong> se seca sobre la piel y no atrapa más sudor."
           }
         },
         {
@@ -246,7 +246,7 @@
     {
       "tipo": "pp-videos",
       "settings": {
-        "titulo": "Hombres que <em>ya no se rozan</em>",
+        "titulo": "Quienes ya la usan, <em>sin roce</em>",
         "texto": "Así la usan en su jornada."
       },
       "blocks": [
@@ -293,7 +293,7 @@
           "settings": {
             "zona": "En la calle",
             "titulo": "Aguanto toda la jornada",
-            "texto": "Camino todo el día y terminaba pelado en el muslo. Ahora me la pongo en la mañana y llego a la noche más seco.",
+            "texto": "Camino todo el día y terminaba con la piel pelada en el muslo. Ahora me la aplico en la mañana y llego a la noche con la piel seca.",
             "nombre": "Testimonio de ejemplo"
           }
         },
@@ -311,7 +311,7 @@
           "settings": {
             "zona": "En el gym",
             "titulo": "Entreno sin rozarme",
-            "texto": "En pierna siempre terminaba rozado. Se seca rápido y no se siente grasosa.",
+            "texto": "En pierna siempre terminaba con roce. Se seca rápido y no se siente grasosa.",
             "nombre": "Testimonio de ejemplo"
           }
         },
@@ -365,7 +365,7 @@
           "type": "item",
           "settings": {
             "titulo": "Aguantar",
-            "texto": "Acomodarte la ropa todo el día y terminar pelado."
+            "texto": "Acomodarte la ropa todo el día y terminar con la piel pelada."
           }
         }
       ]
@@ -405,7 +405,7 @@
           "settings": {
             "etiqueta": "Gym",
             "titulo": "Entrenamiento",
-            "texto": "Seco aunque sudes, sin la pasta del talco."
+            "texto": "Piel seca aunque sudes, sin la pasta del talco."
           }
         },
         {
@@ -766,21 +766,21 @@
         {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Jhon de Bogotá pregunta: ¿queda grasosa o pegajosa?",
+            "pregunta": "Diana de Bogotá pregunta: ¿queda grasosa o pegajosa?",
             "respuesta": "<p>No. Es una capa ligera que se seca en minutos. Te puedes vestir enseguida.</p>"
           }
         },
         {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Carlos de Medellín pregunta: ¿me va a arder si ya estoy rozado?",
+            "pregunta": "Carlos de Medellín pregunta: ¿me va a arder si ya tengo la piel rozada?",
             "respuesta": "<p>Tiene hamamelis y glicerina vegetal para calmar la piel, y es <strong>sin corticoides</strong>. No la apliques sobre heridas abiertas, y si notas molestia, suspende su uso.</p>"
           }
         },
         {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Diego de Bucaramanga pregunta: ¿sirve para los hongos?",
+            "pregunta": "Paola de Bucaramanga pregunta: ¿sirve para los hongos?",
             "respuesta": "<p>No es un tratamiento para hongos. Ayuda a mantener la entrepierna <strong>seca y protegida del roce</strong>. Si tienes una infección, consulta con tu médico.</p>"
           }
         },
@@ -794,7 +794,7 @@
         {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Mauricio de Ibagué pregunta: ¿cómo pago y cuándo me llega?",
+            "pregunta": "Laura de Ibagué pregunta: ¿cómo pago y cuándo me llega?",
             "respuesta": "<p>Pagas en efectivo cuando la recibes. Te llega en <strong>3 a 5 días</strong> y el envío es <strong>gratis a toda Colombia</strong>.</p>"
           }
         },
