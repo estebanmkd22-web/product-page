@@ -51,11 +51,17 @@
       ]
     },
     "hero-oferta.imagen_4": {
-      "que": "Deseo: el resultado en el día a día.",
+      "que": "Deseo: protección diaria contra el roce de la ropa y el calor. \"Tu escudo diario invisible.\"",
       "producto": true,
       "persona": false,
-      "escena": "Piernas caminando en una calle soleada de clima caliente, pantaloneta gris y tenis blancos, encuadre de la cintura hacia abajo, sin rostro. El tubo aparece en primer plano, desenfocado, saliendo de un bolso de tela verde salvia.",
-      "historial": []
+      "escena": "Imagen publicitaria de cuidado de la piel. Foto de una persona de pie junto a la ventana soleada de una oficina, encuadre de la cintura a las rodillas, sin rostro: jean azul clásico con costuras visibles en la entrepierna y los costados, camiseta gris por fuera y, en la cintura, apenas asoma el borde elástico gris de la ropa interior. Luz cálida de sol entrando por la ventana. Sobre la foto, 3 etiquetas redondeadas con una línea fina que señala cada punto: \"COSTURAS DEL JEAN\" (señala la costura interna del muslo), \"BORDE DE LA ROPA INTERIOR\" (señala la cintura) y \"CALOR EN LA OFICINA\" (señala la ventana con sol). Arriba, el titular en dos líneas: \"TU ESCUDO DIARIO\" en verde bosque e \"INVISIBLE.\" en verde salvia; debajo, en letra más pequeña: \"Que el roce no te queme la piel.\" Abajo a la derecha, el tubo de pie sobre el escritorio, nítido. Etiquetas en verde bosque con letra blanca. Los textos van en español, escritos exactamente así, en letra gruesa y legible en celular, con aire alrededor.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Nueva escena: escudo diario invisible contra costuras del jean, borde de la ropa interior y calor en la oficina, con texto."
+        }
+      ]
     },
     "carrusel-imagenes.imagen1": {
       "que": "Deseo: lo fácil que es aplicarla.",
