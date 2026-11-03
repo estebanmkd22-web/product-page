@@ -18,8 +18,8 @@
     "logo": {
       "type": "pp-logo",
       "settings": {
-        "ancho_movil": 190,
-        "ancho_pc": 240,
+        "ancho_movil": 130,
+        "ancho_pc": 160,
         "espacio": 14
       }
     },
@@ -70,7 +70,7 @@
         "mostrar_oferta": false,
         "mostrar_rating": false,
         "tamano_titulo": 26,
-        "titulo": "Que el roce <em>no te frene la jornada.</em>",
+        "titulo": "Una capa en la mañana. <em>Piel seca hasta la noche.</em>",
         "texto": "",
         "zonas_titulo": "",
         "zonas": "",
@@ -81,19 +81,19 @@
         "beneficio_1": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Menos roce al caminar:</strong> una capa ligera protege la cara interna del muslo durante toda la jornada."
+            "texto": "<strong>Piel seca desde temprano:</strong> una capa después del baño y la entrepierna se siente seca aunque apriete el calor."
           }
         },
         "beneficio_2": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Aguanta el trabajo pesado:</strong> calle, moto u obra, con menos fricción y menos peladuras."
+            "texto": "<strong>Ayuda a controlar el mal olor:</strong> menos humedad acumulada, menos olor a media tarde."
           }
         },
         "beneficio_3": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Piel seca aunque sudes:</strong> se seca sobre la piel y no atrapa más sudor."
+            "texto": "<strong>Nadie lo nota:</strong> acabado seco, sin brillo ni sensación grasosa."
           }
         },
         "beneficio_4": {
@@ -151,7 +151,7 @@
       "settings": {
         "color_acento": "#2c4a35",
         "color_pestana": "#2c4a35",
-        "titulo": "Tu jornada <em>con menos roce</em>",
+        "titulo": "Tu entrepierna <em>seca hasta la noche</em>",
         "boton_texto": "Ordena ahora — Paga en casa",
         "valor_texto": "",
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
@@ -166,7 +166,7 @@
           "settings": {
             "pestana": "1 crema",
             "etiqueta": "Para empezar",
-            "titulo": "1 Fold Care",
+            "titulo": "1 Comfort Cream",
             "linea_regalo": "🎁 Con los 4 beneficios incluidos",
             "detalle": "1 tubo de 100 g",
             "precio": 89900,
@@ -180,7 +180,7 @@
             "pestana": "2 cremas",
             "destacar": "Más elegido",
             "etiqueta": "Más de 2 meses cubierto",
-            "titulo": "2 Fold Care",
+            "titulo": "2 Comfort Cream",
             "linea_regalo": "🎁 Con los 4 beneficios incluidos",
             "detalle": "2 tubos de 100 g · $74.950 c/u",
             "precio": 149900,
@@ -238,8 +238,8 @@
     "videos": {
       "type": "pp-videos",
       "settings": {
-        "titulo": "Quienes ya la usan, <em>sin roce</em>",
-        "texto": "Así la usan en su jornada."
+        "titulo": "Mira cómo <em>se seca sobre la piel</em>",
+        "texto": "Así se ve en el día a día."
       },
       "blocks": {
         "video_1": {
@@ -335,12 +335,12 @@
       "settings": {
         "fondo": "fondo",
         "etiqueta": "El problema",
-        "titulo": "“Siempre me he rozado. <em>Es normal.</em>”",
-        "texto": "No lo es. Caminar todo el día con humedad y calor termina en peladuras, y lo de siempre no fue hecho para esa zona.",
+        "titulo": "“Ya uso talco. <em>Aguanto un rato.</em>”",
+        "texto": "Un rato no alcanza. A media tarde vuelve la humedad, el olor y las ganas de acomodarte la ropa.",
         "columnas_movil": "2",
         "columnas_pc": "4",
         "proporcion": "1 / 1",
-        "cierre": "No es solo sudor: <em>es roce todo el día.</em>",
+        "cierre": "No es solo sudor: <em>es humedad atrapada todo el día.</em>",
         "cierre_estilo": "texto"
       },
       "blocks": {
@@ -388,7 +388,7 @@
         "color_acento": "#2c4a35",
         "nieve": false,
         "etiqueta": "Dónde se usa",
-        "titulo": "Donde tu jornada aprieta, <em>ARVEN aguanta</em>",
+        "titulo": "Donde el calor aprieta, <em>tu piel sigue seca</em>",
         "texto": "Un tubo para todo el día.",
         "proporcion": "4 / 3",
         "columnas_pc": "3"
@@ -681,11 +681,11 @@
         "texto": "Frente al talco y la vaselina.",
         "color_destacado": "#2c4a35",
         "nombre_a": "ARVEN",
-        "sub_a": "Fold Care",
+        "sub_a": "Comfort Cream",
         "nombre_b": "Talco o vaselina",
         "sub_b": "Lo de siempre",
         "pie_izq": "ARVEN",
-        "pie_der": "Menos roce, todo el día"
+        "pie_der": "Piel seca hasta la noche"
       },
       "blocks": {
         "fila_1": {
@@ -756,7 +756,7 @@
       "type": "pp-resenas",
       "settings": {
         "etiqueta": "Opiniones",
-        "titulo": "“Ya camino toda la jornada <em>sin rozarme.</em>”",
+        "titulo": "“Llego a la noche <em>sin humedad ni olor.</em>”",
         "nota": "",
         "cantidad": "",
         "visibles": 3
@@ -844,25 +844,18 @@
         "pregunta_5": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Natalia de Santa Marta pregunta: ¿la puedo usar en otras zonas?",
-            "respuesta": "<p>Sí. Además de la entrepierna y los muslos, sirve en cualquier pliegue donde la piel toque la piel: debajo del busto, abdomen y axilas.</p>"
-          }
-        },
-        "pregunta_6": {
-          "type": "pregunta",
-          "settings": {
             "pregunta": "Fabián de Cartagena pregunta: ¿cuánto me dura un tubo?",
             "respuesta": "<p>Con uso diario, un tubo de 100 g rinde más de 30 días.</p>"
           }
         },
-        "pregunta_7": {
+        "pregunta_6": {
           "type": "pregunta",
           "settings": {
             "pregunta": "Laura de Ibagué pregunta: ¿cómo pago y cuándo me llega?",
             "respuesta": "<p>Pagas en efectivo cuando la recibes. Te llega en <strong>3 a 5 días</strong> y el envío es <strong>gratis a toda Colombia</strong>.</p>"
           }
         },
-        "pregunta_8": {
+        "pregunta_7": {
           "type": "pregunta",
           "settings": {
             "pregunta": "Sebastián de Pereira pregunta: ¿y si no me funciona?",
@@ -877,8 +870,7 @@
         "pregunta_4",
         "pregunta_5",
         "pregunta_6",
-        "pregunta_7",
-        "pregunta_8"
+        "pregunta_7"
       ]
     },
     "garantia": {
@@ -891,7 +883,7 @@
         "sello_numero": "60",
         "sello_abajo": "Días",
         "etiqueta": "Compra sin riesgo",
-        "titulo": "Menos roce en tu jornada, o te devolvemos tu dinero",
+        "titulo": "Piel seca hasta la noche, o te devolvemos tu dinero",
         "texto": "Pruébala 60 días. Si no te funciona, te devolvemos tu dinero. Envío gratis, te llega en 3 a 5 días y pagas al recibir."
       },
       "blocks": {
@@ -926,7 +918,7 @@
     "boton_fijo": {
       "type": "pp-boton-fijo",
       "settings": {
-        "boton_texto": "La quiero",
+        "boton_texto": "Lo quiero",
         "subtexto": "Envío gratis · Pagas al recibir",
         "precio_manual": 149900
       }

@@ -7,7 +7,7 @@ def blk(t, **kw): return {"type": t, "settings": kw}
 
 H = {
  'a': dict(
-   nombre='ARVEN Fold Care · Hipótesis A (roce)',
+   nombre='ARVEN Men · Hipótesis A (roce)',
    hero_titulo='Que el roce <em>no te frene la jornada.</em>',
    hero_bullets=[
      '<strong>Menos roce al caminar:</strong> una capa ligera protege la cara interna del muslo durante toda la jornada.',
@@ -26,7 +26,7 @@ H = {
    fijo='La quiero',
  ),
  'b': dict(
-   nombre='ARVEN Fold Care · Hipótesis B (humedad y olor)',
+   nombre='ARVEN Men · Hipótesis B (humedad y olor)',
    hero_titulo='Una capa en la mañana. <em>Piel seca hasta la noche.</em>',
    hero_bullets=[
      '<strong>Piel seca desde temprano:</strong> una capa después del baño y la entrepierna se siente seca aunque apriete el calor.',
@@ -50,7 +50,7 @@ for k, h in H.items():
     d = copy.deepcopy(base)
     d['titulo'] = h['nombre']
     d['head_extra'] = "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Barlow Condensed',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:0}</style>"
-    d['producto'] = {"title": "ARVEN Fold Care",
+    d['producto'] = {"title": "ARVEN Comfort Cream Men", "featured_image": {"src": "../../imagenes/arven/g1.jpg"},
         "selected_or_first_available_variant": {"id": 1, "price": 8990000, "compare_at_price": 0, "available": True}, "media": []}
     out = []
     for s in d['secciones']:
@@ -58,12 +58,14 @@ for k, h in H.items():
         if t == 'pp-estilos':
             st.update(acento=AC, texto=TX, texto_2=TX2, fondo=F1, fondo_2=F2, boton=AC, boton_texto='#ffffff', estrella='#c99a3b', ok='#4f7a52', radio=14)
         elif t == 'pp-logo':
-            st.update(imagen={"src": "../../imagenes/arven/arven-fold-logo.png", "alt": "ARVEN Fold Care"}, ancho_movil=190, ancho_pc=240)
+            st.update(imagen={"src": "../../imagenes/arven/arven-logo.png", "alt": "ARVEN"}, ancho_movil=130, ancho_pc=160)
         elif t == 'pp-ticker':
             st.update(fondo=AC, texto='#ffffff')
             s['blocks'] = [blk('mensaje', texto=x) for x in ['Envío GRATIS a toda Colombia', 'Pagas al recibir', 'Te llega en 3 a 5 días', 'Garantía de satisfacción 60 días']]
         elif t == 'pp-hero-oferta':
-            st.update(fondo=F1, titulo=h['hero_titulo'], texto='', zonas_titulo='', zonas='')
+            st.update(fondo=F1, titulo=h['hero_titulo'], texto='', zonas_titulo='', zonas='',
+                      imagen_1={"src": "../../imagenes/arven/g1.jpg"}, imagen_2={"src": "../../imagenes/arven/g2.jpg"},
+                      imagen_3={"src": "../../imagenes/arven/g3.jpg"}, imagen_4={"src": "../../imagenes/arven/g4.jpg"})
             s['blocks'] = [blk('beneficio', texto=x) for x in h['hero_bullets']]
         elif t == 'pp-iconos':
             s['blocks'] = [blk('icono', icono='gota', texto='Acabado seco'), blk('icono', icono='escudo', texto='Menos roce'), blk('icono', icono='frescura', texto='Sin grasa')]
@@ -71,8 +73,8 @@ for k, h in H.items():
             st.update(color_acento=AC, color_pestana=AC, titulo=h['oferta'], entrega='Te llega en 3 a 5 días · Envío gratis',
                       etiquetas_titulo='Ideal para', etiquetas='Trabajo en la calle, Moto, Gimnasio, Clima caliente')
             s['blocks'] = [
-              blk('pack', pestana='1 crema', etiqueta='Para empezar', titulo='1 Fold Care', linea_regalo='🎁 Con los 4 beneficios incluidos', detalle='1 tubo de 100 g', precio=89900, precio_antes=0, cantidad=1),
-              blk('pack', pestana='2 cremas', destacar='Más elegido', etiqueta='Más de 2 meses cubierto', titulo='2 Fold Care', linea_regalo='🎁 Con los 4 beneficios incluidos', detalle='2 tubos de 100 g · $74.950 c/u', precio=149900, precio_antes=0, cantidad=2, preseleccionado=True),
+              blk('pack', pestana='1 crema', etiqueta='Para empezar', titulo='1 Comfort Cream', linea_regalo='🎁 Con los 4 beneficios incluidos', detalle='1 tubo de 100 g', precio=89900, precio_antes=0, cantidad=1),
+              blk('pack', pestana='2 cremas', destacar='Más elegido', etiqueta='Más de 2 meses cubierto', titulo='2 Comfort Cream', linea_regalo='🎁 Con los 4 beneficios incluidos', detalle='2 tubos de 100 g · $74.950 c/u', precio=149900, precio_antes=0, cantidad=2, preseleccionado=True),
               blk('regalo', insignia='Gratis', icono='camion', titulo='Envío gratis', texto='A toda Colombia'),
               blk('regalo', insignia='Incluido', icono='pago', titulo='Pagas al recibir', texto='Nada por adelantado'),
               blk('regalo', insignia='Gratis', icono='manual', titulo='Guía de cuidado', texto='Para el sudor y el roce'),
@@ -120,7 +122,7 @@ for k, h in H.items():
               blk('etapa', icono='calendario', periodo='Semana 1', texto='Ya es parte de tu rutina: te vistes y no vuelves a pensar en el roce.'),
               blk('etapa', icono='calendario', periodo='Uso continuo', texto='Mantén la entrepierna seca y cómoda, incluso en los días de más calor.')]
         elif t == 'pp-comparativa':
-            st.update(texto='Frente al talco y la vaselina.', color_destacado=AC, sub_a='Fold Care', nombre_b='Talco o vaselina', pie_der=h['pie'])
+            st.update(texto='Frente al talco y la vaselina.', color_destacado=AC, sub_a='Comfort Cream', nombre_b='Talco o vaselina', pie_der=h['pie'])
             s['blocks'] = [
               blk('fila', titulo='Acabado', subtitulo='Cómo queda en la piel', ok_a=True, valor_a='Seco', ok_b=False, valor_b='Pasta o grasa'),
               blk('fila', titulo='Con el sudor', subtitulo='Durante el día', ok_a=True, valor_a='Sigue seco', ok_b=False, valor_b='Se apelmaza'),
@@ -139,7 +141,6 @@ for k, h in H.items():
               blk('pregunta', pregunta='Diana de Bogotá pregunta: ¿queda grasosa o pegajosa?', respuesta='<p>No. Es una capa ligera que se seca en minutos. Te puedes vestir enseguida.</p>'),
               blk('pregunta', pregunta='Carlos de Medellín pregunta: ¿me va a arder si ya tengo la piel rozada?', respuesta='<p>Tiene hamamelis y glicerina vegetal para calmar la piel, y es <strong>sin corticoides</strong>. No la apliques sobre heridas abiertas, y si notas molestia, suspende su uso.</p>'),
               blk('pregunta', pregunta='Paola de Bucaramanga pregunta: ¿sirve para los hongos?', respuesta='<p>No es un tratamiento para hongos. Ayuda a mantener la entrepierna <strong>seca y protegida del roce</strong>. Si tienes una infección, consulta con tu médico.</p>'),
-              blk('pregunta', pregunta='Natalia de Santa Marta pregunta: ¿la puedo usar en otras zonas?', respuesta='<p>Sí. Además de la entrepierna y los muslos, sirve en cualquier pliegue donde la piel toque la piel: debajo del busto, abdomen y axilas.</p>'),
               blk('pregunta', pregunta='Fabián de Cartagena pregunta: ¿cuánto me dura un tubo?', respuesta='<p>Con uso diario, un tubo de 100 g rinde más de 30 días.</p>'),
               blk('pregunta', pregunta='Laura de Ibagué pregunta: ¿cómo pago y cuándo me llega?', respuesta='<p>Pagas en efectivo cuando la recibes. Te llega en <strong>3 a 5 días</strong> y el envío es <strong>gratis a toda Colombia</strong>.</p>'),
               blk('pregunta', pregunta='Sebastián de Pereira pregunta: ¿y si no me funciona?', respuesta='<p>Tienes <strong>garantía de satisfacción de 60 días</strong>: si no te funciona, te devolvemos tu dinero.</p>')]
@@ -149,5 +150,5 @@ for k, h in H.items():
             st.update(boton_texto=h['fijo'], precio_manual=149900)
         out.append(s)
     d['secciones'] = out
-    json.dump(d, open(f'preview/paginas/arven-fold-{k}.json', 'w'), ensure_ascii=False, indent=2)
+    json.dump(d, open(f'preview/paginas/arven-{k}.json', 'w'), ensure_ascii=False, indent=2)
     print('ok', k, [s['tipo'] for s in out])
