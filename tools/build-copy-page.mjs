@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.arven-fold-h1', dir: 'templates', ext: '.json', name: 'Plantilla · ARVEN Fold Care · Hipótesis 1 (microgota)', desc: 'Nueva. Landing 1 de la prueba A/B de ARVEN Fold Care (verde bosque, copy neutro, 89.900 / 149.900). No necesita secciones nuevas. Va en templates: crea la plantilla arven-fold-h1, borra todo, pega y guarda.' },
   { file: 'pp-carrusel-imagenes', desc: 'Nueva. Carrusel de imágenes deslizable (sin videos): flechas, barra de avance, etiqueta opcional sobre cada imagen y formato 4:5, 1:1 o 9:16. Es independiente de PP · Videos.' },
   { file: 'pp-esperar', desc: 'Nueva. Qué esperar día a día: línea de tiempo vertical que se llena al bajar, con ícono, periodo y tarjeta alternados.' },
   { file: 'pp-libre', desc: 'Nueva. Sellos "libre de": íconos de línea (sin esteroides, sin parabenos, sin talco, libre de petróleo, sin perfume, cruelty free) con texto.' },
