@@ -10,7 +10,7 @@
     "estilo": "Realista, limpio y fresco. Nada recargado."
   },
   "producto": "Tubo de ARVEN Fold Care idéntico a la foto adjunta: mismos colores, logo y textos, mismo tamaño y tapa. Sin piezas, cajas ni productos de más.",
-  "reglas": "Sin textos, letreros ni logos dentro de la imagen (solo el empaque real del producto). Cuando aparezca cuerpo o piel: sin rostro, encuadre cerrado, piel trigueña natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, sin vello marcado, ropa neutra gris o blanca). Manos y dedos naturales. Sin heridas ni piel lastimada.",
+  "reglas": "Sin textos, letreros ni logos dentro de la imagen, salvo los que pida la escena (y el empaque real del producto). Cuando aparezca cuerpo o piel: sin rostro, encuadre cerrado, piel trigueña natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, sin vello marcado, ropa neutra gris o blanca). Manos y dedos naturales. Sin heridas ni piel lastimada.",
   "espacios": {
     "hero-oferta.imagen_1": {
       "que": "Atención: primera foto que se ve. El producto protagonista y la idea de piel seca y fresca.",
@@ -23,15 +23,27 @@
       "que": "Atención: muestra el mecanismo del título (crema que se vuelve polvo).",
       "producto": true,
       "persona": false,
-      "escena": "Primer plano de una mano sin rostro a la vista con un poco de crema blanca en la yema de dos dedos; a un lado, sobre la misma piel del dorso de la mano, una franja ya seca con acabado mate como polvo fino. El tubo abierto desenfocado al fondo.",
-      "historial": []
+      "escena": "Primer plano de una mano sin rostro a la vista con un poco de crema blanca en la yema de dos dedos; a un lado, sobre la misma piel del dorso de la mano, una franja ya seca con acabado mate como polvo fino. El tubo abierto desenfocado al fondo. Texto arriba: \"SE APLICA COMO CREMA. SE SECA COMO POLVO.\" Sobre la piel, dos flechas cortas con las palabras \"CREMA\" junto a la crema y \"SECO\" junto a la franja seca. Los textos van en español, escritos exactamente así, en mayúscula condensada y gruesa, en verde bosque o blanco según el fondo, grandes y legibles en celular, con mucho aire alrededor.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Texto arriba \"Se aplica como crema. Se seca como polvo.\" y flechas \"Crema\" → \"Seco\"."
+        }
+      ]
     },
     "hero-oferta.imagen_3": {
       "que": "Atención: cómo se usa en la zona real, sin rostro y sin género.",
       "producto": true,
       "persona": false,
-      "escena": "Encuadre cerrado de la cara interna de un muslo con pantaloneta gris, una mano extiende una capa fina de crema blanca. Solo se ve muslo, mano y borde de la pantaloneta. El tubo apoyado al lado en una toalla blanca.",
-      "historial": []
+      "escena": "Encuadre cerrado de la cara interna de un muslo con pantaloneta gris, una mano extiende una capa fina de crema blanca. Solo se ve muslo, mano y borde de la pantaloneta. El tubo apoyado al lado en una toalla blanca. Texto arriba: \"ABSORBE EL SUDOR MICROGOTA A MICROGOTA.\" Abajo, 3 etiquetas redondeadas en fila: \"SIN GRASA\", \"SIN GRUMOS\", \"NO MANCHA\". Los textos van en español, escritos exactamente así, en mayúscula condensada y gruesa, en verde bosque o blanco según el fondo, grandes y legibles en celular, con mucho aire alrededor.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Texto arriba \"Absorbe el sudor microgota a microgota.\" y etiquetas \"Sin grasa · Sin grumos · No mancha\"."
+        }
+      ]
     },
     "hero-oferta.imagen_4": {
       "que": "Deseo: el resultado en el día a día.",
@@ -208,5 +220,12 @@
       "escena": "Un frasco de talco genérico y un frasco de vaselina genérico, ambos sin marca ni texto, de pie sobre fondo blanco liso con sombra suave. Sin el producto ARVEN.",
       "historial": []
     }
-  }
+  },
+  "historial_general": [
+    {
+      "fecha": "2026-11-03",
+      "parte": "reglas",
+      "cambio": "Se permiten textos cuando la escena los pide."
+    }
+  ]
 }
