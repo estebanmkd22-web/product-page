@@ -223,32 +223,33 @@
       ]
     },
     {
-      "tipo": "pp-videos",
+      "tipo": "pp-carrusel-imagenes",
       "settings": {
         "titulo": "Mira cómo <em>se seca como polvo</em>",
-        "texto": "Así se ve en la piel."
+        "texto": "Así se ve en la piel.",
+        "proporcion": "4 / 5"
       },
       "blocks": [
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "Cómo aplicarla"
           }
         },
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "Acabado seco"
           }
         },
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "En el día a día"
           }
         },
         {
-          "type": "video",
+          "type": "imagen",
           "settings": {
             "etiqueta": "Opinión real"
           }
