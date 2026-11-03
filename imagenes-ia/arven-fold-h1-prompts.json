@@ -33,15 +33,20 @@
       ]
     },
     "hero-oferta.imagen_3": {
-      "que": "Atención: cómo se usa en la zona real, sin rostro y sin género.",
+      "que": "Atención: antes y después que muestra el mecanismo (absorbe el sudor microgota a microgota), sin darle peso a la humedad. Imagen ilustrativa.",
       "producto": true,
       "persona": false,
-      "escena": "Encuadre cerrado de la cara interna de un muslo con pantaloneta gris, una mano extiende una capa fina de crema blanca. Solo se ve muslo, mano y borde de la pantaloneta. El tubo apoyado al lado en una toalla blanca. Texto arriba: \"ABSORBE EL SUDOR MICROGOTA A MICROGOTA.\" Abajo, 3 etiquetas redondeadas en fila: \"SIN GRASA\", \"SIN GRUMOS\", \"NO MANCHA\". Los textos van en español, escritos exactamente así, en mayúscula condensada y gruesa, en verde bosque o blanco según el fondo, grandes y legibles en celular, con mucho aire alrededor.",
+      "escena": "Imagen publicitaria de cuidado de la piel, con el mismo diseño de la imagen de referencia de antes y después que te adjunto (úsala solo para la composición, no copies sus textos ni sus colores). Fondo claro con hojas verdes desenfocadas. Arriba, centrado, el logo \"ARVEN FOLD CARE\" como en el empaque. Debajo, el titular en dos líneas: \"ABSORBE EL SUDOR\" en verde bosque y \"MICROGOTA A MICROGOTA.\" en verde salvia. A la izquierda, dos recuadros redondeados uno encima del otro, con el mismo primer plano del pliegue de la cintura (abdomen y borde de una camiseta gris de algodón, sin rostro, piel trigueña natural): recuadro de arriba con la etiqueta \"ANTES\" y abajo la franja \"Sudor + roce\": la piel con pequeñas gotas de sudor brillantes y un leve tono rosado por el roce, sin heridas ni irritación fuerte; recuadro de abajo con la etiqueta \"DESPUÉS\" y abajo la franja \"Seco, suave y cómodo.\": la misma piel lisa, mate y sin gotas. A la derecha, una mano neutra (sin uñas pintadas ni joyas) sostiene el tubo de frente. Abajo, de lado a lado, 3 etiquetas redondeadas en fila: \"SIN GRASA\", \"SIN GRUMOS\", \"NO MANCHA\". En una esquina, en letra pequeña: \"Imagen ilustrativa\". Etiquetas y franjas en verde bosque con letra blanca. Los textos van en español, escritos exactamente así, en letra gruesa y legible en celular.",
       "historial": [
         {
           "fecha": "2026-11-03",
           "parte": "escena",
           "cambio": "Texto arriba \"Absorbe el sudor microgota a microgota.\" y etiquetas \"Sin grasa · Sin grumos · No mancha\"."
+        },
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Rechazada en ChatGPT. Nueva base: antes y después en el pliegue de la cintura (como la referencia), titular microgota y etiquetas Sin grasa · Sin grumos · No mancha."
         }
       ]
     },
