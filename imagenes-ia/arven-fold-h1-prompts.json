@@ -165,11 +165,22 @@
       ]
     },
     "resultados-zona.zona2": {
-      "que": "Transformación: muslos que ya no se rozan al caminar.",
+      "que": "Transformación: antes y después debajo del busto, con la composición de la imagen de referencia. Imagen ilustrativa.",
       "producto": false,
       "persona": false,
-      "escena": "Piernas dando un paso en un andén soleado, encuadre de la cintura a las rodillas, pantaloneta gris, la piel de la cara interna de los muslos se ve lisa y sin marcas. Sin rostro.",
-      "historial": []
+      "escena": "Imagen de cuidado de la piel dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano frontal de la zona debajo del busto: una mano levanta un poco una camiseta de algodón y se ve el borde inferior de un top deportivo liso y la franja de piel justo debajo, hasta el abdomen. El top cubre por completo el busto; solo se ven la mano, el borde del top, la franja de piel y la tela, sin rostro. Mano sin anillos, sin joyas y sin uñas pintadas. Mitad izquierda: camiseta negra y, en la piel justo debajo del borde del top, una línea rosada y enrojecida por el roce y el sudor, sin heridas ni piel abierta. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta gris y la misma piel lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono de piel en las dos mitades. Los textos van en español, escritos exactamente así.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena",
+          "cambio": "Cambia de muslos a debajo del busto: antes y después en dos mitades, con top deportivo que cubre el busto."
+        }
+      ],
+      "sin_escenario": true,
+      "adjuntar": [
+        "la imagen del antes y después"
+      ],
+      "ambiente": "Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "resultados-zona.zona3": {
       "que": "Transformación: antes y después en la axila, con la composición de la imagen de referencia. Imagen ilustrativa.",
