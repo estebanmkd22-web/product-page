@@ -45,7 +45,7 @@ const promptV2 = (e, p) => {
     p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
-    `Formato: imagen ${f.pedir}.`,
+    `Formato: imagen ${f.pedir}. Entrégala como archivo WebP.`,
     `Reglas: ${kit.reglas}`,
   ].filter(Boolean).join('\n\n');
 };
@@ -107,7 +107,7 @@ pre{white-space:pre-wrap;word-break:break-word;background:var(--bg);border:1px s
 button{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer}
 </style></head><body><div class="wrap">
 <h1>Kit de imágenes · ${esc(kit.landing)}</h1>
-<p class="sub">${V2 ? 'Para hacer a mano en ChatGPT, en una misma conversación y en este orden. Para cambiar algo, indica el número de la imagen y la parte (escena, persona o formato).' : 'Espacios sacados de la plantilla, en el orden en que aparecen en el personalizador. Revisa los prompts antes de generar.'}</p>
+<p class="sub">${V2 ? 'Para hacer a mano en ChatGPT, en una misma conversación y en este orden. Para cambiar algo, indica el número de la imagen y la parte (escena, persona o formato). Todas las imágenes van en WebP: si ChatGPT entrega PNG o JPG, conviértela a WebP (máx. 1200 px de ancho) antes de subirla a Shopify.' : 'Espacios sacados de la plantilla, en el orden en que aparecen en el personalizador. Revisa los prompts antes de generar.'}</p>
 <div class="resumen"><span>${items.length} imágenes</span><span>${items.filter((i) => i.producto).length} con foto del producto</span>${faltan.length ? `<span>${faltan.length} sin prompt</span>` : ''}</div>
 <div class="ficha"><h2>Ficha visual</h2>${ficha}</div>
 ${bloqueAvatar}

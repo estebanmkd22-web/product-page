@@ -126,6 +126,7 @@ Kie (`tools/kie.mjs`) está **en pausa por decisión del usuario**: no generes i
 La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, escena, ambiente, formato de ChatGPT (cuadrada, vertical u horizontal, más el recorte) y reglas.
 
 **Reglas de las imágenes:**
+- **Siempre en WebP.** Cada prompt pide el archivo en WebP; la herramienta lo agrega en la línea de formato. Como ChatGPT a veces entrega PNG o JPG igual, el kit y el paso a paso le recuerdan al usuario convertirla a WebP antes de subirla (máx. 1200 px de ancho, idealmente menos de 150 KB), por ejemplo con squoosh.app.
 - Las de dolor no muestran el producto nuevo.
 - Las de galería con texto encima dejan el tercio inferior simple y más oscuro.
 - No se generan fotos para reseñas, porque serían clientes falsos.
