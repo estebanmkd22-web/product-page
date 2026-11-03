@@ -386,6 +386,12 @@
       "fecha": "2026-11-03",
       "parte": "reglas",
       "cambio": "La regla de cuerpo sin rostro y neutro aplica solo a las imágenes sin avatar (el carrusel usa avatares)."
+    },
+    {
+      "fecha": "2026-11-03",
+      "parte": "formato",
+      "cambio": "Todas las imágenes se entregan en WEBP."
     }
-  ]
+  ],
+  "archivo": "webp"
 }
