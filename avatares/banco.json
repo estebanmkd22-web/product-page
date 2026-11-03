@@ -4,19 +4,84 @@
     "co-mama-01": {
       "nombre": "Marta",
       "mercado": "Colombia",
-      "perfil": "Mamá cabeza de hogar, 35 a 50 años, estrato 1 a 3, cocina para la familia todos los días.",
-      "descripcion": "Mujer colombiana de unos 42 años, piel morena clara, cabello oscuro ondulado recogido en moño bajo, contextura media, sonrisa cálida, ropa de casa sencilla (blusa de algodón de colores suaves, delantal opcional), maquillaje natural.",
-      "descripcion_en": "Colombian woman around 42 years old, light-brown skin, dark wavy hair tied in a low bun, average build, warm smile, simple homewear (soft-colored cotton blouse, optional apron), natural makeup.",
+      "perfil": "Mamá cabeza de hogar, 45 a 60 años, estrato 1 a 3, cocina para la familia todos los días.",
+      "descripcion": "Mujer colombiana de unos 55 años, piel trigueña clara con pecas, cabello corto castaño rojizo con canas en la raíz, contextura gruesa, sonrisa cálida, blusa floral azul y salmón con delantal de cocina, aretes pequeños dorados y cadena con medalla.",
+      "descripcion_en": "Colombian woman around 55 years old, light olive skin with freckles, short auburn-brown hair with grey roots, full-figured, warm closed-mouth smile, floral blue and salmon blouse with a kitchen apron, small gold hoop earrings and a gold medal necklace.",
       "usos": [
         "estufa"
       ],
-      "estado": "pendiente",
+      "estado": "aprobado",
       "referencias": {
-        "frente": "",
+        "frente": "avatares/fotos/co-mama-01.webp",
         "tres_cuartos": "",
         "medio_cuerpo": "",
         "cuerpo_entero": ""
-      }
+      },
+      "url_publica": ""
+    },
+    "co-oficina-01": {
+      "nombre": "Adriana",
+      "mercado": "Colombia",
+      "perfil": "Mujer trabajadora de oficina, 40 a 50 años, cansada, jornadas largas.",
+      "descripcion": "Mujer colombiana de unos 45 años, piel trigueña con pecas y un lunar cerca de la boca, cabello negro largo y algo despeinado, expresión seria y cansada, blazer negro con bufanda de estampado animal.",
+      "descripcion_en": "Colombian woman around 45 years old, olive skin with freckles and a small mole near the mouth, long slightly messy black hair, serious tired expression, black blazer with an animal-print scarf.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-oficina-01.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
+    },
+    "co-enfermera-01": {
+      "nombre": "Camila",
+      "mercado": "Colombia",
+      "perfil": "Profesional de la salud, 30 a 40 años, turnos largos de pie.",
+      "descripcion": "Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné.",
+      "descripcion_en": "Colombian woman around 37 years old, fair skin with freckles and a small mole on the cheek, curly brown hair with highlights swept to one side, tired but kind expression, blue medical scrubs with an ID badge.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-enfermera-01.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
+    },
+    "co-oficina-02": {
+      "nombre": "Paola",
+      "mercado": "Colombia",
+      "perfil": "Mujer profesional de oficina, 38 a 48 años, segura y satisfecha.",
+      "descripcion": "Mujer colombiana de unos 42 años, piel trigueña clara, cabello negro liso a los hombros, sonrisa tranquila y segura, blazer negro, bufanda de cuadros beige y reloj inteligente rosado.",
+      "descripcion_en": "Colombian woman around 42 years old, light olive skin, straight shoulder-length black hair, calm confident smile, black blazer, beige plaid scarf and a pink smartwatch.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-oficina-02.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
+    },
+    "hogar-01": {
+      "nombre": "Laura",
+      "mercado": "General",
+      "perfil": "Mujer en casa, 35 a 45 años, alegre, rutina de cuidado personal.",
+      "descripcion": "Mujer de unos 40 años, piel clara, cabello largo ondulado castaño con mechas claras, sonrisa amplia con dientes blancos, buzo gris oscuro, en un baño de casa.",
+      "descripcion_en": "Woman around 40 years old, fair skin, long wavy brown hair with light highlights, wide smile with white teeth, dark grey sweatshirt, in a home bathroom.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/hogar-01.jpg",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
     }
   },
   "prompt_referencias_en": "Character reference photo of {descripcion_en} {toma}. Plain light-grey studio background, soft even daylight, photorealistic, sharp focus on the face, natural skin texture, no text, no logos.",
