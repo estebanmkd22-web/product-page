@@ -275,11 +275,19 @@
       "historial": []
     },
     "galeria-ideas.idea4": {
-      "que": "Transformación: calor y ejercicio. Lleva texto encima: tercio inferior simple y más oscuro.",
-      "producto": true,
+      "que": "Transformación: antes y después al hacer ejercicio en días de calor. Lleva texto encima: tercio inferior simple y más oscuro. Imagen ilustrativa.",
+      "producto": false,
       "persona": false,
-      "escena": "Tenis blancos, botella de agua y el tubo sobre una banca de cemento al sol, después de entrenar, con plantas al fondo. Sin personas. Tercio inferior con sombra de la banca, oscuro y simple.",
-      "historial": []
+      "escena": "Imagen dividida en dos mitades verticales iguales, con una línea blanca fina en el medio. En las dos mitades, la misma persona trotando por el sendero del parque, encuadre de la cintura a los tobillos, sin rostro: pantaloneta deportiva gris a mitad del muslo, camiseta gris, tenis blancos. Mitad izquierda: la persona trota incómoda, con las piernas algo separadas y una mano acomodando el borde de la pantaloneta en la cara interna del muslo; la camiseta con una mancha de sudor y la piel junto al borde de la tela un poco enrojecida, sin heridas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: la misma persona trotando con zancada larga, suelta y cómoda, las manos libres y la piel del muslo lisa y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. En las dos mitades, el tercio inferior de la imagen es el piso del sendero en sombra, oscuro y simple, sin detalles. Los textos van en español, escritos exactamente así.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena y ambiente",
+          "cambio": "Antes y después trotando en un parque con calor; sin el ambiente general de baño."
+        }
+      ],
+      "sin_escenario": true,
+      "ambiente": "Parque de ciudad colombiana en clima caliente, sendero de cemento, árboles y sol de mañana. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "problemas-filas.fila1": {
       "que": "Interés: sílice + almidón de tapioca, el secante.",
