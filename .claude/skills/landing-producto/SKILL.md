@@ -70,7 +70,8 @@ node tools/inline-base.mjs                                            # si tocas
 - Revisa en celular (390 px) con Playwright, ocultando `.pp-fijo`.
 - Corrige lo que se vea apretado, por ejemplo nombres de pack largos.
 - Manda capturas del hero y la oferta al usuario.
-- Agrega la plantilla a `tools/build-copy-page.mjs` y regenera la página de copiar. Es el artifact `https://claude.ai/artifact/JjRD3UQ4yvGUJpJJgh3jY1`: léelo con `action: read` y republica en esa misma URL.
+- Agrega la plantilla (y las secciones nuevas o cambiadas) a `tools/build-copy-page.mjs` para que queden registradas.
+- **Entrega del código: una página de copiar por landing.** Genera con `tools/build-copy-page.mjs` una página que tenga solo la plantilla y las secciones que esa landing necesita crear o volver a pegar, con los pasos arriba, y publícala como artifact propio (por ejemplo, "ARVEN Fold Care · Landing 1"). Si la landing cambia, republica en esa misma URL. **Nunca entregues el código como archivo para descargar.** La página grande de copiar (`https://claude.ai/artifact/JjRD3UQ4yvGUJpJJgh3jY1`) no se republica en cada landing.
 - Commit y push a la rama de trabajo.
 
 ### Fase 3 · Kit de imágenes (a mano en ChatGPT)
