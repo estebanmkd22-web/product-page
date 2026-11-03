@@ -1,9 +1,27 @@
 ---
 name: landing-producto
-description: Crea la landing (product page) de un producto nuevo en Shopify con las secciones PP de este repositorio y su kit de imágenes para hacer a mano en ChatGPT. Úsala cuando el usuario diga "vamos a trabajar otro producto", pida una landing o product page, el hero de un producto, el kit de imágenes o los prompts de una landing, o pida cambiar un prompt puntual del kit.
+description: Define y arma, paso a paso y con aprobación del usuario en cada etapa, la landing (product page) de un producto con las secciones PP de este repositorio y su kit de imágenes para hacer a mano en ChatGPT. No toca Shopify. Úsala cuando el usuario diga "vamos a trabajar otro producto", pida una landing o product page, el hero de un producto, el kit de imágenes o los prompts de una landing, o pida cambiar un prompt puntual del kit.
 ---
 
 # Landing de producto + kit de imágenes
+
+## Regla número 1: primero se define, después se hace
+**Nunca actúes por suposición.** El orden siempre es:
+1. **Definir qué hacer** con el usuario.
+2. **Proponer las mejores opciones.**
+3. **Esperar la confirmación explícita** ("sí", "dale", "me quedo con la 2").
+4. **Recién ahí crear o modificar.**
+
+- Si el usuario solo comparte información (un enlace, una foto, un dato, una idea), **no ejecutes nada**: analízala, propón y pregunta.
+- Una mención no es una orden.
+- Al terminar cada fase, **detente y pregunta** antes de pasar a la siguiente.
+- Si una instrucción es ambigua, pregunta en vez de elegir tú.
+
+## Shopify: en pausa total
+Por decisión del usuario, **no uses ninguna herramienta de Shopify**: ni para buscar el producto, ni para leer, ni para crear, editar, subir archivos o tocar el tema.
+- Los datos del producto (nombre, precio, specs, fotos) los da el usuario. Si faltan, pregúntalos.
+- Todo se entrega como archivos y pasos para que el usuario los pegue a mano.
+- La subida automática a Shopify se hará más adelante, **solo cuando todo esté terminado y el usuario la pida explícitamente** (por ejemplo, "súbelo a Shopify").
 
 Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con las secciones `sections/pp-*.liquid` y las herramientas de `tools/`. El usuario pega el código en **Editar código** y edita en **Personalizar**.
 
@@ -14,11 +32,12 @@ Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con
 | **Tu espacio Market** (tuespaciomarket.com) | Colombia | `$` COP, `locale es-CO` | Tuteo cercano, colombiano |
 | **Naturixa** (vivecompra.com/naturixa) | Guatemala | `Q` | El más cercano para guatemaltecos (voseo) |
 
-El conector de Shopify está ligado a Tu espacio Market. Antes de escribir, busca el producto ahí (`search_products`) para ver precio y nombre reales. Si no existe, dile que lo cree; no inventes IDs. `cdn.shopify.com` está bloqueado: las fotos de la tienda se bajan por `https://tuespaciomarket.com/cdn/shop/files/<archivo>?width=…`.
+Los precios y nombres reales los confirma el usuario; no los busques en la tienda (ver "Shopify: en pausa total"). Si el usuario manda un enlace de su tienda o de un proveedor para analizarlo, puedes leer esa página pública, pero solo para analizar y proponer.
 
 ## Proceso: 3 fases, cada una se aprueba antes de seguir
 
 ### Fase 1 · Hero (no se arma nada hasta que el usuario lo apruebe)
+0. Primero confirma qué quiere hacer: producto, tienda, público, ángulo y si es landing nueva o un cambio. Sin eso, no propongas copy.
 1. Reúne el público, el ángulo y los datos reales: specs, oferta, garantía y fotos. Si falta un dato que va en el copy, pregúntalo; nunca lo inventes.
 2. Propón **4 títulos en tabla** (título · ángulo) con tu recomendación y su porqué. Después propón **bullets** y, cuando el título esté elegido, **subtítulos**.
 3. Reglas del hero:
@@ -30,7 +49,8 @@ El conector de Shopify está ligado a Tu espacio Market. Antes de escribir, busc
    - Bullets con formato `<strong>Beneficio:</strong> explicación concreta` (3 o 4).
    - Chips (`zonas_titulo`/`zonas`) solo si suman.
 
-### Fase 2 · Landing
+### Fase 2 · Landing (solo con el hero aprobado)
+Antes de armar, presenta el plan y espera confirmación: secciones en orden, oferta, paleta, colores y garantía. Arma solo lo confirmado.
 **Maqueta base:** `preview/paginas/arven-fold.json`, la versión más completa de la maqueta de la rama de 1,5 m. Cópiala como `preview/paginas/<producto>.json` y adapta el copy. El orden base con su papel en ATIDCOA:
 
 | Sección | Papel |
@@ -73,7 +93,7 @@ node tools/inline-base.mjs                                            # si tocas
 - Agrega la plantilla a `tools/build-copy-page.mjs` y regenera la página de copiar. Es el artifact `https://claude.ai/artifact/JjRD3UQ4yvGUJpJJgh3jY1`: léelo con `action: read` y republica en esa misma URL.
 - Commit y push a la rama de trabajo.
 
-### Fase 3 · Kit de imágenes (a mano en ChatGPT)
+### Fase 3 · Kit de imágenes (a mano en ChatGPT; solo cuando el usuario lo pida)
 1. `node tools/espacios-imagenes.mjs preview/paginas/<p>.json imagenes-ia/<p>-espacios.json`. Lista cada espacio en el orden del personalizador, con su formato.
 2. Escribe `imagenes-ia/<p>-prompts.json` en **formato versión 2** (ver abajo), en español.
 3. Elige el **avatar del banco** (`avatares/banco.json`, fotos en `avatares/fotos/`) según el público, y confírmalo con el usuario. **Nunca inventes una persona solo con texto.** Si ningún avatar sirve, pídele al usuario una foto para agregarla al banco.
