@@ -47,8 +47,14 @@
           "fecha": "2026-11-03",
           "parte": "escena",
           "cambio": "Rechazada en ChatGPT. Nueva base: antes y después en el pliegue de la cintura (como la referencia), titular microgota y etiquetas Sin grasa · Sin grumos · No mancha."
+        },
+        {
+          "fecha": "2026-11-03",
+          "parte": "ambiente",
+          "cambio": "Sin el escenario general (baño o exterior): la escena pasa en diseño publicitario con fondo claro."
         }
-      ]
+      ],
+      "sin_escenario": true
     },
     "hero-oferta.imagen_4": {
       "que": "Deseo: protección diaria contra el roce de la ropa y el calor. \"Tu escudo diario invisible.\"",
@@ -60,8 +66,14 @@
           "fecha": "2026-11-03",
           "parte": "escena",
           "cambio": "Nueva escena: escudo diario invisible contra costuras del jean, borde de la ropa interior y calor en la oficina, con texto."
+        },
+        {
+          "fecha": "2026-11-03",
+          "parte": "ambiente",
+          "cambio": "Sin el escenario general (baño o exterior): la escena pasa en oficina."
         }
-      ]
+      ],
+      "sin_escenario": true
     },
     "carrusel-imagenes.imagen1": {
       "que": "Deseo: lo fácil que es aplicarla.",
@@ -145,7 +157,14 @@
       "producto": false,
       "persona": false,
       "escena": "Barra de antitranspirante genérica sin marca, destapada, junto a una camiseta gris con una mancha de sudor visible en la zona de la axila, sobre una cama.",
-      "historial": []
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "ambiente",
+          "cambio": "Sin el escenario general (baño o exterior): la escena pasa en habitación."
+        }
+      ],
+      "sin_escenario": true
     },
     "galeria-ideas.idea1": {
       "que": "Transformación: uso en entrepierna y muslos. Lleva texto encima: tercio inferior simple y más oscuro.",
@@ -215,21 +234,42 @@
       "producto": true,
       "persona": false,
       "escena": "Manos subiendo un pantalón de tela beige, encuadre de la cintura a las rodillas, sin rostro, en una habitación luminosa. El tubo cerrado sobre una cómoda de madera clara.",
-      "historial": []
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "ambiente",
+          "cambio": "Sin el escenario general (baño o exterior): la escena pasa en habitación."
+        }
+      ],
+      "sin_escenario": true
     },
     "comparativa.imagen_a": {
       "que": "Comparación: el producto solo, para la columna de ARVEN.",
       "producto": true,
       "persona": false,
       "escena": "El tubo de pie, de frente, centrado, sobre fondo blanco liso con sombra suave debajo. Sin otros objetos.",
-      "historial": []
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "ambiente",
+          "cambio": "Sin el escenario general (baño o exterior): la escena pasa en fondo blanco."
+        }
+      ],
+      "sin_escenario": true
     },
     "comparativa.imagen_b": {
       "que": "Comparación: lo de siempre (talco y vaselina).",
       "producto": false,
       "persona": false,
       "escena": "Un frasco de talco genérico y un frasco de vaselina genérico, ambos sin marca ni texto, de pie sobre fondo blanco liso con sombra suave. Sin el producto ARVEN.",
-      "historial": []
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "ambiente",
+          "cambio": "Sin el escenario general (baño o exterior): la escena pasa en fondo blanco."
+        }
+      ],
+      "sin_escenario": true
     }
   },
   "historial_general": [

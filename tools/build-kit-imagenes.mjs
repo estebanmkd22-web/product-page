@@ -44,7 +44,7 @@ const promptV2 = (e, p) => {
     p.producto ? `Producto: ${kit.producto}` : '',
     p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
-    `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
+    `Ambiente: ${Object.entries(kit.ficha).filter(([k]) => !(p.sin_escenario && k === 'escenario')).map(([, v]) => v).join(' ')}`,
     `Formato: imagen ${f.pedir}.`,
     `Reglas: ${kit.reglas}`,
   ].filter(Boolean).join('\n\n');
