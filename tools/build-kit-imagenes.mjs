@@ -12,6 +12,14 @@ const banco = JSON.parse(fs.readFileSync(new URL('../avatares/banco.json', impor
 const avatar = kit.avatar ? banco[kit.avatar] : null;
 if (kit.avatar && !avatar) throw new Error(`El avatar "${kit.avatar}" no está en avatares/banco.json`);
 const refsAvatar = avatar ? Object.values(avatar.referencias).filter(Boolean) : [];
+// Un espacio puede usar otro avatar del banco con su propio campo "avatar" (varios personajes en una landing).
+const avDe = (p) => {
+  const id = (p && p.avatar) || kit.avatar;
+  if (id && !banco[id]) throw new Error(`El avatar "${id}" no está en avatares/banco.json`);
+  return id ? banco[id] : null;
+};
+const refsDe = (a) => (a ? Object.values(a.referencias).filter(Boolean) : []);
+const esHombre = (a) => a && a.genero === 'hombre';
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 const faltan = espacios.filter((e) => !kit.espacios[e.id]).map((e) => e.id);
@@ -23,7 +31,7 @@ if (sobran.length) console.warn('Prompts sin espacio en la plantilla:', sobran.j
 export const promptFinal = (e, p) => [
   kit.estilo_en,
   p.producto ? kit.producto_en : '',
-  p.persona && avatar ? `The woman must be exactly the same person as in the attached character reference photos (${avatar.descripcion_en}) — same face, skin tone, hair and build.` : '',
+  p.persona && avDe(p) ? `The ${esHombre(avDe(p)) ? 'man' : 'woman'} must be exactly the same person as in the attached character reference photos (${avDe(p).descripcion_en}) — same face, skin tone, hair and build.` : '',
   p.prompt,
   `Aspect ratio ${e.proporcion.replace(/\s/g, '')}.`,
   kit.reglas_en,
@@ -35,16 +43,16 @@ const FORMATO_CHATGPT = (p) => {
   if (a === b) return { pedir: 'cuadrada (1:1)', recorte: '' };
   return a < b ? { pedir: 'vertical (2:3)', recorte: p === '2/3' ? '' : `recórtala a ${p.replace('/', ':')}` } : { pedir: 'horizontal (3:2)', recorte: p === '3/2' ? '' : `recórtala a ${p.replace('/', ':')}` };
 };
-const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avatar ? `la foto de ${avatar.nombre}` : ''].filter(Boolean);
+const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avDe(p) ? `la foto de ${avDe(p).nombre}` : ''].filter(Boolean);
 const promptV2 = (e, p) => {
   const f = FORMATO_CHATGPT(e.proporcion.replace(/\s/g, ''));
   const adj = adjuntosDe(p);
   return [
     adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
     p.producto ? `Producto: ${kit.producto}` : '',
-    p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
+    p.persona && avDe(p) ? `Persona: debe ser exactamente ${esHombre(avDe(p)) ? 'el mismo hombre' : 'la misma mujer'} de la foto adjunta (${avDe(p).descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
-    `Ambiente: ${Object.entries(kit.ficha).filter(([k]) => !(p.sin_escenario && k === 'escenario')).map(([, v]) => v).join(' ')}`,
+    `Ambiente: ${p.ambiente ? p.ambiente : Object.entries(kit.ficha).filter(([k]) => !(p.sin_escenario && k === 'escenario')).map(([, v]) => v).join(' ')}`,
     `Formato: imagen ${f.pedir}.`,
     `Reglas: ${kit.reglas}`,
   ].filter(Boolean).join('\n\n');
@@ -56,7 +64,7 @@ const items = espacios.map((e) => {
   const extra = V2 ? { formato: FORMATO_CHATGPT(e.proporcion.replace(/\s/g, '')), adjuntos: adjuntosDe(p) } : {};
   return { ...e, ...p, ...extra, final: V2 ? promptV2(e, p) : promptFinal(e, p) };
 });
-fs.writeFileSync(fPrompts.replace(/-prompts\.json$/, '-final.json'), JSON.stringify(items.map(({ n, id, proporcion, pixeles, producto, persona, final }) => ({ n, id, proporcion, pixeles, producto: !!producto, avatar: persona ? kit.avatar : null, referencias_avatar: persona ? refsAvatar : [], prompt: final })), null, 2) + '\n');
+fs.writeFileSync(fPrompts.replace(/-prompts\.json$/, '-final.json'), JSON.stringify(items.map(({ n, id, proporcion, pixeles, producto, persona, final }) => ({ n, id, proporcion, pixeles, producto: !!producto, avatar: persona ? ((kit.espacios[id] || {}).avatar || kit.avatar) : null, referencias_avatar: persona ? refsDe(avDe(kit.espacios[id])) : [], prompt: final })), null, 2) + '\n');
 
 const grupos = [];
 for (const it of items) {
@@ -66,15 +74,20 @@ for (const it of items) {
 }
 const fichaV = V2 ? { ...kit.ficha, producto: kit.producto, reglas: kit.reglas } : kit.ficha;
 const ficha = Object.entries(fichaV).map(([k, v]) => `<div class="f"><b>${esc(k[0].toUpperCase() + k.slice(1))}</b><p>${esc(v)}</p></div>`).join('');
-const refs = avatar ? Object.entries(avatar.referencias).map(([k, v]) => `<figure>${v ? `<img src="${esc(v)}" alt="">` : '<div class="vacio">Pendiente</div>'}<figcaption>${esc(k.replace('_', ' '))}</figcaption></figure>`).join('') : '';
-const bloqueAvatar = avatar ? `<div class="avatar"><h2>Avatar: ${esc(avatar.nombre)} <small>${esc(kit.avatar)} · ${esc(avatar.estado)}</small></h2><p>${esc(avatar.descripcion)}</p><div class="refs">${refs}</div>${refsAvatar.length ? '' : '<p class="aviso">Sin fotos de referencia todavía: las imágenes con la mamá no se generan hasta crear y aprobar el avatar.</p>'}</div>` : '';
+const idsUsados = [...new Set(items.filter((it) => it.persona && it.final).map((it) => it.avatar || kit.avatar).filter(Boolean))];
+if (kit.avatar && !idsUsados.includes(kit.avatar)) idsUsados.unshift(kit.avatar);
+const bloqueAvatar = idsUsados.map((id) => {
+  const a = banco[id];
+  const refs = Object.entries(a.referencias).map(([k, v]) => `<figure>${v ? `<img src="${esc(v)}" alt="">` : '<div class="vacio">Pendiente</div>'}<figcaption>${esc(k.replace('_', ' '))}</figcaption></figure>`).join('');
+  return `<div class="avatar"><h2>Avatar: ${esc(a.nombre)} <small>${esc(id)} · ${esc(a.estado)}</small></h2><p>${esc(a.descripcion)}</p><div class="refs">${refs}</div>${refsDe(a).length ? '' : '<p class="aviso">Sin fotos de referencia todavía: las imágenes con este avatar no se generan hasta crear y aprobar el avatar.</p>'}</div>`;
+}).join('');
 const tarjetas = grupos.map((g) => `
 <section class="grupo">
   <h2>${esc(g.seccion)}${g.titulo ? `<small>${esc(g.titulo)}</small>` : ''}</h2>
   ${g.items.map((it) => `
   <article class="card${it.final ? '' : ' falta'}">
     <div class="top"><span class="n">${it.n}</span><div><h3>${esc(it.donde)}${(it.historial || []).length ? ' <span class="mod">Modificada</span>' : ''}</h3>
-      <div class="chips"><span>${esc(it.proporcion.replace(/\s/g, ''))}</span>${it.pixeles ? `<span>${esc(it.pixeles)} px</span>` : ''}${it.producto ? '<span class="ref">Con foto del producto</span>' : ''}${it.persona && avatar ? `<span class="ref">Con ${esc(avatar.nombre)}</span>` : ''}</div></div></div>
+      <div class="chips"><span>${esc(it.proporcion.replace(/\s/g, ''))}</span>${it.pixeles ? `<span>${esc(it.pixeles)} px</span>` : ''}${it.producto ? '<span class="ref">Con foto del producto</span>' : ''}${it.persona && avDe(it) ? `<span class="ref">Con ${esc(avDe(it).nombre)}</span>` : ''}</div></div></div>
     <p class="que">${esc(it.que || 'Falta el prompt de este espacio.')}</p>
     ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd><dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
     ${(it.historial || []).length ? `<ul class="hist">${it.historial.map((h) => `<li><b>${esc(h.fecha)}</b> · ${esc(h.parte)}: ${esc(h.cambio)}</li>`).join('')}</ul>` : ''}

@@ -82,6 +82,74 @@
         "cuerpo_entero": ""
       },
       "url_publica": ""
+    },
+    "co-hombre-01": {
+      "nombre": "Sebastián",
+      "genero": "hombre",
+      "mercado": "Colombia",
+      "perfil": "Hombre joven, 22 a 30 años, alegre, trabaja desde casa.",
+      "descripcion": "Hombre latino de unos 25 años, piel trigueña clara, cabello corto oscuro, barba corta de pocos días, sonrisa amplia con dientes blancos, contextura delgada. En la foto lleva gorra verde y camiseta blanca de mangas verdes (al generar, cambiar por ropa sin logos).",
+      "descripcion_en": "Latino man around 25 years old, light olive skin, short dark hair, short stubble beard, wide bright smile, slim build.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-hombre-01.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
+    },
+    "co-hombre-02": {
+      "nombre": "Felipe",
+      "genero": "hombre",
+      "mercado": "Colombia",
+      "perfil": "Hombre activo, 28 a 35 años, entrena y suda a diario.",
+      "descripcion": "Hombre latino de unos 32 años, piel trigueña, cabello oscuro corto y crespo arriba, barba corta y cuidada, contextura atlética. En la foto lleva camiseta deportiva gris y pantaloneta negra en el gimnasio (al generar, sin logos).",
+      "descripcion_en": "Latino man around 32 years old, olive skin, short dark curly-top hair, short neat beard, athletic build.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-hombre-02.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
+    },
+    "co-hombre-03": {
+      "nombre": "Jorge",
+      "genero": "hombre",
+      "mercado": "Colombia",
+      "perfil": "Hombre trabajador, 45 a 55 años, pasa el día en la calle.",
+      "descripcion": "Hombre latino de unos 50 años, piel trigueña, cabello negro muy corto con entradas, rostro serio y amable, contextura gruesa. En la foto lleva camiseta negra y un bolso cruzado de cuero café (al generar, camiseta sin logos).",
+      "descripcion_en": "Latino man around 50 years old, olive skin, very short black hair with a receding hairline, serious but kind face, stocky build.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-hombre-03.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
+    },
+    "co-hombre-04": {
+      "nombre": "Mauricio",
+      "genero": "hombre",
+      "mercado": "Colombia",
+      "perfil": "Hombre de oficina, 38 a 45 años, jornadas largas con pantalón de tela.",
+      "descripcion": "Hombre de unos 40 años, piel clara, cabello castaño claro corto con entradas, barba corta castaña, sonrisa amplia, contextura gruesa. En la foto lleva camisa de cuadros lila y pantalón de tela azul oscuro.",
+      "descripcion_en": "Man around 40 years old, fair skin, short light-brown hair with a receding hairline, short brown beard, wide smile, heavy-set build.",
+      "usos": [],
+      "estado": "aprobado",
+      "referencias": {
+        "frente": "avatares/fotos/co-hombre-04.webp",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
     }
   },
   "prompt_referencias_en": "Character reference photo of {descripcion_en} {toma}. Plain light-grey studio background, soft even daylight, photorealistic, sharp focus on the face, natural skin texture, no text, no logos.",

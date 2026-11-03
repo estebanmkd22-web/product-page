@@ -10,7 +10,7 @@
     "estilo": "Realista, limpio y fresco. Nada recargado."
   },
   "producto": "Tubo de ARVEN Fold Care idéntico a la foto adjunta: mismos colores, logo y textos, mismo tamaño y tapa. Sin piezas, cajas ni productos de más.",
-  "reglas": "Sin textos, letreros ni logos dentro de la imagen, salvo los que pida la escena (y el empaque real del producto). Cuando aparezca cuerpo o piel: sin rostro, encuadre cerrado, piel trigueña natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, sin vello marcado, ropa neutra gris o blanca). Manos y dedos naturales. Sin heridas ni piel lastimada.",
+  "reglas": "Sin textos, letreros ni logos dentro de la imagen, salvo los que pida la escena (y el empaque real del producto). En las imágenes sin avatar, cuando aparezca cuerpo o piel: sin rostro, encuadre cerrado, piel trigueña natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, sin vello marcado, ropa neutra gris o blanca). Manos y dedos naturales. Sin heridas ni piel lastimada.",
   "espacios": {
     "hero-oferta.imagen_1": {
       "que": "Atención: primera foto que se ve. El producto protagonista y la idea de piel seca y fresca.",
@@ -76,32 +76,72 @@
       "sin_escenario": true
     },
     "carrusel-imagenes.imagen1": {
-      "que": "Deseo: lo fácil que es aplicarla.",
+      "que": "Deseo: personas distintas que ya la usan en su día (Paola, oficina). Imagen ilustrativa, no es un testimonio real.",
       "producto": true,
-      "persona": false,
-      "escena": "Mano poniendo una pequeña cantidad de crema del tubo en la yema de los dedos, sobre un lavamanos claro con toalla blanca doblada y una planta verde. Encuadre vertical, cerrado en manos y tubo.",
-      "historial": []
+      "persona": true,
+      "avatar": "co-oficina-02",
+      "sin_escenario": true,
+      "escena": "En su puesto de oficina con ventana soleada al fondo, sentada en una silla de escritorio, el blazer colgado en el espaldar por el calor, escritorio con computador y un vaso de agua. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Paola sostiene el tubo con una mano y apoya la otra en el escritorio, sonrisa leve.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena y persona",
+          "cambio": "Carrusel con avatares: Paola en oficina."
+        }
+      ],
+      "ambiente": "Oficina luminosa de ciudad colombiana, luz de día por la ventana, tonos neutros. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "carrusel-imagenes.imagen2": {
-      "que": "Deseo: prueba visual del acabado seco 'como polvo'.",
+      "que": "Deseo: personas distintas que ya la usan en su día (Felipe, gimnasio). Imagen ilustrativa, no es un testimonio real.",
       "producto": true,
-      "persona": false,
-      "escena": "Macro de la piel del antebrazo con una franja de crema ya seca: superficie mate, uniforme, sin brillo ni grasa. Al lado, una franja recién aplicada aún cremosa para comparar. Fondo verde salvia desenfocado.",
-      "historial": []
+      "persona": true,
+      "avatar": "co-hombre-02",
+      "sin_escenario": true,
+      "escena": "En un gimnasio de barrio, sentado en una banca después de entrenar, toalla blanca sobre el hombro, mancuernas desenfocadas al fondo, camiseta deportiva gris lisa y pantaloneta negra. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Felipe sostiene el tubo con una mano y con la otra se apoya en la rodilla, algo sudado y relajado.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena y persona",
+          "cambio": "Carrusel con avatares: Felipe en gimnasio."
+        }
+      ],
+      "ambiente": "Gimnasio de barrio con luz blanca de techo y algo de luz natural, tonos grises y negros. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "carrusel-imagenes.imagen3": {
-      "que": "Deseo: el producto como parte de la rutina diaria.",
+      "que": "Deseo: personas distintas que ya la usan en su día (Marta, cocina). Imagen ilustrativa, no es un testimonio real.",
       "producto": true,
-      "persona": false,
-      "escena": "El tubo sobre el lavamanos de mañana, junto a cepillo de dientes, toalla blanca y un reloj de pulsera neutro. Luz de ventana. Escena ordenada y vivida, sin personas.",
-      "historial": []
+      "persona": true,
+      "avatar": "co-mama-01",
+      "sin_escenario": true,
+      "escena": "En la cocina de su casa a mediodía, ollas humeando en la estufa al fondo, ventana pequeña con luz cálida, delantal puesto. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Marta sostiene el tubo con las dos manos frente al pecho, sonrisa cálida.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena y persona",
+          "cambio": "Carrusel con avatares: Marta en cocina."
+        }
+      ],
+      "ambiente": "Cocina de casa colombiana estrato 2 o 3, luz cálida de mediodía, baldosa y mesón de uso diario. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "carrusel-imagenes.imagen4": {
-      "que": "Deseo: cierre del carrusel con el producto y su textura (reemplaza 'Opinión real', ver nota).",
+      "que": "Deseo: personas distintas que ya la usan en su día (Jorge, calle). Imagen ilustrativa, no es un testimonio real.",
       "producto": true,
-      "persona": false,
-      "escena": "El tubo acostado sobre una toalla blanca con una línea de crema que sale de la boquilla; a un lado hojas verdes y una piedra clara. Vista cenital, encuadre vertical.",
-      "historial": []
+      "persona": true,
+      "avatar": "co-hombre-03",
+      "sin_escenario": true,
+      "escena": "De pie en un andén de una calle comercial con sol de mediodía, locales y árboles desenfocados al fondo, camiseta negra lisa y bolso cruzado de cuero café. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Jorge sostiene el tubo con una mano a la altura del pecho, expresión seria y amable.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena y persona",
+          "cambio": "Carrusel con avatares: Jorge en calle."
+        }
+      ],
+      "ambiente": "Calle de ciudad colombiana en clima caliente, sol de mediodía, colores reales de la calle. Foto realista tipo celular de buena calidad, no de estudio."
     },
     "resultados-zona.zona1": {
       "que": "Transformación: entrepierna seca y sin roce (imagen ilustrativa).",
@@ -270,6 +310,23 @@
         }
       ],
       "sin_escenario": true
+    },
+    "carrusel-imagenes.imagen5": {
+      "que": "Deseo: personas distintas que ya la usan en su día (Laura, balcón). Imagen ilustrativa, no es un testimonio real.",
+      "producto": true,
+      "persona": true,
+      "avatar": "hogar-01",
+      "sin_escenario": true,
+      "escena": "En el balcón de su apartamento con plantas, después de salir a caminar, ropa deportiva gris lisa, botella de agua sobre una mesita, luz de mañana. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Laura sostiene el tubo con una mano y sonríe a la cámara.",
+      "historial": [
+        {
+          "fecha": "2026-11-03",
+          "parte": "escena y persona",
+          "cambio": "Carrusel con avatares: Laura en balcón."
+        }
+      ],
+      "ambiente": "Balcón de apartamento con plantas verdes, luz suave de mañana. Foto realista tipo celular de buena calidad, no de estudio."
     }
   },
   "historial_general": [
@@ -277,6 +334,11 @@
       "fecha": "2026-11-03",
       "parte": "reglas",
       "cambio": "Se permiten textos cuando la escena los pide."
+    },
+    {
+      "fecha": "2026-11-03",
+      "parte": "reglas",
+      "cambio": "La regla de cuerpo sin rostro y neutro aplica solo a las imágenes sin avatar (el carrusel usa avatares)."
     }
   ]
 }
