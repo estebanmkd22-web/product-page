@@ -46,6 +46,7 @@ async function generar(modelo, prompt, refs, proporcion) {
   }).then((x) => x.json());
   const id = r.data?.taskId;
   if (!id) throw new Error(`Kie no creó la tarea: ${JSON.stringify(r)}`);
+  console.log(`  tarea ${modelo}: ${id}`);
   for (let i = 0; i < 120; i++) {
     await esperar(5000);
     const t = await fetch(`https://api.kie.ai/api/v1/jobs/recordInfo?taskId=${id}`, { headers: AUTH }).then((x) => x.json());
@@ -59,6 +60,8 @@ async function generar(modelo, prompt, refs, proporcion) {
 // GPT Image 2.5 no tiene 4:5; se genera en el formato más cercano y se recorta después.
 const FORMATO = { '4/5': '3:4' };
 fs.mkdirSync(salidaDir, { recursive: true });
+const fResultados = path.join(salidaDir, 'resultados.json');
+const resultados = fs.existsSync(fResultados) ? JSON.parse(fs.readFileSync(fResultados, 'utf8')) : {};
 const urlProducto = await subir(kit.referencia_archivo);
 for (const n of numeros) {
   const e = finales.find((x) => x.n === n);
@@ -66,9 +69,20 @@ for (const n of numeros) {
   const refs = [...(e.producto ? [urlProducto] : []), ...(await Promise.all(e.referencias_avatar.map(subir)))];
   const p = e.proporcion.replace(/\s/g, '');
   for (const m of modelos) {
-    const url = await generar(m, e.prompt, refs, FORMATO[p] || p.replace('/', ':'));
-    const archivo = path.join(salidaDir, `${String(n).padStart(2, '0')}-${m}.png`);
-    fs.writeFileSync(archivo, Buffer.from(await fetch(url).then((x) => x.arrayBuffer())));
-    console.log(`OK ${n} ${m} → ${path.relative(ROOT, archivo)}  (${url})`);
+    const clave = `${String(n).padStart(2, '0')}-${m}`;
+    const archivo = path.join(salidaDir, `${clave}.png`);
+    if (fs.existsSync(archivo)) { console.log(`Ya existe ${path.relative(ROOT, archivo)}, no se regenera`); continue; }
+    // Si una corrida anterior generó la imagen pero no pudo bajarla, se reutiliza su URL en vez de pagar otra.
+    const url = resultados[clave] || await generar(m, e.prompt, refs, FORMATO[p] || p.replace('/', ':'));
+    resultados[clave] = url;
+    fs.writeFileSync(fResultados, JSON.stringify(resultados, null, 2) + '\n');
+    try {
+      const resp = await fetch(url);
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      fs.writeFileSync(archivo, Buffer.from(await resp.arrayBuffer()));
+      console.log(`OK ${n} ${m} → ${path.relative(ROOT, archivo)}  (${url})`);
+    } catch (err) {
+      console.error(`Generada pero sin descargar ${clave}: ${url} (${err.cause?.message || err.message}). Volvé a correr el comando para reintentar la descarga sin generar de nuevo.`);
+    }
   }
 }
