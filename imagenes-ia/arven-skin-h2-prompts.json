@@ -1,0 +1,361 @@
+{
+  "version": 2,
+  "landing": "ARVEN Skin Defense · Landing 2 (picazón y hongos)",
+  "avatar": null,
+  "archivo": "webp",
+  "referencia_archivo": "imagenes/arven-skin/producto.webp",
+  "ficha": {
+    "luz": "Luz natural, limpia y creíble.",
+    "paleta": "Blanco hueso, verde bosque y verde salvia, como el empaque.",
+    "estilo": "Realista, limpio y directo. Nada recargado."
+  },
+  "producto": "Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.",
+  "reglas": "Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas.",
+  "espacios": {
+    "hero-oferta.imagen_1": {
+      "que": "Atención: el producto protagonista, como en el empaque.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Exterior en clima caliente con piedra clara y plantas tropicales, luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "El tubo y la caja de pie, uno al lado del otro, sobre una piedra clara, con hojas tropicales verdes desenfocadas alrededor. Los dos se ven nítidos y de frente. Encuadre cuadrado con aire alrededor.",
+      "historial": []
+    },
+    "hero-oferta.imagen_2": {
+      "que": "Atención: la promesa del título con texto (picazón y enrojecimiento).",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro claro, luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Imagen publicitaria dividida en dos mitades verticales con una línea blanca fina. En las dos mitades, el mismo primer plano de la cintura de una persona con camiseta gris apenas subida y la pretina ancha de una pantaloneta negra de algodón. Mitad izquierda: una franja roja e irritada sobre la pretina, con la etiqueta blanca \"ANTES\". Mitad derecha: la misma zona lisa y sin enrojecimiento, con la etiqueta negra \"DESPUÉS\". Arriba, a todo el ancho, una franja blanco hueso con el titular en verde bosque: \"CALMA LA PICAZÓN Y EL ENROJECIMIENTO.\" Abajo a la derecha, el tubo de pie. En una esquina, en letra pequeña: \"Imagen ilustrativa\". Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": [],
+      "adjuntar": [
+        "la imagen del antes y después del abdomen"
+      ],
+      "referente": "imagenes-ia/referentes/arven-skin-h2/antes-despues-abdomen.webp"
+    },
+    "hero-oferta.imagen_3": {
+      "que": "Interés: los ingredientes clave, con texto.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con hojas verdes desenfocadas, luz lateral suave de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón sobre piedra clara: en el centro el tubo de pie; alrededor, una gota dorada de aceite (ácido undecilénico), una ramita de árbol de té con hojas finas, un pequeño montón de polvo blanco (óxido de zinc) y una ramita de hamamelis con flores amarillas. Pequeñas etiquetas blancas redondeadas con líneas finas que señalan cada elemento: \"ÁCIDO UNDECILÉNICO\", \"ÁRBOL DE TÉ\", \"ÓXIDO DE ZINC\" y \"HAMAMELIS\". Arriba, el titular en verde bosque: \"PARA ZONAS PROPENSAS A HUMEDAD Y HONGOS.\" Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    },
+    "hero-oferta.imagen_4": {
+      "que": "Deseo: las 3 acciones del empaque, con texto.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo plano blanco hueso con sombra suave, luz de estudio suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "El tubo de pie a la izquierda, sobre una toalla blanca doblada. A la derecha, tres bloques uno debajo del otro, cada uno con un círculo verde bosque con ícono blanco de línea y su texto al lado: gota → \"CONTROLA LA HUMEDAD\", ondas → \"ALIVIA LA IRRITACIÓN\", escudo → \"PROTEGE LA PIEL\". Arriba, el titular en verde bosque: \"QUE LA ROZADURA NO AVANCE MÁS.\" Fondo blanco hueso liso. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen1": {
+      "que": "Deseo: personas distintas que la usan en su día (Adriana). Imagen ilustrativa, no es un testimonio real.",
+      "producto": true,
+      "persona": true,
+      "avatar": "co-oficina-01",
+      "sin_escenario": true,
+      "ambiente": "Oficina de ciudad colombiana con luz de tarde por la ventana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Al final de la jornada en la oficina, sentada en su puesto con el computador al fondo, el blazer colgado en la silla por el calor. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Adriana sostiene el tubo con una mano, se ve aliviada.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen2": {
+      "que": "Deseo: personas distintas que la usan en su día (Sebastián). Imagen ilustrativa, no es un testimonio real.",
+      "producto": true,
+      "persona": true,
+      "avatar": "co-hombre-01",
+      "sin_escenario": true,
+      "ambiente": "Habitación de casa con luz de ventana de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "En su cuarto de estudio en casa, junto al escritorio con un teclado musical desenfocado al fondo, camiseta lisa gris. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Sebastián sostiene el tubo y sonríe a la cámara.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen3": {
+      "que": "Deseo: personas distintas que la usan en su día (Camila). Imagen ilustrativa, no es un testimonio real.",
+      "producto": true,
+      "persona": true,
+      "avatar": "co-enfermera-01",
+      "sin_escenario": true,
+      "ambiente": "Pasillo de clínica con luz blanca de techo. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "En el pasillo del hospital después del turno, con su uniforme azul y el carné. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Camila sostiene el tubo con las dos manos, cansada pero tranquila.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen4": {
+      "que": "Deseo: personas distintas que la usan en su día (Mauricio). Imagen ilustrativa, no es un testimonio real.",
+      "producto": true,
+      "persona": true,
+      "avatar": "co-hombre-04",
+      "sin_escenario": true,
+      "ambiente": "Antejardín de casa con plantas, luz de tarde. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "En la entrada de su casa al volver del trabajo, camisa de cuadros lila y pantalón de tela azul oscuro. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Mauricio sostiene el tubo con una mano y sonríe.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen5": {
+      "que": "Deseo: personas distintas que la usan en su día (Paola). Imagen ilustrativa, no es un testimonio real.",
+      "producto": true,
+      "persona": true,
+      "avatar": "co-oficina-02",
+      "sin_escenario": true,
+      "ambiente": "Sala de apartamento con luz de tarde. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "En su sala, sentada en el sofá con ropa cómoda gris lisa, una taza sobre la mesa. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
+      "persona_accion": "Paola sostiene el tubo y sonríe tranquila.",
+      "historial": []
+    },
+    "resultados-zona.zona1": {
+      "que": "Transformación: antes y después junto al borde de la pantaloneta. Imagen ilustrativa.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de la parte alta de la pierna de una persona de pie, justo donde termina el borde de una pantaloneta deportiva de algodón; sin rostro y sin otras partes del cuerpo. Mitad izquierda: pantaloneta gris oscuro y una zona rosada y enrojecida junto al borde de la tela, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: pantaloneta gris claro y la misma zona lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": [],
+      "adjuntar": [
+        "la imagen del antes y después"
+      ],
+      "referente": "imagenes-ia/referentes/arven-skin-h2/antes-despues-muslo.webp"
+    },
+    "resultados-zona.zona2": {
+      "que": "Transformación: antes y después con el brazo levantado. Imagen ilustrativa.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de el pliegue bajo el brazo levantado y el borde de una camiseta sin mangas, sin cabello a la vista; sin rostro y sin otras partes del cuerpo. Mitad izquierda: camiseta sin mangas gris y una zona rosada y enrojecida por el roce y el sudor, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta sin mangas blanca y la misma zona lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": [],
+      "adjuntar": [
+        "la imagen del antes y después"
+      ],
+      "referente": "imagenes-ia/referentes/arven-skin-h2/antes-despues-axila.webp"
+    },
+    "resultados-zona.zona3": {
+      "que": "Transformación: antes y después en la cintura. Imagen ilustrativa.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de la cintura: dos manos sin anillos levantan un poco una camiseta gris de algodón y abajo se ve la pretina ancha de una pantaloneta negra; sin rostro y sin otras partes del cuerpo. Mitad izquierda: camiseta gris y una franja rosada y enrojecida justo encima de la pretina, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta gris y la misma franja lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": [],
+      "adjuntar": [
+        "la imagen del antes y después"
+      ],
+      "referente": "imagenes-ia/referentes/arven-skin-h2/antes-despues-abdomen.webp"
+    },
+    "resultados-zona.zona4": {
+      "que": "Transformación: antes y después bajo la banda del top. Imagen ilustrativa.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de la franja justo debajo de la banda elástica de un top deportivo liso que cubre por completo la parte de arriba; una mano levanta un poco una camiseta de algodón; sin rostro y sin otras partes del cuerpo. Mitad izquierda: camiseta negra y una línea rosada y enrojecida justo debajo de la banda, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta gris y la misma franja lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": [],
+      "adjuntar": [
+        "la imagen del antes y después"
+      ],
+      "referente": "imagenes-ia/referentes/arven-skin-h2/antes-despues-busto.webp"
+    },
+    "grid-dolores.item1": {
+      "que": "Interés: picazón que no para. Sin el producto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación de casa con luz plana de tarde. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Primer plano de una mano rascándose sobre el borde de una pantaloneta gris de algodón, con una zona rosada alrededor. Sin rostro.",
+      "historial": []
+    },
+    "grid-dolores.item2": {
+      "que": "Interés: enrojecimiento que crece. Sin el producto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro, luz plana de interior. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Primer plano de la cintura con la camiseta apenas subida: una mancha roja difusa y más grande sobre la pretina de una pantaloneta negra, sin heridas abiertas.",
+      "historial": []
+    },
+    "grid-dolores.item3": {
+      "que": "Interés: la zona se pela con el roce. Sin el producto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo neutro, luz plana de interior. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Primer plano junto al borde de una pantaloneta gris: zona rosada con descamación fina y seca, sin heridas abiertas.",
+      "historial": []
+    },
+    "grid-dolores.item4": {
+      "que": "Interés: mal olor por la humedad atrapada. Sin el producto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación con luz plana de tarde. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Camiseta gris con una mancha de sudor en la zona del brazo, tirada sobre una cama junto a un frasco de talco genérico sin marca regado.",
+      "historial": []
+    },
+    "galeria-ideas.idea1": {
+      "que": "Transformación: cuidado al caminar. Tercio inferior simple y más oscuro para el texto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Calle de ciudad colombiana en clima caliente, sol de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Piernas caminando por un andén soleado, pantaloneta gris y tenis blancos, encuadre de la cintura a los tobillos, sin rostro. El tercio inferior es el piso en sombra, oscuro y simple.",
+      "historial": []
+    },
+    "galeria-ideas.idea2": {
+      "que": "Transformación: brazo levantado, zona seca. Tercio inferior oscuro para el texto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Pared clara de casa con luz de ventana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Brazo levantado con camiseta sin mangas blanca, encuadre cerrado en hombro y brazo, zona lisa y seca, sin rostro. El tercio inferior en sombra suave y sin detalles.",
+      "historial": []
+    },
+    "galeria-ideas.idea3": {
+      "que": "Transformación: cintura protegida. Tercio inferior oscuro para el texto.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Mano extendiendo una capa fina de crema blanca en la cintura, camiseta gris un poco subida y pantaloneta negra, sin rostro. El tubo abierto al lado. El tercio inferior es la toalla oscura y lisa.",
+      "historial": []
+    },
+    "galeria-ideas.idea4": {
+      "que": "Transformación: días de calor. Tercio inferior oscuro para el texto.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Parque de ciudad caliente a mediodía. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Persona de espaldas, sin rostro, de la cintura a las rodillas, caminando por un parque con mucho sol, camiseta gris con algo de sudor y pantaloneta negra. El tercio inferior es el sendero en sombra, oscuro y simple.",
+      "historial": []
+    },
+    "problemas-filas.fila1": {
+      "que": "Calma: alivia la picazón.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Baño de casa con luz suave de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Mano aplicando una capa fina de crema blanca sobre una zona rosada junto al borde de una pantaloneta gris, gesto suave. El tubo abierto al lado.",
+      "historial": []
+    },
+    "problemas-filas.fila2": {
+      "que": "Sequedad: controla la humedad.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo verde salvia desenfocado, luz suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Macro de una franja de crema ya seca, mate y uniforme, sobre el dorso de una mano; al lado, una gota de agua que no se absorbe. El tubo desenfocado al fondo.",
+      "historial": []
+    },
+    "problemas-filas.fila3": {
+      "que": "Protección: una barrera para zonas propensas.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "El tubo de pie con una sutil capa transparente tipo escudo alrededor (efecto de luz suave, no gráfico), sobre piedra clara.",
+      "historial": []
+    },
+    "problemas-filas2.fila1": {
+      "que": "Ingrediente: ácido undecilénico.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón: un gotero de vidrio con una gota dorada de aceite sobre piedra clara, el tubo detrás desenfocado.",
+      "historial": []
+    },
+    "problemas-filas2.fila2": {
+      "que": "Ingrediente: aceite de árbol de té microencapsulado.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón: ramita de árbol de té con hojas finas y pequeñas esferas transparentes de aceite a su lado, sobre piedra clara, el tubo detrás.",
+      "historial": []
+    },
+    "problemas-filas2.fila3": {
+      "que": "Ingrediente: óxido de zinc.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Lino verde salvia con luz suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón: platito de cerámica blanca con polvo blanco mate y una espátula pequeña, sobre lino verde salvia, el tubo al lado.",
+      "historial": []
+    },
+    "problemas-filas2.fila4": {
+      "que": "Ingrediente: sílice + almidón de tapioca.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón: cuchara de madera con polvo blanco fino y una raíz de yuca cortada, con un pequeño montón de polvo translúcido, sobre piedra clara, el tubo detrás.",
+      "historial": []
+    },
+    "problemas-filas2.fila5": {
+      "que": "Ingrediente: hamamelis.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón: ramita de hamamelis con flores amarillas en hilos y hojas verdes, sobre piedra clara, el tubo detrás.",
+      "historial": []
+    },
+    "problemas-filas2.fila6": {
+      "que": "Ingrediente: glicerina vegetal.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Bodegón: gotas transparentes y brillantes de glicerina sobre una hoja verde, el tubo detrás desenfocado.",
+      "historial": []
+    },
+    "pasos.paso1": {
+      "que": "Paso 1: limpia y seca.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Manos secándose con una toalla blanca frente al lavamanos, encuadre cerrado, sin rostro. El tubo cerrado sobre el lavamanos.",
+      "historial": []
+    },
+    "pasos.paso2": {
+      "que": "Paso 2: aplica una capa fina.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Mano extendiendo una capa fina de crema blanca junto al borde de una pantaloneta gris, encuadre cerrado, sin rostro. El tubo abierto al lado.",
+      "historial": []
+    },
+    "pasos.paso3": {
+      "que": "Paso 3: deja que se seque y vístete.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación luminosa de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Manos subiendo un pantalón de tela beige, encuadre de la cintura a las rodillas, sin rostro. El tubo cerrado sobre una cómoda de madera clara.",
+      "historial": []
+    },
+    "comparativa.imagen_a": {
+      "que": "Comparación: el producto solo.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo blanco liso de estudio. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "El tubo de pie, de frente, centrado, con sombra suave debajo. Sin otros objetos.",
+      "historial": []
+    },
+    "comparativa.imagen_b": {
+      "que": "Comparación: talco o crema común.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo blanco liso de estudio. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Un frasco de talco genérico y un tubo de crema genérico, ambos sin marca ni texto, de pie con sombra suave. Sin el producto ARVEN.",
+      "historial": []
+    }
+  }
+}

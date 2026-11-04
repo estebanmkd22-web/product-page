@@ -1,0 +1,362 @@
+[
+  {
+    "n": 1,
+    "id": "hero-oferta.imagen_1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: El tubo y la caja de pie, uno al lado del otro, sobre una piedra clara, con hojas tropicales verdes desenfocadas alrededor. Los dos se ven nítidos y de frente. Encuadre cuadrado con aire alrededor.\n\nAmbiente: Exterior en clima caliente con piedra clara y plantas tropicales, luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 2,
+    "id": "hero-oferta.imagen_2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto y la imagen del antes y después del abdomen que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Imagen publicitaria dividida en dos mitades verticales con una línea blanca fina. En las dos mitades, el mismo primer plano de la cintura de una persona con camiseta gris apenas subida y la pretina ancha de una pantaloneta negra de algodón. Mitad izquierda: una franja roja e irritada sobre la pretina, con la etiqueta blanca \"ANTES\". Mitad derecha: la misma zona lisa y sin enrojecimiento, con la etiqueta negra \"DESPUÉS\". Arriba, a todo el ancho, una franja blanco hueso con el titular en verde bosque: \"CALMA LA PICAZÓN Y EL ENROJECIMIENTO.\" Abajo a la derecha, el tubo de pie. En una esquina, en letra pequeña: \"Imagen ilustrativa\". Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Fondo neutro claro, luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 3,
+    "id": "hero-oferta.imagen_3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón sobre piedra clara: en el centro el tubo de pie; alrededor, una gota dorada de aceite (ácido undecilénico), una ramita de árbol de té con hojas finas, un pequeño montón de polvo blanco (óxido de zinc) y una ramita de hamamelis con flores amarillas. Pequeñas etiquetas blancas redondeadas con líneas finas que señalan cada elemento: \"ÁCIDO UNDECILÉNICO\", \"ÁRBOL DE TÉ\", \"ÓXIDO DE ZINC\" y \"HAMAMELIS\". Arriba, el titular en verde bosque: \"PARA ZONAS PROPENSAS A HUMEDAD Y HONGOS.\" Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Superficie de piedra clara con hojas verdes desenfocadas, luz lateral suave de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 4,
+    "id": "hero-oferta.imagen_4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: El tubo de pie a la izquierda, sobre una toalla blanca doblada. A la derecha, tres bloques uno debajo del otro, cada uno con un círculo verde bosque con ícono blanco de línea y su texto al lado: gota → \"CONTROLA LA HUMEDAD\", ondas → \"ALIVIA LA IRRITACIÓN\", escudo → \"PROTEGE LA PIEL\". Arriba, el titular en verde bosque: \"QUE LA ROZADURA NO AVANCE MÁS.\" Fondo blanco hueso liso. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Fondo plano blanco hueso con sombra suave, luz de estudio suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 5,
+    "id": "carrusel-imagenes.imagen1",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": true,
+    "avatar": "co-oficina-01",
+    "referencias_avatar": [
+      "avatares/fotos/co-oficina-01.webp"
+    ],
+    "prompt": "Usa como referencia la foto del producto y la foto de Adriana que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nPersona: debe ser exactamente la misma mujer de la foto adjunta (Mujer colombiana de unos 45 años, piel trigueña con pecas y un lunar cerca de la boca, cabello negro largo y algo despeinado, expresión seria y cansada, blazer negro con bufanda de estampado animal), con la misma cara, tono de piel, cabello y contextura. Adriana sostiene el tubo con una mano, se ve aliviada.\n\nEscena: Al final de la jornada en la oficina, sentada en su puesto con el computador al fondo, el blazer colgado en la silla por el calor. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.\n\nAmbiente: Oficina de ciudad colombiana con luz de tarde por la ventana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen vertical (2:3). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 6,
+    "id": "carrusel-imagenes.imagen2",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": true,
+    "avatar": "co-hombre-01",
+    "referencias_avatar": [
+      "avatares/fotos/co-hombre-01.webp"
+    ],
+    "prompt": "Usa como referencia la foto del producto y la foto de Sebastián que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre latino de unos 25 años, piel trigueña clara, cabello corto oscuro, barba corta de pocos días, sonrisa amplia con dientes blancos, contextura delgada. En la foto lleva gorra verde y camiseta blanca de mangas verdes (al generar, cambiar por ropa sin logos)), con la misma cara, tono de piel, cabello y contextura. Sebastián sostiene el tubo y sonríe a la cámara.\n\nEscena: En su cuarto de estudio en casa, junto al escritorio con un teclado musical desenfocado al fondo, camiseta lisa gris. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.\n\nAmbiente: Habitación de casa con luz de ventana de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen vertical (2:3). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 7,
+    "id": "carrusel-imagenes.imagen3",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": true,
+    "avatar": "co-enfermera-01",
+    "referencias_avatar": [
+      "avatares/fotos/co-enfermera-01.webp"
+    ],
+    "prompt": "Usa como referencia la foto del producto y la foto de Camila que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nPersona: debe ser exactamente la misma mujer de la foto adjunta (Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné), con la misma cara, tono de piel, cabello y contextura. Camila sostiene el tubo con las dos manos, cansada pero tranquila.\n\nEscena: En el pasillo del hospital después del turno, con su uniforme azul y el carné. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.\n\nAmbiente: Pasillo de clínica con luz blanca de techo. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen vertical (2:3). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 8,
+    "id": "carrusel-imagenes.imagen4",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": true,
+    "avatar": "co-hombre-04",
+    "referencias_avatar": [
+      "avatares/fotos/co-hombre-04.webp"
+    ],
+    "prompt": "Usa como referencia la foto del producto y la foto de Mauricio que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre de unos 40 años, piel clara, cabello castaño claro corto con entradas, barba corta castaña, sonrisa amplia, contextura gruesa. En la foto lleva camisa de cuadros lila y pantalón de tela azul oscuro), con la misma cara, tono de piel, cabello y contextura. Mauricio sostiene el tubo con una mano y sonríe.\n\nEscena: En la entrada de su casa al volver del trabajo, camisa de cuadros lila y pantalón de tela azul oscuro. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.\n\nAmbiente: Antejardín de casa con plantas, luz de tarde. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen vertical (2:3). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 9,
+    "id": "carrusel-imagenes.imagen5",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": true,
+    "avatar": "co-oficina-02",
+    "referencias_avatar": [
+      "avatares/fotos/co-oficina-02.webp"
+    ],
+    "prompt": "Usa como referencia la foto del producto y la foto de Paola que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nPersona: debe ser exactamente la misma mujer de la foto adjunta (Mujer colombiana de unos 42 años, piel trigueña clara, cabello negro liso a los hombros, sonrisa tranquila y segura, blazer negro, bufanda de cuadros beige y reloj inteligente rosado), con la misma cara, tono de piel, cabello y contextura. Paola sostiene el tubo y sonríe tranquila.\n\nEscena: En su sala, sentada en el sofá con ropa cómoda gris lisa, una taza sobre la mesa. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.\n\nAmbiente: Sala de apartamento con luz de tarde. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen vertical (2:3). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 10,
+    "id": "resultados-zona.zona1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la imagen del antes y después que te adjunto.\n\nEscena: Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de la parte alta de la pierna de una persona de pie, justo donde termina el borde de una pantaloneta deportiva de algodón; sin rostro y sin otras partes del cuerpo. Mitad izquierda: pantaloneta gris oscuro y una zona rosada y enrojecida junto al borde de la tela, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: pantaloneta gris claro y la misma zona lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 11,
+    "id": "resultados-zona.zona2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la imagen del antes y después que te adjunto.\n\nEscena: Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de el pliegue bajo el brazo levantado y el borde de una camiseta sin mangas, sin cabello a la vista; sin rostro y sin otras partes del cuerpo. Mitad izquierda: camiseta sin mangas gris y una zona rosada y enrojecida por el roce y el sudor, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta sin mangas blanca y la misma zona lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 12,
+    "id": "resultados-zona.zona3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la imagen del antes y después que te adjunto.\n\nEscena: Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de la cintura: dos manos sin anillos levantan un poco una camiseta gris de algodón y abajo se ve la pretina ancha de una pantaloneta negra; sin rostro y sin otras partes del cuerpo. Mitad izquierda: camiseta gris y una franja rosada y enrojecida justo encima de la pretina, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta gris y la misma franja lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 13,
+    "id": "resultados-zona.zona4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la imagen del antes y después que te adjunto.\n\nEscena: Imagen de cuidado personal dividida en dos mitades verticales iguales, con una línea blanca fina en el medio, con la misma composición de la imagen de referencia (úsala solo para la composición). En las dos mitades, el mismo primer plano de la franja justo debajo de la banda elástica de un top deportivo liso que cubre por completo la parte de arriba; una mano levanta un poco una camiseta de algodón; sin rostro y sin otras partes del cuerpo. Mitad izquierda: camiseta negra y una línea rosada y enrojecida justo debajo de la banda, sin heridas abiertas. Arriba a la izquierda, una etiqueta blanca redondeada con el texto \"ANTES\" en negro. Mitad derecha: camiseta gris y la misma franja lisa, pareja y sin enrojecimiento. Arriba a la izquierda, una etiqueta negra redondeada con el texto \"DESPUÉS\" en blanco. Mismo encuadre, misma luz y mismo tono en las dos mitades. Los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.\n\nAmbiente: Fondo neutro claro, desenfocado. Luz suave y pareja de día. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 14,
+    "id": "grid-dolores.item1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Primer plano de una mano rascándose sobre el borde de una pantaloneta gris de algodón, con una zona rosada alrededor. Sin rostro.\n\nAmbiente: Habitación de casa con luz plana de tarde. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 15,
+    "id": "grid-dolores.item2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Primer plano de la cintura con la camiseta apenas subida: una mancha roja difusa y más grande sobre la pretina de una pantaloneta negra, sin heridas abiertas.\n\nAmbiente: Fondo neutro, luz plana de interior. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 16,
+    "id": "grid-dolores.item3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Primer plano junto al borde de una pantaloneta gris: zona rosada con descamación fina y seca, sin heridas abiertas.\n\nAmbiente: Fondo neutro, luz plana de interior. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 17,
+    "id": "grid-dolores.item4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Camiseta gris con una mancha de sudor en la zona del brazo, tirada sobre una cama junto a un frasco de talco genérico sin marca regado.\n\nAmbiente: Habitación con luz plana de tarde. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 18,
+    "id": "galeria-ideas.idea1",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Piernas caminando por un andén soleado, pantaloneta gris y tenis blancos, encuadre de la cintura a los tobillos, sin rostro. El tercio inferior es el piso en sombra, oscuro y simple.\n\nAmbiente: Calle de ciudad colombiana en clima caliente, sol de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen horizontal (3:2). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 19,
+    "id": "galeria-ideas.idea2",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Brazo levantado con camiseta sin mangas blanca, encuadre cerrado en hombro y brazo, zona lisa y seca, sin rostro. El tercio inferior en sombra suave y sin detalles.\n\nAmbiente: Pared clara de casa con luz de ventana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen horizontal (3:2). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 20,
+    "id": "galeria-ideas.idea3",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Mano extendiendo una capa fina de crema blanca en la cintura, camiseta gris un poco subida y pantaloneta negra, sin rostro. El tubo abierto al lado. El tercio inferior es la toalla oscura y lisa.\n\nAmbiente: Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen horizontal (3:2). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 21,
+    "id": "galeria-ideas.idea4",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Persona de espaldas, sin rostro, de la cintura a las rodillas, caminando por un parque con mucho sol, camiseta gris con algo de sudor y pantaloneta negra. El tercio inferior es el sendero en sombra, oscuro y simple.\n\nAmbiente: Parque de ciudad caliente a mediodía. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen horizontal (3:2). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 22,
+    "id": "problemas-filas.fila1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Mano aplicando una capa fina de crema blanca sobre una zona rosada junto al borde de una pantaloneta gris, gesto suave. El tubo abierto al lado.\n\nAmbiente: Baño de casa con luz suave de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 23,
+    "id": "problemas-filas.fila2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Macro de una franja de crema ya seca, mate y uniforme, sobre el dorso de una mano; al lado, una gota de agua que no se absorbe. El tubo desenfocado al fondo.\n\nAmbiente: Fondo verde salvia desenfocado, luz suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 24,
+    "id": "problemas-filas.fila3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: El tubo de pie con una sutil capa transparente tipo escudo alrededor (efecto de luz suave, no gráfico), sobre piedra clara.\n\nAmbiente: Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 25,
+    "id": "problemas-filas2.fila1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón: un gotero de vidrio con una gota dorada de aceite sobre piedra clara, el tubo detrás desenfocado.\n\nAmbiente: Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 26,
+    "id": "problemas-filas2.fila2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón: ramita de árbol de té con hojas finas y pequeñas esferas transparentes de aceite a su lado, sobre piedra clara, el tubo detrás.\n\nAmbiente: Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 27,
+    "id": "problemas-filas2.fila3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón: platito de cerámica blanca con polvo blanco mate y una espátula pequeña, sobre lino verde salvia, el tubo al lado.\n\nAmbiente: Lino verde salvia con luz suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 28,
+    "id": "problemas-filas2.fila4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón: cuchara de madera con polvo blanco fino y una raíz de yuca cortada, con un pequeño montón de polvo translúcido, sobre piedra clara, el tubo detrás.\n\nAmbiente: Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 29,
+    "id": "problemas-filas2.fila5",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón: ramita de hamamelis con flores amarillas en hilos y hojas verdes, sobre piedra clara, el tubo detrás.\n\nAmbiente: Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 30,
+    "id": "problemas-filas2.fila6",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Bodegón: gotas transparentes y brillantes de glicerina sobre una hoja verde, el tubo detrás desenfocado.\n\nAmbiente: Superficie de piedra clara con luz lateral suave. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 31,
+    "id": "pasos.paso1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Manos secándose con una toalla blanca frente al lavamanos, encuadre cerrado, sin rostro. El tubo cerrado sobre el lavamanos.\n\nAmbiente: Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 32,
+    "id": "pasos.paso2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Mano extendiendo una capa fina de crema blanca junto al borde de una pantaloneta gris, encuadre cerrado, sin rostro. El tubo abierto al lado.\n\nAmbiente: Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 33,
+    "id": "pasos.paso3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: Manos subiendo un pantalón de tela beige, encuadre de la cintura a las rodillas, sin rostro. El tubo cerrado sobre una cómoda de madera clara.\n\nAmbiente: Habitación luminosa de mañana. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 34,
+    "id": "comparativa.imagen_a",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Usa como referencia la foto del producto que te adjunto.\n\nProducto: Tubo y caja de ARVEN Skin Defense idénticos a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Cuando la escena pida solo el tubo, sin la caja. Sin piezas ni productos de más.\n\nEscena: El tubo de pie, de frente, centrado, con sombra suave debajo. Sin otros objetos.\n\nAmbiente: Fondo blanco liso de estudio. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  },
+  {
+    "n": 35,
+    "id": "comparativa.imagen_b",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "Escena: Un frasco de talco genérico y un tubo de crema genérico, ambos sin marca ni texto, de pie con sombra suave. Sin el producto ARVEN.\n\nAmbiente: Fondo blanco liso de estudio. Foto realista tipo celular de buena calidad, no de estudio.\n\nFormato: imagen cuadrada (1:1). Cuando la imagen esté lista, conviértela y entrégamela como archivo WEBP para descargar.\n\nReglas: Sin más textos, letreros ni logos que los que pida la escena (y el empaque real del producto). En las imágenes sin avatar: sin rostro, encuadre cerrado, tono trigueño natural y nada que indique si es hombre o mujer (sin uñas pintadas, sin joyas, ropa neutra gris, blanca o negra). Manos y dedos naturales. Sin heridas abiertas."
+  }
+]
