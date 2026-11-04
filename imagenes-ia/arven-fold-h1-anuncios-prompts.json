@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "landing": "Anuncios · ARVEN Fold Care · Landing 1",
+  "avatar": null,
+  "archivo": "webp",
+  "referencia_archivo": "imagenes/arven-fold/producto.png",
+  "ficha": {
+    "estilo": "Anuncio para Meta, foto realista tipo celular o ilustración según el anuncio, limpio y directo.",
+    "paleta": "Textos y paneles en verde bosque (#2c4a35) y blanco hueso (#f5f3ee), con detalles en verde salvia (#8fa592)."
+  },
+  "producto": "Tubo de ARVEN Fold Care idéntico a la foto adjunta: mismos colores, logo y textos, mismo tamaño y tapa. Sin piezas, cajas ni productos de más.",
+  "reglas": "Sin más textos, letreros ni logos que los que pide la escena (y el empaque real del producto). Usa el referente solo para la composición y el estilo: no copies sus textos, su marca ni sus colores. Sin rostro. Manos naturales, sin anillos, sin joyas y sin uñas pintadas. Sin heridas.",
+  "espacios": {
+    "anuncio-1": {
+      "que": "Atención: señala en la foto lo que la persona siente al final del día y da la solución abajo.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación de casa con luz cálida de lámpara en la noche, tonos madera y beige.",
+      "adjuntar": [
+        "el referente del anuncio 1 (etiquetas sobre la foto)"
+      ],
+      "escena": "Misma composición del referente: arriba, una foto de una persona de espaldas en una habitación con luz cálida de lámpara, con el brazo levantado y un top deportivo negro; solo se ve la espalda, el hombro y el brazo, sin rostro. En la zona bajo el brazo, una marca rosada suave. Tres etiquetas blancas redondeadas con líneas finas que señalan esa zona: \"Arde al final del día\", \"Sudor atrapado en el pliegue\" y \"Roce con la ropa\". Abajo, un panel color blanco hueso que ocupa el tercio inferior con el titular en verde bosque: \"Si arde al final del día, es la rozadura que te pela.\" Debajo, más pequeño: \"ARVEN Fold Care absorbe el sudor microgota a microgota y deja una película sedosa que reduce el roce.\" Y en negrita: \"Se aplica como crema. Se seca como polvo.\" A la derecha del panel, el tubo de pie, montado sobre el borde entre la foto y el panel. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    },
+    "anuncio-2": {
+      "que": "Interés: ilustración que muestra dónde aparece el roce, sin fotos reales del cuerpo.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo de papel blanco hueso, ilustración a lápiz con sombras suaves.",
+      "adjuntar": [
+        "el referente del anuncio 2 (ilustración)"
+      ],
+      "escena": "Misma composición del referente: fondo blanco hueso con una ilustración a lápiz, en grises, del torso de frente de una persona con un top deportivo, desde los hombros hasta la cintura. Justo debajo de la banda elástica del top y en la línea de la cintura, franjas rojas difuminadas que marcan el roce. Arriba, ocupando todo el ancho, el titular grande en verde bosque, en dos líneas: \"No es una irritación cualquiera.\" Abajo a la izquierda, el tubo inclinado con unas líneas cortas de énfasis alrededor; a su lado, en verde bosque: \"Absorbe el sudor de los pliegues microgota a microgota para que no te hagas peladuras ni irritaciones.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    },
+    "anuncio-3": {
+      "que": "Interés: 5 señales que la persona reconoce y la solución abajo.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo de pared beige claro, luz suave y pareja de día, foto realista tipo celular.",
+      "adjuntar": [
+        "el referente del anuncio 3 (señales numeradas)"
+      ],
+      "escena": "Misma composición del referente: arriba, una foto de frente de la cintura de una persona de pie; una mano levanta un poco una camiseta gris y se ve la pretina ancha de una pantaloneta negra de algodón. Justo encima de la pretina, una franja rosada y enrojecida a lo largo del pliegue. Cinco etiquetas pequeñas numeradas en blanco, con flechas finas que señalan esa franja: \"① Enrojecimiento en el pliegue\", \"② Ardor al caminar\", \"③ Sudor que no se va\", \"④ Olor a media tarde\", \"⑤ Marca de la ropa\". Abajo, un panel blanco hueso que ocupa el tercio inferior con el titular en verde bosque, grande y en mayúscula: \"ROJEZ Y PELADURAS DE TODOS LOS DÍAS.\" Debajo, más pequeño: \"ARVEN, con su acabado seco, absorbe el sudor en minutos.\" A la derecha del panel, el tubo de pie. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    },
+    "anuncio-4": {
+      "que": "Atención: frase en primera persona con la que se identifica quien usa talco.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Luz interior de casa, natural y un poco plana, como una foto real tomada con el celular.",
+      "adjuntar": [
+        "el referente del anuncio 4 (frase en primera persona)"
+      ],
+      "escena": "Misma composición del referente: foto tipo celular, muy cerca, de una camiseta gris de algodón levantada y sujetada por una mano; debajo se ve la banda elástica de un top deportivo y, justo bajo la banda, una línea rosada marcada en el pliegue. Fondo y encuadre como en el referente. Arriba, sobre la foto, el titular en blanco con una sombra suave para que se lea, centrado en dos líneas: \"El talco me dura hasta las 10 de la mañana.\" Abajo, centrado, más pequeño y en blanco: \"Después vuelve el ardor. ARVEN absorbe el sudor microgota a microgota hasta la noche.\" Abajo a la derecha, el tubo pequeño. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    },
+    "anuncio-5": {
+      "que": "Deseo: un solo producto para todos los pliegues.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo de estudio blanco hueso, luz suave y pareja, foto realista.",
+      "adjuntar": [
+        "el referente del anuncio 5 (titular grande)"
+      ],
+      "escena": "Misma composición del referente: fondo blanco hueso. Arriba, a todo el ancho, el titular grande en negro, en dos líneas: \"Donde hay roce piel con piel, pasa lo mismo.\" En el centro, una foto de frente del torso de una persona con un top deportivo liso; justo debajo de la banda elástica del top, una franja rosada difuminada. Abajo a la izquierda, el tubo de pie, montado sobre el borde de la foto; a su derecha, en negro: \"Una misma fórmula de acabado seco para axilas, abdomen y debajo del busto.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "historial": []
+    }
+  }
+}

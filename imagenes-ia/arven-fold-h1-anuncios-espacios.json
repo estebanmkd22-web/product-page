@@ -1,0 +1,52 @@
+[
+  {
+    "seccion": "Anuncio 1 · Etiquetas sobre la foto",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado",
+    "id": "anuncio-1",
+    "donde": "Anuncio 1",
+    "n": 1
+  },
+  {
+    "seccion": "Anuncio 2 · Ilustración",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado",
+    "id": "anuncio-2",
+    "donde": "Anuncio 2",
+    "n": 2
+  },
+  {
+    "seccion": "Anuncio 3 · 5 señales numeradas",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado",
+    "id": "anuncio-3",
+    "donde": "Anuncio 3",
+    "n": 3
+  },
+  {
+    "seccion": "Anuncio 4 · Frase en primera persona",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado",
+    "id": "anuncio-4",
+    "donde": "Anuncio 4",
+    "n": 4
+  },
+  {
+    "seccion": "Anuncio 5 · Donde hay roce",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado",
+    "id": "anuncio-5",
+    "donde": "Anuncio 5",
+    "n": 5
+  }
+]
