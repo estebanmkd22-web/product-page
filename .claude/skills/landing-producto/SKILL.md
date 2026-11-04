@@ -112,6 +112,9 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
 - No se generan fotos para reseñas, porque serían clientes falsos.
 - Tampoco para íconos ni para la foto del pack, que usa la del producto.
 
+## Kit de anuncios
+Cuando el usuario manda referentes de anuncios: lectura rápida de cada uno, opciones de texto en tabla con recomendación, y solo con los textos aprobados se arman los prompts (mismo `tools/build-kit-imagenes.mjs`, un espacio por anuncio). Guarda cada referente en `imagenes-ia/referentes/<p>/anuncio-N.webp`, ponlo en el campo `referente` del espacio (la tarjeta lo muestra) y en `adjuntar`, y publícalo en `files` del artifact. Los prompts no nombran zonas del cuerpo (piel, busto, entrepierna): describen solo lo que se ve (top, pretina, marca rosada). Sin hongos ni promesas médicas, y textos en primera persona o impersonales (política de Meta). Formato en WEBP.
+
 ## Cambios puntuales en los prompts
 El usuario indica **número de imagen + parte**, por ejemplo: "imagen 7, escena: sin niños".
 - **Escena, persona o formato de una imagen:** cambia solo ese campo de ese espacio y agrega en su `historial` una entrada `{ "fecha", "parte", "cambio" }`. No toques ningún otro espacio. La tarjeta se marca como "Modificada".
