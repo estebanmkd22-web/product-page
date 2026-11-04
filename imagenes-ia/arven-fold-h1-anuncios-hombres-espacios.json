@@ -1,0 +1,62 @@
+[
+  {
+    "seccion": "H1 · Libreta con dibujo",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · hombres",
+    "id": "h1",
+    "donde": "Anuncio H1",
+    "n": 1
+  },
+  {
+    "seccion": "H2 · Lista con checks",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · hombres",
+    "id": "h2",
+    "donde": "Anuncio H2",
+    "n": 2
+  },
+  {
+    "seccion": "H3 · Foto partida",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · hombres",
+    "id": "h3",
+    "donde": "Anuncio H3",
+    "n": 3
+  },
+  {
+    "seccion": "H4 · Barra de titular arriba",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · hombres",
+    "id": "h4",
+    "donde": "Anuncio H4",
+    "n": 4
+  },
+  {
+    "seccion": "H5 · Frase en primera persona",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · hombres",
+    "id": "h5",
+    "donde": "Anuncio H5",
+    "n": 5
+  },
+  {
+    "seccion": "H6 · Etiquetas sobre la foto",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · hombres",
+    "id": "h6",
+    "donde": "Anuncio H6",
+    "n": 6
+  }
+]
