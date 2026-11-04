@@ -481,6 +481,71 @@
       ]
     },
     {
+      "tipo": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#f5f3ee",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#2c4a35",
+        "color_dorado": "#8fa592",
+        "color_texto": "#1f2a22",
+        "adorno": false,
+        "titulo": "Ingredientes que",
+        "titulo_dorado": "trabajan por ti",
+        "titulo_fin": "",
+        "cierre": ""
+      },
+      "blocks": [
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "check",
+            "titulo": "Ácido undecilénico",
+            "puntos": "El protector: ingrediente usado en el cuidado de zonas propensas a hongos y mal olor."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "hoja",
+            "titulo": "Aceite de árbol de té microencapsulado",
+            "puntos": "Liberación lenta: se libera poco a poco, aporta frescura y ayuda a controlar el mal olor durante el día."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Óxido de zinc",
+            "puntos": "El escudo: forma una barrera que reduce el roce y alivia el ardor."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Sílice + almidón de tapioca",
+            "puntos": "El secante: absorben la humedad y dejan un acabado seco y mate."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "frescura",
+            "titulo": "Hamamelis",
+            "puntos": "El calmante: calma la irritación y ayuda a controlar el exceso de humedad."
+          }
+        },
+        {
+          "type": "fila",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Glicerina vegetal",
+            "puntos": "El acondicionador: mantiene la piel suave sin dejarla grasosa."
+          }
+        }
+      ]
+    },
+    {
       "tipo": "pp-libre",
       "settings": {
         "color_texto": "#1f2a22",

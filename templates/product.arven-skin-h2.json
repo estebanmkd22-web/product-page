@@ -522,6 +522,79 @@
         "fila_3"
       ]
     },
+    "problemas_filas_2": {
+      "type": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#f5f3ee",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#2c4a35",
+        "color_dorado": "#8fa592",
+        "color_texto": "#1f2a22",
+        "adorno": false,
+        "titulo": "Ingredientes que",
+        "titulo_dorado": "trabajan por ti",
+        "titulo_fin": "",
+        "cierre": ""
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "check",
+            "titulo": "Ácido undecilénico",
+            "puntos": "El protector: ingrediente usado en el cuidado de zonas propensas a hongos y mal olor."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "hoja",
+            "titulo": "Aceite de árbol de té microencapsulado",
+            "puntos": "Liberación lenta: se libera poco a poco, aporta frescura y ayuda a controlar el mal olor durante el día."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Óxido de zinc",
+            "puntos": "El escudo: forma una barrera que reduce el roce y alivia el ardor."
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Sílice + almidón de tapioca",
+            "puntos": "El secante: absorben la humedad y dejan un acabado seco y mate."
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "icono": "frescura",
+            "titulo": "Hamamelis",
+            "puntos": "El calmante: calma la irritación y ayuda a controlar el exceso de humedad."
+          }
+        },
+        "fila_6": {
+          "type": "fila",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Glicerina vegetal",
+            "puntos": "El acondicionador: mantiene la piel suave sin dejarla grasosa."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5",
+        "fila_6"
+      ]
+    },
     "libre": {
       "type": "pp-libre",
       "settings": {
@@ -915,6 +988,7 @@
     "galeria_ideas",
     "timeline",
     "problemas_filas",
+    "problemas_filas_2",
     "libre",
     "pasos",
     "esperar",

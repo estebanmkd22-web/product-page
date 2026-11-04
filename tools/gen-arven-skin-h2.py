@@ -122,6 +122,18 @@ for s in d['secciones']:
     elif t == 'pp-boton-fijo':
         st.update(precio_manual=149900)
     out.append(s)
+    if t == 'pp-problemas-filas':
+        # Sección nueva: ingredientes de Skin Defense (misma fórmula confirmada por el usuario), en lenguaje de cuidado, sin promesas de cura.
+        out.append({"tipo": "pp-problemas-filas", "settings": {
+            "color_fondo": F1, "color_tarjeta": '#ffffff', "color_acento": AC, "color_dorado": SALVIA, "color_texto": TX, "adorno": False,
+            "titulo": 'Ingredientes que', "titulo_dorado": 'trabajan por ti', "titulo_fin": '', "cierre": ''},
+          "blocks": [
+            blk('fila', icono='check', titulo='Ácido undecilénico', puntos='El protector: ingrediente usado en el cuidado de zonas propensas a hongos y mal olor.'),
+            blk('fila', icono='hoja', titulo='Aceite de árbol de té microencapsulado', puntos='Liberación lenta: se libera poco a poco, aporta frescura y ayuda a controlar el mal olor durante el día.'),
+            blk('fila', icono='escudo', titulo='Óxido de zinc', puntos='El escudo: forma una barrera que reduce el roce y alivia el ardor.'),
+            blk('fila', icono='gota', titulo='Sílice + almidón de tapioca', puntos='El secante: absorben la humedad y dejan un acabado seco y mate.'),
+            blk('fila', icono='frescura', titulo='Hamamelis', puntos='El calmante: calma la irritación y ayuda a controlar el exceso de humedad.'),
+            blk('fila', icono='brillo', titulo='Glicerina vegetal', puntos='El acondicionador: mantiene la piel suave sin dejarla grasosa.')]})
 d['secciones'] = out
 json.dump(d, open('preview/paginas/arven-skin-h2.json', 'w'), ensure_ascii=False, indent=2)
 print([s['tipo'] for s in out])
