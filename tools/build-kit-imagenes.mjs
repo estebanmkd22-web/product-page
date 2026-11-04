@@ -50,6 +50,7 @@ const promptV2 = (e, p) => {
   return [
     adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
     p.producto ? `Producto: ${kit.producto}` : '',
+    p.persona && avDe(p) && kit.persona_modo === 'referencia' ? `Persona: toma a la persona de la foto adjunta como referencia del personaje: mismos rasgos generales, tono, cabello y contextura (${avDe(p).perfil_visual || avDe(p).descripcion.replace(/\.$/, '')}). La ropa y la expresión las define la escena. ${p.persona_accion || ''}`.trim() :
     p.persona && avDe(p) ? `Persona: debe ser exactamente ${esHombre(avDe(p)) ? 'el mismo hombre' : 'la misma mujer'} de la foto adjunta (${avDe(p).descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     `Ambiente: ${p.ambiente ? p.ambiente : Object.entries(kit.ficha).filter(([k]) => !(p.sin_escenario && k === 'escenario')).map(([, v]) => v).join(' ')}`,

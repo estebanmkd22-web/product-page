@@ -33,7 +33,8 @@
         "medio_cuerpo": "",
         "cuerpo_entero": ""
       },
-      "url_publica": ""
+      "url_publica": "",
+      "perfil_visual": "mujer colombiana de unos 45 años, piel trigueña con pecas y un lunar cerca de la boca, cabello negro largo"
     },
     "co-enfermera-01": {
       "nombre": "Camila",
@@ -49,7 +50,8 @@
         "medio_cuerpo": "",
         "cuerpo_entero": ""
       },
-      "url_publica": ""
+      "url_publica": "",
+      "perfil_visual": "mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado"
     },
     "co-oficina-02": {
       "nombre": "Paola",
@@ -65,7 +67,8 @@
         "medio_cuerpo": "",
         "cuerpo_entero": ""
       },
-      "url_publica": ""
+      "url_publica": "",
+      "perfil_visual": "mujer colombiana de unos 42 años, piel trigueña clara, cabello negro liso a los hombros"
     },
     "hogar-01": {
       "nombre": "Laura",
@@ -98,7 +101,8 @@
         "medio_cuerpo": "",
         "cuerpo_entero": ""
       },
-      "url_publica": ""
+      "url_publica": "",
+      "perfil_visual": "hombre latino de unos 25 años, piel trigueña clara, cabello corto oscuro, barba corta de pocos días, sonrisa amplia, contextura delgada"
     },
     "co-hombre-02": {
       "nombre": "Felipe",
@@ -149,7 +153,8 @@
         "medio_cuerpo": "",
         "cuerpo_entero": ""
       },
-      "url_publica": ""
+      "url_publica": "",
+      "perfil_visual": "hombre de unos 40 años, piel clara, cabello castaño claro corto con entradas, barba corta castaña, contextura gruesa"
     }
   },
   "prompt_referencias_en": "Character reference photo of {descripcion_en} {toma}. Plain light-grey studio background, soft even daylight, photorealistic, sharp focus on the face, natural skin texture, no text, no logos.",

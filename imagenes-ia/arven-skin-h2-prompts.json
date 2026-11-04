@@ -85,7 +85,13 @@
       "ambiente": "Oficina de ciudad colombiana con luz de tarde por la ventana. Foto realista tipo celular de buena calidad, no de estudio.",
       "escena": "Al final de la jornada en la oficina, sentada en su puesto con el computador al fondo, el blazer colgado en la silla por el calor. Foto tipo celular, natural y espontánea, plano medio, la persona mira a la cámara con expresión tranquila y sostiene el tubo a la altura del pecho con la etiqueta de frente y legible. Ropa sin logos ni estampados con texto.",
       "persona_accion": "Adriana sostiene el tubo con una mano, se ve aliviada.",
-      "historial": []
+      "historial": [
+        {
+          "fecha": "2026-11-04",
+          "parte": "persona",
+          "cambio": "Rechazada en ChatGPT: se pide como referencia del personaje y sin la ropa de la foto."
+        }
+      ]
     },
     "carrusel-imagenes.imagen2": {
       "que": "Deseo y credibilidad: Sebastián usándola en la zona afectada. Imagen ilustrativa, no es un testimonio real.",
@@ -399,5 +405,13 @@
       "escena": "Un frasco de talco genérico y un tubo de crema genérico, ambos sin marca ni texto, de pie con sombra suave. Sin el producto ARVEN.",
       "historial": []
     }
-  }
+  },
+  "persona_modo": "referencia",
+  "historial_general": [
+    {
+      "fecha": "2026-11-04",
+      "parte": "persona",
+      "cambio": "Rechazo en la imagen 5: la persona se pide como referencia del personaje, no como 'la misma cara exacta', y la ropa la define la escena."
+    }
+  ]
 }
