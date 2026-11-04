@@ -432,6 +432,50 @@
         "idea_4"
       ]
     },
+    "timeline": {
+      "type": "pp-timeline",
+      "settings": {
+        "fondo": "fondo",
+        "color_tarjeta": "#2c4a35",
+        "etiqueta": "Cómo funciona",
+        "titulo": "Tres cosas <em>en cada aplicación</em>",
+        "texto": "Así trabaja ARVEN Skin Defense en la zona."
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Al aplicarla",
+            "icono": "frescura",
+            "titulo": "Alivia la irritación",
+            "texto": "Calma la picazón y el ardor de la piel rozada."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "En minutos",
+            "icono": "gota",
+            "titulo": "Controla la humedad",
+            "texto": "Deja la zona seca, sin el sudor atrapado que hace avanzar la rozadura."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "periodo": "Todo el día",
+            "icono": "escudo",
+            "titulo": "Protege la piel",
+            "texto": "Una barrera para zonas propensas a la humedad y los hongos."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3"
+      ]
+    },
     "problemas_filas": {
       "type": "pp-problemas-filas",
       "settings": {
@@ -478,6 +522,58 @@
         "fila_3"
       ]
     },
+    "libre": {
+      "type": "pp-libre",
+      "settings": {
+        "color_texto": "#1f2a22",
+        "color_fondo": "#e3e8df",
+        "espacio": 8
+      },
+      "blocks": {
+        "sello_1": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_esteroides",
+            "texto": "Sin esteroides"
+          }
+        },
+        "sello_2": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_parabenos",
+            "texto": "Sin parabenos"
+          }
+        },
+        "sello_3": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_talco",
+            "texto": "Sin talco"
+          }
+        },
+        "sello_4": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_petroleo",
+            "texto": "Libre de petróleo"
+          }
+        },
+        "sello_5": {
+          "type": "sello",
+          "settings": {
+            "icono": "sin_crueldad",
+            "texto": "Libre de crueldad animal"
+          }
+        }
+      },
+      "block_order": [
+        "sello_1",
+        "sello_2",
+        "sello_3",
+        "sello_4",
+        "sello_5"
+      ]
+    },
     "pasos": {
       "type": "pp-pasos",
       "settings": {
@@ -513,6 +609,66 @@
         "paso_1",
         "paso_2",
         "paso_3"
+      ]
+    },
+    "esperar": {
+      "type": "pp-esperar",
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#2c4a35",
+        "color_icono": "#8fa592",
+        "etiqueta": "Cronograma de resultados",
+        "titulo": "Qué esperar <em>día a día</em>",
+        "texto": "Esto es lo que puedes esperar usándola a diario."
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "Al aplicarla",
+            "texto": "Se siente fresca y calma la picazón de la piel rozada."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Día 1",
+            "texto": "La zona se mantiene más seca y sientes menos ardor durante el día."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Primeros días",
+            "texto": "La piel se siente más tranquila y menos irritada."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Semana 1",
+            "texto": "Ya es parte de tu rutina: la zona seca y protegida."
+          }
+        },
+        "etapa_5": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Uso continuo",
+            "texto": "Mantén protegidas las zonas propensas a la humedad y los hongos."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4",
+        "etapa_5"
       ]
     },
     "comparativa": {
@@ -757,8 +913,11 @@
     "resultados_zona",
     "grid_dolores",
     "galeria_ideas",
+    "timeline",
     "problemas_filas",
+    "libre",
     "pasos",
+    "esperar",
     "comparativa",
     "resenas",
     "faq",

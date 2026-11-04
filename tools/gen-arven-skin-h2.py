@@ -10,8 +10,6 @@ d['producto'] = {"title": "ARVEN Skin Defense", "selected_or_first_available_var
 out = []
 for s in d['secciones']:
     t = s['tipo']; st = s.setdefault('settings', {})
-    if t in ('pp-libre', 'pp-esperar', 'pp-timeline'):
-        continue  # sin sellos ni cronograma (no hay ingredientes ni tiempos confirmados); sin timeline para no repetir las 3 acciones de pp-problemas-filas
     if t == 'pp-estilos':
         st.update(acento=AC, texto=TX, texto_2=TX2, fondo=F1, fondo_2=F2, boton=AC, boton_texto='#ffffff', estrella='#c99a3b', ok='#4f7a52', radio=14)
     elif t == 'pp-logo':
@@ -74,6 +72,17 @@ for s in d['secciones']:
           blk('etapa', periodo='Al aplicarla', icono='frescura', titulo='Alivia la irritación', texto='Calma la picazón y el ardor de la piel rozada.'),
           blk('etapa', periodo='En minutos', icono='gota', titulo='Controla la humedad', texto='Deja la zona seca, sin el sudor atrapado que hace avanzar la rozadura.'),
           blk('etapa', periodo='Todo el día', icono='escudo', titulo='Protege la piel', texto='Una barrera para zonas propensas a la humedad y los hongos.')]
+    elif t == 'pp-libre':
+        st.update(color_texto=TX, color_fondo=F2)  # sellos de Fold Care: el usuario confirma cuáles aplican a Skin Defense
+    elif t == 'pp-esperar':
+        st.update(color_acento=AC, color_icono=SALVIA, titulo='Qué esperar <em>día a día</em>',
+                  texto='Esto es lo que puedes esperar usándola a diario.')
+        s['blocks'] = [
+          blk('etapa', icono='reloj', periodo='Al aplicarla', texto='Se siente fresca y calma la picazón de la piel rozada.'),
+          blk('etapa', icono='calendario', periodo='Día 1', texto='La zona se mantiene más seca y sientes menos ardor durante el día.'),
+          blk('etapa', icono='calendario', periodo='Primeros días', texto='La piel se siente más tranquila y menos irritada.'),
+          blk('etapa', icono='calendario', periodo='Semana 1', texto='Ya es parte de tu rutina: la zona seca y protegida.'),
+          blk('etapa', icono='calendario', periodo='Uso continuo', texto='Mantén protegidas las zonas propensas a la humedad y los hongos.')]
     elif t == 'pp-problemas-filas':
         st.update(color_fondo=F2, color_tarjeta='#ffffff', color_acento=AC, color_dorado=SALVIA, color_texto=TX,
                   titulo='Lo que una rozadura', titulo_dorado='que avanza necesita', titulo_fin='', cierre='ARVEN Skin Defense hace las tres.')
