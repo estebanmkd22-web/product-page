@@ -1,0 +1,142 @@
+{
+  "version": 2,
+  "landing": "Anuncios · ARVEN Skin Defense · Landing 2",
+  "avatar": null,
+  "archivo": "webp",
+  "referencia_archivo": "imagenes/arven-skin/producto.webp",
+  "ficha": {
+    "estilo": "Anuncio para Meta, unisex, directo.",
+    "paleta": "Textos y paneles en verde bosque (#2c4a35) y blanco hueso (#f5f3ee), con detalles en verde salvia (#8fa592)."
+  },
+  "producto": "Tubo de ARVEN Skin Defense idéntico a la foto adjunta: blanco hueso, logo ARVEN Body Comfort, etiqueta verde \"UNISEX\", onda verde salvia y los mismos textos e íconos. Solo el tubo, sin la caja. Sin piezas ni productos de más.",
+  "reglas": "Sin más textos, letreros ni logos que los que pide la escena (y el empaque real del producto). Si adjuntas un referente, úsalo solo para la composición y el estilo: no copies sus textos, su marca ni sus colores. Sin rostro. Manos naturales, sin anillos, sin joyas y sin uñas pintadas. Sin heridas abiertas. Nada que diga que el producto cura o elimina.",
+  "espacios": {
+    "a1": {
+      "que": "Atención: tres etiquetas que nombran lo que siente quien tiene la rozadura avanzada.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación de casa con luz cálida de lámpara en la noche.",
+      "escena": "Arriba, ocupando dos tercios, foto realista de una persona de espaldas en una habitación con luz de lámpara, con camiseta sin mangas gris y el brazo levantado; sin rostro. Bajo el brazo, una zona roja e irritada. Tres etiquetas blancas redondeadas con líneas finas que señalan esa zona: \"Picazón que no para\", \"Enrojecimiento que crece\" y \"Sudor atrapado\". Abajo, un panel blanco hueso que ocupa el tercio inferior con el titular en verde bosque: \"Si pica al final del día, la rozadura está avanzando.\" Debajo, más pequeño: \"ARVEN Skin Defense alivia la irritación, controla la humedad y protege la piel.\" A la derecha del panel, el tubo de pie, sin tapar ningún texto. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/anuncio-1.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a2": {
+      "que": "Interés: ilustración de dónde avanza la rozadura, sin fotos del cuerpo.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo de papel blanco hueso, ilustración a lápiz con sombras suaves.",
+      "escena": "Misma composición del referente: fondo blanco hueso con una ilustración a lápiz, en grises, de una persona de frente desde los hombros hasta las rodillas, con camiseta y pantaloneta. En la cintura, bajo los brazos y en la parte interna de las piernas, manchas rojas difuminadas que marcan dónde avanza la rozadura. Arriba, a todo el ancho, el titular grande en verde bosque: \"Una rozadura que no se cuida, avanza.\" Abajo a la izquierda, el tubo inclinado con líneas cortas de énfasis; a su lado, en verde bosque: \"Alivia la picazón y protege las zonas propensas a hongos.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/anuncio-2.webp",
+      "historial": [],
+      "adjuntar": [
+        "el referente del anuncio 2"
+      ]
+    },
+    "a3": {
+      "que": "Interés: 5 señales en la cintura con las que la persona se reconoce.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo de pared beige claro, luz suave y pareja de día.",
+      "escena": "Arriba, ocupando dos tercios, foto realista de frente de la cintura de una persona de contextura gruesa: una mano sube una camiseta gris hasta la mitad del torso y la otra levanta suavemente el pliegue; abajo, la cintura ancha de una pantaloneta beige. A lo largo del pliegue, una franja roja e irritada con brillo de sudor, sin heridas abiertas. Cinco etiquetas numeradas con flechas finas: \"① Enrojecimiento\", \"② Picazón\", \"③ Sudor que no se va\", \"④ Mal olor\", \"⑤ Zona propensa a hongos\". Abajo, un panel blanco hueso que ocupa el tercio inferior con el titular en verde bosque: \"ROJEZ, PICAZÓN Y AHORA MAL OLOR.\" Debajo, más pequeño: \"Cuando la rozadura avanza pueden aparecer hongos. ARVEN Skin Defense protege la zona.\" A la derecha del panel, el tubo de pie, sin tapar ningún texto. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/anuncio-3.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a4": {
+      "que": "Atención: frase en primera persona sobre la picazón que no deja dormir.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación de noche con luz tenue y cálida de lámpara.",
+      "escena": "Foto realista tipo celular, de noche, en una cama con sábanas grises desordenadas: una persona acostada de lado, sin rostro, encuadrada de la cintura a las rodillas, con pantaloneta de algodón gris, se rasca por encima de la pantaloneta en la unión de la pierna con la cadera; luz tenue de lámpara. Arriba, sobre la foto, el titular en blanco con una sombra suave, centrado: \"“Me rasco hasta dormido.”\" Abajo, centrado, más pequeño y en blanco: \"No dejes que empeore. ARVEN Skin Defense calma la picazón y protege la zona.\" Abajo a la derecha, el tubo pequeño sobre la mesa de noche. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/anuncio-4.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a5": {
+      "que": "Deseo: un solo producto para todas las zonas donde hay roce.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo de estudio blanco hueso, luz suave y pareja.",
+      "escena": "Fondo blanco hueso. Arriba, a todo el ancho, el titular grande en negro, en dos líneas: \"Donde hay roce piel con piel, pueden aparecer hongos.\" En el centro, tres fotos pequeñas redondeadas en fila, sin rostro: un brazo levantado con camiseta sin mangas, una cintura con camiseta subida sobre la pretina de una pantaloneta, y una pierna junto al borde de una pantaloneta; en cada una, una zona rosada suave. Abajo a la izquierda, el tubo de pie; a su derecha, en negro: \"Una sola crema para entrepierna, axilas y pliegues. Unisex.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/anuncio-5.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a6": {
+      "que": "Interés: lo que necesita una rozadura que avanza, explicado en un dibujo.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Libreta sobre una mesa de madera, luz de día suave.",
+      "escena": "Misma composición del referente: página de libreta de espiral color crema, dibujada a lápiz y tinta café. Arriba, el titular escrito a mano en mayúscula: \"3 COSAS QUE NECESITA UNA ROZADURA QUE AVANZA\". En el centro, un dibujo sencillo de dos superficies redondeadas que se tocan, con una zona sombreada y unas gotas en el medio. Tres notas a mano con líneas punteadas: \"Algo que calme la picazón\", \"Algo que la mantenga seca\" y \"Algo que proteja la zona propensa a hongos\". Abajo, en cursiva: \"El talco no hace las tres. ARVEN Skin Defense sí.\" En la esquina inferior derecha, el tubo real apoyado sobre la libreta. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/hombres-h1.webp",
+      "historial": [],
+      "adjuntar": [
+        "el referente del anuncio 6"
+      ]
+    },
+    "a7": {
+      "que": "Deseo: los ingredientes que lo hacen más que una crema para rozaduras.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Fondo plano blanco hueso, luz de estudio suave.",
+      "escena": "Misma composición del referente: fondo blanco hueso. Arriba, el titular grande en negro, en mayúscula condensada: \"SÍ, ES MÁS QUE UNA CREMA PARA ROZADURAS.\" Debajo: \"Porque tiene:\". Una franja verde salvia muy clara con cuatro líneas, cada una con un check verde bosque: \"Ácido undecilénico\", \"Árbol de té\", \"Óxido de zinc\" y \"Hamamelis\". A la derecha, el tubo grande, inclinado. Abajo, una sola frase en verde bosque: \"Cuidado diario para zonas propensas a humedad y hongos.\" Sin botón, sin precio y sin garantía. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/hombres-h2.webp",
+      "historial": [],
+      "adjuntar": [
+        "el referente del anuncio 7"
+      ]
+    },
+    "a8": {
+      "que": "Interés: la rozadura que ya no es solo roce.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Luz interior natural y pareja, foto realista tipo celular.",
+      "escena": "Anuncio cuadrado partido en dos mitades verticales. Mitad izquierda: foto realista muy cerca de la parte interna de la pierna, justo debajo del borde de una pantaloneta gris de algodón; una zona roja e irritada, más ancha, con brillo de humedad y bordes difusos, sin heridas abiertas. Mitad derecha: fondo blanco hueso con el titular grande en verde bosque: \"Esto ya no es solo roce.\" Debajo, en gris oscuro: \"Cuando la rozadura avanza, la zona queda propensa a hongos. ARVEN Skin Defense la mantiene seca y protegida.\" Abajo, el tubo de pie. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/hombres-h3.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a9": {
+      "que": "Atención: el ciclo de la picazón de día y el ardor de noche.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación de casa con luz natural de ventana.",
+      "escena": "Foto realista: una persona adulta de contextura gruesa, de pie en una habitación, de la cintura a las rodillas, sin rostro, con camiseta esqueleto blanca y pantaloneta corta de algodón azul oscuro; con una mano baja un poco el borde de la pantaloneta en un costado de la pierna y se ve una zona roja junto a la tela, sin heridas abiertas. Sobre una mesa de madera, abajo a la izquierda, el tubo. Arriba, una barra gris oscuro a todo el ancho con el texto en blanco: \"Picazón de día, ardor de noche.\" Abajo, una franja blanco hueso con el texto en verde bosque: \"ARVEN Skin Defense calma la irritación y mantiene la zona seca para que no avance.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-fold-h1/hombres-h4.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a10": {
+      "que": "Transformación: antes y después con el titular de la landing. Imagen ilustrativa. (La garantía está pendiente de tu decisión.)",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación con luz suave de día.",
+      "escena": "Arriba, ocupando dos tercios, dos fotos realistas lado a lado del mismo encuadre: una persona de pie, de la cintura a las rodillas, sin rostro, con pantaloneta de algodón beige, levanta un poco el borde de la pantaloneta con una mano. Izquierda: junto al borde de la tela, una zona roja e irritada, sin heridas abiertas. Derecha: la misma zona lisa y sin enrojecimiento. Etiquetas pequeñas \"ANTES\" y \"DESPUÉS\". En una esquina, en letra pequeña: \"Imagen ilustrativa\". Abajo, sobre fondo blanco, el titular grande en negro con letra de periódico: \"De la picazón a la calma.\" Debajo, en cursiva: \"Y si no te funciona, tienes 60 días para devolverlo.\" A la derecha, el tubo de pie. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-skin-h2/anuncio-10.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    },
+    "a11": {
+      "que": "Interés: 5 señales de una rozadura que avanzó, en la pierna. Sin diagnosticar.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación con luz plana de día.",
+      "escena": "Arriba, ocupando dos tercios, foto realista de una persona sentada en el borde de una cama, de la cintura a las rodillas, sin rostro, con pantaloneta corta de algodón blanca; en la parte interna de la pierna, junto al borde de la tela, una zona roja amplia con brillo de humedad y puntitos rojos alrededor, sin heridas abiertas. Cinco etiquetas numeradas con flechas finas: \"① Enrojecimiento que no se va\", \"② Brillo de humedad\", \"③ Puntitos rojos alrededor\", \"④ Picazón que empeora de noche\", \"⑤ Zona propensa a hongos\". Abajo, un panel blanco hueso que ocupa el tercio inferior con el titular en verde bosque: \"ASÍ SE VE UNA ROZADURA QUE AVANZÓ.\" Debajo, más pequeño: \"Si se ve así, no la dejes avanzar. ARVEN Skin Defense: cuidado diario para zonas propensas a hongos.\" A la derecha del panel, el tubo de pie, sin tapar ningún texto. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "referente": "imagenes-ia/referentes/arven-skin-h2/anuncio-11.webp",
+      "historial": [],
+      "referente_solo_ver": true
+    }
+  }
+}

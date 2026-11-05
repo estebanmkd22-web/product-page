@@ -1,0 +1,112 @@
+[
+  {
+    "seccion": "Anuncio 1 · Etiquetas sobre la foto",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a1",
+    "donde": "Anuncio 1",
+    "n": 1
+  },
+  {
+    "seccion": "Anuncio 2 · Ilustración a lápiz",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a2",
+    "donde": "Anuncio 2",
+    "n": 2
+  },
+  {
+    "seccion": "Anuncio 3 · 5 señales en la cintura",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a3",
+    "donde": "Anuncio 3",
+    "n": 3
+  },
+  {
+    "seccion": "Anuncio 4 · Frase en primera persona",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a4",
+    "donde": "Anuncio 4",
+    "n": 4
+  },
+  {
+    "seccion": "Anuncio 5 · Titular grande",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a5",
+    "donde": "Anuncio 5",
+    "n": 5
+  },
+  {
+    "seccion": "Anuncio 6 · Libreta con dibujo",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a6",
+    "donde": "Anuncio 6",
+    "n": 6
+  },
+  {
+    "seccion": "Anuncio 7 · Lista con checks",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a7",
+    "donde": "Anuncio 7",
+    "n": 7
+  },
+  {
+    "seccion": "Anuncio 8 · Foto partida",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a8",
+    "donde": "Anuncio 8",
+    "n": 8
+  },
+  {
+    "seccion": "Anuncio 9 · Barra de titular arriba",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a9",
+    "donde": "Anuncio 9",
+    "n": 9
+  },
+  {
+    "seccion": "Anuncio 10 · Antes y después + titular grande",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a10",
+    "donde": "Anuncio 10",
+    "n": 10
+  },
+  {
+    "seccion": "Anuncio 11 · 5 señales en la pierna",
+    "tipo": "anuncio",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Feed de Meta · cuadrado · unisex",
+    "id": "a11",
+    "donde": "Anuncio 11",
+    "n": 11
+  }
+]
