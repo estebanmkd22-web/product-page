@@ -193,7 +193,7 @@
       "persona": false,
       "sin_escenario": true,
       "ambiente": "Luz interior natural y pareja, foto realista tipo celular.",
-      "escena": "Copia exactamente el diseño de el referente que te adjunto: la misma composición, encuadre, pose, ubicación y tamaño del titular, las etiquetas y sus flechas, el producto y la franja de texto. Cambia solo los textos, la marca y los colores por los que se indican aquí. Anuncio partido en dos mitades verticales. Mitad izquierda: foto realista muy cerca de la parte interna de la pierna, justo debajo del borde de una pantaloneta gris de algodón; zona roja amplia con brillo de humedad y puntitos rojos alrededor, sin heridas abiertas. Mitad derecha: fondo blanco hueso con el titular grande: \"ESTO YA NO ES SOLO ROCE.\" en verde bosque. Debajo, en gris oscuro: \"Cuando pica, se pone roja y huele, puede ser hongo.\" Abajo, el tubo y la caja de pie. Abajo, una franja verde bosque a todo el ancho con el texto en blanco: \"ARVEN Skin Defense: cuidado diario para zonas propensas a hongos.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "escena": "Copia exactamente el diseño de el referente que te adjunto: la misma composición, encuadre, pose, ubicación y tamaño del titular, las etiquetas y sus flechas, el producto y la franja de texto. Cambia solo los textos, la marca y los colores por los que se indican aquí. Anuncio partido en dos mitades verticales. Mitad izquierda: foto realista de cerca de un brazo levantado con el borde de una camiseta sin mangas gris; en la zona bajo el brazo, una mancha roja amplia con brillo de humedad y puntitos rojos alrededor, sin heridas abiertas. Se entiende claramente que es la zona bajo el brazo; sin rostro. Mitad derecha: fondo blanco hueso con el titular grande: \"ESTO YA NO ES SOLO ROCE.\" en verde bosque. Debajo, en gris oscuro: \"Cuando pica, se pone roja y huele, puede ser hongo.\" Abajo, el tubo y la caja de pie. Abajo, una franja verde bosque a todo el ancho con el texto en blanco: \"ARVEN Skin Defense: cuidado diario para zonas propensas a hongos.\" Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
       "referente": "imagenes-ia/referentes/arven-fold-h1/hombres-h3.webp",
       "historial": [
         {
@@ -205,6 +205,11 @@
           "fecha": "2026-11-05",
           "parte": "adjuntos",
           "cambio": "La guía ahora es el referente con solo la zona del cuerpo difuminada (antes era pixelado entero) para que ChatGPT copie el diseño exacto."
+        },
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "ChatGPT bloqueó la imagen generada. La foto de la izquierda pasa de la pierna junto a la pantaloneta a la zona bajo el brazo levantado; el resto igual."
         }
       ],
       "referente_solo_ver": true,
