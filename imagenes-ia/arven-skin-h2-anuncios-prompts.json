@@ -88,7 +88,7 @@
       "persona": false,
       "sin_escenario": true,
       "ambiente": "Luz interior de casa, natural y un poco plana, como una foto real tomada con el celular.",
-      "escena": "Copia exactamente el diseño de la guía que te adjunto: la misma composición, encuadre, pose, ubicación y tamaño del titular, el producto y el texto. La zona difuminada de la guía es la foto: hazla nítida y realista según esta descripción. Cambia solo los textos, la marca y los colores por los que se indican aquí. Foto realista tipo celular, muy cerca y de frente, que ocupa todo el cuadro: una camiseta gris de algodón levantada arriba y una toalla blanca abajo enmarcan un pliegue en el centro de la imagen; a lo largo del pliegue, una franja roja e irritada con brillo de humedad, sin heridas abiertas. Sin rostro. Arriba, sobre la foto, el titular en blanco con una sombra suave, centrado en dos líneas: \"“Pensé que era solo\" y \"una rozadura.”\". Abajo, centrado, en blanco y más pequeño, en dos líneas: \"Cuando pica y huele, puede ser hongo.\" y \"ARVEN Skin Defense protege la zona.\" Abajo a la derecha, el tubo pequeño de pie, como en la guía. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
+      "escena": "Copia exactamente el diseño de la guía que te adjunto: la misma composición, encuadre, pose, ubicación y tamaño del titular, el producto y el texto. La zona difuminada de la guía es la foto: hazla nítida y realista según esta descripción. Cambia solo los textos, la marca y los colores por los que se indican aquí. Foto realista tipo celular, muy cerca y de frente, que ocupa todo el cuadro: el pliegue de la barriga de una persona de contextura gruesa, de pie: una camiseta gris de algodón subida hasta la mitad del torso arriba y la cintura ancha de una sudadera gris abajo enmarcan el pliegue horizontal en el centro de la imagen; a lo largo del pliegue, una franja roja e irritada con brillo de humedad, sin heridas abiertas. Es la zona del abdomen, no la del pecho. Sin rostro. Arriba, sobre la foto, el titular en blanco con una sombra suave, centrado en dos líneas: \"“Pensé que era solo\" y \"una rozadura.”\". Abajo, centrado, en blanco y más pequeño, en dos líneas: \"Cuando pica y huele, puede ser hongo.\" y \"ARVEN Skin Defense protege la zona.\" Abajo a la derecha, el tubo pequeño de pie, como en la guía. Todos los textos van en español, escritos exactamente así, con tildes, en letra gruesa y legible en celular.",
       "referente": "imagenes-ia/referentes/arven-fold-h1/anuncio-4.webp",
       "historial": [
         {
@@ -105,6 +105,11 @@
           "fecha": "2026-11-05",
           "parte": "escena",
           "cambio": "La escena no correspondía al referente (era una cama de noche). Ahora sigue su composición: foto muy cercana del pliegue enmarcado por camiseta y toalla, titular arriba y texto abajo en blanco, tubo abajo a la derecha."
+        },
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "ChatGPT bloqueó la imagen generada. El pliegue pasa a ser el de la barriga (camiseta subida y cintura de sudadera), con la misma composición; la guía se difumina más."
         }
       ],
       "referente_solo_ver": true,
