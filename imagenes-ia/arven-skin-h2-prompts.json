@@ -208,40 +208,64 @@
       "referente": "imagenes-ia/referentes/arven-skin-h2/antes-despues-busto.webp"
     },
     "grid-dolores.item1": {
-      "que": "Interés: picazón que no para. Sin el producto.",
+      "que": "Interés: picazón que no para, en una situación reconocible.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Calle de ciudad colombiana en clima caliente, sol de mediodía. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona de pie en un andén de la ciudad, con jean azul y camiseta gris, se rasca con la mano por encima del jean en la unión de la pierna con la cadera; postura incómoda, piernas un poco separadas, la otra mano sostiene una bolsa. Se nota que es un gesto que repite todo el día. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato dónde está la molestia y en qué situación. Sin el producto.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre más amplio y situación reconocible: se entiende dónde está la molestia."
+        }
+      ]
+    },
+    "grid-dolores.item2": {
+      "que": "Interés: el enrojecimiento que crece, visto como lo ve la persona frente al espejo.",
+      "producto": false,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Baño de casa con luz de la mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona de pie frente al espejo del baño, de espaldas a la cámara en tres cuartos, sube la camiseta gris con una mano y mira hacia abajo; en el reflejo del espejo se ve con claridad una franja roja e irritada sobre la pretina de la pantaloneta negra, sin heridas abiertas. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato dónde está la molestia y en qué situación. Sin el producto.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre más amplio y situación reconocible: se entiende dónde está la molestia."
+        }
+      ]
+    },
+    "grid-dolores.item3": {
+      "que": "Interés: la zona que se pela con el roce de cada día.",
       "producto": false,
       "persona": false,
       "sin_escenario": true,
       "ambiente": "Habitación de casa con luz plana de tarde. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Primer plano de una mano rascándose sobre el borde de una pantaloneta gris de algodón, con una zona rosada alrededor. Sin rostro.",
-      "historial": []
-    },
-    "grid-dolores.item2": {
-      "que": "Interés: enrojecimiento que crece. Sin el producto.",
-      "producto": false,
-      "persona": false,
-      "sin_escenario": true,
-      "ambiente": "Fondo neutro, luz plana de interior. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Primer plano de la cintura con la camiseta apenas subida: una mancha roja difusa y más grande sobre la pretina de una pantaloneta negra, sin heridas abiertas.",
-      "historial": []
-    },
-    "grid-dolores.item3": {
-      "que": "Interés: la zona se pela con el roce. Sin el producto.",
-      "producto": false,
-      "persona": false,
-      "sin_escenario": true,
-      "ambiente": "Fondo neutro, luz plana de interior. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Primer plano junto al borde de una pantaloneta gris: zona rosada con descamación fina y seca, sin heridas abiertas.",
-      "historial": []
+      "escena": "Una persona sentada en el borde de la cama, con camiseta gris y pantaloneta de algodón negra, inclinada hacia adelante, separa un poco las piernas y revisa con la mano la parte interna de la pierna junto al borde de la pantaloneta, donde se ve una zona roja con descamación fina, sin heridas abiertas. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato dónde está la molestia y en qué situación. Sin el producto.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre más amplio y situación reconocible: se entiende dónde está la molestia."
+        }
+      ]
     },
     "grid-dolores.item4": {
-      "que": "Interés: mal olor por la humedad atrapada. Sin el producto.",
+      "que": "Interés: el mal olor y el sudor atrapado en la jornada.",
       "producto": false,
       "persona": false,
       "sin_escenario": true,
-      "ambiente": "Habitación con luz plana de tarde. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Camiseta gris con una mancha de sudor en la zona del brazo, tirada sobre una cama junto a un frasco de talco genérico sin marca regado.",
-      "historial": []
+      "ambiente": "Interior de bus urbano o de oficina con calor, luz natural de mediodía. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona de pie en un bus o en la oficina, con camiseta gris clara empapada de sudor bajo los brazos y en la espalda, se despega la camiseta del cuerpo con dos dedos a la altura del pecho, incómoda; a su alrededor el ambiente del lugar se reconoce con claridad. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato dónde está la molestia y en qué situación. Sin el producto.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre más amplio y situación reconocible: se entiende dónde está la molestia."
+        }
+      ]
     },
     "galeria-ideas.idea1": {
       "que": "Transformación: cuidado al caminar. Tercio inferior simple y más oscuro para el texto.",
