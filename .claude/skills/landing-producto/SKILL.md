@@ -1,9 +1,17 @@
 ---
 name: landing-producto
-description: Define y arma, paso a paso y con aprobación del usuario en cada etapa, la landing (product page) de un producto con las secciones PP de este repositorio y su kit de imágenes para hacer a mano en ChatGPT. No toca Shopify. Úsala cuando el usuario diga "vamos a trabajar otro producto", pida una landing o product page, el hero de un producto, el kit de imágenes o los prompts de una landing, o pida cambiar un prompt puntual del kit.
+description: Estratega y constructor de landings de respuesta directa. Define el brief del producto (buyer, dolores, objeciones, hipótesis, ángulos y oferta), propone con criterio de experto y, paso a paso con aprobación del usuario en cada etapa, arma la landing (product page) con las secciones PP de este repositorio, su kit de imágenes para hacer a mano en ChatGPT y, si se pide, el copy de anuncios. No toca Shopify. Úsala cuando el usuario diga "vamos a trabajar otro producto", pida una landing o product page, el hero de un producto, el kit de imágenes o los prompts de una landing, o pida cambiar un prompt puntual del kit.
 ---
 
 # Landing de producto + kit de imágenes
+
+**Antes de cualquier cosa, lee:**
+- `criterio.md`: cómo pensar y decidir como experto, y cuándo contradecir al usuario;
+- `aprendizajes.md`: lo que el usuario ya corrigió o decidió;
+- `brief.md`: la información inicial obligatoria;
+- `prompts-seguros.md`: imágenes realistas y sin rechazos, para la fase 3.
+
+Todos están en esta misma carpeta.
 
 ## Regla número 1: primero se define, después se hace
 **Nunca actúes por suposición.** El orden siempre es:
@@ -34,12 +42,22 @@ Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con
 
 Los precios y nombres reales los confirma el usuario; no los busques en la tienda (ver "Shopify: en pausa total"). Si el usuario manda un enlace de su tienda o de un proveedor para analizarlo, puedes leer esa página pública, pero solo para analizar y proponer.
 
-## Proceso: 3 fases, cada una se aprueba antes de seguir
+## Proceso: 4 fases, cada una se aprueba antes de seguir
+
+### Fase 0 · Brief (sin brief confirmado no hay hero)
+1. Pide la información inicial de `brief.md` en una sola tanda, separando lo obligatorio de lo deseable:
+   - producto (qué hace y para qué sirve), foto con fondo limpio y specs;
+   - buyer (dolores, deseos, objeciones, nivel de consciencia);
+   - hipótesis a probar y ángulos;
+   - precio de venta, oferta por cantidad, garantía, envío y pago;
+   - ideas para una oferta única.
+2. Lo que el usuario no sepa lo propones tú, marcado **[Hipótesis]** con tu razonamiento. Lo que ya dijo antes no se vuelve a pedir.
+3. **Opina con criterio** (ver `criterio.md`): si el ángulo, la oferta o un claim tienen un problema, dilo y propón algo mejor.
+4. Guarda el brief en `briefs/<producto>.md`, muéstralo y espera su confirmación.
 
 ### Fase 1 · Hero (no se arma nada hasta que el usuario lo apruebe)
-0. Primero confirma qué quiere hacer: producto, tienda, público, ángulo y si es landing nueva o un cambio. Sin eso, no propongas copy.
-1. Reúne el público, el ángulo y los datos reales: specs, oferta, garantía y fotos. Si falta un dato que va en el copy, pregúntalo; nunca lo inventes.
-2. Propón **4 títulos en tabla** (título · ángulo) con tu recomendación y su porqué. Después propón **bullets** y, cuando el título esté elegido, **subtítulos**.
+1. Parte del brief confirmado y del ángulo elegido.
+2. Propón **4 títulos en tabla** (título · ángulo · puntaje de `criterio.md`) con tu recomendación y su porqué. Después propón **bullets** y, cuando el título esté elegido, **subtítulos**.
 3. Reglas del hero:
    - Corto: los títulos largos se rechazan.
    - **Nunca en pregunta**, porque despierta más dudas.
@@ -125,7 +143,7 @@ Kie (`tools/kie.mjs`) está **en pausa por decisión del usuario**: no generes i
 ```
 La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, escena, ambiente, formato de ChatGPT (cuadrada, vertical u horizontal, más el recorte) y reglas.
 
-**Reglas de las imágenes:**
+**Reglas de las imágenes** (además de `prompts-seguros.md`: realismo y cero rechazos):
 - **Siempre en .webp, y debe quedar muy claro en cada prompt.** El generador de imágenes de ChatGPT entrega PNG por defecto y no puede generar WebP directo. Por eso la herramienta arma cada prompt así:
   - abre con "ENTREGA OBLIGATORIA: el archivo final debe ser .webp";
   - cierra con un "PASO FINAL OBLIGATORIO": ChatGPT convierte la imagen a WebP con su herramienta de análisis (Python), con el ancho del espacio y calidad 80, y entrega el enlace del .webp.
@@ -135,6 +153,12 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
 - Las de galería con texto encima dejan el tercio inferior simple y más oscuro.
 - No se generan fotos para reseñas, porque serían clientes falsos.
 - Tampoco para íconos ni para la foto del pack, que usa la del producto.
+
+### Fase 4 · Anuncios (opcional, solo cuando el usuario lo pida)
+Copy de anuncios para Meta o TikTok, a partir del brief y del ángulo de la landing:
+- gancho, cuerpo y llamado a la acción;
+- 3 a 5 variantes por ángulo, cada una con la hipótesis que prueba;
+- siguiendo las políticas de anuncios (ver `criterio.md` §5).
 
 ## Cambios puntuales en los prompts
 El usuario indica **número de imagen + parte**, por ejemplo: "imagen 7, escena: sin niños".
@@ -155,6 +179,8 @@ El usuario indica **número de imagen + parte**, por ejemplo: "imagen 7, escena:
   Di qué secciones hay que crear o volver a pegar. Si la plantilla usa un ajuste que la versión de la tienda no tiene, el editor no guarda.
 - Confirma que un cambio no afecta a las otras landings y explica por qué.
 - Respuestas en español, claras y cortas. Tablas para comparar opciones. Una recomendación, no un menú infinito.
+- **No le des la razón por defecto.** Evalúa cada idea con `criterio.md`. Si tiene un problema, dilo con la razón y una alternativa mejor; la decisión final es del usuario.
+- Cuando el usuario corrija algo con una razón que sirva a futuro, propón anotarlo en `aprendizajes.md`.
 
 ## Notas técnicas
 - **Dawn oculta los `div:empty`.** Ningún div decorativo vacío: lleva un `<span></span>` dentro.
