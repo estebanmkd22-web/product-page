@@ -39,17 +39,22 @@ const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona &
 const promptV2 = (e, p) => {
   const f = FORMATO_CHATGPT(e.proporcion.replace(/\s/g, ''));
   const adj = adjuntosDe(p);
+  const ancho = e.pixeles ? e.pixeles.split('×')[0].trim() : '1200';
   return [
+    'ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).',
     adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
     p.producto ? `Producto: ${kit.producto}` : '',
     p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
-    `Formato: imagen ${f.pedir}. Entrégala como archivo WebP.`,
+    `Formato: imagen ${f.pedir}.`,
     `Reglas: ${kit.reglas}`,
+    `PASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP${f.recorte ? `, ${f.recorte}` : ''}, con ${ancho} px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato.`,
   ].filter(Boolean).join('\n\n');
 };
 const V2 = kit.version === 2;
+// Para cuando ChatGPT igual entrega PNG: se pega en la misma conversación.
+const CONVERTIR = 'Convierte la última imagen que generaste a formato WebP usando tu herramienta de análisis (Python): ancho 1200 px (o el que te indiqué), calidad 80. Dame el enlace para descargar el archivo .webp. No me la entregues en PNG ni en JPG.';
 const items = espacios.map((e) => {
   const p = kit.espacios[e.id];
   if (!p) return { ...e, final: '' };
@@ -96,6 +101,7 @@ h1{font-size:26px;margin:0 0 4px}.sub{color:var(--tx2);margin:0 0 20px}
 .ficha h2{grid-column:1/-1;margin:0;font-size:18px}.f b{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ac)}.f p{margin:2px 0 0;color:var(--tx2);font-size:14px}
 .avatar{background:var(--card);border:1px solid var(--borde);border-radius:16px;padding:16px;margin-bottom:28px}.avatar h2{margin:0 0 6px;font-size:18px}.avatar h2 small{font-weight:400;color:var(--tx2);font-size:13px}.avatar p{margin:0 0 12px;color:var(--tx2);font-size:14px}
 .refs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.refs figure{margin:0}.refs img,.vacio{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:var(--suave)}.vacio{display:grid;place-items:center;color:var(--ac);font-size:12px;font-weight:700}.refs figcaption{font-size:11px;text-align:center;color:var(--tx2);margin-top:4px;text-transform:capitalize}.aviso{color:var(--ac)!important;font-weight:600;margin:12px 0 0!important}
+.webp{background:var(--suave);border:2px solid var(--ac);border-radius:16px;padding:14px 16px;margin-bottom:24px}.webp b{color:var(--ac)}
 .grupo h2{font-size:18px;margin:28px 0 10px;display:flex;flex-direction:column}.grupo h2 small{font-weight:400;color:var(--tx2);font-size:14px}
 .card{background:var(--card);border:1px solid var(--borde);border-radius:14px;padding:14px;margin-bottom:10px}.card.falta{border-color:#d33}
 .top{display:flex;gap:12px;align-items:flex-start}.n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--ac);color:#fff;font-weight:800;display:grid;place-items:center}
@@ -107,8 +113,9 @@ pre{white-space:pre-wrap;word-break:break-word;background:var(--bg);border:1px s
 button{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer}
 </style></head><body><div class="wrap">
 <h1>Kit de imágenes · ${esc(kit.landing)}</h1>
-<p class="sub">${V2 ? 'Para hacer a mano en ChatGPT, en una misma conversación y en este orden. Para cambiar algo, indica el número de la imagen y la parte (escena, persona o formato). Todas las imágenes van en WebP: si ChatGPT entrega PNG o JPG, conviértela a WebP (máx. 1200 px de ancho) antes de subirla a Shopify.' : 'Espacios sacados de la plantilla, en el orden en que aparecen en el personalizador. Revisa los prompts antes de generar.'}</p>
+<p class="sub">${V2 ? 'Para hacer a mano en ChatGPT, en una misma conversación y en este orden. Para cambiar algo, indica el número de la imagen y la parte (escena, persona o formato).' : 'Espacios sacados de la plantilla, en el orden en que aparecen en el personalizador. Revisa los prompts antes de generar.'}</p>
 <div class="resumen"><span>${items.length} imágenes</span><span>${items.filter((i) => i.producto).length} con foto del producto</span>${faltan.length ? `<span>${faltan.length} sin prompt</span>` : ''}</div>
+${V2 ? `<div class="webp"><b>Todas las imágenes van en .webp.</b> Cada prompt le pide a ChatGPT convertir la imagen a WebP al final. Si igual te entrega PNG, pega este mensaje en la misma conversación:<pre>${esc(CONVERTIR)}</pre><button data-copy="${esc(CONVERTIR)}">Copiar mensaje de conversión</button></div>` : ''}
 <div class="ficha"><h2>Ficha visual</h2>${ficha}</div>
 ${bloqueAvatar}
 ${tarjetas}

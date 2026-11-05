@@ -126,7 +126,11 @@ Kie (`tools/kie.mjs`) está **en pausa por decisión del usuario**: no generes i
 La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, escena, ambiente, formato de ChatGPT (cuadrada, vertical u horizontal, más el recorte) y reglas.
 
 **Reglas de las imágenes:**
-- **Siempre en WebP.** Cada prompt pide el archivo en WebP; la herramienta lo agrega en la línea de formato. Como ChatGPT a veces entrega PNG o JPG igual, el kit y el paso a paso le recuerdan al usuario convertirla a WebP antes de subirla (máx. 1200 px de ancho, idealmente menos de 150 KB), por ejemplo con squoosh.app.
+- **Siempre en .webp, y debe quedar muy claro en cada prompt.** El generador de imágenes de ChatGPT entrega PNG por defecto y no puede generar WebP directo. Por eso la herramienta arma cada prompt así:
+  - abre con "ENTREGA OBLIGATORIA: el archivo final debe ser .webp";
+  - cierra con un "PASO FINAL OBLIGATORIO": ChatGPT convierte la imagen a WebP con su herramienta de análisis (Python), con el ancho del espacio y calidad 80, y entrega el enlace del .webp.
+
+  El kit trae además un "mensaje de conversión" para copiar si ChatGPT igual entrega PNG. No quites estas líneas de ningún prompt.
 - Las de dolor no muestran el producto nuevo.
 - Las de galería con texto encima dejan el tercio inferior simple y más oscuro.
 - No se generan fotos para reseñas, porque serían clientes falsos.
