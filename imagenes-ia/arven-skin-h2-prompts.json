@@ -268,49 +268,79 @@
       ]
     },
     "galeria-ideas.idea1": {
-      "que": "Transformación: cuidado al caminar. Tercio inferior simple y más oscuro para el texto.",
+      "que": "Transformación: caminar sin molestia. Lleva texto encima.",
       "producto": false,
       "persona": false,
       "sin_escenario": true,
       "ambiente": "Calle de ciudad colombiana en clima caliente, sol de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Piernas caminando por un andén soleado, pantaloneta gris y tenis blancos, encuadre de la cintura a los tobillos, sin rostro. El tercio inferior es el piso en sombra, oscuro y simple.",
-      "historial": []
+      "escena": "Una persona caminando con paso suelto y cómodo por un andén soleado, con pantaloneta gris, camiseta blanca y tenis blancos; las piernas se mueven libres, sin rascarse ni acomodarse la ropa. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación. El tercio inferior de la imagen queda simple y más oscuro, sin detalles, para poner el texto encima.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "galeria-ideas.idea2": {
-      "que": "Transformación: brazo levantado, zona seca. Tercio inferior oscuro para el texto.",
-      "producto": false,
-      "persona": false,
-      "sin_escenario": true,
-      "ambiente": "Pared clara de casa con luz de ventana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Brazo levantado con camiseta sin mangas blanca, encuadre cerrado en hombro y brazo, zona lisa y seca, sin rostro. El tercio inferior en sombra suave y sin detalles.",
-      "historial": []
-    },
-    "galeria-ideas.idea3": {
-      "que": "Transformación: cintura protegida. Tercio inferior oscuro para el texto.",
+      "que": "Transformación: brazo levantado, zona cuidada. Lleva texto encima.",
       "producto": true,
       "persona": false,
       "sin_escenario": true,
-      "ambiente": "Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Mano extendiendo una capa fina de crema blanca en la cintura, camiseta gris un poco subida y pantaloneta negra, sin rostro. El tubo abierto al lado. El tercio inferior es la toalla oscura y lisa.",
-      "historial": []
+      "ambiente": "Baño de casa con luz de la mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona de pie frente al espejo del baño, con camiseta sin mangas blanca, levanta el brazo y se aplica la crema debajo del brazo con la otra mano; el tubo abierto sobre el lavamanos. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación. El tercio inferior de la imagen queda simple y más oscuro, sin detalles, para poner el texto encima.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
+    },
+    "galeria-ideas.idea3": {
+      "que": "Transformación: cintura protegida. Lleva texto encima.",
+      "producto": true,
+      "persona": false,
+      "sin_escenario": true,
+      "ambiente": "Habitación de casa con luz de ventana de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona de pie en su habitación sube un poco la camiseta gris con una mano y con la otra se extiende la crema en la cintura, justo encima de la pretina de una pantaloneta negra; el tubo abierto sobre la cama. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación. El tercio inferior de la imagen queda simple y más oscuro, sin detalles, para poner el texto encima.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "galeria-ideas.idea4": {
-      "que": "Transformación: días de calor. Tercio inferior oscuro para el texto.",
+      "que": "Transformación: días de calor sin molestia. Lleva texto encima.",
       "producto": false,
       "persona": false,
       "sin_escenario": true,
       "ambiente": "Parque de ciudad caliente a mediodía. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Persona de espaldas, sin rostro, de la cintura a las rodillas, caminando por un parque con mucho sol, camiseta gris con algo de sudor y pantaloneta negra. El tercio inferior es el sendero en sombra, oscuro y simple.",
-      "historial": []
+      "escena": "Una persona caminando por un parque con mucho sol, camiseta gris y pantaloneta negra, botella de agua en la mano, con paso tranquilo y cómodo pese al calor. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación. El tercio inferior de la imagen queda simple y más oscuro, sin detalles, para poner el texto encima.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "problemas-filas.fila1": {
       "que": "Calma: alivia la picazón.",
       "producto": true,
       "persona": false,
       "sin_escenario": true,
-      "ambiente": "Baño de casa con luz suave de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Mano aplicando una capa fina de crema blanca sobre una zona rosada junto al borde de una pantaloneta gris, gesto suave. El tubo abierto al lado.",
-      "historial": []
+      "ambiente": "Habitación de casa con luz suave de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona sentada en el borde de la cama, con camiseta gris y pantaloneta negra, se aplica con suavidad una capa fina de crema en la parte interna de la pierna, junto al borde de la pantaloneta, donde se ve una zona rosada; el tubo abierto a su lado. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "problemas-filas.fila2": {
       "que": "Sequedad: controla la humedad.",
@@ -385,22 +415,34 @@
       "historial": []
     },
     "pasos.paso1": {
-      "que": "Paso 1: limpia y seca.",
+      "que": "Paso 1: limpia y seca la zona.",
       "producto": true,
       "persona": false,
       "sin_escenario": true,
-      "ambiente": "Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Manos secándose con una toalla blanca frente al lavamanos, encuadre cerrado, sin rostro. El tubo cerrado sobre el lavamanos.",
-      "historial": []
+      "ambiente": "Baño de casa con luz de la mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona en el baño, después de la ducha, con pantaloneta gris, se seca con una toalla blanca la cintura y la parte alta de la pierna; el tubo cerrado sobre el lavamanos. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "pasos.paso2": {
       "que": "Paso 2: aplica una capa fina.",
       "producto": true,
       "persona": false,
       "sin_escenario": true,
-      "ambiente": "Baño de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Mano extendiendo una capa fina de crema blanca junto al borde de una pantaloneta gris, encuadre cerrado, sin rostro. El tubo abierto al lado.",
-      "historial": []
+      "ambiente": "Habitación de casa con luz de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
+      "escena": "Una persona sentada en el borde de la cama, con camiseta gris y pantaloneta negra, se extiende una capa fina de crema blanca en la parte interna de la pierna, junto al borde de la pantaloneta; el tubo abierto en la otra mano. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "pasos.paso3": {
       "que": "Paso 3: deja que se seque y vístete.",
@@ -408,8 +450,14 @@
       "persona": false,
       "sin_escenario": true,
       "ambiente": "Habitación luminosa de mañana. Foto realista tipo celular de buena calidad, no de estudio.",
-      "escena": "Manos subiendo un pantalón de tela beige, encuadre de la cintura a las rodillas, sin rostro. El tubo cerrado sobre una cómoda de madera clara.",
-      "historial": []
+      "escena": "Una persona de pie en su habitación se sube un pantalón de tela beige, ya con camiseta puesta; el tubo cerrado sobre una cómoda de madera clara. Encuadre amplio, de los hombros a las rodillas (la cabeza queda fuera del cuadro), para que se entienda de inmediato la zona y la situación.",
+      "historial": [
+        {
+          "fecha": "2026-11-05",
+          "parte": "escena",
+          "cambio": "Encuadre amplio (hombros a rodillas) y situación reconocible."
+        }
+      ]
     },
     "comparativa.imagen_a": {
       "que": "Comparación: el producto solo.",
