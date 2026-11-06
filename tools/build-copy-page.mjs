@@ -60,12 +60,16 @@ const SECCIONES = [
   { file: 'pp-boton-fijo', desc: 'Barra con el botón de compra pegada abajo del celular, aparece al pasar la oferta.' },
 ];
 
+// SOLO=pp-a,pp-b (opcional): genera una página solo con esas tarjetas, en ese orden.
+const SOLO = process.env.SOLO ? process.env.SOLO.split(',').map((f) => f.trim()) : null;
+const LISTA = SOLO ? SOLO.map((f) => SECCIONES.find((s) => s.file === f) || { file: f, desc: '' }) : SECCIONES;
+
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-const cards = SECCIONES.map(({ file, desc }, i) => {
-  const { dir = 'sections', ext = '.liquid' } = SECCIONES[i];
+const cards = LISTA.map(({ file, desc }, i) => {
+  const { dir = 'sections', ext = '.liquid' } = LISTA[i];
   const src = fs.readFileSync(path.join(ROOT, dir, file + ext), 'utf8');
-  const name = SECCIONES[i].name || JSON.parse(src.match(/{%-?\s*schema\s*-?%}([\s\S]*?){%-?\s*endschema\s*-?%}/)[1]).name;
+  const name = LISTA[i].name || JSON.parse(src.match(/{%-?\s*schema\s*-?%}([\s\S]*?){%-?\s*endschema\s*-?%}/)[1]).name;
   const lines = src.split('\n').length;
   return `
   <article class="card" id="${file}">
