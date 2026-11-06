@@ -46,9 +46,10 @@ const promptV2 = (e, p) => {
     p.producto ? `Producto: ${kit.producto}` : '',
     p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
+    p.texto_imagen ? `Texto dentro de la imagen: ${p.texto_imagen}` : '',
     `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
     `Formato: imagen ${f.pedir}.`,
-    `Reglas: ${kit.reglas}`,
+    `Reglas: ${p.texto_imagen && kit.reglas_con_texto ? kit.reglas_con_texto : kit.reglas}`,
     `PASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP${f.recorte ? `, ${f.recorte}` : ''}, con ${ancho} px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato.`,
   ].filter(Boolean).join('\n\n');
 };
@@ -81,7 +82,7 @@ const tarjetas = grupos.map((g) => `
     <div class="top"><span class="n">${it.n}</span><div><h3>${esc(it.donde)}${(it.historial || []).length ? ' <span class="mod">Modificada</span>' : ''}</h3>
       <div class="chips"><span>${esc(it.proporcion.replace(/\s/g, ''))}</span>${it.pixeles ? `<span>${esc(it.pixeles)} px</span>` : ''}${it.producto ? '<span class="ref">Con foto del producto</span>' : ''}${it.persona && avatar ? `<span class="ref">Con ${esc(avatar.nombre)}</span>` : ''}</div></div></div>
     <p class="que">${esc(it.que || 'Falta el prompt de este espacio.')}</p>
-    ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd><dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
+    ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.texto_imagen ? `<dt>Texto</dt><dd>${esc(it.texto_imagen)} <b>Revisa letra por letra y las tildes antes de subirla.</b></dd>` : ''}${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd><dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
     ${(it.historial || []).length ? `<ul class="hist">${it.historial.map((h) => `<li><b>${esc(h.fecha)}</b> · ${esc(h.parte)}: ${esc(h.cambio)}</li>`).join('')}</ul>` : ''}
     ${it.final ? `<details><summary>Ver prompt completo</summary><pre>${esc(it.final)}</pre><button data-copy="${esc(it.final)}">Copiar</button></details>` : ''}
   </article>`).join('')}
