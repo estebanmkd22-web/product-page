@@ -1,5 +1,5 @@
 # Brief · Gotas de luz navideñas 4,5 m
-Tienda: Naturixa (GT) [por confirmar] · Fecha: 2026-11-06 · Estado: borrador
+Tienda: Naturixa (GT, vivecompra.com/naturixa), con voseo · Fecha: 2026-11-06 · Estado: borrador
 
 Maqueta base: la landing de la rama de 1,5 m (`preview/paginas/rama-compacta.json`), igual que se hizo con la guirnalda.
 
@@ -9,13 +9,19 @@ Maqueta base: la landing de la rama de 1,5 m (`preview/paginas/rama-compacta.jso
 - Specs reales:
   - Largo: 4,5 m. [Usuario]
   - Bombillas en forma de gota, transparentes, con burbujas por dentro; luz cálida (según la foto). [Verificado: foto]
-  - Cantidad de LED, alimentación (enchufe, solar o baterías), modos de luz, si es apta para exterior o lluvia, y si se pueden unir varias: **falta**.
+  - Se conecta a la corriente (enchufe). [Usuario]
+  - Tiene varios modos de luz (número exacto: falta). [Usuario]
+  - Se puede mojar: apta para exteriores. [Usuario]
+  - Cantidad de bombillas: **falta**. No se menciona en la landing hasta tenerla.
 - Qué trae la caja: **falta**.
 - Foto: la que mandó el usuario (gotas sobre césped, fondo con bokeh). Falta una con fondo limpio.
+- Video: 2 s de las gotas encendidas, de día y bajo techo. Sirve de referencia, pero falta un video de noche en exterior.
 - Lo que no debe prometerse:
   - "Hasta 15 veces más durabilidad" y "4 veces menos energía": solo valen comparando LED contra bombillas incandescentes tradicionales, con "hasta". No como dato de prueba propia. [Hipótesis]
   - "La luz en tendencia de todo Guatemala": no se puede probar; mejor como frase de estilo ("la que se está viendo en las fachadas") sin cifras. [Hipótesis]
-  - No decir "para exterior" ni "resiste lluvia" si el proveedor no lo confirma.
+  - Exterior y lluvia: sí, confirmado por el usuario ("se pueden mojar").
+  - No usar "4.9 (860 clientas felices)" ni ninguna calificación hasta tener reseñas reales.
+  - Correcciones de claims aprobadas por el usuario.
 
 ## 2. Buyer
 - Quién es: mujer guatemalteca de 25 a 50 años, mamá o encargada de la casa, que decora para Navidad y le importa cómo se ve su casa desde la calle. [Hipótesis]
@@ -44,6 +50,7 @@ Maqueta base: la landing de la rama de 1,5 m (`preview/paginas/rama-compacta.jso
 
 - Hipótesis principal: "Creemos que las mamás guatemaltecas compran más con el ángulo 'tu casa destaca esta Navidad' que con el de ahorro, porque la compra navideña es emocional y social. Lo sabremos si el CTR y la conversión del ángulo 1 superan al 3."
 - Los ángulos 2 y 3 entran como apoyo (comparativa e íconos); el 4 en la galería de espacios.
+- Tono: emocional, como el hero de la rama ("Esta Navidad, convierte cualquier espacio en tu lugar favorito"), pero llevado al exterior de la casa. [Usuario]
 - Ángulo principal elegido: **pendiente (decide el usuario)**.
 
 ## 4. Oferta
@@ -53,8 +60,8 @@ Maqueta base: la landing de la rama de 1,5 m (`preview/paginas/rama-compacta.jso
 - Precio tachado: no se usa salvo que exista un precio real anterior.
 - Costo y margen: **falta** (para saber si cabe un regalo).
 - Bonos posibles: **falta**. Idea: guía de 3 formas de colocarlas (balcón, ventana, portón) por WhatsApp, sin costo. [Hipótesis]
-- Garantía: **falta** (la rama usa la sección pp-garantia).
-- Envío y pago: **falta** (supuesto: contraentrega con EasySell, envío a toda Guatemala).
+- Garantía: 60 días. [Usuario]
+- Envío y pago: contraentrega en toda Guatemala, con EasySell. [Usuario] Costo de envío: falta.
 - Urgencia real: temporada navideña (stock de temporada), sin contadores falsos.
 
 ## 5. Prueba y confianza
