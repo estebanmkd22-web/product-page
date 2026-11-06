@@ -196,7 +196,7 @@
             "insignia": "Gratis",
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
+            "texto": "Te llega en 3 a 5 días"
           }
         },
         {
@@ -205,7 +205,7 @@
             "insignia": "Incluido",
             "icono": "pago",
             "titulo": "Pagas al recibir",
-            "texto": "Nada por adelantado"
+            "texto": "Sin tarjeta y sin riesgo"
           }
         },
         {
@@ -213,8 +213,8 @@
           "settings": {
             "insignia": "Gratis",
             "icono": "manual",
-            "titulo": "Guía de cuidado",
-            "texto": "Para la piel rozada"
+            "titulo": "Rutina de 7 días",
+            "texto": "Para zonas propensas a hongos · PDF por WhatsApp"
           }
         },
         {
@@ -223,7 +223,17 @@
             "insignia": "Incluido",
             "icono": "escudo",
             "titulo": "Garantía 60 días",
-            "texto": "Si no te funciona, te devolvemos tu dinero"
+            "texto": "Si no ves cambios, te devolvemos el 100 %"
+          }
+        },
+        {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Pack de 2",
+            "icono": "chat",
+            "titulo": "Acompañamiento 30 días",
+            "texto": "Por WhatsApp: te ayudamos a usarla bien",
+            "desde": 2
           }
         }
       ]

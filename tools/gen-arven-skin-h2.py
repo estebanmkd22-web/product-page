@@ -35,10 +35,11 @@ for s in d['secciones']:
         s['blocks'] = [
           blk('pack', pestana='1 crema', etiqueta='Para una zona', titulo='1 ARVEN Skin Defense', linea_regalo='🎁 Con los 4 beneficios incluidos', detalle='1 tubo de 100 g', precio=89900, precio_antes=0, cantidad=1),
           blk('pack', pestana='2 cremas', destacar='Más elegido', etiqueta='Para varias zonas', titulo='2 ARVEN Skin Defense', linea_regalo='🎁 Con los 4 beneficios incluidos', detalle='2 tubos de 100 g · $74.950 c/u', precio=149900, precio_antes=0, cantidad=2, preseleccionado=True),
-          blk('regalo', insignia='Gratis', icono='camion', titulo='Envío gratis', texto='A toda Colombia'),
-          blk('regalo', insignia='Incluido', icono='pago', titulo='Pagas al recibir', texto='Nada por adelantado'),
-          blk('regalo', insignia='Gratis', icono='manual', titulo='Guía de cuidado', texto='Para la piel rozada'),
-          blk('regalo', insignia='Incluido', icono='escudo', titulo='Garantía 60 días', texto='Si no te funciona, te devolvemos tu dinero')]
+          blk('regalo', insignia='Gratis', icono='camion', titulo='Envío gratis', texto='Te llega en 3 a 5 días'),
+          blk('regalo', insignia='Incluido', icono='pago', titulo='Pagas al recibir', texto='Sin tarjeta y sin riesgo'),
+          blk('regalo', insignia='Gratis', icono='manual', titulo='Rutina de 7 días', texto='Para zonas propensas a hongos · PDF por WhatsApp'),
+          blk('regalo', insignia='Incluido', icono='escudo', titulo='Garantía 60 días', texto='Si no ves cambios, te devolvemos el 100 %'),
+          blk('regalo', insignia='Pack de 2', icono='chat', titulo='Acompañamiento 30 días', texto='Por WhatsApp: te ayudamos a usarla bien', desde=2)]
     elif t == 'pp-carrusel-imagenes':
         st.update(titulo='Un cuidado para <em>todos los días</em>', texto='Imágenes ilustrativas.')
         s['blocks'] = [blk('imagen') for _ in range(5)]
