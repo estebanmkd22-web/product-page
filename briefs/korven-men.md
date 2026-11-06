@@ -23,6 +23,12 @@ Fuente base: KORVEN MEN · Entregable Maestro (Product Lab, 5-nov-2026).
 - Qué usa hoy: cuchilla y cremas unisex pensadas para vello fino. [Usuario]
 - Nivel de consciencia: consciente de la solución (conoce las cremas y desconfía, ~34 %, dominante) y consciente del problema (~30 %). [Usuario]
 
+## 2b. Objeciones prioritarias a derribar [Usuario]
+1. "No sirve / no quita el vello grueso" → hecha para vello grueso + demostración + garantía de 60 días.
+2. "Huele maluco" → sin olores fuertes (claim de etiqueta).
+3. "Toca volver a la máquina" → lo retira parejo, sin parches que retocar con cuchilla; sin rastrojo que pica al crecer. **No se promete que tarde más en crecer** sin dato real.
+4. "Me va a quemar" → aloe vera, prueba en una zona pequeña, garantía.
+
 ## 3. Ángulo
 - Ángulo único aprobado: **«Hecha para vello grueso»**. Las cremas comunes fallan porque están hechas para vello fino. [Usuario]
 - Apoyos dentro de la landing: sin cuchilla, rastrojo que pica, todo el cuerpo, pago contraentrega.
@@ -35,9 +41,9 @@ Fuente base: KORVEN MEN · Entregable Maestro (Product Lab, 5-nov-2026).
 - 3 unidades: no se ofrece. [Usuario]
 - Precio de comparación: no hay, así que no se usa precio tachado. El ancla va contra lo que gasta en cuchillas, espuma y cremas que no le sirven. [Hipótesis]
 - Razón del pack x2: [Hipótesis] el vello grueso de pecho y espalda gasta más crema; con 2 cubre el repaso cuando el vello vuelve a crecer.
-- Bono propuesto: [Hipótesis] guía digital "Cómo depilar vello grueso sin irritarte" (prueba en una zona pequeña, tiempos y cuidado posterior). Ataca las objeciones 1 y 2 y no tiene costo de envío.
+- Bono: [Usuario: aprobado] guía digital gratis "Cómo depilar vello grueso sin irritarte" (prueba en una zona pequeña, tiempos y cuidado posterior). Ataca las objeciones 1 y 2 y no tiene costo de envío.
 - Garantía: **60 días con devolución del dinero**. [Usuario]
-- Envío y pago: envío gratis y contraentrega [Hipótesis: confirmar que es gratis]; llega en 3 a 5 días hábiles. [Usuario]
+- Envío y pago: envío gratis y contraentrega; llega en 3 a 5 días hábiles. [Usuario]
 
 ## 5. Prueba y confianza
 - Reseñas propias: no existen todavía. Se usan de ejemplo, marcadas como tal.
