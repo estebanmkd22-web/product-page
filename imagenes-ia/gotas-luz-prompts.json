@@ -49,9 +49,15 @@
       "que": "Emoción y orgullo: ella admirando su casa iluminada.",
       "producto": true,
       "persona": true,
-      "escena": "De noche, desde la banqueta: una mujer de pie, de espaldas a medias y con la cara de perfil sonriendo, mira el frente de su casa con las gotas de luz encendidas en el balcón y el portón. La fachada brilla cálida detrás de ella. Plano medio-abierto.",
-      "historial": [],
-      "persona_accion": "Lleva un suéter tejido color crema y jeans; está afuera de su casa, no en un baño. Sonrisa natural de orgullo, postura relajada, con las manos juntas cerca del pecho.",
+      "escena": "Una sola foto real tomada con celular desde la calle, de noche, por otra persona: la mujer está de pie en la banqueta, a unos 3 metros delante de su casa, de cuerpo entero o casi entero y ocupando como máximo un tercio de la altura de la imagen; la fachada con las gotas encendidas en el balcón y el portón ocupa la mayor parte del encuadre. La luz es la misma para todo: el brillo cálido de las gotas le ilumina el cabello, los hombros y el borde del suéter desde atrás, y un poco de luz de un poste de la calle le da de lado. Su sombra cae sobre la banqueta. Ligero grano de foto nocturna de celular y el mismo enfoque y balance de color en ella y en la casa. No debe verse recortada ni pegada sobre el fondo: nada de bordes marcados ni de luz de estudio en la cara.",
+      "historial": [
+        {
+          "fecha": "2026-11-06",
+          "parte": "escena y persona",
+          "cambio": "Parecía un montaje: ahora ella va más lejos y más pequeña en el encuadre, con la luz de las gotas sobre ella, su sombra en la banqueta y tomándole una foto a su casa con el celular."
+        }
+      ],
+      "persona_accion": "Lleva un suéter tejido color crema y jeans; está afuera de su casa, no en un baño. Está de tres cuartos, casi de espaldas a la cámara, tomándole una foto con su celular a su fachada iluminada, con una sonrisa que se alcanza a ver de perfil. Postura relajada y natural, nada de pose de modelo.",
       "texto_imagen": "Titular grande: «Tu casa también merece brillar». Debajo, más pequeña: «Gasta hasta 4 veces menos energía». Escríbelos exactamente así, con sus tildes, sin agregar ni quitar palabras. Letra sans serif gruesa y moderna, color crema con el titular en dorado cálido, con una sombra suave para que se lea bien. Va en la parte superior, sobre el cielo nocturno, sin tapar las gotas. Deja márgenes amplios y que el texto ocupe como máximo un tercio de la imagen."
     },
     "hero-oferta.imagen_6": {
