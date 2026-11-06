@@ -1,0 +1,191 @@
+[
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Esta Navidad, la luz en tendencia para el frente de tu casa.",
+    "id": "hero-oferta.imagen_1",
+    "donde": "Imagen 1 (la principal)",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Esta Navidad, la luz en tendencia para el frente de tu casa.",
+    "id": "hero-oferta.imagen_2",
+    "donde": "Imagen 2",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Esta Navidad, la luz en tendencia para el frente de tu casa.",
+    "id": "hero-oferta.imagen_3",
+    "donde": "Imagen 3",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Esta Navidad, la luz en tendencia para el frente de tu casa.",
+    "id": "hero-oferta.imagen_4",
+    "donde": "Imagen 4",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Esta Navidad, la luz en tendencia para el frente de tu casa.",
+    "id": "hero-oferta.imagen_5",
+    "donde": "Imagen 5",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Esta Navidad, la luz en tendencia para el frente de tu casa.",
+    "id": "hero-oferta.imagen_6",
+    "donde": "Imagen 6",
+    "n": 6
+  },
+  {
+    "seccion": "PP · Círculos destacados",
+    "tipo": "pp-circulos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "",
+    "id": "circulos.imagen",
+    "donde": "Foto (sin texto)",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Círculos destacados",
+    "tipo": "pp-circulos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "",
+    "id": "circulos.circulo1",
+    "donde": "Círculo 1 · 4,5 m de luz",
+    "contexto": "4,5 m de luz — De lado a lado de tu balcón, una ventana grande o la baranda.",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Círculos destacados",
+    "tipo": "pp-circulos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "",
+    "id": "circulos.circulo2",
+    "donde": "Círculo 2 · Gotas de luz cálida",
+    "contexto": "Gotas de luz cálida — Bombillas transparentes en forma de gota, distintas a todo lo que ya viste.",
+    "n": 9
+  },
+  {
+    "seccion": "PP · Círculos destacados",
+    "tipo": "pp-circulos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "",
+    "id": "circulos.circulo3",
+    "donde": "Círculo 3 · Se pueden mojar",
+    "contexto": "Se pueden mojar — Hechas para afuera: lucen igual con sol, sereno o lluvia.",
+    "n": 10
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Que tu casa no pase",
+    "id": "problemas-filas.fila1",
+    "donde": "Fila 1 · Las lucecitas de siempre",
+    "contexto": "Las lucecitas de siempre — Las mismas series de colores que tiene toda la cuadra.",
+    "n": 11
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Que tu casa no pase",
+    "id": "problemas-filas.fila2",
+    "donde": "Fila 2 · Bombillas que se queman",
+    "contexto": "Bombillas que se queman — De un año a otro la serie ya no prende completa.",
+    "n": 12
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Que tu casa no pase",
+    "id": "problemas-filas.fila3",
+    "donde": "Fila 3 · Un frente que nadie nota",
+    "contexto": "Un frente que nadie nota — Por dentro todo navideño, pero desde la calle tu casa se ve apagada.",
+    "n": 13
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Tu frente navideño en 3 pasos",
+    "id": "pasos.paso1",
+    "donde": "Paso 1 · Sacala de la caja",
+    "contexto": "Sacala de la caja — Llega lista para usar.",
+    "n": 14
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Tu frente navideño en 3 pasos",
+    "id": "pasos.paso2",
+    "donde": "Paso 2 · Colgala",
+    "contexto": "Colgala — En tu balcón, ventana o portón.",
+    "n": 15
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Tu frente navideño en 3 pasos",
+    "id": "pasos.paso3",
+    "donde": "Paso 3 · Enchufala y elegí el modo",
+    "contexto": "Enchufala y elegí el modo — Tu casa brillando en minutos.",
+    "n": 16
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No son las luces de siempre.",
+    "id": "comparativa.imagen_a",
+    "donde": "Imagen (fondo transparente ideal)",
+    "n": 17
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No son las luces de siempre.",
+    "id": "comparativa.imagen_b",
+    "donde": "Imagen (opcional)",
+    "n": 18
+  }
+]
