@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.gotas-luz', dir: 'templates', ext: '.json', name: 'Plantilla · Gotas de Luz 4,5 m', desc: 'Nueva. Gotas de Luz Navideñas 4,5 m para Naturixa (Guatemala, voseo, Q200 / 2 por Q310). Misma maqueta y colores de la rama 1.5 m. Va en templates: crea la plantilla gotas-luz, borra todo, pega y guarda. Usa las mismas secciones de la rama (ya creadas).' },
   { file: 'pp-carrusel-imagenes', desc: 'Nueva. Carrusel de imágenes deslizable (sin videos): flechas, barra de avance, etiqueta opcional sobre cada imagen y formato 4:5, 1:1 o 9:16. Es independiente de PP · Videos.' },
   { file: 'pp-esperar', desc: 'Nueva. Qué esperar día a día: línea de tiempo vertical que se llena al bajar, con ícono, periodo y tarjeta alternados.' },
   { file: 'pp-libre', desc: 'Nueva. Sellos "libre de": íconos de línea (sin esteroides, sin parabenos, sin talco, libre de petróleo, sin perfume, cruelty free) con texto.' },

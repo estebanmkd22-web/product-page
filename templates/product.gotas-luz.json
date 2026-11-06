@@ -1,0 +1,628 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#8e3b2a",
+        "texto": "#3d3530",
+        "texto_2": "#7a6e66",
+        "fondo": "#f8f4ee",
+        "fondo_2": "#efe7dc",
+        "boton": "#8e3b2a",
+        "boton_texto": "#ffffff",
+        "estrella": "#b8924a",
+        "ok": "#6f8a6a",
+        "radio": 18
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "settings": {
+        "fondo": "#8e3b2a",
+        "texto": "#f8efe4",
+        "separador": "✦"
+      },
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "✨ La luz en tendencia esta Navidad"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "💧 Se pueden mojar: hechas para afuera"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🚚 Envío a toda Guatemala"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "💵 Pagás al recibir"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4"
+      ]
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#f8f4ee",
+        "mostrar_oferta": false,
+        "rating": "",
+        "rating_texto": "",
+        "titulo": "Esta Navidad, la luz en tendencia <em>para el frente de tu casa.</em>",
+        "texto": "<strong>Tu casa también merece brillar esta Navidad.</strong> Colgalas en tu balcón, ventanas o portón y convertí el frente de tu casa en el que todos miran al pasar 🎄. Gotas de luz cálida que se ven elegantes, aguantan la lluvia y duran temporada tras temporada ❤️",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas",
+        "mostrar_rating": false
+      },
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Duran más:</strong> bombillas hasta 15 veces más duraderas que las tradicionales."
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Gastan menos:</strong> consumen hasta 4 veces menos energía que las bombillas de colores de siempre."
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Para afuera:</strong> ideales para tu balcón, ventanas y portón, y se pueden mojar."
+          }
+        },
+        "beneficio_4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>En tendencia:</strong> la luz que se está viendo en las fachadas de Guatemala esta Navidad."
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3",
+        "beneficio_4"
+      ]
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#b8924a",
+        "color_pestana": "#8e3b2a",
+        "titulo": "Elegí tu <em>pack navideño</em>",
+        "boton_texto": "Las quiero — Pago al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Envío a toda Guatemala"
+      },
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 tira",
+            "etiqueta": "Para tu balcón o una ventana",
+            "titulo": "Gotas de Luz Navideñas 4,5 m",
+            "linea_regalo": "🎁 Garantía de 60 días incluida",
+            "detalle": "1 tira · 4,5 m",
+            "precio": 200,
+            "precio_antes": 0,
+            "cantidad": 1
+          }
+        },
+        "pack_2": {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 tiras",
+            "destacar": "Más elegido",
+            "etiqueta": "Una para la ventana y otra para el portón",
+            "titulo": "2 Gotas de Luz Navideñas 4,5 m",
+            "linea_regalo": "🎁 9 metros de luz para todo el frente",
+            "detalle": "2 tiras · Q155 c/u",
+            "precio": 310,
+            "precio_antes": 400,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "camion",
+            "titulo": "Envío",
+            "texto": "A toda Guatemala"
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagás al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        "regalo_5": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "pack_2",
+        "regalo_3",
+        "regalo_4",
+        "regalo_5"
+      ]
+    },
+    "circulos": {
+      "type": "pp-circulos",
+      "settings": {
+        "color_fondo": "#f8f4ee",
+        "color_titulo": "#8e3b2a",
+        "color_dorado": "#b8924a",
+        "color_texto": "#3d3530",
+        "titulo_1": "Gotas de luz que redefinen",
+        "titulo_2": "el frente de tu casa",
+        "titulo_3": "esta Navidad"
+      },
+      "blocks": {
+        "circulo_1": {
+          "type": "circulo",
+          "settings": {
+            "icono": "altura",
+            "titulo": "4,5 m de luz",
+            "texto": "De lado a lado de tu balcón, una ventana grande o la baranda."
+          }
+        },
+        "circulo_2": {
+          "type": "circulo",
+          "settings": {
+            "icono": "bombillo",
+            "titulo": "Gotas de luz cálida",
+            "texto": "Bombillas transparentes en forma de gota, distintas a todo lo que ya viste."
+          }
+        },
+        "circulo_3": {
+          "type": "circulo",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Se pueden mojar",
+            "texto": "Hechas para afuera: lucen igual con sol, sereno o lluvia."
+          }
+        }
+      },
+      "block_order": [
+        "circulo_1",
+        "circulo_2",
+        "circulo_3"
+      ]
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#efe7dc",
+        "color_tarjeta": "#fffdf9",
+        "color_acento": "#8e3b2a",
+        "color_dorado": "#b8924a",
+        "color_texto": "#3d3530",
+        "cierre": "Esta Navidad, unas gotas de luz hacen que el frente de tu casa se vea distinto.",
+        "titulo": "Que tu casa no pase",
+        "titulo_dorado": "desapercibida",
+        "titulo_fin": " esta Navidad."
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "Las lucecitas de siempre",
+            "puntos": "Las mismas series de colores que tiene toda la cuadra."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "bombillo",
+            "titulo": "Bombillas que se queman",
+            "puntos": "De un año a otro la serie ya no prende completa."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "casa",
+            "titulo": "Un frente que nadie nota",
+            "puntos": "Por dentro todo navideño, pero desde la calle tu casa se ve apagada."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3"
+      ]
+    },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Mirá cómo <em>brillan de noche</em>",
+        "texto": "Así se ven en el frente de la casa."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Balcón"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Ventana"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Portón"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ]
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "titulo": "Hechas para <em>brillar afuera</em>"
+      },
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "gota",
+            "texto": "Se pueden mojar"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "bombillo",
+            "texto": "Menos energía"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 60 días"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ]
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo",
+        "titulo": "Tu frente navideño <em>en 3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Sacala de la caja",
+            "texto": "Llega lista para usar."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Colgala",
+            "texto": "En tu balcón, ventana o portón."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Enchufala y elegí el modo",
+            "texto": "Tu casa brillando en minutos."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ]
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "settings": {
+        "etiqueta": "Navidad diferente",
+        "titulo": "No son las luces <em>de siempre.</em>",
+        "texto": "Frente a las bombillas navideñas tradicionales.",
+        "color_destacado": "#8e3b2a",
+        "nombre_a": "Gotas de Luz",
+        "sub_a": "4,5 m",
+        "nombre_b": "Las de siempre",
+        "sub_b": "Bombillas de colores",
+        "pie_izq": "Gotas de Luz",
+        "pie_der": "Temporada tras temporada"
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Cómo se ven",
+            "subtitulo": "Lo que ven desde la calle",
+            "ok_a": true,
+            "valor_a": "Gotas novedosas",
+            "ok_b": false,
+            "valor_b": "Comunes"
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Duración",
+            "subtitulo": "Que no se quemen",
+            "ok_a": true,
+            "valor_a": "Hasta 15 veces más",
+            "ok_b": false,
+            "valor_b": "Se queman"
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Energía",
+            "subtitulo": "Lo que consumen",
+            "ok_a": true,
+            "valor_a": "Hasta 4 veces menos",
+            "ok_b": false,
+            "valor_b": "Más consumo"
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Afuera",
+            "subtitulo": "Balcón, ventana o portón",
+            "ok_a": true,
+            "valor_a": "Se pueden mojar",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Pago y garantía",
+            "subtitulo": "Compra sin riesgo",
+            "ok_a": true,
+            "valor_a": "Contraentrega + 60 días",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5"
+      ]
+    },
+    "garantia": {
+      "type": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#a5660f",
+        "color_sello": "#a5660f",
+        "texto": "Si tus Gotas de Luz presentan un daño de fábrica dentro de los 60 días, te las cambiamos sin costo.",
+        "sello_numero": "60",
+        "titulo": "Garantía de 60 días"
+      },
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "60 días de garantía"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagás al recibir"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ]
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "settings": {
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Mi casa nunca se había visto <em>tan navideña.</em>”",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 3
+      },
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Todos preguntan",
+            "texto": "Las puse en el balcón y los vecinos me preguntan dónde las compré.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Ciudad de Guatemala",
+            "verificado": false
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Aguantaron la lluvia",
+            "texto": "Están en el portón y siguen prendiendo bien después de los aguaceros.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Mixco",
+            "verificado": false
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pedí dos",
+            "texto": "Una para la ventana y otra para el portón. Pagué al recibir.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Quetzaltenango",
+            "verificado": false
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3"
+      ]
+    },
+    "faq": {
+      "type": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Lucía de Mixco pregunta: ¿Cuánto miden?",
+            "respuesta": "<p>Cada tira mide <strong>4,5 metros</strong>: alcanza de lado a lado de un balcón, una ventana grande o la baranda. Con el pack de 2 tenés <strong>9 metros</strong> para todo el frente.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Andrea de Villa Nueva pregunta: ¿Se pueden poner afuera si llueve?",
+            "respuesta": "<p>Sí. <strong>Se pueden mojar</strong>, así que lucen en balcón, ventanas y portón aunque llueva.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Karla de Antigua pregunta: ¿Cómo se conectan?",
+            "respuesta": "<p>Se <strong>enchufan a la corriente</strong>. Solo necesitás un tomacorriente cerca o una extensión.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sofía de Escuintla pregunta: ¿Tienen modos de luz?",
+            "respuesta": "<p>Sí, tienen <strong>varios modos de luz</strong> para que elijás el que más te guste.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "María de Cobán pregunta: ¿Tienen garantía?",
+            "respuesta": "<p>Sí, <strong>60 días de garantía</strong> por cualquier daño de fábrica.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Gaby de Quetzaltenango pregunta: ¿Cómo pago?",
+            "respuesta": "<p>Pagás en efectivo cuando las recibís en tu casa. <strong>Contraentrega en toda Guatemala</strong>, nada por adelantado.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6"
+      ]
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "boton_texto": "Las quiero",
+        "subtexto": "Pagás al recibir · Garantía 60 días",
+        "precio_manual": 310,
+        "aparecer": "despues_oferta"
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "oferta_tabs",
+    "circulos",
+    "problemas_filas",
+    "videos",
+    "iconos",
+    "pasos",
+    "comparativa",
+    "garantia",
+    "resenas",
+    "faq",
+    "boton_fijo"
+  ]
+}
