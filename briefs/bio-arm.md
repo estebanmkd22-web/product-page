@@ -45,7 +45,7 @@ Tienda: Naturixa (GT) · Fecha: 2026-11-09 · Estado: confirmado
   - Criterio: Q35 sobre Q450 es un ahorro chico (8 %). Como "ahorro" no mueve la decisión; como **"listo para jugar el 24, sin comprar nada más"** sí. El valor está en la comodidad del regalo completo.
 - Bonos [Hipótesis, el usuario confirma si los puede cumplir]:
   - 300 gomas de hidrogel incluidas (Q35) — confirmado;
-  - guía "Cómo hidratar las gomas + juegos para el patio" (PDF por WhatsApp, costo cero) — pendiente.
+  - guía "Cómo hidratar las gomas + juegos para el patio" (PDF por WhatsApp, costo cero) — confirmado. [Usuario]
 - Garantía: **60 días por daños de fábrica.** [Usuario]
 - Envío y pago: envío gratis, entrega de 1 a 4 días, pagás al recibir. [Usuario]
 - Oferta única: "Kit Héroe completo: guante + 300 gomas + cable USB, listo para Navidad, y lo pagás cuando lo tenés en la mano".
@@ -61,3 +61,12 @@ Tienda: Naturixa (GT) · Fecha: 2026-11-09 · Estado: confirmado
 - Fotos: solo la de proveedor. Videos: **falta** (un video del guante disparando vende mucho más que cualquier foto).
 - Avatar: se elige en la fase 3 (padre o madre guatemalteco con hijo adolescente).
 - Logo/colores: [Hipótesis] rojo del producto + negro/grafito + azul eléctrico de las gomas (estilo "tecnología de héroe").
+
+## 8. Hero (fase 1)
+- Título: El regalo que lo convierte en <em>superhéroe</em> — aprobado. [Usuario]
+- Bullets — aprobados. [Usuario]
+  - <strong>Todo incluido:</strong> guante, 300 gomas de hidrogel y carga USB. Listo para jugar.
+  - <strong>Disparo en ráfaga:</strong> cargador en la muñeca que dispara seguido.
+  - <strong>Lo saca del celular:</strong> un juego para el patio, con sus amigos o con vos.
+  - <strong>Pagás al recibir:</strong> envío gratis de 1 a 4 días y 60 días de garantía.
+- Subtítulo: pendiente.
