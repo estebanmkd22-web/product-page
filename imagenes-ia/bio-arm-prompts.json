@@ -1,0 +1,128 @@
+{
+  "version": 2,
+  "landing": "Bio Launching Arm",
+  "avatar": null,
+  "referencia_archivo": "imagenes/bio-arm/referencia-proveedor.webp",
+  "ficha": {
+    "escenario": "Casa guatemalteca de clase media: patio con piso de cemento, pared de block pintada de color crema, una pila de lavar al fondo y macetas con plantas.",
+    "luz": "Luz natural de la tarde, cálida y suave, con sombras reales.",
+    "paleta": "Tonos granate, dorado viejo y gris piedra en el entorno, que acompañan el rojo del guante sin competir con él.",
+    "estilo": "Foto realista tomada con celular, ligero desenfoque de fondo, objetos cotidianos un poco desordenados; nada de render ni de estudio."
+  },
+  "producto": "Guante lanzador robótico rojo brillante, idéntico al de la foto adjunta: dedos articulados en forma de armadura, cuerpo rojo con detalles negros, cargador cilíndrico transparente lleno de bolitas de hidrogel azules montado sobre la muñeca y correa negra ajustable. Copia solo el guante: ignora la caja, los textos, los logos y la persona de la foto de referencia. Sin piezas de más.",
+  "reglas": "Sin textos, letreros, marcas ni logos dentro de la imagen. Manos naturales con cinco dedos. Nunca se dispara ni se apunta a personas o a caras; solo a latas, vasos o blancos. Sin personajes de películas ni superhéroes reconocibles.",
+  "espacios": {
+    "hero-oferta.imagen_4": {
+      "que": "Muestra el kit completo: todo lo que llega en la caja (Deseo).",
+      "producto": true,
+      "persona": false,
+      "escena": "Vista desde arriba, sobre una mesa de madera clara: el guante rojo en el centro, al lado un tarro transparente lleno de bolitas de hidrogel azules y un cable USB enrollado. Algunas bolitas azules sueltas brillando con la luz.",
+      "historial": []
+    },
+    "hero-oferta.imagen_5": {
+      "que": "Disparo en acción: lo que lo hace emocionante (Atención).",
+      "producto": true,
+      "persona": false,
+      "escena": "Solo se ven el antebrazo y la mano de un joven con camiseta negra; no se ve su cara. El guante rojo en el brazo, en el patio, disparando una ráfaga de bolitas azules hacia una fila de latas sobre un muro bajo; dos latas cayendo en el aire. Las bolitas se ven en movimiento. Siempre apunta a latas o blancos, nunca a personas.",
+      "historial": []
+    },
+    "hero-oferta.imagen_6": {
+      "que": "Primer plano del cargador lleno: detalle y calidad (Deseo).",
+      "producto": true,
+      "persona": false,
+      "escena": "Primer plano del guante apoyado sobre el muro del patio: el cargador transparente lleno de bolitas azules en primer plano y nítido, los dedos rojos detrás ligeramente desenfocados.",
+      "historial": []
+    },
+    "grid-dolores.item1": {
+      "que": "Dolor: todo el día en el celular. No muestra el producto (Interés).",
+      "producto": false,
+      "persona": false,
+      "escena": "Sala de una casa guatemalteca al atardecer: solo se ven las manos de un joven sosteniendo un celular encendido y sus piernas sobre un sillón, con cojines desordenados. La luz azul de la pantalla ilumina las manos. Ambiente aburrido.",
+      "historial": []
+    },
+    "grid-dolores.item2": {
+      "que": "Dolor: juguetes que se rompen. No muestra el producto (Interés).",
+      "producto": false,
+      "persona": false,
+      "escena": "Una caja de cartón abierta en el suelo con juguetes de plástico genéricos rotos o abandonados: una pistola de agua sin tapa, un carro sin rueda, piezas sueltas. Luz tenue de interior, sensación de olvido.",
+      "historial": []
+    },
+    "grid-dolores.item3": {
+      "que": "Dolor: \"ya tiene de todo\". No muestra el producto (Interés).",
+      "producto": false,
+      "persona": false,
+      "escena": "Estantería de un cuarto juvenil llena de cosas acumuladas: consola de videojuegos genérica, control, peluches, juegos de mesa, una pelota. Todo un poco desordenado y con algo de polvo. Sin marcas visibles.",
+      "historial": []
+    },
+    "grid-dolores.item4": {
+      "que": "Dolor: regalos sin emoción. No muestra el producto (Interés).",
+      "producto": false,
+      "persona": false,
+      "escena": "Debajo de un árbol de Navidad, un regalo ya abierto y dejado a un lado: papel de regalo arrugado, una caja con un par de calcetines y una camisa doblada. Luces del árbol encendidas desenfocadas al fondo. Sensación de desinterés.",
+      "historial": []
+    },
+    "galeria-ideas.idea1": {
+      "que": "Transformación: tiro al blanco en el patio. Tercio inferior simple y más oscuro para el texto.",
+      "producto": true,
+      "persona": false,
+      "escena": "Solo se ven el antebrazo y la mano de un joven con camiseta negra; no se ve su cara. Plano horizontal del patio: el guante rojo apuntando a una fila de latas y vasos de plástico sobre un muro bajo, algunas latas ya caídas en el piso de cemento. El tercio inferior de la imagen es piso de cemento en sombra, simple y más oscuro. Siempre apunta a latas o blancos, nunca a personas.",
+      "historial": []
+    },
+    "problemas-filas.fila1": {
+      "que": "Parte: disparo en ráfaga (Interés).",
+      "producto": true,
+      "persona": false,
+      "escena": "Solo se ven el antebrazo y la mano de un joven con camiseta negra; no se ve su cara. De perfil, el guante disparando varias bolitas azules seguidas que salen en línea hacia la derecha de la imagen, con fondo de patio desenfocado. Siempre apunta a latas o blancos, nunca a personas.",
+      "historial": []
+    },
+    "problemas-filas.fila2": {
+      "que": "Parte: cargador transparente a la vista (Interés).",
+      "producto": true,
+      "persona": false,
+      "escena": "Macro del cargador transparente sobre la muñeca del guante, lleno de bolitas azules hasta arriba; se distinguen bien las bolitas a través del plástico. Fondo gris piedra desenfocado.",
+      "historial": []
+    },
+    "problemas-filas.fila3": {
+      "que": "Parte: correa ajustable (Interés).",
+      "producto": true,
+      "persona": false,
+      "escena": "Primer plano del guante sobre un antebrazo: la correa negra ajustada alrededor del brazo, se ve la hebilla o el cierre. Solo antebrazo, sin cara.",
+      "historial": []
+    },
+    "problemas-filas.fila4": {
+      "que": "Parte: recargable por USB (Interés).",
+      "producto": true,
+      "persona": false,
+      "escena": "El guante sobre un escritorio de madera, conectado a un cargador de pared mediante un cable USB. Junto a él, un vaso con lápices y un cuaderno cerrado. Luz natural de ventana.",
+      "historial": []
+    },
+    "problemas-filas.fila5": {
+      "que": "Parte: gomas de hidrogel que crecen con agua (Interés).",
+      "producto": false,
+      "persona": false,
+      "escena": "Sobre una mesa de cocina con baldosa blanca: un recipiente de vidrio con agua y bolitas de hidrogel azules hinchadas y brillantes; al lado, un puñado de bolitas pequeñas todavía secas para comparar el tamaño.",
+      "historial": []
+    },
+    "pasos.paso1": {
+      "que": "Paso 1: hidratar las gomas (Deseo: facilidad).",
+      "producto": false,
+      "persona": false,
+      "escena": "Unas manos vertiendo bolitas de hidrogel pequeñas desde un tarro transparente dentro de un recipiente con agua, sobre la pila de lavar del patio. Primer plano, solo manos.",
+      "historial": []
+    },
+    "pasos.paso2": {
+      "que": "Paso 2: cargarlo por USB (Deseo: facilidad).",
+      "producto": true,
+      "persona": false,
+      "escena": "Una mano conectando el cable USB al guante rojo, apoyado sobre una mesa junto a un tomacorriente. Primer plano, solo mano.",
+      "historial": []
+    },
+    "pasos.paso3": {
+      "que": "Paso 3: ponérselo y jugar (Deseo: facilidad).",
+      "producto": true,
+      "persona": false,
+      "escena": "Primer plano de las manos de un joven ajustando la correa negra del guante rojo en su antebrazo, con el cargador lleno de bolitas azules arriba. Fondo de patio desenfocado. No se ve su cara.",
+      "historial": []
+    }
+  }
+}
