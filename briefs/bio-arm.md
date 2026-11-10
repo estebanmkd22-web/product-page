@@ -69,4 +69,5 @@ Tienda: Naturixa (GT) · Fecha: 2026-11-09 · Estado: confirmado
   - <strong>Disparo en ráfaga:</strong> cargador en la muñeca que dispara seguido.
   - <strong>Lo saca del celular:</strong> un juego para el patio, con sus amigos o con vos.
   - <strong>Pagás al recibir:</strong> envío gratis de 1 a 4 días y 60 días de garantía.
-- Subtítulo: pendiente.
+- Subtítulo (temporada Navidad) — aprobado. [Usuario]: Un guante robótico que dispara gomas de hidrogel en ráfaga. Llega antes de Navidad y lo pagás al recibir.
+- Subtítulo después de la temporada [Usuario]: Un guante robótico que dispara gomas de hidrogel en ráfaga, y tiene 300 gomas incluidas, listo para jugar.
