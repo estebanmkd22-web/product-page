@@ -25,6 +25,8 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **En la rama de 1,5 m:** mencionar el tamaño sin que parezca pequeña ("genera rechazo").
 
 ## Imágenes
+- **La imagen 1 del hero es siempre el producto como protagonista.** En Bio Arm (2026-11-10) se puso una escena de regalo como principal y la corrigió: las escenas emocionales van de la 2 en adelante.
+- **Los textos de las imágenes del hero son emocionales: nada de precio, envío, pago ni regalos.** "El hero es lo que convence; en la oferta ya están los ganchos." Una línea corta por imagen.
 - **Todas en .webp**, pedido de forma muy clara en cada prompt.
 - **Las personas salen del banco de avatares**, nunca solo de una descripción, porque la persona cambia en cada imagen.
 - **Los prompts se cambian de forma puntual**: número de imagen + parte.

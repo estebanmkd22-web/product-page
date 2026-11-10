@@ -7,7 +7,7 @@ Tienda: Naturixa (GT) · Fecha: 2026-11-09 · Estado: confirmado
 - Specs reales: disparo sucesivo/rápido, cargador transparente en la muñeca, correa ajustable. [Verificado en la foto]
   - Batería recargable por **USB**. [Usuario]
   - Sin dato (no se promete): disparos por carga, alcance, lentes incluidos, talla de mano.
-- Qué trae la caja: guante lanzador + tarro de 300 gomas de hidrogel. [Usuario]
+- Qué trae la caja: guante lanzador + tarro de 300 gomas de hidrogel + cable USB. [Usuario]
 - Foto: `imagenes/bio-arm/referencia-proveedor.webp` (de proveedor). El usuario indica que no hace falta otra.
 - Lo que NO se promete:
   - La caja dice **14+**. No se vende "para niños pequeños". [Verificado en la foto]
