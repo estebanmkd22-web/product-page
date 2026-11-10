@@ -34,5 +34,5 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 
 ## Trabajo
 - **Primero definir, después proponer, confirmar y recién ahí hacer.** Una mención no es una orden.
-- **Shopify en pausa** hasta que todo esté definido y él pida subirlo.
+- **(2026-11-10) El usuario ya no hace el paso a paso.** La landing aprobada se monta automáticamente en el tema en vivo con `tools/montar-landing.mjs`. Solo se agregan archivos, siempre con revisión, plan y una confirmación. Shopify no se toca antes de esa fase.
 - **Siempre el paso a paso exacto.** Nunca volver a pegar una plantilla que ya tiene fotos.

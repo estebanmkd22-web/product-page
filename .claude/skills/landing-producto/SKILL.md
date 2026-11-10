@@ -1,6 +1,6 @@
 ---
 name: landing-producto
-description: Estratega y constructor de landings de respuesta directa. Define el brief del producto (buyer, dolores, objeciones, hipótesis, ángulos y oferta), propone con criterio de experto y, paso a paso con aprobación del usuario en cada etapa, arma la landing (product page) con las secciones PP de este repositorio, su kit de imágenes para hacer a mano en ChatGPT y, si se pide, el copy de anuncios. No toca Shopify. Úsala cuando el usuario diga "vamos a trabajar otro producto", pida una landing o product page, el hero de un producto, el kit de imágenes o los prompts de una landing, o pida cambiar un prompt puntual del kit.
+description: Estratega y constructor de landings de respuesta directa. Define el brief del producto (buyer, dolores, objeciones, hipótesis, ángulos y oferta), propone con criterio de experto y, paso a paso con aprobación del usuario en cada etapa, arma la landing (product page) con las secciones PP de este repositorio, su kit de imágenes para hacer a mano en ChatGPT y, si se pide, el copy de anuncios. Cuando el usuario lo pide, la monta automáticamente en Shopify (solo agrega archivos, con revisión y confirmación). Úsala cuando el usuario diga "vamos a trabajar otro producto", pida una landing o product page, el hero de un producto, el kit de imágenes o los prompts de una landing, o pida cambiar un prompt puntual del kit.
 ---
 
 # Landing de producto + kit de imágenes
@@ -25,11 +25,16 @@ Todos están en esta misma carpeta.
 - Al terminar cada fase, **detente y pregunta** antes de pasar a la siguiente.
 - Si una instrucción es ambigua, pregunta en vez de elegir tú.
 
-## Shopify: en pausa total
-Por decisión del usuario, **no uses ninguna herramienta de Shopify**: ni para buscar el producto, ni para leer, ni para crear, editar, subir archivos o tocar el tema.
-- Los datos del producto (nombre, precio, specs, fotos) los da el usuario. Si faltan, pregúntalos.
-- Todo se entrega como archivos y pasos para que el usuario los pegue a mano.
-- La subida automática a Shopify se hará más adelante, **solo cuando todo esté terminado y el usuario la pida explícitamente** (por ejemplo, "súbelo a Shopify").
+## Shopify: solo en la fase de montaje
+Shopify **no se toca** durante el brief, el hero, el armado de la landing ni el kit. Los datos del producto los da el usuario.
+
+Se usa **únicamente en la Fase 2.5 · Montaje**, cuando la landing está aprobada y el usuario pide montarla ("móntala", "súbela"). Siempre:
+1. revisar;
+2. mostrar el plan;
+3. esperar una confirmación;
+4. ejecutar.
+
+Nunca se publican, duplican ni borran temas. Nunca se sobrescribe lo que ya existe sin aprobación explícita.
 
 Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con las secciones `sections/pp-*.liquid` y las herramientas de `tools/`. El usuario pega el código en **Editar código** y edita en **Personalizar**.
 
@@ -40,7 +45,7 @@ Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con
 | **Tu espacio Market** (tuespaciomarket.com) | Colombia | `$` COP, `locale es-CO` | Tuteo cercano, colombiano |
 | **Naturixa** (vivecompra.com/naturixa) | Guatemala | `Q` | El más cercano para guatemaltecos (voseo) |
 
-Los precios y nombres reales los confirma el usuario; no los busques en la tienda (ver "Shopify: en pausa total"). Si el usuario manda un enlace de su tienda o de un proveedor para analizarlo, puedes leer esa página pública, pero solo para analizar y proponer.
+Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los busques en la tienda. Si el usuario manda un enlace de su tienda o de un proveedor para analizarlo, puedes leer esa página pública, pero solo para analizar y proponer.
 
 ## Proceso: 4 fases, cada una se aprueba antes de seguir
 
@@ -110,6 +115,46 @@ node tools/inline-base.mjs                                            # si tocas
 - Manda capturas del hero y la oferta al usuario.
 - Agrega la plantilla a `tools/build-copy-page.mjs` y regenera la página de copiar. Es el artifact `https://claude.ai/artifact/JjRD3UQ4yvGUJpJJgh3jY1`: léelo con `action: read` y republica en esa misma URL.
 - Commit y push a la rama de trabajo.
+
+### Fase 2.5 · Montaje automático en Shopify (cuando el usuario lo pida)
+El usuario ya no hace el paso a paso: la landing la montas tú en el **tema en vivo**, solo agregando archivos.
+
+**Requisito (una vez por tienda).** Contraseña de la app **Theme Access** guardada como secreto de red. Si falta, pídela con `request_credential`:
+- host `theme-kit-access.shopifyapps.com`;
+- header `X-Shopify-Access-Token`;
+- sin prefijo.
+
+Nunca la pidas por el chat.
+
+**Pasos:**
+1. **Producto.** Búscalo en la tienda (`search_products`, solo lectura).
+   - Si no existe, propón crearlo como **borrador** con título y precio del brief y espera el "sí".
+   - Si el usuario va a crear el producto él mismo, espera a que lo confirme.
+2. **Revisión (solo lectura):** `node tools/montar-landing.mjs <landing> --tienda tuespaciomarket`. Baja del tema en vivo las secciones que usa la plantilla y la plantilla, y arma el plan:
+   - `subir`: secciones que faltan y la plantilla nueva;
+   - `igual`: ya está igual en la tienda;
+   - `compatibles`: distinta, pero tiene todos los ajustes que usa la plantilla, así que no se toca;
+   - `desactualizadas`: a la versión de la tienda le faltan ajustes que usa la plantilla;
+   - `plantilla`: `nueva`, `igual` o `existe`.
+3. **Explica el plan en palabras simples** y espera **una** confirmación. Por ejemplo: "voy a subir 2 secciones nuevas y la plantilla; no toco nada más".
+   - Si hay **desactualizadas**, explica qué otras landings usan esa sección y el riesgo de actualizarla. Solo con aprobación explícita usa `--actualizar pp-x,pp-y`. La alternativa es crear una sección nueva.
+   - Si la plantilla **existe**, no la sobrescribas: tiene lo editado en Personalizar, fotos incluidas. Solo con aprobación explícita usa `--sobrescribir-plantilla`, o crea la plantilla con otro nombre.
+4. **Subir:** el mismo comando con `--subir`. Guarda el respaldo de lo que había en `respaldos/<tienda>/<fecha>/`; haz commit de ese respaldo.
+5. **Asignar la plantilla al producto:** `graphql_mutation` con `productUpdate(product: { id, templateSuffix: "<landing>" })`. La app le pide confirmación al usuario.
+6. **Verificar:**
+   - abre `https://<dominio>/products/<handle>` con Playwright en 390 px;
+   - comprueba que cargan las secciones PP;
+   - manda captura y enlace al usuario.
+7. **Siguiente paso:** el kit de imágenes. Las imágenes, cuando el usuario las tenga en WebP, se subirán y pondrán en la plantilla en un paso futuro. Hoy las sube él en Personalizar.
+
+**Reglas de seguridad:**
+- Solo `--nodelete` y solo los archivos del plan.
+- Una sección nueva o una plantilla nueva no cambian ninguna página hasta asignarlas, por eso agregar es seguro.
+- **No asignes la plantilla** a un producto que ya tiene otra landing vendiendo, sin confirmación.
+
+**Tiendas configuradas en la herramienta:** `tuespaciomarket` (sdv0ep-if.myshopify.com). **Naturixa queda pendiente**: hace falta su dominio `.myshopify.com` y su contraseña de Theme Access; se agrega en `TIENDAS` dentro de `tools/montar-landing.mjs`.
+
+Si la herramienta falla por red o contraseña, no improvises con otro método. Di qué falló y, solo como respaldo, da el paso a paso manual.
 
 ### Fase 3 · Kit de imágenes (a mano en ChatGPT; solo cuando el usuario lo pida)
 1. `node tools/espacios-imagenes.mjs preview/paginas/<p>.json imagenes-ia/<p>-espacios.json`. Lista cada espacio en el orden del personalizador, con su formato.
@@ -195,7 +240,7 @@ El usuario indica **número de imagen + parte**, por ejemplo: "imagen 7, escena:
 ## Reglas de trabajo con el usuario
 - **No modificar lo que no pidió.** Si pide cambiar un título, cambia solo ese título. Si una sección compartida necesita algo nuevo, crea una sección nueva o un ajuste con valor por defecto que deje igual a las demás landings.
 - **Si la página ya tiene fotos, nunca le pidas volver a pegar la plantilla**: dale los cambios a mano para Personalizar (sección → campo → texto exacto). Pegar la plantilla solo sirve para landings nuevas sin fotos.
-- **Siempre el paso a paso exacto, numerado:**
+- **El montaje lo haces tú (Fase 2.5).** El paso a paso manual es solo el respaldo, cuando la herramienta no puede:
   1. Editar código → sections → crear o pegar las secciones nuevas o actualizadas.
   2. Editar código → templates → crear `product.<p>` y pegar.
   3. Asignar la plantilla al producto.

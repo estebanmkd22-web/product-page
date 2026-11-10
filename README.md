@@ -84,6 +84,10 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 
 El proceso completo (hero → landing → kit de imágenes) está en `.claude/skills/landing-producto/SKILL.md`. Se carga sola en cada sesión de Claude Code de este repositorio; también se llama con `/landing-producto`.
 
+## Montaje automático en Shopify
+
+`node tools/montar-landing.mjs <landing> --tienda tuespaciomarket` revisa el tema en vivo con la Shopify CLI: qué secciones de la plantilla faltan, cuáles están iguales, cuáles son compatibles y cuáles desactualizadas. Con `--subir` sube solo lo que falta y la plantilla nueva (`--nodelete`), con respaldo previo en `respaldos/`. Nunca sobrescribe secciones ni plantillas existentes, salvo con `--actualizar` o `--sobrescribir-plantilla`. Necesita la contraseña de Theme Access como secreto de red para `theme-kit-access.shopifyapps.com` (header `X-Shopify-Access-Token`).
+
 ## Kit de imágenes con IA
 
 1. `node tools/espacios-imagenes.mjs preview/paginas/X.json imagenes-ia/X-espacios.json` lista cada espacio de imagen de la página (sección, bloque, formato y píxeles).
