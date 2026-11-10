@@ -29,12 +29,17 @@
       "que": "El momento héroe: el joven en el patio con el guante puesto (Deseo). Sin cara, para no depender de un avatar.",
       "producto": true,
       "persona": false,
-      "escena": "Plano medio desde atrás y un poco de lado: un joven delgado con camiseta negra y jeans, de espaldas, en el patio, con el brazo extendido y el guante rojo puesto, disparando bolitas azules hacia una fila de latas sobre un muro bajo. No se ve su cara. Postura de héroe, luz de la tarde que recorta su silueta. Siempre apunta a latas o blancos, nunca a personas. Texto en la imagen: escribe exactamente \"Más patio. Menos pantalla.\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Plano medio desde atrás y un poco de lado: un muchacho delgado de unos 18 años, con camiseta negra y jeans, de espaldas, jugando en el patio de su casa a tumbar latas vacías puestas sobre un muro bajo, con el juguete rojo puesto en el brazo. Unas bolitas de gel azules vuelan hacia las latas y una lata se cae. No se ve su cara. Ambiente alegre de juego por la tarde, luz cálida que recorta su silueta. Texto en la imagen: escribe exactamente \"Más patio. Menos pantalla.\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Texto emocional en la imagen: \"Más patio. Menos pantalla.\"."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "ChatGPT la rechazó. Se quitaron 'joven', 'disparando', 'apuntar' y 'postura de héroe': ahora es un muchacho de 18 años jugando a tumbar latas con el juguete."
         }
       ]
     },
