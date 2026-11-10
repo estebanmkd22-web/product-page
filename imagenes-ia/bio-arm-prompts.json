@@ -12,6 +12,27 @@
   "producto": "Guante lanzador robótico rojo brillante, idéntico al de la foto adjunta: dedos articulados en forma de armadura, cuerpo rojo con detalles negros, cargador cilíndrico transparente lleno de bolitas de hidrogel azules montado sobre la muñeca y correa negra ajustable. Copia solo el guante: ignora la caja, los textos, los logos y la persona de la foto de referencia. Sin piezas de más.",
   "reglas": "Sin textos, letreros, marcas ni logos dentro de la imagen. Manos naturales con cinco dedos. Nunca se dispara ni se apunta a personas o a caras; solo a latas, vasos o blancos. Sin personajes de películas ni superhéroes reconocibles.",
   "espacios": {
+    "hero-oferta.imagen_1": {
+      "que": "Imagen principal: el regalo que lo convierte en superhéroe (Atención). Es la que se ve primero.",
+      "producto": true,
+      "persona": false,
+      "escena": "Mañana de Navidad en la sala de una casa guatemalteca: una caja de regalo abierta en el piso, con papel granate y moño dorado a un lado, y dentro el guante rojo con el cargador lleno de bolitas azules, bien iluminado y nítido como foco de la imagen. Al fondo, desenfocados, un árbol de Navidad con luces cálidas y un nacimiento. Encuadre cuadrado, el guante ocupa el centro.",
+      "historial": []
+    },
+    "hero-oferta.imagen_2": {
+      "que": "El momento héroe: el joven en el patio con el guante puesto (Deseo). Sin cara, para no depender de un avatar.",
+      "producto": true,
+      "persona": false,
+      "escena": "Plano medio desde atrás y un poco de lado: un joven delgado con camiseta negra y jeans, de espaldas, en el patio, con el brazo extendido y el guante rojo puesto, disparando bolitas azules hacia una fila de latas sobre un muro bajo. No se ve su cara. Postura de héroe, luz de la tarde que recorta su silueta. Siempre apunta a latas o blancos, nunca a personas.",
+      "historial": []
+    },
+    "hero-oferta.imagen_3": {
+      "que": "El producto solo, limpio y premium (Deseo): para que se vea bien el detalle.",
+      "producto": true,
+      "persona": false,
+      "escena": "Foto de producto del guante rojo apoyado de lado sobre una superficie de concreto gris, con el cargador lleno de bolitas azules arriba y unas cuantas bolitas azules sueltas brillando delante. Fondo gris piedra liso y desenfocado, luz natural suave desde un lado, reflejos realistas en el plástico rojo.",
+      "historial": []
+    },
     "hero-oferta.imagen_4": {
       "que": "Muestra el kit completo: todo lo que llega en la caja (Deseo).",
       "producto": true,

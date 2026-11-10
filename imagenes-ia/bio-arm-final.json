@@ -4,30 +4,30 @@
     "id": "hero-oferta.imagen_1",
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
-    "producto": false,
+    "producto": true,
     "avatar": null,
     "referencias_avatar": [],
-    "prompt": ""
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Guante lanzador robótico rojo brillante, idéntico al de la foto adjunta: dedos articulados en forma de armadura, cuerpo rojo con detalles negros, cargador cilíndrico transparente lleno de bolitas de hidrogel azules montado sobre la muñeca y correa negra ajustable. Copia solo el guante: ignora la caja, los textos, los logos y la persona de la foto de referencia. Sin piezas de más.\n\nEscena: Mañana de Navidad en la sala de una casa guatemalteca: una caja de regalo abierta en el piso, con papel granate y moño dorado a un lado, y dentro el guante rojo con el cargador lleno de bolitas azules, bien iluminado y nítido como foco de la imagen. Al fondo, desenfocados, un árbol de Navidad con luces cálidas y un nacimiento. Encuadre cuadrado, el guante ocupa el centro.\n\nAmbiente: Casa guatemalteca de clase media: patio con piso de cemento, pared de block pintada de color crema, una pila de lavar al fondo y macetas con plantas. Luz natural de la tarde, cálida y suave, con sombras reales. Tonos granate, dorado viejo y gris piedra en el entorno, que acompañan el rojo del guante sin competir con él. Foto realista tomada con celular, ligero desenfoque de fondo, objetos cotidianos un poco desordenados; nada de render ni de estudio.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros, marcas ni logos dentro de la imagen. Manos naturales con cinco dedos. Nunca se dispara ni se apunta a personas o a caras; solo a latas, vasos o blancos. Sin personajes de películas ni superhéroes reconocibles.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
   },
   {
     "n": 2,
     "id": "hero-oferta.imagen_2",
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
-    "producto": false,
+    "producto": true,
     "avatar": null,
     "referencias_avatar": [],
-    "prompt": ""
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Guante lanzador robótico rojo brillante, idéntico al de la foto adjunta: dedos articulados en forma de armadura, cuerpo rojo con detalles negros, cargador cilíndrico transparente lleno de bolitas de hidrogel azules montado sobre la muñeca y correa negra ajustable. Copia solo el guante: ignora la caja, los textos, los logos y la persona de la foto de referencia. Sin piezas de más.\n\nEscena: Plano medio desde atrás y un poco de lado: un joven delgado con camiseta negra y jeans, de espaldas, en el patio, con el brazo extendido y el guante rojo puesto, disparando bolitas azules hacia una fila de latas sobre un muro bajo. No se ve su cara. Postura de héroe, luz de la tarde que recorta su silueta. Siempre apunta a latas o blancos, nunca a personas.\n\nAmbiente: Casa guatemalteca de clase media: patio con piso de cemento, pared de block pintada de color crema, una pila de lavar al fondo y macetas con plantas. Luz natural de la tarde, cálida y suave, con sombras reales. Tonos granate, dorado viejo y gris piedra en el entorno, que acompañan el rojo del guante sin competir con él. Foto realista tomada con celular, ligero desenfoque de fondo, objetos cotidianos un poco desordenados; nada de render ni de estudio.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros, marcas ni logos dentro de la imagen. Manos naturales con cinco dedos. Nunca se dispara ni se apunta a personas o a caras; solo a latas, vasos o blancos. Sin personajes de películas ni superhéroes reconocibles.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
   },
   {
     "n": 3,
     "id": "hero-oferta.imagen_3",
     "proporcion": "1 / 1",
     "pixeles": "1080 × 1080",
-    "producto": false,
+    "producto": true,
     "avatar": null,
     "referencias_avatar": [],
-    "prompt": ""
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Guante lanzador robótico rojo brillante, idéntico al de la foto adjunta: dedos articulados en forma de armadura, cuerpo rojo con detalles negros, cargador cilíndrico transparente lleno de bolitas de hidrogel azules montado sobre la muñeca y correa negra ajustable. Copia solo el guante: ignora la caja, los textos, los logos y la persona de la foto de referencia. Sin piezas de más.\n\nEscena: Foto de producto del guante rojo apoyado de lado sobre una superficie de concreto gris, con el cargador lleno de bolitas azules arriba y unas cuantas bolitas azules sueltas brillando delante. Fondo gris piedra liso y desenfocado, luz natural suave desde un lado, reflejos realistas en el plástico rojo.\n\nAmbiente: Casa guatemalteca de clase media: patio con piso de cemento, pared de block pintada de color crema, una pila de lavar al fondo y macetas con plantas. Luz natural de la tarde, cálida y suave, con sombras reales. Tonos granate, dorado viejo y gris piedra en el entorno, que acompañan el rojo del guante sin competir con él. Foto realista tomada con celular, ligero desenfoque de fondo, objetos cotidianos un poco desordenados; nada de render ni de estudio.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros, marcas ni logos dentro de la imagen. Manos naturales con cinco dedos. Nunca se dispara ni se apunta a personas o a caras; solo a latas, vasos o blancos. Sin personajes de películas ni superhéroes reconocibles.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
   },
   {
     "n": 4,
