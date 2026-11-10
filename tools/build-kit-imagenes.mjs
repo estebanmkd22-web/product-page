@@ -61,7 +61,9 @@ const items = espacios.map((e) => {
   const p = kit.espacios[e.id];
   if (!p) return { ...e, final: '' };
   const extra = V2 ? { formato: FORMATO_CHATGPT(e.proporcion.replace(/\s/g, '')), adjuntos: adjuntosDe(p) } : {};
-  return { ...e, ...p, ...extra, final: V2 ? promptV2(e, p) : promptFinal(e, p) };
+  // La imagen principal puede traer variantes (B, C): mismo prompt base con otra escena, textos o comparativa.
+  const variantes = V2 ? (p.variantes || []).map((v) => ({ nombre: v.nombre, final: promptV2(e, { ...p, ...v }) })) : [];
+  return { ...e, ...p, ...extra, variantes, final: V2 ? promptV2(e, p) : promptFinal(e, p) };
 });
 fs.writeFileSync(fPrompts.replace(/-prompts\.json$/, '-final.json'), JSON.stringify(items.map(({ n, id, proporcion, pixeles, producto, persona, final }) => ({ n, id, proporcion, pixeles, producto: !!producto, avatar: persona ? kit.avatar : null, referencias_avatar: persona ? refsAvatar : [], prompt: final })), null, 2) + '\n');
 
@@ -79,13 +81,14 @@ const tarjetas = grupos.map((g) => `
 <section class="grupo">
   <h2>${esc(g.seccion)}${g.titulo ? `<small>${esc(g.titulo)}</small>` : ''}</h2>
   ${g.items.map((it) => `
-  <article class="card${it.final ? '' : ' falta'}">
+  <article class="card${it.final ? '' : ' falta'}${it.principal ? ' principal' : ''}">${it.principal ? '<p class="clave">★ La más importante: es la que retiene al cliente apenas entra. Hazla primero y dedícale más intentos.</p>' : ''}
     <div class="top"><span class="n">${it.n}</span><div><h3>${esc(it.donde)}${(it.historial || []).length ? ' <span class="mod">Modificada</span>' : ''}</h3>
       <div class="chips"><span>${esc(it.proporcion.replace(/\s/g, ''))}</span>${it.pixeles ? `<span>${esc(it.pixeles)} px</span>` : ''}${it.producto ? '<span class="ref">Con foto del producto</span>' : ''}${it.persona && avatar ? `<span class="ref">Con ${esc(avatar.nombre)}</span>` : ''}</div></div></div>
     <p class="que">${esc(it.que || 'Falta el prompt de este espacio.')}</p>
     ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}${it.comparativa ? `<dt>Comparativa</dt><dd>${esc(it.comparativa)}</dd>` : ''}${(it.textos || []).length ? `<dt>Textos</dt><dd>${it.textos.map((t) => `«${esc(t)}»`).join(' · ')}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd><dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
     ${(it.historial || []).length ? `<ul class="hist">${it.historial.map((h) => `<li><b>${esc(h.fecha)}</b> · ${esc(h.parte)}: ${esc(h.cambio)}</li>`).join('')}</ul>` : ''}
     ${it.final ? `<details><summary>Ver prompt completo</summary><pre>${esc(it.final)}</pre><button data-copy="${esc(it.final)}">Copiar</button></details>` : ''}
+    ${(it.variantes || []).map((v) => `<details><summary>Variante ${esc(v.nombre)}</summary><pre>${esc(v.final)}</pre><button data-copy="${esc(v.final)}">Copiar</button></details>`).join('')}
   </article>`).join('')}
 </section>`).join('');
 
@@ -105,7 +108,7 @@ h1{font-size:26px;margin:0 0 4px}.sub{color:var(--tx2);margin:0 0 20px}
 .refs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.refs figure{margin:0}.refs img,.vacio{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;background:var(--suave)}.vacio{display:grid;place-items:center;color:var(--ac);font-size:12px;font-weight:700}.refs figcaption{font-size:11px;text-align:center;color:var(--tx2);margin-top:4px;text-transform:capitalize}.aviso{color:var(--ac)!important;font-weight:600;margin:12px 0 0!important}
 .webp{background:var(--suave);border:2px solid var(--ac);border-radius:16px;padding:14px 16px;margin-bottom:24px}.webp b{color:var(--ac)}
 .grupo h2{font-size:18px;margin:28px 0 10px;display:flex;flex-direction:column}.grupo h2 small{font-weight:400;color:var(--tx2);font-size:14px}
-.card{background:var(--card);border:1px solid var(--borde);border-radius:14px;padding:14px;margin-bottom:10px}.card.falta{border-color:#d33}
+.card{background:var(--card);border:1px solid var(--borde);border-radius:14px;padding:14px;margin-bottom:10px}.card.falta{border-color:#d33}.card.principal{border:3px solid var(--ac);box-shadow:0 6px 24px color-mix(in srgb,var(--ac) 18%,transparent)}.clave{margin:0 0 10px;color:var(--ac);font-weight:800}
 .top{display:flex;gap:12px;align-items:flex-start}.n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--ac);color:#fff;font-weight:800;display:grid;place-items:center}
 h3{margin:4px 0 6px;font-size:15px}.chips{display:flex;gap:6px;flex-wrap:wrap}.chips span{font-size:12px;border:1px solid var(--borde);border-radius:99px;padding:1px 8px;color:var(--tx2)}.chips .ref{border-color:var(--ac);color:var(--ac)}
 .que{margin:10px 0 0}.mod{font-size:11px;background:var(--ac);color:#fff;border-radius:99px;padding:1px 8px;vertical-align:middle}

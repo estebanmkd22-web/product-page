@@ -136,6 +136,8 @@ Kie (`tools/kie.mjs`) está **en pausa por decisión del usuario**: no generes i
       "producto": true, "persona": true,
       "escena": "Lo que pasa en la imagen: acción, encuadre, objetos.",
       "persona_accion": "Qué hace el avatar en esta imagen.",
+      "principal": true,
+      "variantes": [{ "nombre": "B", "escena": "…", "textos": ["…"] }],
       "textos": ["Solo en el hero: textos exactos"],
       "comparativa": "Solo si es comparativa: lado izquierdo …; lado derecho …",
       "historial": []
@@ -153,6 +155,12 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
   El kit trae además un "mensaje de conversión" para copiar si ChatGPT igual entrega PNG. No quites estas líneas de ningún prompt.
 - **Imágenes del hero (galería, imagen 1 a 6): SÍ llevan texto y venden solas.** Es la excepción a "sin texto".
   - **Objetivo:** quitar el dolor y despertar interés por el producto. El producto es el protagonista y la solución se ve.
+  - **La imagen 1 es la más importante de toda la landing.** Es lo primero que se ve al entrar y la que retiene o pierde al cliente en un segundo. En el JSON lleva `"principal": true`; el kit la destaca y dice que se haga primero, con más intentos.
+    - **Producto protagonista:** idéntico a la foto, grande (entre el 50 y el 70 % del encuadre), completo y nítido, en un contexto real que dice para qué sirve. Nada compite con él.
+    - **Texto:** la promesa del ángulo en 2 a 6 palabras (sin copiar el título de la landing palabra por palabra) y, como máximo, 2 o 3 etiquetas de beneficio. Opcional: un sello de confianza ("Pagas al recibir"). Legible en un celular de 390 px.
+    - **Se entiende en 1 segundo, sin leer el resto:** qué es, qué resuelve y por qué es deseable.
+    - **No es comparativa.** Las comparativas van de la 2 en adelante. No muestra el dolor sin el producto.
+    - **Lleva 2 variantes** (`"variantes": [{ "nombre": "B", "escena": "…", "textos": ["…"] }]`) con otro encuadre u otra promesa, para que el usuario elija o pruebe cuál retiene más. Recomienda una y di por qué.
   - **Al menos 2 son comparativas** en dos lados (sin el producto vs con el producto, o la alternativa vs el producto). El contraste lo cuentan la escena y los textos; **nunca se escribe "antes" ni "después"**. Ejemplo: «Por turnos» → «Todo a la vez».
   - **Textos cortos:** un titular de 2 a 6 palabras y, como máximo, 2 o 3 etiquetas de 1 a 4 palabras. Van exactos entre comillas en el prompt. El texto refuerza el ángulo del hero, no repite el título de la landing.
   - **Orden sugerido:**
