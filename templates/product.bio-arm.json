@@ -1,0 +1,788 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#8E2B1F",
+        "texto": "#34373C",
+        "texto_2": "#6B6E73",
+        "fondo": "#FAF8F4",
+        "fondo_2": "#ECEAE6",
+        "boton": "#8E2B1F",
+        "boton_texto": "#ffffff",
+        "estrella": "#C9A24A",
+        "ok": "#5a8a6a",
+        "radio": 14
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "settings": {
+        "fondo": "#8E2B1F",
+        "texto": "#ffffff",
+        "separador": "✦"
+      },
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagás al recibir"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Llega en 1 a 4 días"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de 60 días"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4"
+      ]
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#FAF8F4",
+        "mostrar_oferta": false,
+        "mostrar_rating": false,
+        "tamano_titulo": 30,
+        "titulo": "El regalo que lo convierte en <em>superhéroe</em>",
+        "texto": "Un guante robótico que dispara gomas de hidrogel en ráfaga. Llega antes de Navidad y lo pagás al recibir.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Todo incluido:</strong> guante, 300 gomas de hidrogel y carga USB. Listo para jugar."
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Disparo en ráfaga:</strong> cargador en la muñeca que dispara seguido."
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Lo saca del celular:</strong> un juego para el patio, con sus amigos o con vos."
+          }
+        },
+        "beneficio_4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Pagás al recibir:</strong> envío gratis de 1 a 4 días y 60 días de garantía."
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3",
+        "beneficio_4"
+      ]
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "espacio": 8,
+        "titulo": ""
+      },
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "brillo",
+            "texto": "Disparo en ráfaga"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "usb",
+            "texto": "Recargable USB"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "gota",
+            "texto": "300 gomas incluidas"
+          }
+        },
+        "icono_4": {
+          "type": "icono",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 60 días"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3",
+        "icono_4"
+      ]
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#8E2B1F",
+        "color_pestana": "#34373C",
+        "titulo": "Kit Héroe: <em>todo incluido</em>",
+        "boton_texto": "Lo quiero — Pagás al recibir",
+        "mostrar_ahorro": false,
+        "valor_texto": "",
+        "incluye_titulo": "Tu pedido incluye",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "entrega": "Entrega de 1 a 4 días"
+      },
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "Kit completo",
+            "destacar": "Listo para Navidad",
+            "etiqueta": "Llega listo para jugar",
+            "titulo": "Guante lanzador + 300 gomas de hidrogel",
+            "linea_regalo": "🎁 Con guía de juegos de regalo",
+            "detalle": "Recargable por USB",
+            "precio": 450,
+            "cantidad": 1,
+            "preseleccionado": true
+          }
+        },
+        "regalo_2": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluidas",
+            "icono": "regalo",
+            "titulo": "300 gomas de hidrogel",
+            "texto": "Valor Q35, ya vienen en la caja"
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "manual",
+            "titulo": "Guía de juegos",
+            "texto": "Cómo hidratar las gomas y juegos para el patio, por WhatsApp"
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "De 1 a 4 días"
+          }
+        },
+        "regalo_5": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluido",
+            "icono": "pago",
+            "titulo": "Pagás al recibir",
+            "texto": "Nada por adelantado"
+          }
+        },
+        "regalo_6": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluida",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "regalo_2",
+        "regalo_3",
+        "regalo_4",
+        "regalo_5",
+        "regalo_6"
+      ]
+    },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Miralo <em>en acción</em>",
+        "texto": "Así dispara en ráfaga."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Disparo en ráfaga"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Cómo se pone"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Al aire libre"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ]
+    },
+    "grid_dolores": {
+      "type": "pp-grid-dolores",
+      "settings": {
+        "fondo": "fondo-2",
+        "etiqueta": "El problema",
+        "titulo": "Otro regalo que <em>se olvida en dos días</em>",
+        "texto": "Todos los años pasa lo mismo: lo abre, lo usa un rato y vuelve al celular.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "Este año, dale algo que <em>no quiera soltar.</em>",
+        "cierre_estilo": "texto"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "titulo": "Todo el día en el celular",
+            "texto": "Y vos sin saber cómo sacarlo de la pantalla."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "titulo": "Juguetes que se rompen",
+            "texto": "A la semana ya están en una caja."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "titulo": "“Ya tiene de todo”",
+            "texto": "Y no sabés qué regalarle que lo sorprenda."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "titulo": "Regalos sin emoción",
+            "texto": "Dice gracias y ni lo vuelve a sacar."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "galeria_ideas": {
+      "type": "pp-galeria-ideas",
+      "settings": {
+        "color_fondo": "#FAF8F4",
+        "color_texto": "#34373C",
+        "color_acento": "#8E2B1F",
+        "nieve": false,
+        "etiqueta": "Cómo se juega",
+        "titulo": "Cada día, <em>una nueva misión</em>",
+        "texto": "Afuera, con amigos y lejos de la pantalla.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "3"
+      },
+      "blocks": {
+        "idea_1": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Patio",
+            "titulo": "Tiro al blanco",
+            "texto": "Latas, vasos o botellas: a ver cuántas tumba en una ráfaga."
+          }
+        },
+        "idea_2": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Amigos",
+            "titulo": "La tarde con los cuates",
+            "texto": "Se turnan el guante y compiten por la mejor puntería."
+          }
+        },
+        "idea_3": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Con vos",
+            "titulo": "Vos ponés los blancos",
+            "texto": "Un rato juntos que él va a recordar."
+          }
+        },
+        "idea_4": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Navidad",
+            "titulo": "La mañana del 25",
+            "texto": "El regalo que abre primero y no suelta en todo el día."
+          }
+        }
+      },
+      "block_order": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4"
+      ]
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#ECEAE6",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#8E2B1F",
+        "color_dorado": "#C9A24A",
+        "color_texto": "#34373C",
+        "adorno": false,
+        "titulo": "Hecho para sentirse",
+        "titulo_dorado": "el héroe",
+        "titulo_fin": "",
+        "cierre": ""
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "rayo",
+            "titulo": "Disparo en ráfaga",
+            "puntos": "Dispara seguido, una goma tras otra, sin recargar a cada rato."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "lupa",
+            "titulo": "Cargador a la vista",
+            "puntos": "Va en la muñeca y es transparente: ve cuántas gomas le quedan."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "check",
+            "titulo": "Correa ajustable",
+            "puntos": "Se ajusta al brazo para que no se mueva al disparar."
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "icono": "usb",
+            "titulo": "Recargable por USB",
+            "puntos": "Lo cargás y listo: sin gastar en pilas."
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Gomas de hidrogel",
+            "puntos": "Se ponen en agua, crecen y quedan listas para disparar."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5"
+      ]
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "settings": {
+        "estilo": "numeros",
+        "fondo": "fondo",
+        "titulo": "Listo para jugar en <em>3 pasos</em>",
+        "texto": ""
+      },
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Hidratá las gomas",
+            "texto": "Ponelas en agua como indica la guía hasta que crezcan."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Cargalo por USB",
+            "texto": "Conectalo y dejalo cargar antes de jugar."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ponételo y disparar",
+            "texto": "Llená el cargador, ajustá la correa y a jugar."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ]
+    },
+    "esperar": {
+      "type": "pp-esperar",
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#8E2B1F",
+        "color_icono": "#C9A24A",
+        "etiqueta": "Después de pedir",
+        "titulo": "Así te llega <em>a tu casa</em>",
+        "texto": "Sin pagar nada por adelantado."
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "Hoy",
+            "texto": "Hacés tu pedido y te escribimos por WhatsApp para confirmarlo."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Al confirmar",
+            "texto": "Te mandamos la guía para hidratar las gomas y los juegos para el patio."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "De 1 a 4 días",
+            "texto": "Te llega a tu casa con envío gratis."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Al recibir",
+            "texto": "Lo tenés en la mano y recién ahí pagás."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4"
+      ]
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "settings": {
+        "etiqueta": "La diferencia",
+        "titulo": "Kit Héroe vs. <em>el regalo de siempre</em>",
+        "texto": "",
+        "color_destacado": "#8E2B1F",
+        "nombre_a": "Kit Héroe",
+        "sub_a": "Guante + 300 gomas",
+        "nombre_b": "Otro juguete",
+        "sub_b": "Lo de siempre",
+        "pie_izq": "Kit Héroe",
+        "pie_der": "Listo para jugar desde el día uno"
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Al abrirlo",
+            "subtitulo": "La emoción",
+            "ok_a": true,
+            "valor_a": "Se siente el héroe",
+            "ok_b": false,
+            "valor_b": "Un juguete más"
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Munición",
+            "subtitulo": "Para empezar",
+            "ok_a": true,
+            "valor_a": "300 gomas incluidas",
+            "ok_b": false,
+            "valor_b": "Se compra aparte"
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Energía",
+            "subtitulo": "Para jugar",
+            "ok_a": true,
+            "valor_a": "Recargable por USB",
+            "ok_b": false,
+            "valor_b": "Pilas que se acaban"
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Dónde juega",
+            "subtitulo": "Su tiempo",
+            "ok_a": true,
+            "valor_a": "Afuera, con amigos",
+            "ok_b": false,
+            "valor_b": "Adentro, solo"
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Respaldo",
+            "subtitulo": "Si falla",
+            "ok_a": true,
+            "valor_a": "Garantía 60 días",
+            "ok_b": false,
+            "valor_b": "Sin garantía"
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5"
+      ]
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "settings": {
+        "etiqueta": "Opiniones",
+        "titulo": "“No se lo ha <em>quitado en todo el día.</em>”",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 3
+      },
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Se volvió loco",
+            "texto": "Lo abrió y de una se lo puso. Se pasó la tarde en el patio tumbando latas.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Ciudad de Guatemala",
+            "verificado": false
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Por fin soltó el celular",
+            "texto": "Mi hijo pasaba pegado al teléfono. Ahora sale con sus amigos a jugar con el guante.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Quetzaltenango",
+            "verificado": false
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Llegó rápido",
+            "texto": "Lo pedí un lunes y el miércoles ya lo tenía. Pagué al recibirlo.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Escuintla",
+            "verificado": false
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3"
+      ]
+    },
+    "garantia": {
+      "type": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#8E2B1F",
+        "color_texto": "#ffffff",
+        "color_sello": "#8E2B1F",
+        "sello_arriba": "Garantía",
+        "sello_numero": "60",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra sin riesgo",
+        "titulo": "Si llega con daño de fábrica, te respondemos",
+        "texto": "Tenés 60 días de garantía por daños de fábrica. Y como pagás al recibir, no arriesgás nada."
+      },
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 60 días por daños de fábrica"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagás al recibir"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "chat",
+            "texto": "Atención por WhatsApp"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ]
+    },
+    "faq": {
+      "type": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo-2",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Carlos de Mixco pregunta: ¿es peligroso?",
+            "respuesta": "<p>Es un juguete para usar con cuidado: <strong>usalo con lentes de protección y nunca apuntés a la cara</strong> de nadie. Las gomas de hidrogel <strong>no se comen</strong>: guardalas lejos de niños pequeños y mascotas.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Andrea de Villa Nueva pregunta: ¿para qué edad es?",
+            "respuesta": "<p>La caja indica <strong>14 años en adelante</strong>. Si es para alguien menor, que juegue siempre con un adulto cerca.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Luis de Quetzaltenango pregunta: ¿qué pasa cuando se acaban las gomas?",
+            "respuesta": "<p>Trae <strong>300 gomas</strong> para empezar. Cuando se acaben, podés pedirnos otro tarro de 300 por Q35.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "María de Escuintla pregunta: ¿llega antes de Navidad?",
+            "respuesta": "<p>Entregamos de <strong>1 a 4 días</strong>. Si pedís antes del 20 de diciembre, te llega antes del 24.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Jorge de Cobán pregunta: ¿cómo se carga?",
+            "respuesta": "<p>Es <strong>recargable por USB</strong>: lo conectás, lo dejás cargar y listo. No gasta pilas.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sofía de Antigua pregunta: ¿qué cubre la garantía?",
+            "respuesta": "<p>Tenés <strong>60 días de garantía por daños de fábrica</strong>. Escribinos por WhatsApp y te ayudamos.</p>"
+          }
+        },
+        "pregunta_7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Ana de Huehuetenango pregunta: ¿cómo pago?",
+            "respuesta": "<p>Pagás en efectivo cuando lo recibís. El <strong>envío es gratis</strong> y no pagás nada por adelantado.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6",
+        "pregunta_7"
+      ]
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "aparecer": "despues_oferta",
+        "boton_texto": "Lo quiero",
+        "subtexto": "Envío gratis · Pagás al recibir",
+        "precio_manual": 450
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "iconos",
+    "oferta_tabs",
+    "videos",
+    "grid_dolores",
+    "galeria_ideas",
+    "problemas_filas",
+    "pasos",
+    "esperar",
+    "comparativa",
+    "resenas",
+    "garantia",
+    "faq",
+    "boton_fijo"
+  ]
+}

@@ -9,6 +9,7 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.bio-arm', dir: 'templates', ext: '.json', name: 'Plantilla · Bio Launching Arm', desc: 'Nueva. Guante lanzador de gomas de hidrogel para Naturixa (granate + dorado + gris, títulos Anton, ATIDCOA, precio único Q450 con 300 gomas y guía de juegos). Va en templates: crea la plantilla bio-arm, borra todo, pega y guarda. Usa secciones que ya existen; no hay que crear ninguna nueva.' },
   { file: 'pp-carrusel-imagenes', desc: 'Nueva. Carrusel de imágenes deslizable (sin videos): flechas, barra de avance, etiqueta opcional sobre cada imagen y formato 4:5, 1:1 o 9:16. Es independiente de PP · Videos.' },
   { file: 'pp-esperar', desc: 'Nueva. Qué esperar día a día: línea de tiempo vertical que se llena al bajar, con ícono, periodo y tarjeta alternados.' },
   { file: 'pp-libre', desc: 'Nueva. Sellos "libre de": íconos de línea (sin esteroides, sin parabenos, sin talco, libre de petróleo, sin perfume, cruelty free) con texto.' },
