@@ -178,6 +178,27 @@
         }
       ]
     },
+    "galeria-ideas.idea2": {
+      "que": "Transformación: la tarde con los amigos, afuera y lejos de la pantalla.",
+      "producto": true,
+      "persona": false,
+      "escena": "Plano horizontal del patio por la tarde: dos hombres de unos 20 años, de espaldas y de perfil sin que se vean sus caras, riendo mientras se pasan el guante de juguete rojo para ver quién tumba más latas vacías puestas sobre un muro bajo. Algunas latas en el piso de cemento. Ambiente alegre y relajado. El tercio inferior de la imagen es simple y más oscuro (piso o sombra), sin objetos importantes, para poner texto encima.",
+      "historial": []
+    },
+    "galeria-ideas.idea3": {
+      "que": "Transformación: papá y él juntos, un rato que va a recordar.",
+      "producto": true,
+      "persona": false,
+      "escena": "Plano horizontal del patio: en primer plano, desenfocado, el antebrazo de una persona adulta con el guante de juguete rojo puesto; al fondo y nítido, un hombre de unos 40 años, de espaldas, acomodando latas vacías en fila sobre un muro bajo, con camisa de botones arremangada. Ambiente de juego en familia, luz cálida de la tarde. El tercio inferior de la imagen es simple y más oscuro (piso o sombra), sin objetos importantes, para poner texto encima.",
+      "historial": []
+    },
+    "galeria-ideas.idea4": {
+      "que": "Transformación: la mañana del 25, el regalo que no suelta.",
+      "producto": true,
+      "persona": false,
+      "escena": "Sala de una casa guatemalteca la mañana de Navidad: unas manos adultas sacando el guante de juguete rojo de una caja de regalo, entre papel granate arrugado y un moño dorado. Al fondo, desenfocados, el árbol de Navidad con luces cálidas, un nacimiento y unas tazas de chocolate sobre la mesa. No se ven caras. El tercio inferior de la imagen es simple y más oscuro (piso o sombra), sin objetos importantes, para poner texto encima.",
+      "historial": []
+    },
     "problemas-filas.fila1": {
       "que": "Parte: lanza una bolita tras otra (Interés).",
       "producto": true,
