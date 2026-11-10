@@ -2,26 +2,31 @@
   "version": 2,
   "landing": "Bio Launching Arm",
   "avatar": null,
-  "referencia_archivo": "imagenes/bio-arm/referencia-proveedor.webp",
+  "referencia_archivo": "imagenes/bio-arm/producto-referencia.webp",
   "ficha": {
     "escenario": "Casa guatemalteca de clase media: patio con piso de cemento, pared de block pintada de color crema, una pila de lavar al fondo y macetas con plantas.",
     "luz": "Luz natural de la tarde, cálida y suave, con sombras reales.",
     "paleta": "Tonos granate, dorado viejo y gris piedra en el entorno, que acompañan el rojo del guante sin competir con él.",
-    "estilo": "Foto realista tomada con celular, ligero desenfoque de fondo, objetos cotidianos un poco desordenados; nada de render ni de estudio."
+    "estilo": "Foto realista de un momento familiar y alegre, tomada con celular, ligero desenfoque de fondo, objetos cotidianos un poco desordenados; nada de render ni de estudio."
   },
-  "producto": "Guante lanzador robótico rojo brillante, idéntico al de la foto adjunta: dedos articulados en forma de armadura, cuerpo rojo con detalles negros, cargador cilíndrico transparente lleno de bolitas de hidrogel azules montado sobre la muñeca y correa negra ajustable. Copia solo el guante: ignora la caja, los textos, los logos y la persona de la foto de referencia. Sin piezas de más.",
-  "reglas": "Sin textos, letreros, marcas ni logos dentro de la imagen, salvo el texto exacto que indique la escena. Manos naturales con cinco dedos. Nunca se dispara ni se apunta a personas o a caras; solo a latas, vasos o blancos. Sin personajes de películas ni superhéroes reconocibles.",
+  "producto": "Juguete de plástico en forma de guante rojo brillante, idéntico al de la foto adjunta (muestra el mismo juguete desde dos ángulos): dedos articulados de plástico rojo con detalles negros, un depósito cilíndrico transparente lleno de bolitas de gel azules sobre la muñeca y una correa negra de velcro. Es un juguete para jugar en el patio. Copia solo el juguete, sin piezas de más.",
+  "reglas": "Sin textos, letreros, marcas ni logos dentro de la imagen, salvo el texto exacto que indique la escena. Manos naturales con cinco dedos. El juego es siempre tumbar latas o vasos vacíos; nunca hacia personas ni animales. Sin personajes de películas, cómics ni marcas reconocibles. Ambiente alegre y familiar.",
   "espacios": {
     "hero-oferta.imagen_1": {
       "que": "Imagen principal: el guante como protagonista (Atención). Es la que se ve primero y en la miniatura.",
       "producto": true,
       "persona": false,
-      "escena": "Foto de producto del guante rojo de tres cuartos, ocupando casi todo el cuadro y un poco hacia abajo para dejar espacio arriba, apoyado sobre una superficie de concreto gris, con el cargador lleno de bolitas azules y unas cuantas bolitas azules sueltas brillando delante. Fondo gris piedra liso y desenfocado, luz natural suave desde un lado, reflejos realistas en el plástico rojo. Texto en la imagen: escribe exactamente \"El guante que lo hace sentir héroe\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Foto de producto del guante de juguete rojo de tres cuartos, ocupando casi todo el cuadro y un poco hacia abajo para dejar espacio arriba, apoyado sobre una superficie de concreto gris, con el depósito lleno de bolitas de gel azules y unas cuantas bolitas sueltas brillando delante. Fondo gris piedra liso y desenfocado, luz natural suave desde un lado, reflejos realistas en el plástico rojo. Texto en la imagen: escribe exactamente \"El guante que lo hace sentir héroe\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Texto emocional en la imagen: \"El guante que lo hace sentir héroe\". Escena del producto protagonista (antes era la 3)."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
         }
       ]
     },
@@ -29,7 +34,7 @@
       "que": "El momento héroe: el joven en el patio con el guante puesto (Deseo). Sin cara, para no depender de un avatar.",
       "producto": true,
       "persona": false,
-      "escena": "Plano medio desde atrás y un poco de lado: un muchacho delgado de unos 18 años, con camiseta negra y jeans, de espaldas, jugando en el patio de su casa a tumbar latas vacías puestas sobre un muro bajo, con el juguete rojo puesto en el brazo. Unas bolitas de gel azules vuelan hacia las latas y una lata se cae. No se ve su cara. Ambiente alegre de juego por la tarde, luz cálida que recorta su silueta. Texto en la imagen: escribe exactamente \"Más patio. Menos pantalla.\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Plano medio, de espaldas y un poco de lado: un hombre de unos 25 años, delgado, con camiseta negra y jeans, jugando en el patio de su casa con el guante de juguete rojo puesto en la mano. Frente a él, sobre un muro bajo, una fila de latas vacías; unas bolitas de gel azules van hacia ellas y una lata se cae. No se ve su cara. Tarde soleada, ambiente alegre y relajado. Texto en la imagen: escribe exactamente \"Más patio. Menos pantalla.\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
@@ -40,6 +45,11 @@
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "ChatGPT la rechazó. Se quitaron 'joven', 'disparando', 'apuntar' y 'postura de héroe': ahora es un muchacho de 18 años jugando a tumbar latas con el juguete."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
         }
       ]
     },
@@ -47,12 +57,17 @@
       "que": "El regalo bajo el árbol: el momento que el padre quiere vivir (Deseo).",
       "producto": true,
       "persona": false,
-      "escena": "Mañana de Navidad en la sala de una casa guatemalteca: una caja de regalo abierta en el piso, con papel granate y moño dorado a un lado, y dentro el guante rojo con el cargador lleno de bolitas azules, bien iluminado y nítido como foco de la imagen. Al fondo, desenfocados, un árbol de Navidad con luces cálidas y un nacimiento. Encuadre cuadrado, el guante ocupa el centro. Texto en la imagen: escribe exactamente \"Este 25, él es el héroe\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Mañana de Navidad en la sala de una casa guatemalteca: una caja de regalo abierta en el piso, con papel granate y moño dorado a un lado, y dentro el guante de juguete rojo con su depósito de bolitas de gel azules, bien iluminado y nítido como foco de la imagen. Al fondo, desenfocados, un árbol de Navidad con luces cálidas y un nacimiento. Texto en la imagen: escribe exactamente \"Este 25, él es el héroe\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Texto emocional en la imagen: \"Este 25, él es el héroe\". Escena del regalo bajo el árbol (antes era la 1)."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
         }
       ]
     },
@@ -60,25 +75,35 @@
       "que": "Muestra el kit completo: todo lo que llega en la caja (Deseo).",
       "producto": true,
       "persona": false,
-      "escena": "Vista desde arriba, sobre una mesa de madera clara: el guante rojo en el centro, al lado un tarro transparente lleno de bolitas de hidrogel azules y un cable USB enrollado. Algunas bolitas azules sueltas brillando con la luz. Texto en la imagen: escribe exactamente \"Lo abre y sale a jugar\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Vista desde arriba, sobre una mesa de madera clara: el guante de juguete rojo en el centro, al lado un tarro transparente lleno de bolitas de gel azules y un cable USB enrollado. Algunas bolitas azules sueltas brillando con la luz. Texto en la imagen: escribe exactamente \"Lo abre y sale a jugar\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Texto emocional en la imagen: \"Lo abre y sale a jugar\"."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
         }
       ]
     },
     "hero-oferta.imagen_5": {
-      "que": "Disparo en acción: lo que lo hace emocionante (Atención).",
+      "que": "Juego en acción: lo que lo hace emocionante (Atención).",
       "producto": true,
       "persona": false,
-      "escena": "Solo se ven el antebrazo y la mano de un joven con camiseta negra; no se ve su cara. El guante rojo en el brazo, en el patio, disparando una ráfaga de bolitas azules hacia una fila de latas sobre un muro bajo; dos latas cayendo en el aire. Las bolitas se ven en movimiento. Siempre apunta a latas o blancos, nunca a personas. Texto en la imagen: escribe exactamente \"No lo va a soltar ni el 26\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Solo se ven el antebrazo y la mano de una persona adulta con camiseta negra; no se ve su cara. Lleva puesto el guante de juguete rojo y juega a tumbar una fila de latas vacías sobre un muro bajo del patio; unas bolitas de gel azules van en el aire hacia las latas y dos latas se caen. Tarde soleada, ambiente de juego. Texto en la imagen: escribe exactamente \"No lo va a soltar ni el 26\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Texto emocional en la imagen: \"No lo va a soltar ni el 26\"."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
         }
       ]
     },
@@ -86,12 +111,17 @@
       "que": "Primer plano del cargador lleno: detalle y calidad (Deseo).",
       "producto": true,
       "persona": false,
-      "escena": "Primer plano del guante apoyado sobre el muro del patio: el cargador transparente lleno de bolitas azules en primer plano y nítido, los dedos rojos detrás ligeramente desenfocados. Texto en la imagen: escribe exactamente \"Una tras otra, sin parar\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
+      "escena": "Primer plano del guante de juguete apoyado sobre el muro del patio: el depósito transparente lleno de bolitas de gel azules en primer plano y nítido, los dedos rojos detrás ligeramente desenfocados. Texto en la imagen: escribe exactamente \"Una tras otra, sin parar\", respetando tildes y mayúsculas, en una sola línea en la parte superior de la imagen, con letra gruesa y condensada color crema y un fino detalle dorado, con buen contraste y sin tapar el guante. Ningún otro texto.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Texto emocional en la imagen: \"Una tras otra, sin parar\"."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
         }
       ]
     },
@@ -99,15 +129,27 @@
       "que": "Dolor: todo el día en el celular. No muestra el producto (Interés).",
       "producto": false,
       "persona": false,
-      "escena": "Sala de una casa guatemalteca al atardecer: solo se ven las manos de un joven sosteniendo un celular encendido y sus piernas sobre un sillón, con cojines desordenados. La luz azul de la pantalla ilumina las manos. Ambiente aburrido.",
-      "historial": []
+      "escena": "Sala de una casa guatemalteca al atardecer: solo se ven unas manos sosteniendo un celular encendido y unas piernas en jeans sobre un sillón, con cojines desordenados. La luz de la pantalla ilumina las manos. Ambiente aburrido, sin caras.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     },
     "grid-dolores.item2": {
       "que": "Dolor: juguetes que se rompen. No muestra el producto (Interés).",
       "producto": false,
       "persona": false,
-      "escena": "Una caja de cartón abierta en el suelo con juguetes de plástico genéricos rotos o abandonados: una pistola de agua sin tapa, un carro sin rueda, piezas sueltas. Luz tenue de interior, sensación de olvido.",
-      "historial": []
+      "escena": "Una caja de cartón abierta en el suelo con juguetes de plástico genéricos olvidados: un carrito sin una rueda, un muñeco despintado, bloques y piezas sueltas. Luz tenue de interior, sensación de abandono.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     },
     "grid-dolores.item3": {
       "que": "Dolor: \"ya tiene de todo\". No muestra el producto (Interés).",
@@ -124,38 +166,62 @@
       "historial": []
     },
     "galeria-ideas.idea1": {
-      "que": "Transformación: tiro al blanco en el patio. Tercio inferior simple y más oscuro para el texto.",
+      "que": "Transformación: juego de tumbar latas en el patio. Tercio inferior simple y más oscuro para el texto.",
       "producto": true,
       "persona": false,
-      "escena": "Solo se ven el antebrazo y la mano de un joven con camiseta negra; no se ve su cara. Plano horizontal del patio: el guante rojo apuntando a una fila de latas y vasos de plástico sobre un muro bajo, algunas latas ya caídas en el piso de cemento. El tercio inferior de la imagen es piso de cemento en sombra, simple y más oscuro. Siempre apunta a latas o blancos, nunca a personas.",
-      "historial": []
+      "escena": "Solo se ven el antebrazo y la mano de una persona adulta con camiseta negra; no se ve su cara. Plano horizontal del patio: lleva el guante de juguete rojo y juega a tumbar latas y vasos de plástico puestos sobre un muro bajo; algunas latas ya están en el piso de cemento. El tercio inferior de la imagen es piso de cemento en sombra, simple y más oscuro.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     },
     "problemas-filas.fila1": {
-      "que": "Parte: disparo en ráfaga (Interés).",
+      "que": "Parte: lanza una bolita tras otra (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "Solo se ven el antebrazo y la mano de un joven con camiseta negra; no se ve su cara. De perfil, el guante disparando varias bolitas azules seguidas que salen en línea hacia la derecha de la imagen, con fondo de patio desenfocado. Siempre apunta a latas o blancos, nunca a personas.",
-      "historial": []
+      "escena": "Solo se ven el antebrazo y la mano de una persona adulta con camiseta negra; no se ve su cara. De perfil, con el guante de juguete puesto: varias bolitas de gel azules salen una tras otra en línea hacia la derecha de la imagen, rumbo a unas latas desenfocadas. Fondo de patio desenfocado.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     },
     "problemas-filas.fila2": {
-      "que": "Parte: cargador transparente a la vista (Interés).",
+      "que": "Parte: depósito transparente a la vista (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "Macro del cargador transparente sobre la muñeca del guante, lleno de bolitas azules hasta arriba; se distinguen bien las bolitas a través del plástico. Fondo gris piedra desenfocado.",
-      "historial": []
+      "escena": "Macro del depósito transparente sobre la muñeca del guante de juguete, lleno de bolitas de gel azules hasta arriba; se distinguen bien las bolitas a través del plástico. Fondo gris piedra desenfocado.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     },
     "problemas-filas.fila3": {
       "que": "Parte: correa ajustable (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "Primer plano del guante sobre un antebrazo: la correa negra ajustada alrededor del brazo, se ve la hebilla o el cierre. Solo antebrazo, sin cara.",
-      "historial": []
+      "escena": "Primer plano del guante de juguete sobre un antebrazo adulto: la correa negra de velcro ajustada alrededor del brazo. Solo antebrazo, sin cara.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     },
     "problemas-filas.fila4": {
       "que": "Parte: recargable por USB (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "El guante sobre un escritorio de madera, conectado a un cargador de pared mediante un cable USB. Junto a él, un vaso con lápices y un cuaderno cerrado. Luz natural de ventana.",
+      "escena": "El guante sobre un escritorio de madera, conectado con un cable USB a un adaptador de pared. Junto a él, un vaso con lápices y un cuaderno cerrado. Luz natural de ventana.",
       "historial": []
     },
     "problemas-filas.fila5": {
@@ -183,8 +249,14 @@
       "que": "Paso 3: ponérselo y jugar (Deseo: facilidad).",
       "producto": true,
       "persona": false,
-      "escena": "Primer plano de las manos de un joven ajustando la correa negra del guante rojo en su antebrazo, con el cargador lleno de bolitas azules arriba. Fondo de patio desenfocado. No se ve su cara.",
-      "historial": []
+      "escena": "Primer plano de unas manos adultas ajustando la correa negra de velcro del guante de juguete rojo en el antebrazo, con el depósito lleno de bolitas de gel azules arriba. Fondo de patio desenfocado. No se ve ninguna cara.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "escena",
+          "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        }
+      ]
     }
   }
 }

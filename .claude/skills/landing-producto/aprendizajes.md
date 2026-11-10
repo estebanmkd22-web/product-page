@@ -31,6 +31,8 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **Las personas salen del banco de avatares**, nunca solo de una descripción, porque la persona cambia en cada imagen.
 - **Los prompts se cambian de forma puntual**: número de imagen + parte.
 
+- **Juguetes que lanzan algo (Bio Arm, 2026-11-10):** ChatGPT rechazó dos veces la imagen 2 por "hostigamiento o intimidación". Lo dispararon las palabras de arma ("disparar", "apuntar", "cargador", "ráfaga", "héroe") junto a una persona joven, y la foto del proveedor con un niño. La regla: lenguaje de juego ("tumbar latas", "bolitas de gel", "depósito"), personas adultas o solo manos, y una foto de referencia del producto sin personas.
+
 ## Trabajo
 - **Primero definir, después proponer, confirmar y recién ahí hacer.** Una mención no es una orden.
 - **Shopify en pausa** hasta que todo esté definido y él pida subirlo.

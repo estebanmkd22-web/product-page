@@ -27,6 +27,11 @@ Objetivo: fotos que parezcan tomadas con celular por una persona real, con el pr
   - para piel irritada, "ligero enrojecimiento" en lugar de heridas o llagas.
 - **Menores:** evítalos, salvo en escenas familiares neutras (por ejemplo, en la mesa); nunca en baño, piel o ropa interior.
 - **Salud:** nada de imágenes médicas, sangre, agujas ni "antes y después" que prometa curación. Los resultados se muestran como "uso y comodidad".
+- **Juguetes que lanzan algo (bolitas de gel, dardos, agua):**
+  - nunca "disparar", "apuntar", "cargador", "munición", "ráfaga", "arma", "héroe" ni "tiro al blanco": usa "lanza bolitas de gel", "tumbar latas", "depósito", "juego en el patio";
+  - el juguete se nombra como "juguete de plástico" y el juego siempre va contra latas o vasos vacíos, nunca hacia personas;
+  - personas adultas o solo manos y antebrazo, nunca menores;
+  - la foto de referencia del producto va sin personas (recórtala si la del proveedor trae a alguien).
 - **Fuego, gas y electricidad:** muestra el uso normal y seguro (llama azul controlada). Nada de accidentes, humo excesivo ni gente en peligro.
 - **Comida y alcohol:** el alcohol solo si es imprescindible, y nunca con menores.
 - **Palabras que disparan el filtro aunque la escena sea inocente:** usa sinónimos neutros. Por ejemplo, "tela ajustada" en vez de "sexy", "piel" en vez de "cuerpo desnudo" y "gotas" en vez de "fluido".
