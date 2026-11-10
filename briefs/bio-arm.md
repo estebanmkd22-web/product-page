@@ -58,9 +58,9 @@ Tienda: Naturixa (GT) · Fecha: 2026-11-09 · Estado: confirmado
 - Quién más lo vende en GT y a qué precio: **falta** (opcional).
 
 ## 7. Material
-- Fotos: solo la de proveedor. Videos: **falta** (un video del guante disparando vende mucho más que cualquier foto).
+- Fotos: solo la de proveedor. Videos: el usuario tiene videos del guante disparando; van justo debajo de la oferta. [Usuario]
 - Avatar: se elige en la fase 3 (padre o madre guatemalteco con hijo adolescente).
-- Logo/colores: [Hipótesis] rojo del producto + negro/grafito + azul eléctrico de las gomas (estilo "tecnología de héroe").
+- Paleta [Usuario]: granate #8E2B1F (acento y botones) · dorado viejo #C9A24A (insignias, bordes, íconos; nunca como texto sobre fondo claro) · grafito #34373C (textos) · gris piedra #ECEAE6 · fondo crema #FAF8F4.
 
 ## 8. Hero (fase 1)
 - Título: El regalo que lo convierte en <em>superhéroe</em> — aprobado. [Usuario]
