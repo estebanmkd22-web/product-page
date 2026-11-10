@@ -47,23 +47,49 @@ Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con
 
 Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los busques en la tienda. Si el usuario manda un enlace de su tienda o de un proveedor para analizarlo, puedes leer esa página pública, pero solo para analizar y proponer.
 
-## Proceso: 4 fases, cada una se aprueba antes de seguir
+## Proceso por fases, cada una se aprueba antes de seguir
 
-### Fase 0 · Brief (sin brief confirmado no hay hero)
-1. Pide la información inicial de `brief.md` en una sola tanda, separando lo obligatorio de lo deseable:
-   - producto (qué hace y para qué sirve), foto con fondo limpio y specs;
-   - buyer (dolores, deseos, objeciones, nivel de consciencia);
-   - hipótesis a probar y ángulos;
-   - precio de venta, oferta por cantidad, garantía, envío y pago;
-   - ideas para una oferta única.
-2. Lo que el usuario no sepa lo propones tú, marcado **[Hipótesis]** con tu razonamiento. Lo que ya dijo antes no se vuelve a pedir.
-3. **Opina con criterio** (ver `criterio.md`): si el ángulo, la oferta o un claim tienen un problema, dilo y propón algo mejor.
-4. Guarda el brief en `briefs/<producto>.md`, muéstralo y espera su confirmación.
+### Fase 0 · Investigación y brief (sin brief confirmado no hay copy)
+1. **Datos obligatorios del usuario**, en una sola tanda (ver `brief.md`):
+   - producto, foto y specs;
+   - precio, oferta por cantidad, garantía y margen;
+   - a quién cree que le vende y qué ángulo quiere probar;
+   - límites (claims prohibidos, registro sanitario, bonos que puede cumplir).
 
-### Fase 1 · Hero (no se arma nada hasta que el usuario lo apruebe)
-1. Parte del brief confirmado y del ángulo elegido.
-2. Propón **4 títulos en tabla** (título · ángulo · puntaje de `criterio.md`) con tu recomendación y su porqué. Después propón **bullets** y, cuando el título esté elegido, **subtítulos**.
-3. Reglas del hero:
+   Lo que ya dijo antes no se vuelve a pedir.
+2. **Investigación profunda:** ejecuta la skill `anthropic-skills:deep-research-ia-commerce` con el producto y el mercado (Colombia o Guatemala). Ya investiga Amazon, Reddit, MercadoLibre, la biblioteca de anuncios de Meta, YouTube y Google, y entrega un informe de 19 secciones con citas textuales. No vuelvas a investigar esas fuentes por tu cuenta.
+   - Guarda el informe en `investigacion/<producto>/informe.html`. Si sale en otro formato, guarda ese.
+   - Escribe `investigacion/<producto>/dossier.md`, el resumen que usan los expertos:
+     - frases textuales de clientes;
+     - dolores ordenados por frecuencia e intensidad;
+     - deseos;
+     - objeciones;
+     - nivel de consciencia y sofisticación;
+     - competencia (precios, promesas, ganchos de anuncios con más tiempo activos);
+     - brechas u oportunidades;
+     - claims permitidos y prohibidos.
+
+     Cada punto lleva su fuente.
+3. **Operación (iComfly, solo lectura, opcional):** si el producto o uno parecido ya se vendió, revisa las novedades, los rechazos al recibir y las devoluciones para detectar objeciones de confianza o entrega. El usuario no vende por WhatsApp, así que los chats sirven poco para el copy: no les dediques más que una revisión corta. Agrega lo que encuentres al dossier, **sin nombres ni datos personales**.
+4. **Brief prellenado:** llena `briefs/<producto>.md` con los datos del usuario más el dossier. Marca **[Hipótesis]** lo que no esté confirmado. Opina con criterio (`criterio.md`): si el ángulo, la oferta o un claim tienen problemas, dilo. Muéstralo y espera la confirmación.
+
+### Fase 1 · Copy con dos expertos (el usuario aprueba solo el resultado final)
+Con el brief confirmado, el copy lo escriben y revisan dos agentes del proyecto (`.claude/agents/`):
+1. **`copywriter-respuesta-directa`** escribe `copy/<producto>/v1.md`: estrategia, 4 heroes con puntaje, subtítulo, bullets, todas las secciones de la maqueta con ATIDCOA, las 6 imágenes del hero y las objeciones cubiertas. Cada promesa con su respaldo.
+2. **`director-creativo`** lo revisa con su rúbrica y escribe `copy/<producto>/revision-v1.md`: APROBADO o CAMBIOS REQUERIDOS, con bloqueantes concretos. Pásale solo las rutas de los archivos, nunca el razonamiento del copywriter, para que su revisión sea independiente.
+3. Si hay cambios, el copywriter corrige (`v2.md`) y el director vuelve a revisar. **Máximo 3 rondas.** Si después de la tercera sigue sin aprobar, presenta al usuario la versión final con los desacuerdos abiertos y las dos posturas.
+4. **Presenta al usuario solo el resultado:**
+   - el hero elegido (y las alternativas, por si prefiere otra);
+   - el copy por sección, en resumen;
+   - las 6 imágenes del hero;
+   - el "Resumen para el dueño" del director y qué cambió entre rondas.
+
+   Espera su aprobación o sus cambios puntuales. Un cambio del usuario manda sobre el director.
+5. Si el usuario corrige algo con una razón que sirva a futuro, propón anotarlo en `aprendizajes.md`. Los dos agentes lo leen en cada producto.
+
+Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
+
+**Reglas del hero** (las aplican el copywriter y el director; tú también las verificas):
    - Corto: los títulos largos se rechazan.
    - **Nunca en pregunta**, porque despierta más dudas.
    - Que conecte con el dolor o el deseo concreto del público, no algo genérico.
@@ -72,9 +98,9 @@ Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los 
    - Bullets con formato `<strong>Beneficio:</strong> explicación concreta` (3 o 4).
    - Chips (`zonas_titulo`/`zonas`) solo si suman.
 
-### Fase 2 · Landing (solo con el hero aprobado)
+### Fase 2 · Landing (solo con el copy final aprobado)
 Antes de armar, presenta el plan y espera confirmación: secciones en orden, oferta, paleta, colores y garantía. Arma solo lo confirmado.
-**Maqueta base:** `preview/paginas/arven-fold.json`, la versión más completa de la maqueta de la rama de 1,5 m. Cópiala como `preview/paginas/<producto>.json` y adapta el copy. El orden base con su papel en ATIDCOA:
+**Maqueta base:** `preview/paginas/arven-fold.json`, la versión más completa de la maqueta de la rama de 1,5 m. Cópiala como `preview/paginas/<producto>.json` y pon el copy final aprobado (`copy/<producto>/vN.md`) campo por campo, sin reescribirlo. El orden base con su papel en ATIDCOA:
 
 | Sección | Papel |
 |---|---|
@@ -159,7 +185,7 @@ Si la herramienta falla por red o contraseña, no improvises con otro método. D
 ### Fase 3 · Kit de imágenes (a mano en ChatGPT; solo cuando el usuario lo pida)
 1. `node tools/espacios-imagenes.mjs preview/paginas/<p>.json imagenes-ia/<p>-espacios.json`. Lista cada espacio en el orden del personalizador, con su formato.
 2. Escribe `imagenes-ia/<p>-prompts.json` en **formato versión 2** (ver abajo), en español.
-3. Elige el **avatar del banco** (`avatares/banco.json`, fotos en `avatares/fotos/`) según el público, y confírmalo con el usuario. **Nunca inventes una persona solo con texto.** Si ningún avatar sirve, pídele al usuario una foto para agregarla al banco.
+3. Usa como base la sección "Imágenes del hero" del copy aprobado: escenas y textos exactos. Elige el **avatar del banco** (`avatares/banco.json`, fotos en `avatares/fotos/`) según el público, y confírmalo con el usuario. **Nunca inventes una persona solo con texto.** Si ningún avatar sirve, pídele al usuario una foto para agregarla al banco.
 4. `node tools/build-kit-imagenes.mjs imagenes-ia/<p>-espacios.json imagenes-ia/<p>-prompts.json <scratchpad>/kit-<p>.html`.
 5. Publica el kit como artifact, con la foto del avatar en `files` (`avatares/fotos/<archivo>`), y dale el enlace al usuario.
 
