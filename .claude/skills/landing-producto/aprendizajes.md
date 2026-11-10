@@ -25,6 +25,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **En la rama de 1,5 m:** mencionar el tamaño sin que parezca pequeña ("genera rechazo").
 
 ## Imágenes
+- **(2026-11-10) El hero convence, la oferta vende.** Las imágenes del hero no llevan pagos, precio, envío, garantía ni nada de venta; esos ganchos ya están en la oferta. Solo producto, beneficio y transformación.
 - **(2026-11-10) La imagen 1 del hero es la más importante:** muestra el producto y es la que retiene al cliente apenas entra a la landing. Se hace primero, con más cuidado y con variantes.
 - **(2026-11-10) Las imágenes del hero llevan texto y comparativa.** El contraste se entiende solo por la escena y el texto, sin escribir "antes" ni "después". Su trabajo es quitar el dolor y despertar interés por el producto.
 - **Todas en .webp**, pedido de forma muy clara en cada prompt.
