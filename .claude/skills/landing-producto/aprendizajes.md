@@ -25,6 +25,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **En la rama de 1,5 m:** mencionar el tamaño sin que parezca pequeña ("genera rechazo").
 
 ## Imágenes
+- **(2026-11-10) Las imágenes del hero llevan texto y comparativa.** El contraste se entiende solo por la escena y el texto, sin escribir "antes" ni "después". Su trabajo es quitar el dolor y despertar interés por el producto.
 - **Todas en .webp**, pedido de forma muy clara en cada prompt.
 - **Las personas salen del banco de avatares**, nunca solo de una descripción, porque la persona cambia en cada imagen.
 - **Los prompts se cambian de forma puntual**: número de imagen + parte.

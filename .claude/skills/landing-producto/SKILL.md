@@ -136,6 +136,8 @@ Kie (`tools/kie.mjs`) está **en pausa por decisión del usuario**: no generes i
       "producto": true, "persona": true,
       "escena": "Lo que pasa en la imagen: acción, encuadre, objetos.",
       "persona_accion": "Qué hace el avatar en esta imagen.",
+      "textos": ["Solo en el hero: textos exactos"],
+      "comparativa": "Solo si es comparativa: lado izquierdo …; lado derecho …",
       "historial": []
     }
   }
@@ -149,8 +151,22 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
   - cierra con un "PASO FINAL OBLIGATORIO": ChatGPT convierte la imagen a WebP con su herramienta de análisis (Python), con el ancho del espacio y calidad 80, y entrega el enlace del .webp.
 
   El kit trae además un "mensaje de conversión" para copiar si ChatGPT igual entrega PNG. No quites estas líneas de ningún prompt.
-- Las de dolor no muestran el producto nuevo.
-- Las de galería con texto encima dejan el tercio inferior simple y más oscuro.
+- **Imágenes del hero (galería, imagen 1 a 6): SÍ llevan texto y venden solas.** Es la excepción a "sin texto".
+  - **Objetivo:** quitar el dolor y despertar interés por el producto. El producto es el protagonista y la solución se ve.
+  - **Al menos 2 son comparativas** en dos lados (sin el producto vs con el producto, o la alternativa vs el producto). El contraste lo cuentan la escena y los textos; **nunca se escribe "antes" ni "después"**. Ejemplo: «Por turnos» → «Todo a la vez».
+  - **Textos cortos:** un titular de 2 a 6 palabras y, como máximo, 2 o 3 etiquetas de 1 a 4 palabras. Van exactos entre comillas en el prompt. El texto refuerza el ángulo del hero, no repite el título de la landing.
+  - **Orden sugerido:**
+    1. promesa principal con el producto;
+    2. comparativa del dolor resuelto;
+    3. mecanismo o característica clave con etiquetas;
+    4. segunda comparativa (frente a la alternativa cara o vieja);
+    5. resultado en uso real con el avatar;
+    6. lo que incluye o confianza (garantía, pago al recibir).
+  - **En el JSON del kit:** `"textos": ["…"]` y, si es comparativa, `"comparativa": "lado izquierdo: …; lado derecho: …"`. La herramienta agrega la excepción a la regla de "sin textos" solo en esa imagen.
+  - **Revisa la ortografía en la imagen generada.** ChatGPT a veces se equivoca en las tildes; si pasa, se le pide corregir solo el texto.
+  - **Cuidado con los productos del cuerpo** (ARVEN, banda): la comparativa muestra comodidad y uso, nunca una "curación" ni cambios corporales. Así la imagen sirve también para anuncios sin romper las políticas de Meta.
+- Las de dolor (grid de dolores) no muestran el producto nuevo y no llevan texto.
+- Fuera del hero, ninguna imagen lleva texto. Las de galería con texto encima dejan el tercio inferior simple y más oscuro.
 - No se generan fotos para reseñas, porque serían clientes falsos.
 - Tampoco para íconos ni para la foto del pack, que usa la del producto.
 

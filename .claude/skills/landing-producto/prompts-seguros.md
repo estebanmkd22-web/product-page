@@ -12,9 +12,16 @@ Objetivo: fotos que parezcan tomadas con celular por una persona real, con el pr
 - **Personas:** siempre con la foto del avatar adjunta. Expresión y postura naturales, nada de pose de modelo.
 - **Evita lo que delata a la IA:**
   - manos en primer plano complejas (mejor manos haciendo una acción simple);
-  - texto en la imagen;
+  - texto en la imagen (fuera del hero; en el hero va el texto exacto que se indica);
   - reflejos imposibles;
   - simetría perfecta.
+
+## Texto dentro de la imagen (solo hero)
+- Escribe el texto exacto entre comillas latinas «…» y pide copiarlo literal, en español y con tildes.
+- Pocas palabras: cuantas más letras, más errores. Titular de 2 a 6 palabras y etiquetas de 1 a 4.
+- Pide tipografía sans serif grande y gruesa, con buen contraste, lejos de los bordes.
+- Si sale con faltas: "corrige solo el texto «…» por «…», no cambies nada más de la imagen".
+- Para las comparativas: dos lados bien separados (franja o línea divisoria), con la misma luz y encuadre en ambos para que el contraste sea creíble.
 
 ## Para que no lo rechace
 - **Nada de personas reales conocidas**, marcas de terceros, logos, personajes con derechos ni "al estilo de" artistas vivos.
