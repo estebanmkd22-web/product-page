@@ -12,6 +12,17 @@ const pagina = JSON.parse(fs.readFileSync(path.resolve(entrada), 'utf8'));
 const OMITIR = { 'pp-iconos': ['imagen'], 'pp-oferta-tabs': ['imagen'], 'pp-resenas': ['foto'], 'pp-logo': ['imagen'] };
 // Formato fijo de las secciones que no tienen ajuste de proporción.
 const FIJO = { 'pp-problemas-filas': '1 / 1', 'pp-comparativa': '1 / 1' };
+// Encuadre obligatorio de las secciones que recortan y difuminan la foto. En PP · Problemas en filas la foto
+// ocupa media tarjeta: en celular se ve casi cuadrada (≈180 × 190 px) y en computador apaisada (≈544 × 300 px,
+// solo la franja central), y el borde que toca el texto se difumina. Las filas impares llevan la foto a la
+// izquierda; las pares, a la derecha.
+const ENCUADRE = {
+  'pp-problemas-filas': (i) => {
+    const lado = i % 2 === 0 ? 'izquierda' : 'derecha';
+    const borde = i % 2 === 0 ? 'derecho' : 'izquierdo';
+    return `Esta foto se recorta: en computador solo se ve la franja horizontal del centro y el borde ${borde} se difumina. Pon el objeto principal completo y centrado en la franja del medio (entre el 25 % y el 75 % de la altura), un poco hacia la ${lado}, ocupando como máximo el 60 % del ancho, con aire alrededor. Que nada importante quede arriba, abajo ni en el tercio del borde ${borde}; ese tercio es fondo simple.`;
+  },
+};
 const PIXELES = { '1 / 1': '1080 × 1080', '4 / 5': '1080 × 1350', '4 / 3': '1200 × 900', '3 / 4': '1080 × 1440', '9 / 16': '1080 × 1920', '16 / 9': '1920 × 1080', '3 / 2': '1200 × 800', '2 / 3': '1080 × 1620' };
 
 const schemaDe = (tipo) => {
@@ -40,7 +51,8 @@ for (const sec of pagina.secciones) {
     for (const d of bdef?.settings || []) {
       if (d.type !== 'image_picker' || omitir.includes(d.id)) continue;
       const s = b.settings || {};
-      espacios.push({ ...base, id: `${clave}.${b.type}${i + 1}`, donde: `${bdef.name} ${i + 1}${s.titulo ? ` · ${texto(s.titulo)}` : s.etiqueta ? ` · ${texto(s.etiqueta)}` : ''}`, contexto: texto([s.titulo, s.texto, s.puntos].filter(Boolean).join(' — ')) });
+      const encuadre = ENCUADRE[sec.tipo]?.(i);
+      espacios.push({ ...base, ...(encuadre ? { encuadre } : {}), id: `${clave}.${b.type}${i + 1}`, donde: `${bdef.name} ${i + 1}${s.titulo ? ` · ${texto(s.titulo)}` : s.etiqueta ? ` · ${texto(s.etiqueta)}` : ''}`, contexto: texto([s.titulo, s.texto, s.puntos].filter(Boolean).join(' — ')) });
     }
   });
 }

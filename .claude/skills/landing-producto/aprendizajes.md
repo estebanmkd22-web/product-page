@@ -33,6 +33,8 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 
 - **Juguetes que lanzan algo (Bio Arm, 2026-11-10):** ChatGPT rechazó dos veces la imagen 2 por "hostigamiento o intimidación". Lo dispararon las palabras de arma ("disparar", "apuntar", "cargador", "ráfaga", "héroe") junto a una persona joven, y la foto del proveedor con un niño. La regla: lenguaje de juego ("tumbar latas", "bolitas de gel", "depósito"), personas adultas o solo manos, y una foto de referencia del producto sin personas.
 
+- **Fotos de pp-problemas-filas (Bio Arm, 2026-11-10):** el guante quedó cortado porque la foto se recorta y se difumina hacia el texto. Regla general (ya en la herramienta): objeto completo en la franja central, del lado exterior de la tarjeta, ocupando máximo el 60 % del ancho y con aire alrededor.
+
 ## Trabajo
 - **Primero definir, después proponer, confirmar y recién ahí hacer.** Una mención no es una orden.
 - **Shopify en pausa** hasta que todo esté definido y él pida subirlo.

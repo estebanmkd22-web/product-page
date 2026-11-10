@@ -151,6 +151,7 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
   El kit trae además un "mensaje de conversión" para copiar si ChatGPT igual entrega PNG. No quites estas líneas de ningún prompt.
 - Las de dolor no muestran el producto nuevo.
 - Las de galería con texto encima dejan el tercio inferior simple y más oscuro.
+- Las de **pp-problemas-filas** se recortan (casi cuadradas en celular, franja apaisada en computador) y se difuminan hacia el texto. `tools/espacios-imagenes.mjs` les agrega un **encuadre obligatorio** (objeto completo en la franja central, del lado exterior, con aire) que la herramienta pone en cada prompt. Si otra sección recorta así, agrégala a `ENCUADRE`.
 - No se generan fotos para reseñas, porque serían clientes falsos.
 - Tampoco para íconos ni para la foto del pack, que usa la del producto.
 

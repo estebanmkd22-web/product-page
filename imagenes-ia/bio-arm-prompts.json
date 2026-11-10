@@ -203,12 +203,17 @@
       "que": "Parte: lanza una bolita tras otra (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "Solo se ven el antebrazo y la mano de una persona adulta con camiseta negra; no se ve su cara. De perfil, con el guante de juguete puesto: varias bolitas de gel azules salen una tras otra en línea hacia la derecha de la imagen, rumbo a unas latas desenfocadas. Fondo de patio desenfocado.",
+      "escena": "Solo se ven el antebrazo y la mano de una persona adulta con camiseta negra; no se ve su cara. De tres cuartos y un poco alejado, con el guante de juguete puesto y el brazo en diagonal: tres o cuatro bolitas de gel azules salen una tras otra hacia el frente, cerca del guante. El guante y las bolitas se ven completos. Fondo de patio liso y desenfocado.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "formato",
+          "cambio": "Encuadre para la fila: objeto completo en la franja central, del lado exterior, con aire; la escena se alejó un poco para que no quede cortado."
         }
       ]
     },
@@ -216,12 +221,17 @@
       "que": "Parte: depósito transparente a la vista (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "Macro del depósito transparente sobre la muñeca del guante de juguete, lleno de bolitas de gel azules hasta arriba; se distinguen bien las bolitas a través del plástico. Fondo gris piedra desenfocado.",
+      "escena": "Primer plano, sin llegar a macro, del depósito transparente sobre la muñeca del guante de juguete, lleno de bolitas de gel azules; se ven completos el depósito y parte del guante rojo. Fondo gris piedra liso y desenfocado.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "formato",
+          "cambio": "Encuadre para la fila: objeto completo en la franja central, del lado exterior, con aire; la escena se alejó un poco para que no quede cortado."
         }
       ]
     },
@@ -229,12 +239,17 @@
       "que": "Parte: correa ajustable (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "Primer plano del guante de juguete sobre un antebrazo adulto: la correa negra de velcro ajustada alrededor del brazo. Solo antebrazo, sin cara.",
+      "escena": "El guante de juguete puesto en un antebrazo adulto en diagonal, visto un poco desde arriba: se ve completa la correa negra de velcro ajustada alrededor del brazo y el guante entero. Solo antebrazo, sin cara. Fondo liso desenfocado.",
       "historial": [
         {
           "fecha": "2026-11-10",
           "parte": "escena",
           "cambio": "Revisión anti-rechazo: lenguaje de juego (sin disparar, apuntar, cargador, ráfaga, héroe ni joven) y persona adulta o sin persona."
+        },
+        {
+          "fecha": "2026-11-10",
+          "parte": "formato",
+          "cambio": "Encuadre para la fila: objeto completo en la franja central, del lado exterior, con aire; la escena se alejó un poco para que no quede cortado."
         }
       ]
     },
@@ -242,15 +257,27 @@
       "que": "Parte: recargable por USB (Interés).",
       "producto": true,
       "persona": false,
-      "escena": "El guante sobre un escritorio de madera, conectado con un cable USB a un adaptador de pared. Junto a él, un vaso con lápices y un cuaderno cerrado. Luz natural de ventana.",
-      "historial": []
+      "escena": "El guante de juguete entero sobre un escritorio de madera, visto un poco alejado, conectado con un cable USB a un adaptador de pared que se ve al lado. Fondo de pared lisa, luz natural de ventana.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "formato",
+          "cambio": "Encuadre para la fila: objeto completo en la franja central, del lado exterior, con aire; la escena se alejó un poco para que no quede cortado."
+        }
+      ]
     },
     "problemas-filas.fila5": {
       "que": "Parte: gomas de hidrogel que crecen con agua (Interés).",
       "producto": false,
       "persona": false,
-      "escena": "Sobre una mesa de cocina con baldosa blanca: un recipiente de vidrio con agua y bolitas de hidrogel azules hinchadas y brillantes; al lado, un puñado de bolitas pequeñas todavía secas para comparar el tamaño.",
-      "historial": []
+      "escena": "Sobre una mesa de cocina con baldosa blanca, visto un poco alejado: un recipiente de vidrio con agua y bolitas de gel azules hinchadas y brillantes, y al lado un puñado pequeño de bolitas secas para comparar el tamaño. Todo completo dentro del cuadro, fondo simple.",
+      "historial": [
+        {
+          "fecha": "2026-11-10",
+          "parte": "formato",
+          "cambio": "Encuadre para la fila: objeto completo en la franja central, del lado exterior, con aire; la escena se alejó un poco para que no quede cortado."
+        }
+      ]
     },
     "pasos.paso1": {
       "que": "Paso 1: hidratar las gomas (Deseo: facilidad).",
