@@ -35,7 +35,7 @@ const fPlantilla = `templates/product.${landing}.json`;
 if (!fs.existsSync(path.join(ROOT, fPlantilla))) { console.error(`No existe ${fPlantilla}: arma primero la plantilla.`); process.exit(1); }
 
 const cli = (sub, extra) => execFileSync('npx', [...CLI, 'theme', sub, '--store', tienda.store, '--password', 'shptka_relleno', '--live', ...extra], {
-  encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env, SHOPIFY_CLI_NO_ANALYTICS: '1' }, maxBuffer: 64 * 1024 * 1024,
+  encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'], env: { ...process.env, SHOPIFY_CLI_NO_ANALYTICS: '1', NODE_USE_ENV_PROXY: '1', SHOPIFY_HTTP_PROXY: process.env.HTTPS_PROXY || process.env.https_proxy || '', SHOPIFY_HTTPS_PROXY: process.env.HTTPS_PROXY || process.env.https_proxy || '' }, maxBuffer: 64 * 1024 * 1024,
 });
 
 // Secciones que usa la plantilla.
