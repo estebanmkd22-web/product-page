@@ -69,11 +69,8 @@
         "fondo": "#faf7fd",
         "mostrar_oferta": false,
         "mostrar_rating": false,
-        "tamano_titulo": 28,
         "titulo": "El regalo que sí se usa: <em>calma a la hora de dormir</em>",
         "texto": "Un peluche que proyecta estrellas de colores en la pared y pone música suave para que la hora de dormir sea un momento tranquilo.",
-        "zonas_titulo": "Elige su modelo",
-        "zonas": "Conejo, Unicornio, Dinosaurio, Pingüino",
         "proporcion": "1 / 1",
         "navegacion": "miniaturas"
       },
@@ -260,8 +257,7 @@
         "columnas_movil": "2",
         "columnas_pc": "4",
         "proporcion": "1 / 1",
-        "cierre": "No le falta otro juguete: <em>le falta un momento de calma.</em>",
-        "cierre_estilo": "texto"
+        "cierre": "No le falta otro juguete: <em>le falta un momento de calma.</em>"
       },
       "blocks": [
         {
