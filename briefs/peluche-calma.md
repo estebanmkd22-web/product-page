@@ -1,5 +1,5 @@
 # Brief · Peluche proyector arrullador (peluche de calma)
-Tienda: Tu espacio Market (CO) · Fecha: 2026-11-11 · Estado: borrador
+Tienda: Tu espacio Market (CO) · Fecha: 2026-11-11 · Estado: confirmado
 
 Base de investigación: el video del usuario, por decisión suya (sin investigación profunda). Análisis completo en `investigacion/peluche-calma/analisis-video.md`.
 
@@ -18,6 +18,7 @@ Base de investigación: el video del usuario, por decisión suya (sin investigac
   - control de volumen;
   - si es lavable;
   - si las pilas vienen incluidas.
+  - El usuario no sabe si tiene temporizador ni si trae pilas: **no se mencionan** en ninguna parte. [Usuario]
 - **Qué trae la caja:** el peluche en su caja de regalo. [Hipótesis, por el video]
 - **Foto con fondo limpio:** falta.
 - **Lo que NO se promete:**
@@ -54,7 +55,8 @@ Base de investigación: el video del usuario, por decisión suya (sin investigac
 | 4 | Navidad: el regalo para el bebé de la familia | Temporada, regalo con propósito |
 
 - **Hipótesis:** "Creemos que mamás y familiares de bebés en Colombia compran más con el ángulo *regalo que sí se usa + calma a la hora de dormir*, porque une un deseo emocional (calma) con una razón práctica (un regalo útil) y la temporada de Navidad. Lo sabremos si la tasa de conversión de la landing y el porcentaje del x2 superan los de un ángulo solo de calma."
-- **Ángulo principal recomendado:** el #1, para que coincida con el video que se pauta. Decide el usuario.
+- **Ángulo principal elegido:** el #1, «El regalo que sí se usa: calma a la hora de dormir». [Usuario, confirmado 2026-11-11]
+- **Buyer confirmado:** principal, la mamá; secundario, quien regala. [Usuario]
 
 ## 4. Oferta
 - **Precio:** x1 $139.900 · x2 $239.900 ($119.950 c/u; ahorras $39.900). [Usuario]
@@ -69,7 +71,7 @@ Base de investigación: el video del usuario, por decisión suya (sin investigac
 
   [Usuario]
 - **Bonos** [Usuario]:
-  1. **Guía digital de rutina para dormir** (nombre por definir). Falta definir cómo se entrega: por ejemplo, un enlace en la confirmación del pedido.
+  1. **Guía digital de rutina para dormir** (nombre por definir). Se entrega con un enlace en el mensaje de confirmación del pedido. [Usuario aceptó la propuesta]
   2. **Tarjeta de regalo del 10%** para la próxima compra. Necesita un código real de descuento en Shopify.
 - **Garantía:** 60 días por daños de fábrica. [Usuario]
 - **Envío y pago:** envío gratis, pago contraentrega. [Usuario]
