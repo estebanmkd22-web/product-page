@@ -18,6 +18,8 @@ Fuente de cada dato:
   - 20 h con el estuche, de 3 a 4 h seguidas por carga;
   - colores café y verde.
 - **Qué trae la caja:** audífonos y estuche. ¿Cable de carga? ¿Puntas de repuesto? **[Hipótesis: confirmar]**
+- **El estuche aguanta caídas.** [Usuario]
+- **Funcionan con Android y iPhone.** [Usuario]
 - **No se debe prometer:**
   - IPX8 [Usuario];
   - "nadie más lo tiene" (existen audífonos de "mini cámara") [Investigación];
@@ -41,7 +43,10 @@ Fuente de cada dato:
 - **Nivel de consciencia:** de la solución / del producto. **Sofisticación:** muy alta. [Investigación]
 
 ## 3. Tráfico
-- **Qué promete el anuncio que trae a la gente:** **[FALTA: pásame el texto o el gancho del anuncio actual]**
+- **Anuncio que ha vendido** (video de 22 s, gráficos neón, sin persona) [Usuario]: "¿Una cámara? No… son tus audífonos. Y este estuche retro (incluido). Olvídate de pagar una funda aparte. Pantalla con tu batería, Bluetooth 5.4. Resisten: gym, clase u oficina. En café o verde… y nadie más los tiene. De $109.900 a solo $79.900, con envío gratis. Desde el 1 de diciembre vuelven a $109.900. Pídelos ya."
+  - **Gancho:** curiosidad o sorpresa visual ("¿una cámara? No, son tus audífonos").
+  - **Promesa:** estuche retro incluido, sin pagar funda aparte, más el precio Black.
+  - **Lo que debe continuar el hero:** la sorpresa de la cámara (el cliente llega buscando "eso que parecía una cámara"), sin quedarse solo en el estatus.
 - **Landing actual (Clarity, 19 visitantes):**
   - el 68 % no baja del 10 % de la página;
   - unos 52 s en la primera pantalla;
@@ -59,12 +64,12 @@ Fuente de cada dato:
 
 ## 5. Oferta (actual en vivo) [Verificado]
 - **Precio:** $79.900 (1 unidad), "precio Black hasta el 30 de nov, desde el 1 de dic vuelve a $109.900".
-- **Pack x2:** precio **[FALTA confirmar]**.
+- **Pack x2:** $129.900. [Usuario]
 - **Bonos actuales:** envío express gratis, garantía de 90 días por daños de fábrica, 3 guías digitales y soporte por WhatsApp.
 - **Costo y margen:** **[opcional]**.
 
 ## 6. Prueba y confianza
-- **Reseñas reales de clientes de VIVIDUS:** **[¿hay?]** La landing muestra 4.8 estrellas: ¿de dónde sale ese dato?
+- **Reseñas:** las de la landing (4.8) son comentarios reales de clientes. [Usuario]
 - **Videos reales:** hay 3 videos en la landing ("Míralos en acción").
 
 ## 7. Competencia
@@ -73,6 +78,3 @@ Muchos anuncios genéricos, combos con smartwatch y precio bajo (ver dossier). H
 ## 8. Material
 - Fotos y videos actuales de la landing.
 - Avatar: no aplica por ahora; las imágenes de VIVIDUS son de producto o manos.
-- **Preguntas por confirmar:**
-  - ¿El estuche es resistente a caídas?
-  - ¿Funcionan con iPhone?
