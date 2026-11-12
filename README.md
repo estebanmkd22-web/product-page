@@ -86,7 +86,7 @@ El proceso completo (hero → landing → kit de imágenes) está en `.claude/sk
 
 ## Investigación de la competencia local
 
-Antes de testear un producto, la skill `.claude/skills/espiar-mercado/SKILL.md` (`/espiar-mercado`) revisa cómo lo anuncia la competencia en Colombia o Guatemala, de lo barato a lo caro y con un plan aprobado antes de gastar. `NODE_USE_ENV_PROXY=1 node --no-warnings tools/espiar-mercado.mjs <modo> <producto> ...`, todo vía Apify:
+Va entre la investigación profunda (dolores) y el brief: cruza los dolores del dossier con lo que ya vende la competencia local y con el catálogo de Dropi, y decide si vale la pena entrar y con qué ángulo y plus, para no competir por precio. Antes de testear un producto, la skill `.claude/skills/espiar-mercado/SKILL.md` (`/espiar-mercado`) revisa cómo lo anuncia la competencia en Colombia o Guatemala, de lo barato a lo caro y con un plan aprobado antes de gastar. `NODE_USE_ENV_PROXY=1 node --no-warnings tools/espiar-mercado.mjs <modo> <producto> ...`, todo vía Apify:
 - `palabras`: Google Trends, para ver cómo nombra la gente el problema (volumen comparado, lo que sube, regiones);
 - `tiktok`: búsqueda orgánica de TikTok, para el vocabulario, los hashtags y sub-nichos, los ganchos y las dudas de los comentarios;
 - `plan`: matriz de consultas `término - modificador de oferta` (ej. `cinturilla - contra entrega`) con su costo; no gasta;

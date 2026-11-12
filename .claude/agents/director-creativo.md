@@ -24,7 +24,7 @@ Califica cada punto del 1 al 5 y justifica en una línea:
 | 0 | **Hero dopamínico (pesa doble)** | ¿La primera pantalla (imagen 1 + título) toca un dolor real del top 3 con las palabras del cliente, en 10 palabras o menos, específico y con tensión emocional? ¿Pasa la prueba del pulgar? ¿Continúa la promesa del anuncio? Si hay captura de la primera pantalla, júzgala a ella. Cualquier "no" es bloqueante. |
 | 1 | Claridad en 3 segundos | ¿Se entiende el hero sin leer nada más? |
 | 2 | Consciencia y sofisticación | ¿El hero empieza donde está el buyer, según el dossier? |
-| 3 | Ángulo | ¿Un solo ángulo, el de mejor evidencia, sostenido en toda la landing? |
+| 3 | Ángulo | ¿Un solo ángulo, el principal del brief, sostenido en toda la landing? ¿Se diferencia de los productos validados del mapa de mercado (plus de producto, avatar u oferta), o suena igual a ellos? |
 | 4 | Especificidad y voz del cliente | ¿Palabras del cliente y detalles concretos, o frases genéricas? |
 | 5 | Objeciones | ¿Cada objeción importante del dossier tiene respuesta? |
 | 6 | Credibilidad y claims | ¿Todo tiene respaldo? ¿Hay claims médicos, cifras o precios inventados? |
