@@ -47,7 +47,7 @@ const promptV2 = (e, p) => {
     p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     p.comparativa ? `Comparativa: ${p.comparativa} Divide la imagen en dos lados claramente separados. El contraste lo cuentan la escena y los textos: no escribas las palabras "antes" ni "después".` : '',
-    (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): ${p.textos.map((t) => `«${t}»`).join(' · ')}.` : '',
+    (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «${p.textos[0].split(' / ').join('» en una línea y debajo «')}»${p.textos.length > 1 ? (p.comparativa ? `; sobre el lado izquierdo, pequeño, «${p.textos[1]}»${p.textos[2] ? `; sobre el lado derecho, pequeño, «${p.textos[2]}»` : ''}` : `; ${p.textos.length > 2 ? 'etiquetas pequeñas tipo sticker' : 'etiqueta pequeña tipo sticker'} junto al producto: ${p.textos.slice(1).map((t) => `«${t}»`).join(' y ')}`) : ''}.` : '',
     `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
     `Formato: imagen ${f.pedir}.`,
     `Reglas: ${kit.reglas}${(p.textos || []).length ? ' Excepción: esta imagen lleva únicamente los textos indicados arriba.' : ''}`,

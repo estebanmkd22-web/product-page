@@ -1,0 +1,62 @@
+[
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todos tienen audífonos blancos. Tú no.",
+    "id": "hero-oferta.imagen_1",
+    "donde": "Imagen 1 (la principal)",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todos tienen audífonos blancos. Tú no.",
+    "id": "hero-oferta.imagen_2",
+    "donde": "Imagen 2",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todos tienen audífonos blancos. Tú no.",
+    "id": "hero-oferta.imagen_3",
+    "donde": "Imagen 3",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todos tienen audífonos blancos. Tú no.",
+    "id": "hero-oferta.imagen_4",
+    "donde": "Imagen 4",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todos tienen audífonos blancos. Tú no.",
+    "id": "hero-oferta.imagen_5",
+    "donde": "Imagen 5",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todos tienen audífonos blancos. Tú no.",
+    "id": "hero-oferta.imagen_6",
+    "donde": "Imagen 6",
+    "n": 6
+  }
+]

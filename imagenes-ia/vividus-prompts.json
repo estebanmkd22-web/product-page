@@ -1,0 +1,100 @@
+{
+  "version": 2,
+  "landing": "VIVIDUS 86 V2 · hero",
+  "avatar": null,
+  "referencia_archivo": "imagenes/vividus/f1.jpg",
+  "ficha": {
+    "escenario": "Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio.",
+    "luz": "Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo.",
+    "paleta": "Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro.",
+    "estilo": "Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros."
+  },
+  "producto": "Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.",
+  "reglas": "Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado.",
+  "espacios": {
+    "hero-oferta.imagen_1": {
+      "que": "La más importante: continúa la sorpresa del anuncio y hace sentir el susto de la caída y el alivio (dolor #1).",
+      "principal": true,
+      "producto": true,
+      "persona": false,
+      "escena": "Cámara a ras de piso sobre baldosa clara de apartamento. El estuche café, cerrado y con los audífonos adentro, está a 5-8 cm de la baldosa, inclinado unos 20 grados, a punto de chocar contra el piso, con la pantalla LED encendida. Sombra pequeña y cercana debajo del estuche. Sin manos, sin rebotes, sin pedazos. El estuche ocupa al menos la mitad del cuadro. El tercio superior de la imagen queda limpio y despejado para el titular.",
+      "textos": [
+        "Se te cayeron. / Tranqui, siguen enteros.",
+        "No es una cámara"
+      ],
+      "variantes": [
+        {
+          "nombre": "B (control para medir)",
+          "textos": [
+            "No es una cámara. / Y aguanta caídas.",
+            "Son tus audífonos"
+          ]
+        }
+      ],
+      "historial": []
+    },
+    "hero-oferta.imagen_2": {
+      "que": "Comparativa: la misma caída, distinto final (dolor #3: el estuche es lo primero que falla).",
+      "producto": true,
+      "persona": false,
+      "escena": "Mismo piso de baldosa y misma luz en los dos lados. Las dos cajas cayeron desde la altura de un bolsillo y ya están quietas en el suelo, sin pedazos volando.",
+      "comparativa": "lado izquierdo: cajita blanca genérica de audífonos con la tapa desprendida a su lado; lado derecho: el estuche de cámara café, entero y cerrado, en el mismo punto.",
+      "textos": [
+        "Misma caída. Distinto final.",
+        "La cajita de siempre",
+        "Estuche VIVIDUS"
+      ],
+      "historial": []
+    },
+    "hero-oferta.imagen_3": {
+      "que": "Característica clave: la batería a la vista.",
+      "producto": true,
+      "persona": false,
+      "escena": "Estuche verde oliva sobre una mesa de madera, tapa abierta, primer plano de la pantalla LED con un porcentaje de batería, los dos audífonos fuera, junto al estuche.",
+      "textos": [
+        "Ves cuánta batería te queda",
+        "Pantalla con %",
+        "20 h con estuche",
+        "Bluetooth 5.4"
+      ],
+      "historial": []
+    },
+    "hero-oferta.imagen_4": {
+      "que": "Comparativa frente a la alternativa de siempre: audífonos más funda aparte.",
+      "producto": true,
+      "persona": false,
+      "escena": "Dos mitades con la misma luz sobre una mesa.",
+      "comparativa": "lado izquierdo: audífonos blancos genéricos sin marca con una funda de silicona aparte, medio despegada; lado derecho: el estuche café de cámara retro, cerrado, sostenido en una mano.",
+      "textos": [
+        "La protección ya viene puesta",
+        "Funda aparte que se cae",
+        "Estuche retro de fábrica"
+      ],
+      "historial": []
+    },
+    "hero-oferta.imagen_5": {
+      "que": "Uso real: gym, clase u oficina.",
+      "producto": true,
+      "persona": false,
+      "escena": "Banca de gimnasio con toalla y botella de agua. Sobre la toalla, el estuche café abierto y un audífono afuera, a su lado. Una mano solo entra por el borde del cuadro hacia el audífono, sin primer plano.",
+      "textos": [
+        "Gym, clase u oficina",
+        "Resisten el sudor",
+        "Control táctil"
+      ],
+      "historial": []
+    },
+    "hero-oferta.imagen_6": {
+      "que": "Versatilidad: funciona con cualquier celular, en dos colores.",
+      "producto": true,
+      "persona": false,
+      "escena": "Mesa de café con luz de ventana. Los estuches café y verde oliva juntos, cada uno al lado de un celular genérico distinto, sin logos ni marcas.",
+      "textos": [
+        "Con el celular que tengas",
+        "Café",
+        "Verde"
+      ],
+      "historial": []
+    }
+  }
+}
