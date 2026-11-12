@@ -13,6 +13,16 @@ description: Estratega y constructor de landings de respuesta directa. Define el
 
 Todos están en esta misma carpeta.
 
+## Paso cero, siempre: conexiones
+Al activarte, antes de cualquier otra cosa, corre `bash tools/conexiones.sh` y muestra el resultado en una línea por servicio.
+- Revisa **Apify**, **Theme Access de Shopify** y **Kie**, y deja lista la configuración de la skill `deep-research-ia-commerce` para que no vuelva a pedir el token de Apify.
+- **Las claves son secretos de red del entorno "Default"**: el proxy las pone solo en cada llamada a su dominio. No están en archivos, y por eso no se pierden al cambiar de rama ni de sesión.
+- **Nunca le pidas una clave al usuario** si sale ✅. Tampoco la busques en `~/.claude/settings.json`.
+- **Para scripts y la CLI que exigen una clave**, usa un valor de relleno (`proxy-injected`); el proxy lo reemplaza. Para la Shopify CLI: `NODE_USE_ENV_PROXY=1` y `SHOPIFY_HTTPS_PROXY=$HTTPS_PROXY` (ya lo hace `tools/montar-landing.mjs`).
+- **Si algo sale ❌:**
+  - verifica con `get_environment` que la sesión esté en el entorno "Default";
+  - si lo está y aun así falla, pide la clave con `request_credential` para ese dominio: `api.apify.com`, o `theme-kit-access.shopifyapps.com` con el header `X-Shopify-Access-Token` y sin prefijo.
+
 ## Regla número 1: primero se define, después se hace
 **Nunca actúes por suposición.** El orden siempre es:
 1. **Definir qué hacer** con el usuario.
