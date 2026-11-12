@@ -236,15 +236,37 @@ function procesar(todos, relevantes) {
   }
   const anunciantes = Object.values(porAnunciante).map((p) => ({ ...p, ofertas: [...p.ofertas], landings: [...p.landings] }))
     .sort((a, b) => b.anuncios - a.anuncios || b.max_copias - a.max_copias || b.max_dias - a.max_dias);
+  // Productos de la competencia: la unidad de análisis. Web = misma página de producto; WhatsApp = un producto por
+  // anunciante (no hay URL que los distinga).
+  const claveProducto = (a) => {
+    if (a.destino === 'web') { try { const u = new URL(a.landing); return u.host.replace(/^www\./, '') + u.pathname.replace(/\/$/, ''); } catch { /* sigue */ } }
+    return 'whatsapp:' + (a.page_id || a.anunciante);
+  };
+  const porProducto = {};
+  for (const a of todos.filter((x) => x.comunica)) {
+    const k = claveProducto(a);
+    const p = (porProducto[k] ||= { producto: k, landing: a.destino === 'web' ? a.landing.split('?')[0] : null, anunciantes: new Set(), anuncios: 0, max_dias: 0, max_copias: 1, video: 0, imagen: 0, ofertas: new Set(), ejemplos: [] });
+    p.anunciantes.add(a.anunciante); p.anuncios++; p.max_dias = Math.max(p.max_dias, a.dias_activo || 0); p.max_copias = Math.max(p.max_copias, a.copias);
+    a.formato === 'VIDEO' ? p.video++ : p.imagen++;
+    a.ofertas.forEach((o) => p.ofertas.add(o));
+    p.ejemplos.push({ id: a.id, enlace: a.enlace, dias: a.dias_activo, copias: a.copias, formato: a.formato, copy: a.copy.slice(0, 300) });
+  }
+  // Señal de que el producto vende: varios anuncios activos, copias, 30+ días o más de un anunciante vendiéndolo.
+  const productos = Object.values(porProducto).map((p) => {
+    p.ejemplos.sort((x, y) => y.copias - x.copias || y.dias - x.dias);
+    const senales = [p.anuncios >= 3 && 'varios anuncios activos', p.max_copias > 1 && 'creativo duplicado (escalando)', p.max_dias >= 30 && '30+ días activo', p.anunciantes.size > 1 && 'lo venden varios'].filter(Boolean);
+    return { ...p, anunciantes: [...p.anunciantes], ofertas: [...p.ofertas], ejemplos: p.ejemplos.slice(0, 4), senales, validado: senales.length >= 2 };
+  }).sort((a, b) => b.validado - a.validado || b.senales.length - a.senales.length || b.anuncios - a.anuncios);
   const orden = new Map(anunciantes.map((p, i) => [p.page_id || p.anunciante, i]));
   const max = Number(opt('max', 30));
   const seleccion = [...grupos.values()].sort((a, b) => (orden.get(a.page_id || a.anunciante) - orden.get(b.page_id || b.anunciante)) || b.copias - a.copias || b.dias_activo - a.dias_activo).slice(0, max);
-  return { anunciantes, seleccion };
+  return { anunciantes, seleccion, productos };
 }
 
 function escribirResultados(todos, plan, porConsulta) {
-  const { anunciantes, seleccion } = procesar(todos, plan.relevantes);
+  const { anunciantes, seleccion, productos } = procesar(todos, plan.relevantes);
   guardar('anuncios.json', todos);
+  guardar('productos.json', productos);
   guardar('anunciantes.json', anunciantes);
   guardar('seleccion.json', seleccion);
   const ok = todos.filter((a) => a.comunica);
@@ -259,7 +281,9 @@ function escribirResultados(todos, plan, porConsulta) {
     for (const c of porConsulta) md += `| ${c.n} | ${c.q} | ${c.traidos} | ${c.comunican} | ${c.nuevos} | ${c.veredicto} |\n`;
     md += `\n`;
   }
-  md += `## Anunciantes que comunican (candidatos a profundizar)\n| Anunciante | page_id | Anuncios | Máx. copias | Máx. días | Video/Img | Ofertas | Destino |\n|---|---|---|---|---|---|---|---|\n`;
+  md += `## Productos de la competencia (la unidad de análisis)\n${productos.filter((p) => p.validado).length} de ${productos.length} muestran señales de que venden.\n\n| Producto | Anunciantes | Anuncios | Máx. copias | Máx. días | Video/Img | Ofertas | Señales de que vende |\n|---|---|---|---|---|---|---|---|\n`;
+  for (const p of productos.slice(0, 15)) md += `| ${p.landing ? `[${p.producto}](${p.landing})` : p.producto} | ${p.anunciantes.join(', ')} | ${p.anuncios} | ${p.max_copias} | ${p.max_dias} | ${p.video}/${p.imagen} | ${p.ofertas.join(', ')} | ${p.senales.join(' · ') || '—'} |\n`;
+  md += `\n## Anunciantes que comunican (candidatos a profundizar)\n| Anunciante | page_id | Anuncios | Máx. copias | Máx. días | Video/Img | Ofertas | Destino |\n|---|---|---|---|---|---|---|---|\n`;
   for (const p of anunciantes.slice(0, 20)) md += `| ${p.anunciante}${p.profundizado ? ' ✓' : ''} | ${p.page_id} | ${p.anuncios} | ${p.max_copias} | ${p.max_dias} | ${p.video}/${p.imagen} | ${p.ofertas.join(', ')} | ${p.landings[0] || (p.whatsapp ? 'WhatsApp' : '—')} |\n`;
   md += `\n## Selección por variedad de oferta y formato (lo que se analiza)\n`;
   for (const a of seleccion) md += `- **${a.anunciante}** · ${a.formato} · ${a.dias_activo} días${a.copias > 1 ? ` · ${a.copias} copias` : ''}${a.variantes > 1 ? ` · ${a.variantes} variantes` : ''} · ofertas: ${a.ofertas.join(', ')} · ${a.destino} · [ver](${a.enlace})${a.destino === 'web' ? ` · [landing](${a.landing})` : ''}\n  > ${a.copy.slice(0, 300)}\n`;
@@ -347,13 +371,12 @@ const FUNCION_PAGINA = `async function pageFunction(context) {
 
 async function modoLandings() {
   const top = Number(opt('top', 6));
-  // Landings de los anunciantes que comunican, primero los profundizados; una por dominio.
-  const anunciantes = leer('anunciantes.json').sort((a, b) => b.profundizado - a.profundizado);
+  // Una landing por producto de la competencia, primero los que muestran señales de que venden.
   const urls = [];
-  for (const p of anunciantes) { const u = p.landings[0]; if (u && !urls.some((x) => new URL(x).host === new URL(u).host)) urls.push(u); if (urls.length >= top) break; }
+  for (const p of leer('productos.json')) { if (p.landing && !urls.includes(p.landing)) urls.push(p.landing); if (urls.length >= top) break; }
   // Landings extra que pase el usuario: --url https://a.com/products/x,https://b.com/...
   for (const u of lista('url')) urls.push(u);
-  if (!urls.length) { console.log('Ningún anunciante de la selección tiene landing propia (todos mandan a WhatsApp). Eso también es un hallazgo.'); return; }
+  if (!urls.length) { console.log('Ningún producto de la competencia tiene landing propia (todos mandan a WhatsApp). Eso también es un hallazgo.'); return; }
   console.log(`Landings · ${urls.length} · costo aprox. ${usd(urls.length * COSTO.landing)}`);
   const items = await actor('apify~playwright-scraper', {
     startUrls: urls.map((url) => ({ url })), linkSelector: '', pageFunction: FUNCION_PAGINA, maxPagesPerCrawl: urls.length,

@@ -94,7 +94,7 @@ Antes de testear un producto, la skill `.claude/skills/espiar-mercado/SKILL.md` 
 - `anunciante`: todos los anuncios activos de los anunciantes elegidos;
 - `creativos` y `landings`: imágenes de la selección y capturas, textos y ofertas de sus landings.
 
-Claude escribe `investigacion/<producto>/mercado/mapa-mercado.md` con ángulos, dolores, ganchos, promesas, fondos de oferta, huecos y los ángulos recomendados para testear.
+Los anuncios se agrupan por **producto de la competencia** (`productos.json`), con señales de que vende. Claude arma una ficha por producto (promesa, dolor, transformación, mecanismo, prueba, oferta y debilidades) y escribe `investigacion/<producto>/mercado/mapa-mercado.md`: veredicto de si vale la pena entrar, qué se repite en el nicho, estrategia de entrada (mismo ángulo validado + plus de producto u oferta con extras, sin competir por precio) y qué testear.
 
 ## Montaje automático en Shopify
 

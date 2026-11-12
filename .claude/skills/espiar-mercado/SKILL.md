@@ -1,22 +1,25 @@
 ---
 name: espiar-mercado
-description: Investiga cómo anuncia la competencia LOCAL (Colombia o Guatemala) un producto o nicho antes de testearlo, sin búsquedas eternas ni anuncios basura. Primero define qué se busca (hipótesis, vocabulario con Google Trends e indicios en TikTok orgánico), arma un plan de consultas "término - modificador de oferta" (ej. "cinturilla - contra entrega") con costo y tope, y solo con el plan aprobado barre la biblioteca de Meta, filtra lo que no comunica, elige por variedad de oferta y ángulo, profundiza en los anunciantes clave y sus landings, y entrega un mapa de mercado con ángulos, dolores, promesas, ofertas, huecos y los ángulos recomendados para testear. Úsala cuando el usuario diga "qué está corriendo la competencia", "espiar el nicho", "anuncios del nicho", "ángulos u ofertas de la competencia", "palabras clave del producto", "biblioteca de Meta / TikTok", "Google Trends", "cómo lo venden otros", "validar antes de testear", o antes de la Fase 0 de landing-producto con un producto nuevo.
+description: Encuentra los productos de mi mismo nicho que se están vendiendo en el país (Colombia o Guatemala) y cómo los venden (promesa, dolor, transformación, mecanismo, prueba y oferta) para decidir si vale la pena entrar, apalancarse del ángulo y la transformación que ya funcionan, y definir mi plus de producto u oferta con extras para no competir por precio. Antes de gastar define qué se busca (mi producto, Google Trends y TikTok orgánico) y arma un plan de consultas "término - modificador de oferta" (ej. "cinturilla - contra entrega") con costo; con el plan aprobado barre la biblioteca de Meta, filtra lo que no comunica, agrupa por producto competidor con señales de que vende, profundiza en anunciantes y landings, y entrega un mapa con veredicto y estrategia de entrada. Úsala cuando el usuario diga "qué está corriendo la competencia", "espiar el nicho", "productos de mi nicho", "ángulos u ofertas de la competencia", "vale la pena entrar", "cómo diferenciarme", "biblioteca de Meta / TikTok", "Google Trends", "cómo lo venden otros", "validar antes de testear", o antes de la Fase 0 de landing-producto con un producto nuevo.
 ---
 
 # Espiar el mercado local antes de testear
 
 ## Por qué existe
-Para responder **4 decisiones** antes de gastar en un test. Si un dato no sirve a una de ellas, sobra:
-1. **¿Entro o no?** Demanda y saturación en el país.
-2. **¿Con qué ángulo pruebo primero?** Lo que ya está funcionando localmente, no una idea propia.
-3. **¿Qué promete mi hero?** Algo que no suene igual a lo que todos repiten.
-4. **¿Qué oferta tengo que superar?** Precio, combos, contraentrega, envío, garantía.
+Para saber **qué productos de mi mismo nicho se están vendiendo en el país y cómo los venden**: qué prometen, qué dolor tocan y qué transformación ofrecen. Con eso se decide:
+1. **¿Vale la pena entrar?**
+2. **¿Me apalanco del ángulo y de la transformación que ya funcionan?** Si el mercado ya los validó, es más barato que inventar uno.
+3. **¿Cuál es mi plus?** Uno de dos:
+   - **de producto:** algo que mi producto hace o tiene y el de ellos no;
+   - **de oferta:** extras que suben el valor percibido, para **no competir por precio**.
+
+La unidad de análisis es el **producto de la competencia**, no el anuncio suelto. Los anuncios y las landings son la evidencia de cómo se vende cada producto. Si un dato no ayuda a estas 3 decisiones, sobra.
 
 ## El problema que resuelve
 En la biblioteca de anuncios, con palabras mal elegidas la búsqueda no termina: llegan marcas, tiendas físicas y anuncios que no comunican nada, que solo "parecen ganadores" porque llevan muchos días corriendo. Eso gasta tiempo, tokens y saldo de Apify. Por eso esta skill funciona **de lo barato y amplio a lo caro y preciso**, y **nada caro se corre sin un plan aprobado**.
 
 ## Principios (no negociables)
-- **Claridad antes de gastar.** Hay 3 puntos de aprobación: semillas, plan de búsqueda y anunciantes a profundizar.
+- **Claridad antes de gastar.** Hay 3 puntos de aprobación: semillas, plan de búsqueda y productos de la competencia a profundizar.
 - **El método del usuario: `término - modificador de oferta`.** En la biblioteca de Meta, el usuario busca `cinturilla - contra entrega`, y así trae solo anuncios que tienen las dos cosas. El modificador de oferta filtra a quien vende producto físico con oferta, que es la competencia real. En la prueba, 9 de 10 anuncios de `cinturilla - contra entrega` servían.
 - **La búsqueda es literal.** "contra entrega" y "contraentrega", o "envío" con tilde y sin tilde, traen anuncios distintos. Se prueban las variantes que use el mercado.
 - **Un anuncio cuenta si comunica, no por sus días.** Tiene que ser del nicho, tener una oferta y tener copy real. Los días activo y las copias solo **desempatan**.
@@ -44,14 +47,18 @@ Todo queda en `investigacion/<producto>/mercado/`.
 ## Paso 0 · Conexión
 Corre `bash tools/conexiones.sh`; basta con **Apify ✅**. Si sale ❌, sigue lo que dice `landing-producto`: verificar el entorno Default y usar `request_credential` para `api.apify.com`.
 
-## Paso 1 · Hipótesis (no gasta nada)
-Con lo que diga el usuario y lo que ya exista en `investigacion/<producto>/` o `briefs/<producto>.md`, escribe 4 líneas:
+## Paso 1 · Mi producto e hipótesis (no gasta nada)
+Sin conocer mi producto no se puede encontrar el plus. Junta en una sola tanda, sin volver a pedir lo que ya esté en `investigacion/<producto>/` o `briefs/<producto>.md`:
+- **Mi producto:** qué es, specs reales, qué trae, foto o enlace del proveedor, y qué tiene distinto (material, tamaño, función, accesorios).
+- **Números:** costo, precio objetivo y margen. Definen cuánto se puede invertir en extras sin bajar el precio.
+- **Extras posibles:** qué podría sumar a la oferta, por ejemplo un regalo complementario, una segunda unidad, una garantía más fuerte, una guía o asesoría, o un empaque. Incluye cuánto cuesta cada uno.
+- **País (CO o GT)** y nombre de carpeta en kebab-case.
+
+Luego escribe la hipótesis en 4 líneas:
 - **Problema** que resuelve el producto.
 - **Quién lo sufre** y en qué momento.
 - **Cómo creemos que lo nombra** la gente: producto, dolor y resultado.
 - **Oferta** que pensamos dar.
-
-Pregunta solo lo que falte: producto, **país (CO o GT)** y nombre de carpeta en kebab-case.
 
 ## Paso 2 · Semillas → Google Trends (cómo nombra la gente el problema)
 Propón **6–8 semillas** en 4 grupos y **espera el "sí"**:
@@ -115,6 +122,7 @@ Cada consulta corre por separado (20 anuncios por defecto), y luego el script:
    | vacía | no trajo nada | probar otra variante de escritura |
 
 4. **Elige por variedad:** un representante por anunciante, formato y oferta (máximo 30), en `seleccion.json`.
+5. **Agrupa por producto de la competencia** (`productos.json`), con sus señales de que vende.
 
 Muestra la tabla de rendimiento por consulta. Solo las que "dan para más" se repiten, **con aprobación**:
 ```bash
@@ -122,77 +130,93 @@ Muestra la tabla de rendimiento por consulta. Solo las que "dan para más" se re
 ```
 Los resultados se acumulan; no se repiten anuncios.
 
-## Paso 6 · Profundizar en los anunciantes clave (aprobación)
-De la tabla de anunciantes que comunican, propón **3–5** con ofertas o ángulos **distintos entre sí**. Prioriza los que tengan más anuncios del producto, copias o variantes. No tomes 5 iguales.
+## Paso 6 · Elegir los productos de la competencia y profundizar (aprobación)
+`anuncios.md` trae la tabla **Productos de la competencia**:
+- Agrupa por página de producto. Si el anuncio manda a WhatsApp, cuenta un producto por anunciante.
+- Muestra las **señales de que vende**: varios anuncios activos, creativo duplicado (lo están escalando), 30+ días activo, o que lo vendan varios anunciantes.
+- **Validado** = 2 señales o más.
+
+Propón **4–6 productos**:
+- **Primero los validados.** Son la prueba de que el mercado compra ese ángulo y esa transformación.
+- **Luego 1–2 que vayan por otro camino** (otro ángulo u otra oferta), para comparar.
+
+Si un producto se ve muy parecido al tuyo, inclúyelo siempre: es tu competencia directa.
+
+Con la aprobación, profundiza en sus anunciantes y baja creativos y landings:
 ```bash
-... espiar-mercado.mjs anunciante <producto> --ids <page_id>,<page_id> [--n 40]
-```
-Trae **todos** sus anuncios activos, no solo los que encontró la consulta. Ahí aparecen sus otros ganchos y ofertas, y se ve cuánto está invirtiendo en el producto.
-
-Después, de una vez:
-```bash
-... espiar-mercado.mjs creativos <producto> --top 15   # justo después: las URLs de Meta vencen en horas
-... espiar-mercado.mjs landings  <producto> --top 6    # una por dominio, primero los profundizados
+... espiar-mercado.mjs anunciante <producto> --ids <page_id>,<page_id> [--n 40]   # todos sus anuncios activos
+... espiar-mercado.mjs creativos  <producto> --top 15                            # justo después: las URLs vencen
+... espiar-mercado.mjs landings   <producto> --top 6                             # una por producto, validados primero
 ```
 
-## Paso 7 · Análisis (lo hace Claude, mirando de verdad)
-Trabaja **solo sobre la selección**: unos 20–30 anuncios y unas 6 landings. No leas `anuncios.json` completo, que gasta tokens sin sumar.
-- **Estáticos:** ábrelos con `Read` en `mercado/creativos/`. Mira el formato (antes/después, producto con beneficios, testimonio, oferta/precio, comparación, notas, chat), el texto sobre la imagen y la promesa.
-- **Videos:** no se pueden ver. Usa la portada, el copy y su primera frase, que suele ser el gancho. Si uno es clave, pídele al usuario que te cuente sus primeros 3 segundos.
-- **Landings:** abre con `Read` el hero y la captura completa, y lee el `.txt`.
+## Paso 7 · Ficha de cada producto de la competencia (lo hace Claude, mirando de verdad)
+Por cada producto elegido, junta su evidencia: sus 2–4 mejores anuncios (`productos.json` → `ejemplos`), sus creativos y su landing. No leas `anuncios.json` completo, que gasta tokens sin sumar.
+- **Estáticos:** ábrelos con `Read` en `mercado/creativos/`.
+- **Videos:** no se pueden ver. Usa la portada, el copy y su primera frase. Si uno es clave, pídele al usuario que te cuente sus primeros 3 segundos.
+- **Landing:** abre con `Read` el hero y la captura completa, y lee el `.txt`.
 
-Por cada anuncio de la selección:
+Llena esta ficha. Lo textual va entre comillas y con su enlace:
 
-| Campo | Opciones |
+| Campo | Qué poner |
 |---|---|
-| Ángulo | dolor/agitación · transformación · prueba social · comparación · mecanismo/educación · aspiración · miedo/riesgo · curiosidad · precio/oferta · comodidad |
-| Dolor | el dolor concreto, textual |
-| Gancho | primera frase textual |
-| Formato | estático o video, con su tipo |
-| Oferta | las etiquetas, más el precio si aparece |
-| Destino | web o WhatsApp |
+| Producto | qué es, en una línea, y qué tan parecido es al mío (igual / similar / sustituto) |
+| Promesa | la frase principal, textual (hero de la landing o gancho del anuncio) |
+| Dolor que toca | el dolor concreto, con sus palabras |
+| Transformación | **antes → después** que vende (qué cambia en la vida del cliente) |
+| Mecanismo | por qué dice que funciona (varillas, compresión, material, tecnología) |
+| Prueba | testimonios, antes/después, número de clientes, reseñas, demostraciones |
+| Oferta completa | precio, ancla tachada, combos, regalos, envío, contraentrega, garantía, urgencia |
+| Formatos | estático o video, y de qué tipo |
+| Señales de que vende | las del script, más lo que se vea al profundizar |
+| Debilidades | qué no dice, qué objeción no responde, qué promete sin probar, dónde se ve barato o poco confiable |
 
 ## Paso 8 · Entregable: `investigacion/<producto>/mercado/mapa-mercado.md`
-Cada afirmación lleva su enlace. Nada inventado.
+Termina en una decisión. Cada afirmación lleva su enlace. Nada inventado.
 
 ```markdown
 # Mapa de mercado · <Producto> · <País> · <fecha>
 
-## 1. Resumen en 5 líneas
-(demanda, saturación, ángulo dominante, oferta típica, la mejor oportunidad)
+## 1. Veredicto: ¿vale la pena entrar?
+**Sí · Sí, con diferenciación · No**, en 3 líneas con el porqué.
+| Criterio | Lectura | Evidencia |
+|---|---|---|
+| Demanda | Trends: volumen, tendencia, temporada | |
+| Validación | cuántos productos del nicho muestran señales de que venden | |
+| Saturación | cuántos venden lo mismo, con el mismo ángulo y la misma oferta | |
+| Espacio para un plus | ¿hay algo que nadie ofrece en producto u oferta? | |
+| Precio y margen | rango de precio del mercado frente a mi costo: ¿me alcanza para extras sin bajar el precio? | |
+Competencia validada no es motivo para no entrar: es la prueba de que se vende. Lo que decide es si hay espacio para un plus y si el margen aguanta.
 
-## 2. Cómo nombra la gente el problema
-Trends (volumen, subiendo, regiones) + TikTok (hashtags/sub-nichos, ganchos, dudas). Términos usados y descartados, y por qué.
+## 2. Productos de la competencia
+Una ficha por producto (Paso 7), primero los validados.
 
-## 3. Búsqueda y saturación
-Tabla de consultas con su veredicto · anunciantes que comunican · % video vs estático · % WhatsApp vs web.
-Lectura: virgen (< 5 anunciantes que comunican) · en crecimiento · saturado (muchos anunciantes, mismos ángulos y ofertas).
+## 3. Qué se repite en el nicho
+| | Lo dominante | Quién lo usa | Ejemplo |
+|---|---|---|---|
+| Promesa | | | |
+| Dolor | | | |
+| Transformación | | | |
+| Mecanismo | | | |
+| Oferta | | | |
+Más: precio típico y rango · la oferta más agresiva · las debilidades que comparten todos.
 
-## 4. Ángulos
-| Ángulo | # anuncios | Anunciantes | Mejor ejemplo (enlace) | Dolor que toca |
+## 4. Cómo nombra la gente el problema
+Trends (vocabulario, lo que sube, regiones) + TikTok (sub-nichos, ganchos, dudas reales).
 
-## 5. Dolores tocados y frases textuales
+## 5. Estrategia de entrada: mismo ángulo + mi plus
+- **Ángulo y transformación a apalancar:** el validado, con su evidencia.
+- **Plus de producto:** qué tiene mi producto que el de ellos no, y cómo se demuestra en el anuncio y en la landing. Si no hay, se dice.
+- **Plus de oferta (para no competir por precio):** extras que suben el valor percibido.
+  | Extra | Costo para mí | Qué objeción o deseo resuelve | Valor percibido | ¿Alguien lo da? |
+  Regla: cada extra debe quitar una objeción del nicho o reforzar la transformación; no se suma relleno. El costo de los extras no se come el margen.
+- **Plus de mensaje:** la misma transformación, pero más específica, con mecanismo o con mejor prueba. Atacar las debilidades del punto 2.
+- **Precio:** dentro del rango del mercado, sostenido por el valor de la oferta. No ser el más barato.
 
-## 6. Top 10 ganchos textuales (con enlace)
-
-## 7. Creativos: patrones de estáticos y de videos
-
-## 8. Landings: estructura de la promesa
-| Landing | Promesa del hero (textual) | Tipo (dolor/resultado/mecanismo) | Bullets | Orden de secciones | Prueba social |
-
-## 9. Fondos de oferta del nicho
-| Anunciante | Precio | Ancla | Combo/2x1 | Envío | Contraentrega | Regalo | Garantía | Urgencia | Destino |
-Precio típico y rango · la oferta más agresiva · la que más se repite.
-
-## 10. Huecos
-Ángulos que nadie usa, dolores (de TikTok o del dossier) que nadie toca, promesas que todos repiten, oferta que nadie da.
-
-## 11. Recomendación para testear
-- 2–3 ángulos, cada uno con: hipótesis, gancho de ejemplo, formato (estático y video) y la promesa del hero que lo continúa.
-- Oferta sugerida frente a la del mercado.
-- Qué NO copiar (claims riesgosos o médicos, lo que ya está quemado).
+## 6. Qué testear
+2–3 variantes, cada una con: ángulo, gancho de ejemplo, promesa del hero, oferta y formato (estático y video).
+Qué NO copiar (claims riesgosos o médicos, lo que ya está quemado).
 ```
-En el chat, presenta solo el resumen, la tabla de ángulos, los fondos de oferta y la recomendación. Si el usuario lo quiere para el equipo, publícalo como artifact con las capturas.
+En el chat, presenta solo el veredicto, la tabla de productos (una línea por ficha), la estrategia de entrada y qué testear. Si el usuario lo quiere para el equipo, publícalo como artifact con las capturas.
 
 ## Cómo se conecta con `landing-producto`
 - La Fase 0 de `landing-producto` usa el mapa: va al `dossier.md` (competencia) y al brief (ángulos, oferta, qué promete el anuncio). No se vuelve a revisar Meta.
