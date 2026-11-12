@@ -121,3 +121,63 @@ Incluye la Guía Noches en Calma, un bono del 10% para tu próxima compra y 60 d
 
 **Título:** Estrellas, no pantallas
 **Descripción:** Uno para tu bebé y otro para regalar
+
+---
+
+## BOFU 1 · Oferta completa + reversión de riesgo (retargeting a quien vio la landing)
+**Hipótesis:** quien ya visitó la landing compra si ve todo lo que recibe y que no corre ningún riesgo.
+
+**Hook**
+Ya viste cómo se llena la pared de estrellas.
+Ya escogiste el modelo que te gustó.
+Lo único que falta es que llegue a tu casa antes de Navidad.
+
+**Cuerpo**
+Esto es lo que recibes con tu peluche de calma:
+
+🧸 El peluche de 35 cm en el modelo que elijas: conejo, unicornio, dinosaurio o pingüino.
+✨ Proyector de estrellas, luz nocturna y música para dormir, con pilas incluidas.
+📖 La Guía Noches en Calma: la rutina para dormir, paso a paso.
+🎁 Un bono del 10% para tu próxima compra.
+🛡️ 60 días de garantía: si presenta un daño de fábrica, te lo cambiamos o te devolvemos tu dinero.
+
+Y no pagas nada por adelantado: pagas cuando lo recibes, con envío gratis a toda Colombia.
+
+Las fechas de diciembre llenan las transportadoras. Pídelo con tiempo para que esté en casa antes de Navidad.
+
+**CTA**
+👉 Toca «Comprar» y asegura el tuyo antes de Navidad.
+
+**Título:** Tu peluche de calma te espera
+**Descripción:** Llega a tiempo para Navidad
+
+---
+
+## BOFU 2 · Pack x2 (subir el valor del pedido)
+**Hipótesis:** mostrar el ahorro real del x2 y su razón de uso (uno para tu bebé y otro para regalar) sube la proporción de pedidos de 2.
+
+**Hook**
+Una mamá lo pidió para su hija.
+A la semana volvió por otro para el bebé de su hermana.
+Si lo vas a regalar, mejor pídelos juntos desde el principio.
+
+**Cuerpo**
+Con el pack de 2 peluches de calma, cada uno te queda en $119.950 en vez de $139.900: ahorras $39.900.
+
+Puedes escoger el mismo modelo o dos distintos:
+🐰 Conejo · 🦄 Unicornio · 🦖 Dinosaurio · 🐧 Pingüino
+
+Ideas para tu segundo peluche:
+🎄 El regalo de Navidad del sobrino o del nieto.
+🎀 El regalo del baby shower que sí se usa.
+🏡 Uno para la casa de la abuela, para que la rutina de dormir sea la misma allá.
+
+Los dos traen proyector de estrellas, música para dormir y pilas incluidas. Además recibes la Guía Noches en Calma, el bono del 10% y 60 días de garantía por daños de fábrica.
+
+Pagas al recibir y el envío es gratis.
+
+**CTA**
+👉 Toca «Comprar», elige el pack de 2 y escoge tus modelos.
+
+**Título:** Uno para ti y otro para regalar
+**Descripción:** Elige 2 modelos
