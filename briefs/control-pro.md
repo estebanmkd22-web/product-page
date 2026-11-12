@@ -1,5 +1,5 @@
 # Brief · Control Pro inalámbrico compatible con Nintendo Switch
-Tienda: Tu espacio Market (CO) · Fecha: 2026-11-12 · Estado: borrador
+Tienda: Tu espacio Market (CO) · Fecha: 2026-11-12 · Estado: **confirmado** (2026-11-12)
 
 Fuente de cada dato:
 - **[Usuario]**: lo dijo el dueño.
@@ -56,17 +56,17 @@ Fuente de cada dato:
 | 3 | **"De a dos, por menos que un Pro original"** | Dolor #3 + oferta x2 | Ideal para el pack y para Navidad. Lo usaría como el ángulo de la oferta, no del hero. |
 | 4 | **"Todo lo del Pro (NFC, vibración HD, 40 h) sin pagar $340.000"** | Objeción #1 + precio | Es la **I** de ATI (lo específico) y va en el subtítulo y los bullets. |
 
-- **Hipótesis:** "Creemos que el jugador colombiano con Switch compra más con un hero que nombra el drift del Joy-Con y le muestra un control con todo lo del Pro por la mitad del precio, porque es el dolor que ya vivió y la duda que lo frena. Lo sabremos si más del 50 % pasa del hero en Clarity con al menos 200 visitantes y si el pack x2 supera el 30 % de los pedidos."
-- **Ángulo principal:** **lo decides tú.** Mi recomendación: el 1 en el hero, el 4 en el subtítulo y los bullets, y el 3 en la oferta.
+- **Hipótesis:** "Creemos que quien juega Switch, y quien se lo regala, compra más con un hero que nombra en palabras simples el control que se daña y se mueve solo, y le muestra un control que se siente como el de marca por la mitad del precio. Lo sabremos si más del 50 % pasa del hero en Clarity con al menos 200 visitantes."
+- **Ángulo principal (elegido por el usuario, 2026-11-12):** **1 · "Se acabó el control que se mueve solo"**, en lenguaje sencillo, para quien juega y para quien regala. Peleas por el control (ángulo 2) y manos cansadas (ángulo 3) van como beneficios más abajo. Lo técnico va abajo y traducido: NFC → funciona con figuras amiibo; vibración HD → sientes cada golpe; 40 h → dura semanas sin cargar. Ancla: "se siente como el de marca, por la mitad de lo que cuesta ese".
 
 ## 5. Oferta
 - **Precio:** $179.900, ya con el 35 % de descuento de Black Friday. [Usuario]
-- **Precio tachado:** $276.800 solo si de verdad se vendió a ese precio. **[Confirmar]** Si no, el ancla es el Pro original ($339.900) o un par de Joy-Con (~$343.000). [Investigación]
+- **Precio tachado:** $276.800 (precio real anterior; con el 35 % de Black Friday queda en $179.900). [Usuario] Ancla extra: el de marca cuesta ~$340.000 [Investigación].
 - **Oferta:** solo 1 unidad; no hay pack x2. [Usuario]
 - **Garantía:** 90 días, con devolución del dinero. [Usuario]
 - **Envío y pago:** envío gratis, pago contraentrega. [Usuario]
 - **Costo y margen:** **[opcional]**, para saber si cabe un bono.
-- **⚠️ Ojo con el precio:** los compatibles en Colombia van de $40.000 a $117.000. A $179.900 hay que **probar en la landing** que este trae todo lo del Pro (NFC, vibración HD, giroscopio, 40 h) y respaldarlo con la garantía. Sin eso, el cliente lo compara con uno de $90.000.
+- **⚠️ Ojo con el precio:** los compatibles en Colombia van de $40.000 a $117.000. A $179.900, la landing tiene que mostrar que este se siente y funciona como el de marca (figuras amiibo, vibración, movimiento, batería larga) y respaldarlo con la devolución del dinero.
 - **Black Friday:** hasta el 30 de noviembre. [Usuario] Es una urgencia real.
 
 ## 6. Prueba y confianza
