@@ -157,9 +157,9 @@ Las fechas de diciembre llenan las transportadoras. Pídelo con tiempo para que 
 **Hipótesis:** mostrar el ahorro real del x2 y su razón de uso (uno para tu bebé y otro para regalar) sube la proporción de pedidos de 2.
 
 **Hook**
-Una mamá lo pidió para su hija.
-A la semana volvió por otro para el bebé de su hermana.
-Si lo vas a regalar, mejor pídelos juntos desde el principio.
+Lo ibas a pedir para regalar esta Navidad.
+Pero el pequeño de tu casa también merece su momento de calma.
+Con el pack de 2 te alcanza para los dos.
 
 **Cuerpo**
 Con el pack de 2 peluches de calma, cada uno te queda en $119.950 en vez de $139.900: ahorras $39.900.
