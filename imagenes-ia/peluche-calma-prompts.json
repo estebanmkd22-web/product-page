@@ -1,0 +1,200 @@
+{
+  "version": 2,
+  "landing": "Peluche de calma · proyector de estrellas",
+  "avatar": "hogar-01",
+  "referencia_archivo": "imagenes/peluche-calma/producto.png",
+  "ficha": {
+    "escenario": "Cuarto infantil de un apartamento colombiano: paredes claras, mesa de noche o repisa de madera clara, cobija tejida, cuna o cama pequeña al fondo. Ordenado pero vivido.",
+    "luz": "Penumbra cálida de noche: la luz principal apagada y una luz tenue que viene del panel de la barriga del peluche; estrellas y puntos de colores (rosa, lila, azul, verde) proyectados suavemente en la pared. Foto realista tipo celular de buena calidad, no de estudio.",
+    "paleta": "Lila noche, rosa pastel, blanco lavanda y azul profundo, con los colores de las estrellas. Combina con el lila (#5b4b9a) y el rosa coral (#d9547f) de la landing.",
+    "estilo": "Fotografía realista, cálida y tranquila; nada de render 3D ni de ilustración."
+  },
+  "producto": "Peluche de 35 cm de alto, suave y esponjoso, con un panel redondo y translúcido en la barriga que se ilumina y proyecta estrellas de colores. Debe verse idéntico a la foto adjunta del modelo indicado en la escena (forma, colores, orejas, ojos, cuernos o detalles): sin piezas ni accesorios de más, sin logos ni marcas.",
+  "reglas": "Sin textos, letreros ni logos dentro de la imagen. Sin marcas de terceros. Manos y dedos naturales. El peluche nunca va dentro de la cuna con un bebé: siempre en la mesa de noche, una repisa o en brazos de alguien despierto. Los niños, si aparecen, en pijama, en una escena familiar tranquila.",
+  "espacios": {
+    "hero-oferta.imagen_1": {
+      "que": "Atención. La más importante: el peluche grande encendido y la pared llena de estrellas. En un segundo se entiende qué es (un peluche), qué hace (estrellas en la pared) y para qué (dormir).",
+      "principal": true,
+      "producto": true, "persona": false,
+      "escena": "El peluche modelo unicornio, encendido, en primer plano sobre una mesa de noche de madera clara, ocupando entre el 55 y el 65 % del encuadre, completo y nítido, en ángulo de tres cuartos. La barriga brilla suave y detrás la pared del cuarto está llena de estrellas de colores proyectadas. Al fondo, desenfocada, una cuna vacía con una cobija doblada. Deja el tercio superior más despejado para el titular.",
+      "textos": ["Estrellas en la pared", "Música suave", "Luz tenue"],
+      "variantes": [
+        { "nombre": "B", "escena": "Las manos de una mujer ponen el peluche unicornio encendido en una repisa de madera junto a un árbol de Navidad pequeño con luces cálidas; la pared de atrás está llena de estrellas de colores. El peluche ocupa más de la mitad del encuadre, completo y nítido.", "textos": ["El regalo que sí se usa", "Cada noche"] },
+        { "nombre": "C", "escena": "Los 4 modelos (conejo, unicornio, dinosaurio y pingüino azul con barriga blanca y pico amarillo) sentados en fila sobre una repisa de madera, todos encendidos, con la pared de atrás llena de estrellas de colores. Plano frontal, los 4 completos y nítidos.", "textos": ["Su compañero de noche", "4 modelos"] }
+      ],
+      "historial": []
+    },
+    "hero-oferta.imagen_2": {
+      "que": "Interés. Comparativa del dolor resuelto: la hora de dormir con pantalla y luz fuerte frente a la calma de las estrellas.",
+      "producto": true, "persona": true,
+      "escena": "Imagen dividida en dos lados con una línea vertical suave. Mismo cuarto, mismo encuadre de plano medio en los dos lados.",
+      "persona_accion": "En los dos lados la misma mujer sostiene en brazos a un niño pequeño en pijama, de espaldas a la cámara o de perfil (la cara del niño no se ve de frente).",
+      "comparativa": "Lado izquierdo: la luz blanca del techo prendida y un celular brillando en la mano de la mujer con un video; ella se ve cansada. Lado derecho: el cuarto en penumbra, estrellas de colores en la pared, el peluche unicornio encendido en la mesa de noche y ella tranquila, meciendo al niño.",
+      "textos": ["No es un juguete, es calma", "Pantalla y luz fuerte", "Estrellas suaves"],
+      "historial": []
+    },
+    "hero-oferta.imagen_3": {
+      "que": "Deseo. Mecanismo: el panel de la barriga y todo lo que hace, con etiquetas.",
+      "producto": true, "persona": false,
+      "escena": "Primer plano del peluche modelo pingüino (azul con barriga blanca y pico amarillo) encendido sobre una cobija tejida; el panel de la barriga brilla y se ve el haz de luz saliendo hacia la pared, donde aparecen las estrellas de colores. El peluche ocupa más de la mitad del encuadre. Espacio libre a un lado para las etiquetas.",
+      "textos": ["Luz y música en su barriguita", "Estrellas de colores", "Música de cuna", "Ruido blanco y naturaleza"],
+      "historial": []
+    },
+    "hero-oferta.imagen_4": {
+      "que": "Comparación frente a la alternativa: el juguete que se queda guardado frente al regalo que se usa cada noche.",
+      "producto": true, "persona": false,
+      "escena": "Imagen dividida en dos lados con una línea vertical suave, mismo estilo de foto en ambos.",
+      "comparativa": "Lado izquierdo: una caja de cartón abierta en el fondo de un clóset con juguetes de plástico de colores apagados y olvidados, luz fría y plana. Lado derecho: el peluche modelo conejo encendido en una mesa de noche, con estrellas de colores en la pared, luz cálida.",
+      "textos": ["El regalo que sí se usa", "Otro juguete guardado", "Se usa cada noche"],
+      "historial": []
+    },
+    "hero-oferta.imagen_5": {
+      "que": "Transformación en uso real: el momento tranquilo de la noche, mamá e hijo mirando las estrellas.",
+      "producto": true, "persona": true,
+      "escena": "Plano medio en un cuarto infantil en penumbra. Una mecedora junto a la ventana; las estrellas de colores llenan la pared y el techo. El peluche modelo dinosaurio, encendido, en la repisa de al lado, nítido y bien visible.",
+      "persona_accion": "La mujer, sentada en la mecedora, sostiene en brazos a un niño de unos 2 años en pijama; los dos miran hacia las estrellas de la pared (el niño de perfil o de espaldas). Ella sonríe tranquila.",
+      "textos": ["Nuestro momento de la noche", "Sin pantallas"],
+      "historial": []
+    },
+    "hero-oferta.imagen_6": {
+      "que": "Deseo + versatilidad: los 4 modelos y la escala de 35 cm, en ambiente de Navidad.",
+      "producto": true, "persona": false,
+      "escena": "Una niña de unos 3 años, en pijama, sentada en una alfombra junto a un árbol de Navidad con luces cálidas, abraza el peluche modelo dinosaurio encendido (la niña de perfil, con el pelo cubriendo parte de la cara). En la repisa de atrás, sentados en fila, el conejo, el unicornio y el pingüino azul, también encendidos. La niña da la escala del peluche de 35 cm.",
+      "textos": ["Uno para cada pequeño", "Conejo", "Unicornio", "Dinosaurio", "Pingüino"],
+      "historial": []
+    },
+    "grid-dolores.item1": {
+      "que": "Dolor 1: arrullar en brazos cada noche y terminar agotada. Sin el producto y sin texto.",
+      "producto": false, "persona": true,
+      "escena": "De noche, con la luz del techo prendida, en un cuarto infantil. Plano medio.",
+      "persona_accion": "La mujer camina de un lado a otro arrullando a un bebé envuelto en una cobija (el bebé de espaldas); ella se ve cansada, con ojeras suaves y el pelo recogido de forma desordenada.",
+      "historial": []
+    },
+    "grid-dolores.item2": {
+      "que": "Dolor 2: el celular con videos a la hora de dormir. Sin el producto y sin texto.",
+      "producto": false, "persona": false,
+      "escena": "Primer plano de las manos de un niño pequeño en pijama sobre una cama, sosteniendo un celular con la pantalla brillante (la pantalla solo con colores borrosos, sin imágenes reconocibles ni texto). El brillo azul de la pantalla ilumina la cobija en un cuarto oscuro.",
+      "historial": []
+    },
+    "grid-dolores.item3": {
+      "que": "Dolor 3: una lámpara normal alumbra pero no acompaña. Sin el producto y sin texto.",
+      "producto": false, "persona": false,
+      "escena": "Una lámpara de mesa común con luz blanca fuerte encendida sobre la mesa de noche de un cuarto infantil; la luz plana y dura deja la pared vacía y sin gracia. Cama pequeña desordenada al lado. Ambiente frío.",
+      "historial": []
+    },
+    "grid-dolores.item4": {
+      "que": "Dolor 4: el juguete que se queda guardado después de abrirlo. Sin el producto y sin texto.",
+      "producto": false, "persona": false,
+      "escena": "Un juguete de plástico de colores todavía en su caja, sin marcas visibles, guardado en el estante alto de un clóset junto a otras cajas, con un poco de polvo. Luz fría de día.",
+      "historial": []
+    },
+    "galeria-ideas.idea1": {
+      "que": "Transformación: a la hora de dormir, estrellas en la pared. Lleva texto encima en la landing: tercio inferior simple y más oscuro.",
+      "producto": true, "persona": false,
+      "escena": "El peluche unicornio encendido en la mesa de noche junto a una cama pequeña tendida con cobija tejida; estrellas de colores en la pared y el techo. Plano horizontal amplio. Tercio inferior simple y más oscuro.",
+      "historial": []
+    },
+    "galeria-ideas.idea2": {
+      "que": "Uso de día: la siesta de la tarde. Tercio inferior simple y más oscuro.",
+      "producto": true, "persona": false,
+      "escena": "De tarde, con las cortinas cerradas y luz suave filtrándose; el peluche conejo encendido en una repisa junto a una cuna con un móvil de tela, cobija doblada. Plano horizontal. Tercio inferior simple y más oscuro.",
+      "historial": []
+    },
+    "galeria-ideas.idea3": {
+      "que": "Navidad: debajo del árbol. Tercio inferior simple y más oscuro.",
+      "producto": true, "persona": false,
+      "escena": "El peluche dinosaurio encendido debajo de un árbol de Navidad con luces cálidas, entre regalos envueltos en papel sin marcas; las estrellas del peluche se mezclan con las luces del árbol en la pared. Plano horizontal. Tercio inferior simple y más oscuro.",
+      "historial": []
+    },
+    "galeria-ideas.idea4": {
+      "que": "Baby shower: el regalo para el bebé que viene. Tercio inferior simple y más oscuro.",
+      "producto": true, "persona": false,
+      "escena": "Mesa de un baby shower con decoración en tonos pastel (globos rosa y lila, flores, cajitas de regalo sin marcas); en el centro, el peluche pingüino azul encendido como regalo principal. Plano horizontal. Tercio inferior simple y más oscuro.",
+      "historial": []
+    },
+    "galeria-ideas.idea5": {
+      "que": "En la casa de la abuela: la misma rutina también allá (razón del x2). Tercio inferior simple y más oscuro.",
+      "producto": true, "persona": false,
+      "escena": "Un cuarto de casa de abuela colombiana: cama con colcha tejida, mesa de noche de madera oscura con un portarretratos sin fotos reconocibles y una figura de porcelana; el peluche unicornio encendido proyecta estrellas en la pared. Plano horizontal. Tercio inferior simple y más oscuro.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen1": {
+      "que": "Selector de modelo: conejo.",
+      "producto": true, "persona": false,
+      "escena": "El peluche modelo conejo encendido, de frente, sentado en una repisa de madera clara de un cuarto infantil en penumbra, completo y nítido, ocupando el 70 % del encuadre; estrellas de colores suaves en la pared de atrás.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen2": {
+      "que": "Selector de modelo: unicornio.",
+      "producto": true, "persona": false,
+      "escena": "El peluche modelo unicornio encendido, de frente, sentado en una repisa de madera clara de un cuarto infantil en penumbra, completo y nítido, ocupando el 70 % del encuadre; estrellas de colores suaves en la pared de atrás.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen3": {
+      "que": "Selector de modelo: dinosaurio.",
+      "producto": true, "persona": false,
+      "escena": "El peluche modelo dinosaurio encendido, de frente, sentado en una repisa de madera clara de un cuarto infantil en penumbra, completo y nítido, ocupando el 70 % del encuadre; estrellas de colores suaves en la pared de atrás.",
+      "historial": []
+    },
+    "carrusel-imagenes.imagen4": {
+      "que": "Selector de modelo: pingüino.",
+      "producto": true, "persona": false,
+      "escena": "El peluche modelo pingüino (azul con barriga blanca y pico amarillo) encendido, de frente, sentado en una repisa de madera clara de un cuarto infantil en penumbra, completo y nítido, ocupando el 70 % del encuadre; estrellas de colores suaves en la pared de atrás.",
+      "historial": []
+    },
+    "problemas-filas.fila1": {
+      "que": "Cómo funciona: el proyector de estrellas.",
+      "producto": true, "persona": false,
+      "escena": "Vista lateral del peluche unicornio encendido en la mesa de noche, con el haz de luz saliendo del panel de la barriga hacia la pared llena de estrellas de colores.",
+      "historial": []
+    },
+    "problemas-filas.fila2": {
+      "que": "Cómo funciona: la música delicada.",
+      "producto": true, "persona": false,
+      "escena": "Primer plano del panel iluminado de la barriga del peluche pingüino azul, con una mano adulta tocando suavemente el panel para prenderlo; brillo lila suave.",
+      "historial": []
+    },
+    "problemas-filas.fila3": {
+      "que": "Cómo funciona: la luz nocturna tenue.",
+      "producto": true, "persona": false,
+      "escena": "El cuarto infantil en total penumbra, iluminado solo por el brillo cálido y tenue del peluche conejo encendido en la mesa de noche; se distingue la cama y la cobija.",
+      "historial": []
+    },
+    "problemas-filas.fila4": {
+      "que": "Cómo funciona: 35 cm de alto, suave para abrazar.",
+      "producto": true, "persona": false,
+      "escena": "El peluche dinosaurio sentado en la mesa de noche junto a una lámpara pequeña apagada y un libro de cuentos, para que se note su tamaño de 35 cm; textura suave y esponjosa visible.",
+      "historial": []
+    },
+    "pasos.paso1": {
+      "que": "Paso 1: ponlo en la mesa de noche, mirando hacia la pared.",
+      "producto": true, "persona": false,
+      "escena": "Unas manos adultas colocan el peluche unicornio apagado sobre la mesa de noche, girado hacia la pared; cuarto infantil con luz tenue de lámpara.",
+      "historial": []
+    },
+    "pasos.paso2": {
+      "que": "Paso 2: prende la luz y la música desde la barriguita.",
+      "producto": true, "persona": false,
+      "escena": "Primer plano de un dedo adulto presionando el panel de la barriga del peluche unicornio, que se enciende con luz rosa y empieza a proyectar estrellas.",
+      "historial": []
+    },
+    "pasos.paso3": {
+      "que": "Paso 3: apaga la luz grande y disfruten el momento.",
+      "producto": true, "persona": false,
+      "escena": "Una mano adulta apaga el interruptor de la luz en la pared del cuarto; la pared se llena de estrellas de colores que vienen del peluche unicornio encendido en la mesa de noche, visible en la imagen.",
+      "historial": []
+    },
+    "comparativa.imagen_a": {
+      "que": "Comparativa: foto del peluche (columna «Peluche de calma»). Ideal con fondo transparente o liso.",
+      "producto": true, "persona": false,
+      "escena": "El peluche unicornio encendido, de frente, completo y centrado, sobre fondo liso blanco lavanda, con un brillo suave del panel.",
+      "historial": []
+    },
+    "comparativa.imagen_b": {
+      "que": "Comparativa: el celular (columna «El celular»). Opcional.",
+      "producto": false, "persona": false,
+      "escena": "Un celular genérico sin marcas, de frente, con la pantalla encendida mostrando solo colores brillantes borrosos (sin imágenes reconocibles ni texto), centrado sobre fondo liso blanco lavanda.",
+      "historial": []
+    }
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El regalo que sí se usa: calma a la hora de dormir",
+    "id": "hero-oferta.imagen_1",
+    "donde": "Imagen 1 (la principal)",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El regalo que sí se usa: calma a la hora de dormir",
+    "id": "hero-oferta.imagen_2",
+    "donde": "Imagen 2",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El regalo que sí se usa: calma a la hora de dormir",
+    "id": "hero-oferta.imagen_3",
+    "donde": "Imagen 3",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El regalo que sí se usa: calma a la hora de dormir",
+    "id": "hero-oferta.imagen_4",
+    "donde": "Imagen 4",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El regalo que sí se usa: calma a la hora de dormir",
+    "id": "hero-oferta.imagen_5",
+    "donde": "Imagen 5",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El regalo que sí se usa: calma a la hora de dormir",
+    "id": "hero-oferta.imagen_6",
+    "donde": "Imagen 6",
+    "n": 6
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cuando llega la noche, no buscas juguetes: buscas calma",
+    "id": "grid-dolores.item1",
+    "donde": "Tarjeta 1 · Arrullarlo en brazos",
+    "contexto": "Arrullarlo en brazos — Funciona, pero cada noche terminas agotada.",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cuando llega la noche, no buscas juguetes: buscas calma",
+    "id": "grid-dolores.item2",
+    "donde": "Tarjeta 2 · El celular con videos",
+    "contexto": "El celular con videos — La pantalla lo entretiene justo cuando debería calmarse.",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cuando llega la noche, no buscas juguetes: buscas calma",
+    "id": "grid-dolores.item3",
+    "donde": "Tarjeta 3 · Una lámpara normal",
+    "contexto": "Una lámpara normal — Alumbra, pero no acompaña ni calma.",
+    "n": 9
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Cuando llega la noche, no buscas juguetes: buscas calma",
+    "id": "grid-dolores.item4",
+    "donde": "Tarjeta 4 · Otro juguete más",
+    "contexto": "Otro juguete más — Lindo el día que lo abre; después se queda guardado.",
+    "n": 10
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Un regalo que se usa todas las noches",
+    "id": "galeria-ideas.idea1",
+    "donde": "Tarjeta 1 · A la hora de dormir",
+    "contexto": "A la hora de dormir — Estrellas en la pared y música suave mientras se calma.",
+    "n": 11
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Un regalo que se usa todas las noches",
+    "id": "galeria-ideas.idea2",
+    "donde": "Tarjeta 2 · La siesta de la tarde",
+    "contexto": "La siesta de la tarde — La misma música tranquila, también de día.",
+    "n": 12
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Un regalo que se usa todas las noches",
+    "id": "galeria-ideas.idea3",
+    "donde": "Tarjeta 3 · Debajo del árbol",
+    "contexto": "Debajo del árbol — El regalo que sí se usa después de abrirlo.",
+    "n": 13
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Un regalo que se usa todas las noches",
+    "id": "galeria-ideas.idea4",
+    "donde": "Tarjeta 4 · Para el bebé que viene",
+    "contexto": "Para el bebé que viene — Un regalo útil para la nueva rutina de la casa.",
+    "n": 14
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Un regalo que se usa todas las noches",
+    "id": "galeria-ideas.idea5",
+    "donde": "Tarjeta 5 · En la casa de la abuela",
+    "contexto": "En la casa de la abuela — La misma rutina para dormir, también allá.",
+    "n": 15
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Elige su compañero de noche",
+    "id": "carrusel-imagenes.imagen1",
+    "donde": "Imagen 1 · Conejo",
+    "contexto": "",
+    "n": 16
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Elige su compañero de noche",
+    "id": "carrusel-imagenes.imagen2",
+    "donde": "Imagen 2 · Unicornio",
+    "contexto": "",
+    "n": 17
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Elige su compañero de noche",
+    "id": "carrusel-imagenes.imagen3",
+    "donde": "Imagen 3 · Dinosaurio",
+    "contexto": "",
+    "n": 18
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Elige su compañero de noche",
+    "id": "carrusel-imagenes.imagen4",
+    "donde": "Imagen 4 · Pingüino",
+    "contexto": "",
+    "n": 19
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todo lo que necesita",
+    "id": "problemas-filas.fila1",
+    "donde": "Fila 1 · Proyector de estrellas",
+    "contexto": "Proyector de estrellas — Estrellas de colores que se proyectan suavemente en la pared.",
+    "n": 20
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todo lo que necesita",
+    "id": "problemas-filas.fila2",
+    "donde": "Fila 2 · Música delicada",
+    "contexto": "Música delicada — Canciones de cuna, ruido blanco y sonidos de la naturaleza.",
+    "n": 21
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todo lo que necesita",
+    "id": "problemas-filas.fila3",
+    "donde": "Fila 3 · Luz nocturna",
+    "contexto": "Luz nocturna — Luz tenue para acompañar sin prender la lámpara grande.",
+    "n": 22
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Todo lo que necesita",
+    "id": "problemas-filas.fila4",
+    "donde": "Fila 4 · 35 cm de alto",
+    "contexto": "35 cm de alto — Grande en la mesa de noche, suave para abrazar.",
+    "n": 23
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así de fácil: 3 pasos",
+    "id": "pasos.paso1",
+    "donde": "Paso 1 · Ponlo en la mesa de noche",
+    "contexto": "Ponlo en la mesa de noche — O en una repisa, fuera de la cuna y mirando hacia la pared.",
+    "n": 24
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así de fácil: 3 pasos",
+    "id": "pasos.paso2",
+    "donde": "Paso 2 · Prende la luz y la música",
+    "contexto": "Prende la luz y la música — Desde su barriguita: estrellas en la pared y música suave.",
+    "n": 25
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así de fácil: 3 pasos",
+    "id": "pasos.paso3",
+    "donde": "Paso 3 · Apaga la luz grande",
+    "contexto": "Apaga la luz grande — Y disfruten juntos ese momento de tranquilidad.",
+    "n": 26
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Peluche de calma vs. la pantalla",
+    "id": "comparativa.imagen_a",
+    "donde": "Imagen (fondo transparente ideal)",
+    "n": 27
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Peluche de calma vs. la pantalla",
+    "id": "comparativa.imagen_b",
+    "donde": "Imagen (opcional)",
+    "n": 28
+  }
+]
