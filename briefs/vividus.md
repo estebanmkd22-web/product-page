@@ -1,5 +1,5 @@
 # Brief · Audífonos VIVIDUS 86 V2
-Tienda: Tu espacio Market (CO) · Fecha: 2026-11-12 · Estado: **borrador**
+Tienda: Tu espacio Market (CO) · Fecha: 2026-11-12 · Estado: **confirmado** (2026-11-12)
 
 Fuente de cada dato:
 - **[Usuario]**: lo dijo el dueño.
@@ -60,7 +60,7 @@ Fuente de cada dato:
   3. **"Lo que ves es lo que te llega"**: el dolor número 3, con contraentrega y fotos o videos reales.
   4. **Estatus o diseño** (el actual): estuche de cámara retro. Lo dejaría como el "algo distinto" (la I de ATI), no como el gancho.
 - **Hipótesis:** "Creemos que quien ya se quemó con audífonos baratos se queda y compra más con un hero que nombra ese dolor (a los 3 meses un lado deja de sonar) y lo resuelve con el respaldo de 90 días, que con el ángulo de estatus. Lo sabremos si el % que pasa del hero en Clarity sube de 32 % a más de 50 % con al menos 200 visitantes."
-- **Ángulo principal:** **[lo decide el usuario]**
+- **Ángulo principal (elegido por el usuario):** 1 · Sorpresa + "que no te pase otra vez": continuar la sorpresa del anuncio (parece una cámara, son tus audífonos) y quitar el dolor #1 (los baratos se dañan a los 3 meses) con el estuche que aguanta caídas y la garantía de 90 días.
 
 ## 5. Oferta (actual en vivo) [Verificado]
 - **Precio:** $79.900 (1 unidad), "precio Black hasta el 30 de nov, desde el 1 de dic vuelve a $109.900".
