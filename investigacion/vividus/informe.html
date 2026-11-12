@@ -1,0 +1,391 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investigación VIVIDUS</title><style>:root{--bg:#f6f7fb;--card:#fff;--tx:#1b2433;--tx2:#5a6475;--navy:#1f2f57;--ac:#2f6fdc;--borde:#dde3ee}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#11151d;--card:#1a202b;--tx:#e8ecf3;--tx2:#a5afbf;--navy:#9fb7ff;--ac:#7aa5ff;--borde:#2a3240}}
+:root[data-theme=dark]{--bg:#11151d;--card:#1a202b;--tx:#e8ecf3;--tx2:#a5afbf;--navy:#9fb7ff;--ac:#7aa5ff;--borde:#2a3240}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{color:var(--navy);font-size:26px}h2{color:var(--navy);margin-top:36px;padding-top:12px;border-top:2px solid var(--borde)}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:13.5px;display:block;overflow-x:auto}th,td{border:1px solid var(--borde);padding:8px;vertical-align:top;text-align:left}th{background:color-mix(in srgb,var(--ac) 12%,var(--card))}
+strong{color:var(--navy)}em{color:var(--tx2)}code{background:var(--card);padding:1px 4px;border-radius:4px}</style></head><body><main><h1>Investigación de mercado · Audífonos VIVIDUS 86 V2 · Colombia</h1>
+<p><em>Deep Research IA Commerce · 2026-11-12 · toda la voz del cliente es de la categoría: no hay reseñas externas de VIVIDUS.</em></p>
+<h2>1. Resumen ejecutivo</h2>
+<ul>
+<li><strong>Dolor número 1:</strong> los audífonos baratos se dañan en pocos meses; un lado deja de sonar o suena más bajo.</li>
+<li><strong>Deseo número 1:</strong> unos baratos que sí duren y suenen bien.</li>
+<li><strong>Consciencia dominante:</strong> consciente de la solución y del producto (ya compraron varios baratos).</li>
+<li><strong>Objeción más peligrosa:</strong> &quot;los baratos se dañan&quot;.</li>
+<li><strong>Territorio desocupado:</strong> durabilidad y respaldo (garantía de 90 días) y &quot;lo que ves es lo que te llega&quot;; nadie en los anuncios de Colombia le habla al que ya le fallaron los baratos.</li>
+<li><strong>Números:</strong> ~57 piezas útiles de 6 fuentes; MercadoLibre con datos insuficientes; Google Trends sin correr.</li>
+</ul>
+<h2>2. Producto base</h2>
+<p>Audífonos inalámbricos tipo earbuds VIVIDUS 86 V2 (Q86):</p>
+<ul>
+<li>estuche de carga con diseño de cámara retro y pantalla LED de batería;</li>
+<li>Bluetooth 5.4, resistentes al sudor y control táctil;</li>
+<li>20 h con el estuche (3 a 4 h seguidas por carga);</li>
+<li>colores café y verde.</li>
+</ul>
+<p>Oferta: $79.900 COP (pack x2 disponible), contraentrega, envío gratis y garantía de 90 días por daños de fábrica.</p>
+<p><strong>Estado:</strong> ya se vende en tuespaciomarket.com, pero <strong>no hay reseñas externas</strong> del producto. Por eso toda la voz del cliente es de la <strong>categoría</strong> (audífonos inalámbricos baratos).</p>
+<h2>3. Metodología y números reales</h2>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Herramienta</th>
+<th>Extraído</th>
+<th>Útil</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reddit (ES/EN/PT)</td>
+<td>Apify clearpath/reddit-search-scraper</td>
+<td>455</td>
+<td>~25</td>
+</tr>
+<tr>
+<td>YouTube (6 videos en español)</td>
+<td>Apify streamers/youtube-comments-scraper</td>
+<td>152 comentarios</td>
+<td>~18</td>
+</tr>
+<tr>
+<td>Amazon (TOZO A1, el más vendido barato)</td>
+<td>Apify junglee/amazon-reviews-scraper</td>
+<td>10 reseñas (límite del plan gratuito)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Meta Ad Library, Colombia (&quot;audífonos inalámbricos&quot;, frase exacta, activos)</td>
+<td>Apify curious_coder/facebook-ads-library-scraper</td>
+<td>60 anuncios / 41 textos distintos</td>
+<td>41</td>
+</tr>
+<tr>
+<td>Google, Colombia (preguntas y búsquedas relacionadas)</td>
+<td>Apify google-search-scraper</td>
+<td>4 búsquedas</td>
+<td>4</td>
+</tr>
+<tr>
+<td>MercadoLibre Colombia</td>
+<td>Apify saswave/mercadolibre-reviews-scraper</td>
+<td>1 reseña</td>
+<td><strong>datos insuficientes</strong></td>
+</tr>
+<tr>
+<td>Google Trends</td>
+<td>—</td>
+<td>—</td>
+<td>no se corrió</td>
+</tr>
+</tbody></table>
+<p>El actor de reseñas de Amazon que usa la skill (axesso) solo funciona en planes de pago, así que se usó el de respaldo, limitado a 10 reseñas. Costo total en Apify: unos USD 0,87.</p>
+<h2>4. Mapa de dolor (top 3)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Dolor</th>
+<th>Momento exacto</th>
+<th>Consecuencia</th>
+<th>Emoción</th>
+<th>Frase textual (fuente)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Se dañan rápido: a los pocos meses un lado deja de sonar o suena más bajo</strong></td>
+<td>Al mes 1 a 3; se cae una vez al suelo, o un día solo conecta uno</td>
+<td>Hay que volver a comprar; la plata se perdió</td>
+<td>Rabia, sensación de &quot;me tumbaron&quot;, resignación (&quot;lo barato sale caro&quot;)</td>
+<td>&quot;Ninguno. He probado desde 80lks, 150, 200, 300. Con todos he tenido problemas o no me duran más de par de meses.&quot; (r/Colombia, 2024-02-03) [Categoría] · &quot;A mí se me jodieron en UN plazo de 3 meses… se me cayeron al suelo y ahora uno suena más bajo que el otro&quot; (YouTube, Dorx · Temu) [Categoría] · &quot;cansado de fone que com 3 meses começa para de funcionar um dos lados&quot; (r/audiofiliabrasil, 2025-06-03) [Categoría]</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Comprar y volver a comprar: lo barato sale caro</strong></td>
+<td>Cada vez que se dañan y toca reponer</td>
+<td>Gastan más que si compraran unos buenos, sin plata para unos de marca</td>
+<td>Frustración, culpa por &quot;botar la plata&quot;</td>
+<td>&quot;I used to buy cheap earbuds in the $20 to $30 range… The problem is I kept replacing them. Battery got worse, one side stopped working&quot; (r/Frugal, 2026-05-20, 325 votos) [Categoría] · &quot;Died after 6 months — I guess you get what you paid for&quot; (Amazon TOZO A1, 1★, 2026-10-28) [Categoría]</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Llegan distintos a la foto / el estuche es lo primero que falla</strong></td>
+<td>Al recibirlos (no se ven como en la foto), o cuando se cae la cajita o se rompe la tapa</td>
+<td>Desconfianza de comprar por internet; el estuche deja de cargar y los audífonos quedan inservibles</td>
+<td>Desconfianza, decepción</td>
+<td>&quot;Se ven bien en las imágenes del vendedor, pero la verdad no pintan bien.&quot; (YouTube, Temu) · &quot;Los F9 se me cayó 1 vez y el estuche dejó de funcionar… sin el estuche pues F&quot; (YouTube) · &quot;lo primero en dañarse fue la bisagra de la tapita porque se quebró&quot; (YouTube, AliExpress) [Categoría]</td>
+</tr>
+</tbody></table>
+<h2>5. Dolores secundarios</h2>
+<ul>
+<li><strong>Se desconectan o solo conecta uno.</strong> &quot;only 3 months after purchase, the things came out of sync… Only one ear bud will connect&quot; (Amazon 1★, 2026-11-06). Google en Colombia: &quot;Se me desconecta un auricular Bluetooth&quot;, &quot;Por qué mis audífonos Bluetooth se pausan solos&quot;.</li>
+<li><strong>Batería que no dura o un lado se descarga antes.</strong> Google en Colombia: &quot;Por qué un audífono se descarga más rápido que el otro&quot;. &quot;only getting about 3 1/2 hours of charge out of the right earbud&quot; (Amazon 1★).</li>
+<li><strong>Se caen del oído al moverse o al entrenar.</strong> &quot;useless because they won&#39;t stay in your ears&quot; (Amazon 1★, 2025-05-16). En r/GYM: &quot;What earbuds… doesn&#39;t fall out of your ears when you sweat?&quot;</li>
+<li><strong>Micrófono malo para llamadas.</strong> &quot;solo para música, porque no va bien el micrófono&quot; (YouTube).</li>
+<li><strong>Miedo a perderlos o a que se los roben</strong> (Panamá y Chile). Lleva a comprar baratos.</li>
+</ul>
+<h2>6. Deseos</h2>
+<ol>
+<li><strong>Que me duren:</strong> &quot;algo que me acompañe en el día a día&quot; (r/CasualPT); &quot;me han durado 2 años y aún funcionan&quot; (YouTube, dicho como logro).</li>
+<li><strong>Buen sonido sin pagar marca:</strong> &quot;audífonos inalámbricos que suenen bien pero no tengo mucho presupuesto&quot; (r/Colombia).</li>
+<li><strong>Que se vean bien o distintos.</strong> El estuche con diseño tiene comunidad propia (r/airpods, r/galaxybuds &quot;My cute case&quot;), pero <strong>como deseo secundario, no como dolor</strong>. Ojo: ya existen &quot;audífonos de mini cámara&quot; en el mercado (&quot;yo tengo unos de mini cámara&quot;, YouTube), así que <strong>&quot;nadie más lo tiene&quot; no se puede sostener</strong>.</li>
+</ol>
+<h2>7. Objeciones</h2>
+<ol>
+<li><strong>&quot;Los baratos se dañan&quot;</strong>: es la más peligrosa. Es el dolor número 1 convertido en objeción.</li>
+<li><strong>&quot;¿Llegan como en la foto?&quot;</strong>: desconfianza de compra en línea, que el pago contraentrega reduce.</li>
+<li><strong>&quot;¿Suenan bien de verdad o es pura carcasa?&quot;</strong>: &quot;el problema es que así los hacen ver, y la calidad en sí son malas&quot; (YouTube).</li>
+<li><strong>&quot;¿La batería dura?&quot;</strong>: preguntas de Google en Colombia.</li>
+<li><strong>&quot;¿Funcionan con iPhone?&quot;</strong>: &quot;apple limita cualquier audífono que no sea de Apple&quot; (YouTube, 144 votos).</li>
+</ol>
+<h2>8. Objeciones logísticas (contraentrega)</h2>
+<ul>
+<li><strong>&quot;¿Llegan como en la foto?&quot;</strong>: la desconfianza más fuerte de la compra en línea en esta categoría. El pago contraentrega la baja, pero no la elimina.</li>
+<li><strong>&quot;Llegaron descargados&quot;</strong> (YouTube, AliExpress): explicar la primera carga evita reclamos y rechazos al recibir.</li>
+<li><strong>&quot;¿Y si se dañan?&quot;</strong>: la garantía de 90 días por daños de fábrica es un respaldo concreto que la competencia casi no comunica.</li>
+</ul>
+<h2>9. Lenguaje real de búsqueda (Google Colombia)</h2>
+<ul>
+<li><strong>Preguntas:</strong><ul>
+<li>&quot;¿Qué audífonos inalámbricos puedo comprar a buen precio?&quot;</li>
+<li>&quot;¿Por qué la batería de mis audífonos Bluetooth no dura?&quot;</li>
+<li>&quot;¿Qué hacer si un audífono se descarga más rápido que el otro?&quot;</li>
+<li>&quot;¿Cómo saber si mis audífonos Bluetooth están dañados?&quot;</li>
+<li>&quot;¿Por qué se apagan solos mis auriculares inalámbricos?&quot;</li>
+<li>&quot;¿Por qué se corta el audio de mis audífonos Bluetooth?&quot;</li>
+</ul>
+</li>
+<li><strong>Búsquedas relacionadas:</strong><ul>
+<li>&quot;Audífonos inalámbricos buenos y baratos Colombia&quot;</li>
+<li>&quot;Por qué un audífono se descarga más rápido que el otro&quot;</li>
+<li>&quot;Se me desconecta un auricular Bluetooth&quot;</li>
+<li>&quot;Por qué mis audífonos Bluetooth se pausan solos&quot;</li>
+<li>&quot;Audífonos inalámbricos Alkosto / Éxito&quot;</li>
+</ul>
+</li>
+</ul>
+<h2>10. Nivel de consciencia</h2>
+<ul>
+<li><strong>Consciencia:</strong> de la solución y del producto. Saben que existen audífonos inalámbricos baratos y ya compraron varios. El problema no es encontrar audífonos: es <strong>encontrar unos baratos que no les fallen</strong>.</li>
+</ul>
+<h2>11. Sofisticación y mecanismos</h2>
+<ul>
+<li><strong>Sofisticación:</strong> <strong>muy alta (etapa 4-5 de Schwartz).</strong> Todos los anuncios en Colombia repiten &quot;sonido increíble, Bluetooth 5.x, batería, cancelación de ruido, contraentrega&quot;. Repetir esas promesas no diferencia. Lo que puede diferenciar es el mecanismo o la identificación con el problema: &quot;ya me pasó que se dañaron&quot;.</li>
+<li><strong>Mecanismos a explorar (hipótesis):</strong><ul>
+<li>el respaldo de 90 días como prueba de que no son &quot;de los que se dañan&quot;;</li>
+<li>el estuche que se distingue como el &quot;algo distinto&quot;;</li>
+<li>la pantalla con el % de batería que avisa antes de quedarte sin música (la competencia ya la tiene, pero sin ese ángulo).</li>
+</ul>
+</li>
+</ul>
+<h2>12. Jobs to be done</h2>
+<ul>
+<li><strong>Funcional:</strong> escuchar música, videos y llamadas en el transporte, el trabajo o el gym sin cables.</li>
+<li><strong>Emocional:</strong> no sentir que botó la plata otra vez; tranquilidad de que no le van a fallar.</li>
+<li><strong>Social (secundario):</strong> que se vean bien o distintos al sacarlos.</li>
+</ul>
+<h2>13. Competencia en Meta (Colombia)</h2>
+<ul>
+<li><p><strong>Saturado:</strong></p>
+<ul>
+<li>combos y kits (smartwatch + audífonos + power bank, de $69.900 a $129.990);</li>
+<li>&quot;sonido increíble / premium&quot;;</li>
+<li>Bluetooth 5.x;</li>
+<li>&quot;diseño que todos buscan&quot;;</li>
+<li>&quot;pantalla digital&quot; en el estuche (VyAcompras ya lo anuncia);</li>
+<li>precio bajo (desde $34.900, y por mayor desde $12.900);</li>
+<li>envío gratis y contraentrega.</li>
+</ul>
+</li>
+<li><p><strong>Desocupado (oportunidad):</strong></p>
+<ul>
+<li><strong>durabilidad y respaldo:</strong> nadie le habla al que ya le fallaron los baratos;</li>
+<li><strong>&quot;lo que ves es lo que te llega&quot;</strong>;</li>
+<li><strong>un estuche que aguante</strong> (la cajita y la bisagra son lo primero que falla, según la voz del cliente). Solo se puede usar si el usuario confirma que el estuche de VIVIDUS es resistente.</li>
+</ul>
+<p>VIVIDUS tiene <strong>garantía de 90 días por daños de fábrica</strong>, que la competencia casi no menciona.</p>
+</li>
+<li><p><strong>Precio de referencia:</strong> audífonos &quot;de segunda y tercera generación&quot; desde $25.000 a $60.000; JBL de imitación en combos a $79.900. VIVIDUS a $79.900 está en la parte media-alta de los baratos.</p>
+</li>
+</ul>
+<h2>14. Saturación</h2>
+<ul>
+<li><strong>Muy alta en promesas genéricas</strong> (&quot;sonido increíble&quot;, Bluetooth, batería, envío gratis, contraentrega) y en <strong>combos con smartwatch</strong>.</li>
+<li><strong>&quot;Pantalla digital&quot; en el estuche</strong> ya la anuncia al menos un competidor (VyAcompras, 3 copias activas).</li>
+<li><strong>Baja</strong> en durabilidad, respaldo o garantía y en &quot;llegan como en la foto&quot;.</li>
+</ul>
+<h2>15. Precio</h2>
+<ul>
+<li><strong>Anuncios en Colombia:</strong> $34.900 (audífonos solos), $60.000 (&quot;segunda y tercera generación&quot;), $69.900 a $129.990 (combos con smartwatch) y $149.900 (otros inalámbricos).</li>
+<li><strong>Por mayor:</strong> desde $12.900.</li>
+<li><strong>VIVIDUS a $79.900:</strong> está en la parte media-alta de los baratos. El precio solo no gana; tiene que ganar la confianza (que duren) o el diseño.</li>
+</ul>
+<h2>16. Ficha técnica</h2>
+<ul>
+<li>Bluetooth 5.4.</li>
+<li>Resistentes al sudor.</li>
+<li>Control táctil (llamadas y canciones).</li>
+<li>Estuche de cámara retro con pantalla LED de batería.</li>
+<li>20 h con el estuche; de 3 a 4 h de música seguida por carga.</li>
+<li>Colores café y verde.</li>
+<li>Garantía de 90 días por daños de fábrica.</li>
+<li><strong>No se debe prometer:</strong> IPX8, cancelación de ruido ni &quot;nadie más lo tiene&quot;.</li>
+</ul>
+<h2>17. Brechas y oportunidades</h2>
+<ul>
+<li>El ángulo actual (estatus: &quot;todos tienen audífonos blancos, tú no&quot;) ataca un <strong>deseo secundario</strong>. El dolor que más se repite en español es <strong>&quot;los baratos no me duran / a los 3 meses un lado deja de sonar&quot;</strong>.</li>
+<li><strong>Hipótesis a probar:</strong> un hero que nombre ese dolor (&quot;cansado de comprar audífonos que a los 3 meses ya no sirven&quot;) y lo resuelva con la garantía de 90 días (y la resistencia del estuche, si se confirma) retiene más que el de estatus. El estuche retro se puede mantener como el &quot;algo distinto&quot; que despierta interés (la I de ATI), no como el dolor.</li>
+</ul>
+<h2>18. Claims permitidos y prohibidos</h2>
+<ul>
+<li><strong>Permitidos (con respaldo del brief):</strong><ul>
+<li>Bluetooth 5.4;</li>
+<li>resistentes al sudor;</li>
+<li>control táctil;</li>
+<li>estuche de cámara retro con pantalla de batería;</li>
+<li>20 h con el estuche, de 3 a 4 h seguidas por carga;</li>
+<li>garantía de 90 días por daños de fábrica;</li>
+<li>pago contraentrega;</li>
+<li>colores café y verde.</li>
+</ul>
+</li>
+<li><strong>Prohibidos o no sostenibles:</strong><ul>
+<li>&quot;nadie más lo tiene&quot; o &quot;único&quot; (existen audífonos de mini cámara);</li>
+<li>&quot;no se dañan&quot; o &quot;duran años&quot; (sin datos; usar la garantía de 90 días como respaldo concreto);</li>
+<li>&quot;calidad de sonido premium&quot; o comparaciones con AirPods sin prueba;</li>
+<li>&quot;+X clientes&quot; sin el dato real.</li>
+</ul>
+</li>
+</ul>
+<h2>19. Banco de citas textuales</h2>
+<table>
+<thead>
+<tr>
+<th>Cita</th>
+<th>Traducción</th>
+<th>Fuente y fecha</th>
+<th>Etiquetas</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&quot;Ninguno. He probado desde 80lks, 150, 200, 300. Con todos he tenido problemas o no me duran más de par de meses… Si va por audífonos baratos, compre de cable sencillo&quot;</td>
+<td>—</td>
+<td>r/Colombia, 2024-02-03</td>
+<td>Dolor #1 · intensidad alta · consciente de la solución · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;Quiero comprar unos audífonos inalámbricos que suenen bien pero no tengo mucho presupuesto&quot;</td>
+<td>—</td>
+<td>r/Colombia, 2024-02-03</td>
+<td>Deseo · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;A mí se me jodieron en UN plazo de 3 meses… se me cayeron al suelo y ahora uno suena más bajo que el otro, así que prefiero ya no usarlos&quot;</td>
+<td>—</td>
+<td>YouTube, &quot;Compré los audífonos más populares de Temu&quot; (47 votos)</td>
+<td>Dolor #1 · alta · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;Los F9 se me cayó 1 vez y el estuche dejó de funcionar, los audífonos sí funcionan pero sin el estuche pues F&quot;</td>
+<td>—</td>
+<td>YouTube, mismo video</td>
+<td>Dolor #3 · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;lo primero en dañarse fue la bisagra de la tapita porque se quebró&quot;</td>
+<td>—</td>
+<td>YouTube, &quot;Compré los audífonos más vendidos de AliExpress&quot;</td>
+<td>Dolor #3 · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;El problema con esos audífonos es que… así los hacen ver, y la calidad en sí son malas… Se ven bien en las imágenes del vendedor, pero la verdad no pintan bien.&quot;</td>
+<td>—</td>
+<td>YouTube, Temu</td>
+<td>Objeción · desconfianza · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;dicen que la cajita no dura nada&quot;</td>
+<td>—</td>
+<td>YouTube, AliExpress</td>
+<td>Dolor #3 · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;Yo tengo unos sin marca… solo para música, porque no va bien el micrófono&quot;</td>
+<td>—</td>
+<td>YouTube, Temu</td>
+<td>Dolor secundario · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;yo tengo unos de mini cámara y sí es incómodo limpiarlos en cada uso&quot;</td>
+<td>—</td>
+<td>YouTube, Temu</td>
+<td>Competencia: ya existen audífonos de &quot;mini cámara&quot; · [Categoría adyacente]</td>
+</tr>
+<tr>
+<td>&quot;Me han durado 2 años y aún funcionan… para ser baratos creo que dieron todo lo que podían&quot;</td>
+<td>—</td>
+<td>YouTube, Temu</td>
+<td>Deseo: que duren · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;I used to buy cheap earbuds in the $20 to $30 range and tell myself it was the frugal choice. The problem is I kept replacing them. Battery got worse, one side stopped working, the fit was uncomfortable, or the connection started acting weird.&quot;</td>
+<td>&quot;Compraba audífonos baratos de 20 a 30 dólares y me decía que era lo económico. El problema es que los seguía reemplazando: la batería empeoró, un lado dejó de funcionar, eran incómodos o la conexión fallaba.&quot;</td>
+<td>r/Frugal, 2026-05-20 (325 votos)</td>
+<td>Dolor #2 · alta · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;cansado de fone que com 3 meses começa para de funcionar um dos lados&quot;</td>
+<td>&quot;cansado de audífonos que a los 3 meses un lado deja de funcionar&quot;</td>
+<td>r/audiofiliabrasil, 2025-06-03</td>
+<td>Dolor #1 · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;Died after 6 months — I guess you get what you paid for&quot;</td>
+<td>&quot;Se murieron a los 6 meses: supongo que recibes lo que pagas&quot;</td>
+<td>Amazon TOZO A1, 1★, 2026-10-28</td>
+<td>Dolor #2 · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;only 3 months after purchase, the things came out of sync… Only one ear bud will connect to the phone at a time&quot;</td>
+<td>&quot;a solo 3 meses de comprarlos se desincronizaron… solo conecta un audífono a la vez&quot;</td>
+<td>Amazon TOZO A1, 1★, 2026-11-06</td>
+<td>Dolor secundario · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;a few weeks in after purchase the left earbud stopped working completely&quot;</td>
+<td>&quot;a las pocas semanas el audífono izquierdo dejó de funcionar del todo&quot;</td>
+<td>Amazon TOZO A1, 1★, 2026-11-06</td>
+<td>Dolor #1 · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;Excellent sound quality, but useless because they won&#39;t stay in your ears&quot;</td>
+<td>&quot;Excelente sonido, pero inútiles porque no se quedan en el oído&quot;</td>
+<td>Amazon TOZO A1, 1★, 2025-05-16</td>
+<td>Dolor secundario · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;I&#39;m only getting about 3 1/2 hours of charge out of the right earbud&quot;</td>
+<td>&quot;solo me dura unas 3 horas y media la carga del audífono derecho&quot;</td>
+<td>Amazon TOZO A1, 1★, 2022-07-13</td>
+<td>Batería · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;Wireless earbuds chanting &#39;Battery Low&#39; every 30 seconds.&quot;</td>
+<td>&quot;Audífonos que repiten &#39;batería baja&#39; cada 30 segundos.&quot;</td>
+<td>r/hatethissmug, 2026-10-14 (406 votos)</td>
+<td>Molestia · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;What earbuds do you use that doesn&#39;t fall out of your ears when you sweat?&quot;</td>
+<td>&quot;¿Qué audífonos usan que no se caigan cuando sudan?&quot;</td>
+<td>r/GYM, 2023-08-09 (132 votos)</td>
+<td>Dolor secundario · [Categoría]</td>
+</tr>
+<tr>
+<td>&quot;I&#39;m also too scared to buy AirPods since I lost the last two pairs I bought&quot;</td>
+<td>&quot;Me da miedo comprar AirPods porque perdí los dos últimos pares&quot;</td>
+<td>r/HeadphoneAdvice, 2026-08-03</td>
+<td>Motivo para comprar baratos · [Categoría]</td>
+</tr>
+</tbody></table>
+</main></body></html>
