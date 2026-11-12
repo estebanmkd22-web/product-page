@@ -86,13 +86,15 @@ El proceso completo (hero → landing → kit de imágenes) está en `.claude/sk
 
 ## Investigación de la competencia local
 
-Antes de testear un producto, la skill `.claude/skills/espiar-mercado/SKILL.md` (`/espiar-mercado`) revisa cómo lo anuncia la competencia en Colombia o Guatemala. `NODE_USE_ENV_PROXY=1 node --no-warnings tools/espiar-mercado.mjs <modo> <producto> --pais CO "palabra 1" "palabra 2"`, todo vía Apify:
-- `palabras`: Google Trends (volumen comparado, tendencia, búsquedas relacionadas y en subida, regiones);
-- `anuncios`: anuncios activos en la biblioteca de Meta, TikTok Creative Center y TikTok orgánico, ordenados por señales de ganador (días activo, copias, CTR, vistas);
-- `creativos`: baja imágenes de estáticos y portadas de videos (justo después de `anuncios`);
-- `landings`: capturas en celular, texto, precios y ofertas de las landings de los anunciantes top.
+Antes de testear un producto, la skill `.claude/skills/espiar-mercado/SKILL.md` (`/espiar-mercado`) revisa cómo lo anuncia la competencia en Colombia o Guatemala, de lo barato a lo caro y con un plan aprobado antes de gastar. `NODE_USE_ENV_PROXY=1 node --no-warnings tools/espiar-mercado.mjs <modo> <producto> ...`, todo vía Apify:
+- `palabras`: Google Trends, para ver cómo nombra la gente el problema (volumen comparado, lo que sube, regiones);
+- `tiktok`: búsqueda orgánica de TikTok, para el vocabulario, los hashtags y sub-nichos, los ganchos y las dudas de los comentarios;
+- `plan`: matriz de consultas `término - modificador de oferta` (ej. `cinturilla - contra entrega`) con su costo; no gasta;
+- `anuncios`: corre el plan en la biblioteca de Meta, descarta lo que no comunica (no es del nicho, sin oferta, sin copy), da un veredicto por consulta (da para más, agotada, basura, vacía) y elige por variedad de oferta y formato;
+- `anunciante`: todos los anuncios activos de los anunciantes elegidos;
+- `creativos` y `landings`: imágenes de la selección y capturas, textos y ofertas de sus landings.
 
-Todo queda en `investigacion/<producto>/mercado/`, y Claude escribe ahí `mapa-mercado.md` con ángulos, dolores, ganchos, promesas, ofertas, huecos y los ángulos recomendados para testear.
+Claude escribe `investigacion/<producto>/mercado/mapa-mercado.md` con ángulos, dolores, ganchos, promesas, fondos de oferta, huecos y los ángulos recomendados para testear.
 
 ## Montaje automático en Shopify
 
