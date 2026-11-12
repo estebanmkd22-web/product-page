@@ -9,7 +9,7 @@ const [entrada, salida] = process.argv.slice(2);
 const pagina = JSON.parse(fs.readFileSync(path.resolve(entrada), 'utf8'));
 
 // Imágenes opcionales que no se generan: reemplazan un ícono, usan la foto del producto o serían fotos falsas de clientes.
-const OMITIR = { 'pp-iconos': ['imagen'], 'pp-oferta-tabs': ['imagen'], 'pp-resenas': ['foto'], 'pp-logo': ['imagen'] };
+const OMITIR = { 'pp-iconos': ['imagen'], 'pp-oferta-tabs': ['pack.imagen'], 'pp-resenas': ['foto'], 'pp-logo': ['imagen'] };
 // Formato fijo de las secciones que no tienen ajuste de proporción.
 const FIJO = { 'pp-problemas-filas': '1 / 1', 'pp-comparativa': '1 / 1' };
 const PIXELES = { '1 / 1': '1080 × 1080', '4 / 5': '1080 × 1350', '4 / 3': '1200 × 900', '3 / 4': '1080 × 1440', '9 / 16': '1080 × 1920', '16 / 9': '1920 × 1080', '3 / 2': '1200 × 800', '2 / 3': '1080 × 1620' };
@@ -38,7 +38,9 @@ for (const sec of pagina.secciones) {
   (sec.blocks || []).forEach((b, i) => {
     const bdef = (schema.blocks || []).find((x) => x.type === b.type);
     for (const d of bdef?.settings || []) {
-      if (d.type !== 'image_picker' || omitir.includes(d.id)) continue;
+      if (d.type !== 'image_picker' || omitir.includes(d.id) || omitir.includes(`${b.type}.${d.id}`)) continue;
+      // Las imágenes de los beneficios solo se usan en el estilo "Tarjetas".
+      if (sec.tipo === 'pp-oferta-tabs' && b.type === 'regalo' && sec.settings?.estilo_regalos !== 'tarjetas') continue;
       const s = b.settings || {};
       espacios.push({ ...base, id: `${clave}.${b.type}${i + 1}`, donde: `${bdef.name} ${i + 1}${s.titulo ? ` · ${texto(s.titulo)}` : s.etiqueta ? ` · ${texto(s.etiqueta)}` : ''}`, contexto: texto([s.titulo, s.texto, s.puntos].filter(Boolean).join(' — ')) });
     }

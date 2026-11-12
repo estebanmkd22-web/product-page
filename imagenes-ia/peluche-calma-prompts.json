@@ -271,6 +271,33 @@
       "persona": false,
       "escena": "Un celular genérico sin marcas, de frente, con la pantalla encendida mostrando solo colores brillantes borrosos (sin imágenes reconocibles ni texto), centrado sobre fondo liso blanco lavanda.",
       "historial": []
+    },
+    "oferta-tabs.regalo3": {
+      "que": "Beneficio 1 de la oferta: envío gratis (tarjeta con valor tachado de $23.000).",
+      "producto": false,
+      "persona": false,
+      "escena": "Imagen pequeña para una tarjeta de beneficio de la oferta, estilo foto de producto 3D suave y limpia, centrada, sobre fondo liso lila muy claro (#efe9f8) con sombra suave. Objeto grande, ocupando el 65 % del encuadre, con margen alrededor. Sin personas y sin el peluche. Una caja de cartón de envío cerrada, con cinta adhesiva y una pequeña etiqueta blanca sin texto, en ángulo de tres cuartos.",
+      "historial": []
+    },
+    "oferta-tabs.regalo4": {
+      "que": "Beneficio 2 de la oferta: bono del 10% para la próxima compra (tachado $13.990).",
+      "producto": false,
+      "persona": false,
+      "escena": "Imagen pequeña para una tarjeta de beneficio de la oferta, estilo foto de producto 3D suave y limpia, centrada, sobre fondo liso lila muy claro (#efe9f8) con sombra suave. Objeto grande, ocupando el 65 % del encuadre, con margen alrededor. Sin personas y sin el peluche. Una tarjeta de regalo lila con un lazo rosa coral, inclinada, con el número grande impreso en blanco.",
+      "textos": [
+        "10%"
+      ],
+      "historial": []
+    },
+    "oferta-tabs.regalo5": {
+      "que": "Beneficio 3 de la oferta: garantía de 60 días por daños de fábrica.",
+      "producto": false,
+      "persona": false,
+      "escena": "Imagen pequeña para una tarjeta de beneficio de la oferta, estilo foto de producto 3D suave y limpia, centrada, sobre fondo liso lila muy claro (#efe9f8) con sombra suave. Objeto grande, ocupando el 65 % del encuadre, con margen alrededor. Sin personas y sin el peluche. Un escudo de garantía lila con borde dorado y un check blanco, con una cinta rosa coral debajo donde va el texto.",
+      "textos": [
+        "60 días"
+      ],
+      "historial": []
     }
   }
 }

@@ -144,7 +144,8 @@
         "entrega": "Envío gratis a toda Colombia · Pídelo a tiempo para Navidad",
         "etiquetas_titulo": "Ideal para",
         "etiquetas": "Tu bebé, Navidad, Baby shower, La casa de la abuela",
-        "etiquetas_estilo": "chips"
+        "etiquetas_estilo": "chips",
+        "estilo_regalos": "tarjetas"
       },
       "blocks": [
         {
@@ -153,7 +154,7 @@
             "pestana": "1 peluche",
             "etiqueta": "Para tu bebé",
             "titulo": "Peluche de calma · proyector de estrellas",
-            "linea_regalo": "🎁 Guía + bono del 10% incluidos",
+            "linea_regalo": "🎁 Bono del 10% incluido",
             "detalle": "Elige el modelo",
             "precio": 139900,
             "cantidad": 1
@@ -166,7 +167,7 @@
             "destacar": "Uno para regalar",
             "etiqueta": "Uno para tu bebé y otro para regalar",
             "titulo": "2 Peluches de calma",
-            "linea_regalo": "🎁 Guía + bono del 10% incluidos",
+            "linea_regalo": "🎁 Bono del 10% incluido",
             "detalle": "Elige los 2 modelos · $119.950 c/u",
             "precio": 239900,
             "cantidad": 2,
@@ -179,25 +180,9 @@
             "insignia": "Gratis",
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
-          }
-        },
-        {
-          "type": "regalo",
-          "settings": {
-            "insignia": "Incluido",
-            "icono": "pago",
-            "titulo": "Pagas al recibir",
-            "texto": "Nada por adelantado"
-          }
-        },
-        {
-          "type": "regalo",
-          "settings": {
-            "insignia": "Gratis",
-            "icono": "manual",
-            "titulo": "Guía Noches en Calma",
-            "texto": "Tu rutina para dormir, paso a paso"
+            "texto": "A toda Colombia",
+            "valor_tachado": "$23.000",
+            "sello": "Envío gratis"
           }
         },
         {
@@ -206,16 +191,19 @@
             "insignia": "Gratis",
             "icono": "regalo",
             "titulo": "Bono del 10%",
-            "texto": "Para tu próxima compra"
+            "texto": "Para tu próxima compra",
+            "valor_tachado": "$13.990",
+            "sello": "Próxima compra"
           }
         },
         {
           "type": "regalo",
           "settings": {
-            "insignia": "Incluido",
+            "insignia": "Incluida",
             "icono": "escudo",
             "titulo": "Garantía 60 días",
-            "texto": "Cambio o devolución por daños de fábrica"
+            "texto": "Por daños de fábrica",
+            "sello": "Cambio o devolución"
           }
         }
       ]
