@@ -1,0 +1,285 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Investigación Control Pro</title><style>:root{--bg:#f6f7fb;--card:#fff;--tx:#1b2433;--tx2:#5a6475;--navy:#1f2f57;--ac:#2f6fdc;--borde:#dde3ee}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#11151d;--card:#1a202b;--tx:#e8ecf3;--tx2:#a5afbf;--navy:#9fb7ff;--ac:#7aa5ff;--borde:#2a3240}}
+:root[data-theme=dark]{--bg:#11151d;--card:#1a202b;--tx:#e8ecf3;--tx2:#a5afbf;--navy:#9fb7ff;--ac:#7aa5ff;--borde:#2a3240}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:960px;margin:0 auto;padding:24px 16px 64px}h1{color:var(--navy);font-size:26px}h2{color:var(--navy);margin-top:36px;padding-top:12px;border-top:2px solid var(--borde)}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:13.5px;display:block;overflow-x:auto}th,td{border:1px solid var(--borde);padding:8px;vertical-align:top;text-align:left}th{background:color-mix(in srgb,var(--ac) 12%,var(--card))}
+strong{color:var(--navy)}em{color:var(--tx2)}code{background:var(--card);padding:1px 4px;border-radius:4px}</style></head><body><main><h1>Investigación de mercado · Control Pro inalámbrico compatible con Nintendo Switch · Colombia</h1>
+<p><em>Deep Research IA Commerce · 2026-11-12 · Toda la voz del cliente es de la <strong>categoría</strong>: controles compatibles y Joy-Con en general. No hay reseñas externas de este control puntual.</em></p>
+<h2>1. Resumen ejecutivo</h2>
+<ul>
+<li><strong>Dolor #1:</strong> los Joy-Con se dañan, sobre todo por el <strong>drift</strong> (la palanca se mueve sola), y toca volver a comprarlos. Es el dolor más repetido en Reddit, YouTube y Google.</li>
+<li><strong>Dolor #2:</strong> los Joy-Con son <strong>incómodos</strong>: las manos se cansan o duelen en partidas largas.</li>
+<li><strong>Dolor #3:</strong> <strong>jugar de a dos</strong> con un solo par de Joy-Con (cada uno con medio control) o pelear por el control bueno.</li>
+<li><strong>Deseo #1:</strong> jugar cómodo y con precisión, "como un control de verdad", sin pagar el precio del original.</li>
+<li><strong>Consciencia dominante:</strong> del problema y de la solución. Saben qué es el drift y que existe el control Pro, pero dudan entre el original y uno genérico.</li>
+<li><strong>Objeción más peligrosa:</strong> <strong>"los genéricos son malos"</strong>: que se desconecte, que no tenga giroscopio o NFC, que la batería no dure o que se dañe a los meses. Además, el <strong>precio</strong>: en Colombia hay compatibles desde $40.000 hasta $117.000.</li>
+<li><strong>Territorio desocupado:</strong> en Meta Colombia <strong>no hay anunciantes de dropshipping vendiendo un control Pro compatible</strong>. Los anuncios que aparecen son de consolas, juegos y un servicio para cambiar joysticks por drift.</li>
+<li><strong>Números:</strong> 560 resultados de Reddit, más 103 comentarios en 3 hilos; 145 comentarios de YouTube en 7 videos; 10 reseñas de Amazon; 42 anuncios de Meta en Colombia; 7 búsquedas de Google en Colombia. MercadoLibre: <strong>datos insuficientes</strong> (bloqueó el scraping; solo hay precios del buscador).</li>
+</ul>
+<h2>2. Producto base</h2>
+<p>Control inalámbrico tipo Pro, <strong>compatible</strong> con Nintendo Switch (genérico, sin marca Nintendo). Ya se vende. [Usuario]
+- Bluetooth 3.0 y cable USB-C para cargar y jugar con cable.
+- Batería de 1300 mAh, unas 40 h por carga completa (unas 6 h de carga).
+- Vibración HD, giroscopio y acelerómetro.
+- NFC para amiibo.
+- Botón de captura, botón Home, + y −, ZL/ZR, L/R, cruceta y dos sticks con clic.
+- Empuñaduras ergonómicas, sticks asimétricos (estilo Xbox) y carcasa frontal semitransparente.</p>
+<h2>3. Metodología y números reales</h2>
+<table>
+<thead>
+<tr>
+<th>Fuente</th>
+<th>Herramienta</th>
+<th>Qué se extrajo</th>
+<th>Útil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reddit</td>
+<td>clearpath/reddit-search-scraper + comments-bulk</td>
+<td>560 resultados (7 búsquedas EN/ES) y 103 comentarios de 3 hilos</td>
+<td>~35 piezas</td>
+</tr>
+<tr>
+<td>YouTube</td>
+<td>streamers/youtube-comments-scraper</td>
+<td>145 comentarios de 7 videos en español (alternativas económicas, Joy-Con vs Pro, genérico vale la pena, cómo conectar)</td>
+<td>~25</td>
+</tr>
+<tr>
+<td>Amazon</td>
+<td>santamaria (búsqueda) + junglee (reseñas)</td>
+<td>24 productos; 10 reseñas de 3★ del control compatible más vendido (B07TRQH45S, 20.606 reseñas)</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Meta Ad Library, Colombia</td>
+<td>curious_coder/facebook-ads-library-scraper</td>
+<td>42 anuncios activos ("control switch", "control nintendo", "mando switch")</td>
+<td>8 relevantes</td>
+</tr>
+<tr>
+<td>Google Colombia</td>
+<td>apify/google-search-scraper</td>
+<td>7 búsquedas: preguntas frecuentes, relacionadas y precios</td>
+<td>sí</td>
+</tr>
+<tr>
+<td>MercadoLibre</td>
+<td>playwright-scraper</td>
+<td><strong>datos insuficientes</strong>: la página no cargó para el scraper; los precios salen de los fragmentos de Google</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Google Trends</td>
+<td>—</td>
+<td>no se corrió</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p>El axesso de Amazon pidió un plan pago y se usó junglee, que en el plan gratuito limita a 10 reseñas. Dropkiller está en plan gratuito y sus herramientas están bloqueadas.</p>
+<h2>4. Mapa de dolor (top 3)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Dolor</th>
+<th>Momento exacto</th>
+<th>Consecuencia</th>
+<th>Emoción</th>
+<th>Frase textual (fuente)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Drift: los Joy-Con se dañan y la palanca se mueve sola</strong></td>
+<td>En plena partida: el personaje camina solo o el cursor se va; aparece a los meses de uso</td>
+<td>Perder partidas, no poder jugar, comprar otro par (~$343.000 a $400.000 en Colombia) o pagar reparación</td>
+<td>Rabia, impotencia, sensación de que Nintendo los hizo para dañarse</td>
+<td>"van dos pares que me compro porque siempre se me descomponen de la palanca :(" (YouTube, Joy-Con vs Pro Controller, 15 votos) · "la palanca de los Joy cons se me ha roto 2 veces en un año solo por utilizarlos" (YouTube) · "Since then I have owned <em>five</em> joycon controllers, and all but one are broken" (r/Switch, 2020-10-30, 214 votos) · "My joycon has stick drift, why does Nintendo make such shitty controllers." (r/Switch, 2026-08-12)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Los Joy-Con son incómodos: las manos se cansan o duelen</strong></td>
+<td>Después de 20 minutos o más jugando, sobre todo en portátil o con el grip</td>
+<td>Hay que parar de jugar; no se disfruta</td>
+<td>Cansancio, frustración</td>
+<td>"After a while, my hands hurt so much that I have to stop playing..." (r/Switch, 2025-08-20) · "Is this handheld supposed to hurt my hands after 20+ minutes?" (r/Switch, 2026-07-15, 71 votos) · "me cansa los joycon" (YouTube) · "their form factor will make your hands hurt/go numb eventually" (r/switch2, 2026-08-30)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Jugar de a dos con un solo par de Joy-Con</strong></td>
+<td>Cuando llega una visita, el hermano, el hijo o la pareja quiere jugar Mario Kart o Smash</td>
+<td>Cada uno juega con medio control diminuto, o uno se queda mirando</td>
+<td>Incomodidad, pelea por "el control bueno"</td>
+<td>"I always hand that one to the kids and I use the pro" (r/NintendoSwitch, 2018-01-28) · "cuando los uso por separado cuando juego con alguien más" (YouTube) · "One of the controllers (we have two) stopped connecting" (Amazon 3★, 2026-03-29: las familias compran de a dos)</td>
+</tr>
+</tbody>
+</table>
+<h2>5. Dolores secundarios</h2>
+<ul>
+<li><strong>El original es caro.</strong> "No estoy en posición de soltar 70 dólares en un control" (r/NintendoSwitch, 2025-12-15). "ya estoy harto de los precios inflados en latinoamérica" (YouTube, 22 votos). En Colombia, el Pro original cuesta $339.900 (MercadoLibre).</li>
+<li><strong>Reparar cuesta casi lo mismo que comprar.</strong> "Why is it more expensive to repair my controllers with joycon drift than to buy a new controller???" (r/Switch, 2023-06-29).</li>
+<li><strong>La cruceta de los Joy-Con son botones sueltos.</strong> "the d-pad is very unresponsive for old games" (Amazon 3★, sobre un genérico).</li>
+<li><strong>Precisión en juegos de disparo o competitivos.</strong> "para FPS siempre será muchísimo mejor el pro controler" (YouTube).</li>
+</ul>
+<h2>6. Deseos</h2>
+<ol>
+<li><strong>Comodidad en partidas largas:</strong> "Les juro que no he vuelto a jugar con los joy con. Jaja es súper cómodo." (YouTube).</li>
+<li><strong>Que no se dañe / que dure:</strong> "Controller works great after a year of casual use." (Amazon 3★).</li>
+<li><strong>Tener todas las funciones del original sin pagar el original:</strong> "tienen las mismas funciones que el normal, solo que sin el lector de Amiboo" (YouTube, sobre copias de USD 20).</li>
+<li><strong>Jugar en pareja, familia o con amigos:</strong> el anuncio de Durazno Store en Colombia ("2 controles inalámbricos incluidos: juegan los dos") y la promo de Tujuego.com ("juegos para compartir con tu pareja, tus amigos o tus hermanos").</li>
+<li><strong>Que la "jugabilidad se multiplique":</strong> "la jugabilidad se multiplica por 10 comparado a los joycons" (YouTube).</li>
+</ol>
+<h2>7. Objeciones</h2>
+<ol>
+<li><strong>"Los genéricos son malos o se dañan rápido"</strong> (la más peligrosa): "se ha estropeado a los pocos meses de comprarlo sin casi usarlo" (YouTube, 14 votos) · "I know these knock off pro controllers are supposed to be mediocre at best" (r/Switch, 138 votos) · "Stopped charging after ~1 year" (Amazon 3★).</li>
+<li><strong>"¿Tiene giroscopio, vibración, NFC?"</strong>: "Pero alguno tiene vibracion hd?" · "O alternativo tem giroscópio?" · "Para que sirven las funciones NFC en un mando?" (YouTube). Muchos genéricos no traen NFC.</li>
+<li><strong>"¿Se desconecta o es difícil de conectar?"</strong>: "has trouble staying connected to my switch" · "I couldn't figure out how to connect it… instructions were unclear" (Amazon 3★). En Google: "¿Cómo conectar un control genérico a la Nintendo Switch?".</li>
+<li><strong>"¿La batería dura?"</strong>: "My biggest disappointments is the battery life" (Amazon 3★).</li>
+<li><strong>"¿Prende la consola desde el control?"</strong>: "it is supposed to wake up switch by pressing home button and it doesn't" (Amazon 3★). En Reddit: solo el Pro 2 oficial y los Joy-Con prenden la Switch 2.</li>
+<li><strong>"¿Sirve con Switch Lite, OLED o Switch 2? ¿Y con PC?"</strong>: "Hola, se puede conectar a un siwcht Lite?" · "La mayoría de estos controles tiene retrocompatibilidad con pc?" (YouTube).</li>
+</ol>
+<h2>8. Objeciones logísticas (contraentrega)</h2>
+<ul>
+<li><strong>Que llegue algo distinto a la foto:</strong> el pago contraentrega lo reduce.</li>
+<li><strong>Que no funcione y no haya a quién reclamar:</strong> "Controllers are such products that it's usually better to buy them somewhere where you can return it" (r/NintendoSwitch). La garantía de 90 días responde a esto.</li>
+<li><strong>La garantía de otros:</strong> "You have to ship it to China for warranty" (8BitDo, r/NintendoSwitch, 13 votos). Una garantía local de 90 días es una diferencia real.</li>
+</ul>
+<h2>9. Lenguaje real de búsqueda (Google Colombia)</h2>
+<ul>
+<li>¿Cómo arreglar el Joy-Con drift? · ¿Cuánto cuesta arreglar el drift de un control? · ¿Por qué mi Joy-Con se sale solo? · ¿Qué es el drift en los controles?</li>
+<li>¿Cuánto vale un mando pro de Nintendo Switch? · ¿El control Pro de Nintendo Switch es compatible con la PC?</li>
+<li>¿Qué controles son compatibles con Switch? · ¿Qué mandos alternativos hay para Nintendo Switch? · ¿Cómo conectar un control genérico a la Nintendo Switch?</li>
+<li>Relacionadas: "Control Alternativo Nintendo Switch 2", "Controles Nintendo switch Alkosto", "Control Nintendo Switch Panamericana", "Drift Nintendo switch oled".</li>
+</ul>
+<h2>10. Nivel de consciencia</h2>
+<p><strong>Dominante: consciente del problema y de la solución.</strong> El jugador sabe qué es el drift y que el Joy-Con es incómodo. También sabe que existe el "control Pro" y busca "alternativo" o "genérico". La duda no es si necesita un control, sino <strong>si un compatible le va a responder</strong>. El hero debe arrancar en el dolor (drift o manos cansadas) y pasar rápido a la prueba de que este compatible sí cumple.</p>
+<p>Segundo público: quien compra un <strong>regalo</strong> (pareja, hijo o hermano), con consciencia del producto ("quiere un control para su Switch").</p>
+<h2>11. Sofisticación y mecanismos</h2>
+<p><strong>Sofisticación media.</strong> En Colombia casi nadie hace publicidad de respuesta directa de este producto (ver sección 13). Las promesas genéricas ("inalámbrico, vibración, ergonómico") están en las fichas de MercadoLibre, pero no en anuncios.</p>
+<p>Mecanismos que diferencian, según las specs:
+- <strong>"Todo lo del Pro original"</strong>: NFC, vibración HD, giroscopio y 40 h. Responde a la objeción "los genéricos no traen todo".
+- <strong>Agarre completo</strong> frente a medio Joy-Con: comodidad.
+- <strong>Sticks independientes del Joy-Con:</strong> el drift del Joy-Con no afecta al control.
+- <strong>No prometer "nunca drift":</strong> el producto no dice tener sticks Hall o TMR, que son los que la gente asocia con "no drift".</p>
+<h2>12. Jobs to be done</h2>
+<ul>
+<li><strong>Funcional:</strong> jugar sin que el personaje se mueva solo y sin que duelan las manos.</li>
+<li><strong>Social:</strong> que la visita, la pareja o el hijo juegue con un control de verdad; "el regalo que se usa".</li>
+<li><strong>Emocional:</strong> dejar de sentir que "te tumbaron" con los Joy-Con; disfrutar las partidas largas.</li>
+</ul>
+<h2>13. Competencia en Meta (Colombia)</h2>
+<p>42 anuncios activos con "control switch", "control nintendo" y "mando switch". <strong>Ninguno vende un control Pro compatible como producto principal.</strong> Los relevantes:
+- <strong>Djoan.store</strong>: "🎮 ¡Olvídate del drift para siempre! … instalamos joysticks TMR … 8 meses de garantía." (servicio de reparación, desde 2026-11-02). Confirma que el drift es el dolor que mueve dinero en Colombia.
+- <strong>Durazno Store</strong>: "Se la regalé a mi novio… y ahora él me pide el control a mí" · "2 controles inalámbricos incluidos: juegan los dos" (consola retro, desde 2026-11-06). Ángulo de pareja y regalo.
+- <strong>Tujuego.com</strong>: juegos digitales "para compartir con tu pareja, tus amigos o tus hermanos" (Mario Kart, Smash).
+- <strong>VideoGamer Medellín</strong>: "Mario Kart con los primos, unos partidos con los parceros" (Switch 2, Navidad).
+- <strong>Virtual Zone y GameShop Colombia</strong>: combos de Switch 2 con un Control Pro incluido (PDP y edición Zelda).
+- <strong>Oclock Hobbies</strong>: "¡Que la Navidad no te agarre comprando a última hora!".</p>
+<h2>14. Saturación</h2>
+<ul>
+<li><strong>Saturado:</strong> consolas y juegos para Navidad; promociones de "Black/Hot Sale" de tiendas gamer.</li>
+<li><strong>Desocupado:</strong> <strong>un control compatible anunciado contra el drift y la incomodidad de los Joy-Con</strong>, y el <strong>pack de 2 para jugar de a dos</strong>. No hay competencia directa en anuncios.</li>
+<li><strong>Ojo:</strong> "desocupado" puede significar que el producto vende poco por anuncio en Colombia. Hay que validarlo con una prueba de presupuesto bajo.</li>
+</ul>
+<h2>15. Precio</h2>
+<table>
+<thead>
+<tr>
+<th>Referencia en Colombia</th>
+<th>Precio</th>
+<th>Fuente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pro Controller original</td>
+<td><strong>$339.900</strong></td>
+<td>MercadoLibre (fragmento de Google)</td>
+</tr>
+<tr>
+<td>Par de Joy-Con originales</td>
+<td><strong>$342.902</strong> (antes $399.900)</td>
+<td>MercadoLibre</td>
+</tr>
+<tr>
+<td>Compatible "Splatoon 3"</td>
+<td>$93.393 a $116.700</td>
+<td>Éxito / MercadoLibre</td>
+</tr>
+<tr>
+<td>Compatible genérico (Falabella)</td>
+<td>$51.900 a $109.900</td>
+<td>Falabella</td>
+</tr>
+<tr>
+<td>Compatible usado tipo Pro</td>
+<td>$85.000</td>
+<td>MercadoLibre</td>
+</tr>
+<tr>
+<td>"Mandos pro alternativos" en Instagram</td>
+<td>$40.000</td>
+<td>Zona Game Digital</td>
+</tr>
+<tr>
+<td>Compatibles en Amazon US</td>
+<td>USD 17 a 37</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td><strong>Nuestro precio</strong></td>
+<td><strong>$179.900 (x2: $299.900)</strong></td>
+<td>Usuario</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lectura:</strong> el control queda <strong>por encima de casi todos los compatibles</strong> y por debajo del original ($339.900). Para justificarlo hay que mostrar que trae <strong>todo lo del Pro</strong> (NFC, vibración HD, giroscopio y 40 h), con garantía local y contraentrega. El ancla creíble es el original o un par de Joy-Con nuevos (~$343.000), no un precio tachado. <strong>El pack x2 a $299.900 ($149.950 cada uno) cuesta menos que un solo Pro original.</strong></p>
+<h2>16. Ficha técnica</h2>
+<p>Ver sección 2. Hipótesis por confirmar: qué trae la caja (¿cable USB-C?), compatibilidad con Switch Lite, OLED, Switch 2 y PC, si prende la consola con el botón Home y el material de los sticks.</p>
+<h2>17. Brechas y oportunidades</h2>
+<ol>
+<li><strong>"Sin drift del Joy-Con"</strong>: el dolor que mueve dinero en Colombia (Djoan.store cobra por arreglarlo), sin competencia que lo use para vender un control.</li>
+<li><strong>"De a dos" (pack x2)</strong>: la razón de uso más natural del pack; está validada por anuncios de consolas retro y juegos para compartir.</li>
+<li><strong>"Todo lo del Pro, sin pagar el Pro"</strong>: responde a la objeción #1 con specs concretas.</li>
+<li><strong>Garantía local de 90 días + contraentrega:</strong> frente a "toca mandarlo a China".</li>
+<li><strong>Regalo de Navidad:</strong> temporada activa (los anuncios de la competencia ya hablan de Navidad).</li>
+</ol>
+<h2>18. Claims permitidos y prohibidos</h2>
+<ul>
+<li><strong>Permitidos (respaldo: usuario):</strong> compatible con Nintendo Switch; NFC para amiibo; vibración HD; giroscopio; hasta 40 h por carga; cable USB-C; botón de captura; garantía de 90 días; contraentrega; envío gratis.</li>
+<li><strong>Prohibidos o no sostenibles:</strong></li>
+<li>"Nintendo", "Pro Controller oficial" o "original", logos o tipografía de Nintendo;</li>
+<li>"nunca tendrá drift" o "sticks Hall/TMR" (no está en las specs);</li>
+<li>"prende la consola" (sin confirmar);</li>
+<li>"compatible con Switch 2" (sin confirmar);</li>
+<li>"el mejor" o cifras de ventas sin dato.</li>
+</ul>
+<h2>19. Banco de citas textuales</h2>
+<ul>
+<li>"van dos pares que me compro porque siempre se me descomponen de la palanca :(" (YouTube, 15 votos)</li>
+<li>"Yo prefiero el Pro controler porque la palanca de los Joy cons se me ha roto 2 veces en un año solo por utilizarlos" (YouTube)</li>
+<li>"Les juro que no he vuelto a jugar con los joy con. Jaja es súper cómodo." (YouTube)</li>
+<li>"la jugabilidad se multiplica por 10 comparado a los joycons" (YouTube)</li>
+<li>"ya estoy harto de los precios inflados en latinoamérica" (YouTube, 22 votos)</li>
+<li>"se ha estropeado a los pocos meses de comprarlo sin casi usarlo" (YouTube, 14 votos, sobre un control alternativo)</li>
+<li>"tienen las mismas funciones que el normal, solo que sin el lector de Amiboo" (YouTube)</li>
+<li>"Since then I have owned <em>five</em> joycon controllers, and all but one are broken." / "Desde entonces he tenido cinco Joy-Con y todos menos uno se dañaron." (r/Switch, 214 votos)</li>
+<li>"After a while, my hands hurt so much that I have to stop playing..." / "Después de un rato me duelen tanto las manos que tengo que dejar de jugar." (r/Switch, 2025)</li>
+<li>"Is this handheld supposed to hurt my hands after 20+ minutes?" / "¿Es normal que me duelan las manos después de 20 minutos?" (r/Switch, 2026, 71 votos)</li>
+<li>"I always hand that one to the kids and I use the pro" / "Ese [el Joy-Con] siempre se lo paso a los niños y yo uso el Pro." (r/NintendoSwitch)</li>
+<li>"I can't afford a $70 controller, any suggestions?" / "No puedo pagar un control de 70 dólares, ¿sugerencias?" (r/NintendoSwitch, 2025)</li>
+<li>"Why is it more expensive to repair my controllers with joycon drift than to buy a new controller???" / "¿Por qué sale más caro reparar el drift que comprar un control nuevo?" (r/Switch)</li>
+<li>"I know these knock off pro controllers are supposed to be mediocre at best" / "Sé que estos controles genéricos se supone que son mediocres" (r/Switch, 138 votos)</li>
+<li>"has trouble staying connected to my switch" / "le cuesta mantenerse conectado" (Amazon 3★, 2026-01-05)</li>
+<li>"My biggest disappointments is the battery life" / "Mi mayor decepción es la batería" (Amazon 3★, 2026-10-02)</li>
+<li>"Controller works great after a year of casual use." / "Funciona muy bien después de un año de uso casual." (Amazon 3★, 2026-05-29)</li>
+<li>"You have to ship it to China for warranty" / "Para la garantía toca mandarlo a China" (r/NintendoSwitch, sobre 8BitDo)</li>
+<li>"🎮 ¡Olvídate del drift para siempre!" (anuncio de Djoan.store, Meta Colombia, 2026-11-02)</li>
+<li>"Se la regalé a mi novio… y ahora él me pide el control a mí" (anuncio de Durazno Store, Meta Colombia, 2026-11-06)</li>
+</ul></main></body></html>
