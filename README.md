@@ -84,6 +84,16 @@ En *PP · Hero + Oferta → Botón de compra* eliges qué hace:
 
 El proceso completo (hero → landing → kit de imágenes) está en `.claude/skills/landing-producto/SKILL.md`. Se carga sola en cada sesión de Claude Code de este repositorio; también se llama con `/landing-producto`.
 
+## Investigación de la competencia local
+
+Antes de testear un producto, la skill `.claude/skills/espiar-mercado/SKILL.md` (`/espiar-mercado`) revisa cómo lo anuncia la competencia en Colombia o Guatemala. `NODE_USE_ENV_PROXY=1 node --no-warnings tools/espiar-mercado.mjs <modo> <producto> --pais CO "palabra 1" "palabra 2"`, todo vía Apify:
+- `palabras`: Google Trends (volumen comparado, tendencia, búsquedas relacionadas y en subida, regiones);
+- `anuncios`: anuncios activos en la biblioteca de Meta, TikTok Creative Center y TikTok orgánico, ordenados por señales de ganador (días activo, copias, CTR, vistas);
+- `creativos`: baja imágenes de estáticos y portadas de videos (justo después de `anuncios`);
+- `landings`: capturas en celular, texto, precios y ofertas de las landings de los anunciantes top.
+
+Todo queda en `investigacion/<producto>/mercado/`, y Claude escribe ahí `mapa-mercado.md` con ángulos, dolores, ganchos, promesas, ofertas, huecos y los ángulos recomendados para testear.
+
 ## Montaje automático en Shopify
 
 `node tools/montar-landing.mjs <landing> --tienda tuespaciomarket` revisa el tema en vivo con la Shopify CLI: qué secciones de la plantilla faltan, cuáles están iguales, cuáles son compatibles y cuáles desactualizadas. Con `--subir` sube solo lo que falta y la plantilla nueva (`--nodelete`), con respaldo previo en `respaldos/`. Nunca sobrescribe secciones ni plantillas existentes, salvo con `--actualizar` o `--sobrescribir-plantilla`. Necesita la contraseña de Theme Access como secreto de red para `theme-kit-access.shopifyapps.com` (header `X-Shopify-Access-Token`).

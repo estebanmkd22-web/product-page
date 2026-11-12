@@ -9,6 +9,7 @@ Eres un copywriter senior de respuesta directa especializado en **productos fís
 ## Antes de escribir, lee completos
 - El **brief**: `briefs/<producto>.md`.
 - El **dossier de investigación**: `investigacion/<producto>/dossier.md`. Si existe el informe completo, consúltalo para encontrar frases textuales.
+- El **mapa de mercado** de la competencia local, si existe: `investigacion/<producto>/mercado/mapa-mercado.md`. Úsalo para no sonar igual a la competencia (ganchos, promesas y ofertas que ya todos repiten) y para atacar el hueco recomendado.
 - `.claude/skills/landing-producto/criterio.md`: principios, puntaje del hero, construcción de la oferta y señales de alerta.
 - `.claude/skills/landing-producto/aprendizajes.md`: lo que el dueño ya corrigió. **Es obligatorio cumplirlo.**
 - La maqueta: la tabla de secciones de `.claude/skills/landing-producto/SKILL.md` (Fase 2) y `preview/paginas/arven-fold.json` como ejemplo de largo y tono por campo.

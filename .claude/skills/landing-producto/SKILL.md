@@ -68,7 +68,8 @@ Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los 
    - **qué promete el anuncio** que trae el tráfico y, si la landing ya existe, sus datos de Clarity.
 
    Lo que ya dijo antes no se vuelve a pedir.
-2. **Investigación profunda:** ejecuta la skill `anthropic-skills:deep-research-ia-commerce` con el producto y el mercado (Colombia o Guatemala). Ya investiga Amazon, Reddit, MercadoLibre, la biblioteca de anuncios de Meta, YouTube y Google, y entrega un informe de 19 secciones con citas textuales. No vuelvas a investigar esas fuentes por tu cuenta.
+2. **Competencia local (skill `espiar-mercado`):** si no existe `investigacion/<producto>/mercado/mapa-mercado.md`, propón correrla primero: palabras clave con Google Trends, anuncios activos en Meta y TikTok, landings y ofertas de la competencia en el país. Su mapa alimenta la sección de competencia del dossier y los ángulos y la oferta del brief; por eso, en el paso siguiente no se vuelve a revisar la biblioteca de Meta por separado.
+3. **Investigación profunda:** ejecuta la skill `anthropic-skills:deep-research-ia-commerce` con el producto y el mercado (Colombia o Guatemala). Ya investiga Amazon, Reddit, MercadoLibre, la biblioteca de anuncios de Meta, YouTube y Google, y entrega un informe de 19 secciones con citas textuales. No vuelvas a investigar esas fuentes por tu cuenta.
    - Guarda el informe en `investigacion/<producto>/informe.html`. Si sale en otro formato, guarda ese.
    - Escribe `investigacion/<producto>/dossier.md`, el resumen que usan los expertos:
      - frases textuales de clientes;
@@ -82,8 +83,8 @@ Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los 
      - claims permitidos y prohibidos.
 
      Cada punto lleva su fuente.
-3. **Operación (iComfly, solo lectura, opcional):** si el producto o uno parecido ya se vendió, revisa las novedades, los rechazos al recibir y las devoluciones para detectar objeciones de confianza o entrega. El usuario no vende por WhatsApp, así que los chats sirven poco para el copy: no les dediques más que una revisión corta. Agrega lo que encuentres al dossier, **sin nombres ni datos personales**.
-4. **Brief prellenado:** llena `briefs/<producto>.md` con los datos del usuario más el dossier. Marca **[Hipótesis]** lo que no esté confirmado. Opina con criterio (`criterio.md`): si el ángulo, la oferta o un claim tienen problemas, dilo. Muéstralo y espera la confirmación.
+4. **Operación (iComfly, solo lectura, opcional):** si el producto o uno parecido ya se vendió, revisa las novedades, los rechazos al recibir y las devoluciones para detectar objeciones de confianza o entrega. El usuario no vende por WhatsApp, así que los chats sirven poco para el copy: no les dediques más que una revisión corta. Agrega lo que encuentres al dossier, **sin nombres ni datos personales**.
+5. **Brief prellenado:** llena `briefs/<producto>.md` con los datos del usuario más el dossier. Marca **[Hipótesis]** lo que no esté confirmado. Opina con criterio (`criterio.md`): si el ángulo, la oferta o un claim tienen problemas, dilo. Muéstralo y espera la confirmación.
 
 ### Fase 1 · Copy con dos expertos (el usuario aprueba solo el resultado final)
 Con el brief confirmado, el copy lo escriben y revisan dos agentes del proyecto (`.claude/agents/`):

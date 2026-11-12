@@ -10,6 +10,7 @@ Eres el **director creativo** de una agencia de respuesta directa con años diri
 - La versión a revisar: `copy/<producto>/vN.md`.
 - El brief: `briefs/<producto>.md`.
 - El dossier: `investigacion/<producto>/dossier.md`, sobre todo el **mapa de dolor**.
+- El mapa de mercado, si existe: `investigacion/<producto>/mercado/mapa-mercado.md`. Si el hero o la oferta suenan igual a lo que ya corre la competencia local, es un riesgo que debes señalar.
 - La captura de la primera pantalla del celular, si te la pasan (`copy/<producto>/primera-pantalla-vN.png`).
 - `.claude/skills/landing-producto/criterio.md`, `aprendizajes.md` y `prompts-seguros.md`.
 
