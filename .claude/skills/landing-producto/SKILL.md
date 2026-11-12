@@ -54,13 +54,15 @@ Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los 
    - producto, foto y specs;
    - precio, oferta por cantidad, garantía y margen;
    - a quién cree que le vende y qué ángulo quiere probar;
-   - límites (claims prohibidos, registro sanitario, bonos que puede cumplir).
+   - límites (claims prohibidos, registro sanitario, bonos que puede cumplir);
+   - **qué promete el anuncio** que trae el tráfico y, si la landing ya existe, sus datos de Clarity.
 
    Lo que ya dijo antes no se vuelve a pedir.
 2. **Investigación profunda:** ejecuta la skill `anthropic-skills:deep-research-ia-commerce` con el producto y el mercado (Colombia o Guatemala). Ya investiga Amazon, Reddit, MercadoLibre, la biblioteca de anuncios de Meta, YouTube y Google, y entrega un informe de 19 secciones con citas textuales. No vuelvas a investigar esas fuentes por tu cuenta.
    - Guarda el informe en `investigacion/<producto>/informe.html`. Si sale en otro formato, guarda ese.
    - Escribe `investigacion/<producto>/dossier.md`, el resumen que usan los expertos:
      - frases textuales de clientes;
+     - **mapa de dolor del top 3**: dolor, momento exacto, consecuencia, emoción y frase textual con su fuente (el hero solo puede salir de aquí);
      - dolores ordenados por frecuencia e intensidad;
      - deseos;
      - objeciones;
@@ -89,14 +91,24 @@ Con el brief confirmado, el copy lo escriben y revisan dos agentes del proyecto 
 
 Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
 
-**Reglas del hero** (las aplican el copywriter y el director; tú también las verificas):
-   - Corto: los títulos largos se rechazan.
-   - **Nunca en pregunta**, porque despierta más dudas.
-   - Que conecte con el dolor o el deseo concreto del público, no algo genérico.
-   - Usa aversión a la pérdida cuando el usuario la pida.
-   - La parte fuerte del título va en `<em>…</em>`, que se ve en el color de acento.
-   - Bullets con formato `<strong>Beneficio:</strong> explicación concreta` (3 o 4).
-   - Chips (`zonas_titulo`/`zonas`) solo si suman.
+**Reglas del hero** (las aplican el copywriter y el director; tú también las verificas). Dato real que las motiva: en VIVIDUS, el 68 % de los visitantes se fue sin bajar del 10 % de la página, aunque pasaron unos 52 segundos en la primera pantalla.
+- **La primera pantalla del celular es el hero:** la franja animada, la **imagen 1** (dos tercios de la pantalla), el título y el subtítulo. Ahí se decide si el cliente baja.
+- **ATI en los primeros 3 segundos:**
+  - **Atención:** el dolor número 1 del mapa de dolor, con las palabras del cliente, para que piense "eso me pasa a mí".
+  - **Transformación:** la vida con el dolor resuelto, visible en la imagen 1.
+  - **Interés:** algo nuevo, específico o inesperado (el mecanismo, un dato, un contraste) que dé curiosidad de seguir.
+- **Hero dopamínico** (si falla uno, es bloqueante para el director):
+  - nombra un **dolor concreto del top 3** del mapa de dolor, no un beneficio genérico ni solo un deseo de estatus;
+  - **máximo 10 palabras** en el título, con tensión emocional (frustración, vergüenza, cansancio, miedo a perder) y la parte fuerte en `<em>…</em>`;
+  - **específico:** momentos, escenas o números reales ("la familia esperando a la 1"), nunca "mejora tu vida";
+  - **prueba del pulgar:** si lo ve 2 segundos mientras desliza en Instagram, ¿se detiene? Si no, no sirve.
+- **Coherencia con el anuncio:** el hero continúa la promesa del anuncio que trae el tráfico (está en el brief). Si el anuncio promete A y el hero habla de B, el cliente se va.
+- **Nunca en pregunta**, porque despierta más dudas.
+- **El subtítulo** amplía el dolor o la transformación en una línea. No repite el título.
+- **Bullets:** formato `<strong>Beneficio:</strong> explicación concreta` (3 o 4), cada uno quita un dolor o una objeción del mapa.
+- Chips (`zonas_titulo`/`zonas`) solo si suman.
+- **La franja animada de arriba** no abre vendiendo: el primer mensaje refuerza el gancho o da prueba (por ejemplo, "+500 clientes en Colombia" si es real). Lo de envío y pago va después.
+- **Revisión de la primera pantalla:** antes de dar el copy por aprobado, arma una vista previa del hero, saca una captura a 390 × 750 y pásasela al director. Él la juzga con la prueba del pulgar, no solo el texto.
 
 ### Fase 2 · Landing (solo con el copy final aprobado)
 Antes de armar, presenta el plan y espera confirmación: secciones en orden, oferta, paleta, colores y garantía. Arma solo lo confirmado.
@@ -227,16 +239,17 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
 - **Imágenes del hero (galería, imagen 1 a 6): SÍ llevan texto y venden solas.** Es la excepción a "sin texto".
   - **Objetivo:** quitar el dolor y despertar interés por el producto. El producto es el protagonista y la solución se ve.
   - **El hero convence, no vende.** Ninguna imagen del hero lleva nada de venta: ni precio, ni descuento, ni oferta, ni "pagas al recibir", ni envío, ni garantía, ni llamados como "compra ya". Esos ganchos ya están en la oferta con pestañas. El texto habla solo del producto, el beneficio y la transformación.
-  - **La imagen 1 es la más importante de toda la landing.** Es lo primero que se ve al entrar y la que retiene o pierde al cliente en un segundo. En el JSON lleva `"principal": true`; el kit la destaca y dice que se haga primero, con más intentos.
-    - **Producto protagonista:** idéntico a la foto, grande (entre el 50 y el 70 % del encuadre), completo y nítido, en un contexto real que dice para qué sirve. Nada compite con él.
-    - **Texto:** la promesa del ángulo en 2 a 6 palabras (sin copiar el título de la landing palabra por palabra) y, como máximo, 2 o 3 etiquetas de beneficio. Legible en un celular de 390 px.
-    - **Se entiende en 1 segundo, sin leer el resto:** qué es, qué resuelve y por qué es deseable.
-    - **No es comparativa.** Las comparativas van de la 2 en adelante. No muestra el dolor sin el producto.
-    - **Lleva 2 variantes** (`"variantes": [{ "nombre": "B", "escena": "…", "textos": ["…"] }]`) con otro encuadre u otra promesa, para que el usuario elija o pruebe cuál retiene más. Recomienda una y di por qué.
+  - **La imagen 1 es la más importante de toda la landing:** ocupa dos tercios de la primera pantalla y es el verdadero hero. En el JSON lleva `"principal": true`; el kit la destaca y dice que se haga primero, con más intentos.
+    - **Lleva el gancho:** un titular grande en la imagen (2 a 7 palabras) con el **dolor que se va** o la transformación, sacado del mapa de dolor y con las palabras del cliente. Ejemplos de forma: «Se acabó cocinar por turnos», «Adiós al ardor del roce». Más 1 o 2 etiquetas cortas.
+    - **Producto protagonista**, idéntico a la foto y grande, en el momento en que resuelve el dolor.
+    - **Puede mostrar el dolor que se va** (contraste en la misma escena, o una pequeña zona del problema frente al producto), siempre sin escribir "antes" ni "después".
+    - **Nada de venta:** sin precio, pagos, envío ni garantía.
+    - **Se entiende en 1 segundo:** qué dolor quita y por qué lo quiero.
+    - **Lleva 2 variantes** (`"variantes": [{ "nombre": "B", "escena": "…", "textos": ["…"] }]`) con otro dolor del top 3 u otro encuadre, para probar cuál retiene más. Recomienda una y di por qué.
   - **Al menos 2 son comparativas** en dos lados (sin el producto vs con el producto, o la alternativa vs el producto). El contraste lo cuentan la escena y los textos; **nunca se escribe "antes" ni "después"**. Ejemplo: «Por turnos» → «Todo a la vez».
   - **Textos cortos:** un titular de 2 a 6 palabras y, como máximo, 2 o 3 etiquetas de 1 a 4 palabras. Van exactos entre comillas en el prompt. El texto refuerza el ángulo del hero, no repite el título de la landing.
   - **Orden sugerido:**
-    1. promesa principal con el producto;
+    1. el gancho: el dolor que se va, con el producto protagonista;
     2. comparativa del dolor resuelto;
     3. mecanismo o característica clave con etiquetas;
     4. segunda comparativa (frente a la alternativa cara o vieja);

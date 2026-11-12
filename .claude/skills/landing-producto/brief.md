@@ -26,19 +26,24 @@ Tienda: Tu espacio Market (CO) | Naturixa (GT) · Fecha: <aaaa-mm-dd> · Estado:
 ## 2. Buyer
 - Quién es (edad, género, rol, nivel socioeconómico, dónde vive):
 - Situación en la que compra (el momento exacto en que lo necesita):
-- Dolores, en sus palabras (frases textuales si existen):
+- **Mapa de dolor (top 3, obligatorio, sale del dossier):**
+  | # | Dolor | Momento exacto en que pasa | Consecuencia | Emoción | Frase textual del cliente (fuente) |
 - Deseos y la transformación que busca:
 - Objeciones (precio, confianza, "¿me sirve a mí?", pago, envío, calidad):
 - Qué usa hoy en lugar del producto y por qué no le funciona:
 - Nivel de consciencia (Schwartz): inconsciente / del problema / de la solución / del producto / muy consciente
 - Fuente de esta información: <reseñas, comentarios de anuncios, chats de WhatsApp, investigación>
 
-## 3. Ángulos e hipótesis
+## 3. Tráfico
+- Qué promete el anuncio que trae a la gente (texto o gancho del video):
+- Datos de la landing actual, si existe (Clarity: % que pasa del hero, tiempo arriba, hasta dónde bajan):
+
+## 4. Ángulos e hipótesis
 - Ángulos candidatos (3 a 5), cada uno con el dolor o deseo que ataca:
 - Hipótesis a probar: "Creemos que <público> compra más con <ángulo/oferta> porque <razón>. Lo sabremos si <métrica>."
 - Ángulo principal elegido para la landing (lo decide el usuario):
 
-## 4. Oferta
+## 5. Oferta
 - Precio de venta:
 - Precio de comparación real (si existe; si no, no se usa precio tachado):
 - Oferta por cantidad (1, 2, 3 unidades y precios):
@@ -48,16 +53,16 @@ Tienda: Tu espacio Market (CO) | Naturixa (GT) · Fecha: <aaaa-mm-dd> · Estado:
 - Envío y pago (gratis, contraentrega, tiempos):
 - Ideas para una oferta única (ver criterio.md → "Construir la oferta"):
 
-## 5. Prueba y confianza
+## 6. Prueba y confianza
 - Reseñas o testimonios reales disponibles:
 - Videos o fotos de clientes reales:
 - Datos, certificaciones o registros:
 
-## 6. Competencia
+## 7. Competencia
 - Quién más lo vende, a qué precio y con qué promesa:
 - Qué hacemos distinto:
 
-## 7. Material
+## 8. Material
 - Fotos y videos disponibles:
 - Avatar del banco que encaja (propuesta):
 - Logo, colores o fuentes de marca:
