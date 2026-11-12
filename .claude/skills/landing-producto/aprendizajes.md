@@ -3,6 +3,8 @@
 Decisiones y correcciones del usuario que valen para todos los productos. Léelas antes de proponer. Agrega nuevas solo con aprobación del usuario: fecha, qué pasó y la regla que queda.
 
 ## Hero y títulos
+- **(2026-11-12) La garantía puede ir en el subtítulo del hero** cuando es el respaldo que quita el dolor (VIVIDUS: «si un lado falla de fábrica, tienes 90 días de garantía»). Lo que no lleva el hero es precio, descuento, envío ni llamados a comprar. Las imágenes del hero siguen sin garantía.
+- **(2026-11-12) No prometer duración sin respaldo.** «Se acabó cambiar audífonos cada 3 meses» se cambió por «Cansado de audífonos que no duran ni 3 meses»: el dolor se nombra, pero no se promete lo que no se puede probar.
 - **(2026-11-12) Datos de Clarity en VIVIDUS:** el 68 % se va sin bajar del 10 % de la página, aunque pasa unos 52 segundos en la primera pantalla. El hero tenía texto en la imagen y un título de estatus («Todos tienen audífonos blancos. Tú no.»), pero no tocaba un dolor real. Regla: el hero sale del mapa de dolor (top 3) con las palabras del cliente y hace ATI en 3 segundos. Se mide en Clarity con al menos 200 visitantes por versión.
 - **Los títulos encima de la galería no aplican:** los textos van en las imágenes y debajo de ellas.
 - **Títulos cortos.** Rechazó varias veces títulos largos. Ejemplo: banda de rodilla, "ese título está muy grande… como es extenso, no conecta".

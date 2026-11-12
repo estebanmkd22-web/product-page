@@ -18,7 +18,7 @@ Fuente de cada dato:
   - 20 h con el estuche, de 3 a 4 h seguidas por carga;
   - colores café y verde.
 - **Qué trae la caja:** audífonos y estuche. ¿Cable de carga? ¿Puntas de repuesto? **[Hipótesis: confirmar]**
-- **El estuche aguanta caídas.** [Usuario]
+- **El estuche aguanta caídas, también con los audífonos adentro.** [Usuario, 2026-11-12]
 - **Funcionan con Android y iPhone.** [Usuario]
 - **No se debe prometer:**
   - IPX8 [Usuario];
