@@ -16,18 +16,20 @@ Fuente de cada dato:
   - botón de captura, Home, + y −, L/R/ZL/ZR, cruceta, 2 sticks con clic;
   - empuñaduras ergonómicas, sticks asimétricos, carcasa frontal semitransparente.
 - **Versión:** compatible, **sin marca ni logo de Nintendo**. [Usuario]
-- **Qué trae la caja:** ¿control + cable USB-C? **[Hipótesis: confirmar]**
-- **Compatibilidad:** ¿Switch, Lite y OLED? ¿Switch 2? ¿PC? ¿Prende la consola con el botón Home? **[Hipótesis: confirmar]**
-- **Foto con fondo limpio del control sin marca:** **falta**. La foto que mandaste trae el logo y la caja de Nintendo, así que no sirve para la landing ni para el kit.
+- **Qué trae la caja:** control + cable. [Usuario]
+- **Compatibilidad:** Switch, Lite, OLED y Switch 2. [Usuario] ¿Prende la consola con el botón Home? **[Sin confirmar: no se promete]**
+- **Foto:** la del proveedor. [Usuario] Se usa solo como referencia de forma; en la landing y en las imágenes el control va **sin logos, sin caja de Nintendo y sin la palabra Nintendo**.
 - **No se debe prometer** [Investigación]:
   - "Nintendo", "original", "Pro Controller oficial" ni logos de Nintendo;
   - "nunca tendrá drift" ni sticks Hall/TMR;
-  - "prende la consola" ni "compatible con Switch 2", si no se confirman;
+  - "prende la consola", porque no está confirmado;
   - "el mejor".
 
 ## 2. Buyer
-- **Quién es:** hombre de 16 a 35 años en Colombia que ya tiene una Switch (o la juega en familia), juega en el televisor y está cansado de los Joy-Con. **[Hipótesis basada en la investigación]**
-- **Segundo público:** pareja, mamá o papá que lo compra de regalo de Navidad. [Hipótesis]
+- **Quién es (dos compradores):** [Usuario, 2026-11-12]
+  - el que juega: niño, joven o adulto con una Switch en casa;
+  - **el que regala:** mamá, papá o pareja, para Navidad. No sabe de términos técnicos.
+- **Regla de lenguaje:** palabras sencillas que entienda una mamá. Nada de "drift", "Joy-Con", "giroscopio", "NFC" ni "vibración HD" en el hero; si aparecen, abajo y explicadas ("el control se mueve solo", "se siente cada choque"). [Usuario]
 - **Situación de compra:** el Joy-Con empezó a moverse solo (drift), o le duelen las manos al jugar, o llega diciembre y quiere jugar Mario Kart de a dos. [Investigación]
 - **Mapa de dolor (top 3):**
 
@@ -43,7 +45,7 @@ Fuente de cada dato:
 - **Consciencia:** del problema y de la solución. **Sofisticación:** media (casi no hay anuncios de este producto en Colombia). [Investigación]
 
 ## 3. Tráfico
-- **Qué promete el anuncio:** **falta**. ¿Ya hay anuncio o creativo? Si no, el hero y el anuncio se definen juntos. [Usuario: confirmar]
+- **Qué promete el anuncio:** todavía no hay anuncio. [Usuario] El hero y el anuncio se definen juntos.
 - **Landing actual:** no existe (producto nuevo).
 
 ## 4. Ángulos e hipótesis
@@ -60,12 +62,12 @@ Fuente de cada dato:
 ## 5. Oferta
 - **Precio:** $179.900, ya con el 35 % de descuento de Black Friday. [Usuario]
 - **Precio tachado:** $276.800 solo si de verdad se vendió a ese precio. **[Confirmar]** Si no, el ancla es el Pro original ($339.900) o un par de Joy-Con (~$343.000). [Investigación]
-- **Pack x2:** $299.900 ($149.950 cada uno, **menos que un solo Pro original**). Razón de uso: jugar de a dos o regalar uno. [Usuario/Investigación]
-- **Garantía:** 90 días. ¿Qué cubre: defectos de fábrica, cambio por uno nuevo? **[Confirmar]**
+- **Oferta:** solo 1 unidad; no hay pack x2. [Usuario]
+- **Garantía:** 90 días, con devolución del dinero. [Usuario]
 - **Envío y pago:** envío gratis, pago contraentrega. [Usuario]
 - **Costo y margen:** **[opcional]**, para saber si cabe un bono.
 - **⚠️ Ojo con el precio:** los compatibles en Colombia van de $40.000 a $117.000. A $179.900 hay que **probar en la landing** que este trae todo lo del Pro (NFC, vibración HD, giroscopio, 40 h) y respaldarlo con la garantía. Sin eso, el cliente lo compara con uno de $90.000.
-- **Fecha límite del Black Friday:** ¿hasta cuándo va el precio? Solo hay urgencia si es real. **[Confirmar]**
+- **Black Friday:** hasta el 30 de noviembre. [Usuario] Es una urgencia real.
 
 ## 6. Prueba y confianza
 - **Reseñas o testimonios reales:** **falta** (producto nuevo). Si no hay, van de ejemplo y marcados.
@@ -77,5 +79,5 @@ Fuente de cada dato:
 
 ## 8. Material
 - **Fotos o videos del control sin marca:** **falta**.
-- **Avatar:** ninguno del banco encaja (todos son mujeres de 35 a 60 años). Para las imágenes con persona hace falta un avatar nuevo: hombre de 20 a 30 años jugando en la sala. **[Pedir foto]**
+- **Avatar:** tanto quien juega como quien regala (mamá o papá). [Usuario] En el banco solo hay mujeres adultas: `co-mama-01` podría servir para quien regala. Para quien juega (joven o niño) falta foto. Se define en la fase 3.
 - **Logo, colores o fuente de marca:** Tu espacio Market.
