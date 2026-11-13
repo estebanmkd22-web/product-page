@@ -3,20 +3,25 @@
  "landing": "Control Pro inalámbrico",
  "referencia_archivo": "imagenes/control-pro/producto.jpg",
  "ficha": {
-  "escenario": "Salas y escritorios gamer de apartamento colombiano, de noche, ordenados pero vividos.",
-  "luz": "Luz de pantalla y lámpara cálida, salvo donde la escena diga otra (estudio o neón).",
-  "paleta": "Grafito, negro y acentos rojos, combinando con el rojo de la landing (#d62828).",
-  "estilo": "Foto realista tipo celular de buena calidad, producto nítido y protagonista, sin personas ni manos."
+  "estilo": "Anuncio de alto impacto, foto hiperrealista con iluminación de producto profesional; cada imagen con su propio escenario, fondo y luz (no repetir sala ni televisor).",
+  "paleta": "Negro grafito del control con acentos rojos (#d62828); el resto de colores según la escena.",
+  "producto_en_escena": "El control nuevo siempre nítido, grande y protagonista."
  },
  "producto": "El control inalámbrico tipo Pro de la foto adjunta: copia la forma, el color negro grafito, los botones, la cruceta, los dos sticks asimétricos y la carcasa frontal semitransparente. Quita cualquier logo, palabra o marca que tenga la foto (sin logos de Nintendo, sin la palabra Nintendo ni Switch, sin la caja). Sin piezas de más.",
- "reglas": "Sin personas ni manos. Sin textos, letreros ni logos dentro de la imagen. En las pantallas, juegos genéricos sin personajes ni gráficos de marcas reales. Los controles pequeños que aparezcan son genéricos, sin logos.",
+ "reglas": "Nunca una persona de cuerpo entero ni caras; solo manos cuando la escena lo diga. Sin textos, letreros ni logos dentro de la imagen. Sin personajes ni gráficos de marcas reales (juegos, pistas y mundos genéricos). Los controles pequeños que aparezcan son genéricos, sin logos.",
  "espacios": {
   "hero-oferta.imagen_1": {
-   "que": "EL GANCHO (Atención). Convierte la rabia del control que no responde en poder: el control nuevo es el protagonista y los controlcitos quedan como el pasado.",
+   "que": "EL GANCHO: rabia → poder. Lo viejo agrietado en la sombra, el control nuevo heroico.",
    "producto": true,
    "persona": false,
-   "escena": "Sala gamer de noche. El control nuevo, grande y nítido, en primer plano apoyado en ángulo sobre la mesa de centro, ocupando cerca de la mitad del cuadro, con la luz de la pantalla rebotando en su carcasa semitransparente. Detrás, un televisor desenfocado con un juego de carreras genérico en plena curva (sin personajes ni marcas). A un lado, dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) tirados y apagados, más pequeños y fuera de foco.",
-   "historial": [],
+   "escena": "Estudio oscuro con humo suave. A la izquierda, en sombra y desenfocado, un control pequeño genérico (tipo control lateral desmontable de consola, gris, sin logos) agrietado, con una grieta visible y apagado. Al centro-derecha, el control nuevo flotando ligeramente inclinado, visto desde abajo en ángulo heroico, con un fuerte contraluz rojo que dibuja su silueta, chispas rojas y líneas de velocidad que salen de él hacia los lados. Reflejo del control en un piso negro brillante.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Rabia → poder: estudio oscuro, controlcito agrietado vs. control heroico con contraluz rojo."
+    }
+   ],
    "textos": [
     "Ahora mandas tú, no el control",
     "Agarre firme",
@@ -26,7 +31,7 @@
    "variantes": [
     {
      "nombre": "B",
-     "escena": "Igual que la principal, pero los controlcitos pequeños se ven más claros en un rincón del cuadro, como algo que ya se dejó atrás; el control nuevo sigue siendo el protagonista grande.",
+     "escena": "Superficie de asfalto mojado de noche con reflejos de luces rojas de ciudad desenfocadas. El control nuevo grande y nítido en primer plano, con gotas de agua brillando sobre la carcasa; detrás, un control pequeño genérico (tipo control lateral desmontable de consola, gris, sin logos) tirado y agrietado en un charco, fuera de foco.",
      "textos": [
       "Deja de perder por el control",
       "Firme en cada curva"
@@ -34,7 +39,7 @@
     },
     {
      "nombre": "C",
-     "escena": "El control nuevo de frente, centrado y grande sobre una superficie oscura, con la luz de la pantalla rebotando en la carcasa semitransparente; fondo oscuro con luces de neón suaves.",
+     "escena": "Fondo de lava y brasas encendidas en tonos rojo y naranja (estilo videojuego), el control nuevo de frente sobre una roca negra, iluminado por el resplandor, con partículas de fuego flotando alrededor.",
      "textos": [
       "La palanca ya no decide tu partida",
       "Precisión de verdad"
@@ -43,24 +48,36 @@
    ]
   },
   "hero-oferta.imagen_2": {
-   "que": "Comparativa del dolor resuelto: con los controlcitos el carro se sale; con el control nuevo, el carro va en la curva.",
+   "que": "Precisión: vista desde arriba de una pista en miniatura.",
    "producto": true,
    "persona": false,
-   "escena": "Imagen dividida en dos lados con la misma luz. Izquierda: dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) sobre la mesa y detrás una pantalla con un carro de carreras genérico saliéndose de la pista. Derecha: el control nuevo grande sobre la misma mesa y detrás la pantalla con el carro tomando la curva perfecto.",
-   "historial": [],
+   "escena": "Vista cenital, de día y con luz brillante, de una pista de carreras en miniatura tipo maqueta sobre una mesa de madera clara. Imagen dividida en dos lados. Izquierda: un carrito de juguete genérico fuera de la pista, con huellas de llantas en zigzag sobre el pasto de la maqueta, y un control pequeño genérico (tipo control lateral desmontable de consola, gris, sin logos) a la orilla. Derecha: el control nuevo grande a la orilla y el carrito tomando la curva perfecto, con una línea de luz roja limpia que marca su trayectoria.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Concepto visual propio: otro escenario, fondo y luz."
+    }
+   ],
    "textos": [
     "Va justo donde tú quieres",
     "Se mueve solo",
     "Responde al instante"
    ],
-   "comparativa": "lado izquierdo: los controlcitos y el carro fuera de la pista, etiqueta «Se mueve solo»; lado derecho: el control nuevo y el carro en la curva, etiqueta «Responde al instante»."
+   "comparativa": "lado izquierdo: carrito fuera de la pista con huellas en zigzag, etiqueta «Se mueve solo»; lado derecho: control nuevo y carrito en la curva con línea de luz roja, etiqueta «Responde al instante»."
   },
   "hero-oferta.imagen_3": {
-   "que": "Característica clave: vibración y batería, dichas en grande.",
+   "que": "Vibración: macro de la empuñadura con ondas de choque.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo de frente sobre una mesa oscura con luz de estudio suave, la carcasa semitransparente visible. Ondas gráficas sutiles alrededor de las empuñaduras que sugieren vibración. El cable USB-C enrollado a un lado.",
-   "historial": [],
+   "escena": "Macro extremo de la empuñadura derecha del control nuevo sobre fondo negro absoluto, con un contraluz rojo. Efecto de vibración: el borde de la empuñadura se ve con un leve doble contorno tembloroso, anillos de onda de choque concéntricos y pequeños destellos saliendo de ella, como en un anuncio de tecnología.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Concepto visual propio: otro escenario, fondo y luz."
+    }
+   ],
    "textos": [
     "Siente cada choque en tus manos",
     "Vibración HD",
@@ -68,15 +85,20 @@
    ]
   },
   "hero-oferta.imagen_4": {
-   "que": "Comparativa de seguir jugando: la partida en pausa con los controlcitos frente a la partida en marcha con el control nuevo (partidas largas y 40 h de batería).",
+   "que": "Seguir jugando horas: el paso del tiempo.",
    "producto": true,
    "persona": false,
-   "escena": "Imagen dividida en dos lados, misma sala de noche y misma luz. Izquierda: dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) dejados sobre el sofá y, detrás, la pantalla con un ícono de pausa genérico grande sobre un juego detenido. Derecha: el control nuevo con su cable USB-C conectado, protagonista sobre el sofá, y detrás la pantalla con el juego de carreras en plena marcha; un reloj de pared o la ventana oscura sugieren que ya es tarde y la partida sigue.",
+   "escena": "Junto a un ventanal de un apartamento alto con vista a la ciudad. Imagen dividida. Izquierda, de tarde con luz naranja: un control pequeño genérico (tipo control lateral desmontable de consola, gris, sin logos) sobre el marco de la ventana con un ícono gráfico de batería vacía en rojo flotando sobre él. Derecha, ya de noche con la ciudad iluminada y estrellas: el control nuevo conectado a su cable USB-C que brilla suave, con un ícono gráfico de batería llena en verde.",
    "historial": [
     {
      "fecha": "2026-11-13",
      "parte": "escena, textos y comparativa",
      "cambio": "Antes comparaba tamaño (igual a la imagen 2); ahora compara pausa vs. seguir jugando: «Juega horas sin parar»."
+    },
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Concepto visual propio: otro escenario, fondo y luz."
     }
    ],
    "textos": [
@@ -84,14 +106,20 @@
     "Otra vez en pausa",
     "Sigues en la partida"
    ],
-   "comparativa": "lado izquierdo: los controlcitos dejados y el juego en pausa, etiqueta «Otra vez en pausa»; lado derecho: el control nuevo con cable y el juego en marcha de noche, etiqueta «Sigues en la partida»."
+   "comparativa": "lado izquierdo: tarde, controlcito con batería vacía, etiqueta «Otra vez en pausa»; lado derecho: noche estrellada, control nuevo con cable brillando y batería llena, etiqueta «Sigues en la partida»."
   },
   "hero-oferta.imagen_5": {
-   "que": "Deseo: el control en un setup gamer que da ganas de tener.",
+   "que": "Deseo: vista en primera persona, jugando de verdad.",
    "producto": true,
    "persona": false,
-   "escena": "Escritorio gamer con luces de neón azul y rojo, pantalla encendida con un juego de acción genérico desenfocado. El control nuevo protagonista sobre el escritorio, en ángulo tres cuartos, con la luz neón reflejada en la carcasa.",
-   "historial": [],
+   "escena": "Vista en primera persona: dos manos (solo manos y antebrazos, sin cara ni cuerpo) sostienen el control nuevo en primer plano, nítido. Delante, una pantalla gigante curva con una carrera futurista genérica a toda velocidad, desenfocada por el movimiento, y luces de neón azul y rojo reflejándose en la carcasa del control.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Concepto visual propio: otro escenario, fondo y luz."
+    }
+   ],
    "textos": [
     "Juega como siempre quisiste",
     "Carreras",
@@ -99,11 +127,17 @@
    ]
   },
   "hero-oferta.imagen_6": {
-   "que": "Versatilidad: un mismo control domina carreras, acción y aventuras.",
+   "que": "Versatilidad: el control como portal a tres mundos.",
    "producto": true,
    "persona": false,
-   "escena": "Tres paneles verticales lado a lado. En cada uno, el control nuevo frente a una pantalla con un tipo de juego genérico: un juego de carreras, uno de acción y uno de aventura en un paisaje. Misma luz en los tres paneles.",
-   "historial": [],
+   "escena": "Composición tipo diorama sobre fondo blanco limpio: el control nuevo al centro y, saliendo de él como un portal, tres mundos en miniatura que se abren hacia arriba: a la izquierda una pista de carreras con un carrito genérico, al centro una escena de acción con una explosión de colores, a la derecha una selva de aventura con una cascada. Colores vivos y luz de estudio.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Concepto visual propio: otro escenario, fondo y luz."
+    }
+   ],
    "textos": [
     "Domina carreras, acción y aventuras",
     "Carreras",
@@ -143,29 +177,53 @@
    "que": "Carreras: cada curva, a tu manera. Deja el tercio inferior simple y más oscuro para el texto de la tarjeta.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo sobre el brazo de un sofá, frente a un televisor con un juego de carreras genérico en una curva; luz de la pantalla en la sala oscura.",
-   "historial": []
+   "escena": "El control nuevo sobre el capó de un carrito de carreras de juguete grande, en una pista de asfalto en miniatura al atardecer, con humo de llantas suave.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "galeria-ideas.idea2": {
    "que": "Acción: esquiva justo a tiempo. Tercio inferior simple y más oscuro.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo sobre una mesa de centro, con una pantalla al fondo mostrando una escena de acción genérica con destellos de luz.",
-   "historial": []
+   "escena": "El control nuevo sobre una caja de madera en una bodega industrial con luces rojas de alarma y polvo en el aire, estilo escena de acción.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "galeria-ideas.idea3": {
    "que": "Aventuras: horas sin soltarlo. Tercio inferior simple y más oscuro.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo con el cable conectado sobre un sofá, de noche, con una pantalla al fondo mostrando un paisaje de aventura genérico.",
-   "historial": []
+   "escena": "El control nuevo sobre una roca con musgo junto a un río en un bosque con luz de mañana entre los árboles, estilo aventura.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "galeria-ideas.idea4": {
    "que": "Con amigos: cuando llega la visita. Tercio inferior simple y más oscuro.",
    "producto": true,
    "persona": false,
-   "escena": "Mesa de centro con el control nuevo y, al lado, dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos), dos vasos con bebida y snacks; pantalla al fondo con un juego genérico en pantalla dividida.",
-   "historial": []
+   "escena": "Mesa de centro de una terraza con luces colgantes de noche: el control nuevo, un control pequeño genérico (tipo control lateral desmontable de consola, gris, sin logos) al lado, dos vasos de limonada y crispetas.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "problemas-filas.fila1": {
    "que": "Sticks asimétricos con clic.",
@@ -213,22 +271,40 @@
    "que": "Paso 1: conecta el cable.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo con el cable USB-C enchufado, sobre una mesa, con la luz del indicador encendida.",
-   "historial": []
+   "escena": "Vista cenital sobre un escritorio blanco: el control nuevo con el cable USB-C enchufado y la luz del indicador encendida, junto a una planta pequeña.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "pasos.paso2": {
    "que": "Paso 2: emparéjalo con tu consola.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo frente a un televisor que muestra un menú genérico de controles (íconos simples, sin texto legible ni marcas), en una sala ordenada.",
-   "historial": []
+   "escena": "El control nuevo frente a una pantalla que muestra un menú genérico de controles (íconos simples, sin texto legible), en una habitación juvenil con luz de tarde.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "pasos.paso3": {
    "que": "Paso 3: a maniobrar.",
    "producto": true,
    "persona": false,
-   "escena": "El control nuevo sobre el sofá frente al televisor con un juego de carreras genérico en marcha, luz cálida de la sala.",
-   "historial": []
+   "escena": "El control nuevo sobre un puf rojo frente a un proyector que muestra una carrera genérica en la pared, en un cuarto oscuro.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escenario distinto para variar la landing."
+    }
+   ]
   },
   "comparativa.imagen_a": {
    "que": "Imagen del lado del control nuevo en la comparativa.",
