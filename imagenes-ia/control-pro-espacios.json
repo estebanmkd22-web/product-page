@@ -60,6 +60,39 @@
     "n": 6
   },
   {
+    "seccion": "PP · Oferta con pestañas",
+    "tipo": "pp-oferta-tabs",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Black Days: juega más pro por $179.900",
+    "id": "oferta-tabs.regalo2",
+    "donde": "Beneficio incluido 2 · Envío gratis",
+    "contexto": "Envío gratis — A toda Colombia",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Oferta con pestañas",
+    "tipo": "pp-oferta-tabs",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Black Days: juega más pro por $179.900",
+    "id": "oferta-tabs.regalo3",
+    "donde": "Beneficio incluido 3 · 15 % en tu segundo control",
+    "contexto": "15 % en tu segundo control — Te lo damos al hacer tu pedido",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Oferta con pestañas",
+    "tipo": "pp-oferta-tabs",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Black Days: juega más pro por $179.900",
+    "id": "oferta-tabs.regalo4",
+    "donde": "Beneficio incluido 4 · Garantía 90 días",
+    "contexto": "Garantía 90 días — Con devolución del dinero",
+    "n": 9
+  },
+  {
     "seccion": "PP · Grid de dolores",
     "tipo": "pp-grid-dolores",
     "proporcion": "1 / 1",
@@ -68,7 +101,7 @@
     "id": "grid-dolores.item1",
     "donde": "Tarjeta 1 · Camina solo",
     "contexto": "Camina solo — El personaje se mueve sin que toques nada, y pierdes.",
-    "n": 7
+    "n": 10
   },
   {
     "seccion": "PP · Grid de dolores",
@@ -79,7 +112,7 @@
     "id": "grid-dolores.item2",
     "donde": "Tarjeta 2 · Se te va la mano",
     "contexto": "Se te va la mano — Con sticks pequeños cuesta apuntar y girar fino en carreras y en acción.",
-    "n": 8
+    "n": 11
   },
   {
     "seccion": "PP · Grid de dolores",
@@ -90,7 +123,7 @@
     "id": "grid-dolores.item3",
     "donde": "Tarjeta 3 · Sin firmeza",
     "contexto": "Sin firmeza — Un control pequeño no se agarra bien, y en partidas largas te cansas.",
-    "n": 9
+    "n": 12
   },
   {
     "seccion": "PP · Grid de dolores",
@@ -101,7 +134,7 @@
     "id": "grid-dolores.item4",
     "donde": "Tarjeta 4 · Otro par, otra vez",
     "contexto": "Otro par, otra vez — Un par nuevo de controlcitos cuesta cerca de $343.000.",
-    "n": 10
+    "n": 13
   },
   {
     "seccion": "PP · Galería ideas",
@@ -112,7 +145,7 @@
     "id": "galeria-ideas.idea1",
     "donde": "Tarjeta 1 · Cada curva, a tu manera",
     "contexto": "Cada curva, a tu manera — Giras con el stick grande y sientes cada choque con la vibración.",
-    "n": 11
+    "n": 14
   },
   {
     "seccion": "PP · Galería ideas",
@@ -123,7 +156,7 @@
     "id": "galeria-ideas.idea2",
     "donde": "Tarjeta 2 · Esquiva justo a tiempo",
     "contexto": "Esquiva justo a tiempo — Apuntas y esquivas con firmeza, y en los juegos que lo usan apuntas moviendo el control.",
-    "n": 12
+    "n": 15
   },
   {
     "seccion": "PP · Galería ideas",
@@ -134,7 +167,7 @@
     "id": "galeria-ideas.idea3",
     "donde": "Tarjeta 3 · Horas sin soltarlo",
     "contexto": "Horas sin soltarlo — Se agarra con toda la mano y la batería dura hasta 40 horas por carga.",
-    "n": 13
+    "n": 16
   },
   {
     "seccion": "PP · Galería ideas",
@@ -145,7 +178,7 @@
     "id": "galeria-ideas.idea4",
     "donde": "Tarjeta 4 · Cuando llega la visita",
     "contexto": "Cuando llega la visita — Uno con este control y otro con los controlcitos: nadie se queda mirando.",
-    "n": 14
+    "n": 17
   },
   {
     "seccion": "PP · Problemas en filas",
@@ -156,7 +189,7 @@
     "id": "problemas-filas.fila1",
     "donde": "Fila 1 · Sticks asimétricos con clic",
     "contexto": "Sticks asimétricos con clic — Dos sticks grandes, uno arriba y otro abajo, para que cada pulgar quede en su sitio al girar, apuntar o esquivar.",
-    "n": 15
+    "n": 18
   },
   {
     "seccion": "PP · Problemas en filas",
@@ -167,7 +200,7 @@
     "id": "problemas-filas.fila2",
     "donde": "Fila 2 · Vibración HD",
     "contexto": "Vibración HD — Sientes en las manos cada choque en carreras y cada golpe en acción.",
-    "n": 16
+    "n": 19
   },
   {
     "seccion": "PP · Problemas en filas",
@@ -178,7 +211,7 @@
     "id": "problemas-filas.fila3",
     "donde": "Fila 3 · Lector de figuras amiibo (NFC)",
     "contexto": "Lector de figuras amiibo (NFC) — Acercas la figura al control y el juego la reconoce. Muchos controles compatibles no lo traen.",
-    "n": 17
+    "n": 20
   },
   {
     "seccion": "PP · Problemas en filas",
@@ -189,7 +222,7 @@
     "id": "problemas-filas.fila4",
     "donde": "Fila 4 · Sensor de movimiento (giroscopio)",
     "contexto": "Sensor de movimiento (giroscopio) — En los juegos que lo usan, apuntas o giras moviendo el control.",
-    "n": 18
+    "n": 21
   },
   {
     "seccion": "PP · Problemas en filas",
@@ -200,7 +233,7 @@
     "id": "problemas-filas.fila5",
     "donde": "Fila 5 · Batería de 1300 mAh",
     "contexto": "Batería de 1300 mAh — Hasta 40 horas de juego por carga. Se carga completo en unas 6 horas con su cable USB-C.",
-    "n": 19
+    "n": 22
   },
   {
     "seccion": "PP · Problemas en filas",
@@ -211,7 +244,7 @@
     "id": "problemas-filas.fila6",
     "donde": "Fila 6 · Todos los botones",
     "contexto": "Todos los botones — Captura, Home, + y −, L, R, ZL, ZR, cruceta y dos sticks con clic.",
-    "n": 20
+    "n": 23
   },
   {
     "seccion": "PP · Pasos",
@@ -222,7 +255,7 @@
     "id": "pasos.paso1",
     "donde": "Paso 1 · Conecta el cable",
     "contexto": "Conecta el cable — El que viene en la caja. Puedes jugar mientras carga.",
-    "n": 21
+    "n": 24
   },
   {
     "seccion": "PP · Pasos",
@@ -233,7 +266,7 @@
     "id": "pasos.paso2",
     "donde": "Paso 2 · Emparéjalo con tu consola",
     "contexto": "Emparéjalo con tu consola — Desde el menú Controles, sin aplicaciones ni instalar nada.",
-    "n": 22
+    "n": 25
   },
   {
     "seccion": "PP · Pasos",
@@ -244,7 +277,7 @@
     "id": "pasos.paso3",
     "donde": "Paso 3 · A maniobrar",
     "contexto": "A maniobrar — Inalámbrico o con cable, como prefieras.",
-    "n": 23
+    "n": 26
   },
   {
     "seccion": "PP · Comparativa",
@@ -254,7 +287,7 @@
     "titulo_seccion": "Este control vs. los controlcitos de siempre",
     "id": "comparativa.imagen_a",
     "donde": "Imagen (fondo transparente ideal)",
-    "n": 24
+    "n": 27
   },
   {
     "seccion": "PP · Comparativa",
@@ -264,6 +297,6 @@
     "titulo_seccion": "Este control vs. los controlcitos de siempre",
     "id": "comparativa.imagen_b",
     "donde": "Imagen (opcional)",
-    "n": 25
+    "n": 28
   }
 ]

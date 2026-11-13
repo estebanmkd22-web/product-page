@@ -161,7 +161,8 @@
         "entrega": "Envío gratis a toda Colombia",
         "etiquetas_titulo": "Funciona con",
         "etiquetas": "Switch, Switch Lite, Switch OLED, Switch 2",
-        "etiquetas_estilo": "iconos"
+        "etiquetas_estilo": "iconos",
+        "estilo_regalos": "tarjetas"
       },
       "blocks": {
         "pack_1": {
@@ -185,43 +186,30 @@
             "insignia": "Gratis",
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
+            "texto": "A toda Colombia",
+            "valor_tachado": "$23.000",
+            "sello": "Envío gratis"
           }
         },
         "regalo_3": {
           "type": "regalo",
           "settings": {
-            "insignia": "Incluido",
-            "icono": "pago",
-            "titulo": "Pagas al recibir",
-            "texto": "Nada por adelantado"
+            "insignia": "Bono",
+            "icono": "regalo",
+            "titulo": "15 % en tu segundo control",
+            "texto": "Te lo damos al hacer tu pedido",
+            "valor_tachado": "$26.985",
+            "sello": "Segundo control"
           }
         },
         "regalo_4": {
           "type": "regalo",
           "settings": {
-            "insignia": "Incluido",
+            "insignia": "Incluida",
             "icono": "escudo",
-            "titulo": "Garantía de 90 días",
-            "texto": "90 días de garantía con devolución del dinero"
-          }
-        },
-        "regalo_5": {
-          "type": "regalo",
-          "settings": {
-            "insignia": "Incluido",
-            "icono": "usb",
-            "titulo": "Cable USB-C",
-            "texto": "Para cargar y jugar con cable"
-          }
-        },
-        "regalo_6": {
-          "type": "regalo",
-          "settings": {
-            "insignia": "Bono",
-            "icono": "regalo",
-            "titulo": "15 % de descuento para tu segundo control",
-            "texto": "Te lo damos al hacer tu pedido"
+            "titulo": "Garantía 90 días",
+            "texto": "Con devolución del dinero",
+            "sello": "Devolución del dinero"
           }
         }
       },
@@ -229,9 +217,7 @@
         "pack_1",
         "regalo_2",
         "regalo_3",
-        "regalo_4",
-        "regalo_5",
-        "regalo_6"
+        "regalo_4"
       ]
     },
     "videos": {

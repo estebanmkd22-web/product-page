@@ -243,6 +243,45 @@
    "persona": false,
    "escena": "Dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos), de frente, centrados sobre fondo claro y limpio, con sombra suave.",
    "historial": []
+  },
+  "oferta-tabs.regalo2": {
+   "que": "Beneficio 1 · Envío gratis (tarjeta de la oferta). Imagen pequeña, se ve a unos 120 px: un solo objeto, grande y claro.",
+   "producto": true,
+   "persona": false,
+   "escena": "Una caja de cartón de envío cerrada con cinta, centrada sobre fondo liso claro, vista de tres cuartos, con el control nuevo asomando apenas por encima de la caja abierta a medias.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "nueva",
+     "cambio": "Beneficio en estilo tarjetas de la oferta."
+    }
+   ]
+  },
+  "oferta-tabs.regalo3": {
+   "que": "Beneficio 2 · 15 % en tu segundo control. Imagen pequeña: un solo objeto, grande y claro.",
+   "producto": true,
+   "persona": false,
+   "escena": "Un cupón de regalo rojo con un lazo, centrado sobre fondo liso claro, junto a un segundo control nuevo idéntico de la foto, ligeramente detrás. El cupón no lleva texto.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "nueva",
+     "cambio": "Beneficio en estilo tarjetas de la oferta."
+    }
+   ]
+  },
+  "oferta-tabs.regalo4": {
+   "que": "Beneficio 3 · Garantía de 90 días con devolución del dinero. Imagen pequeña: un solo objeto, grande y claro.",
+   "producto": true,
+   "persona": false,
+   "escena": "Un escudo rojo brillante con un check blanco, centrado sobre fondo liso claro, con el control nuevo pequeño delante, apoyado en la base del escudo.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "nueva",
+     "cambio": "Beneficio en estilo tarjetas de la oferta."
+    }
+   ]
   }
  }
 }

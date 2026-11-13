@@ -298,8 +298,8 @@
   .pp-ot__etqs.pp-ot__etqs--iconos { margin-top: 18px; }
   .pp-ot__etqs.pp-ot__etqs--iconos .pp-ot__etqs-t { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; font-size: 18px; letter-spacing: 0; text-transform: none; color: var(--pp-texto); }
   .pp-ot__etqs.pp-ot__etqs.pp-ot__etqs--iconos .pp-ot__etqs-t::before, .pp-ot__etqs.pp-ot__etqs--iconos .pp-ot__etqs-t::after { content: ""; flex: 1; height: 1px; background: color-mix(in srgb, var(--pp-texto) 18%, transparent); }
-  .pp-ot__etqs.pp-ot__etqs--iconos ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px 4px; align-items: start; }
-  .pp-ot__etqs.pp-ot__etqs--iconos li { display: grid; justify-items: center; gap: 8px; padding: 0; border: 0; background: none; color: var(--pp-texto); font-size: 12.5px; font-weight: 800; line-height: 1.2; text-align: center; }
+  .pp-ot__etqs.pp-ot__etqs--iconos ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 4px; align-items: flex-start; }
+  .pp-ot__etqs.pp-ot__etqs--iconos li { flex: 0 0 calc((100% - 16px) / 5); min-width: 0; display: grid; justify-items: center; gap: 8px; padding: 0; border: 0; background: none; color: var(--pp-texto); font-size: 12.5px; font-weight: 800; line-height: 1.2; text-align: center; }
   .pp-ot__etq-ico { display: grid; place-items: center; width: 54px; height: 54px; border: 1.5px solid var(--ot-ac); border-radius: 50%; color: var(--ot-ac); }
   .pp-ot__etq-ico .pp-ico { width: 36px; height: 36px; stroke-width: 1.1; }
   @media (min-width: 750px) { .pp-ot__etq-ico { width: 64px; height: 64px; } .pp-ot__etqs.pp-ot__etqs--iconos li { font-size: 14px; } }
@@ -342,6 +342,16 @@
   .pp-ot__regalos[data-n="3"] .pp-ot__gtitulo { font-size: 10px; letter-spacing: -.02em; overflow-wrap: normal; hyphens: none; }
   .pp-ot__regalos[data-n="3"] .pp-ot__gift { padding-left: 3px; padding-right: 3px; }
   .pp-ot__gtexto { font-size: 11px; line-height: 1.25; color: var(--pp-texto-2); }
+  .pp-ot__regalos--tarjetas .pp-ot__gift { gap: 0; padding: 0; overflow: hidden; border-radius: 14px; background: var(--pp-fondo); }
+  .pp-ot__tcab { display: grid; justify-items: center; align-content: center; width: 100%; min-height: 44px; padding: 6px 4px 5px; background: color-mix(in srgb, var(--ot-ac) 72%, #000); color: #fff; line-height: 1.15; }
+  .pp-ot__tcab span { font-size: 13px; font-weight: 900; letter-spacing: .04em; text-transform: uppercase; }
+  .pp-ot__tcab s { font-size: 12px; font-weight: 700; opacity: .85; }
+  .pp-ot__timg { position: relative; display: grid; place-items: center; width: 100%; aspect-ratio: 1; background: var(--ot-suave); }
+  .pp-ot__timg img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .pp-ot__regalos--tarjetas .pp-ot__gico { width: 56px; height: 56px; font-size: 28px; }
+  .pp-ot__tsello { position: absolute; top: 6px; right: 5px; max-width: 58px; padding: 3px 5px; border-radius: 6px; background: #1b1b1b; color: #fff; font-size: 8px; font-weight: 800; line-height: 1.1; text-align: center; transform: rotate(6deg); }
+  .pp-ot__regalos.pp-ot__regalos--tarjetas .pp-ot__gtitulo { padding: 7px 4px 9px; font-size: 13px; font-weight: 600; line-height: 1.2; letter-spacing: 0; text-transform: none; overflow-wrap: normal; }
+  .pp-ot__regalos--tarjetas .pp-ot__gtexto { display: none; }
   .pp-ot__valor { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--pp-borde); font-size: 14px; font-weight: 700; color: var(--pp-texto-2); }
   .pp-ot__valor b { color: var(--ot-ac); font-weight: 900; letter-spacing: .04em; }
   .pp-ot__valor s { margin-right: 6px; font-weight: 600; }
@@ -476,10 +486,18 @@
           <span>🎁 {{ section.settings.incluye_titulo }}</span>
           <span class="pp-ot__contador" data-pp-ot-contador></span>
         </div>
-        <div class="pp-ot__regalos" data-pp-ot-regalos>
+        {%- assign tarj = false -%}{%- if section.settings.estilo_regalos == 'tarjetas' -%}{%- assign tarj = true -%}{%- endif -%}
+        <div class="pp-ot__regalos{% if tarj %} pp-ot__regalos--tarjetas{% endif %}" data-pp-ot-regalos>
           {%- for block in regalos -%}
             <div class="pp-ot__gift" data-min="{{ block.settings.desde | default: 1 }}" {{ block.shopify_attributes }}>
-              {%- if block.settings.insignia != blank -%}<span class="pp-ot__ginsignia">{{ block.settings.insignia }}</span>{%- endif -%}
+              {%- assign con_img = false -%}{%- if tarj and block.settings.imagen != blank -%}{%- assign con_img = true -%}{%- endif -%}
+              {%- if tarj -%}
+                <div class="pp-ot__tcab">{%- if block.settings.insignia != blank -%}<span>{{ block.settings.insignia }}</span>{%- endif -%}{%- if block.settings.valor_tachado != blank -%}<s>{{ block.settings.valor_tachado }}</s>{%- endif -%}</div>
+                <div class="pp-ot__timg">
+                {%- if con_img -%}{{ block.settings.imagen | image_url: width: 300 | image_tag: loading: 'lazy', widths: '150, 300', sizes: '120px', alt: block.settings.titulo }}{%- endif -%}
+                {%- if block.settings.sello != blank -%}<span class="pp-ot__tsello">{{ block.settings.sello }}</span>{%- endif -%}
+              {%- elsif block.settings.insignia != blank -%}<span class="pp-ot__ginsignia">{{ block.settings.insignia }}</span>{%- endif -%}
+              {%- unless con_img -%}
               <span class="pp-ot__gico">
                 {%- if block.settings.emoji != blank -%}{{ block.settings.emoji }}{%- else -%}{%- assign icono = block.settings.icono -%}{%- comment -%}PP-ICONOS:START{%- endcomment -%}
 {%- case icono -%}
@@ -517,6 +535,8 @@
 {%- endcase -%}
 {%- comment -%}PP-ICONOS:END{%- endcomment -%}{%- endif -%}
               </span>
+              {%- endunless -%}
+              {%- if tarj -%}</div>{%- endif -%}
               <span class="pp-ot__gtitulo">{{ block.settings.titulo }}</span>
               {%- if block.settings.texto != blank -%}<span class="pp-ot__gtexto">{{ block.settings.texto }}</span>{%- endif -%}
             </div>
@@ -731,6 +751,10 @@
     { "type": "checkbox", "id": "mostrar_ahorro", "label": "Mostrar \"Ahorras Q…\" en cada pack", "default": true },
     { "type": "header", "content": "Incluido en tu pedido" },
     { "type": "text", "id": "incluye_titulo", "label": "Título de la caja", "default": "Incluido en tu pedido" },
+    {
+      "type": "select", "id": "estilo_regalos", "label": "Estilo de los beneficios", "default": "clasico",
+      "options": [ { "value": "clasico", "label": "Clásico (ícono en círculo)" }, { "value": "tarjetas", "label": "Tarjetas con imagen y valor tachado" } ]
+    },
     { "type": "text", "id": "valor_texto", "label": "Texto del valor (vacío = no se muestra)", "default": "Valor de los beneficios" },
     { "type": "text", "id": "valor_tachado", "label": "Valor tachado (opcional, ej: Q85)" },
     { "type": "header", "content": "Botón" },
@@ -776,7 +800,11 @@
         { "type": "select", "id": "icono", "label": "Ícono", "default": "camion", "options": [{"value": "ninguno", "label": "Sin ícono"}, {"value": "diente", "label": "Diente"}, {"value": "escudo", "label": "Escudo"}, {"value": "frescura", "label": "Frescura / aire"}, {"value": "hoja", "label": "Hoja"}, {"value": "sonrisa", "label": "Sonrisa"}, {"value": "brillo", "label": "Brillo"}, {"value": "check", "label": "Check"}, {"value": "reloj", "label": "Reloj"}, {"value": "gota", "label": "Gota"}, {"value": "calendario", "label": "Calendario"}, {"value": "camion", "label": "Camión (envío)"}, {"value": "pago", "label": "Pago / billete"}, {"value": "corazon", "label": "Corazón"}, {"value": "lupa", "label": "Lupa"}, {"value": "regalo", "label": "Regalo"}, {"value": "chat", "label": "WhatsApp / chat"}, {"value": "rayo", "label": "Rayo / energía"}, {"value": "bombillo", "label": "Bombillo / luz"}, {"value": "usb", "label": "USB"}, {"value": "casa", "label": "Casa"}, {"value": "arbol", "label": "Árbol de Navidad"}, {"value": "estrella", "label": "Estrella"}, {"value": "manual", "label": "Manual / guía"}, {"value": "altura", "label": "Altura / medida"}, {"value": "enredo", "label": "Cables enredados"}] },
         { "type": "text", "id": "titulo", "label": "Título", "default": "Envío gratis" },
         { "type": "text", "id": "texto", "label": "Texto corto", "default": "A todo Guatemala" },
-        { "type": "number", "id": "desde", "label": "Aparece desde esta cantidad (1 = siempre, 2 = solo pack de 2)", "default": 1 }
+        { "type": "number", "id": "desde", "label": "Aparece desde esta cantidad (1 = siempre, 2 = solo pack de 2)", "default": 1 },
+        { "type": "header", "content": "Solo en estilo Tarjetas" },
+        { "type": "text", "id": "valor_tachado", "label": "Valor tachado (ej: $23.000)" },
+        { "type": "image_picker", "id": "imagen", "label": "Imagen (reemplaza el ícono)" },
+        { "type": "text", "id": "sello", "label": "Etiqueta en la esquina de la imagen (opcional)" }
       ]
     }
   ],
