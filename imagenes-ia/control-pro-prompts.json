@@ -321,41 +321,56 @@
    "historial": []
   },
   "oferta-tabs.regalo2": {
-   "que": "Beneficio 1 · Envío gratis (tarjeta de la oferta). Imagen pequeña, se ve a unos 120 px: un solo objeto, grande y claro.",
+   "que": "Beneficio · Envío gratis. Se ve pequeña (unos 120 px): una sola escena, grande y clara.",
    "producto": true,
    "persona": false,
-   "escena": "Una caja de cartón de envío cerrada con cinta, centrada sobre fondo liso claro, vista de tres cuartos, con el control nuevo asomando apenas por encima de la caja abierta a medias.",
+   "escena": "Una caja de cartón de envío abierta sobre el piso de madera de la entrada de un apartamento, con luz cálida de la puerta; el control nuevo sale de la caja entre papel de relleno rojo, grande y nítido, en ángulo de tres cuartos.",
    "historial": [
     {
      "fecha": "2026-11-13",
      "parte": "nueva",
      "cambio": "Beneficio en estilo tarjetas de la oferta."
+    },
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escena propia y llamativa, distinta a fondo claro."
     }
    ]
   },
   "oferta-tabs.regalo3": {
-   "que": "Beneficio 2 · 15 % en tu segundo control. Imagen pequeña: un solo objeto, grande y claro.",
+   "que": "Beneficio · 15 % en tu segundo control. Se ve pequeña: una sola escena, grande y clara.",
    "producto": true,
    "persona": false,
-   "escena": "Un cupón de regalo rojo con un lazo, centrado sobre fondo liso claro, junto a un segundo control nuevo idéntico de la foto, ligeramente detrás. El cupón no lleva texto.",
+   "escena": "Dos controles nuevos idénticos lado a lado, uno detrás del otro, sobre una superficie roja brillante con confeti rojo y negro cayendo, y un moño de regalo rojo sobre el segundo control. Sin texto.",
    "historial": [
     {
      "fecha": "2026-11-13",
      "parte": "nueva",
      "cambio": "Beneficio en estilo tarjetas de la oferta."
+    },
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escena propia y llamativa, distinta a fondo claro."
     }
    ]
   },
   "oferta-tabs.regalo4": {
-   "que": "Beneficio 3 · Garantía de 90 días con devolución del dinero. Imagen pequeña: un solo objeto, grande y claro.",
+   "que": "Beneficio · Garantía de 90 días con devolución del dinero. Se ve pequeña: una sola escena, grande y clara.",
    "producto": true,
    "persona": false,
-   "escena": "Un escudo rojo brillante con un check blanco, centrado sobre fondo liso claro, con el control nuevo pequeño delante, apoyado en la base del escudo.",
+   "escena": "El control nuevo protegido dentro de una burbuja o domo de energía roja translúcida, sobre fondo azul oscuro, con un escudo rojo brillante con check blanco flotando encima. Sin texto.",
    "historial": [
     {
      "fecha": "2026-11-13",
      "parte": "nueva",
      "cambio": "Beneficio en estilo tarjetas de la oferta."
+    },
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Escena propia y llamativa, distinta a fondo claro."
     }
    ]
   }
