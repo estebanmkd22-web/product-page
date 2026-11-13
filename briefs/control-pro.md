@@ -29,7 +29,7 @@ Fuente de cada dato:
 - **Quién es (dos compradores):** [Usuario, 2026-11-12]
   - el que juega: niño, joven o adulto con una Switch en casa;
   - **el que regala:** mamá, papá o pareja, para Navidad. No sabe de términos técnicos.
-- **Regla de lenguaje:** palabras sencillas que entienda una mamá. Nada de "drift", "Joy-Con", "giroscopio", "NFC" ni "vibración HD" en el hero; si aparecen, abajo y explicadas ("el control se mueve solo", "se siente cada choque"). [Usuario]
+- **Comprador principal (redefinido, 2026-11-13):** el que juega. Lenguaje sencillo de gamer; lo técnico, explicado. El hero aprobado por el dueño (§4) manda sobre esta regla. [Usuario]
 - **Situación de compra:** el Joy-Con empezó a moverse solo (drift), o le duelen las manos al jugar, o llega diciembre y quiere jugar Mario Kart de a dos. [Investigación]
 - **Mapa de dolor (top 3):**
 
