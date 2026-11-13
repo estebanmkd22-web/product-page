@@ -66,14 +66,14 @@ Fuente de cada dato:
   - No decir "todos los juegos": carreras, acción y aventuras.
 
 ## 5. Oferta
-- **Precio:** $179.900, ya con el 35 % de descuento de Black Friday. [Usuario]
-- **Precio tachado:** $276.800 (precio real anterior; con el 35 % de Black Friday queda en $179.900). [Usuario] Ancla extra: el de marca cuesta ~$340.000 [Investigación].
+- **Precio:** $179.900, ya con el 35 % de descuento de Black Days. [Usuario]
+- **Precio tachado:** $276.800 (precio real anterior; con el 35 % de Black Days queda en $179.900). [Usuario] Ancla extra: el de marca cuesta ~$340.000 [Investigación].
 - **Oferta:** solo 1 unidad; no hay pack x2. [Usuario]
 - **Garantía:** 90 días, con devolución del dinero. [Usuario]
 - **Envío y pago:** envío gratis, pago contraentrega. [Usuario]
 - **Costo y margen:** **[opcional]**, para saber si cabe un bono.
 - **⚠️ Ojo con el precio:** los compatibles en Colombia van de $40.000 a $117.000. A $179.900, la landing tiene que mostrar que este se siente y funciona como el de marca (figuras amiibo, vibración, movimiento, batería larga) y respaldarlo con la devolución del dinero.
-- **Black Friday:** hasta el 30 de noviembre. [Usuario] Es una urgencia real.
+- **Black Days:** hasta el 30 de noviembre. [Usuario] Es una urgencia real.
 
 ## 6. Prueba y confianza
 - **Reseñas o testimonios reales:** **falta** (producto nuevo). Si no hay, van de ejemplo y marcados.
