@@ -60,7 +60,7 @@ Fuente de cada dato:
 - **Ángulo principal (redefinido por el usuario, 2026-11-13):** **el que juega**, cansado de que su control actual no le da estabilidad para maniobrar y le da rabia; el nuevo control da una mejor experiencia, más pro, en carreras, acción y aventuras. Black Days en la oferta.
 - **Hero aprobado por el usuario (2026-11-13):**
   - Título: «No más rabias por <em>el control que no responde</em>.»
-  - Subtítulo: «Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras, listo para jugar en menos de 10 minutos.»
+  - Subtítulo: «Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras. En 10 minutos lo conectas y ya estás jugando.» [Usuario, 2026-11-13: "en 10 minutos conectas y ya estás jugando"]
   - Bullets: «<strong>Maniobras al instante:</strong> sticks grandes de control completo para girar, apuntar y esquivar justo cuando lo necesitas.» · «<strong>Sientes cada choque:</strong> vibración HD, sensor de movimiento para apuntar moviendo el control y lector de figuras amiibo.» · «<strong>Partidas largas sin cansarte:</strong> se agarra con toda la mano y la batería dura hasta 40 horas por carga.» · «<strong>Juegas sin riesgo:</strong> si falla en 90 días, te devolvemos tu dinero.»
   - Chips: «Funciona con: Switch, Switch Lite, Switch OLED, Switch 2».
   - No decir "todos los juegos": carreras, acción y aventuras.
@@ -68,8 +68,8 @@ Fuente de cada dato:
 ## 5. Oferta
 - **Precio:** $179.900, ya con el 35 % de descuento de Black Days. [Usuario]
 - **Precio tachado:** $276.800 (precio real anterior; con el 35 % de Black Days queda en $179.900). [Usuario] Ancla extra: el de marca cuesta ~$340.000 [Investigación].
-- **Oferta:** solo 1 unidad; no hay pack x2. [Usuario]
-- **Garantía:** 90 días, con devolución del dinero. [Usuario]
+- **Oferta (2026-11-13):** 1 control a $179.900; **segundo control con 15 % de descuento** ($152.915 → total x2 por confirmar el redondeo). Bonos: garantía de 90 días, 15 % en el segundo control, envío gratis. Pedidos confirmados por WhatsApp. [Usuario]
+- **Garantía:** 90 días con devolución del dinero. [Usuario] (Alcance: por confirmar si es solo por falla.)
 - **Envío y pago:** envío gratis, pago contraentrega. [Usuario]
 - **Costo y margen:** **[opcional]**, para saber si cabe un bono.
 - **⚠️ Ojo con el precio:** los compatibles en Colombia van de $40.000 a $117.000. A $179.900, la landing tiene que mostrar que este se siente y funciona como el de marca (figuras amiibo, vibración, movimiento, batería larga) y respaldarlo con la devolución del dinero.
@@ -77,13 +77,13 @@ Fuente de cada dato:
 
 ## 6. Prueba y confianza
 - **Reseñas o testimonios reales:** **falta** (producto nuevo). Si no hay, van de ejemplo y marcados.
-- **Videos o fotos de clientes:** **falta**. Muy útil un video corto que muestre la vibración, el NFC con un amiibo y la conexión en segundos: responde a las objeciones 2 y 3.
+- **Videos reales del control:** sí hay. [Usuario] Van en pp-videos, justo debajo de la oferta.
 
 ## 7. Competencia
 - En Meta Colombia nadie anuncia un control compatible. Lo cercano: la reparación de drift (Djoan.store) y consolas con "2 controles, juegan los dos" (Durazno Store).
 - **Qué hacemos distinto:** todo lo del Pro + garantía local de 90 días + contraentrega, contra el drift.
 
 ## 8. Material
-- **Fotos o videos del control sin marca:** **falta**.
-- **Avatar:** tanto quien juega como quien regala (mamá o papá). [Usuario] En el banco solo hay mujeres adultas: `co-mama-01` podría servir para quien regala. Para quien juega (joven o niño) falta foto. Se define en la fase 3.
+- **Fotos o videos del control:** el dueño tiene videos reales. [Usuario]
+- **Avatar:** no se usa. Todas las imágenes son del producto. [Usuario, 2026-11-13]
 - **Logo, colores o fuente de marca:** Tu espacio Market.
