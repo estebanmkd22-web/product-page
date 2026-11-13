@@ -56,12 +56,12 @@ Fuente de cada dato:
 | 3 | **"De a dos, por menos que un Pro original"** | Dolor #3 + oferta x2 | Ideal para el pack y para Navidad. Lo usaría como el ángulo de la oferta, no del hero. |
 | 4 | **"Todo lo del Pro (NFC, vibración HD, 40 h) sin pagar $340.000"** | Objeción #1 + precio | Es la **I** de ATI (lo específico) y va en el subtítulo y los bullets. |
 
-- **Hipótesis:** "Creemos que quien juega Switch, y quien se lo regala, compra más con un hero que nombra en palabras simples el control que se daña y se mueve solo, y le muestra un control que se siente como el de marca por la mitad del precio. Lo sabremos si más del 50 % pasa del hero en Clarity con al menos 200 visitantes."
+- **Hipótesis:** "Creemos que quien juega Switch compra más con un hero que nombra la rabia del control que no responde y le muestra un control con el que maniobra como se debe. Lo sabremos si más del 50 % pasa del hero en Clarity con al menos 200 visitantes."
 - **Ángulo principal (redefinido por el usuario, 2026-11-13):** **el que juega**, cansado de que su control actual no le da estabilidad para maniobrar y le da rabia; el nuevo control da una mejor experiencia, más pro, en carreras, acción y aventuras. Black Days en la oferta.
 - **Hero aprobado por el usuario (2026-11-13):**
   - Título: «No más rabias por <em>el control que no responde</em>.»
   - Subtítulo: «Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras. En 10 minutos lo conectas y ya estás jugando.» [Usuario, 2026-11-13: "en 10 minutos conectas y ya estás jugando"]
-  - Bullets: «<strong>Maniobras al instante:</strong> sticks grandes de control completo para girar, apuntar y esquivar justo cuando lo necesitas.» · «<strong>Sientes cada choque:</strong> vibración HD, sensor de movimiento para apuntar moviendo el control y lector de figuras amiibo.» · «<strong>Partidas largas sin cansarte:</strong> se agarra con toda la mano y la batería dura hasta 40 horas por carga.» · «<strong>Juegas sin riesgo:</strong> si falla en 90 días, te devolvemos tu dinero.»
+  - Bullets: «<strong>Maniobras al instante:</strong> sticks grandes de control completo para girar, apuntar y esquivar justo cuando lo necesitas.» · «<strong>Sientes cada choque:</strong> vibración HD, sensor de movimiento para apuntar moviendo el control y lector de figuras amiibo.» · «<strong>Partidas largas sin cansarte:</strong> se agarra con toda la mano y la batería dura hasta 40 horas por carga.» · «<strong>Juegas sin riesgo:</strong> 90 días de garantía con devolución del dinero.»
   - Chips: «Funciona con: Switch, Switch Lite, Switch OLED, Switch 2».
   - No decir "todos los juegos": carreras, acción y aventuras.
 
