@@ -14,12 +14,17 @@
    "que": "EL GANCHO: rabia → poder. Lo viejo agrietado en la sombra, el control nuevo heroico.",
    "producto": true,
    "persona": false,
-   "escena": "Estudio oscuro con humo suave. A la izquierda, en sombra y desenfocado, un control pequeño genérico (tipo control lateral desmontable de consola, gris, sin logos) agrietado, con una grieta visible y apagado. Al centro-derecha, el control nuevo flotando ligeramente inclinado, visto desde abajo en ángulo heroico, con un fuerte contraluz rojo que dibuja su silueta, chispas rojas y líneas de velocidad que salen de él hacia los lados. Reflejo del control en un piso negro brillante.",
+   "escena": "Composición publicitaria cuadrada de alto impacto en un estudio oscuro con humo suave y piso negro brillante. El protagonista es SOLO el control de la foto adjunta (sin la caja): grande, ocupando cerca del 55 % del cuadro, al centro-derecha, flotando ligeramente inclinado hacia la cámara, visto desde abajo en ángulo heroico, con nitidez total en los botones, la cruceta y los dos sticks. Un contraluz rojo intenso (#d62828) dibuja su silueta, con chispas rojas y líneas de velocidad que salen de él hacia los lados, como si acabara de tomar una curva a toda velocidad, y su reflejo se ve en el piso. En la esquina inferior izquierda, pequeño, en sombra y desenfocado, un control lateral pequeño genérico gris, agrietado y apagado: el control viejo que ya no responde. Deja la franja superior más oscura y despejada para el titular, y la franja inferior para las dos etiquetas.",
    "historial": [
     {
      "fecha": "2026-11-13",
      "parte": "escena",
      "cambio": "Rabia → poder: estudio oscuro, controlcito agrietado vs. control heroico con contraluz rojo."
+    },
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena",
+     "cambio": "Prompt detallado con la foto de referencia del control (sin la caja ni logos), composición y espacio para textos."
     }
    ],
    "textos": [
