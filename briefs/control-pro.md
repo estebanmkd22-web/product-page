@@ -57,7 +57,13 @@ Fuente de cada dato:
 | 4 | **"Todo lo del Pro (NFC, vibración HD, 40 h) sin pagar $340.000"** | Objeción #1 + precio | Es la **I** de ATI (lo específico) y va en el subtítulo y los bullets. |
 
 - **Hipótesis:** "Creemos que quien juega Switch, y quien se lo regala, compra más con un hero que nombra en palabras simples el control que se daña y se mueve solo, y le muestra un control que se siente como el de marca por la mitad del precio. Lo sabremos si más del 50 % pasa del hero en Clarity con al menos 200 visitantes."
-- **Ángulo principal (elegido por el usuario, 2026-11-12):** **1 · "Se acabó el control que se mueve solo"**, en lenguaje sencillo, para quien juega y para quien regala. Peleas por el control (ángulo 2) y manos cansadas (ángulo 3) van como beneficios más abajo. Lo técnico va abajo y traducido: NFC → funciona con figuras amiibo; vibración HD → sientes cada golpe; 40 h → dura semanas sin cargar. Ancla: "se siente como el de marca, por la mitad de lo que cuesta ese".
+- **Ángulo principal (redefinido por el usuario, 2026-11-13):** **el que juega**, cansado de que su control actual no le da estabilidad para maniobrar y le da rabia; el nuevo control da una mejor experiencia, más pro, en carreras, acción y aventuras. Black Days en la oferta.
+- **Hero aprobado por el usuario (2026-11-13):**
+  - Título: «No más rabias por <em>el control que no responde</em>.»
+  - Subtítulo: «Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras, listo para jugar en menos de 10 minutos.»
+  - Bullets: «<strong>Maniobras al instante:</strong> sticks grandes de control completo para girar, apuntar y esquivar justo cuando lo necesitas.» · «<strong>Sientes cada choque:</strong> vibración HD, sensor de movimiento para apuntar moviendo el control y lector de figuras amiibo.» · «<strong>Partidas largas sin cansarte:</strong> se agarra con toda la mano y la batería dura hasta 40 horas por carga.» · «<strong>Juegas sin riesgo:</strong> si falla en 90 días, te devolvemos tu dinero.»
+  - Chips: «Funciona con: Switch, Switch Lite, Switch OLED, Switch 2».
+  - No decir "todos los juegos": carreras, acción y aventuras.
 
 ## 5. Oferta
 - **Precio:** $179.900, ya con el 35 % de descuento de Black Friday. [Usuario]
