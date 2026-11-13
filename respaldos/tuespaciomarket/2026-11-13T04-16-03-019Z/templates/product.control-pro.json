@@ -1,0 +1,906 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#d62828",
+        "boton": "#d62828",
+        "boton_texto": "#ffffff",
+        "texto": "#1b1f2a",
+        "texto_2": "#5b6272",
+        "fondo": "#f4f5f8",
+        "fondo_2": "#e7e9ef",
+        "ok": "#2a9d55",
+        "estrella": "#f5a400",
+        "radio": 18,
+        "fuente_propia": false,
+        "fuente_titulos": "sans_serif_n7",
+        "mayusculas": false,
+        "cursiva": false
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🎮 Maniobra como se debe"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "✅ Funciona con Switch, Lite, OLED y Switch 2"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🛡️ 90 días de garantía con devolución del dinero"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "💵 Pagas al recibir"
+          }
+        },
+        "mensaje_5": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🚚 Envío gratis a toda Colombia"
+          }
+        },
+        "mensaje_6": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "🔥 Black Days: 35 % menos hasta el 30 de noviembre"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4",
+        "mensaje_5",
+        "mensaje_6"
+      ],
+      "settings": {
+        "fondo": "#1b1f2a",
+        "texto": "#ffffff",
+        "tamano": 14,
+        "velocidad": 30,
+        "separador": "✦"
+      }
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Maniobras al instante:</strong> sticks grandes de control completo para girar, apuntar y esquivar justo cuando lo necesitas.",
+            "icono": "ninguno"
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Sientes cada choque:</strong> vibración HD, sensor de movimiento para apuntar moviendo el control y lector de figuras amiibo.",
+            "icono": "ninguno"
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Partidas largas sin cansarte:</strong> se agarra con toda la mano y la batería dura hasta 40 horas por carga.",
+            "icono": "ninguno"
+          }
+        },
+        "beneficio_4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Juegas sin riesgo:</strong> 90 días de garantía con devolución del dinero.",
+            "icono": "ninguno"
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3",
+        "beneficio_4"
+      ],
+      "settings": {
+        "producto": "",
+        "fondo": "#f4f5f8",
+        "imagen_1": "shopify://shop_images/control_gamer_ad_1080.webp",
+        "imagen_2": "shopify://shop_images/comparativa_control_gamer_1080.webp",
+        "imagen_3": "shopify://shop_images/juega_horas_sin_parar_1080.webp",
+        "navegacion": "miniaturas",
+        "proporcion": "1 / 1",
+        "mostrar_rating": false,
+        "rating": "4.8/5",
+        "rating_texto": "· 458 reseñas",
+        "titulo": "No más rabias por <em>el control que no responde</em>.",
+        "texto": "Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras. En 10 minutos lo conectas y ya estás jugando.",
+        "icono_beneficios": "✚",
+        "mostrar_oferta": false,
+        "ahorro_texto": "Ahorrás",
+        "incluye_titulo": "Con tu pedido, te llevás:",
+        "boton_modo": "easysell",
+        "boton_texto": "Ordenar ahora — Pagás al recibir",
+        "boton_subtexto": "",
+        "boton_pulse": true,
+        "ir_a_checkout": true,
+        "boton_enlace": "",
+        "nota": "Te escribiremos por WhatsApp para confirmar tu pedido",
+        "mostrar_pagos": false,
+        "entrega_texto": "",
+        "pagos_texto": "Contraentrega, Efectivo, Tarjeta"
+      }
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "reloj",
+            "texto": "Hasta 40 h por carga"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "estrella",
+            "texto": "Lee figuras amiibo"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "usb",
+            "texto": "Cable incluido"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ],
+      "settings": {
+        "estilo": "circulos",
+        "fondo": "fondo",
+        "titulo": "",
+        "espacio": 8
+      }
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 control",
+            "destacar": "Black Days",
+            "etiqueta": "35 % menos hasta el 30 de noviembre",
+            "titulo": "Control Pro inalámbrico",
+            "linea_regalo": "",
+            "detalle": "El de marca cuesta $339.900",
+            "precio": 179900,
+            "precio_antes": 276800,
+            "cantidad": 1,
+            "enlace": "",
+            "preseleccionado": true
+          }
+        },
+        "regalo_2": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia",
+            "valor_tachado": "$23.000",
+            "sello": "Envío gratis"
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Bono",
+            "icono": "regalo",
+            "titulo": "15 % en tu segundo control",
+            "texto": "Te lo damos al hacer tu pedido",
+            "valor_tachado": "$26.985",
+            "sello": "Segundo control"
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluida",
+            "icono": "escudo",
+            "titulo": "Garantía 90 días",
+            "texto": "Con devolución del dinero",
+            "sello": "Devolución del dinero"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "regalo_2",
+        "regalo_3",
+        "regalo_4"
+      ],
+      "settings": {
+        "color_acento": "#d62828",
+        "color_pestana": "#1b1f2a",
+        "fondo": "fondo",
+        "espacio": 20,
+        "titulo": "Black Days: juega más pro <em>por $179.900</em>",
+        "etiquetas_titulo": "Funciona con",
+        "etiquetas": "Switch, Switch Lite, Switch OLED, Switch 2",
+        "etiquetas_estilo": "iconos",
+        "colores_texto": "",
+        "color_1_nombre": "",
+        "color_1": "#8a4b2a",
+        "color_2_nombre": "",
+        "color_2": "#6b7a3c",
+        "acebo": false,
+        "mostrar_ahorro": true,
+        "incluye_titulo": "Incluido en tu pedido",
+        "estilo_regalos": "tarjetas",
+        "valor_texto": "",
+        "valor_tachado": "",
+        "boton_modo": "easysell",
+        "boton_texto": "Lo quiero — Pago al recibir",
+        "precio_en_boton": true,
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
+        "confianza": true,
+        "entrega": "Envío gratis a toda Colombia"
+      }
+    },
+    "videos": {
+      "type": "pp-videos",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "etiqueta": "El control de cerca"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "etiqueta": "Sus botones y sticks"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "etiqueta": "Así se ve en persona"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ],
+      "settings": {
+        "color_fondo": "#fbf6ef",
+        "color_texto": "#221b17",
+        "color_acento": "#c8873a",
+        "etiqueta": "",
+        "titulo": "Míralo <em>en acción</em>",
+        "texto": "Videos reales del control, para que lo veas antes de pedirlo.",
+        "ancho_movil": 40,
+        "espacio": 24,
+        "auto_avance": true,
+        "auto_segundos": 4,
+        "boton_modo": "ninguno",
+        "boton_texto": "Quiero el mío",
+        "boton_enlace": ""
+      }
+    },
+    "grid_dolores": {
+      "type": "pp-grid-dolores",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "titulo": "Camina solo",
+            "texto": "El personaje se mueve sin que toques nada, y pierdes."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "titulo": "Se te va la mano",
+            "texto": "Con sticks pequeños cuesta apuntar y girar fino en carreras y en acción."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "titulo": "Sin firmeza",
+            "texto": "Un control pequeño no se agarra bien, y en partidas largas te cansas."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "titulo": "Otro par, otra vez",
+            "texto": "Un par nuevo de controlcitos cuesta cerca de $343.000."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "El problema",
+        "titulo": "“Siempre se me descomponen <em>de la palanca.</em>”",
+        "texto": "Giras y no gira. Apuntas y se te va. Con los meses, la palanca de los controlcitos empieza a fallar y el personaje camina solo: a eso le dicen \"drift\".",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "No es que juegues mal: <em>es el control.</em>"
+      }
+    },
+    "galeria_ideas": {
+      "type": "pp-galeria-ideas",
+      "blocks": {
+        "idea_1": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Carreras",
+            "titulo": "Cada curva, a tu manera",
+            "texto": "Giras con el stick grande y sientes cada choque con la vibración."
+          }
+        },
+        "idea_2": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Acción",
+            "titulo": "Esquiva justo a tiempo",
+            "texto": "Apuntas y esquivas con firmeza, y en los juegos que lo usan apuntas moviendo el control."
+          }
+        },
+        "idea_3": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Aventuras",
+            "titulo": "Horas sin soltarlo",
+            "texto": "Se agarra con toda la mano y la batería dura hasta 40 horas por carga."
+          }
+        },
+        "idea_4": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Con amigos",
+            "titulo": "Cuando llega la visita",
+            "texto": "Uno con este control y otro con los controlcitos: nadie se queda mirando."
+          }
+        }
+      },
+      "block_order": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4"
+      ],
+      "settings": {
+        "color_fondo": "#e7e9ef",
+        "color_texto": "#1b1f2a",
+        "color_acento": "#d62828",
+        "nieve": false,
+        "alineacion": "izq",
+        "etiqueta": "Dónde se nota",
+        "titulo": "Juega más pro <em>donde cada movimiento cuenta</em>",
+        "texto": "Agarre completo y sticks grandes para carreras, acción y aventuras.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "2"
+      }
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "check",
+            "titulo": "Sticks asimétricos con clic",
+            "puntos": "Dos sticks grandes, uno arriba y otro abajo, para que cada pulgar quede en su sitio al girar, apuntar o esquivar."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "rayo",
+            "titulo": "Vibración HD",
+            "puntos": "Sientes en las manos cada choque en carreras y cada golpe en acción."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "estrella",
+            "titulo": "Lector de figuras amiibo (NFC)",
+            "puntos": "Acercas la figura al control y el juego la reconoce. Muchos controles compatibles no lo traen."
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Sensor de movimiento (giroscopio)",
+            "puntos": "En los juegos que lo usan, apuntas o giras moviendo el control."
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "Batería de 1300 mAh",
+            "puntos": "Hasta 40 horas de juego por carga. Se carga completo en unas 6 horas con su cable USB-C."
+          }
+        },
+        "fila_6": {
+          "type": "fila",
+          "settings": {
+            "icono": "manual",
+            "titulo": "Todos los botones",
+            "puntos": "Captura, Home, + y −, L, R, ZL, ZR, cruceta y dos sticks con clic."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5",
+        "fila_6"
+      ],
+      "settings": {
+        "color_fondo": "#e7e9ef",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#d62828",
+        "color_dorado": "#d62828",
+        "color_texto": "#1b1f2a",
+        "adorno": false,
+        "difuminar": true,
+        "titulo": "Lo técnico,",
+        "titulo_dorado": "dicho fácil",
+        "titulo_fin": "",
+        "subtitulo": "",
+        "cierre": ""
+      }
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "etiqueta": "",
+            "titulo": "Conecta el cable",
+            "texto": "El que viene en la caja. Puedes jugar mientras carga."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "etiqueta": "",
+            "titulo": "Emparéjalo con tu consola",
+            "texto": "Desde el menú Controles, sin aplicaciones ni instalar nada."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "etiqueta": "",
+            "titulo": "A maniobrar",
+            "texto": "Inalámbrico o con cable, como prefieras."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "titulo": "Listo en minutos: <em>3 pasos</em>",
+        "texto": "",
+        "estilo": "fotos",
+        "numerar": true,
+        "proporcion": "1 / 1"
+      }
+    },
+    "esperar": {
+      "type": "pp-esperar",
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "Al abrir la caja",
+            "texto": "Encuentras el control y su cable USB-C."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "En 10 minutos",
+            "texto": "Lo conectas con el cable, lo emparejas desde el menú y ya estás jugando."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "La primera semana",
+            "texto": "Te acostumbras al agarre completo y juegas partidas largas sin soltarlo."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Con una sola carga",
+            "texto": "Hasta 40 horas de juego: semanas, según cuánto juegues."
+          }
+        },
+        "etapa_5": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Durante 90 días",
+            "texto": "Tienes 90 días de garantía con devolución del dinero."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4",
+        "etapa_5"
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#d62828",
+        "color_icono": "#d62828",
+        "etiqueta": "Qué esperar",
+        "titulo": "Desde que abres la caja, <em>listo para jugar</em>",
+        "texto": "Esto es lo que pasa cuando llega a tu casa."
+      }
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Agarre",
+            "subtitulo": "Al maniobrar",
+            "ok_a": true,
+            "valor_a": "Firme, con toda la mano",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Pequeños, poca firmeza",
+            "nota_b": ""
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sticks",
+            "subtitulo": "Girar y apuntar",
+            "ok_a": true,
+            "valor_a": "Grandes, control completo",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Pequeños",
+            "nota_b": ""
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Partidas largas",
+            "subtitulo": "Comodidad",
+            "ok_a": true,
+            "valor_a": "Horas sin soltarlo",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Cansan en partidas largas",
+            "nota_b": ""
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Respaldo",
+            "subtitulo": "Si se dañan los controlcitos",
+            "ok_a": true,
+            "valor_a": "90 días de garantía con devolución del dinero",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Comprar otro par: ~$343.000",
+            "nota_b": ""
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "La diferencia",
+        "titulo": "Este control vs. <em>los controlcitos de siempre</em>",
+        "texto": "Frente a los dos controles pequeños que trae la consola.",
+        "color_destacado": "#d62828",
+        "nombre_a": "Control Pro",
+        "sub_a": "Compatible con Switch",
+        "nombre_b": "Pequeños",
+        "sub_b": "Los controlcitos",
+        "pie_izq": "Control Pro",
+        "pie_der": "Firme, preciso y completo"
+      }
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Por fin se siente firme",
+            "texto": "Mis controlcitos ya caminaban solos. Este lo agarro con toda la mano y en las carreras juego mucho más tranquilo.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Bogotá",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Se siente cada golpe",
+            "texto": "En los juegos de acción la vibración se nota de verdad. Y los sticks grandes ayudan a apuntar.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Medellín",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Listo en minutos",
+            "texto": "Lo conecté con el cable, lo emparejé desde el menú y esa misma noche ya estaba jugando.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Cali",
+            "fecha": "",
+            "verificado": false
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3"
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "etiqueta": "Opiniones · Testimonios de ejemplo",
+        "titulo": "Así se siente <em>jugar con él</em>",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 3,
+        "boton_mas": "Ver más opiniones"
+      }
+    },
+    "faq": {
+      "type": "pp-faq",
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Andrés de Bogotá pregunta: ¿este también se va a mover solo?",
+            "respuesta": "<p>No te vamos a prometer que nunca falle. Lo que sí te damos: <strong>90 días de garantía con devolución del dinero</strong>, y lo pagas al recibir.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Marta de Medellín pregunta: ¿es original de Nintendo?",
+            "respuesta": "<p>No. Es un control <strong>compatible con Nintendo Switch</strong>, sin marca. Tiene vibración, sensor de movimiento, lector de figuras amiibo y batería de hasta 40 horas.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Camilo de Cali pregunta: ¿sirve con mi consola?",
+            "respuesta": "<p>Sí, si es una <strong>Switch, Switch Lite, Switch OLED o Switch 2</strong>. Se conecta por Bluetooth desde el menú Controles.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Julián de Barranquilla pregunta: ¿tiene vibración, sensor de movimiento y lee amiibo?",
+            "respuesta": "<p>Sí, las tres: <strong>vibración HD</strong>, giroscopio para apuntar moviendo el control y <strong>NFC para figuras amiibo</strong>, que muchos compatibles no traen.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sebastián de Bucaramanga pregunta: ¿se desconecta o es difícil de conectar?",
+            "respuesta": "<p>Se conecta por Bluetooth desde el menú Controles de la consola. Si en algún momento se desconecta, sigues jugando con el cable. Y tienes <strong>90 días de garantía con devolución del dinero</strong>.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Laura de Pereira pregunta: ¿cuánto dura la batería?",
+            "respuesta": "<p>Hasta <strong>40 horas de juego</strong> por carga. Se carga completo en unas 6 horas con el cable USB-C que viene en la caja.</p>"
+          }
+        },
+        "pregunta_7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Diego de Cartagena pregunta: ¿prende la consola con el botón Home?",
+            "respuesta": "<p>No lo prometemos. Prende la consola con su botón y después juega normal con el control.</p>"
+          }
+        },
+        "pregunta_8": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Paola de Ibagué pregunta: ¿por qué cuesta más que otros controles compatibles?",
+            "respuesta": "<p>Porque trae lo que más se usa del control de marca: vibración, sensor de movimiento, lector de figuras amiibo y hasta 40 horas de batería. Además, la garantía es <strong>aquí en Colombia</strong>: 90 días de garantía con devolución del dinero, y lo pagas al recibir. El de marca cuesta $339.900.</p>"
+          }
+        },
+        "pregunta_9": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sandra de Villavicencio pregunta: ¿cómo pago y hasta cuándo es el precio de Black Days?",
+            "respuesta": "<p>Pagas cuando lo recibes y el envío es <strong>gratis a toda Colombia</strong>. El precio de Black Days, $179.900, va <strong>hasta el 30 de noviembre</strong>. Y al hacer tu pedido te damos un <strong>15 % de descuento para tu segundo control</strong>.</p>"
+          }
+        },
+        "pregunta_10": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Mateo de Manizales pregunta: ¿sirve para todos los juegos?",
+            "respuesta": "<p>Está pensado para <strong>carreras, acción y aventuras</strong>, donde más se nota el agarre y los sticks grandes. No te prometemos que sirva igual en todos: algunos juegos están hechos para jugar con los controlcitos separados.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6",
+        "pregunta_7",
+        "pregunta_8",
+        "pregunta_9",
+        "pregunta_10"
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "estilo": "tarjetas",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "whatsapp": "",
+        "whatsapp_texto": "Escríbenos por WhatsApp",
+        "abrir_primera": true
+      }
+    },
+    "garantia": {
+      "type": "pp-garantia",
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "90 días de garantía con devolución del dinero"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "camion",
+            "texto": "Envío gratis"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ],
+      "settings": {
+        "color_tarjeta": "#1b1f2a",
+        "color_texto": "#ffffff",
+        "color_sello": "#d62828",
+        "nieve": false,
+        "sello_arriba": "Garantía",
+        "sello_numero": "90",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra sin riesgo",
+        "titulo": "90 días de garantía con devolución del dinero",
+        "texto": "Juegas tranquilo: tienes 90 días de garantía con devolución del dinero. Y lo pagas cuando te llega."
+      }
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "aparecer": "despues_oferta",
+        "solo_movil": true,
+        "mostrar_precio": true,
+        "precio_manual": 179900,
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "boton_modo": "easysell",
+        "boton_texto": "Lo quiero"
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "iconos",
+    "oferta_tabs",
+    "videos",
+    "grid_dolores",
+    "galeria_ideas",
+    "problemas_filas",
+    "pasos",
+    "esperar",
+    "comparativa",
+    "resenas",
+    "faq",
+    "garantia",
+    "boton_fijo"
+  ]
+}
