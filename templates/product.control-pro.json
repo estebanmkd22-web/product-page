@@ -143,7 +143,11 @@
         "mostrar_pagos": false,
         "entrega_texto": "",
         "pagos_texto": "Contraentrega, Efectivo, Tarjeta"
-      }
+      },
+      "custom_css": [
+        ".pp-ot__cta > :not(.pp-btn):not(.pp-ot__nota):not(.pp-ot__confianza) {display: none !important;}",
+        "[class*='es-form'], [class*='es-button'], [class*='easysell'], [id*='easysell'], [id^='es-'], .es-popup-button {display: none !important;}"
+      ]
     },
     "iconos": {
       "type": "pp-iconos",
@@ -276,7 +280,11 @@
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
         "confianza": true,
         "entrega": "Envío gratis a toda Colombia"
-      }
+      },
+      "custom_css": [
+        ".pp-ot__cta > :not(.pp-btn):not(.pp-ot__nota):not(.pp-ot__confianza) {display: none !important;}",
+        "[class*='es-form'], [class*='es-button'], [class*='easysell'], [id*='easysell'], [id^='es-'], .es-popup-button {display: none !important;}"
+      ]
     },
     "videos": {
       "type": "pp-videos",
