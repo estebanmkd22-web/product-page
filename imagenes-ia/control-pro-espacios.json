@@ -1,0 +1,269 @@
+[
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No más rabias por el control que no responde.",
+    "id": "hero-oferta.imagen_1",
+    "donde": "Imagen 1 (la principal)",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No más rabias por el control que no responde.",
+    "id": "hero-oferta.imagen_2",
+    "donde": "Imagen 2",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No más rabias por el control que no responde.",
+    "id": "hero-oferta.imagen_3",
+    "donde": "Imagen 3",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No más rabias por el control que no responde.",
+    "id": "hero-oferta.imagen_4",
+    "donde": "Imagen 4",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No más rabias por el control que no responde.",
+    "id": "hero-oferta.imagen_5",
+    "donde": "Imagen 5",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Hero + Oferta",
+    "tipo": "pp-hero-oferta",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "No más rabias por el control que no responde.",
+    "id": "hero-oferta.imagen_6",
+    "donde": "Imagen 6",
+    "n": 6
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "“Siempre se me descomponen de la palanca.”",
+    "id": "grid-dolores.item1",
+    "donde": "Tarjeta 1 · Camina solo",
+    "contexto": "Camina solo — El personaje se mueve sin que toques nada, y pierdes.",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "“Siempre se me descomponen de la palanca.”",
+    "id": "grid-dolores.item2",
+    "donde": "Tarjeta 2 · Se te va la mano",
+    "contexto": "Se te va la mano — Con sticks pequeños cuesta apuntar y girar fino en carreras y en acción.",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "“Siempre se me descomponen de la palanca.”",
+    "id": "grid-dolores.item3",
+    "donde": "Tarjeta 3 · Sin firmeza",
+    "contexto": "Sin firmeza — Un control pequeño no se agarra bien, y en partidas largas te cansas.",
+    "n": 9
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "“Siempre se me descomponen de la palanca.”",
+    "id": "grid-dolores.item4",
+    "donde": "Tarjeta 4 · Otro par, otra vez",
+    "contexto": "Otro par, otra vez — Un par nuevo de controlcitos cuesta cerca de $343.000.",
+    "n": 10
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Juega más pro donde cada movimiento cuenta",
+    "id": "galeria-ideas.idea1",
+    "donde": "Tarjeta 1 · Cada curva, a tu manera",
+    "contexto": "Cada curva, a tu manera — Giras con el stick grande y sientes cada choque con la vibración.",
+    "n": 11
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Juega más pro donde cada movimiento cuenta",
+    "id": "galeria-ideas.idea2",
+    "donde": "Tarjeta 2 · Esquiva justo a tiempo",
+    "contexto": "Esquiva justo a tiempo — Apuntas y esquivas con firmeza, y en los juegos que lo usan apuntas moviendo el control.",
+    "n": 12
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Juega más pro donde cada movimiento cuenta",
+    "id": "galeria-ideas.idea3",
+    "donde": "Tarjeta 3 · Horas sin soltarlo",
+    "contexto": "Horas sin soltarlo — Se agarra con toda la mano y la batería dura hasta 40 horas por carga.",
+    "n": 13
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Juega más pro donde cada movimiento cuenta",
+    "id": "galeria-ideas.idea4",
+    "donde": "Tarjeta 4 · Cuando llega la visita",
+    "contexto": "Cuando llega la visita — Uno con este control y otro con los controlcitos: nadie se queda mirando.",
+    "n": 14
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo técnico,",
+    "id": "problemas-filas.fila1",
+    "donde": "Fila 1 · Sticks asimétricos con clic",
+    "contexto": "Sticks asimétricos con clic — Dos sticks grandes, uno arriba y otro abajo, para que cada pulgar quede en su sitio al girar, apuntar o esquivar.",
+    "n": 15
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo técnico,",
+    "id": "problemas-filas.fila2",
+    "donde": "Fila 2 · Vibración HD",
+    "contexto": "Vibración HD — Sientes en las manos cada choque en carreras y cada golpe en acción.",
+    "n": 16
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo técnico,",
+    "id": "problemas-filas.fila3",
+    "donde": "Fila 3 · Lector de figuras amiibo (NFC)",
+    "contexto": "Lector de figuras amiibo (NFC) — Acercas la figura al control y el juego la reconoce. Muchos controles compatibles no lo traen.",
+    "n": 17
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo técnico,",
+    "id": "problemas-filas.fila4",
+    "donde": "Fila 4 · Sensor de movimiento (giroscopio)",
+    "contexto": "Sensor de movimiento (giroscopio) — En los juegos que lo usan, apuntas o giras moviendo el control.",
+    "n": 18
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo técnico,",
+    "id": "problemas-filas.fila5",
+    "donde": "Fila 5 · Batería de 1300 mAh",
+    "contexto": "Batería de 1300 mAh — Hasta 40 horas de juego por carga. Se carga completo en unas 6 horas con su cable USB-C.",
+    "n": 19
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo técnico,",
+    "id": "problemas-filas.fila6",
+    "donde": "Fila 6 · Todos los botones",
+    "contexto": "Todos los botones — Captura, Home, + y −, L, R, ZL, ZR, cruceta y dos sticks con clic.",
+    "n": 20
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Listo en minutos: 3 pasos",
+    "id": "pasos.paso1",
+    "donde": "Paso 1 · Conecta el cable",
+    "contexto": "Conecta el cable — El que viene en la caja. Puedes jugar mientras carga.",
+    "n": 21
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Listo en minutos: 3 pasos",
+    "id": "pasos.paso2",
+    "donde": "Paso 2 · Emparéjalo con tu consola",
+    "contexto": "Emparéjalo con tu consola — Desde el menú Controles, sin aplicaciones ni instalar nada.",
+    "n": 22
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Listo en minutos: 3 pasos",
+    "id": "pasos.paso3",
+    "donde": "Paso 3 · A maniobrar",
+    "contexto": "A maniobrar — Inalámbrico o con cable, como prefieras.",
+    "n": 23
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Este control vs. los controlcitos de siempre",
+    "id": "comparativa.imagen_a",
+    "donde": "Imagen (fondo transparente ideal)",
+    "n": 24
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Este control vs. los controlcitos de siempre",
+    "id": "comparativa.imagen_b",
+    "donde": "Imagen (opcional)",
+    "n": 25
+  }
+]

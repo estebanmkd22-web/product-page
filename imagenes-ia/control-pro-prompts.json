@@ -1,0 +1,242 @@
+{
+ "version": 2,
+ "landing": "Control Pro inalámbrico",
+ "referencia_archivo": "imagenes/control-pro/producto.jpg",
+ "ficha": {
+  "escenario": "Salas y escritorios gamer de apartamento colombiano, de noche, ordenados pero vividos.",
+  "luz": "Luz de pantalla y lámpara cálida, salvo donde la escena diga otra (estudio o neón).",
+  "paleta": "Grafito, negro y acentos rojos, combinando con el rojo de la landing (#d62828).",
+  "estilo": "Foto realista tipo celular de buena calidad, producto nítido y protagonista, sin personas ni manos."
+ },
+ "producto": "El control inalámbrico tipo Pro de la foto adjunta: copia la forma, el color negro grafito, los botones, la cruceta, los dos sticks asimétricos y la carcasa frontal semitransparente. Quita cualquier logo, palabra o marca que tenga la foto (sin logos de Nintendo, sin la palabra Nintendo ni Switch, sin la caja). Sin piezas de más.",
+ "reglas": "Sin personas ni manos. Sin textos, letreros ni logos dentro de la imagen. En las pantallas, juegos genéricos sin personajes ni gráficos de marcas reales. Los controles pequeños que aparezcan son genéricos, sin logos.",
+ "espacios": {
+  "hero-oferta.imagen_1": {
+   "que": "EL GANCHO (Atención). Convierte la rabia del control que no responde en poder: el control nuevo es el protagonista y los controlcitos quedan como el pasado.",
+   "producto": true,
+   "persona": false,
+   "escena": "Sala gamer de noche. El control nuevo, grande y nítido, en primer plano apoyado en ángulo sobre la mesa de centro, ocupando cerca de la mitad del cuadro, con la luz de la pantalla rebotando en su carcasa semitransparente. Detrás, un televisor desenfocado con un juego de carreras genérico en plena curva (sin personajes ni marcas). A un lado, dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) tirados y apagados, más pequeños y fuera de foco.",
+   "historial": [],
+   "textos": [
+    "Ahora mandas tú, no el control",
+    "Agarre firme",
+    "Sticks grandes"
+   ],
+   "principal": true,
+   "variantes": [
+    {
+     "nombre": "B",
+     "escena": "Igual que la principal, pero los controlcitos pequeños se ven más claros en un rincón del cuadro, como algo que ya se dejó atrás; el control nuevo sigue siendo el protagonista grande.",
+     "textos": [
+      "Deja de perder por el control",
+      "Firme en cada curva"
+     ]
+    },
+    {
+     "nombre": "C",
+     "escena": "El control nuevo de frente, centrado y grande sobre una superficie oscura, con la luz de la pantalla rebotando en la carcasa semitransparente; fondo oscuro con luces de neón suaves.",
+     "textos": [
+      "La palanca ya no decide tu partida",
+      "Precisión de verdad"
+     ]
+    }
+   ]
+  },
+  "hero-oferta.imagen_2": {
+   "que": "Comparativa del dolor resuelto: con los controlcitos el carro se sale; con el control nuevo, el carro va en la curva.",
+   "producto": true,
+   "persona": false,
+   "escena": "Imagen dividida en dos lados con la misma luz. Izquierda: dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) sobre la mesa y detrás una pantalla con un carro de carreras genérico saliéndose de la pista. Derecha: el control nuevo grande sobre la misma mesa y detrás la pantalla con el carro tomando la curva perfecto.",
+   "historial": [],
+   "textos": [
+    "Va justo donde tú quieres",
+    "Se mueve solo",
+    "Responde al instante"
+   ],
+   "comparativa": "lado izquierdo: los controlcitos y el carro fuera de la pista, etiqueta «Se mueve solo»; lado derecho: el control nuevo y el carro en la curva, etiqueta «Responde al instante»."
+  },
+  "hero-oferta.imagen_3": {
+   "que": "Característica clave: vibración y batería, dichas en grande.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo de frente sobre una mesa oscura con luz de estudio suave, la carcasa semitransparente visible. Ondas gráficas sutiles alrededor de las empuñaduras que sugieren vibración. El cable USB-C enrollado a un lado.",
+   "historial": [],
+   "textos": [
+    "Siente cada choque en tus manos",
+    "Vibración HD",
+    "40 h por carga"
+   ]
+  },
+  "hero-oferta.imagen_4": {
+   "que": "Comparativa del agarre: pequeño frente a firme y completo.",
+   "producto": true,
+   "persona": false,
+   "escena": "Imagen dividida en dos lados sobre la misma mesa y con la misma luz. Izquierda: dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos), que se ven diminutos. Derecha: el control nuevo, grande y completo, a la misma escala para que se note la diferencia de tamaño.",
+   "historial": [],
+   "textos": [
+    "Agarre de control de verdad",
+    "Pequeño",
+    "Firme y completo"
+   ],
+   "comparativa": "lado izquierdo: los controlcitos pequeños, etiqueta «Pequeño»; lado derecho: el control nuevo grande, etiqueta «Firme y completo»."
+  },
+  "hero-oferta.imagen_5": {
+   "que": "Deseo: el control en un setup gamer que da ganas de tener.",
+   "producto": true,
+   "persona": false,
+   "escena": "Escritorio gamer con luces de neón azul y rojo, pantalla encendida con un juego de acción genérico desenfocado. El control nuevo protagonista sobre el escritorio, en ángulo tres cuartos, con la luz neón reflejada en la carcasa.",
+   "historial": [],
+   "textos": [
+    "Juega como siempre quisiste",
+    "Carreras",
+    "Acción"
+   ]
+  },
+  "hero-oferta.imagen_6": {
+   "que": "Versatilidad: un mismo control domina carreras, acción y aventuras.",
+   "producto": true,
+   "persona": false,
+   "escena": "Tres paneles verticales lado a lado. En cada uno, el control nuevo frente a una pantalla con un tipo de juego genérico: un juego de carreras, uno de acción y uno de aventura en un paisaje. Misma luz en los tres paneles.",
+   "historial": [],
+   "textos": [
+    "Domina carreras, acción y aventuras",
+    "Carreras",
+    "Acción",
+    "Aventuras"
+   ]
+  },
+  "grid-dolores.item1": {
+   "que": "Camina solo: el dolor de que el personaje se mueve sin tocar nada. No muestra el control nuevo.",
+   "producto": false,
+   "persona": false,
+   "escena": "Primer plano de dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) sobre un sofá, uno con la palanca ligeramente inclinada, y detrás una pantalla desenfocada con un personaje genérico caminando solo hacia un borde.",
+   "historial": []
+  },
+  "grid-dolores.item2": {
+   "que": "Se te va la mano: sticks pequeños, poca precisión. No muestra el control nuevo.",
+   "producto": false,
+   "persona": false,
+   "escena": "Macro de la palanca pequeña de un control lateral genérico, con una pantalla desenfocada al fondo donde una mira de puntería genérica queda fuera del objetivo.",
+   "historial": []
+  },
+  "grid-dolores.item3": {
+   "que": "Sin firmeza: un control pequeño no se agarra bien. No muestra el control nuevo.",
+   "producto": false,
+   "persona": false,
+   "escena": "Un grip pequeño genérico con dos controles laterales montados, sobre una mesa, que se ve apretado y diminuto junto a una taza normal como escala.",
+   "historial": []
+  },
+  "grid-dolores.item4": {
+   "que": "Otro par, otra vez: la plata que se va en reponer controles. No muestra el control nuevo.",
+   "producto": false,
+   "persona": false,
+   "escena": "Varios controles laterales pequeños genéricos viejos y gastados en un cajón, con una caja vacía genérica (sin marca) al lado, sugiriendo que ya se compraron varias veces.",
+   "historial": []
+  },
+  "galeria-ideas.idea1": {
+   "que": "Carreras: cada curva, a tu manera. Deja el tercio inferior simple y más oscuro para el texto de la tarjeta.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo sobre el brazo de un sofá, frente a un televisor con un juego de carreras genérico en una curva; luz de la pantalla en la sala oscura.",
+   "historial": []
+  },
+  "galeria-ideas.idea2": {
+   "que": "Acción: esquiva justo a tiempo. Tercio inferior simple y más oscuro.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo sobre una mesa de centro, con una pantalla al fondo mostrando una escena de acción genérica con destellos de luz.",
+   "historial": []
+  },
+  "galeria-ideas.idea3": {
+   "que": "Aventuras: horas sin soltarlo. Tercio inferior simple y más oscuro.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo con el cable conectado sobre un sofá, de noche, con una pantalla al fondo mostrando un paisaje de aventura genérico.",
+   "historial": []
+  },
+  "galeria-ideas.idea4": {
+   "que": "Con amigos: cuando llega la visita. Tercio inferior simple y más oscuro.",
+   "producto": true,
+   "persona": false,
+   "escena": "Mesa de centro con el control nuevo y, al lado, dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos), dos vasos con bebida y snacks; pantalla al fondo con un juego genérico en pantalla dividida.",
+   "historial": []
+  },
+  "problemas-filas.fila1": {
+   "que": "Sticks asimétricos con clic.",
+   "producto": true,
+   "persona": false,
+   "escena": "Primer plano de los dos sticks del control nuevo, uno arriba a la izquierda y otro abajo a la derecha, con luz lateral que marca su textura.",
+   "historial": []
+  },
+  "problemas-filas.fila2": {
+   "que": "Vibración HD.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo sobre una superficie oscura, con ondas gráficas sutiles saliendo de las empuñaduras.",
+   "historial": []
+  },
+  "problemas-filas.fila3": {
+   "que": "Lector de figuras (NFC).",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo con una figura coleccionable genérica (un personaje inventado, sin marcas) apoyada junto al centro del control, donde va el lector.",
+   "historial": []
+  },
+  "problemas-filas.fila4": {
+   "que": "Sensor de movimiento.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo levemente inclinado en el aire sobre una mesa, con líneas gráficas curvas que sugieren movimiento y giro.",
+   "historial": []
+  },
+  "problemas-filas.fila5": {
+   "que": "Batería de 1300 mAh y cable USB-C.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo conectado a su cable USB-C, con un pequeño indicador de luz encendido, sobre una mesa limpia.",
+   "historial": []
+  },
+  "problemas-filas.fila6": {
+   "que": "Todos los botones.",
+   "producto": true,
+   "persona": false,
+   "escena": "Vista cenital del control nuevo completo, centrado, mostrando todos sus botones, cruceta y gatillos con luz pareja.",
+   "historial": []
+  },
+  "pasos.paso1": {
+   "que": "Paso 1: conecta el cable.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo con el cable USB-C enchufado, sobre una mesa, con la luz del indicador encendida.",
+   "historial": []
+  },
+  "pasos.paso2": {
+   "que": "Paso 2: emparéjalo con tu consola.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo frente a un televisor que muestra un menú genérico de controles (íconos simples, sin texto legible ni marcas), en una sala ordenada.",
+   "historial": []
+  },
+  "pasos.paso3": {
+   "que": "Paso 3: a maniobrar.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo sobre el sofá frente al televisor con un juego de carreras genérico en marcha, luz cálida de la sala.",
+   "historial": []
+  },
+  "comparativa.imagen_a": {
+   "que": "Imagen del lado del control nuevo en la comparativa.",
+   "producto": true,
+   "persona": false,
+   "escena": "El control nuevo de frente, centrado, sobre fondo claro y limpio, con sombra suave.",
+   "historial": []
+  },
+  "comparativa.imagen_b": {
+   "que": "Imagen del lado de los controlcitos en la comparativa.",
+   "producto": false,
+   "persona": false,
+   "escena": "Dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos), de frente, centrados sobre fondo claro y limpio, con sombra suave.",
+   "historial": []
+  }
+ }
+}
