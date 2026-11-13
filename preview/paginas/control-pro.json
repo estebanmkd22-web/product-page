@@ -98,8 +98,6 @@
     },
     "titulo": "No más rabias por <em>el control que no responde</em>.",
     "texto": "Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras. En 10 minutos lo conectas y ya estás jugando.",
-    "zonas_titulo": "Funciona con",
-    "zonas": "Switch, Switch Lite, Switch OLED, Switch 2",
     "proporcion": "1 / 1",
     "navegacion": "miniaturas"
    },
@@ -276,8 +274,7 @@
     "columnas_movil": "2",
     "columnas_pc": "4",
     "proporcion": "1 / 1",
-    "cierre": "No es que juegues mal: <em>es el control.</em>",
-    "cierre_estilo": "texto"
+    "cierre": "No es que juegues mal: <em>es el control.</em>"
    },
    "blocks": [
     {
