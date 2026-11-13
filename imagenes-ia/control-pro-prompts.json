@@ -68,17 +68,23 @@
    ]
   },
   "hero-oferta.imagen_4": {
-   "que": "Comparativa del agarre: pequeño frente a firme y completo.",
+   "que": "Comparativa de seguir jugando: la partida en pausa con los controlcitos frente a la partida en marcha con el control nuevo (partidas largas y 40 h de batería).",
    "producto": true,
    "persona": false,
-   "escena": "Imagen dividida en dos lados sobre la misma mesa y con la misma luz. Izquierda: dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos), que se ven diminutos. Derecha: el control nuevo, grande y completo, a la misma escala para que se note la diferencia de tamaño.",
-   "historial": [],
-   "textos": [
-    "Agarre de control de verdad",
-    "Pequeño",
-    "Firme y completo"
+   "escena": "Imagen dividida en dos lados, misma sala de noche y misma luz. Izquierda: dos controles pequeños genéricos (tipo controles laterales desmontables de consola, blancos o grises, sin logos) dejados sobre el sofá y, detrás, la pantalla con un ícono de pausa genérico grande sobre un juego detenido. Derecha: el control nuevo con su cable USB-C conectado, protagonista sobre el sofá, y detrás la pantalla con el juego de carreras en plena marcha; un reloj de pared o la ventana oscura sugieren que ya es tarde y la partida sigue.",
+   "historial": [
+    {
+     "fecha": "2026-11-13",
+     "parte": "escena, textos y comparativa",
+     "cambio": "Antes comparaba tamaño (igual a la imagen 2); ahora compara pausa vs. seguir jugando: «Juega horas sin parar»."
+    }
    ],
-   "comparativa": "lado izquierdo: los controlcitos pequeños, etiqueta «Pequeño»; lado derecho: el control nuevo grande, etiqueta «Firme y completo»."
+   "textos": [
+    "Juega horas sin parar",
+    "Otra vez en pausa",
+    "Sigues en la partida"
+   ],
+   "comparativa": "lado izquierdo: los controlcitos dejados y el juego en pausa, etiqueta «Otra vez en pausa»; lado derecho: el control nuevo con cable y el juego en marcha de noche, etiqueta «Sigues en la partida»."
   },
   "hero-oferta.imagen_5": {
    "que": "Deseo: el control en un setup gamer que da ganas de tener.",
