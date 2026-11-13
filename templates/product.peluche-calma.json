@@ -1,0 +1,1051 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#5b4b9a",
+        "boton": "#d9547f",
+        "boton_texto": "#ffffff",
+        "texto": "#2a2540",
+        "texto_2": "#6b6485",
+        "fondo": "#faf7fd",
+        "fondo_2": "#f0eaf8",
+        "ok": "#4f9a7a",
+        "estrella": "#f2b84b",
+        "radio": 18,
+        "fuente_propia": false,
+        "fuente_titulos": "sans_serif_n7",
+        "mayusculas": false,
+        "cursiva": false
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío GRATIS a toda Colombia"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pídelo a tiempo para Navidad"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Garantía de 60 días por daños de fábrica"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4"
+      ],
+      "settings": {
+        "fondo": "#5b4b9a",
+        "texto": "#ffffff",
+        "tamano": 14,
+        "velocidad": 64,
+        "separador": "✦"
+      }
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Estrellas de colores en la pared que convierten su cuarto en un cielo para dormir",
+            "icono": "ninguno"
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Canciones de cuna, ruido blanco y sonidos de la naturaleza que acompañan la hora de dormir",
+            "icono": "ninguno"
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Luz cálida y tenue que no encandila:no estimula, acompaña",
+            "icono": "ninguno"
+          }
+        },
+        "beneficio_4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Ultra suave y abrazable, 35 cm:su compañero de noche y el regalo que sí se usa",
+            "icono": "ninguno"
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3",
+        "beneficio_4"
+      ],
+      "settings": {
+        "producto": "",
+        "fondo": "#faf7fd",
+        "imagen_1": "shopify://shop_images/peluche_unicornio_estrellas_1080.webp",
+        "imagen_2": "shopify://shop_images/peluche_comparativa_calma.webp",
+        "imagen_3": "shopify://shop_images/peluche_pinguino_luz_musica.webp",
+        "imagen_4": "shopify://shop_images/peluche_conejo_regalo_cada_noche.webp",
+        "imagen_5": "shopify://shop_images/peluche_dinosaurio_momento_noche.webp",
+        "navegacion": "miniaturas",
+        "proporcion": "1 / 1",
+        "mostrar_rating": false,
+        "rating": "4.8/5",
+        "rating_texto": "· 458 reseñas",
+        "titulo": "&nbsp;Este peluche con estrellas, música y luz suave <em>es el regalo más especial para noches más tranquilas</em> 🧸💫&nbsp;",
+        "texto": "&nbsp;Cuando la hora de dormir se vuelve una batalla, este peluche la convierte en calma. Está siendo el regalo más especial para noches más tranquilas.&nbsp;",
+        "icono_beneficios": "✚",
+        "mostrar_oferta": false,
+        "ahorro_texto": "Ahorrás",
+        "incluye_titulo": "Con tu pedido, te llevás:",
+        "boton_modo": "easysell",
+        "boton_texto": "Ordenar ahora — Pagás al recibir",
+        "boton_subtexto": "",
+        "boton_pulse": true,
+        "ir_a_checkout": true,
+        "boton_enlace": "",
+        "nota": "Te escribiremos por WhatsApp para confirmar tu pedido",
+        "mostrar_pagos": false,
+        "entrega_texto": "",
+        "pagos_texto": "Contraentrega, Efectivo, Tarjeta"
+      }
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "estrella",
+            "texto": "Estrellas en la pared"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "corazon",
+            "texto": "Música suave"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "arbol",
+            "texto": "Listo para regalar"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ],
+      "settings": {
+        "estilo": "circulos",
+        "fondo": "fondo",
+        "titulo": "",
+        "espacio": 8
+      }
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 peluche",
+            "destacar": "",
+            "etiqueta": "Para tu bebé",
+            "titulo": "Peluche de calma · proyector de estrellas",
+            "linea_regalo": "🎁 Bono del 10% incluido",
+            "detalle": "Elige el modelo",
+            "precio": 139900,
+            "precio_antes": 0,
+            "cantidad": 1,
+            "enlace": "",
+            "preseleccionado": true
+          }
+        },
+        "pack_2": {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 peluches",
+            "destacar": "Uno para regalar",
+            "etiqueta": "Uno para tu bebé y otro para regalar",
+            "titulo": "2 Peluches de calma",
+            "linea_regalo": "🎁 Bono del 10% incluido",
+            "detalle": "Elige los 2 modelos · $119.950 c/u",
+            "precio": 239900,
+            "precio_antes": 0,
+            "cantidad": 2,
+            "enlace": "",
+            "preseleccionado": false
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "emoji": "",
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia",
+            "desde": 1,
+            "valor_tachado": "$23.000",
+            "sello": "Envío gratis"
+          }
+        },
+        "regalo_6": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "emoji": "",
+            "icono": "regalo",
+            "titulo": "Bono del 10%",
+            "texto": "Para tu próxima compra",
+            "desde": 1,
+            "valor_tachado": "$13.990",
+            "sello": "Próxima compra"
+          }
+        },
+        "regalo_7": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluida",
+            "emoji": "",
+            "icono": "escudo",
+            "titulo": "Garantía 60 días",
+            "texto": "Por daños de fábrica",
+            "desde": 1,
+            "sello": "Cambio o devolución"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "pack_2",
+        "regalo_3",
+        "regalo_6",
+        "regalo_7"
+      ],
+      "settings": {
+        "color_acento": "#5b4b9a",
+        "color_pestana": "#5b4b9a",
+        "fondo": "fondo",
+        "espacio": 20,
+        "titulo": "Calma cada noche, <em>para tu bebé o para regalar</em>",
+        "etiquetas_titulo": "Ideal para",
+        "etiquetas": "Tu bebé, Navidad, Baby shower, La casa de la abuela",
+        "etiquetas_estilo": "chips",
+        "colores_texto": "",
+        "color_1_nombre": "",
+        "color_1": "#8a4b2a",
+        "color_2_nombre": "",
+        "color_2": "#6b7a3c",
+        "acebo": false,
+        "mostrar_ahorro": true,
+        "incluye_titulo": "Incluido en tu pedido",
+        "valor_texto": "",
+        "valor_tachado": "",
+        "boton_modo": "easysell",
+        "boton_texto": "Pídelo ahora — Paga al recibir",
+        "precio_en_boton": true,
+        "nota": "Al confirmar tu pedido por WhatsApp te enviamos tu guía y tu bono del 10%",
+        "confianza": true,
+        "entrega": "Envío gratis a toda Colombia · Pídelo a tiempo para Navidad",
+        "estilo_regalos": "tarjetas"
+      }
+    },
+    "videos": {
+      "type": "pp-videos",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/peluchevid1.webm",
+            "video_url": "",
+            "etiqueta": ""
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vidpelu2.webm",
+            "video_url": "",
+            "etiqueta": "Música suave"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vidpeluche3.webm",
+            "video_url": "",
+            "etiqueta": "Los 4 modelos"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ],
+      "settings": {
+        "color_fondo": "#f8f6f9",
+        "color_texto": "#221b17",
+        "color_acento": "#5b4b9a",
+        "etiqueta": "",
+        "titulo": "Mira cómo <em>se llena la pared de estrellas</em>",
+        "texto": "Luz suave y música delicada: así se ve el momento de dormir.",
+        "ancho_movil": 40,
+        "espacio": 24,
+        "auto_avance": true,
+        "auto_segundos": 4,
+        "boton_modo": "ninguno",
+        "boton_texto": "Quiero el mío",
+        "boton_enlace": ""
+      }
+    },
+    "grid_dolores": {
+      "type": "pp-grid-dolores",
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "imagen": "shopify://shop_images/escena_mama_durmiendo_bebe_luz_peluche.webp",
+            "titulo": "Arrullarlo en brazos",
+            "texto": "Funciona, pero cada noche terminas agotada."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "imagen": "shopify://shop_images/nino_celular_luz_peluche.webp",
+            "titulo": "El celular con videos",
+            "texto": "La pantalla lo entretiene justo cuando debería calmarse."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "imagen": "shopify://shop_images/lampara_luz_blanca_fuerte_cuarto_infantil.webp",
+            "titulo": "Una lámpara normal",
+            "texto": "Alumbra, pero no acompaña ni calma."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "imagen": "shopify://shop_images/juguete_guardado_closet_estante_alto.webp",
+            "titulo": "Otro juguete más",
+            "texto": "Lindo el día que lo abre; después se queda guardado."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "La hora de dormir",
+        "titulo": "Cuando llega la noche, <em>no buscas juguetes: buscas calma</em>",
+        "texto": "Lo que usas hoy para dormirlo sirve un rato, pero no se vuelve un momento tranquilo.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "No le falta otro juguete: <em>le falta un momento de calma.</em>"
+      }
+    },
+    "galeria_ideas": {
+      "type": "pp-galeria-ideas",
+      "blocks": {
+        "idea_1": {
+          "type": "idea",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_estrellas_cuarto_4x3_a607f393-1ed8-4a74-98e6-6eae0032f92a.webp",
+            "etiqueta": "Mesa de noche",
+            "titulo": "A la hora de dormir",
+            "texto": ""
+          }
+        },
+        "idea_2": {
+          "type": "idea",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_conejo_cuna_tarde_4x3_53892f04-43be-4ce6-960b-1cc785bf5ea1.webp",
+            "etiqueta": "Siesta",
+            "titulo": "La siesta de la tarde",
+            "texto": ""
+          }
+        },
+        "idea_3": {
+          "type": "idea",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_dinosaurio_navidad_4x3_c3b3758a-a98f-4fa9-a7a2-0d4a058cf25f.webp",
+            "etiqueta": "Navidad",
+            "titulo": "Debajo del árbol",
+            "texto": ""
+          }
+        },
+        "idea_4": {
+          "type": "idea",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_pinguino_baby_shower_4x3_e3058eda-8ca5-417c-8e76-f9165c949f28.webp",
+            "etiqueta": "Baby shower",
+            "titulo": "Para el bebé que viene",
+            "texto": ""
+          }
+        },
+        "idea_5": {
+          "type": "idea",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_cuarto_abuela_4x3_8c9cc811-916c-4082-b8e3-cfb6f456b748.webp",
+            "etiqueta": "Abuela",
+            "titulo": "En la casa de la abuela",
+            "texto": ""
+          }
+        }
+      },
+      "block_order": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4",
+        "idea_5"
+      ],
+      "settings": {
+        "color_fondo": "#f0eaf8",
+        "color_texto": "#2a2540",
+        "color_acento": "#5b4b9a",
+        "nieve": true,
+        "alineacion": "izq",
+        "etiqueta": "Dónde se usa",
+        "titulo": "Un regalo que se usa <em>todas las noches</em>",
+        "texto": "En la mesa de noche o en la repisa, siempre proyectando hacia la pared.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "3"
+      }
+    },
+    "carrusel_imagenes": {
+      "type": "pp-carrusel-imagenes",
+      "blocks": {
+        "imagen_1": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_conejo_referencia_vertical_4x5_31786ba9-9bf6-4803-ab2f-39d9a2323da1.webp",
+            "etiqueta": "Conejo"
+          }
+        },
+        "imagen_2": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_referencia_vertical_4x5_7e83ac41-e8e7-4cab-a53e-31406fade8c1.webp",
+            "etiqueta": "Unicornio"
+          }
+        },
+        "imagen_3": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_dinosaurio_referencia_vertical_4x5_3f156c7f-4ca8-4ea5-bd53-fa08713a3f31.webp",
+            "etiqueta": "Dinosaurio"
+          }
+        },
+        "imagen_4": {
+          "type": "imagen",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_pinguino_referencia_vertical_4x5_f0f4abb8-e25f-4cd9-9163-ad8a244d5e85.webp",
+            "etiqueta": "Pingüino"
+          }
+        }
+      },
+      "block_order": [
+        "imagen_1",
+        "imagen_2",
+        "imagen_3",
+        "imagen_4"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "titulo": "Elige su <em>compañero de noche</em>",
+        "texto": "Los cuatro proyectan estrellas y ponen música suave.",
+        "proporcion": "4 / 5",
+        "ancho_movil": 40,
+        "espacio": 16,
+        "auto_avance": true,
+        "auto_segundos": 4,
+        "boton_modo": "ninguno",
+        "boton_texto": "Quiero el mío",
+        "boton_enlace": ""
+      }
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_vista_lateral_1080.webp",
+            "icono": "estrella",
+            "titulo": "Proyector de estrellas",
+            "puntos": "Estrellas de colores que se proyectan suavemente en la pared."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_pinguino_panel_luz_lila_1080.webp",
+            "icono": "corazon",
+            "titulo": "Música delicada",
+            "puntos": "Canciones de cuna, ruido blanco y sonidos de la naturaleza."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_conejo_penumbra_noche_1080.webp",
+            "icono": "bombillo",
+            "titulo": "Luz nocturna",
+            "puntos": "Luz tenue para acompañar sin prender la lámpara grande."
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_dinosaurio_35cm_mesa_noche_1080.webp",
+            "icono": "altura",
+            "titulo": "35 cm de alto",
+            "puntos": "Grande en la mesa de noche, suave para abrazar."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4"
+      ],
+      "settings": {
+        "color_fondo": "#f0eaf8",
+        "color_tarjeta": "#ffffff",
+        "color_acento": "#5b4b9a",
+        "color_dorado": "#d9547f",
+        "color_texto": "#2a2540",
+        "adorno": true,
+        "difuminar": true,
+        "titulo": "Todo lo que necesita",
+        "titulo_dorado": "para la hora de dormir",
+        "titulo_fin": "",
+        "subtitulo": "",
+        "cierre": ""
+      }
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_mesa_noche_1080.webp",
+            "etiqueta": "",
+            "titulo": "Ponlo en la mesa de noche",
+            "texto": "O en una repisa, fuera de la cuna y mirando hacia la pared."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_panel_1080.webp",
+            "etiqueta": "",
+            "titulo": "Prende la luz y la música",
+            "texto": "Desde su barriguita: estrellas en la pared y música suave."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "imagen": "shopify://shop_images/peluche_unicornio_interruptor_1080.webp",
+            "etiqueta": "",
+            "titulo": "Apaga la luz grande",
+            "texto": "Y disfruten juntos ese momento de tranquilidad."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "titulo": "Así de fácil: <em>3 pasos</em>",
+        "texto": "",
+        "estilo": "fotos",
+        "numerar": true,
+        "proporcion": "1 / 1"
+      }
+    },
+    "esperar": {
+      "type": "pp-esperar",
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "Al prenderlo",
+            "texto": "Estrellas de colores en la pared y música suave en el cuarto."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "reloj",
+            "periodo": "La primera noche",
+            "texto": "Un momento tranquilo antes de dormir, sin pantallas, para los dos."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Con los días",
+            "texto": "Ver las estrellas en la pared empieza a ser lo de cada noche."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Con el tiempo",
+            "texto": "Se vuelve parte de su rutina para dormir. Cuando el bebé se calma, tú también descansas."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4"
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#5b4b9a",
+        "color_icono": "#d9547f",
+        "etiqueta": "Noche a noche",
+        "titulo": "Qué esperar <em>cada noche</em>",
+        "texto": "No es magia: es un momento tranquilo que se repite y que, con el tiempo, se vuelve parte de la noche."
+      }
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Luz",
+            "subtitulo": "En el cuarto",
+            "ok_a": true,
+            "valor_a": "Estrellas tenues en la pared",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Pantalla brillante cerca de su cara",
+            "nota_b": ""
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sonido",
+            "subtitulo": "Para relajarse",
+            "ok_a": true,
+            "valor_a": "Música de cuna y ruido blanco",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Lo que salga en el video",
+            "nota_b": ""
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Tu celular",
+            "subtitulo": "Durante la noche",
+            "ok_a": true,
+            "valor_a": "Libre para ti",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Ocupado al lado de la cama",
+            "nota_b": ""
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Abrazo",
+            "subtitulo": "Compañía",
+            "ok_a": true,
+            "valor_a": "Es un peluche",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "No se abraza",
+            "nota_b": ""
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Rutina",
+            "subtitulo": "Cada noche",
+            "ok_a": true,
+            "valor_a": "El mismo momento tranquilo",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "Un video distinto cada noche",
+            "nota_b": ""
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5"
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "La diferencia",
+        "titulo": "Peluche de calma vs. <em>la pantalla</em>",
+        "texto": "Frente al celular con videos a la hora de dormir.",
+        "color_destacado": "#5b4b9a",
+        "nombre_a": "Peluche de calma",
+        "sub_a": "Estrellas y música",
+        "nombre_b": "El celular",
+        "sub_b": "Videos para dormirlo",
+        "pie_izq": "Peluche de calma",
+        "pie_der": "Calma, sin pantallas"
+      }
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "blocks": {
+        "resena_LbT9Td": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 4,
+            "titulo": "Más grande de lo que pensé",
+            "texto": "Es grande y muy suave. Mi hijo lo abraza cuando está despierto y después lo dejamos en la mesa de noche.",
+            "nombre": "Lina Muñoz",
+            "ciudad": "Bogota",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_kAMkFM": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "El dinosaurio es su favorito",
+            "texto": "Escogí el dinosaurio porque le encantan. Le dice “buenas noches” antes de que apaguemos la luz.",
+            "nombre": "Luchi V",
+            "ciudad": "Medellin",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_RACRn4": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 4,
+            "titulo": "Llegó con pilas",
+            "texto": "Pensé que tocaba comprarle pilas aparte, pero venían puestas. Lo saqué de la caja y funcionó de una.",
+            "nombre": "Camila P",
+            "ciudad": "Palmira",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_Jif4Pa": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "El regalo de Navidad",
+            "texto": "Se lo regalé a mi nieto y mi hija me cuenta que lo usan todas las noches. Por fin un regalo que no se quedó guardado",
+            "nombre": "Eliana Henao",
+            "ciudad": "Bogota",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_UdgQUU": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Pedí dos",
+            "texto": "Uno para mi hija y otro para el bebé de mi hermana. Elegí el unicornio y el pingüino, y llegaron los que pedí",
+            "nombre": "Mary Martinez",
+            "ciudad": "Soledad",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_gcXCGJ": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Mejor que el celular",
+            "texto": "Antes lo dormía con videos en el celular. Ahora apagamos la luz, prendemos el peluche y nos quedamos mirando las estrellas.",
+            "nombre": "Leydi Gomez",
+            "ciudad": "Andes",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_8fLbDf": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Ya es parte de la noche",
+            "texto": "Lo prendemos después del baño y ya sabe que es hora de dormir. Las estrellas en la pared le encantan.",
+            "nombre": "Ligia Camacho",
+            "ciudad": "Barranquilla",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Lo prendemos cada noche",
+            "texto": "Lo puse en la repisa del cuarto y ya es parte de la hora de dormir: luz suave, música y a la cama.",
+            "nombre": "Nidia M",
+            "ciudad": "Bogotá",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Lo regalé en el baby shower",
+            "texto": "Quería regalar algo útil y no otro juguete. Mi prima me cuenta que lo usan todas las noches.",
+            "nombre": "Laura P",
+            "ciudad": "Medellín",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 4,
+            "titulo": "No encandila",
+            "texto": "Me daba miedo que la luz lo despertara más, pero es tenue y la música es muy tranquila.",
+            "nombre": "Lourdes Manrique",
+            "ciudad": "Cali",
+            "fecha": "",
+            "verificado": false
+          }
+        }
+      },
+      "block_order": [
+        "resena_LbT9Td",
+        "resena_kAMkFM",
+        "resena_RACRn4",
+        "resena_Jif4Pa",
+        "resena_UdgQUU",
+        "resena_gcXCGJ",
+        "resena_8fLbDf",
+        "resena_1",
+        "resena_2",
+        "resena_3"
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "etiqueta": "Opiniones",
+        "titulo": "Un regalo que <em>sí se usa</em>",
+        "nota": "",
+        "cantidad": "",
+        "visibles": 10,
+        "boton_mas": "Ver más opiniones"
+      }
+    },
+    "faq": {
+      "type": "pp-faq",
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Paola de Bogotá pregunta: ¿la luz y la música no lo van a desvelar más?",
+            "respuesta": "<p>La luz es tenue y se proyecta suavemente en la pared, y la música es delicada: <strong>no estimulan, acompañan</strong>. Es lo contrario a una pantalla.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Diana de Medellín pregunta: ¿le sirve a mi bebé? ¿Dónde lo pongo?",
+            "respuesta": "<p>Es un peluche para bebés y niños pequeños. A la hora de dormir, ponlo en la <strong>mesa de noche o en una repisa</strong>, fuera de la cuna y mirando hacia la pared. Con bebés menores de 12 meses no se deben dejar peluches dentro de la cuna.</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Carolina de Cali pregunta: ¿me llega el mismo modelo que elijo?",
+            "respuesta": "<p>Sí. Eliges entre <strong>conejo, unicornio, dinosaurio o pingüino</strong> y te llega ese modelo. Si llevas 2, puedes elegir el mismo modelo o dos distintos.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Natalia de Barranquilla pregunta: ¿cómo funciona? ¿Hay que conectarlo?",
+            "respuesta": "<p>Funciona con pilas y <strong>ya vienen incluidas</strong>: llega listo para usar, sin enchufes ni cables a la vista. Se prende desde su barriguita.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Andrea de Bucaramanga pregunta: ¿qué tamaño tiene?",
+            "respuesta": "<p>Mide <strong>35 cm de alto</strong>, 23 cm de ancho y 15 cm de fondo: se ve bonito en la mesa de noche y es suave para abrazar.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Laura de Pereira pregunta: ¿sirve para regalar en Navidad?",
+            "respuesta": "<p>Es el regalo que sí se usa: no se queda guardado, se prende cada noche. Si llevas 2, te queda uno para tu bebé y otro para regalar a <strong>$119.950 cada uno</strong>. Pídelo con tiempo para que llegue antes de Navidad.</p>"
+          }
+        },
+        "pregunta_7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sandra de Ibagué pregunta: ¿cómo recibo la guía y el bono del 10%?",
+            "respuesta": "<p>Te llegan <strong>por WhatsApp</strong> cuando confirmamos tu pedido: la <strong>Guía Noches en Calma</strong> y tu <strong>bono del 10%</strong> para tu próxima compra.</p>"
+          }
+        },
+        "pregunta_8": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Marta de Cartagena pregunta: ¿cómo pago y qué pasa si llega dañado?",
+            "respuesta": "<p>Pagas en efectivo cuando lo recibes y el envío es <strong>gratis a toda Colombia</strong>. Si presenta un daño de fábrica en los primeros <strong>60 días</strong>, te lo cambiamos o te devolvemos tu dinero.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6",
+        "pregunta_7",
+        "pregunta_8"
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "estilo": "tarjetas",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "whatsapp": "",
+        "whatsapp_texto": "Escríbenos por WhatsApp",
+        "abrir_primera": true
+      }
+    },
+    "garantia": {
+      "type": "pp-garantia",
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía 60 días"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "camion",
+            "texto": "Envío gratis a toda Colombia"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ],
+      "settings": {
+        "color_tarjeta": "#5b4b9a",
+        "color_texto": "#ffffff",
+        "color_sello": "#5b4b9a",
+        "nieve": false,
+        "sello_arriba": "Garantía",
+        "sello_numero": "60",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra tranquila",
+        "titulo": "60 días de garantía por daños de fábrica",
+        "texto": "Si tu peluche presenta un daño de fábrica en los primeros 60 días, te lo cambiamos o te devolvemos tu dinero. Envío gratis y pagas al recibir."
+      }
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "aparecer": "despues_oferta",
+        "solo_movil": true,
+        "mostrar_precio": true,
+        "precio_manual": 239900,
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "boton_modo": "easysell",
+        "boton_texto": "Lo quiero"
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "iconos",
+    "oferta_tabs",
+    "videos",
+    "grid_dolores",
+    "galeria_ideas",
+    "carrusel_imagenes",
+    "problemas_filas",
+    "pasos",
+    "esperar",
+    "comparativa",
+    "resenas",
+    "faq",
+    "garantia",
+    "boton_fijo"
+  ]
+}
