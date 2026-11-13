@@ -71,7 +71,7 @@
         "fondo": "#1b1f2a",
         "texto": "#ffffff",
         "tamano": 14,
-        "velocidad": 30,
+        "velocidad": 70,
         "separador": "✦"
       }
     },
@@ -95,12 +95,13 @@
         "beneficio_3": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Partidas largas sin cansarte:</strong> se agarra con toda la mano y la batería dura hasta 40 horas por carga.",
+            "texto": "<strong>Batería de larga duración:</strong> Juega durante horas sin preocuparte por la carga. Hasta 40 horas",
             "icono": "ninguno"
           }
         },
         "beneficio_4": {
           "type": "beneficio",
+          "disabled": true,
           "settings": {
             "texto": "<strong>Juegas sin riesgo:</strong> 90 días de garantía con devolución del dinero.",
             "icono": "ninguno"
@@ -118,24 +119,26 @@
         "fondo": "#f4f5f8",
         "imagen_1": "shopify://shop_images/control_gamer_ad_1080.webp",
         "imagen_2": "shopify://shop_images/comparativa_control_gamer_1080.webp",
-        "imagen_3": "shopify://shop_images/juega_horas_sin_parar_1080.webp",
+        "imagen_3": "shopify://shop_images/vibracion_hd_macro_1080.webp",
+        "imagen_4": "shopify://shop_images/juega_horas_bateria_1080.webp",
+        "imagen_5": "shopify://shop_images/juega_como_siempre_quisiste_fpo_1080.webp",
         "navegacion": "miniaturas",
         "proporcion": "1 / 1",
         "mostrar_rating": false,
         "rating": "4.8/5",
         "rating_texto": "· 458 reseñas",
-        "titulo": "No más rabias por <em>el control que no responde</em>.",
-        "texto": "Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras. En 10 minutos lo conectas y ya estás jugando.",
+        "titulo": "Nintendo Switch Pro Controller. &nbsp;<em>Mando Inalámbrico Oficial con Vibración HD &nbsp;</em>",
+        "texto": "Eleva tu experiencia de juego con el <strong>Nintendo Switch Pro Controller</strong>, el mando oficial de Nintendo diseñado para ofrecer mayor comodidad y precisión en tus partidas. Ideal para sesiones prolongadas y juegos que requieren controles más precisos.&nbsp;",
         "icono_beneficios": "✚",
         "mostrar_oferta": false,
         "ahorro_texto": "Ahorrás",
         "incluye_titulo": "Con tu pedido, te llevás:",
-        "boton_modo": "easysell",
+        "boton_modo": "enlace",
         "boton_texto": "Ordenar ahora — Pagás al recibir",
         "boton_subtexto": "",
         "boton_pulse": true,
         "ir_a_checkout": true,
-        "boton_enlace": "",
+        "boton_enlace": "https://www.masterypay.co/checkout?product=control&s=tu-espacio-market",
         "nota": "Te escribiremos por WhatsApp para confirmar tu pedido",
         "mostrar_pagos": false,
         "entrega_texto": "",
@@ -187,14 +190,14 @@
           "settings": {
             "pestana": "1 control",
             "destacar": "Black Days",
-            "etiqueta": "35 % menos hasta el 30 de noviembre",
+            "etiqueta": "35 % menos hasta el 30 de noviembre, black days",
             "titulo": "Control Pro inalámbrico",
             "linea_regalo": "",
-            "detalle": "El de marca cuesta $339.900",
+            "detalle": "",
             "precio": 179900,
             "precio_antes": 276800,
             "cantidad": 1,
-            "enlace": "",
+            "enlace": "https://www.masterypay.co/checkout?product=control&s=tu-espacio-market",
             "preseleccionado": true
           }
         },
@@ -202,10 +205,13 @@
           "type": "regalo",
           "settings": {
             "insignia": "Gratis",
+            "emoji": "",
             "icono": "camion",
             "titulo": "Envío gratis",
             "texto": "A toda Colombia",
+            "desde": 1,
             "valor_tachado": "$23.000",
+            "imagen": "shopify://shop_images/caja_envio_lila_1080.webp",
             "sello": "Envío gratis"
           }
         },
@@ -213,10 +219,13 @@
           "type": "regalo",
           "settings": {
             "insignia": "Bono",
+            "emoji": "",
             "icono": "regalo",
             "titulo": "15 % en tu 2.º control",
             "texto": "Te lo damos al hacer tu pedido",
+            "desde": 1,
             "valor_tachado": "$26.985",
+            "imagen": "shopify://shop_images/dos_controles_regalo_1080.webp",
             "sello": "Segundo control"
           }
         },
@@ -224,9 +233,13 @@
           "type": "regalo",
           "settings": {
             "insignia": "Incluida",
+            "emoji": "",
             "icono": "escudo",
             "titulo": "Garantía 90 días",
             "texto": "Con devolución del dinero",
+            "desde": 1,
+            "valor_tachado": "",
+            "imagen": "shopify://shop_images/control_protegido_90_dias_1080_1.webp",
             "sello": "Devolución del dinero"
           }
         }
@@ -242,9 +255,9 @@
         "color_pestana": "#1b1f2a",
         "fondo": "fondo",
         "espacio": 20,
-        "titulo": "Black Days: juega más pro <em>por $179.900</em>",
+        "titulo": "<strong>¡Disfruta de tus juegos favoritos con </strong><em><strong>mayor precisión y comodidad!</strong></em>",
         "etiquetas_titulo": "Funciona con",
-        "etiquetas": "Switch, Switch Lite, Switch OLED, Switch 2",
+        "etiquetas": "Switch, Switch Lite, Switch OLED,",
         "etiquetas_estilo": "iconos",
         "colores_texto": "",
         "color_1_nombre": "",
@@ -257,7 +270,7 @@
         "estilo_regalos": "tarjetas",
         "valor_texto": "",
         "valor_tachado": "",
-        "boton_modo": "easysell",
+        "boton_modo": "enlace",
         "boton_texto": "Lo quiero — Pago al recibir",
         "precio_en_boton": true,
         "nota": "Te escribimos por WhatsApp para confirmar tu pedido",
@@ -271,22 +284,25 @@
         "video_1": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/vid11111.mp4",
             "video_url": "",
-            "etiqueta": "El control de cerca"
+            "etiqueta": ""
           }
         },
         "video_2": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/vid2222.mp4",
             "video_url": "",
-            "etiqueta": "Sus botones y sticks"
+            "etiqueta": ""
           }
         },
         "video_3": {
           "type": "video",
           "settings": {
+            "video": "shopify://files/videos/vid3333.mp4",
             "video_url": "",
-            "etiqueta": "Así se ve en persona"
+            "etiqueta": ""
           }
         }
       },
@@ -296,9 +312,9 @@
         "video_3"
       ],
       "settings": {
-        "color_fondo": "#fbf6ef",
+        "color_fondo": "#f8f6f9",
         "color_texto": "#221b17",
-        "color_acento": "#c8873a",
+        "color_acento": "#d62828",
         "etiqueta": "",
         "titulo": "Míralo <em>en acción</em>",
         "texto": "Videos reales del control, para que lo veas antes de pedirlo.",
@@ -317,6 +333,7 @@
         "item_1": {
           "type": "item",
           "settings": {
+            "imagen": "shopify://shop_images/controlcitos_sobre_sofa_1080.webp",
             "titulo": "Camina solo",
             "texto": "El personaje se mueve sin que toques nada, y pierdes."
           }
@@ -324,6 +341,7 @@
         "item_2": {
           "type": "item",
           "settings": {
+            "imagen": "shopify://shop_images/macro_palanca_fuera_objetivo_1080.webp",
             "titulo": "Se te va la mano",
             "texto": "Con sticks pequeños cuesta apuntar y girar fino en carreras y en acción."
           }
@@ -331,6 +349,7 @@
         "item_3": {
           "type": "item",
           "settings": {
+            "imagen": "shopify://shop_images/grip_pequeno_escala_taza_1080.webp",
             "titulo": "Sin firmeza",
             "texto": "Un control pequeño no se agarra bien, y en partidas largas te cansas."
           }
@@ -338,6 +357,7 @@
         "item_4": {
           "type": "item",
           "settings": {
+            "imagen": "shopify://shop_images/controles_viejos_cajon_1080.webp",
             "titulo": "Otro par, otra vez",
             "texto": "Un par nuevo de controlcitos cuesta cerca de $343.000."
           }
@@ -366,33 +386,37 @@
         "idea_1": {
           "type": "idea",
           "settings": {
+            "imagen": "shopify://shop_images/control_capot_carreras_1200.webp",
             "etiqueta": "Carreras",
             "titulo": "Cada curva, a tu manera",
-            "texto": "Giras con el stick grande y sientes cada choque con la vibración."
+            "texto": ""
           }
         },
         "idea_2": {
           "type": "idea",
           "settings": {
+            "imagen": "shopify://shop_images/control_bodega_industrial_1200.webp",
             "etiqueta": "Acción",
             "titulo": "Esquiva justo a tiempo",
-            "texto": "Apuntas y esquivas con firmeza, y en los juegos que lo usan apuntas moviendo el control."
+            "texto": ""
           }
         },
         "idea_3": {
           "type": "idea",
           "settings": {
+            "imagen": "shopify://shop_images/control_roca_musgo_rio_1200.webp",
             "etiqueta": "Aventuras",
             "titulo": "Horas sin soltarlo",
-            "texto": "Se agarra con toda la mano y la batería dura hasta 40 horas por carga."
+            "texto": ""
           }
         },
         "idea_4": {
           "type": "idea",
           "settings": {
+            "imagen": "shopify://shop_images/control_terraza_limonada_1200.webp",
             "etiqueta": "Con amigos",
             "titulo": "Cuando llega la visita",
-            "texto": "Uno con este control y otro con los controlcitos: nadie se queda mirando."
+            "texto": ""
           }
         }
       },
@@ -421,6 +445,7 @@
         "fila_1": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/macro_sticks_control_1080.webp",
             "icono": "check",
             "titulo": "Sticks asimétricos con clic",
             "puntos": "Dos sticks grandes, uno arriba y otro abajo, para que cada pulgar quede en su sitio al girar, apuntar o esquivar."
@@ -429,6 +454,7 @@
         "fila_2": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/control_ondas_graficas_1080.webp",
             "icono": "rayo",
             "titulo": "Vibración HD",
             "puntos": "Sientes en las manos cada choque en carreras y cada golpe en acción."
@@ -437,6 +463,7 @@
         "fila_3": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/control_con_figura_coleccionable_1080.webp",
             "icono": "estrella",
             "titulo": "Lector de figuras amiibo (NFC)",
             "puntos": "Acercas la figura al control y el juego la reconoce. Muchos controles compatibles no lo traen."
@@ -445,6 +472,7 @@
         "fila_4": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/control_en_aire_lineas_movimiento_1080.webp",
             "icono": "brillo",
             "titulo": "Sensor de movimiento (giroscopio)",
             "puntos": "En los juegos que lo usan, apuntas o giras moviendo el control."
@@ -453,6 +481,7 @@
         "fila_5": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/control_con_cable_usb_c_1080.webp",
             "icono": "reloj",
             "titulo": "Batería de 1300 mAh",
             "puntos": "Hasta 40 horas de juego por carga. Se carga completo en unas 6 horas con su cable USB-C."
@@ -461,6 +490,7 @@
         "fila_6": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/control_cenital_completo_1080.webp",
             "icono": "manual",
             "titulo": "Todos los botones",
             "puntos": "Captura, Home, + y −, L, R, ZL, ZR, cruceta y dos sticks con clic."
@@ -496,6 +526,7 @@
         "paso_1": {
           "type": "paso",
           "settings": {
+            "imagen": "shopify://shop_images/control_cenital_escritorio_blanco_planta_1080.webp",
             "etiqueta": "",
             "titulo": "Conecta el cable",
             "texto": "El que viene en la caja. Puedes jugar mientras carga."
@@ -504,6 +535,7 @@
         "paso_2": {
           "type": "paso",
           "settings": {
+            "imagen": "shopify://shop_images/control_menu_controles_habitacion_tarde_1080.webp",
             "etiqueta": "",
             "titulo": "Emparéjalo con tu consola",
             "texto": "Desde el menú Controles, sin aplicaciones ni instalar nada."
@@ -512,6 +544,7 @@
         "paso_3": {
           "type": "paso",
           "settings": {
+            "imagen": "shopify://shop_images/control_puf_proyector_carrera_1080.webp",
             "etiqueta": "",
             "titulo": "A maniobrar",
             "texto": "Inalámbrico o con cable, como prefieras."
@@ -671,13 +704,61 @@
     "resenas": {
       "type": "pp-resenas",
       "blocks": {
+        "resena_taKh7a": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Se acabaron las peleas",
+            "texto": "Mis dos hijos peleaban por quién jugaba con los controlcitos completos. Ahora uno usa este y el otro los pequeños, y juegan juntos.",
+            "nombre": "Helena",
+            "ciudad": "Soledad",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_ArEqx4": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "La batería dura muchísimo",
+            "texto": "Lo cargué el domingo y jugué toda la semana en las noches sin volver a conectarlo.",
+            "nombre": "Cristian B",
+            "ciudad": "Bucaramanga",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_N6HEey": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Muy bueno para carreras",
+            "texto": "En los juegos de carreras se siente otra cosa con los sticks grandes. Le pongo 4 porque tuve que leer bien cómo emparejarlo la primera vez.",
+            "nombre": "Juan P",
+            "ciudad": "Barranquilla",
+            "fecha": "",
+            "verificado": false
+          }
+        },
+        "resena_Tktpqx": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "Mejor de lo que esperaba",
+            "texto": "Pensé que por ser compatible iba a ser de mala calidad. Se siente firme, los botones responden bien y la vibración se nota.",
+            "nombre": "Ricardito T",
+            "ciudad": "Bogota",
+            "fecha": "",
+            "verificado": false
+          }
+        },
         "resena_1": {
           "type": "resena",
           "settings": {
             "estrellas": 5,
             "titulo": "Por fin se siente firme",
             "texto": "Mis controlcitos ya caminaban solos. Este lo agarro con toda la mano y en las carreras juego mucho más tranquilo.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Juan Hernandez",
             "ciudad": "Bogotá",
             "fecha": "",
             "verificado": false
@@ -689,7 +770,7 @@
             "estrellas": 5,
             "titulo": "Se siente cada golpe",
             "texto": "En los juegos de acción la vibración se nota de verdad. Y los sticks grandes ayudan a apuntar.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Carlos Henrique",
             "ciudad": "Medellín",
             "fecha": "",
             "verificado": false
@@ -701,7 +782,7 @@
             "estrellas": 5,
             "titulo": "Listo en minutos",
             "texto": "Lo conecté con el cable, lo emparejé desde el menú y esa misma noche ya estaba jugando.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Esteban Rico",
             "ciudad": "Cali",
             "fecha": "",
             "verificado": false
@@ -709,6 +790,10 @@
         }
       },
       "block_order": [
+        "resena_taKh7a",
+        "resena_ArEqx4",
+        "resena_N6HEey",
+        "resena_Tktpqx",
         "resena_1",
         "resena_2",
         "resena_3"
@@ -719,7 +804,7 @@
         "titulo": "Así se siente <em>jugar con él</em>",
         "nota": "",
         "cantidad": "",
-        "visibles": 3,
+        "visibles": 8,
         "boton_mas": "Ver más opiniones"
       }
     },
@@ -871,7 +956,7 @@
         "mostrar_precio": true,
         "precio_manual": 179900,
         "subtexto": "Envío gratis · Pagas al recibir",
-        "boton_modo": "easysell",
+        "boton_modo": "oferta",
         "boton_texto": "Lo quiero"
       }
     }

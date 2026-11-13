@@ -99,7 +99,9 @@
     "titulo": "No más rabias por <em>el control que no responde</em>.",
     "texto": "Llegó el momento de maniobrar como se debe: el nuevo control te da agarre completo y precisión para carreras, acción y aventuras. En 10 minutos lo conectas y ya estás jugando.",
     "proporcion": "1 / 1",
-    "navegacion": "miniaturas"
+    "navegacion": "miniaturas",
+    "boton_modo": "enlace",
+    "boton_enlace": "https://www.masterypay.co/checkout?product=control&s=tu-espacio-market"
    },
    "blocks": [
     {
@@ -172,7 +174,8 @@
     "etiquetas_titulo": "Funciona con",
     "etiquetas": "Switch, Switch Lite, Switch OLED, Switch 2",
     "etiquetas_estilo": "iconos",
-    "estilo_regalos": "tarjetas"
+    "estilo_regalos": "tarjetas",
+    "boton_modo": "enlace"
    },
    "blocks": [
     {
@@ -187,7 +190,8 @@
       "precio": 179900,
       "precio_antes": 276800,
       "cantidad": 1,
-      "preseleccionado": true
+      "preseleccionado": true,
+      "enlace": "https://www.masterypay.co/checkout?product=control&s=tu-espacio-market"
      }
     },
     {
@@ -725,7 +729,8 @@
     "boton_texto": "Lo quiero",
     "subtexto": "Envío gratis · Pagas al recibir",
     "precio_manual": 179900,
-    "aparecer": "despues_oferta"
+    "aparecer": "despues_oferta",
+    "boton_modo": "oferta"
    }
   }
  ]
