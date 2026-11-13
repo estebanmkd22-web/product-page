@@ -78,3 +78,42 @@ Muchos anuncios genéricos, combos con smartwatch y precio bajo (ver dossier). H
 ## 8. Material
 - Fotos y videos actuales de la landing.
 - Avatar: no aplica por ahora; las imágenes de VIVIDUS son de producto o manos.
+
+
+## Landing nueva desde cero (2026-11-13) [Usuario]
+- **Plantilla nueva:** `vividus-v3`. La landing actual sigue en vivo hasta que el dueño apruebe el cambio.
+- **Secciones:** las 15 del plan aprobado:
+  1. franja;
+  2. hero aprobado (`copy/vividus/final.md`);
+  3. íconos;
+  4. oferta con pestañas;
+  5. videos;
+  6. grid de dolores;
+  7. galería de usos;
+  8. filas "pensados para";
+  9. pasos;
+  10. qué pasa después de pedirlos;
+  11. comparativa;
+  12. reseñas;
+  13. preguntas frecuentes;
+  14. garantía;
+  15. botón fijo.
+- **Oferta Black Friday hasta el 30 de noviembre:** 1 unidad a $79.900 y 2 unidades a $129.900. Desde el 1 de diciembre vuelve a $109.900 (1 unidad). Esos textos se cambian el 1 de diciembre.
+- **Bonos**, en el estilo de tarjetas con imagen (`estilo_regalos: tarjetas`, como el peluche de calma):
+  - envío express gratis;
+  - **garantía de 60 días** por daños de fábrica (cambio o devolución);
+  - **15 % de descuento para la segunda compra**.
+- **Garantía: 60 días.** Antes la landing decía 90. Hay que corregirlo en el hero aprobado (subtítulo y franja) y en todo el copy.
+- **Reseñas reales** (las de la landing actual, 4.8):
+  - Martha V, Huila: "Los uso en el trayecto al trabajo. Cuando bajan, los guardo en el estuche y en la pantalla veo cuánta carga le queda."
+  - Claudio Gomez: "Se los regalé a mi hijo de 15 años y ahora un amigo suyo quiere unos iguales."
+  - Andrea Ramirez, Cúcuta: "Los saco en el café o en el escritorio y siempre terminan en mis historias. Me preguntan si es una cámara."
+  - Lina Hidalgo, Medellín: "Iba a comprar una funda bonita para mis audífonos y con estos ya viene todo. Me salió más barato."
+  - Alejo R, Bogotá: "Están melísimos para entrenar y aguantan bien el sudor. No se me caen al hacer ejercicio, ya una amiga los quiere, creo que ya les compro también unos. TK"
+  - Pedro Rojas, Bucaramanga: "Parece una cámara de verdad. Y me gusta ver en la pantallita cuánta batería le queda."
+  - Andrés P., Bogotá: "En la oficina todos me preguntan por el estuche. Parece una cámara de verdad."
+  - Juliana R., Medellín: "Pensé que por el precio iban a sonar mal y no: se escuchan bien y las llamadas son claras."
+  - Sara M., Cali: "El verde para mí y el café para mi novio. Llegaron rápido y pagué al recibir."
+- **Otros datos de la landing actual:**
+  - en llamadas, "ENC: reducción de ruido, te escuchan claro aunque haya ruido" (es del micrófono, no cancelación activa de ruido);
+  - "si llega dañado, con la caja rota o destapado, te lo cambiamos por otro".
