@@ -1,0 +1,905 @@
+{
+  "sections": {
+    "estilos": {
+      "type": "pp-estilos",
+      "settings": {
+        "acento": "#7a3f22",
+        "texto": "#2e2420",
+        "texto_2": "#76675d",
+        "fondo": "#f6efe4",
+        "fondo_2": "#ece2d3",
+        "boton": "#7a3f22",
+        "boton_texto": "#ffffff",
+        "estrella": "#e0662f",
+        "ok": "#5f7a3a",
+        "radio": 18
+      }
+    },
+    "ticker": {
+      "type": "pp-ticker",
+      "settings": {
+        "fondo": "#7a3f22",
+        "texto": "#f6efe4",
+        "separador": "✦"
+      },
+      "blocks": {
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Estuche de cámara incluido"
+          }
+        },
+        "mensaje_2": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Funcionan con Android y iPhone"
+          }
+        },
+        "mensaje_3": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "90 días de garantía por daños de fábrica"
+          }
+        },
+        "mensaje_4": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        "mensaje_5": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Envío express gratis a toda Colombia"
+          }
+        }
+      },
+      "block_order": [
+        "mensaje_1",
+        "mensaje_2",
+        "mensaje_3",
+        "mensaje_4",
+        "mensaje_5"
+      ]
+    },
+    "hero_oferta": {
+      "type": "pp-hero-oferta",
+      "settings": {
+        "fondo": "#f6efe4",
+        "mostrar_oferta": false,
+        "mostrar_rating": true,
+        "rating": "4.8",
+        "rating_texto": "(Clientes en toda Colombia)",
+        "titulo": "Cansado de audífonos que <em>no duran ni 3 meses</em>.",
+        "texto": "El estuche de cámara <strong>aguanta caídas</strong> y, si un lado falla de fábrica, tienes <strong>90 días de garantía</strong>.",
+        "proporcion": "1 / 1",
+        "navegacion": "miniaturas"
+      },
+      "blocks": {
+        "beneficio_1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Protegidos si se te caen:</strong> el estuche recibe el golpe con los audífonos adentro."
+          }
+        },
+        "beneficio_2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Resisten el sudor:</strong> gym, clase u oficina, sin estar pendiente de cuidarlos."
+          }
+        },
+        "beneficio_3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Batería a la vista:</strong> la pantalla del estuche te muestra el %; 20 h en total con el estuche."
+          }
+        },
+        "beneficio_4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "<strong>Android y iPhone:</strong> se conectan por Bluetooth 5.4 con cualquiera de los dos."
+          }
+        }
+      },
+      "block_order": [
+        "beneficio_1",
+        "beneficio_2",
+        "beneficio_3",
+        "beneficio_4"
+      ]
+    },
+    "iconos": {
+      "type": "pp-iconos",
+      "settings": {
+        "estilo": "circulos",
+        "espacio": 8,
+        "titulo": ""
+      },
+      "blocks": {
+        "icono_1": {
+          "type": "icono",
+          "settings": {
+            "icono": "brillo",
+            "texto": "Parece una cámara"
+          }
+        },
+        "icono_2": {
+          "type": "icono",
+          "settings": {
+            "icono": "check",
+            "texto": "Control táctil"
+          }
+        },
+        "icono_3": {
+          "type": "icono",
+          "settings": {
+            "icono": "corazon",
+            "texto": "Marrón o verde"
+          }
+        }
+      },
+      "block_order": [
+        "icono_1",
+        "icono_2",
+        "icono_3"
+      ]
+    },
+    "oferta_tabs": {
+      "type": "pp-oferta-tabs",
+      "settings": {
+        "color_acento": "#e0662f",
+        "color_pestana": "#7a3f22",
+        "titulo": "Que no te pase <em>otra vez</em>",
+        "boton_texto": "Pídelos ahora — Paga al recibir",
+        "valor_texto": "",
+        "nota": "Te escribimos por WhatsApp para confirmar tu pedido y te enviamos tu bono del 15 %",
+        "entrega": "Precio Black hasta el 30 de noviembre · Desde el 1 de diciembre vuelven a $109.900",
+        "colores_texto": "Elige tu color: marrón o verde",
+        "color_1_nombre": "Marrón",
+        "color_1": "#8a4b2a",
+        "color_2_nombre": "Verde",
+        "color_2": "#6b7a3c",
+        "etiquetas_titulo": "Ideal para",
+        "etiquetas": "Bus, Gym, Clase, Oficina",
+        "etiquetas_estilo": "chips",
+        "estilo_regalos": "tarjetas"
+      },
+      "blocks": {
+        "pack_1": {
+          "type": "pack",
+          "settings": {
+            "pestana": "1 unidad",
+            "etiqueta": "Para ti",
+            "titulo": "VIVIDUS 86 V2 + estuche de cámara",
+            "linea_regalo": "🎁 Con los 3 beneficios incluidos",
+            "detalle": "Marrón o verde",
+            "precio": 79900,
+            "precio_antes": 109900,
+            "cantidad": 1
+          }
+        },
+        "pack_2": {
+          "type": "pack",
+          "settings": {
+            "pestana": "2 unidades",
+            "destacar": "Uno para regalar",
+            "etiqueta": "Uno para ti y otro para regalar",
+            "titulo": "2 VIVIDUS 86 V2 + estuches de cámara",
+            "linea_regalo": "🎁 Con los 3 beneficios incluidos",
+            "detalle": "Combina colores · $64.950 c/u",
+            "precio": 129900,
+            "cantidad": 2,
+            "preseleccionado": true
+          }
+        },
+        "regalo_3": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "camion",
+            "titulo": "Envío express gratis",
+            "texto": "A toda Colombia",
+            "valor_tachado": "$21.000",
+            "sello": "Express"
+          }
+        },
+        "regalo_4": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Incluida",
+            "icono": "escudo",
+            "titulo": "Garantía 90 días",
+            "texto": "Por daños de fábrica",
+            "sello": "Cambio o devolución"
+          }
+        },
+        "regalo_5": {
+          "type": "regalo",
+          "settings": {
+            "insignia": "Gratis",
+            "icono": "regalo",
+            "titulo": "15 % en tu segunda compra",
+            "texto": "Para el otro color o para regalar",
+            "sello": "Segunda compra"
+          }
+        }
+      },
+      "block_order": [
+        "pack_1",
+        "pack_2",
+        "regalo_3",
+        "regalo_4",
+        "regalo_5"
+      ]
+    },
+    "videos": {
+      "type": "pp-videos",
+      "settings": {
+        "titulo": "Míralos <em>en video real</em>",
+        "texto": "Videos reales del producto."
+      },
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Video 1"
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Video 2"
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "etiqueta": "Video 3"
+          }
+        }
+      },
+      "block_order": [
+        "video_1",
+        "video_2",
+        "video_3"
+      ]
+    },
+    "grid_dolores": {
+      "type": "pp-grid-dolores",
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "Lo que ya te pasó",
+        "titulo": "Así terminan <em>los baratos de siempre</em>",
+        "texto": "Si ya compraste dos o tres pares, conoces la historia. Imágenes ilustrativas.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "No necesitas otros iguales: <em>necesitas un estuche que aguante.</em>",
+        "cierre_estilo": "texto"
+      },
+      "blocks": {
+        "item_1": {
+          "type": "item",
+          "settings": {
+            "titulo": "Un lado deja de sonar",
+            "texto": "A los pocos meses, o después de una caída, uno suena más bajo o ya no suena."
+          }
+        },
+        "item_2": {
+          "type": "item",
+          "settings": {
+            "titulo": "La tapita se quiebra",
+            "texto": "Se cae la cajita y deja de cargar. Sin estuche, no sirven."
+          }
+        },
+        "item_3": {
+          "type": "item",
+          "settings": {
+            "titulo": "Se apagan a mitad de ruta",
+            "texto": "No sabes cuánta batería les queda hasta que se quedan mudos."
+          }
+        },
+        "item_4": {
+          "type": "item",
+          "settings": {
+            "titulo": "Otra vez a comprar",
+            "texto": "Lo barato sale caro: vuelves a pagar por unos iguales."
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3",
+        "item_4"
+      ]
+    },
+    "galeria_ideas": {
+      "type": "pp-galeria-ideas",
+      "settings": {
+        "color_fondo": "#ece2d3",
+        "color_texto": "#2e2420",
+        "color_acento": "#7a3f22",
+        "nieve": false,
+        "etiqueta": "Dónde se usan",
+        "titulo": "Contigo <em>todo el día</em>",
+        "texto": "Del bus a la oficina, sin estar pendiente de cuidarlos. Imágenes ilustrativas.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "2"
+      },
+      "blocks": {
+        "idea_1": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Bus",
+            "titulo": "En el trayecto",
+            "texto": "Los guardas al bajarte y en la pantalla ves cuánta carga queda."
+          }
+        },
+        "idea_2": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Gym",
+            "titulo": "Entrenando",
+            "texto": "Resisten el sudor; tú sigue con la rutina."
+          }
+        },
+        "idea_3": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Clase",
+            "titulo": "En la U",
+            "texto": "Del morral a la mesa, con el estuche protegiéndolos."
+          }
+        },
+        "idea_4": {
+          "type": "idea",
+          "settings": {
+            "etiqueta": "Oficina",
+            "titulo": "En el escritorio",
+            "texto": "Llamadas claras y un estuche que parece una cámara."
+          }
+        }
+      },
+      "block_order": [
+        "idea_1",
+        "idea_2",
+        "idea_3",
+        "idea_4"
+      ]
+    },
+    "problemas_filas": {
+      "type": "pp-problemas-filas",
+      "settings": {
+        "color_fondo": "#f6efe4",
+        "color_tarjeta": "#fffaf3",
+        "color_acento": "#7a3f22",
+        "color_dorado": "#e0662f",
+        "color_texto": "#2e2420",
+        "adorno": false,
+        "titulo": "Pensados para",
+        "titulo_dorado": "lo que daña a los baratos",
+        "titulo_fin": "",
+        "subtitulo": "Imágenes ilustrativas.",
+        "cierre": "Y si un lado falla de fábrica, tienes 90 días de garantía."
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Si se te caen",
+            "puntos": "El estuche de cámara aguanta caídas, también con los audífonos adentro."
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "icono": "rayo",
+            "titulo": "Batería a la vista",
+            "puntos": "La pantalla del estuche te muestra el %: 20 h en total y de 3 a 4 h seguidas por carga."
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Sudor del gym",
+            "puntos": "Resisten el sudor, con control táctil para no sacar el celular."
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "icono": "chat",
+            "titulo": "Si hay ruido",
+            "puntos": "Bluetooth 5.4 y micrófono con ENC: te escuchan claro aunque haya ruido."
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4"
+      ]
+    },
+    "pasos": {
+      "type": "pp-pasos",
+      "settings": {
+        "estilo": "fotos",
+        "fondo": "fondo-2",
+        "titulo": "Listos en <em>3 pasos</em>",
+        "texto": "Imágenes ilustrativas."
+      },
+      "blocks": {
+        "paso_1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Abre el estuche",
+            "texto": "Saca los audífonos."
+          }
+        },
+        "paso_2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conéctalos",
+            "texto": "Búscalos en el Bluetooth de tu celular, Android o iPhone."
+          }
+        },
+        "paso_3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Guárdalos al terminar",
+            "texto": "Se cargan en el estuche y la pantalla te muestra el %."
+          }
+        }
+      },
+      "block_order": [
+        "paso_1",
+        "paso_2",
+        "paso_3"
+      ]
+    },
+    "esperar": {
+      "type": "pp-esperar",
+      "settings": {
+        "fondo": "fondo",
+        "color_acento": "#7a3f22",
+        "color_icono": "#e0662f",
+        "etiqueta": "Después de pedirlos",
+        "titulo": "Así llegan <em>hasta tus manos</em>",
+        "texto": "Este es el camino, paso a paso."
+      },
+      "blocks": {
+        "etapa_1": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Hoy",
+            "texto": "Llenas el formulario y eliges tu color. No pagas nada por adelantado."
+          }
+        },
+        "etapa_2": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Después de pedir",
+            "texto": "Te escribimos por WhatsApp para confirmar tu pedido, tu color y tu dirección."
+          }
+        },
+        "etapa_3": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "En camino",
+            "texto": "Envío express gratis a toda Colombia. Llegan en 3 a 5 días hábiles."
+          }
+        },
+        "etapa_4": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Al recibir",
+            "texto": "Pagas cuando los tienes en la mano."
+          }
+        },
+        "etapa_5": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "Al abrir la caja",
+            "texto": "Revísalos. Si llegan dañados, con la caja rota o destapados, te los cambiamos por otros."
+          }
+        },
+        "etapa_6": {
+          "type": "etapa",
+          "settings": {
+            "icono": "calendario",
+            "periodo": "90 días",
+            "texto": "Si un lado falla de fábrica, tienes cambio o devolución."
+          }
+        }
+      },
+      "block_order": [
+        "etapa_1",
+        "etapa_2",
+        "etapa_3",
+        "etapa_4",
+        "etapa_5",
+        "etapa_6"
+      ]
+    },
+    "comparativa": {
+      "type": "pp-comparativa",
+      "settings": {
+        "fondo": "fondo-2",
+        "etiqueta": "La diferencia",
+        "titulo": "VIVIDUS vs. <em>los baratos de siempre</em>",
+        "texto": "Frente a los audífonos blancos de siempre + una funda aparte.",
+        "color_destacado": "#e0662f",
+        "nombre_a": "VIVIDUS 86 V2",
+        "sub_a": "Estuche de cámara incluido",
+        "nombre_b": "Los de siempre",
+        "sub_b": "+ funda aparte",
+        "pie_izq": "VIVIDUS",
+        "pie_der": "Protegidos, con respaldo y sin funda aparte"
+      },
+      "blocks": {
+        "fila_1": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Si se te caen",
+            "subtitulo": "El estuche",
+            "ok_a": true,
+            "valor_a": "Aguanta caídas",
+            "ok_b": false,
+            "valor_b": "La tapita se quiebra"
+          }
+        },
+        "fila_2": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Protección",
+            "subtitulo": "Sin comprar extras",
+            "ok_a": true,
+            "valor_a": "Incluida",
+            "ok_b": false,
+            "valor_b": "Funda aparte"
+          }
+        },
+        "fila_3": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Batería",
+            "subtitulo": "Cuánta queda",
+            "ok_a": true,
+            "valor_a": "Pantalla con %",
+            "ok_b": false,
+            "valor_b": "Adivinas"
+          }
+        },
+        "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Sudor",
+            "subtitulo": "Gym y calor",
+            "ok_a": true,
+            "valor_a": "Resisten",
+            "ok_b": false,
+            "valor_b": "Depende"
+          }
+        },
+        "fila_5": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Llamadas",
+            "subtitulo": "Micrófono",
+            "ok_a": true,
+            "valor_a": "ENC: te escuchan claro",
+            "ok_b": false,
+            "valor_b": "Solo para música"
+          }
+        },
+        "fila_6": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Respaldo",
+            "subtitulo": "Si fallan de fábrica",
+            "ok_a": true,
+            "valor_a": "90 días",
+            "ok_b": false,
+            "valor_b": "Sin garantía a la vista"
+          }
+        }
+      },
+      "block_order": [
+        "fila_1",
+        "fila_2",
+        "fila_3",
+        "fila_4",
+        "fila_5",
+        "fila_6"
+      ]
+    },
+    "resenas": {
+      "type": "pp-resenas",
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "Lo que dicen",
+        "titulo": "“Pensé que por el precio iban a sonar mal <em>y no.</em>”",
+        "nota": "4,8",
+        "cantidad": "",
+        "visibles": 3
+      },
+      "blocks": {
+        "resena_1": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Pensé que por el precio iban a sonar mal y no: se escuchan bien y las llamadas son claras.",
+            "nombre": "Juliana R.",
+            "ciudad": "Medellín",
+            "verificado": true
+          }
+        },
+        "resena_2": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "El verde para mí y el café para mi novio. Llegaron rápido y pagué al recibir.",
+            "nombre": "Sara M.",
+            "ciudad": "Cali",
+            "verificado": true
+          }
+        },
+        "resena_3": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Están melísimos para entrenar y aguantan bien el sudor. No se me caen al hacer ejercicio, ya una amiga los quiere, creo que ya les compro también unos. TK",
+            "nombre": "Alejo R",
+            "ciudad": "Bogotá",
+            "verificado": false
+          }
+        },
+        "resena_4": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Los uso en el trayecto al trabajo. Cuando bajan, los guardo en el estuche y en la pantalla veo cuánta carga le queda.",
+            "nombre": "Martha V",
+            "ciudad": "Huila",
+            "verificado": false
+          }
+        },
+        "resena_5": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "En la oficina todos me preguntan por el estuche. Parece una cámara de verdad.",
+            "nombre": "Andrés P.",
+            "ciudad": "Bogotá",
+            "verificado": true
+          }
+        },
+        "resena_6": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Iba a comprar una funda bonita para mis audífonos y con estos ya viene todo. Me salió más barato.",
+            "nombre": "Lina Hidalgo",
+            "ciudad": "Medellín",
+            "verificado": false
+          }
+        },
+        "resena_7": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Parece una cámara de verdad. Y me gusta ver en la pantallita cuánta batería le queda.",
+            "nombre": "Pedro Rojas",
+            "ciudad": "Bucaramanga",
+            "verificado": false
+          }
+        },
+        "resena_8": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Los saco en el café o en el escritorio y siempre terminan en mis historias. Me preguntan si es una cámara.",
+            "nombre": "Andrea Ramirez",
+            "ciudad": "Cúcuta",
+            "verificado": false
+          }
+        },
+        "resena_9": {
+          "type": "resena",
+          "settings": {
+            "estrellas": 5,
+            "titulo": "",
+            "texto": "Se los regalé a mi hijo de 15 años y ahora un amigo suyo quiere unos iguales.",
+            "nombre": "Claudio Gomez",
+            "ciudad": "Cali",
+            "verificado": false
+          }
+        }
+      },
+      "block_order": [
+        "resena_1",
+        "resena_2",
+        "resena_3",
+        "resena_4",
+        "resena_5",
+        "resena_6",
+        "resena_7",
+        "resena_8",
+        "resena_9"
+      ]
+    },
+    "faq": {
+      "type": "pp-faq",
+      "settings": {
+        "estilo": "tarjetas",
+        "fondo": "fondo-2",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "abrir_primera": true
+      },
+      "blocks": {
+        "pregunta_1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Daniela de Barranquilla pregunta: ¿llegan como en la foto?",
+            "respuesta": "<p>Sí, como en los videos. Los <strong>videos de esta página son del producto real</strong>. Además <strong>pagas al recibir</strong>, y si llegan dañados, con la caja rota o destapados, <strong>te los cambiamos por otros</strong>.</p>"
+          }
+        },
+        "pregunta_2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Andrés de Cali pregunta: ¿suenan bien o es pura carcasa?",
+            "respuesta": "<p>Se conectan por <strong>Bluetooth 5.4</strong> y el micrófono tiene ENC, así que te escuchan claro aunque haya ruido. Lo dice Juliana, de Medellín: «Pensé que por el precio iban a sonar mal y no: se escuchan bien y las llamadas son claras».</p>"
+          }
+        },
+        "pregunta_3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Marta de Bogotá pregunta: ¿sirven con iPhone?",
+            "respuesta": "<p>Sí. Se conectan por <strong>Bluetooth 5.4</strong> con iPhone y con Android. Los buscas en el Bluetooth de tu celular y listo.</p>"
+          }
+        },
+        "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Camilo de Pereira pregunta: ¿qué pasa si se me caen?",
+            "respuesta": "<p>Si se te caen guardados, el estuche de cámara <strong>aguanta el golpe por ellos</strong>. Por eso vale la pena guardarlos en el estuche cada vez que te los quitas.</p>"
+          }
+        },
+        "pregunta_5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Valentina de Medellín pregunta: ¿cuánto dura la batería?",
+            "respuesta": "<p>De <strong>3 a 4 horas seguidas</strong> por carga, y hasta <strong>20 horas en total</strong> con las recargas del estuche. La pantalla te muestra el % que le queda, así no te quedas sin música a mitad de camino.</p>"
+          }
+        },
+        "pregunta_6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Jorge de Cali pregunta: ¿cómo funciona la garantía?",
+            "respuesta": "<p>Tienes <strong>90 días por daños de fábrica</strong>: si un lado deja de sonar <strong>por un defecto de fábrica</strong>, te los cambiamos o te devolvemos tu dinero. Escríbenos por WhatsApp y te decimos cómo.</p>"
+          }
+        },
+        "pregunta_7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Laura de Bucaramanga pregunta: ¿cómo los cargo la primera vez?",
+            "respuesta": "<p>Guarda los audífonos en el estuche y conéctalo con el <strong>cable de carga que viene en la caja</strong> hasta que la pantalla marque 100 %.</p>"
+          }
+        },
+        "pregunta_8": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Natalia de Cartagena pregunta: ¿qué colores hay?",
+            "respuesta": "<p><strong>Marrón</strong> y <strong>verde</strong>. Eliges el color en el formulario; si pides 2, puedes combinarlos.</p>"
+          }
+        },
+        "pregunta_9": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Sandra de Ibagué pregunta: ¿cómo pago?",
+            "respuesta": "<p><strong>Pagas al recibir</strong>, cuando los tienes en la mano. El envío express es <strong>gratis a toda Colombia</strong>.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "pregunta_1",
+        "pregunta_2",
+        "pregunta_3",
+        "pregunta_4",
+        "pregunta_5",
+        "pregunta_6",
+        "pregunta_7",
+        "pregunta_8",
+        "pregunta_9"
+      ]
+    },
+    "garantia": {
+      "type": "pp-garantia",
+      "settings": {
+        "color_tarjeta": "#7a3f22",
+        "color_texto": "#ffffff",
+        "color_sello": "#7a3f22",
+        "sello_arriba": "Garantía",
+        "sello_numero": "90",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra sin riesgo",
+        "titulo": "Si falla de fábrica, <em>te los cambiamos</em>",
+        "texto": "Tienes 90 días de garantía por daños de fábrica: cambio o devolución. Si llegan dañados, con la caja rota o destapados, te los cambiamos por otros."
+      },
+      "blocks": {
+        "punto_1": {
+          "type": "punto",
+          "settings": {
+            "icono": "escudo",
+            "texto": "90 días por daños de fábrica"
+          }
+        },
+        "punto_2": {
+          "type": "punto",
+          "settings": {
+            "icono": "cambio",
+            "texto": "Cambio o devolución"
+          }
+        },
+        "punto_3": {
+          "type": "punto",
+          "settings": {
+            "icono": "pago",
+            "texto": "Pagas al recibir"
+          }
+        }
+      },
+      "block_order": [
+        "punto_1",
+        "punto_2",
+        "punto_3"
+      ]
+    },
+    "boton_fijo": {
+      "type": "pp-boton-fijo",
+      "settings": {
+        "aparecer": "despues_oferta",
+        "boton_texto": "Los quiero",
+        "subtexto": "Pagas al recibir · Envío express gratis",
+        "precio_manual": 129900
+      }
+    }
+  },
+  "order": [
+    "estilos",
+    "ticker",
+    "hero_oferta",
+    "iconos",
+    "oferta_tabs",
+    "videos",
+    "grid_dolores",
+    "galeria_ideas",
+    "problemas_filas",
+    "pasos",
+    "esperar",
+    "comparativa",
+    "resenas",
+    "faq",
+    "garantia",
+    "boton_fijo"
+  ]
+}
