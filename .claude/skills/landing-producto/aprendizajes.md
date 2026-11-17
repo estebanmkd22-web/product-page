@@ -14,6 +14,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **Primero se define el hero, después se arma la landing.** No armes nada para "mostrar cómo queda" sin que te lo pida.
 
 ## Oferta
+- **(2026-11-17) Datos fijos de operación de Tu espacio Market:** están en SKILL.md, en «Datos fijos de operación»: envío express de $21.000, guías y códigos por WhatsApp, entrega de 3 a 5 días hábiles y garantías por WhatsApp. No se vuelven a preguntar.
 - **Producto de precio único** (estufa): no se ofrece x2. La oferta se hace difícil de rechazar apilando bonos reales (recetarios, guía, garantía, acompañamiento) y anclando contra la alternativa cara (una estufa de piso).
 - **El ancla contra la alternativa real** convierte mejor que el descuento: "una cocina de 3 puestos por menos de lo que cuesta una estufa de piso".
 - **No usar precios tachados inventados.**

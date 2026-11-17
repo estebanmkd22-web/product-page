@@ -117,3 +117,14 @@ Muchos anuncios genéricos, combos con smartwatch y precio bajo (ver dossier). H
 - **Otros datos de la landing actual:**
   - en llamadas, "ENC: reducción de ruido, te escuchan claro aunque haya ruido" (es del micrófono, no cancelación activa de ruido);
   - "si llega dañado, con la caja rota o destapado, te lo cambiamos por otro".
+
+## Respuestas del dueño (2026-11-17) [Usuario]
+- **Garantía: vuelve a 90 días por daños de fábrica.** El título «no duran ni 3 meses» queda como está, porque 90 días son los 3 meses. Corregir 60 → 90 en todo el copy.
+- **Envío express:** vale $21.000. Va tachado en la tarjeta como «Gratis».
+- **El 15 % para la segunda compra** se envía por WhatsApp al confirmar el pedido.
+- **Entrega:** de 3 a 5 días hábiles.
+- **Trae cable de carga.**
+- **La garantía se reclama por WhatsApp.**
+- **Claudio Gomez es de Cali.**
+- **Variantes: «Marrón» y «Verde»** (así se llaman en Shopify y EasySell). Usar «marrón» en el copy, no «café».
+- **Pendientes:** el precio del pack x2 desde el 1 de diciembre (sin precio tachado hasta que lo dé) y qué muestra cada video («Videos reales del producto» mientras tanto).

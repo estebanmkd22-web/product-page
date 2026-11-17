@@ -55,6 +55,15 @@ Proceso fijo para las tiendas del usuario (Shopify, tema Dawn). Todo se arma con
 | **Tu espacio Market** (tuespaciomarket.com) | Colombia | `$` COP, `locale es-CO` | Tuteo cercano, colombiano |
 | **Naturixa** (vivecompra.com/naturixa) | Guatemala | `Q` | El más cercano para guatemaltecos (voseo) |
 
+**Datos fijos de operación de Tu espacio Market** (confirmados por el usuario el 2026-11-17; úsalos en todas las landings sin volver a preguntarlos):
+- **Envío express:** vale **$21.000**. En la oferta va como bono «Gratis» con ese valor tachado.
+- **Guías, bonos y códigos de descuento** (por ejemplo el % para la segunda compra) **se envían por WhatsApp** al confirmar el pedido. Nunca se dice "en la caja" ni "por correo".
+- **Tiempo de entrega:** **3 a 5 días hábiles**.
+- **Garantías:** se reclaman **por WhatsApp**.
+- **Pago:** contraentrega, con confirmación del pedido por WhatsApp.
+
+En Naturixa no se asumen estos datos: hay que confirmarlos.
+
 Los precios y nombres reales los confirma el usuario. Fuera del montaje, no los busques en la tienda. Si el usuario manda un enlace de su tienda o de un proveedor para analizarlo, puedes leer esa página pública, pero solo para analizar y proponer.
 
 ## Proceso por fases, cada una se aprueba antes de seguir
