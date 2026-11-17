@@ -181,7 +181,7 @@
           "settings": {
             "pestana": "1 unidad",
             "etiqueta": "Para ti",
-            "titulo": "VIVIDUS 86 V2 + estuche de cámara",
+            "titulo": "VIVIDUS 86 V2",
             "linea_regalo": "🎁 Con los 3 beneficios incluidos",
             "detalle": "Marrón o verde",
             "precio": 79900,
@@ -195,7 +195,7 @@
             "pestana": "2 unidades",
             "destacar": "Uno para regalar",
             "etiqueta": "Uno para ti y otro para regalar",
-            "titulo": "2 VIVIDUS 86 V2 + estuches de cámara",
+            "titulo": "2 VIVIDUS 86 V2",
             "linea_regalo": "🎁 Con los 3 beneficios incluidos",
             "detalle": "Combina colores · $64.950 c/u",
             "precio": 129900,
@@ -273,8 +273,7 @@
         "columnas_movil": "2",
         "columnas_pc": "4",
         "proporcion": "1 / 1",
-        "cierre": "No necesitas otros iguales: <em>necesitas un estuche que aguante.</em>",
-        "cierre_estilo": "texto"
+        "cierre": "No necesitas otros iguales: <em>necesitas un estuche que aguante.</em>"
       },
       "blocks": [
         {
