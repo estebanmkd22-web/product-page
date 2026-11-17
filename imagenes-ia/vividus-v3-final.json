@@ -1,0 +1,192 @@
+[
+  {
+    "n": 1,
+    "id": "oferta-tabs.regalo3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Imagen pequeña para una tarjeta de beneficio de la oferta, estilo foto de producto 3D suave y limpia, centrada, sobre fondo liso crema muy claro (#f3e7da) con sombra suave. Objeto grande, ocupando el 65 % del encuadre, con margen alrededor. Sin personas y sin los audífonos. Una caja de cartón de envío cerrada, con cinta adhesiva y una pequeña etiqueta blanca sin texto, en ángulo de tres cuartos, con unas líneas suaves de velocidad detrás que sugieren envío express.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 2,
+    "id": "oferta-tabs.regalo4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Imagen pequeña para una tarjeta de beneficio de la oferta, estilo foto de producto 3D suave y limpia, centrada, sobre fondo liso crema muy claro (#f3e7da) con sombra suave. Objeto grande, ocupando el 65 % del encuadre, con margen alrededor. Sin personas y sin los audífonos. Un escudo de garantía color marrón cuero con borde dorado y un check blanco, con una cinta naranja quemado debajo donde va el texto.\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «90 días».\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 3,
+    "id": "oferta-tabs.regalo5",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Imagen pequeña para una tarjeta de beneficio de la oferta, estilo foto de producto 3D suave y limpia, centrada, sobre fondo liso crema muy claro (#f3e7da) con sombra suave. Objeto grande, ocupando el 65 % del encuadre, con margen alrededor. Sin personas y sin los audífonos. Una tarjeta de regalo verde oliva con un lazo naranja quemado, inclinada, con el número grande impreso en blanco.\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «15%».\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 4,
+    "id": "grid-dolores.item1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Mano con un audífono blanco genérico (forma genérica, sin logos, que no se parezca a ninguna marca conocida) cerca del oído en gesto de frustración, celular con música en la otra mano; sin rostro.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 5,
+    "id": "grid-dolores.item2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Una cajita blanca genérica de audífonos (forma genérica, sin logos, que no se parezca a ninguna marca conocida) en el piso de una calle o de un bus, con la tapa desprendida a un lado.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 6,
+    "id": "grid-dolores.item3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Dentro de un bus urbano, una mano sacándose del oído un audífono blanco genérico (forma genérica, sin logos, que no se parezca a ninguna marca conocida), con la cajita blanca cerrada en la otra mano y la ventana desenfocada al fondo; sin rostro, sin pantallas legibles.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 7,
+    "id": "grid-dolores.item4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Sobre una mesa, tres cajitas blancas genéricas de audífonos (forma genérica, sin logos, que no se parezca a ninguna marca conocida) viejas, una abierta y rayada, junto a una billetera.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 8,
+    "id": "galeria-ideas.idea1",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Una mano sosteniendo el estuche marrón cerrado con la pantalla encendida, con la ventana de un bus urbano desenfocada al fondo; sin rostro. Deja el tercio inferior simple y algo más oscuro, porque ahí va texto encima.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 9,
+    "id": "galeria-ideas.idea2",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Estuche verde abierto sobre una toalla en una banca de gimnasio, junto a una botella de agua y unas mancuernas. Deja el tercio inferior simple y algo más oscuro.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 10,
+    "id": "galeria-ideas.idea3",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Estuche marrón sobre un cuaderno abierto en un pupitre universitario, con un morral al lado. Deja el tercio inferior simple y algo más oscuro.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 11,
+    "id": "galeria-ideas.idea4",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Estuche verde junto a un portátil sin logos y una taza de café en un escritorio con luz de ventana. Deja el tercio inferior simple y algo más oscuro.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 12,
+    "id": "problemas-filas.fila1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: El estuche marrón cerrado sobre una baldosa clara, quieto y entero, con la pantalla encendida; sin manos. Sujeto centrado para recorte cuadrado.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 13,
+    "id": "problemas-filas.fila2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Primer plano de la pantalla LED del estuche verde con un porcentaje encendido. Sujeto centrado.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 14,
+    "id": "problemas-filas.fila3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Una mano tocando un audífono blanco puesto en la oreja, con la camiseta deportiva húmeda en el borde del cuadro, y el estuche marrón abierto desenfocado al fondo; sin rostro.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 15,
+    "id": "problemas-filas.fila4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Una mano sosteniendo un celular genérico en llamada (pantalla sin nombres ni logos) en una calle con movimiento desenfocado, y el estuche marrón en la otra mano; sin rostro.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 16,
+    "id": "pasos.paso1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Manos abriendo la tapa del estuche marrón, con los dos audífonos a la vista. Encuadre claro e instructivo.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 17,
+    "id": "pasos.paso2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Una mano con un celular genérico mostrando la pantalla de Bluetooth (sin nombres ni logos legibles) y el estuche verde abierto al lado.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 18,
+    "id": "pasos.paso3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Una mano metiendo un audífono en el estuche marrón con la pantalla encendida.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 19,
+    "id": "comparativa.imagen_a",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Estuche de audífonos con forma de cámara de fotos retro, idéntico a la foto adjunta: cuerpo forrado en cuero marrón/café (o verde oliva cuando se indique), parte superior color crema, botón rojo pequeño arriba a la derecha, lente circular al frente con pantalla LED que muestra el porcentaje de batería en números blancos, y adentro dos audífonos blancos tipo earbud. No cambies su forma, proporciones, colores ni detalles. No copies ningún texto de la foto adjunta: solo el producto.\n\nEscena: Foto recortada del estuche marrón cerrado, de frente, con la pantalla encendida, sobre fondo blanco puro, luz pareja, sin accesorios ni sombras marcadas.\n\nAmbiente: Espacios reales y cotidianos de Colombia: baldosa clara de apartamento, mesa de madera, café, gimnasio de barrio. Luz natural cálida, foto realista tipo celular de buena calidad, poca profundidad de campo. Tonos cálidos: café cuero, crema, verde oliva y madera; el producto es lo más saturado del cuadro. Fotografía de producto realista, sin aspecto 3D ni de render, sin rostros.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin rostros. Sin logos ni marcas de terceros (ni Apple, ni iPhone, ni Samsung). Manos naturales cuando aparezcan, con cinco dedos. Ningún texto fuera del indicado. Ninguna imagen lleva texto, salvo las tarjetas de beneficios donde se indica.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  }
+]

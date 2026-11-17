@@ -1,0 +1,210 @@
+[
+  {
+    "seccion": "PP · Oferta con pestañas",
+    "tipo": "pp-oferta-tabs",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Que no te pase otra vez",
+    "id": "oferta-tabs.regalo3",
+    "donde": "Beneficio incluido 3 · Envío express gratis",
+    "contexto": "Envío express gratis — A toda Colombia",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Oferta con pestañas",
+    "tipo": "pp-oferta-tabs",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Que no te pase otra vez",
+    "id": "oferta-tabs.regalo4",
+    "donde": "Beneficio incluido 4 · Garantía 90 días",
+    "contexto": "Garantía 90 días — Por daños de fábrica",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Oferta con pestañas",
+    "tipo": "pp-oferta-tabs",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Que no te pase otra vez",
+    "id": "oferta-tabs.regalo5",
+    "donde": "Beneficio incluido 5 · 15 % en tu segunda compra",
+    "contexto": "15 % en tu segunda compra — Para el otro color o para regalar",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así terminan los baratos de siempre",
+    "id": "grid-dolores.item1",
+    "donde": "Tarjeta 1 · Un lado deja de sonar",
+    "contexto": "Un lado deja de sonar — A los pocos meses, o después de una caída, uno suena más bajo o ya no suena.",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así terminan los baratos de siempre",
+    "id": "grid-dolores.item2",
+    "donde": "Tarjeta 2 · La tapita se quiebra",
+    "contexto": "La tapita se quiebra — Se cae la cajita y deja de cargar. Sin estuche, no sirven.",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así terminan los baratos de siempre",
+    "id": "grid-dolores.item3",
+    "donde": "Tarjeta 3 · Se apagan a mitad de ruta",
+    "contexto": "Se apagan a mitad de ruta — No sabes cuánta batería les queda hasta que se quedan mudos.",
+    "n": 6
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así terminan los baratos de siempre",
+    "id": "grid-dolores.item4",
+    "donde": "Tarjeta 4 · Otra vez a comprar",
+    "contexto": "Otra vez a comprar — Lo barato sale caro: vuelves a pagar por unos iguales.",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Contigo todo el día",
+    "id": "galeria-ideas.idea1",
+    "donde": "Tarjeta 1 · En el trayecto",
+    "contexto": "En el trayecto — Los guardas al bajarte y en la pantalla ves cuánta carga queda.",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Contigo todo el día",
+    "id": "galeria-ideas.idea2",
+    "donde": "Tarjeta 2 · Entrenando",
+    "contexto": "Entrenando — Resisten el sudor; tú sigue con la rutina.",
+    "n": 9
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Contigo todo el día",
+    "id": "galeria-ideas.idea3",
+    "donde": "Tarjeta 3 · En la U",
+    "contexto": "En la U — Del morral a la mesa, con el estuche protegiéndolos.",
+    "n": 10
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Contigo todo el día",
+    "id": "galeria-ideas.idea4",
+    "donde": "Tarjeta 4 · En el escritorio",
+    "contexto": "En el escritorio — Llamadas claras y un estuche que parece una cámara.",
+    "n": 11
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensados para",
+    "id": "problemas-filas.fila1",
+    "donde": "Fila 1 · Si se te caen",
+    "contexto": "Si se te caen — El estuche de cámara aguanta caídas, también con los audífonos adentro.",
+    "n": 12
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensados para",
+    "id": "problemas-filas.fila2",
+    "donde": "Fila 2 · Batería a la vista",
+    "contexto": "Batería a la vista — La pantalla del estuche te muestra el %: 20 h en total y de 3 a 4 h seguidas por carga.",
+    "n": 13
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensados para",
+    "id": "problemas-filas.fila3",
+    "donde": "Fila 3 · Sudor del gym",
+    "contexto": "Sudor del gym — Resisten el sudor, con control táctil para no sacar el celular.",
+    "n": 14
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Pensados para",
+    "id": "problemas-filas.fila4",
+    "donde": "Fila 4 · Si hay ruido",
+    "contexto": "Si hay ruido — Bluetooth 5.4 y micrófono con ENC: te escuchan claro aunque haya ruido.",
+    "n": 15
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Listos en 3 pasos",
+    "id": "pasos.paso1",
+    "donde": "Paso 1 · Abre el estuche",
+    "contexto": "Abre el estuche — Saca los audífonos.",
+    "n": 16
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Listos en 3 pasos",
+    "id": "pasos.paso2",
+    "donde": "Paso 2 · Conéctalos",
+    "contexto": "Conéctalos — Búscalos en el Bluetooth de tu celular, Android o iPhone.",
+    "n": 17
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Listos en 3 pasos",
+    "id": "pasos.paso3",
+    "donde": "Paso 3 · Guárdalos al terminar",
+    "contexto": "Guárdalos al terminar — Se cargan en el estuche y la pantalla te muestra el %.",
+    "n": 18
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "VIVIDUS vs. los baratos de siempre",
+    "id": "comparativa.imagen_a",
+    "donde": "Imagen (fondo transparente ideal)",
+    "n": 19
+  }
+]
