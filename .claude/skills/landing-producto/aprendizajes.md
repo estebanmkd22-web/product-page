@@ -30,6 +30,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **En la rama de 1,5 m:** mencionar el tamaño sin que parezca pequeña ("genera rechazo").
 
 ## Imágenes
+- **(2026-11-18) Textos prohibidos en anuncios, para cualquier producto:** "pago al recibir" (o contraentrega), "envío gratis" (o "envío express gratis") y "escríbenos por WhatsApp". En los anuncios Black Friday de VIVIDUS se colaron y el dueño lo corrigió. Regla en `agentes-ecommerce/cerebro/anuncios.md`.
 - **(2026-11-18) Los anuncios estáticos van siempre en 1:1** (1080 × 1080).
 - **(2026-11-10) El hero convence, la oferta vende.** Las imágenes del hero no llevan pagos, precio, envío, garantía ni nada de venta; esos ganchos ya están en la oferta. Solo producto, beneficio y transformación.
 - **(2026-11-10) La imagen 1 del hero es la más importante:** muestra el producto y es la que retiene al cliente apenas entra a la landing. Se hace primero, con más cuidado y con variantes.

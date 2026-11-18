@@ -8,3 +8,4 @@ Estos principios desempatan cuando una regla no alcanza. Son una propuesta inici
 4. **Trato cercano y respetuoso**, nunca presionar ni engañar al cliente.
 5. **Nunca se cancela, se cambia de producto ni se promete un reembolso sin una regla escrita** en el cerebro.
 6. **Cada acción queda registrada** en el pedido (nota o etiqueta) para poder auditarla.
+7. **Anuncios: nunca "pago al recibir", "envío gratis" ni "escríbenos por WhatsApp"** (regla fija de Esteban, ver `cerebro/anuncios.md`).

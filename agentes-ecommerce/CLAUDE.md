@@ -13,6 +13,9 @@ Este proyecto contiene los agentes de la operación de ecommerce de Esteban en *
 - **Cada acción queda registrada** en el pedido (nota o etiqueta en iComfly).
 - **Nunca guardes en este repositorio** URLs de conectores con token, contraseñas ni datos personales de clientes (teléfonos, direcciones, nombres).
 
+## Anuncios
+Cualquier anuncio, de cualquier producto, sigue `cerebro/anuncios.md`: **nunca** "pago al recibir", "envío gratis" ni "escríbenos por WhatsApp", en ninguna de sus variantes.
+
 ## Conectores por país
 | País | iComfly | Dropi |
 | --- | --- | --- |

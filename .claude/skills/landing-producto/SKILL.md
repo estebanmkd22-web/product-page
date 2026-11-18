@@ -287,6 +287,7 @@ Copy de anuncios para Meta o TikTok, a partir del brief y del ángulo de la land
 - gancho, cuerpo y llamado a la acción;
 - 3 a 5 variantes por ángulo, cada una con la hipótesis que prueba;
 - siguiendo las políticas de anuncios (ver `criterio.md` §5).
+- **Textos prohibidos en todo anuncio** (cualquier producto, regla fija): nada de "pago al recibir"/contraentrega, "envío gratis" ni "escríbenos por WhatsApp", ni en la imagen ni en los textos de Meta. Detalle en `criterio.md` §5 y en `agentes-ecommerce/cerebro/anuncios.md`. Revísalo antes de entregar.
 - **Los anuncios estáticos son siempre cuadrados 1:1 (1080 × 1080)**, salvo que el usuario pida otro formato.
 - **Anuncios estáticos con referentes:**
   - guarda las imágenes de referencia del usuario en `imagenes/referentes/<producto>-<campaña>/` con nombre numerado (`ref1-marca.jpg`…);
