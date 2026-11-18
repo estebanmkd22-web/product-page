@@ -1,0 +1,52 @@
+[
+  {
+    "seccion": "Anuncios Black Friday",
+    "tipo": "anuncio",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Estáticos para Meta · feed 4:5",
+    "id": "anuncio1",
+    "donde": "Anuncio 1 · Precio protagonista",
+    "n": 1
+  },
+  {
+    "seccion": "Anuncios Black Friday",
+    "tipo": "anuncio",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Estáticos para Meta · feed 4:5",
+    "id": "anuncio2",
+    "donde": "Anuncio 2 · BLACK FRIDAY gigante",
+    "n": 2
+  },
+  {
+    "seccion": "Anuncios Black Friday",
+    "tipo": "anuncio",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Estáticos para Meta · feed 4:5",
+    "id": "anuncio3",
+    "donde": "Anuncio 3 · La caída",
+    "n": 3
+  },
+  {
+    "seccion": "Anuncios Black Friday",
+    "tipo": "anuncio",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Estáticos para Meta · feed 4:5",
+    "id": "anuncio4",
+    "donde": "Anuncio 4 · El dolor",
+    "n": 4
+  },
+  {
+    "seccion": "Anuncios Black Friday",
+    "tipo": "anuncio",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Estáticos para Meta · feed 4:5",
+    "id": "anuncio5",
+    "donde": "Anuncio 5 · Todo incluido",
+    "n": 5
+  }
+]
