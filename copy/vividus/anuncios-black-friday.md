@@ -83,9 +83,8 @@ Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están e
 - **Título:** Todo incluido por $79.900
 - **Descripción:** Hasta el 30 de noviembre
 
-## Formatos
-- **Feed (4:5):** en ChatGPT se pide vertical 2:3 y se recorta a 4:5 (1080 × 1350). Los textos van dentro del área central para que el recorte no los corte.
-- **Historias y reels (9:16):** la misma imagen. Se extiende el fondo arriba y abajo, o se pide en vertical y se deja libre el 14 % superior e inferior (zona de la interfaz de Meta).
+## Formato
+**Todos los anuncios son cuadrados 1:1 (1080 × 1080)**, por decisión del dueño (2026-11-18). En ChatGPT se piden cuadrados, sin recorte. Los textos llevan margen de seguridad respecto a los bordes.
 
 ## Lo que cambia el 1 de diciembre
 Todo lo que dice «Black Friday», «hasta el 30 de noviembre», «27% OFF», «Antes $109.900» o «$79.900». Esos anuncios se apagan ese día.
