@@ -174,8 +174,6 @@ Ideas para tu segundo peluche:
 
 Los dos traen proyector de estrellas, música para dormir y pilas incluidas. Además recibes la Guía Noches en Calma, el bono del 10% y 60 días de garantía por daños de fábrica.
 
-Pagas al recibir y el envío es gratis.
-
 **CTA**
 👉 Toca «Comprar», elige el pack de 2 y escoge tus modelos.
 
