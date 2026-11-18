@@ -35,7 +35,7 @@ const FORMATO_CHATGPT = (p) => {
   if (a === b) return { pedir: 'cuadrada (1:1)', recorte: '' };
   return a < b ? { pedir: 'vertical (2:3)', recorte: p === '2/3' ? '' : `recórtala a ${p.replace('/', ':')}` } : { pedir: 'horizontal (3:2)', recorte: p === '3/2' ? '' : `recórtala a ${p.replace('/', ':')}` };
 };
-const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avatar ? `la foto de ${avatar.nombre}` : ''].filter(Boolean);
+const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avatar ? `la foto de ${avatar.nombre}` : '', p.referente?.archivo ? `la imagen del referente (${p.referente.nombre})` : ''].filter(Boolean);
 const promptV2 = (e, p) => {
   const f = FORMATO_CHATGPT(e.proporcion.replace(/\s/g, ''));
   const adj = adjuntosDe(p);
@@ -43,6 +43,7 @@ const promptV2 = (e, p) => {
   return [
     'ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).',
     adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
+    p.referente?.archivo ? `Referente de diseño: la imagen de ${p.referente.nombre} que te adjunto. Toma de ella solo ${p.referente.tomar || 'la composición, la jerarquía de los textos, la tipografía y el estilo del fondo'}; no copies su producto, su marca, sus personas ni sus textos.` : '',
     p.producto ? `Producto: ${kit.producto}` : '',
     p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
@@ -85,7 +86,7 @@ const tarjetas = grupos.map((g) => `
     <div class="top"><span class="n">${it.n}</span><div><h3>${esc(it.donde)}${(it.historial || []).length ? ' <span class="mod">Modificada</span>' : ''}</h3>
       <div class="chips"><span>${esc(it.proporcion.replace(/\s/g, ''))}</span>${it.pixeles ? `<span>${esc(it.pixeles)} px</span>` : ''}${it.producto ? '<span class="ref">Con foto del producto</span>' : ''}${it.persona && avatar ? `<span class="ref">Con ${esc(avatar.nombre)}</span>` : ''}</div></div></div>
     <p class="que">${esc(it.que || 'Falta el prompt de este espacio.')}</p>
-    ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}${it.comparativa ? `<dt>Comparativa</dt><dd>${esc(it.comparativa)}</dd>` : ''}${(it.textos || []).length ? `<dt>Textos</dt><dd>${it.textos.map((t) => `«${esc(t)}»`).join(' · ')}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd><dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
+    ${V2 && it.final ? `<dl class="partes"><dt>Escena</dt><dd>${esc(it.escena)}</dd>${it.persona && it.persona_accion ? `<dt>Persona</dt><dd>${esc(it.persona_accion)}</dd>` : ''}${it.comparativa ? `<dt>Comparativa</dt><dd>${esc(it.comparativa)}</dd>` : ''}${(it.textos || []).length ? `<dt>Textos</dt><dd>${it.textos.map((t) => `«${esc(t)}»`).join(' · ')}</dd>` : ''}<dt>Formato</dt><dd>Pide la imagen ${esc(it.formato.pedir)}${it.formato.recorte ? ` y ${esc(it.formato.recorte)}` : ''}.</dd>${it.referente ? `<dt>Referente</dt><dd>${it.referente.archivo ? `<img class="refimg" src="${esc(it.referente.archivo)}" alt="">` : ''}${esc(it.referente.nombre)}${it.referente.tomar ? ` · toma: ${esc(it.referente.tomar)}` : ''}</dd>` : ''}<dt>Adjuntar</dt><dd>${it.adjuntos.length ? esc(it.adjuntos.join(' + ')) : 'Nada'}</dd></dl>` : ''}
     ${(it.historial || []).length ? `<ul class="hist">${it.historial.map((h) => `<li><b>${esc(h.fecha)}</b> · ${esc(h.parte)}: ${esc(h.cambio)}</li>`).join('')}</ul>` : ''}
     ${it.final ? `<details><summary>Ver prompt completo</summary><pre>${esc(it.final)}</pre><button data-copy="${esc(it.final)}">Copiar</button></details>` : ''}
     ${(it.variantes || []).map((v) => `<details><summary>Variante ${esc(v.nombre)}</summary><pre>${esc(v.final)}</pre><button data-copy="${esc(v.final)}">Copiar</button></details>`).join('')}
@@ -113,6 +114,7 @@ h1{font-size:26px;margin:0 0 4px}.sub{color:var(--tx2);margin:0 0 20px}
 h3{margin:4px 0 6px;font-size:15px}.chips{display:flex;gap:6px;flex-wrap:wrap}.chips span{font-size:12px;border:1px solid var(--borde);border-radius:99px;padding:1px 8px;color:var(--tx2)}.chips .ref{border-color:var(--ac);color:var(--ac)}
 .que{margin:10px 0 0}.mod{font-size:11px;background:var(--ac);color:#fff;border-radius:99px;padding:1px 8px;vertical-align:middle}
 .partes{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;margin:10px 0 0;font-size:14px}.partes dt{font-weight:700;color:var(--ac)}.partes dd{margin:0;color:var(--tx2)}
+.refimg{display:block;width:120px;border-radius:8px;margin-bottom:6px;border:1px solid var(--borde)}
 .hist{margin:10px 0 0;padding:8px 10px 8px 26px;background:var(--suave);border-radius:10px;font-size:13px}details{margin-top:8px}summary{cursor:pointer;color:var(--ac);font-weight:600}
 pre{white-space:pre-wrap;word-break:break-word;background:var(--bg);border:1px solid var(--borde);border-radius:10px;padding:10px;font-size:12.5px;margin:8px 0}
 button{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:8px 14px;font-weight:700;cursor:pointer}

@@ -17,35 +17,58 @@
       "producto": true,
       "persona": false,
       "historial": [],
-      "escena": "Fondo azul noche con un leve degradado y bokeh. Una mano sostiene el estuche marrón con la tapa abierta y los audífonos a la vista, en la mitad inferior derecha, grande. Arriba, el nombre del producto; debajo una píldora con borde; luego el precio anterior tachado y el precio nuevo gigante; abajo la fecha y una línea pequeña. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): arriba «VIVIDUS 86 V2»; píldora «27% OFF»; «Antes $109.900» con $109.900 tachado; precio gigante «$79.900»; debajo «HASTA EL 30 DE NOVIEMBRE»; abajo, pequeño, «Parece una cámara. Son tus audífonos.»"
+      "escena": "Fondo azul noche con un leve degradado y bokeh. Una mano sostiene el estuche marrón con la tapa abierta y los audífonos a la vista, en la mitad inferior derecha, grande. Arriba, el nombre del producto; debajo una píldora con borde; luego el precio anterior tachado y el precio nuevo gigante; abajo la fecha y una línea pequeña. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): arriba «VIVIDUS 86 V2»; píldora «27% OFF»; «Antes $109.900» con $109.900 tachado; precio gigante «$79.900»; debajo «HASTA EL 30 DE NOVIEMBRE»; abajo, pequeño, «Parece una cámara. Son tus audífonos.»",
+      "referente": {
+        "nombre": "Referente 1 · Skullcandy Hesh ANC (42% OFF)",
+        "archivo": "imagenes/referentes/vividus-black-friday/ref1-skullcandy-42.jpg",
+        "tomar": "la estructura de arriba hacia abajo (marca, píldora con el %, «Antes» tachado, precio gigante, fecha) y el fondo azul oscuro"
+      }
     },
     "anuncio2": {
       "que": "BLACK FRIDAY gigante con los dos colores y el pack de 2 (referente Shokz).",
       "producto": true,
       "persona": false,
       "historial": [],
-      "escena": "Fondo negro. Detrás de los productos, la palabra BLACK FRIDAY en letras gigantes con degradado naranja quemado que se desvanece. Al frente, flotando, el estuche marrón y el estuche verde oliva, abiertos, con sus audífonos, en ángulos distintos. Abajo, una franja naranja quemado a la izquierda con el precio del pack y un texto a la derecha. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): gigante detrás «BLACK FRIDAY»; franja «2 por $129.900»; a la derecha de la franja «Envío express gratis · Pagas al recibir»; debajo de los productos «HASTA EL 30 DE NOVIEMBRE»."
+      "escena": "Fondo negro. Detrás de los productos, la palabra BLACK FRIDAY en letras gigantes con degradado naranja quemado que se desvanece. Al frente, flotando, el estuche marrón y el estuche verde oliva, abiertos, con sus audífonos, en ángulos distintos. Abajo, una franja naranja quemado a la izquierda con el precio del pack y un texto a la derecha. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): gigante detrás «BLACK FRIDAY»; franja «2 por $129.900»; a la derecha de la franja «Envío express gratis · Pagas al recibir»; debajo de los productos «HASTA EL 30 DE NOVIEMBRE».",
+      "referente": {
+        "nombre": "Referente 4 · Shokz Black Friday",
+        "archivo": "imagenes/referentes/vividus-black-friday/ref4-shokz.jpg",
+        "tomar": "las letras gigantes BLACK FRIDAY con degradado naranja detrás de los productos flotando y la franja naranja inferior con el beneficio"
+      }
     },
     "anuncio3": {
       "que": "La caída: el gancho de la landing con la oferta (referente Whirlpool 'Cázala ya').",
       "producto": true,
       "persona": false,
       "historial": [],
-      "escena": "Fondo azul eléctrico profundo. El estuche marrón cerrado, con los audífonos adentro y la pantalla encendida, cayendo en diagonal, congelado en el aire en el centro del cuadro, con un leve desenfoque de movimiento en el borde y una sombra suave abajo. A un lado, un sello circular naranja quemado. Abajo, un recuadro blanco redondeado con el titular. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): en el recuadro blanco, titular «Se te cayeron.» y debajo «Tranqui, siguen enteros.»; sello circular «BLACK FRIDAY $79.900»; abajo, pequeño, «Hasta el 30 de noviembre»."
+      "escena": "Fondo azul eléctrico profundo. El estuche marrón cerrado, con los audífonos adentro y la pantalla encendida, cayendo en diagonal, congelado en el aire en el centro del cuadro, con un leve desenfoque de movimiento en el borde y una sombra suave abajo. A un lado, un sello circular naranja quemado. Abajo, un recuadro blanco redondeado con el titular. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): en el recuadro blanco, titular «Se te cayeron.» y debajo «Tranqui, siguen enteros.»; sello circular «BLACK FRIDAY $79.900»; abajo, pequeño, «Hasta el 30 de noviembre».",
+      "referente": {
+        "nombre": "Referente 5 · Whirlpool + Addi «Cázala ya»",
+        "archivo": "imagenes/referentes/vividus-black-friday/ref5-whirlpool-addi.jpg",
+        "tomar": "el fondo azul eléctrico, el producto protagonista al centro, el sello circular a un lado y el recuadro blanco redondeado abajo con el titular"
+      }
     },
     "anuncio4": {
       "que": "El dolor número 1 para quien ya se quemó con audífonos baratos.",
       "producto": true,
       "persona": false,
       "historial": [],
-      "escena": "Fondo gris carbón. En la parte de abajo, desenfocadas y opacas, unas cajitas blancas genéricas de audífonos viejos y rayados (forma genérica, sin logos, que no se parezca a ninguna marca conocida). En primer plano, nítido y grande, el estuche verde oliva abierto con la pantalla encendida. Arriba, el titular grande; al lado del estuche, un sello. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): titular «Cansado de audífonos que no duran ni 3 meses.»; sello «90 días de garantía»; abajo, en naranja quemado, «Black Friday $79.900»."
+      "escena": "Fondo gris carbón. En la parte de abajo, desenfocadas y opacas, unas cajitas blancas genéricas de audífonos viejos y rayados (forma genérica, sin logos, que no se parezca a ninguna marca conocida). En primer plano, nítido y grande, el estuche verde oliva abierto con la pantalla encendida. Arriba, el titular grande; al lado del estuche, un sello. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): titular «Cansado de audífonos que no duran ni 3 meses.»; sello «90 días de garantía»; abajo, en naranja quemado, «Black Friday $79.900».",
+      "referente": {
+        "nombre": "Referente 2 · Skullcandy (53% OFF)",
+        "archivo": "imagenes/referentes/vividus-black-friday/ref2-skullcandy-53.jpg",
+        "tomar": "el fondo oscuro con un solo foco de luz sobre el producto y la jerarquía de texto grande arriba y precio abajo"
+      }
     },
     "anuncio5": {
       "que": "Todo incluido: continúa el anuncio que ya vendió (sin pagar funda aparte).",
       "producto": true,
       "persona": false,
       "historial": [],
-      "escena": "Imagen dividida en dos mitades con la misma luz, fondo oscuro. Izquierda, más apagada: audífonos blancos genéricos (sin logos, que no se parezcan a ninguna marca conocida) y al lado una funda de silicona aparte con una etiqueta de precio en blanco sin números. Derecha, brillante: el estuche marrón de cámara cerrado, en la mano. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): arriba a la izquierda «Audífonos + funda aparte»; arriba a la derecha «Todo incluido $79.900»; abajo, centrado, «Black Friday hasta el 30 de nov.»"
+      "escena": "Imagen dividida en dos mitades con la misma luz, fondo oscuro. Izquierda, más apagada: audífonos blancos genéricos (sin logos, que no se parezcan a ninguna marca conocida) y al lado una funda de silicona aparte con una etiqueta de precio en blanco sin números. Derecha, brillante: el estuche marrón de cámara cerrado, en la mano. Textos exactos dentro de la imagen (cópialos literal, en español, con tildes y sin errores; tipografía sans serif gruesa y muy legible en celular; todos los textos dentro del 80 % central para que un recorte 4:5 no los corte): arriba a la izquierda «Audífonos + funda aparte»; arriba a la derecha «Todo incluido $79.900»; abajo, centrado, «Black Friday hasta el 30 de nov.»",
+      "referente": {
+        "nombre": "Sin referente directo: composición propia de comparación en dos mitades (no adjuntes ningún referente)"
+      }
     }
   }
 }

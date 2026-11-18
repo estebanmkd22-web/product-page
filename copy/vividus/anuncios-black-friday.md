@@ -28,13 +28,13 @@ Fecha: 2026-11-18.
 ## Los 5 anuncios
 Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están en el kit.
 
-| # | Concepto (referente) | Texto en la imagen | Para qué |
+| # | Concepto (referente; archivos en `imagenes/referentes/vividus-black-friday/`) | Texto en la imagen | Para qué |
 |---|---|---|---|
-| 1 | **Precio protagonista** (Skullcandy / JBL) | VIVIDUS 86 V2 · «27% OFF» · Antes ~~$109.900~~ · **$79.900** · HASTA EL 30 DE NOVIEMBRE · «Parece una cámara. Son tus audífonos.» | Cliente consciente del producto que espera el precio |
-| 2 | **BLACK FRIDAY gigante** (Shokz) | BLACK FRIDAY · franja: «2 por $129.900» · «Envío express gratis · Pagas al recibir» · HASTA EL 30 DE NOVIEMBRE | Mostrar los dos colores y empujar el pack de 2 |
-| 3 | **La caída** (Whirlpool "Cázala ya") | «Se te cayeron.» / «Tranqui, siguen enteros.» · sello «BLACK FRIDAY $79.900» · «Hasta el 30 de noviembre» | El gancho de la landing (dolor #3) con la oferta |
-| 4 | **El dolor** | «Cansado de audífonos que no duran ni 3 meses» · «90 días de garantía» · «Black Friday $79.900» | Quien ya se quemó con audífonos baratos (dolor #1) |
-| 5 | **Todo incluido** | «Audífonos + funda aparte» frente a «Todo incluido $79.900» · «Black Friday hasta el 30 de nov.» | Continúa el anuncio que ya vendió (sin pagar funda aparte) |
+| 1 | **Precio protagonista** (Referente 1 · Skullcandy 42% OFF) | VIVIDUS 86 V2 · «27% OFF» · Antes ~~$109.900~~ · **$79.900** · HASTA EL 30 DE NOVIEMBRE · «Parece una cámara. Son tus audífonos.» | Cliente consciente del producto que espera el precio |
+| 2 | **BLACK FRIDAY gigante** (Referente 4 · Shokz) | BLACK FRIDAY · franja: «2 por $129.900» · «Envío express gratis · Pagas al recibir» · HASTA EL 30 DE NOVIEMBRE | Mostrar los dos colores y empujar el pack de 2 |
+| 3 | **La caída** (Referente 5 · Whirlpool + Addi) | «Se te cayeron.» / «Tranqui, siguen enteros.» · sello «BLACK FRIDAY $79.900» · «Hasta el 30 de noviembre» | El gancho de la landing (dolor #3) con la oferta |
+| 4 | **El dolor** (Referente 2 · Skullcandy 53% OFF) | «Cansado de audífonos que no duran ni 3 meses» · «90 días de garantía» · «Black Friday $79.900» | Quien ya se quemó con audífonos baratos (dolor #1) |
+| 5 | **Todo incluido** (sin referente directo) | «Audífonos + funda aparte» frente a «Todo incluido $79.900» · «Black Friday hasta el 30 de nov.» | Continúa el anuncio que ya vendió (sin pagar funda aparte) |
 
 ## Texto de cada anuncio (Meta)
 
