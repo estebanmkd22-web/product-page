@@ -9,6 +9,8 @@ const out = process.argv[2] || path.join(ROOT, 'preview/out/copiar.html');
 
 // Orden y descripción de cada sección en la página
 const SECCIONES = [
+  { file: 'product.adaptador-auto-stop', dir: 'templates', ext: '.json', name: 'Plantilla · Adaptador Auto-Stop', desc: 'Nueva. Adaptador Auto-Stop (azul noche + botón verde, ATIDCOA, Black Days 89.900 / 149.900 con tachado, 15% en la segunda compra y garantía de 30 días). Usa la sección nueva PP · Hero + Cantidad (oferta dentro del hero). Va en templates: crea la plantilla adaptador-auto-stop, borra todo, pega y guarda.' },
+  { file: 'pp-hero-cantidad', desc: 'Nueva. Hero con la oferta adentro: titular, precio con tachado y ahorro (cambia según el pack), estrellas, subtítulo, beneficios, tarjetas 1 / 2 unidades, botón con el precio del pack y caja de etiquetas (envío, descuento, garantía).' },
   { file: 'pp-carrusel-imagenes', desc: 'Nueva. Carrusel de imágenes deslizable (sin videos): flechas, barra de avance, etiqueta opcional sobre cada imagen y formato 4:5, 1:1 o 9:16. Es independiente de PP · Videos.' },
   { file: 'pp-esperar', desc: 'Nueva. Qué esperar día a día: línea de tiempo vertical que se llena al bajar, con ícono, periodo y tarjeta alternados.' },
   { file: 'pp-libre', desc: 'Nueva. Sellos "libre de": íconos de línea (sin esteroides, sin parabenos, sin talco, libre de petróleo, sin perfume, cruelty free) con texto.' },
