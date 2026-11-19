@@ -244,8 +244,7 @@
         "columnas_movil": "2",
         "columnas_pc": "4",
         "proporcion": "1 / 1",
-        "cierre": "No es sobrecarga: <em>son horas al 100 % que no necesita.</em>",
-        "cierre_estilo": "texto"
+        "cierre": "No es sobrecarga: <em>son horas al 100 % que no necesita.</em>"
       },
       "blocks": {
         "item_1": {
