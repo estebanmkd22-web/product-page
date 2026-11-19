@@ -53,7 +53,7 @@ Fuente de cada dato:
 - **Buyer B1 + ángulo A2:** no es sobrecarga, son horas al 100 % que no necesita. La consecuencia que se dice es el **desgaste de la batería del celular que le compraste** (el bolsillo). Se refuerza con **mostrar el corte** (luz/momento en que se apaga).
 - **Hero aprobado por el usuario (2026-11-19):**
   - **Título:** «El celular de tu hijo llega al 100 % <em>y sigue conectado toda la noche</em>» (si el director exige ≤10 palabras: «Su celular llega al 100 % <em>y sigue conectado toda la noche</em>»).
-  - **Subtítulo:** «Cada hora al 100 % desgasta la batería del celular que le compraste. El Adaptador Auto-Stop va entre el cable y el celular y corta la carga sola, aunque él esté dormido.»
+  - **Subtítulo:** «Cada hora al 100 % desgasta la batería del celular que le compraste. El Adaptador Auto-Stop va entre el cable y el celular y corta la carga solo, aunque él esté dormido.»
 - **Hipótesis:** "Creemos que los papás compran más con un hero que muestra la escena del hijo dormido con el celular conectado y el corte automático, que con el ángulo de sobrecarga de la competencia. Lo sabremos si más del 50 % pasa del hero en Clarity (200 visitantes)."
 
 ## 5. Oferta [Usuario]
