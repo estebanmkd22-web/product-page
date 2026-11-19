@@ -77,3 +77,11 @@ Ver dossier: sobrecarga, olvido y seguridad del hogar están tomados. Libres: lo
 ## 8. Material
 - Foto del producto.
 - Avatar: a elegir del banco en la fase de imágenes (papá o mamá + hijo adolescente).
+
+## Decisiones del dueño (2026-11-19, después del copy aprobado) [Usuario]
+- **Título:** se queda el suyo de 14 palabras: «El celular de tu hijo llega al 100 % <em>y sigue conectado toda la noche</em>». Decisión suya; se mide en Clarity contra el corto («El celular de tu hijo <em>sigue conectado toda la noche</em>»).
+- **Hero con la oferta adentro** (estructura aprobada): título → fila de precio (precio, tachado, «Ahorras») → estrellas → subtítulo → 4 bullets cortos → selector 1 / 2 unidades (el botón cambia el precio) → botón «COMPRA AHORA · $precio» → caja de etiquetas (envío gratis, descuento segunda compra, garantía). Sección nueva `pp-hero-cantidad`; se quita `pp-oferta-tabs`.
+- **Precios Black Days (noviembre):** 1 unidad $89.900 ~~$109.900~~ · 2 unidades $149.900 ~~$219.900~~. El tachado es real (precio normal $109.900).
+- **El adaptador vuelve a cargar solo** la noche siguiente, sin oprimir nada.
+- **Compatible con iPhone 15 en adelante** (USB-C).
+- **Estrellas:** reales; se muestran.
