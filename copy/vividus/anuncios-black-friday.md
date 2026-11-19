@@ -38,6 +38,7 @@ Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están e
 | 5 | **Todo incluido** (sin referente directo) | «Audífonos + funda aparte» frente a «Todo incluido $79.900» · «Black Friday hasta el 30 de nov.» | Continúa el anuncio que ya vendió (sin pagar funda aparte) |
 
 ## Texto de cada anuncio (Meta)
+Botón de todos: **Comprar**.
 
 **1 · Precio protagonista**
 - **Texto principal:**
@@ -53,7 +54,7 @@ Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están e
   > Black Friday en VIVIDUS 🖤
   > Marrón o verde… o los dos: lleva 2 por $129.900.
   > Cada uno con su estuche de cámara y 90 días de garantía.
-  > Precio especial hasta el 30 de noviembre.
+  > Precio especial hasta el 30 de noviembre: elige tus dos colores.
 - **Título:** 2 VIVIDUS por $129.900
 - **Descripción:** Precio Black hasta el 30 de nov
 
@@ -62,6 +63,7 @@ Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están e
   > Se te cayeron… y siguen enteros 😮‍💨
   > El estuche de cámara de los VIVIDUS aguanta caídas con los audífonos adentro.
   > Black Friday: $79.900 (antes $109.900) hasta el 30 de noviembre.
+  > Pide los tuyos antes de que vuelvan a su precio.
 - **Título:** El estuche que aguanta caídas
 - **Descripción:** Black Friday $79.900
 
@@ -70,6 +72,7 @@ Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están e
   > Si ya te pasó que a los 3 meses un lado deja de sonar, esto es para ti.
   > VIVIDUS trae estuche de cámara que aguanta caídas y 90 días de garantía por daños de fábrica.
   > Black Friday: $79.900 hasta el 30 de noviembre.
+  > Pide los tuyos hoy.
 - **Título:** 90 días de garantía · $79.900
 - **Descripción:** Black Friday hasta el 30 de nov
 
@@ -79,6 +82,7 @@ Lo que dice la imagen, y el texto del anuncio. Los prompts para ChatGPT están e
 - **Texto principal:**
   > Olvídate de comprar la funda aparte: el estuche de cámara ya viene incluido 📸
   > Black Friday: VIVIDUS a $79.900 (antes $109.900), solo hasta el 30 de noviembre.
+  > Aprovecha el precio Black.
 - **Título:** Todo incluido por $79.900
 - **Descripción:** Hasta el 30 de noviembre
 
