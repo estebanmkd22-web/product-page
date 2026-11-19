@@ -149,7 +149,8 @@
      "type": "etiqueta",
      "settings": {
       "icono": "camion",
-      "texto": "Envío express <strong>GRATIS</strong> a toda Colombia <s>$21.000</s>"
+      "texto": "Envío express <strong>GRATIS</strong> a toda Colombia",
+      "tachado": "$21.000"
      }
     },
     {
