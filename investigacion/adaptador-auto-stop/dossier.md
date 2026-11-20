@@ -64,3 +64,29 @@ Todos: contraentrega, envío gratis, texto que arranca por características, nad
 - **Permitidos:** se desconecta solo al llegar al 100 %; evita horas al 100 % que desgastan la batería; carga rápida hasta 140 W / 5 A con equipos compatibles; protección contra sobrecarga, cortocircuito y sobrecalentamiento (como spec); botón de desconexión manual; celulares, tabletas y portátiles USB-C compatibles.
 - **Prohibidos [Usuario]:** fuego, incendios, explosiones, "evita incendios". "Sobrecarga" solo para negarla. Las horas de carga son ejemplo, no dato medido.
 - **Prohibidos [criterio]:** ahorro en la factura de luz (es despreciable); Lightning/iPhones con Lightning (el adaptador va en el puerto del celular); cifras de % de vida de batería; "expulsa el cable" (no confirmado en nuestro modelo).
+
+---
+## Actualización 2026-11-20 · El ángulo del hijo y la batería NO vendió [Usuario]
+El dueño reporta que la landing v1 (buyer papá/mamá + hijo, ángulo "horas al 100 % desgastan la batería") fue un fracaso. Regla: **no inventar la rueda; tomar el ángulo que el mercado ya validó.**
+
+### Landing validada por el mercado (competidor) [Referente]
+URL: rtrgv4-te.myshopify.com/products/cargador-inteligente-desconexion-automatica · copia en `referente/`. La página es casi toda de imágenes con texto; estos son sus textos (alt de las imágenes y FAQ), textuales:
+1. Gancho (imagen 1): «¿Sabías que un cargador conectado toda la noche puede recalentarse y causar un accidente? Cargador Inteligente, se desconecta solo al llegar al 100%, $74.900, pago contra entrega»
+2. Dolor: «Mientras duermes, tu cargador sigue trabajando: llega al 100% de madrugada y sigue conectado hasta el amanecer. Una mamá desvelada a las 6 a.m. revisa un cargador que se calienta»
+3. Mecanismo: «Conéctalo y se desconecta solo: al llegar al 100%, dos botones empujan el celular y cortan la carga»
+4. Comparativa: «Protege tu hogar, desconecta el peligro: carga tradicional que sigue conectada contra nuestro cargador inteligente con desconexión automática»
+5. Oferta: «Elige cuántos cargadores quieres: 1 por $74.900, 2 por $99.900 o 3 por $114.900. Pago contra entrega y envío gratis»
+6. Beneficio: «Duerme tranquila, cuida tu batería: se desconecta solo al 100%, menos horas de carga continua, funciona con celulares USB-C»
+7. Pasos: «Úsalo así de simple en 3 simples pasos…»
+8. Comparativa 2: «Nuestro cargador vs. uno común: se desconecta solo al 100% y evita accidentes por sobrecalentamiento»
+- Franja: «🔌 SE DESCONECTA SOLO AL LLEGAR AL 100%» · «🌙 DUERME TRANQUILA» · «💵 PAGA AL RECIBIR · ENVÍO GRATIS»
+- Descripción: «Conéctalo y duerme tranquila: se desconecta solo cuando la batería llega al 100%.»
+- FAQ: «¿Para qué sirve que se desconecte al 100%? Para que el celular pase menos horas en carga continua mientras duermes y para ayudar a cuidar la vida de la batería.» · «No sirve para iPhone 14 o anteriores, que usan conector Lightning.»
+- Precio: $74.900 (tachado $124.900).
+
+### Lectura
+- **Buyer:** la mamá / mujer de la casa ("duerme tranquila", femenino).
+- **Dolor #1 validado:** el cargador sigue trabajando y calentándose toda la noche mientras ella duerme → miedo por la seguridad del hogar y la familia.
+- **Promesa:** duerme tranquila; protege tu hogar.
+- **Mecanismo visible:** dos botones empujan el celular al 100 % (corte físico que se ve). **Confirmado por el dueño: nuestro adaptador también lo empuja.**
+- **Batería:** beneficio secundario, nunca el gancho.

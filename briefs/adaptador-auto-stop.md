@@ -85,3 +85,15 @@ Ver dossier: sobrecarga, olvido y seguridad del hogar están tomados. Libres: lo
 - **El adaptador vuelve a cargar solo** la noche siguiente, sin oprimir nada.
 - **Compatible con iPhone 15 en adelante** (USB-C).
 - **Estrellas:** reales; se muestran.
+
+## Relanzamiento v2 (2026-11-20) [Usuario] — reemplaza el ángulo, el buyer y la oferta anteriores
+- **Resultado v1:** no vendió. Se toma el ángulo validado por el competidor (ver dossier, "Actualización 2026-11-20").
+- **Buyer:** la mamá / mujer de la casa, 30 a 55 años, que deja el celular cargando toda la noche (el suyo y el de la familia). Aprobado.
+- **Ángulo (aprobado):** peligro / seguridad del hogar: el cargador sigue trabajando y calentándose toda la noche → «duerme tranquila», «protege tu hogar». La batería queda como beneficio secundario.
+- **El dueño pide un hero más dopamínico**, tocando el peligro.
+- **Mecanismo confirmado:** al llegar al 100 %, **los dos botones empujan el celular** y cortan la carga (corte físico visible). Ya se puede prometer.
+- **Claims de peligro:**
+  - Permitidos: que el cargador sigue trabajando / conectado toda la noche; que se calienta / recalienta; «peligro», «riesgo», «accidente» como posibilidad; «protege tu hogar»; protección contra sobrecalentamiento y cortocircuito (spec).
+  - Prohibidos: «incendio», «fuego», «explosión», «evita incendios», cifras o estadísticas sin fuente, garantizar que nunca habrá un accidente.
+- **Oferta nueva (igual al competidor):** 1 por $74.900 · 2 por $99.900 · 3 por $114.900, envío gratis y pago contra entrega. Tachados propuestos sobre el precio normal real ($109.900 c/u): $109.900 · $219.800 · $329.700 [Hipótesis: confirmar con el dueño].
+- Se mantienen: garantía 30 días por WhatsApp, 15 % en la segunda compra por WhatsApp, entrega 2 a 4 días, iPhone 15 en adelante (no Lightning), estructura del hero con oferta adentro (`pp-hero-cantidad`, hasta 3 packs).
