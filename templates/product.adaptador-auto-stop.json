@@ -31,16 +31,11 @@
     "ticker": {
       "type": "pp-ticker",
       "blocks": {
-        "mensaje_0": {
-          "type": "mensaje",
-          "settings": {
-            "texto": "Se desconecta solo al llegar al 100 %"
-          }
-        },
         "mensaje_1": {
           "type": "mensaje",
+          "disabled": true,
           "settings": {
-            "texto": "Evita la sobrecarga mientras duermes"
+            "texto": "Se desconecta solo al llegar al 100 %"
           }
         },
         "mensaje_2": {
@@ -52,22 +47,16 @@
         "mensaje_3": {
           "type": "mensaje",
           "settings": {
-            "texto": "Protege tu hogar"
+            "texto": "Envío gratis a toda Colombia"
           }
         },
         "mensaje_4": {
           "type": "mensaje",
           "settings": {
-            "texto": "Envío gratis a toda Colombia"
-          }
-        },
-        "mensaje_5": {
-          "type": "mensaje",
-          "settings": {
             "texto": "Pagas al recibir"
           }
         },
-        "mensaje_6": {
+        "mensaje_5": {
           "type": "mensaje",
           "settings": {
             "texto": "Garantía de 30 días"
@@ -75,13 +64,11 @@
         }
       },
       "block_order": [
-        "mensaje_0",
         "mensaje_1",
         "mensaje_2",
         "mensaje_3",
         "mensaje_4",
-        "mensaje_5",
-        "mensaje_6"
+        "mensaje_5"
       ],
       "settings": {
         "fondo": "#1f3a5f",
@@ -219,22 +206,22 @@
         "icono_1": {
           "type": "icono",
           "settings": {
-            "icono": "check",
-            "texto": "100% de batería y se desconecta"
+            "icono": "enredo",
+            "texto": "100% cargado y se desconecta"
           }
         },
         "icono_2": {
           "type": "icono",
           "settings": {
             "icono": "escudo",
-            "texto": "Protección contra sobrecarga"
+            "texto": "Evita sobrecalentamientos"
           }
         },
         "icono_3": {
           "type": "icono",
           "settings": {
             "icono": "usb",
-            "texto": "Celulares y tabletas USB-C"
+            "texto": "Te libera de accidentes"
           }
         }
       },
@@ -413,12 +400,12 @@
       "settings": {
         "fondo": "fondo",
         "etiqueta": "Cada noche en tu casa",
-        "titulo": "Tú duermes, <em>el cargador sigue en sobrecarga</em>",
+        "titulo": "Tú duermes, <em>pero el cargador sigue en sobrecarga</em>",
         "texto": "Por ejemplo: lo conectas a las 10, a la 1 ya está lleno y el cargador sigue trabajando hasta que suena la alarma.",
         "columnas_movil": "2",
         "columnas_pc": "4",
         "proporcion": "1 / 1",
-        "cierre": "No es exagerar: <em>es un peligro que se queda conectado toda la noche.</em>"
+        "cierre": "Ese sobrecalentamiento no lo controlas tú: <em>Auto-Stop lo controla por ti.</em>"
       }
     },
     "galeria_ideas": {
@@ -545,7 +532,7 @@
         "adorno": false,
         "difuminar": true,
         "titulo": "Un cubito que",
-        "titulo_dorado": "vigila la carga",
+        "titulo_dorado": "controla la carga",
         "titulo_fin": "mientras duermes",
         "subtitulo": "",
         "cierre": ""
@@ -653,7 +640,7 @@
         "color_icono": "#2e8b57",
         "etiqueta": "Una noche con Auto-Stop",
         "titulo": "Qué pasa <em>mientras duermes</em>",
-        "texto": "No haces nada distinto: lo conectas y te acuestas."
+        "texto": "Tú duermes. Auto-Stop controla la carga."
       }
     },
     "comparativa": {
@@ -753,9 +740,9 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Ya no tengo que estar pendiente",
-            "texto": "Mi hijo de 14 se dormía con el celular conectado. Ahora lo conecta al adaptador como siempre y corta solo.",
-            "nombre": "Alejandra Velez",
+            "titulo": "Ya no reviso el cargador de noche",
+            "texto": "Me despertaba a tocar el cargador para ver si estaba caliente. Ahora en la mañana lo encuentro separado y duermo tranquila.",
+            "nombre": "Testimonio de ejemplo",
             "ciudad": "Bogotá",
             "fecha": "",
             "verificado": false
@@ -765,9 +752,9 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Carga igual de rápido",
-            "texto": "Pensé que iba a demorar la carga, pero con su cargador va igual.",
-            "nombre": "Pablo Lopez",
+            "titulo": "Se ve cuando corta",
+            "texto": "El celular amanece separadito del adaptador. Así sé que sí dejó de cargar.",
+            "nombre": "Testimonio de ejemplo",
             "ciudad": "Medellín",
             "fecha": "",
             "verificado": false
@@ -778,8 +765,8 @@
           "settings": {
             "estrellas": 5,
             "titulo": "Pedí dos",
-            "texto": "Uno para el celular de mi hija y otro para el mío, que también lo dejo toda la noche.",
-            "nombre": "Jhon Perez",
+            "texto": "Uno para mi mesa de noche y otro para el cuarto de mis hijos.",
+            "nombre": "Testimonio de ejemplo",
             "ciudad": "Barranquilla",
             "fecha": "",
             "verificado": false
@@ -789,9 +776,9 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Se nota cuando corta",
-            "texto": "En la mañana el celular ya no muestra el ícono de carga aunque el cable siga puesto.",
-            "nombre": "Lucero Lisday",
+            "titulo": "Carga igual de rápido",
+            "texto": "Pensé que iba a demorar la carga y no, con mi cargador va igual.",
+            "nombre": "Testimonio de ejemplo",
             "ciudad": "Cali",
             "fecha": "",
             "verificado": false
@@ -801,10 +788,10 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Lo dejó puesto",
-            "texto": "Se lo puse en el celular y ahí se quedó. Él ni se da cuenta, conecta su cable igual que antes.",
-            "nombre": "Miguel Armando",
-            "ciudad": "Bucaramanga",
+            "titulo": "Para mi iPhone 15",
+            "texto": "Funciona con el cargador que ya tenía.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Pereira",
             "fecha": "",
             "verificado": false
           }
@@ -813,10 +800,10 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Para el iPhone 15",
-            "texto": "Lo uso en mi iPhone 15 y funciona perfecto con el cargador que ya tenía.",
-            "nombre": "Madaley Keith",
-            "ciudad": "Pereira",
+            "titulo": "Chiquito",
+            "texto": "Es un cubito que casi no se nota. Pensé que iba a ser más grande.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Cartagena",
             "fecha": "",
             "verificado": false
           }
@@ -825,10 +812,10 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Pequeñito",
-            "texto": "Es un cubito que casi no se nota en el celular. Pensé que iba a ser más grande.",
-            "nombre": "Lucia Cartagena",
-            "ciudad": "Cartagena",
+            "titulo": "Llegó rápido",
+            "texto": "Llegó en tres días y pagué al recibir. Me escribieron por WhatsApp para confirmar.",
+            "nombre": "Testimonio de ejemplo",
+            "ciudad": "Manizales",
             "fecha": "",
             "verificado": false
           }
@@ -837,33 +824,9 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Llegó rápido",
-            "texto": "Llegó en tres días y pagué al recibir. Me escribieron por WhatsApp para confirmar.",
-            "nombre": "Memo Uribe",
-            "ciudad": "Manizales",
-            "fecha": "",
-            "verificado": false
-          }
-        },
-        "resena_9": {
-          "type": "resena",
-          "settings": {
-            "estrellas": 5,
-            "titulo": "También en la tableta",
-            "texto": "Lo probé en la tableta de las tareas de mi hijo menor y también corta al llenarse.",
-            "nombre": "Magaly H",
-            "ciudad": "Ibagué",
-            "fecha": "",
-            "verificado": false
-          }
-        },
-        "resena_10": {
-          "type": "resena",
-          "settings": {
-            "estrellas": 5,
             "titulo": "Tranquilidad de noche",
-            "texto": "Ya no me quedo pensando si el celular de mi hija sigue cargando toda la noche.",
-            "nombre": "Horacio",
+            "texto": "Ya no me acuesto pensando en el cargador conectado.",
+            "nombre": "Testimonio de ejemplo",
             "ciudad": "Villavicencio",
             "fecha": "",
             "verificado": false
@@ -878,17 +841,15 @@
         "resena_5",
         "resena_6",
         "resena_7",
-        "resena_8",
-        "resena_9",
-        "resena_10"
+        "resena_8"
       ],
       "settings": {
         "fondo": "fondo-2",
         "etiqueta": "Opiniones",
-        "titulo": "Lo conecta y <em>se duerme tranquilo</em>",
+        "titulo": "Lo conectan y <em>duermen tranquilas</em>",
         "nota": "4.9",
         "cantidad": "127 reseñas",
-        "visibles": 10,
+        "visibles": 3,
         "boton_mas": "Ver más opiniones"
       }
     },
@@ -1030,7 +991,7 @@
         "aparecer": "despues_oferta",
         "solo_movil": true,
         "mostrar_precio": true,
-        "precio_manual": 149900,
+        "precio_manual": 79900,
         "subtexto": "Envío gratis · Pagas al recibir",
         "boton_modo": "easysell",
         "boton_texto": "Lo quiero"
