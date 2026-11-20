@@ -1,5 +1,5 @@
 # Brief · SÉBORA (2 landings: A validada, B grooming)
-Tienda: Tu espacio Market (CO) · Fecha: 2026-11-20 · Estado: borrador
+Tienda: Tu espacio Market (CO) · Fecha: 2026-11-20 · Estado: confirmado (2026-11-20; guía por WhatsApp pendiente de confirmar)
 
 ## 1. Producto
 - Qué es: un suero botánico que se aplica en la cara y la barba para calmar las escamas, la rojez y la picazón de la dermatitis seborreica. [Usuario]
