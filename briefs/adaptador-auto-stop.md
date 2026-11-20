@@ -97,3 +97,11 @@ Ver dossier: sobrecarga, olvido y seguridad del hogar están tomados. Libres: lo
   - Prohibidos: «incendio», «fuego», «explosión», «evita incendios», cifras o estadísticas sin fuente, garantizar que nunca habrá un accidente.
 - **Oferta nueva (igual al competidor):** 1 por $74.900 · 2 por $99.900 · 3 por $114.900, envío gratis y pago contra entrega. Tachados propuestos sobre el precio normal real ($109.900 c/u): $109.900 · $219.800 · $329.700 [Hipótesis: confirmar con el dueño].
 - Se mantienen: garantía 30 días por WhatsApp, 15 % en la segunda compra por WhatsApp, entrega 2 a 4 días, iPhone 15 en adelante (no Lightning), estructura del hero con oferta adentro (`pp-hero-cantidad`, hasta 3 packs).
+
+## Hero definido por el dueño (2026-11-20) [Usuario] — manda sobre el copy v4
+Captura: `copy/adaptador-auto-stop/hero-definido-dueno.png`.
+- **Título:** «Mientras duermes y sigue cargando el teléfono, ese sobrecalentamiento <em>no lo controlas</em>»
+- **Precio (pack mostrado):** $79.900, tachado $109.900, «Ahorras $30.000».
+- **Estrellas:** 4.9/5 · «127 reseñas de clientes satisfechos».
+- **Subtítulo:** «El peligro radica porque no tienes control por el sobrecalentamiento, con Auto-Stop al llegar 100% empuja y deja de cargar»
+- **Bullets:** «Duerme tranquila: tu celular no se queda cargando hasta el amanecer.» · «Cuida tu batería y no frena la carga rápida.» · «Protección contra sobrecalentamiento y cortocircuito.» · «Sirve en celular, tableta y portátil USB-C.»
