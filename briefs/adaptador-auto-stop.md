@@ -105,3 +105,8 @@ Captura: `copy/adaptador-auto-stop/hero-definido-dueno.png`.
 - **Estrellas:** 4.9/5 · «127 reseñas de clientes satisfechos».
 - **Subtítulo:** «El peligro radica porque no tienes control por el sobrecalentamiento, con Auto-Stop al llegar 100% empuja y deja de cargar»
 - **Bullets:** «Duerme tranquila: tu celular no se queda cargando hasta el amanecer.» · «Cuida tu batería y no frena la carga rápida.» · «Protección contra sobrecalentamiento y cortocircuito.» · «Sirve en celular, tableta y portátil USB-C.»
+
+## Claims de peligro, nivel aprobado (2026-11-20) [Usuario] — reemplaza los anteriores
+- Permitido: «sobrecarga» como dolor («sigue en sobrecarga», «evita la sobrecarga mientras duermes»), «se recalienta», «riesgo real», «un cargador recalentado puede causar un accidente o un incendio» (como posibilidad, en dolores y FAQ), «protege tu hogar», «riesgo de recalentamiento reducido».
+- Prohibido: «evita incendios» o cualquier garantía de que no habrá accidentes; cifras sin fuente; llamas, humo o quemaduras en imágenes.
+- Textos aplicados directamente en la plantilla en vivo el 2026-11-20 (respaldo en `respaldos/tuespaciomarket/2026-11-20-textos-peligro/`).
