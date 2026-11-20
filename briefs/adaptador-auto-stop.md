@@ -68,7 +68,7 @@ Fuente de cada dato:
 - **Costo y margen:** sin dato.
 
 ## 6. Prueba y confianza
-- Reseñas reales: no hay. Las de ejemplo van como «Testimonio de ejemplo».
+- Calificación real confirmada por el dueño: 4.9/5 · 127 reseñas (ver «Estrellas» abajo). Los textos de reseñas que no tenemos van como «Testimonio de ejemplo».
 - Videos: los de referencia son de otros anunciantes; no se pueden usar como propios.
 
 ## 7. Competencia
