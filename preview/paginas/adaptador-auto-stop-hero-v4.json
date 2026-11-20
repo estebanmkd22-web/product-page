@@ -53,7 +53,7 @@
     {
      "type": "mensaje",
      "settings": {
-      "texto": "Duerme tranquila: corta mientras duermes"
+      "texto": "Protege tu hogar mientras duermes"
      }
     },
     {
@@ -85,8 +85,8 @@
     "mostrar_rating": true,
     "rating": "4.9/5",
     "rating_texto": "· 127 reseñas",
-    "titulo": "Mientras duermes, <em>tu cargador sigue calentándose junto a tu cama</em>",
-    "tamano_titulo": 26,
+    "titulo": "Mientras duermes, tu cargador <em>sigue calentándose junto a tu cama</em>",
+    "tamano_titulo": 24,
     "texto": "Tu celular se llena de madrugada y sigue conectado hasta que suena la alarma. Con Auto-Stop, al 100 % sus dos botones empujan el celular: la carga se corta y lo ves.",
     "icono_beneficios": "✓",
     "ahorro_texto": "Ahorras",
@@ -104,7 +104,7 @@
     {
      "type": "beneficio",
      "settings": {
-      "texto": "<strong>Corta solo al 100 %:</strong> sus dos botones empujan el celular y la carga se detiene."
+      "texto": "<strong>Corte que se ve:</strong> en la mañana lo encuentras separado del adaptador."
      }
     },
     {
@@ -140,7 +140,7 @@
      "settings": {
       "nombre": "2 Unidades",
       "precio": 99900,
-      "precio_antes": 219800,
+      "precio_antes": 149800,
       "cantidad": 2,
       "etiqueta": "Tu cuarto y el de los hijos",
       "destacar": "Recomendado",
@@ -152,7 +152,7 @@
      "settings": {
       "nombre": "3 Unidades",
       "precio": 114900,
-      "precio_antes": 329700,
+      "precio_antes": 224700,
       "cantidad": 3,
       "etiqueta": "Toda la casa: cuartos y sala · $38.300 c/u",
       "destacar": "Mejor precio"
