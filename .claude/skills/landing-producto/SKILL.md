@@ -289,6 +289,7 @@ Copy de anuncios para Meta o TikTok, a partir del brief y del ángulo de la land
 - siguiendo las políticas de anuncios (ver `criterio.md` §5).
 - **Textos prohibidos en todo anuncio** (cualquier producto, regla fija): nada de "pago al recibir"/contraentrega, "envío gratis" ni "escríbenos por WhatsApp", ni en la imagen ni en los textos de Meta. Detalle en `criterio.md` §5 y en `agentes-ecommerce/cerebro/anuncios.md`. Revísalo antes de entregar.
 - **Los anuncios estáticos son siempre cuadrados 1:1 (1080 × 1080)**, salvo que el usuario pida otro formato.
+- **Anuncios en video (UGC):** usa la skill `guion-ugc`. Lee este mismo brief, dossier, ángulo y hero, usa un personaje del banco de avatares, valida con `tools/build-kit-ugc.mjs` y pasa por el director creativo (modo guion UGC) antes de llegar al dueño. El video va en 9:16 y su copy de Meta es el de la misma etapa.
 - **Anuncios estáticos con referentes:**
   - guarda las imágenes de referencia del usuario en `imagenes/referentes/<producto>-<campaña>/` con nombre numerado (`ref1-marca.jpg`…);
   - en el JSON del kit, cada anuncio lleva `"referente": { "nombre", "archivo", "tomar" }`. Si no sale de ninguno, solo `nombre`: "Sin referente directo…";

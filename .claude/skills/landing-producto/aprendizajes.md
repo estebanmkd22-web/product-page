@@ -40,6 +40,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **Los prompts se cambian de forma puntual**: número de imagen + parte.
 
 ## Trabajo
+- **(2026-11-20) Los guiones UGC salen de la skill `guion-ugc`**, conectada al brief, al dossier, al ángulo y al hero. El personaje sale siempre del banco de avatares y cada guion pasa por el director creativo antes de llegar al dueño. Se basa en la skill `anuncios-ugc` de la cuenta.
 - **Primero definir, después proponer, confirmar y recién ahí hacer.** Una mención no es una orden.
 - **(2026-11-10) El usuario ya no hace el paso a paso.** La landing aprobada se monta automáticamente en el tema en vivo con `tools/montar-landing.mjs`. Solo se agregan archivos, siempre con revisión, plan y una confirmación. Shopify no se toca antes de esa fase.
 - **Siempre el paso a paso exacto.** Nunca volver a pegar una plantilla que ya tiene fotos.
