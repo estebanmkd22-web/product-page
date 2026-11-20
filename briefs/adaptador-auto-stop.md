@@ -84,7 +84,7 @@ Ver dossier: sobrecarga, olvido y seguridad del hogar están tomados. Libres: lo
 - **Precios Black Days (noviembre):** 1 unidad $89.900 ~~$109.900~~ · 2 unidades $149.900 ~~$219.900~~. El tachado es real (precio normal $109.900).
 - **El adaptador vuelve a cargar solo** la noche siguiente, sin oprimir nada.
 - **Compatible con iPhone 15 en adelante** (USB-C).
-- **Estrellas:** reales; se muestran.
+- **Estrellas:** reales; se muestran. Calificación aprobada por el dueño el 2026-11-19: «4.9/5 · 127 reseñas» («esta perfecto como lo pusiste»). Las reseñas de texto van como «Testimonio de ejemplo».
 
 ## Relanzamiento v2 (2026-11-20) [Usuario] — reemplaza el ángulo, el buyer y la oferta anteriores
 - **Resultado v1:** no vendió. Se toma el ángulo validado por el competidor (ver dossier, "Actualización 2026-11-20").
