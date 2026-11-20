@@ -21,7 +21,7 @@
    "comparativa": "Lado izquierdo (40 %, un poco más oscuro): un cargador común en el enchufe de la pared con el celular conectado directo por el cable, el ícono del rayo de carga visible en la pantalla y un despertador digital al lado que marca 3:00. Lado derecho (60 %): el adaptador plateado grande y nítido en la punta del cable, con sus dos botones laterales salidos y el celular ya separado unos milímetros del adaptador; la pantalla del celular muestra 100 % sin el rayo de carga.",
    "textos": [
     "A las 3 a. m., ya cortó",
-    "Sigue calentándose",
+    "Sigue en sobrecarga",
     "Cortó al 100 %"
    ],
    "variantes": [
@@ -49,6 +49,11 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "textos",
+     "cambio": "Etiqueta izquierda «Sigue calentándose» → «Sigue en sobrecarga» (nivel de peligro aprobado)"
     }
    ]
   },
@@ -77,9 +82,9 @@
    "persona": false,
    "escena": "Macro del adaptador plateado sobre una superficie limpia gris azulada, en ángulo de tres cuartos, con el conector USB-C macho al frente y los dos botones laterales a la vista (uno ligeramente salido). Luz de estudio suave con reflejos limpios en el aluminio.",
    "textos": [
-    "Un cubito que vigila la carga",
+    "Un cubito que controla la carga",
     "Dos botones que empujan",
-    "Contra sobrecalentamiento",
+    "Contra sobrecarga y recalentamiento",
     "Hasta 140 W"
    ],
    "historial": [
@@ -87,6 +92,11 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "textos",
+     "cambio": "Alineado al hero del dueño: «controla la carga» y «sobrecarga»"
     }
    ]
   },
@@ -99,7 +109,7 @@
    "comparativa": "Lado izquierdo: de noche, la mano de la mujer tocando el cargador común para ver si está caliente, con cara de sueño. Lado derecho: la misma mesa con el adaptador plateado en la punta del cable y el celular ya separado, pantalla al 100 %, y ella dormida al fondo, tranquila.",
    "textos": [
     "Ya no te levantas a revisar",
-    "Pendiente de madrugada",
+    "Sobrecarga de madrugada",
     "Corta mientras duermes"
    ],
    "historial": [
@@ -107,6 +117,11 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "textos",
+     "cambio": "Etiqueta izquierda → «Sobrecarga de madrugada»"
     }
    ]
   },
@@ -187,7 +202,7 @@
    ]
   },
   "grid-dolores.item1": {
-   "que": "Dolor: se llena de madrugada y queda conectado. Sin el producto y sin texto.",
+   "que": "Dolor: sobrecarga de madrugada. Sin el producto y sin texto.",
    "producto": false,
    "persona": false,
    "escena": "Mesa de noche a oscuras en un cuarto de adultos; un celular conectado a un cargador común en el enchufe, la pantalla encendida con 100 % y el rayo de carga; al lado un despertador que marca 1:00.",
@@ -196,11 +211,16 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
     }
    ]
   },
   "grid-dolores.item2": {
-   "que": "Dolor: el cargador sigue trabajando aunque la batería esté llena. Sin el producto y sin texto.",
+   "que": "Dolor: se recalienta, horas de calor en el enchufe. Sin el producto y sin texto.",
    "producto": false,
    "persona": false,
    "escena": "Primer plano de un cargador de pared blanco común enchufado junto a la mesa de noche, con el cable al celular; luz nocturna tenue. Sin humo, sin brillo rojo, sin deformaciones.",
@@ -209,6 +229,11 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
     }
    ]
   },
@@ -222,11 +247,16 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
     }
    ]
   },
   "grid-dolores.item4": {
-   "que": "Dolor: no puedes vigilarlo cada noche. Sin el producto y sin texto.",
+   "que": "Dolor: un riesgo real que nadie vigila de noche. Sin el producto y sin texto.",
    "producto": false,
    "persona": true,
    "escena": "Cuarto de adultos de madrugada, luz tenue de la pantalla del celular.",
@@ -236,6 +266,11 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
     }
    ]
   },
@@ -306,7 +341,7 @@
    ]
   },
   "problemas-filas.fila2": {
-   "que": "Protección contra sobrecalentamiento.",
+   "que": "Protección contra sobrecarga.",
    "producto": true,
    "persona": false,
    "escena": "Macro del adaptador plateado sobre fondo azul noche degradado, reflejos limpios, aspecto sólido y seguro.",
@@ -315,6 +350,11 @@
      "fecha": "2026-11-20",
      "parte": "todo",
      "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Fila renombrada en la landing"
     }
    ]
   },
