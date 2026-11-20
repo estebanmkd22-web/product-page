@@ -1,4 +1,6 @@
 # Adaptador Auto-Stop · Cambios para hacer a mano en Personalizar
+
+> **Superado (2026-11-20):** estos textos ya se aplicaron directamente en la tienda, con el nivel de peligro aprobado (sobrecarga, recalentamiento, riesgo de accidente o incendio). La versión vigente es `templates/product.adaptador-auto-stop.json`. Este archivo queda solo como historial.
 Plantilla: **adaptador-auto-stop** · Fecha: 2026-11-20 · Fuente: copy v4 aprobado + hero definido por el dueño.
 
 Cómo usarlo: en **Personalizar**, abre cada sección en este orden, cambia los campos y guarda al final.

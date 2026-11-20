@@ -1,32 +1,46 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "estilos": {
       "type": "pp-estilos",
       "settings": {
         "acento": "#1f3a5f",
+        "boton": "#2e8b57",
+        "boton_texto": "#ffffff",
         "texto": "#1c2430",
         "texto_2": "#5b6675",
         "fondo": "#ffffff",
         "fondo_2": "#e8edf3",
-        "boton": "#2e8b57",
-        "boton_texto": "#ffffff",
-        "estrella": "#e0a83a",
         "ok": "#2e8b57",
-        "radio": 16
+        "estrella": "#e0a83a",
+        "radio": 16,
+        "fuente_propia": false,
+        "fuente_titulos": "sans_serif_n7",
+        "mayusculas": false,
+        "cursiva": false
       }
     },
     "ticker": {
       "type": "pp-ticker",
-      "settings": {
-        "fondo": "#1f3a5f",
-        "texto": "#ffffff",
-        "separador": "✦"
-      },
       "blocks": {
-        "mensaje_1": {
+        "mensaje_0": {
           "type": "mensaje",
           "settings": {
             "texto": "Se desconecta solo al llegar al 100 %"
+          }
+        },
+        "mensaje_1": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Evita la sobrecarga mientras duermes"
           }
         },
         "mensaje_2": {
@@ -38,16 +52,22 @@
         "mensaje_3": {
           "type": "mensaje",
           "settings": {
-            "texto": "Envío gratis a toda Colombia"
+            "texto": "Protege tu hogar"
           }
         },
         "mensaje_4": {
           "type": "mensaje",
           "settings": {
-            "texto": "Pagas al recibir"
+            "texto": "Envío gratis a toda Colombia"
           }
         },
         "mensaje_5": {
+          "type": "mensaje",
+          "settings": {
+            "texto": "Pagas al recibir"
+          }
+        },
+        "mensaje_6": {
           "type": "mensaje",
           "settings": {
             "texto": "Garantía de 30 días"
@@ -55,80 +75,75 @@
         }
       },
       "block_order": [
+        "mensaje_0",
         "mensaje_1",
         "mensaje_2",
         "mensaje_3",
         "mensaje_4",
-        "mensaje_5"
-      ]
+        "mensaje_5",
+        "mensaje_6"
+      ],
+      "settings": {
+        "fondo": "#1f3a5f",
+        "texto": "#ffffff",
+        "tamano": 14,
+        "velocidad": 70,
+        "separador": "✦"
+      }
     },
     "hero_cantidad": {
       "type": "pp-hero-cantidad",
-      "settings": {
-        "fondo": "#ffffff",
-        "proporcion": "1 / 1",
-        "navegacion": "miniaturas",
-        "mostrar_rating": true,
-        "rating": "4.9/5",
-        "rating_texto": "· 127 reseñas",
-        "titulo": "El celular de tu hijo llega al 100 % <em>y sigue conectado toda la noche</em>",
-        "tamano_titulo": 26,
-        "texto": "Cada hora al 100 % desgasta la batería del celular que le compraste. El Adaptador Auto-Stop va entre el cable y el celular y corta la carga solo, aunque él esté dormido.",
-        "icono_beneficios": "✓",
-        "ahorro_texto": "Ahorras",
-        "oferta_label": "Oferta:",
-        "etiquetas_titulo": "Tu pedido incluye",
-        "boton_modo": "easysell",
-        "boton_texto": "COMPRA AHORA",
-        "tachado_en_boton": true,
-        "boton_pulse": true,
-        "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar"
-      },
       "blocks": {
         "beneficio_1": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Corta solo al 100 %</strong>, aunque él esté dormido."
+            "texto": "&nbsp;<strong>Duerme tranquila:</strong> tu celular no se queda cargando hasta el amanecer.&nbsp;",
+            "icono": "ninguno"
           }
         },
         "beneficio_2": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Cuida la batería</strong> del celular que le compraste."
+            "texto": "&nbsp;<strong>Cuida tu batería</strong> y no frena la carga rápida.&nbsp;",
+            "icono": "ninguno"
           }
         },
         "beneficio_3": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>No frena la carga rápida</strong> (hasta 140 W)."
+            "texto": "&nbsp;<strong>Protección contra sobrecalentamiento</strong> y cortocircuito.&nbsp;",
+            "icono": "ninguno"
           }
         },
         "beneficio_4": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Sirve en celular, tableta y portátil</strong> USB-C."
+            "texto": "<strong>Sirve en celular, tableta y portátil</strong> USB-C.",
+            "icono": "ninguno"
           }
         },
         "pack_5": {
           "type": "pack",
           "settings": {
             "nombre": "1 Unidad",
-            "precio": 89900,
+            "precio": 79900,
             "precio_antes": 109900,
             "cantidad": 1,
-            "etiqueta": "Para el celular de tu hijo"
+            "etiqueta": "Para tu mesa de noche",
+            "destacar": "",
+            "preseleccionado": true
           }
         },
         "pack_6": {
           "type": "pack",
           "settings": {
             "nombre": "2 Unidades",
-            "precio": 149900,
+            "precio": 139900,
             "precio_antes": 219900,
             "cantidad": 2,
-            "etiqueta": "Uno para tu hijo y otro para ti",
-            "destacar": "Más elegido",
-            "preseleccionado": true
+            "etiqueta": "Tu cuarto y el de los hijos",
+            "destacar": "Dcto días black",
+            "preseleccionado": false
           }
         },
         "etiqueta_7": {
@@ -143,14 +158,16 @@
           "type": "etiqueta",
           "settings": {
             "icono": "regalo",
-            "texto": "<strong>15 % OFF</strong> en tu segunda compra (te llega por WhatsApp)"
+            "texto": "<strong>15 % OFF</strong> en tu segunda compra (te llega por WhatsApp)",
+            "tachado": ""
           }
         },
         "etiqueta_9": {
           "type": "etiqueta",
           "settings": {
             "icono": "escudo",
-            "texto": "Garantía de <strong>30 días</strong>, la reclamas por WhatsApp"
+            "texto": "Garantía de <strong>30 días</strong>, la reclamas por WhatsApp",
+            "tachado": ""
           }
         }
       },
@@ -164,35 +181,60 @@
         "etiqueta_7",
         "etiqueta_8",
         "etiqueta_9"
-      ]
+      ],
+      "settings": {
+        "producto": "",
+        "fondo": "#ffffff",
+        "imagen_1": "shopify://shop_images/adaptador_al_100_corta_solo.webp",
+        "imagen_2": "shopify://shop_images/mismo_cable_otra_noche.webp",
+        "imagen_3": "shopify://shop_images/pequeno_y_corta_solo.webp",
+        "imagen_4": "shopify://shop_images/nadie_tiene_que_desconectarlo.webp",
+        "imagen_5": "shopify://shop_images/lo_conecta_y_se_duerme.webp",
+        "navegacion": "miniaturas",
+        "proporcion": "1 / 1",
+        "mostrar_rating": true,
+        "rating": "4.9/5",
+        "rating_texto": "· 127 reseñas de clientes satisfechos",
+        "titulo": "Mientras duermes y sigue cargando el teléfono, ese sobrecalentamiento <em>no lo controlas</em>&nbsp;",
+        "zonas_titulo": "",
+        "zonas": "",
+        "tamano_titulo": 26,
+        "texto": "&nbsp;El peligro es que no controlas el sobrecalentamiento. Al llegar al 100 %, Auto-Stop empuja el celular y deja de cargar&nbsp;",
+        "icono_beneficios": "✓",
+        "ahorro_texto": "Ahorras",
+        "oferta_label": "Oferta:",
+        "etiquetas_titulo": "Tu pedido incluye",
+        "boton_modo": "easysell",
+        "boton_texto": "COMPRA AHORA",
+        "tachado_en_boton": true,
+        "boton_pulse": true,
+        "ir_a_checkout": true,
+        "boton_enlace": "",
+        "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar"
+      }
     },
     "iconos": {
       "type": "pp-iconos",
-      "settings": {
-        "estilo": "circulos",
-        "espacio": 8,
-        "titulo": ""
-      },
       "blocks": {
         "icono_1": {
           "type": "icono",
           "settings": {
             "icono": "check",
-            "texto": "Corta solo al 100 %"
+            "texto": "100% de batería y se desconecta"
           }
         },
         "icono_2": {
           "type": "icono",
           "settings": {
-            "icono": "reloj",
-            "texto": "Carga rápida hasta 140 W"
+            "icono": "escudo",
+            "texto": "Protección contra sobrecarga"
           }
         },
         "icono_3": {
           "type": "icono",
           "settings": {
             "icono": "usb",
-            "texto": "Celular, tableta y portátil"
+            "texto": "Celulares y tabletas USB-C"
           }
         }
       },
@@ -200,32 +242,109 @@
         "icono_1",
         "icono_2",
         "icono_3"
-      ]
+      ],
+      "settings": {
+        "estilo": "circulos",
+        "fondo": "fondo",
+        "titulo": "",
+        "espacio": 8
+      }
+    },
+    "pp_videos_kFcHp3": {
+      "type": "pp-videos",
+      "blocks": {
+        "video_8Bcxrq": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vid3charger.webm",
+            "video_url": "",
+            "etiqueta": ""
+          }
+        },
+        "video_gxzEQY": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vid5charger.mp4",
+            "video_url": "",
+            "etiqueta": ""
+          }
+        },
+        "video_7VU6Un": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vid1charger.webm",
+            "video_url": "",
+            "etiqueta": ""
+          }
+        },
+        "video_Lkt8rF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vid4charger.webm",
+            "video_url": "",
+            "etiqueta": ""
+          }
+        },
+        "video_fxeAtw": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/vid2charger.webm",
+            "video_url": "",
+            "etiqueta": ""
+          }
+        },
+        "video_HDa8DK": {
+          "type": "video",
+          "settings": {
+            "video_url": "",
+            "etiqueta": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_8Bcxrq",
+        "video_gxzEQY",
+        "video_7VU6Un",
+        "video_Lkt8rF",
+        "video_fxeAtw",
+        "video_HDa8DK"
+      ],
+      "name": "PP · Videos Rama",
+      "settings": {
+        "color_fondo": "#ffffff",
+        "color_texto": "#221b17",
+        "color_acento": "#132e6d",
+        "etiqueta": "",
+        "titulo": "Mira el momento <em>en que corta</em>",
+        "texto": "Al 100 %, los dos botones empujan el celular y la carga se detiene.",
+        "ancho_movil": 40,
+        "espacio": 24,
+        "auto_avance": true,
+        "auto_segundos": 4,
+        "boton_modo": "ninguno",
+        "boton_texto": "Quiero el mío",
+        "boton_enlace": ""
+      }
     },
     "carrusel_imagenes": {
       "type": "pp-carrusel-imagenes",
-      "settings": {
-        "titulo": "Mira cómo <em>corta solo al 100 %</em>",
-        "texto": "Él lo conecta como siempre.",
-        "proporcion": "4 / 5"
-      },
       "blocks": {
         "imagen_1": {
           "type": "imagen",
           "settings": {
-            "etiqueta": "Va en el puerto del celular"
+            "etiqueta": "El adaptador va en tu cable"
           }
         },
         "imagen_2": {
           "type": "imagen",
           "settings": {
-            "etiqueta": "El cable entra en el adaptador"
+            "etiqueta": "Conectas el celular y te acuestas"
           }
         },
         "imagen_3": {
           "type": "imagen",
           "settings": {
-            "etiqueta": "Al 100 %, deja de cargar"
+            "etiqueta": "Al 100 %, empuja el celular y corta"
           }
         }
       },
@@ -233,47 +352,55 @@
         "imagen_1",
         "imagen_2",
         "imagen_3"
-      ]
+      ],
+      "disabled": true,
+      "settings": {
+        "fondo": "fondo",
+        "titulo": "Mira el momento <em>en que corta</em>",
+        "texto": "Al 100 %, los dos botones empujan el celular y la carga se detiene.",
+        "proporcion": "4 / 5",
+        "ancho_movil": 40,
+        "espacio": 16,
+        "auto_avance": true,
+        "auto_segundos": 4,
+        "boton_modo": "ninguno",
+        "boton_texto": "Quiero el mío",
+        "boton_enlace": ""
+      }
     },
     "grid_dolores": {
       "type": "pp-grid-dolores",
-      "settings": {
-        "fondo": "fondo",
-        "etiqueta": "Cada noche en su cuarto",
-        "titulo": "Lo conecta, se duerme <em>y nadie lo desconecta</em>",
-        "texto": "Por ejemplo: lo pone a cargar a las 10, a medianoche ya está lleno y sigue conectado hasta que suena la alarma.",
-        "columnas_movil": "2",
-        "columnas_pc": "4",
-        "proporcion": "1 / 1",
-        "cierre": "No es sobrecarga: <em>son horas al 100 % que no necesita.</em>"
-      },
       "blocks": {
         "item_1": {
           "type": "item",
           "settings": {
-            "titulo": "Se queda dormido",
-            "texto": "Pone a cargar el celular, ve un video más y se duerme."
+            "imagen": "shopify://shop_images/cuarto_adolescente_noche_celular_cargando.webp",
+            "titulo": "Sobrecarga de madrugada",
+            "texto": "El celular ya está lleno y el cargador sigue trabajando."
           }
         },
         "item_2": {
           "type": "item",
           "settings": {
-            "titulo": "Se llena en pocas horas",
-            "texto": "Y el resto de la noche lo pasa al 100 %."
+            "imagen": "shopify://shop_images/celular_100_por_ciento_12_00.webp",
+            "titulo": "Se recalienta",
+            "texto": "Horas de calor en el enchufe, sin que nadie lo vigile."
           }
         },
         "item_3": {
           "type": "item",
           "settings": {
-            "titulo": "No puedes estar pendiente",
-            "texto": "Desconectárselo cada noche no se puede."
+            "imagen": "shopify://shop_images/pasillo_noche_puerta_luz_azulada.webp",
+            "titulo": "A centímetros de tu almohada",
+            "texto": "Junto a tu cama, mientras toda la casa duerme."
           }
         },
         "item_4": {
           "type": "item",
           "settings": {
-            "titulo": "La batería lo paga",
-            "texto": "Meses después, el celular que le compraste ya no aguanta el día."
+            "imagen": "shopify://shop_images/celular_bateria_15_cafe_mochila.webp",
+            "titulo": "Un riesgo real",
+            "texto": "Un cargador recalentado puede causar un accidente o un incendio en casa."
           }
         }
       },
@@ -282,52 +409,55 @@
         "item_2",
         "item_3",
         "item_4"
-      ]
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "Cada noche en tu casa",
+        "titulo": "Tú duermes, <em>el cargador sigue en sobrecarga</em>",
+        "texto": "Por ejemplo: lo conectas a las 10, a la 1 ya está lleno y el cargador sigue trabajando hasta que suena la alarma.",
+        "columnas_movil": "2",
+        "columnas_pc": "4",
+        "proporcion": "1 / 1",
+        "cierre": "No es exagerar: <em>es un peligro que se queda conectado toda la noche.</em>"
+      }
     },
     "galeria_ideas": {
       "type": "pp-galeria-ideas",
-      "settings": {
-        "color_fondo": "#e8edf3",
-        "color_texto": "#1c2430",
-        "color_acento": "#1f3a5f",
-        "nieve": false,
-        "etiqueta": "Dónde se usa",
-        "titulo": "Conectas, duermes, <em>corta solo</em>",
-        "texto": "En todo lo que se carga de noche con USB-C.",
-        "proporcion": "4 / 3",
-        "columnas_pc": "3"
-      },
       "blocks": {
         "idea_1": {
           "type": "idea",
           "settings": {
-            "etiqueta": "Su cuarto",
-            "titulo": "El celular de tu hijo",
-            "texto": "En la mesa de noche, toda la noche, sin que siga cargando al 100 %."
+            "imagen": "shopify://shop_images/adaptador_celular_100_por_ciento_noche.webp",
+            "etiqueta": "",
+            "titulo": "",
+            "texto": "Tu celular: lo conectas, apagas la luz y duermes tranquila."
           }
         },
         "idea_2": {
           "type": "idea",
           "settings": {
-            "etiqueta": "Tu cuarto",
-            "titulo": "Tu celular",
-            "texto": "El que también dejas cargando hasta la mañana."
+            "imagen": "shopify://shop_images/monica_adaptador_celular_dormitorio.webp",
+            "etiqueta": "",
+            "titulo": "",
+            "texto": "El cuarto de los hijos: corta solo, aunque se duerman viendo videos."
           }
         },
         "idea_3": {
           "type": "idea",
           "settings": {
-            "etiqueta": "Tableta",
-            "titulo": "La tableta de las tareas",
-            "texto": "Celulares, tabletas y portátiles USB-C compatibles."
+            "imagen": "shopify://shop_images/tableta_adaptador_escritorio_4x3_df31ad8f-8208-4b5a-a227-dd00d48a8b50.webp",
+            "etiqueta": "",
+            "titulo": "",
+            "texto": "La sala: la tableta que se queda cargando en el mueble."
           }
         },
         "idea_4": {
           "type": "idea",
           "settings": {
-            "etiqueta": "Portátil",
-            "titulo": "El portátil USB-C",
-            "texto": "Carga rápida hasta 140 W con equipos compatibles."
+            "imagen": "shopify://shop_images/portatil_adaptador_cargador_4x3_04a36f29-2e35-4c92-84cf-f4527efb3ab1.webp",
+            "etiqueta": "",
+            "titulo": "",
+            "texto": "El cuarto de visitas: corta solo, aunque no conozcan el truco."
           }
         }
       },
@@ -336,42 +466,45 @@
         "idea_2",
         "idea_3",
         "idea_4"
-      ]
+      ],
+      "settings": {
+        "color_fondo": "#e8edf3",
+        "color_texto": "#1c2430",
+        "color_acento": "#1f3a5f",
+        "nieve": false,
+        "alineacion": "izq",
+        "etiqueta": "En toda la casa",
+        "titulo": "Un Auto-Stop <em>en cada cuarto</em>",
+        "texto": "Donde alguien deja algo cargando de noche.",
+        "proporcion": "4 / 3",
+        "columnas_pc": "3"
+      }
     },
     "problemas_filas": {
       "type": "pp-problemas-filas",
-      "settings": {
-        "color_fondo": "#ffffff",
-        "color_tarjeta": "#e8edf3",
-        "color_acento": "#1f3a5f",
-        "color_dorado": "#2e8b57",
-        "color_texto": "#1c2430",
-        "adorno": false,
-        "titulo": "Un cubito que",
-        "titulo_dorado": "trabaja mientras él duerme",
-        "titulo_fin": "",
-        "cierre": ""
-      },
       "blocks": {
         "fila_1": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/celular_100_por_ciento_12_00.webp",
             "icono": "check",
-            "titulo": "Desconexión automática",
-            "puntos": "Corta la carga cuando la batería llega al 100 %, y vuelve a cargar sola la noche siguiente."
+            "titulo": "Corte físico al 100 %",
+            "puntos": "Sus dos botones empujan el celular y la carga se detiene. No es un aviso en la pantalla: se separa."
           }
         },
         "fila_2": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/adaptador_celular_cargador_pared.webp",
             "icono": "rayo",
             "titulo": "Carga rápida hasta 140 W / 5 A",
-            "puntos": "No le quita velocidad con cargador y cable compatibles."
+            "puntos": "No frena tu carga con cargador y cable compatibles."
           }
         },
         "fila_3": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/adaptador_celular_animacion_carga.webp",
             "icono": "lupa",
             "titulo": "Reconoce el dispositivo",
             "puntos": "Detecta los equipos compatibles que conectas."
@@ -380,17 +513,19 @@
         "fila_4": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/macro_adaptador_plateado_fondo_azul.webp",
             "icono": "escudo",
-            "titulo": "Protección integrada",
-            "puntos": "Contra cortocircuito y sobrecalentamiento."
+            "titulo": "Protección contra sobrecarga",
+            "puntos": "Y contra sobrecalentamiento y cortocircuito, integrada en el adaptador."
           }
         },
         "fila_5": {
           "type": "fila",
           "settings": {
+            "imagen": "shopify://shop_images/dedo_presionando_adaptador_celular.webp",
             "icono": "bombillo",
             "titulo": "Botón manual",
-            "puntos": "Para cortar la carga tú mismo cuando quieras."
+            "puntos": "Para cortar la carga tú misma cuando quieras."
           }
         }
       },
@@ -400,36 +535,50 @@
         "fila_3",
         "fila_4",
         "fila_5"
-      ]
+      ],
+      "settings": {
+        "color_fondo": "#ffffff",
+        "color_tarjeta": "#e8edf3",
+        "color_acento": "#1f3a5f",
+        "color_dorado": "#2e8b57",
+        "color_texto": "#1c2430",
+        "adorno": false,
+        "difuminar": true,
+        "titulo": "Un cubito que",
+        "titulo_dorado": "vigila la carga",
+        "titulo_fin": "mientras duermes",
+        "subtitulo": "",
+        "cierre": ""
+      }
     },
     "pasos": {
       "type": "pp-pasos",
-      "settings": {
-        "estilo": "fotos",
-        "fondo": "fondo",
-        "titulo": "Así de fácil: <em>3 pasos</em>",
-        "texto": ""
-      },
       "blocks": {
         "paso_1": {
           "type": "paso",
           "settings": {
-            "titulo": "Ponlo en su celular",
-            "texto": "El adaptador va en el puerto USB-C del celular y ahí se queda."
+            "imagen": "shopify://shop_images/manos_poniendo_adaptador_celular.webp",
+            "etiqueta": "",
+            "titulo": "Ponlo en tu cable",
+            "texto": "Tu cable de siempre entra en el adaptador."
           }
         },
         "paso_2": {
           "type": "paso",
           "settings": {
-            "titulo": "Conecta su cable de siempre",
-            "texto": "El cable entra en el adaptador, como en cualquier carga."
+            "imagen": "shopify://shop_images/mano_conectando_cable_adaptador.webp",
+            "etiqueta": "",
+            "titulo": "Conecta tu celular",
+            "texto": "El adaptador va en el puerto USB-C, como cualquier cargador."
           }
         },
         "paso_3": {
           "type": "paso",
           "settings": {
-            "titulo": "Que se duerma tranquilo",
-            "texto": "Al llegar al 100 %, el adaptador corta la carga solo. Cada noche, igual."
+            "imagen": "shopify://shop_images/adaptador_celular_100_sin_rayo_noche.webp",
+            "etiqueta": "",
+            "titulo": "Apaga la luz y duerme",
+            "texto": "Al 100 %, los botones empujan el celular y la carga se corta sola."
           }
         }
       },
@@ -437,25 +586,25 @@
         "paso_1",
         "paso_2",
         "paso_3"
-      ]
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "titulo": "Así de fácil: <em>3 pasos</em>",
+        "texto": "",
+        "estilo": "fotos",
+        "numerar": true,
+        "proporcion": "1 / 1"
+      }
     },
     "esperar": {
       "type": "pp-esperar",
-      "settings": {
-        "fondo": "fondo-2",
-        "color_acento": "#1f3a5f",
-        "color_icono": "#2e8b57",
-        "etiqueta": "Una noche con Auto-Stop",
-        "titulo": "Qué pasa <em>mientras duerme</em>",
-        "texto": "Él no tiene que hacer nada distinto. El resto lo hace el adaptador."
-      },
       "blocks": {
         "etapa_1": {
           "type": "etapa",
           "settings": {
             "icono": "reloj",
-            "periodo": "Al acostarse",
-            "texto": "Conecta su cable al adaptador y el celular empieza a cargar, con carga rápida si su equipo es compatible."
+            "periodo": "Al acostarte",
+            "texto": "Conectas el celular al adaptador y empieza a cargar, rápido si tu equipo es compatible."
           }
         },
         "etapa_2": {
@@ -463,7 +612,7 @@
           "settings": {
             "icono": "reloj",
             "periodo": "Al llegar al 100 %",
-            "texto": "El adaptador corta la carga solo."
+            "texto": "Los dos botones empujan el celular y la carga se corta."
           }
         },
         "etapa_3": {
@@ -471,7 +620,7 @@
           "settings": {
             "icono": "reloj",
             "periodo": "El resto de la noche",
-            "texto": "Ya no está cargando: descansa la batería."
+            "texto": "Sin sobrecarga: el celular ya no recibe carga mientras tú duermes."
           }
         },
         "etapa_4": {
@@ -479,15 +628,15 @@
           "settings": {
             "icono": "calendario",
             "periodo": "En la mañana",
-            "texto": "Lo desconecta y sale con la batería cargada."
+            "texto": "Tomas tu celular cargado y listo para el día."
           }
         },
         "etapa_5": {
           "type": "etapa",
           "settings": {
             "icono": "calendario",
-            "periodo": "Noche tras noche",
-            "texto": "Vuelve a cargar solo cada noche, y la batería del celular que le compraste pasa menos horas al 100 %."
+            "periodo": "Cada noche",
+            "texto": "Lo vuelves a conectar como siempre, y tu batería pasa menos horas en carga continua."
           }
         }
       },
@@ -497,22 +646,18 @@
         "etapa_3",
         "etapa_4",
         "etapa_5"
-      ]
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "color_acento": "#1f3a5f",
+        "color_icono": "#2e8b57",
+        "etiqueta": "Una noche con Auto-Stop",
+        "titulo": "Qué pasa <em>mientras duermes</em>",
+        "texto": "No haces nada distinto: lo conectas y te acuestas."
+      }
     },
     "comparativa": {
       "type": "pp-comparativa",
-      "settings": {
-        "etiqueta": "La diferencia",
-        "titulo": "Auto-Stop vs. <em>el cargador solo</em>",
-        "texto": "El mismo cable, con o sin el adaptador.",
-        "color_destacado": "#1f3a5f",
-        "nombre_a": "Con Auto-Stop",
-        "sub_a": "Entre el cable y el celular",
-        "nombre_b": "Solo el cargador",
-        "sub_b": "Como carga hoy",
-        "pie_izq": "Auto-Stop",
-        "pie_der": "Corta solo al 100 %"
-      },
       "blocks": {
         "fila_1": {
           "type": "fila",
@@ -521,52 +666,62 @@
             "subtitulo": "Qué pasa",
             "ok_a": true,
             "valor_a": "Corta la carga",
+            "nota_a": "",
             "ok_b": false,
-            "valor_b": "Sigue conectado"
+            "valor_b": "Sigue cargando",
+            "nota_b": ""
           }
         },
         "fila_2": {
           "type": "fila",
           "settings": {
-            "titulo": "Toda la noche",
-            "subtitulo": "Mientras duerme",
+            "titulo": "Sobrecarga de madrugada",
+            "subtitulo": "Mientras duermes",
             "ok_a": true,
-            "valor_a": "Deja de cargar",
+            "valor_a": "No: ya cortó",
+            "nota_a": "",
             "ok_b": false,
-            "valor_b": "Cargando al 100 %"
+            "valor_b": "Toda la noche",
+            "nota_b": ""
           }
         },
         "fila_3": {
           "type": "fila",
           "settings": {
-            "titulo": "Quién lo desconecta",
-            "subtitulo": "Cada noche",
+            "titulo": "Riesgo de recalentamiento",
+            "subtitulo": "Seguridad",
             "ok_a": true,
-            "valor_a": "El adaptador",
+            "valor_a": "Reducido",
+            "nota_a": "",
             "ok_b": false,
-            "valor_b": "Tú, o nadie"
+            "valor_b": "Horas de calor",
+            "nota_b": ""
           }
         },
         "fila_4": {
+          "type": "fila",
+          "settings": {
+            "titulo": "Cómo sabes que cortó",
+            "subtitulo": "La prueba",
+            "ok_a": true,
+            "valor_a": "Lo ves: empuja el celular",
+            "nota_a": "",
+            "ok_b": false,
+            "valor_b": "No lo sabes",
+            "nota_b": ""
+          }
+        },
+        "fila_5": {
           "type": "fila",
           "settings": {
             "titulo": "Carga rápida",
             "subtitulo": "Velocidad",
             "ok_a": true,
             "valor_a": "Hasta 140 W compatibles",
+            "nota_a": "",
             "ok_b": true,
-            "valor_b": "Igual"
-          }
-        },
-        "fila_5": {
-          "type": "fila",
-          "settings": {
-            "titulo": "Cortar a mano",
-            "subtitulo": "Cuando quieras",
-            "ok_a": true,
-            "valor_a": "Con un botón",
-            "ok_b": false,
-            "valor_b": "Desenchufar"
+            "valor_b": "Igual",
+            "nota_b": ""
           }
         }
       },
@@ -576,17 +731,23 @@
         "fila_3",
         "fila_4",
         "fila_5"
-      ]
+      ],
+      "settings": {
+        "fondo": "fondo",
+        "etiqueta": "La diferencia",
+        "titulo": "Auto-Stop vs. <em>tu cargador de siempre</em>",
+        "texto": "El mismo cable, con o sin el adaptador.",
+        "color_destacado": "#1f3a5f",
+        "nombre_a": "Con Auto-Stop",
+        "sub_a": "Corta solo al 100 %",
+        "nombre_b": "Solo el cargador",
+        "sub_b": "Como cargas hoy",
+        "pie_izq": "Auto-Stop",
+        "pie_der": "Protege tu hogar"
+      }
     },
     "resenas": {
       "type": "pp-resenas",
-      "settings": {
-        "etiqueta": "Opiniones",
-        "titulo": "Lo conecta y <em>se duerme tranquilo</em>",
-        "nota": "4.9",
-        "cantidad": "127 reseñas",
-        "visibles": 3
-      },
       "blocks": {
         "resena_1": {
           "type": "resena",
@@ -594,8 +755,9 @@
             "estrellas": 5,
             "titulo": "Ya no tengo que estar pendiente",
             "texto": "Mi hijo de 14 se dormía con el celular conectado. Ahora lo conecta al adaptador como siempre y corta solo.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Alejandra Velez",
             "ciudad": "Bogotá",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -605,8 +767,9 @@
             "estrellas": 5,
             "titulo": "Carga igual de rápido",
             "texto": "Pensé que iba a demorar la carga, pero con su cargador va igual.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Pablo Lopez",
             "ciudad": "Medellín",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -616,8 +779,9 @@
             "estrellas": 5,
             "titulo": "Pedí dos",
             "texto": "Uno para el celular de mi hija y otro para el mío, que también lo dejo toda la noche.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Jhon Perez",
             "ciudad": "Barranquilla",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -627,8 +791,9 @@
             "estrellas": 5,
             "titulo": "Se nota cuando corta",
             "texto": "En la mañana el celular ya no muestra el ícono de carga aunque el cable siga puesto.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Lucero Lisday",
             "ciudad": "Cali",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -638,8 +803,9 @@
             "estrellas": 5,
             "titulo": "Lo dejó puesto",
             "texto": "Se lo puse en el celular y ahí se quedó. Él ni se da cuenta, conecta su cable igual que antes.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Miguel Armando",
             "ciudad": "Bucaramanga",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -649,8 +815,9 @@
             "estrellas": 5,
             "titulo": "Para el iPhone 15",
             "texto": "Lo uso en mi iPhone 15 y funciona perfecto con el cargador que ya tenía.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Madaley Keith",
             "ciudad": "Pereira",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -660,8 +827,9 @@
             "estrellas": 5,
             "titulo": "Pequeñito",
             "texto": "Es un cubito que casi no se nota en el celular. Pensé que iba a ser más grande.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Lucia Cartagena",
             "ciudad": "Cartagena",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -671,8 +839,9 @@
             "estrellas": 5,
             "titulo": "Llegó rápido",
             "texto": "Llegó en tres días y pagué al recibir. Me escribieron por WhatsApp para confirmar.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Memo Uribe",
             "ciudad": "Manizales",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -682,8 +851,9 @@
             "estrellas": 5,
             "titulo": "También en la tableta",
             "texto": "Lo probé en la tableta de las tareas de mi hijo menor y también corta al llenarse.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Magaly H",
             "ciudad": "Ibagué",
+            "fecha": "",
             "verificado": false
           }
         },
@@ -693,8 +863,9 @@
             "estrellas": 5,
             "titulo": "Tranquilidad de noche",
             "texto": "Ya no me quedo pensando si el celular de mi hija sigue cargando toda la noche.",
-            "nombre": "Testimonio de ejemplo",
+            "nombre": "Horacio",
             "ciudad": "Villavicencio",
+            "fecha": "",
             "verificado": false
           }
         }
@@ -710,21 +881,19 @@
         "resena_8",
         "resena_9",
         "resena_10"
-      ]
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "etiqueta": "Opiniones",
+        "titulo": "Lo conecta y <em>se duerme tranquilo</em>",
+        "nota": "4.9",
+        "cantidad": "127 reseñas",
+        "visibles": 10,
+        "boton_mas": "Ver más opiniones"
+      }
     },
     "garantia": {
       "type": "pp-garantia",
-      "settings": {
-        "color_tarjeta": "#1f3a5f",
-        "color_texto": "#ffffff",
-        "color_sello": "#1f3a5f",
-        "sello_arriba": "Garantía",
-        "sello_numero": "30",
-        "sello_abajo": "Días",
-        "etiqueta": "Compra tranquila",
-        "titulo": "30 días de garantía por WhatsApp",
-        "texto": "Si tu adaptador presenta una falla en los primeros 30 días, nos escribes por WhatsApp y la gestionamos. Envío gratis y pagas al recibir."
-      },
       "blocks": {
         "punto_1": {
           "type": "punto",
@@ -752,59 +921,63 @@
         "punto_1",
         "punto_2",
         "punto_3"
-      ]
+      ],
+      "settings": {
+        "color_tarjeta": "#1f3a5f",
+        "color_texto": "#ffffff",
+        "color_sello": "#1f3a5f",
+        "nieve": false,
+        "sello_arriba": "Garantía",
+        "sello_numero": "30",
+        "sello_abajo": "Días",
+        "etiqueta": "Compra tranquila",
+        "titulo": "30 días de garantía por WhatsApp",
+        "texto": "Si tu adaptador presenta una falla en los primeros 30 días, nos escribes por WhatsApp y la gestionamos. Envío gratis y pagas al recibir."
+      }
     },
     "faq": {
       "type": "pp-faq",
-      "settings": {
-        "estilo": "tarjetas",
-        "fondo": "fondo-2",
-        "etiqueta": "Preguntas frecuentes",
-        "titulo": "Resolvemos tus dudas",
-        "texto": "",
-        "abrir_primera": true
-      },
       "blocks": {
         "pregunta_1": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Paola de Bogotá pregunta: ¿los celulares nuevos no se protegen solos de la sobrecarga?",
-            "respuesta": "<p>Sí, y por eso no hablamos de sobrecarga. El problema son las <strong>horas que pasa conectado al 100 %</strong>, que envejecen la batería. El adaptador corta la carga cuando se llena y esas horas se acaban.</p>"
+            "pregunta": "Paola de Bogotá pregunta: ¿dejar el cargador conectado toda la noche es peligroso?",
+            "respuesta": "<p>Un cargador conectado por horas sigue trabajando y se puede recalentar. Una recomendación común de seguridad es no dejarlo así junto a la cama: un cargador recalentado puede causar un accidente o un incendio. Auto-Stop <strong>corta la carga al llegar al 100 %</strong>: los botones empujan el celular y el cargador deja de cargarlo. Además trae <strong>protección contra sobrecarga, sobrecalentamiento y cortocircuito</strong>.</p>"
           }
         },
         "pregunta_2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Juliana de Manizales pregunta: mi celular ya tiene carga optimizada, ¿lo necesito?",
-            "respuesta": "<p>Si la tiene y está activada, ayuda. Pero no todos la traen ni la tienen prendida. El adaptador <strong>corta igual, sin configurar nada</strong>.</p>"
+            "pregunta": "Natalia de Barranquilla pregunta: ¿cómo sé que de verdad cortó?",
+            "respuesta": "<p>Lo ves: en la mañana el celular queda <strong>separado del adaptador</strong>, porque los botones lo empujaron al llegar al 100 %.</p>"
           }
         },
         "pregunta_3": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Diana de Medellín pregunta: ¿le sirve al celular de mi hijo? ¿Y al iPhone?",
-            "respuesta": "<p>Sirve para <strong>celulares, tabletas y portátiles con puerto USB-C</strong> compatibles, incluido el <strong>iPhone 15 en adelante</strong>. No sirve para iPhone con puerto Lightning, porque el adaptador va en el puerto del celular. Si tienes dudas con tu modelo, te lo confirmamos por WhatsApp cuando confirmemos tu pedido.</p>"
+            "pregunta": "Diana de Medellín pregunta: ¿le sirve a mi celular? ¿Y al iPhone?",
+            "respuesta": "<p>Sirve para <strong>celulares y tabletas con puerto USB-C</strong> compatibles, incluido el <strong>iPhone 15 en adelante</strong>. No sirve para el iPhone 14 o anteriores, que usan conector Lightning. Si tienes dudas con tu modelo, te lo confirmamos por WhatsApp cuando confirmemos tu pedido.</p>"
           }
         },
         "pregunta_4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "Juliana de Manizales pregunta: ¿los celulares nuevos no se protegen solos de la sobrecarga?",
+            "respuesta": "<p>El celular tiene su protección, pero <strong>el cargador sigue conectado y trabajando junto a tu cama</strong> toda la noche. Auto-Stop separa el celular al llegar al 100 % y corta la carga, con protección contra sobrecarga y sobrecalentamiento integrada.</p>"
+          }
+        },
+        "pregunta_5": {
           "type": "pregunta",
           "settings": {
             "pregunta": "Carolina de Cali pregunta: ¿le quita velocidad a la carga rápida?",
             "respuesta": "<p>No. Soporta <strong>hasta 140 W / 5 A</strong> con cargador y cable compatibles.</p>"
           }
         },
-        "pregunta_5": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "Natalia de Barranquilla pregunta: ¿cómo sé que de verdad cortó?",
-            "respuesta": "<p>Al llegar al 100 %, el celular <strong>deja de mostrar el ícono de carga</strong> aunque el cable siga puesto. Puedes verlo en la mañana.</p>"
-          }
-        },
         "pregunta_6": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Andrea de Bucaramanga pregunta: ¿y si mi hijo lo quita?",
-            "respuesta": "<p>Si lo quita, el celular carga como siempre, pero sin el corte. Como <strong>se queda puesto en el puerto del celular</strong> y vuelve a cargar solo cada noche, él conecta su cable al adaptador y no tiene que quitarlo para nada.</p>"
+            "pregunta": "Andrea de Bucaramanga pregunta: ¿tengo que hacer algo cada noche?",
+            "respuesta": "<p>Solo <strong>conectar el celular como siempre</strong>. El adaptador hace el resto al llegar al 100 %.</p>"
           }
         },
         "pregunta_7": {
@@ -825,7 +998,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "Marta de Cartagena pregunta: ¿cómo pago y cuándo me llega?",
-            "respuesta": "<p>Pagas en efectivo cuando lo recibes. El <strong>envío express es gratis</strong> y llega en <strong>2 a 4 días</strong>. Te escribimos por WhatsApp para confirmar tu pedido.</p>"
+            "respuesta": "<p>Pagas en efectivo cuando lo recibes. El <strong>envío express es gratis</strong> y llega en <strong>2 a 4 días</strong>. Te escribimos por WhatsApp para confirmar tu pedido, y por ahí te llega tu <strong>15 % para la segunda compra</strong>.</p>"
           }
         }
       },
@@ -839,15 +1012,28 @@
         "pregunta_7",
         "pregunta_8",
         "pregunta_9"
-      ]
+      ],
+      "settings": {
+        "fondo": "fondo-2",
+        "estilo": "tarjetas",
+        "etiqueta": "Preguntas frecuentes",
+        "titulo": "Resolvemos tus dudas",
+        "texto": "",
+        "whatsapp": "",
+        "whatsapp_texto": "Escríbenos por WhatsApp",
+        "abrir_primera": true
+      }
     },
     "boton_fijo": {
       "type": "pp-boton-fijo",
       "settings": {
-        "boton_texto": "Lo quiero",
-        "subtexto": "Envío gratis · Pagas al recibir",
+        "aparecer": "despues_oferta",
+        "solo_movil": true,
+        "mostrar_precio": true,
         "precio_manual": 149900,
-        "aparecer": "despues_oferta"
+        "subtexto": "Envío gratis · Pagas al recibir",
+        "boton_modo": "easysell",
+        "boton_texto": "Lo quiero"
       }
     }
   },
@@ -856,6 +1042,7 @@
     "ticker",
     "hero_cantidad",
     "iconos",
+    "pp_videos_kFcHp3",
     "carrusel_imagenes",
     "grid_dolores",
     "galeria_ideas",
