@@ -112,13 +112,17 @@ Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
 
 **Reglas del hero** (las aplican el copywriter y el director; tú también las verificas). Decisión del dueño (2026-11-21): **el hero de la landing confirma la intención de compra, no cuenta una historia.** Quien llega ya vio el anuncio; la historia y la emoción viven en el anuncio y en las imágenes del hero. El texto del hero dice qué es el producto, qué soluciona y por qué creerle. Referentes del dueño: «Sistema Bio-Caspa y Caída», «Elbor: Activador de folículos para barba», «Suero botánico Anti-descamación 120 ml».
 
-- **La primera pantalla del celular es el hero:** la franja animada, la **imagen 1** (dos tercios de la pantalla), la calificación, el título, la línea de promesa y el subtítulo. Ahí se decide si el cliente baja.
-- **Orden del bloque de texto:**
-  1. **Calificación arriba del título:** estrellas + calificación + reseñas, como se viene manejando (solo datos reales).
-  2. **Título.**
-  3. **Línea de promesa** (opcional).
-  4. **Subtítulo.**
-  5. **Bullets.**
+- **La primera pantalla del celular es el hero:** la franja animada, la **imagen 1** (dos tercios de la pantalla), el título, el precio, las estrellas y el subtítulo. Ahí se decide si el cliente baja.
+- **Sección del hero: `pp-hero-cantidad` (PP · Hero + Cantidad)**, con la oferta adentro, como en la landing del Adaptador Auto-Stop. Reemplaza a `pp-hero-oferta` + `pp-oferta-tabs`.
+- **Orden del hero:**
+  1. galería (imagen 1 la más importante);
+  2. **título**;
+  3. **línea de promesa** (opcional);
+  4. **fila de precio** (ver «Precio en el hero»);
+  5. **estrellas debajo del precio:** calificación + número de reseñas, solo datos reales;
+  6. **subtítulo**;
+  7. **bullets**;
+  8. **packs, botón, nota y caja «Tu pedido incluye»** (ver «Precio en el hero»).
 - **Título = producto + lo que soluciona:**
   - fórmula: `[Marca:] [tipo de producto con nombre de mecanismo] + [problema que resuelve o para qué/quién] [+ presentación]`. Ejemplos: «Sistema Bio-Caspa y Caída», «Elbor: Activador de folículos para barba», «Audífonos VIVIDUS con estuche que aguanta caídas»;
   - **corto: de 3 a 7 palabras**, literal y claro; se entiende qué es sin leer nada más;
@@ -139,7 +143,17 @@ Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
   - máximo unas 10 palabras por bullet (sin contar la línea de justificación); sin adjetivos vacíos («increíble», «premium», «de alta calidad»);
   - **prueba del «¿y qué?»:** si el cliente puede pensar «¿y eso qué me importa?», se reescribe;
   - orden: el dolor #1 resuelto → la objeción principal → el diferenciador → uso o compatibilidad.
-- **Precio en el hero: se prueba.** Además del hero sin precio (el de siempre: «el hero convence, la oferta vende»), arma una **versión B con precio, precio tachado real y ahorro debajo del título**, como el referente Elbor, para medirla en Clarity (al menos 200 visitantes por versión). Solo precios reales; nunca un tachado inventado. Las imágenes del hero siguen sin precio, pago, envío ni garantía.
+- **Precio en el hero** (decisión del dueño, 2026-11-21; se toma del Auto-Stop solo la forma del precio, el resto del hero sigue estas reglas):
+  - **fila de precio justo debajo del título:** precio grande, precio tachado y etiqueta «Ahorras $X» en pesos (`ahorro_texto: "Ahorras"`). Cambia sola según el pack elegido;
+  - **«Oferta: [pack elegido]»** y las **tarjetas de pack** (bloques `pack`), normalmente 1 y 2 unidades (3 si el producto lo pide; producto de precio único: un solo pack):
+    - `nombre`: «1 Unidad», «2 Unidades»;
+    - `etiqueta` (línea pequeña): **dónde o para quién es** cada pack («Para tu mesa de noche», «Tu cuarto y el de los hijos»), no una frase de venta;
+    - `destacar`: etiqueta encima del pack que se quiere empujar («Recomendado», «DCTO DÍAS BLACK» en campaña), y ese pack con `preseleccionado` si es la estrategia;
+    - `precio_antes`: el tachado de cada pack es el **precio real de comprar esas unidades sueltas** (precio normal × cantidad). Nunca un tachado inventado;
+  - **botón con el precio del pack y su tachado** (`tachado_en_boton: true`), texto «COMPRA AHORA»;
+  - **nota debajo del botón**, con los datos reales de pago y confirmación de la tienda (en Tu espacio Market: «Pagas al recibir · Te escribimos por WhatsApp para confirmar»). En la landing sí se puede; la prohibición es solo para anuncios;
+  - **caja «Tu pedido incluye»** (bloques `etiqueta`) con los bonos reales, sacados de los «Datos fijos de operación»: envío express **GRATIS** con su valor tachado ($21.000), 15 % en la segunda compra (llega por WhatsApp) y la garantía (se reclama por WhatsApp);
+  - **las imágenes del hero siguen sin venta:** sin precio, pago, envío ni garantía.
 - **Coherencia con el anuncio:** el hero nombra el mismo producto y el mismo problema que promete el anuncio que trae el tráfico (está en el brief). La frase del gancho del anuncio puede ir en la imagen 1, no en el título.
 - **La imagen 1** sigue siendo la más importante: ahí van el dolor, la emoción y la comparativa, con texto y sin escribir «antes/después».
 - **La franja animada de arriba** no abre vendiendo: el primer mensaje refuerza el producto o da prueba (por ejemplo, "+500 clientes en Colombia" si es real). Lo de envío y pago va después.
@@ -147,15 +161,14 @@ Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
 
 ### Fase 2 · Landing (solo con el copy final aprobado)
 Antes de armar, presenta el plan y espera confirmación: secciones en orden, oferta, paleta, colores y garantía. Arma solo lo confirmado.
-**Maqueta base:** `preview/paginas/arven-fold.json`, la versión más completa de la maqueta de la rama de 1,5 m. Cópiala como `preview/paginas/<producto>.json` y pon el copy final aprobado (`copy/<producto>/vN.md`) campo por campo, sin reescribirlo. El orden base con su papel en ATIDCOA:
+**Maqueta base:** `preview/paginas/arven-fold.json`, la versión más completa de la maqueta de la rama de 1,5 m, **cambiando `pp-hero-oferta` y `pp-oferta-tabs` por `pp-hero-cantidad`**, con los ajustes del precio de `preview/paginas/adaptador-auto-stop.json` (fila de precio, packs, botón, nota y caja de etiquetas). Cópiala como `preview/paginas/<producto>.json` y pon el copy final aprobado (`copy/<producto>/vN.md`) campo por campo, sin reescribirlo. El orden base con su papel en ATIDCOA:
 
 | Sección | Papel |
 |---|---|
 | pp-estilos (paleta + fuente) · pp-logo (si hay logo) · pp-ticker | Marco |
-| pp-hero-oferta | **A**tención |
+| pp-hero-cantidad (hero con la oferta adentro) | **A**tención + **D**eseo + **Ac**ción (oferta) |
 | pp-iconos | Atención |
-| pp-oferta-tabs | **D**eseo + **Ac**ción (oferta) |
-| pp-videos o pp-carrusel-imagenes | **Siempre justo debajo de la oferta** |
+| pp-videos o pp-carrusel-imagenes | **Siempre justo debajo del hero y los íconos** |
 | pp-grid-dolores | **I**nterés (dolor) |
 | pp-galeria-ideas / pp-resultados-zona | **T**ransformación |
 | pp-problemas-filas | Interés (cómo funciona, ingredientes o partes) |
@@ -273,7 +286,7 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
   El kit trae además un "mensaje de conversión" para copiar si ChatGPT igual entrega PNG. No quites estas líneas de ningún prompt.
 - **Imágenes del hero (galería, imagen 1 a 6): SÍ llevan texto y venden solas.** Es la excepción a "sin texto".
   - **Objetivo:** quitar el dolor y despertar interés por el producto. El producto es el protagonista y la solución se ve.
-  - **El hero convence, no vende.** Ninguna imagen del hero lleva nada de venta: ni precio, ni descuento, ni oferta, ni "pagas al recibir", ni envío, ni garantía, ni llamados como "compra ya". Esos ganchos ya están en la oferta con pestañas. El texto habla solo del producto, el beneficio y la transformación.
+  - **Las imágenes del hero no venden** (el precio ya va en el texto del hero). Ninguna imagen del hero lleva nada de venta: ni precio, ni descuento, ni oferta, ni "pagas al recibir", ni envío, ni garantía, ni llamados como "compra ya". Esos ganchos ya están en la oferta con pestañas. El texto habla solo del producto, el beneficio y la transformación.
   - **La imagen 1 es la más importante de toda la landing:** ocupa dos tercios de la primera pantalla y es el verdadero hero. En el JSON lleva `"principal": true`; el kit la destaca y dice que se haga primero, con más intentos.
     - **Lleva el gancho:** un titular grande en la imagen (2 a 7 palabras) con el **dolor que se va** o la transformación, sacado del mapa de dolor y con las palabras del cliente. Ejemplos de forma: «Se acabó cocinar por turnos», «Adiós al ardor del roce». Más 1 o 2 etiquetas cortas.
     - **Producto protagonista**, idéntico a la foto y grande, en el momento en que resuelve el dolor.

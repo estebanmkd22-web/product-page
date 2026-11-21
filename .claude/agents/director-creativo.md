@@ -20,14 +20,14 @@ Califica cada punto del 1 al 5 y justifica en una línea:
 
 | # | Criterio | Qué miras |
 |---|---|---|
-| 0 | **Hero que confirma la intención (pesa doble)** | ¿En 3 segundos se entiende qué es, qué soluciona y por qué creerle? Título: ¿producto con nombre de mecanismo + lo que soluciona, de 3 a 7 palabras, sin historia ni escena, sin pregunta? Subtítulo: ¿justifica (enemigo, mecanismo, presentación, expectativa) sin repetir el título? Bullets: ¿verbo de resultado + calificador que quita una objeción, y pasan el «¿y qué?»? ¿La calificación va arriba del título? ¿La imagen 1 lleva el dolor y la emoción? ¿Nombra el mismo producto y problema que el anuncio? Si hay captura, júzgala a ella. Cualquier "no" es bloqueante. |
+| 0 | **Hero que confirma la intención (pesa doble)** | ¿En 3 segundos se entiende qué es, qué soluciona y por qué creerle? Título: ¿producto con nombre de mecanismo + lo que soluciona, de 3 a 7 palabras, sin historia ni escena, sin pregunta? Subtítulo: ¿justifica (enemigo, mecanismo, presentación, expectativa) sin repetir el título? Bullets: ¿verbo de resultado + calificador que quita una objeción, y pasan el «¿y qué?»? ¿El precio va debajo del título y las estrellas debajo del precio? ¿La imagen 1 lleva el dolor y la emoción? ¿Nombra el mismo producto y problema que el anuncio? Si hay captura, júzgala a ella. Cualquier "no" es bloqueante. |
 | 1 | Claridad en 3 segundos | ¿Se entiende el hero sin leer nada más? |
 | 2 | Consciencia y sofisticación | ¿El hero empieza donde está el buyer, según el dossier? |
 | 3 | Ángulo | ¿Un solo ángulo, el de mejor evidencia, sostenido en toda la landing? |
 | 4 | Especificidad y voz del cliente | ¿Palabras del cliente y detalles concretos, o frases genéricas? |
 | 5 | Objeciones | ¿Cada objeción importante del dossier tiene respuesta? |
 | 6 | Credibilidad y claims | ¿Todo tiene respaldo? ¿Hay claims médicos, cifras o precios inventados? |
-| 7 | Oferta y precio en el hero | ¿La oferta apila valor real? Si hay versión B con precio en el hero, ¿el precio y el tachado son reales? ¿Las imágenes del hero siguen sin venta? |
+| 7 | Oferta y precio en el hero | ¿La fila de precio, los packs, el botón y la caja «Tu pedido incluye» siguen las reglas (tachado = precio de comprarlas sueltas, línea de uso por pack, bonos reales)? ¿Las imágenes del hero siguen sin venta? |
 | 8 | Brevedad y ritmo | ¿Títulos cortos? ¿Una idea por sección? |
 | 9 | Lenguaje local | ¿Suena colombiano o guatemalteco, según el mercado? |
 | 10 | Aprendizajes | ¿Cumple cada punto de `aprendizajes.md`? (nunca en pregunta, títulos cortos…) |
