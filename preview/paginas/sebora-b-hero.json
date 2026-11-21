@@ -1,0 +1,173 @@
+{
+ "titulo": "SÉBORA B",
+ "moneda": "$",
+ "locale": "es-CO",
+ "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+ "producto": {
+  "title": "SÉBORA Suero botánico 120 ml",
+  "selected_or_first_available_variant": {
+   "id": 1,
+   "price": 8990000,
+   "compare_at_price": null,
+   "available": true
+  },
+  "media": [
+   {
+    "preview_image": {
+     "src": "../../imagenes/sebora/producto.webp",
+     "alt": "SÉBORA"
+    }
+   }
+  ]
+ },
+ "secciones": [
+  {
+   "tipo": "pp-estilos",
+   "settings": {
+    "acento": "#5b2a86",
+    "texto": "#221a2b",
+    "texto_2": "#5b6675",
+    "fondo": "#ffffff",
+    "fondo_2": "#f1ebf7",
+    "boton": "#5b2a86",
+    "boton_texto": "#ffffff",
+    "estrella": "#e0a83a",
+    "ok": "#2e8b57",
+    "radio": 16
+   }
+  },
+  {
+   "tipo": "pp-ticker",
+   "settings": {
+    "fondo": "#5b2a86",
+    "texto": "#ffffff",
+    "separador": "✦"
+   },
+   "blocks": [
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Suero botánico para la piel debajo de la barba"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "8 extractos botánicos · 120 ml"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Envío express gratis a toda Colombia"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Garantía de 60 días"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-hero-cantidad",
+   "settings": {
+    "fondo": "#ffffff",
+    "proporcion": "1 / 1",
+    "navegacion": "miniaturas",
+    "mostrar_rating": false,
+    "rating": "4.9/5",
+    "rating_texto": "· 127 reseñas",
+    "titulo": "SÉBORA: Suero botánico <em>anti-escamas para barba</em>",
+    "tamano_titulo": 26,
+    "texto": "El problema no es el vello: es la piel de debajo, que se pone grasa, roja y suelta escamitas. Este suero botánico entra entre el vello y la cuida sin engrasar la barba.",
+    "icono_beneficios": "✓",
+    "ahorro_texto": "Ahorras",
+    "oferta_label": "Oferta:",
+    "etiquetas_titulo": "Tu pedido incluye",
+    "boton_modo": "easysell",
+    "boton_texto": "COMPRA AHORA",
+    "tachado_en_boton": true,
+    "boton_pulse": true,
+    "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar"
+   },
+   "blocks": [
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Ayuda a reducir las escamitas visibles en la barba."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Ayuda a calmar la picazón y la rojez debajo del vello."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Entra entre el vello sin dejar la barba pegajosa."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Se aplica después de la ducha, como el aceite de barba."
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "1 Unidad",
+      "precio": 89900,
+      "precio_antes": 0,
+      "cantidad": 1,
+      "etiqueta": "Para tu barba"
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "2 Unidades",
+      "precio": 139900,
+      "precio_antes": 179800,
+      "cantidad": 2,
+      "etiqueta": "Para completar 6 a 8 semanas de uso",
+      "destacar": "Recomendado",
+      "preseleccionado": true
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "camion",
+      "texto": "Envío express <strong>GRATIS</strong> a toda Colombia",
+      "tachado": "$21.000"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "regalo",
+      "texto": "<strong>15 % OFF</strong> en tu segunda compra (te llega por WhatsApp)"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "escudo",
+      "texto": "Garantía de <strong>60 días</strong>, la reclamas por WhatsApp"
+     }
+    }
+   ]
+  }
+ ]
+}
