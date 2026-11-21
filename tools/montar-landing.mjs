@@ -101,5 +101,6 @@ for (const d of ['assets', 'config', 'layout', 'locales', 'sections', 'snippets'
 for (const f of plan.subir) fs.copyFileSync(path.join(ROOT, f), path.join(envio, f));
 const salida = cli('push', ['--path', envio, '--allow-live', '--nodelete', ...plan.subir.flatMap((f) => ['--only', f])]);
 console.log(salida.trim().split('\n').slice(-5).join('\n'));
+if (/pushed with errors|╭─ error/.test(salida)) { console.error('\nERROR: la tienda rechazó uno o más archivos. Revisa el mensaje de arriba.'); process.exit(1); }
 console.log(`\nSubidos: ${plan.subir.join(', ')}`);
 if (fs.existsSync(dirRespaldo)) console.log(`Respaldo: ${path.relative(ROOT, dirRespaldo)}`);

@@ -1,0 +1,466 @@
+{
+ "version": 2,
+ "landing": "Adaptador Auto-Stop · relanzamiento (peligro / duerme tranquila)",
+ "avatar": "hogar-01",
+ "referencia_archivo": "imagenes/adaptador-auto-stop/producto.png",
+ "ficha": {
+  "escenario": "Casa colombiana de clase media: cuarto de adultos cálido con mesa de noche de madera, lámpara pequeña y cama tendida; también sala y un cuarto juvenil sin personas.",
+  "luz": "Madrugada o noche tranquila: luz tenue azulada o lámpara cálida baja. Foto realista tipo celular de buena calidad, no de estudio (salvo los macros del producto).",
+  "paleta": "Azul noche (#1f3a5f), madera, blancos y grises, con el plateado del adaptador; verde (#2e8b57) solo como acento.",
+  "estilo": "Fotografía realista y serena; nada de render 3D ni de ilustración."
+ },
+ "producto": "Adaptador cuadrado pequeño de aluminio plateado con bordes redondeados (cabe en la punta de los dedos): un conector USB-C macho al frente y dos botones pequeños a los lados del conector. Va en la punta del cable: el cable entra en el adaptador y el celular se conecta al conector macho. Al llegar al 100 %, los dos botones salen y empujan el celular, que queda separado unos milímetros. Idéntico a la foto adjunta: sin luces, piezas ni logos de más.",
+ "reglas": "Sin textos, letreros ni logos dentro de la imagen. Sin marcas de terceros (ni logos en celulares). Manos naturales. Nada de humo, llamas, chispas, brillo rojo, quemaduras ni cargadores deformados: el calor solo lo cuenta el texto. El celular siempre sobre la mesa de noche o un mueble, nunca sobre la cama o la cobija. Sin niños ni adolescentes visibles.",
+ "espacios": {
+  "hero-cantidad.imagen_1": {
+   "que": "El gancho, la imagen más importante: a las 3 a. m. el cargador común sigue cargando frente al Auto-Stop que ya empujó el celular y cortó. Continúa el título (el sobrecalentamiento que no controlas) y muestra la solución en 1 segundo.",
+   "principal": true,
+   "producto": true,
+   "persona": false,
+   "escena": "Imagen dividida en dos lados (40 % izquierda, 60 % derecha) con una línea vertical suave. Misma mesa de noche de madera de un cuarto de adultos de madrugada, luz tenue azulada. Sin humo, sin brillo rojo, sin cargadores deformados.",
+   "comparativa": "Lado izquierdo (40 %, un poco más oscuro): un cargador común en el enchufe de la pared con el celular conectado directo por el cable, el ícono del rayo de carga visible en la pantalla y un despertador digital al lado que marca 3:00. Lado derecho (60 %): el adaptador plateado grande y nítido en la punta del cable, con sus dos botones laterales salidos y el celular ya separado unos milímetros del adaptador; la pantalla del celular muestra 100 % sin el rayo de carga.",
+   "textos": [
+    "A las 3 a. m., ya cortó",
+    "Sigue en sobrecarga",
+    "Cortó al 100 %"
+   ],
+   "variantes": [
+    {
+     "nombre": "A",
+     "escena": "Mesa de noche de madrugada con luz cálida y tenue. En primer plano, grande y nítido, el celular con la pantalla al 100 %, separado unos milímetros del adaptador plateado, que quedó en la punta del cable con los dos botones salidos. Al fondo, desenfocada, la mujer dormida y tranquila en su cama.",
+     "textos": [
+      "Duerme tranquila: ya cortó solo",
+      "Empuja el celular al 100 %",
+      "Corte que se ve"
+     ]
+    },
+    {
+     "nombre": "C",
+     "escena": "Macro del instante del corte: los dos botones laterales del adaptador plateado salen y separan el celular del adaptador; la pantalla del celular al 100 % visible. Fondo de mesa de noche desenfocado, luz nocturna suave.",
+     "textos": [
+      "Al 100 %, empuja y corta",
+      "Dos botones",
+      "Corte físico"
+     ]
+    }
+   ],
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "textos",
+     "cambio": "Etiqueta izquierda «Sigue calentándose» → «Sigue en sobrecarga» (nivel de peligro aprobado)"
+    }
+   ]
+  },
+  "hero-cantidad.imagen_2": {
+   "que": "Transformación: ella duerme tranquila y el celular ya está separado del adaptador.",
+   "producto": true,
+   "persona": true,
+   "escena": "Mesa de noche de madrugada con luz cálida y tenue. En primer plano, grande y nítido, el celular al 100 % separado unos milímetros del adaptador plateado, con los dos botones salidos; el adaptador queda en la punta del cable. Al fondo, desenfocada, la mujer dormida.",
+   "persona_accion": "Ella duerme tranquila de lado, con el rostro relajado y desenfocado al fondo.",
+   "textos": [
+    "Duerme tranquila: ya cortó solo",
+    "Empuja el celular al 100 %",
+    "Corte que se ve"
+   ],
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "hero-cantidad.imagen_3": {
+   "que": "Mecanismo: el producto de cerca con sus partes clave.",
+   "producto": true,
+   "persona": false,
+   "escena": "Macro del adaptador plateado sobre una superficie limpia gris azulada, en ángulo de tres cuartos, con el conector USB-C macho al frente y los dos botones laterales a la vista (uno ligeramente salido). Luz de estudio suave con reflejos limpios en el aluminio.",
+   "textos": [
+    "Un cubito que controla la carga",
+    "Dos botones que empujan",
+    "Contra sobrecarga y recalentamiento",
+    "Hasta 140 W"
+   ],
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "textos",
+     "cambio": "Alineado al hero del dueño: «controla la carga» y «sobrecarga»"
+    }
+   ]
+  },
+  "hero-cantidad.imagen_4": {
+   "que": "Comparativa frente a la alternativa: estar pendiente de madrugada.",
+   "producto": true,
+   "persona": true,
+   "escena": "Imagen dividida en dos lados. Misma mesa de noche de un cuarto de adultos de noche.",
+   "persona_accion": "Lado izquierdo: la mano de ella, con cara de sueño, tocando el cargador del celular en la mesa de noche, iluminada solo por la luz del celular. Lado derecho: ella dormida al fondo.",
+   "comparativa": "Lado izquierdo: de noche, la mano de la mujer tocando el cargador común para ver si está caliente, con cara de sueño. Lado derecho: la misma mesa con el adaptador plateado en la punta del cable y el celular ya separado, pantalla al 100 %, y ella dormida al fondo, tranquila.",
+   "textos": [
+    "Ya no te levantas a revisar",
+    "Sobrecarga de madrugada",
+    "Corta mientras duermes"
+   ],
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "textos",
+     "cambio": "Etiqueta izquierda → «Sobrecarga de madrugada»"
+    }
+   ]
+  },
+  "hero-cantidad.imagen_5": {
+   "que": "Uso real con el avatar: lo conecta antes de dormir, tranquila.",
+   "producto": true,
+   "persona": true,
+   "escena": "Cuarto de adultos cálido, lámpara de la mesa de noche prendida. El celular sobre la mesa de noche, conectado al adaptador plateado en la punta del cable.",
+   "persona_accion": "Ella, sentada en el borde de la cama con ropa cómoda de casa, conecta el celular al adaptador y sonríe tranquila.",
+   "textos": [
+    "Conectas y te acuestas",
+    "Tu cable de siempre"
+   ],
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "hero-cantidad.imagen_6": {
+   "que": "Versatilidad y razón de los packs: uno en cada cuarto.",
+   "producto": true,
+   "persona": false,
+   "escena": "Tríptico de tres espacios de la casa, cada uno con un adaptador plateado en la punta del cable y el equipo ya separado: 1) la mesa de noche del cuarto de ella con su celular; 2) la mesa de noche de un cuarto infantil con una mochila y un peluche, sin personas, con un celular; 3) una tableta sobre el mueble de la sala.",
+   "textos": [
+    "Uno en cada cuarto",
+    "Tu cuarto",
+    "El de los hijos",
+    "La sala"
+   ],
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "carrusel-imagenes.imagen1": {
+   "que": "El adaptador va en tu cable.",
+   "producto": true,
+   "persona": false,
+   "escena": "Primer plano de dos manos conectando la punta USB-C de un cable blanco en el adaptador plateado, sobre una mesa de noche clara.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "carrusel-imagenes.imagen2": {
+   "que": "Conectas el celular y te acuestas.",
+   "producto": true,
+   "persona": false,
+   "escena": "Primer plano de una mano conectando el celular al conector USB-C macho del adaptador, que está en la punta del cable, sobre la mesa de noche; luz cálida de lámpara.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "carrusel-imagenes.imagen3": {
+   "que": "La prueba: al 100 %, empuja el celular y corta.",
+   "producto": true,
+   "persona": false,
+   "escena": "El celular sobre la mesa de noche, separado unos milímetros del adaptador plateado, con los dos botones laterales salidos; pantalla al 100 % sin rayo de carga. Luz suave de mañana.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "grid-dolores.item1": {
+   "que": "Dolor: sobrecarga de madrugada. Sin el producto y sin texto.",
+   "producto": false,
+   "persona": false,
+   "escena": "Mesa de noche a oscuras en un cuarto de adultos; un celular conectado a un cargador común en el enchufe, la pantalla encendida con 100 % y el rayo de carga; al lado un despertador que marca 1:00.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
+    }
+   ]
+  },
+  "grid-dolores.item2": {
+   "que": "Dolor: se recalienta, horas de calor en el enchufe. Sin el producto y sin texto.",
+   "producto": false,
+   "persona": false,
+   "escena": "Primer plano de un cargador de pared blanco común enchufado junto a la mesa de noche, con el cable al celular; luz nocturna tenue. Sin humo, sin brillo rojo, sin deformaciones.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
+    }
+   ]
+  },
+  "grid-dolores.item3": {
+   "que": "Dolor: a centímetros de tu almohada. Sin el producto y sin texto.",
+   "producto": false,
+   "persona": false,
+   "escena": "Vista lateral de una cama de adultos con la almohada y, a pocos centímetros, la mesa de noche con el celular cargando con un cargador común; cuarto a oscuras, toda la casa duerme. Sin personas visibles.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
+    }
+   ]
+  },
+  "grid-dolores.item4": {
+   "que": "Dolor: un riesgo real que nadie vigila de noche. Sin el producto y sin texto.",
+   "producto": false,
+   "persona": true,
+   "escena": "Cuarto de adultos de madrugada, luz tenue de la pantalla del celular.",
+   "persona_accion": "Ella, despierta y con cara de sueño, sentada en la cama mirando hacia la mesa de noche donde el celular sigue cargando con un cargador común.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Alineado a los títulos nuevos de la sección de dolores"
+    }
+   ]
+  },
+  "galeria-ideas.idea1": {
+   "que": "Tu cuarto: tu celular.",
+   "producto": true,
+   "persona": true,
+   "escena": "Mesa de noche de un cuarto de adultos, cálida y ordenada, con un libro y unas gafas; el celular conectado al adaptador plateado en la punta del cable.",
+   "persona_accion": "Ella apaga la lámpara de la mesa de noche, tranquila, a punto de dormir.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "galeria-ideas.idea2": {
+   "que": "El cuarto de los hijos: sin personas.",
+   "producto": true,
+   "persona": false,
+   "escena": "Mesa de noche de un cuarto juvenil con una mochila y unos audífonos, sin personas; el celular conectado al adaptador plateado en la punta del cable; luz tenue de noche.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "galeria-ideas.idea3": {
+   "que": "La sala: la tableta.",
+   "producto": true,
+   "persona": false,
+   "escena": "Tableta sobre el mueble de la sala junto a un control remoto, conectada al adaptador plateado en la punta del cable; luz cálida de lámpara de pie.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "galeria-ideas.idea4": {
+   "que": "El cuarto de visitas.",
+   "producto": true,
+   "persona": false,
+   "escena": "Cuarto de visitas ordenado con cama tendida y una maleta pequeña; en la mesa de noche, un celular conectado al adaptador plateado en la punta del cable.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "problemas-filas.fila1": {
+   "que": "Corte físico al 100 %.",
+   "producto": true,
+   "persona": false,
+   "escena": "El celular separado unos milímetros del adaptador plateado, con los dos botones laterales salidos; pantalla al 100 %. Fondo limpio azul noche.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "problemas-filas.fila2": {
+   "que": "Protección contra sobrecarga.",
+   "producto": true,
+   "persona": false,
+   "escena": "Macro del adaptador plateado sobre fondo azul noche degradado, reflejos limpios, aspecto sólido y seguro.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    },
+    {
+     "fecha": "2026-11-20",
+     "parte": "que",
+     "cambio": "Fila renombrada en la landing"
+    }
+   ]
+  },
+  "problemas-filas.fila3": {
+   "que": "Carga rápida hasta 140 W.",
+   "producto": true,
+   "persona": false,
+   "escena": "Adaptador plateado en la punta del cable de un cargador de pared compacto, con el celular conectado, sobre un escritorio claro; enfoque en el adaptador.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "problemas-filas.fila4": {
+   "que": "Reconoce el dispositivo.",
+   "producto": true,
+   "persona": false,
+   "escena": "Adaptador plateado conectado a un celular que muestra en pantalla la animación de carga iniciada; primer plano limpio.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "problemas-filas.fila5": {
+   "que": "Botón manual.",
+   "producto": true,
+   "persona": false,
+   "escena": "Primer plano de un dedo presionando uno de los botones laterales del adaptador plateado conectado al celular.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "pasos.paso1": {
+   "que": "Paso 1: ponlo en tu cable.",
+   "producto": true,
+   "persona": false,
+   "escena": "Manos conectando la punta USB-C de un cable en el adaptador plateado; fondo claro.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "pasos.paso2": {
+   "que": "Paso 2: conecta tu celular.",
+   "producto": true,
+   "persona": false,
+   "escena": "Mano conectando el celular al conector USB-C macho del adaptador, que está en la punta del cable; mesa de noche.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "pasos.paso3": {
+   "que": "Paso 3: apaga la luz y duerme.",
+   "producto": true,
+   "persona": false,
+   "escena": "Mesa de noche en un cuarto oscuro y tranquilo; el celular separado del adaptador con los botones salidos, pantalla al 100 %. Sin personas.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "comparativa.imagen_a": {
+   "que": "Con Auto-Stop.",
+   "producto": true,
+   "persona": false,
+   "escena": "El celular separado unos milímetros del adaptador plateado con los botones salidos, pantalla al 100 % sin rayo, sobre una mesa de noche clara.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  },
+  "comparativa.imagen_b": {
+   "que": "Solo el cargador.",
+   "producto": false,
+   "persona": false,
+   "escena": "El celular conectado directo a un cargador común, pantalla al 100 % con el rayo de carga visible, sobre la misma mesa de noche clara, de noche.",
+   "historial": [
+    {
+     "fecha": "2026-11-20",
+     "parte": "todo",
+     "cambio": "Relanzamiento: ángulo peligro/seguridad del hogar (copy v4 + hero del dueño)"
+    }
+   ]
+  }
+ }
+}

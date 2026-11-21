@@ -1,0 +1,291 @@
+[
+  {
+    "seccion": "PP · Hero + Cantidad",
+    "tipo": "pp-hero-cantidad",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El celular de tu hijo llega al 100 % y sigue conectado toda la noche",
+    "id": "hero-cantidad.imagen_1",
+    "donde": "Imagen 1 (la principal)",
+    "n": 1
+  },
+  {
+    "seccion": "PP · Hero + Cantidad",
+    "tipo": "pp-hero-cantidad",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El celular de tu hijo llega al 100 % y sigue conectado toda la noche",
+    "id": "hero-cantidad.imagen_2",
+    "donde": "Imagen 2",
+    "n": 2
+  },
+  {
+    "seccion": "PP · Hero + Cantidad",
+    "tipo": "pp-hero-cantidad",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El celular de tu hijo llega al 100 % y sigue conectado toda la noche",
+    "id": "hero-cantidad.imagen_3",
+    "donde": "Imagen 3",
+    "n": 3
+  },
+  {
+    "seccion": "PP · Hero + Cantidad",
+    "tipo": "pp-hero-cantidad",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El celular de tu hijo llega al 100 % y sigue conectado toda la noche",
+    "id": "hero-cantidad.imagen_4",
+    "donde": "Imagen 4",
+    "n": 4
+  },
+  {
+    "seccion": "PP · Hero + Cantidad",
+    "tipo": "pp-hero-cantidad",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El celular de tu hijo llega al 100 % y sigue conectado toda la noche",
+    "id": "hero-cantidad.imagen_5",
+    "donde": "Imagen 5",
+    "n": 5
+  },
+  {
+    "seccion": "PP · Hero + Cantidad",
+    "tipo": "pp-hero-cantidad",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "El celular de tu hijo llega al 100 % y sigue conectado toda la noche",
+    "id": "hero-cantidad.imagen_6",
+    "donde": "Imagen 6",
+    "n": 6
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Mira cómo corta solo al 100 %",
+    "id": "carrusel-imagenes.imagen1",
+    "donde": "Imagen 1 · Va en el puerto del celular",
+    "contexto": "",
+    "n": 7
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Mira cómo corta solo al 100 %",
+    "id": "carrusel-imagenes.imagen2",
+    "donde": "Imagen 2 · El cable entra en el adaptador",
+    "contexto": "",
+    "n": 8
+  },
+  {
+    "seccion": "PP · Carrusel imágenes",
+    "tipo": "pp-carrusel-imagenes",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "titulo_seccion": "Mira cómo corta solo al 100 %",
+    "id": "carrusel-imagenes.imagen3",
+    "donde": "Imagen 3 · Al 100 %, deja de cargar",
+    "contexto": "",
+    "n": 9
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo conecta, se duerme y nadie lo desconecta",
+    "id": "grid-dolores.item1",
+    "donde": "Tarjeta 1 · Se queda dormido",
+    "contexto": "Se queda dormido — Pone a cargar el celular, ve un video más y se duerme.",
+    "n": 10
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo conecta, se duerme y nadie lo desconecta",
+    "id": "grid-dolores.item2",
+    "donde": "Tarjeta 2 · Se llena en pocas horas",
+    "contexto": "Se llena en pocas horas — Y el resto de la noche lo pasa al 100 %.",
+    "n": 11
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo conecta, se duerme y nadie lo desconecta",
+    "id": "grid-dolores.item3",
+    "donde": "Tarjeta 3 · No puedes estar pendiente",
+    "contexto": "No puedes estar pendiente — Desconectárselo cada noche no se puede.",
+    "n": 12
+  },
+  {
+    "seccion": "PP · Grid de dolores",
+    "tipo": "pp-grid-dolores",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Lo conecta, se duerme y nadie lo desconecta",
+    "id": "grid-dolores.item4",
+    "donde": "Tarjeta 4 · La batería lo paga",
+    "contexto": "La batería lo paga — Meses después, el celular que le compraste ya no aguanta el día.",
+    "n": 13
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Conectas, duermes, corta solo",
+    "id": "galeria-ideas.idea1",
+    "donde": "Tarjeta 1 · El celular de tu hijo",
+    "contexto": "El celular de tu hijo — En la mesa de noche, toda la noche, sin que siga cargando al 100 %.",
+    "n": 14
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Conectas, duermes, corta solo",
+    "id": "galeria-ideas.idea2",
+    "donde": "Tarjeta 2 · Tu celular",
+    "contexto": "Tu celular — El que también dejas cargando hasta la mañana.",
+    "n": 15
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Conectas, duermes, corta solo",
+    "id": "galeria-ideas.idea3",
+    "donde": "Tarjeta 3 · La tableta de las tareas",
+    "contexto": "La tableta de las tareas — Celulares, tabletas y portátiles USB-C compatibles.",
+    "n": 16
+  },
+  {
+    "seccion": "PP · Galería ideas",
+    "tipo": "pp-galeria-ideas",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "titulo_seccion": "Conectas, duermes, corta solo",
+    "id": "galeria-ideas.idea4",
+    "donde": "Tarjeta 4 · El portátil USB-C",
+    "contexto": "El portátil USB-C — Carga rápida hasta 140 W con equipos compatibles.",
+    "n": 17
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Un cubito que",
+    "id": "problemas-filas.fila1",
+    "donde": "Fila 1 · Desconexión automática",
+    "contexto": "Desconexión automática — Corta la carga cuando la batería llega al 100 %, y vuelve a cargar sola la noche siguiente.",
+    "n": 18
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Un cubito que",
+    "id": "problemas-filas.fila2",
+    "donde": "Fila 2 · Carga rápida hasta 140 W / 5 A",
+    "contexto": "Carga rápida hasta 140 W / 5 A — No le quita velocidad con cargador y cable compatibles.",
+    "n": 19
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Un cubito que",
+    "id": "problemas-filas.fila3",
+    "donde": "Fila 3 · Reconoce el dispositivo",
+    "contexto": "Reconoce el dispositivo — Detecta los equipos compatibles que conectas.",
+    "n": 20
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Un cubito que",
+    "id": "problemas-filas.fila4",
+    "donde": "Fila 4 · Protección integrada",
+    "contexto": "Protección integrada — Contra cortocircuito y sobrecalentamiento.",
+    "n": 21
+  },
+  {
+    "seccion": "PP · Problemas en filas",
+    "tipo": "pp-problemas-filas",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Un cubito que",
+    "id": "problemas-filas.fila5",
+    "donde": "Fila 5 · Botón manual",
+    "contexto": "Botón manual — Para cortar la carga tú mismo cuando quieras.",
+    "n": 22
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así de fácil: 3 pasos",
+    "id": "pasos.paso1",
+    "donde": "Paso 1 · Ponlo en su celular",
+    "contexto": "Ponlo en su celular — El adaptador va en el puerto USB-C del celular y ahí se queda.",
+    "n": 23
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así de fácil: 3 pasos",
+    "id": "pasos.paso2",
+    "donde": "Paso 2 · Conecta su cable de siempre",
+    "contexto": "Conecta su cable de siempre — El cable entra en el adaptador, como en cualquier carga.",
+    "n": 24
+  },
+  {
+    "seccion": "PP · Pasos",
+    "tipo": "pp-pasos",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Así de fácil: 3 pasos",
+    "id": "pasos.paso3",
+    "donde": "Paso 3 · Que se duerma tranquilo",
+    "contexto": "Que se duerma tranquilo — Al llegar al 100 %, el adaptador corta la carga solo. Cada noche, igual.",
+    "n": 25
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Auto-Stop vs. el cargador solo",
+    "id": "comparativa.imagen_a",
+    "donde": "Imagen (fondo transparente ideal)",
+    "n": 26
+  },
+  {
+    "seccion": "PP · Comparativa",
+    "tipo": "pp-comparativa",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "titulo_seccion": "Auto-Stop vs. el cargador solo",
+    "id": "comparativa.imagen_b",
+    "donde": "Imagen (opcional)",
+    "n": 27
+  }
+]

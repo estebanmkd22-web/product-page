@@ -1,0 +1,781 @@
+{
+ "titulo": "Adaptador Auto-Stop",
+ "moneda": "$",
+ "locale": "es-CO",
+ "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+ "producto": {
+  "title": "Adaptador Auto-Stop USB-C",
+  "selected_or_first_available_variant": {
+   "id": 1,
+   "price": 8990000,
+   "compare_at_price": 10990000,
+   "available": true
+  },
+  "media": [
+   {
+    "preview_image": {
+     "src": "../../imagenes/adaptador-auto-stop/producto.png",
+     "alt": "Adaptador Auto-Stop"
+    }
+   }
+  ]
+ },
+ "secciones": [
+  {
+   "tipo": "pp-estilos",
+   "settings": {
+    "acento": "#1f3a5f",
+    "texto": "#1c2430",
+    "texto_2": "#5b6675",
+    "fondo": "#ffffff",
+    "fondo_2": "#e8edf3",
+    "boton": "#2e8b57",
+    "boton_texto": "#ffffff",
+    "estrella": "#e0a83a",
+    "ok": "#2e8b57",
+    "radio": 16
+   }
+  },
+  {
+   "tipo": "pp-ticker",
+   "settings": {
+    "fondo": "#1f3a5f",
+    "texto": "#ffffff",
+    "separador": "✦"
+   },
+   "blocks": [
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Se desconecta solo al llegar al 100 %"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Black Days: hasta el 30 de noviembre"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Envío gratis a toda Colombia"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Garantía de 30 días"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-hero-cantidad",
+   "settings": {
+    "fondo": "#ffffff",
+    "proporcion": "1 / 1",
+    "navegacion": "miniaturas",
+    "mostrar_rating": true,
+    "rating": "4.9/5",
+    "rating_texto": "· 127 reseñas",
+    "titulo": "El celular de tu hijo llega al 100 % <em>y sigue conectado toda la noche</em>",
+    "tamano_titulo": 26,
+    "texto": "Cada hora al 100 % desgasta la batería del celular que le compraste. El Adaptador Auto-Stop va entre el cable y el celular y corta la carga solo, aunque él esté dormido.",
+    "icono_beneficios": "✓",
+    "ahorro_texto": "Ahorras",
+    "oferta_label": "Oferta:",
+    "etiquetas_titulo": "Tu pedido incluye",
+    "boton_modo": "easysell",
+    "boton_texto": "COMPRA AHORA",
+    "tachado_en_boton": true,
+    "boton_pulse": true,
+    "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar"
+   },
+   "blocks": [
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Corta solo al 100 %</strong>, aunque él esté dormido."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Cuida la batería</strong> del celular que le compraste."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>No frena la carga rápida</strong> (hasta 140 W)."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Sirve en celular, tableta y portátil</strong> USB-C."
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "1 Unidad",
+      "precio": 89900,
+      "precio_antes": 109900,
+      "cantidad": 1,
+      "etiqueta": "Para el celular de tu hijo"
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "2 Unidades",
+      "precio": 149900,
+      "precio_antes": 219900,
+      "cantidad": 2,
+      "etiqueta": "Uno para tu hijo y otro para ti",
+      "destacar": "Más elegido",
+      "preseleccionado": true
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "camion",
+      "texto": "Envío express <strong>GRATIS</strong> a toda Colombia",
+      "tachado": "$21.000"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "regalo",
+      "texto": "<strong>15 % OFF</strong> en tu segunda compra (te llega por WhatsApp)"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "escudo",
+      "texto": "Garantía de <strong>30 días</strong>, la reclamas por WhatsApp"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-iconos",
+   "settings": {
+    "estilo": "circulos",
+    "espacio": 8,
+    "titulo": ""
+   },
+   "blocks": [
+    {
+     "type": "icono",
+     "settings": {
+      "icono": "check",
+      "texto": "Corta solo al 100 %"
+     }
+    },
+    {
+     "type": "icono",
+     "settings": {
+      "icono": "reloj",
+      "texto": "Carga rápida hasta 140 W"
+     }
+    },
+    {
+     "type": "icono",
+     "settings": {
+      "icono": "usb",
+      "texto": "Celular, tableta y portátil"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-carrusel-imagenes",
+   "settings": {
+    "titulo": "Mira cómo <em>corta solo al 100 %</em>",
+    "texto": "Él lo conecta como siempre.",
+    "proporcion": "4 / 5"
+   },
+   "blocks": [
+    {
+     "type": "imagen",
+     "settings": {
+      "etiqueta": "Va en el puerto del celular"
+     }
+    },
+    {
+     "type": "imagen",
+     "settings": {
+      "etiqueta": "El cable entra en el adaptador"
+     }
+    },
+    {
+     "type": "imagen",
+     "settings": {
+      "etiqueta": "Al 100 %, deja de cargar"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-grid-dolores",
+   "settings": {
+    "fondo": "fondo",
+    "etiqueta": "Cada noche en su cuarto",
+    "titulo": "Lo conecta, se duerme <em>y nadie lo desconecta</em>",
+    "texto": "Por ejemplo: lo pone a cargar a las 10, a medianoche ya está lleno y sigue conectado hasta que suena la alarma.",
+    "columnas_movil": "2",
+    "columnas_pc": "4",
+    "proporcion": "1 / 1",
+    "cierre": "No es sobrecarga: <em>son horas al 100 % que no necesita.</em>"
+   },
+   "blocks": [
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "Se queda dormido",
+      "texto": "Pone a cargar el celular, ve un video más y se duerme."
+     }
+    },
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "Se llena en pocas horas",
+      "texto": "Y el resto de la noche lo pasa al 100 %."
+     }
+    },
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "No puedes estar pendiente",
+      "texto": "Desconectárselo cada noche no se puede."
+     }
+    },
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "La batería lo paga",
+      "texto": "Meses después, el celular que le compraste ya no aguanta el día."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-galeria-ideas",
+   "settings": {
+    "color_fondo": "#e8edf3",
+    "color_texto": "#1c2430",
+    "color_acento": "#1f3a5f",
+    "nieve": false,
+    "etiqueta": "Dónde se usa",
+    "titulo": "Conectas, duermes, <em>corta solo</em>",
+    "texto": "En todo lo que se carga de noche con USB-C.",
+    "proporcion": "4 / 3",
+    "columnas_pc": "3"
+   },
+   "blocks": [
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Su cuarto",
+      "titulo": "El celular de tu hijo",
+      "texto": "En la mesa de noche, toda la noche, sin que siga cargando al 100 %."
+     }
+    },
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Tu cuarto",
+      "titulo": "Tu celular",
+      "texto": "El que también dejas cargando hasta la mañana."
+     }
+    },
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Tableta",
+      "titulo": "La tableta de las tareas",
+      "texto": "Celulares, tabletas y portátiles USB-C compatibles."
+     }
+    },
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Portátil",
+      "titulo": "El portátil USB-C",
+      "texto": "Carga rápida hasta 140 W con equipos compatibles."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-problemas-filas",
+   "settings": {
+    "color_fondo": "#ffffff",
+    "color_tarjeta": "#e8edf3",
+    "color_acento": "#1f3a5f",
+    "color_dorado": "#2e8b57",
+    "color_texto": "#1c2430",
+    "adorno": false,
+    "titulo": "Un cubito que",
+    "titulo_dorado": "trabaja mientras él duerme",
+    "titulo_fin": "",
+    "cierre": ""
+   },
+   "blocks": [
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "check",
+      "titulo": "Desconexión automática",
+      "puntos": "Corta la carga cuando la batería llega al 100 %, y vuelve a cargar sola la noche siguiente."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "rayo",
+      "titulo": "Carga rápida hasta 140 W / 5 A",
+      "puntos": "No le quita velocidad con cargador y cable compatibles."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "lupa",
+      "titulo": "Reconoce el dispositivo",
+      "puntos": "Detecta los equipos compatibles que conectas."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "escudo",
+      "titulo": "Protección integrada",
+      "puntos": "Contra cortocircuito y sobrecalentamiento."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "bombillo",
+      "titulo": "Botón manual",
+      "puntos": "Para cortar la carga tú mismo cuando quieras."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-pasos",
+   "settings": {
+    "estilo": "fotos",
+    "fondo": "fondo",
+    "titulo": "Así de fácil: <em>3 pasos</em>",
+    "texto": ""
+   },
+   "blocks": [
+    {
+     "type": "paso",
+     "settings": {
+      "titulo": "Ponlo en su celular",
+      "texto": "El adaptador va en el puerto USB-C del celular y ahí se queda."
+     }
+    },
+    {
+     "type": "paso",
+     "settings": {
+      "titulo": "Conecta su cable de siempre",
+      "texto": "El cable entra en el adaptador, como en cualquier carga."
+     }
+    },
+    {
+     "type": "paso",
+     "settings": {
+      "titulo": "Que se duerma tranquilo",
+      "texto": "Al llegar al 100 %, el adaptador corta la carga solo. Cada noche, igual."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-esperar",
+   "settings": {
+    "fondo": "fondo-2",
+    "color_acento": "#1f3a5f",
+    "color_icono": "#2e8b57",
+    "etiqueta": "Una noche con Auto-Stop",
+    "titulo": "Qué pasa <em>mientras duerme</em>",
+    "texto": "Él no tiene que hacer nada distinto. El resto lo hace el adaptador."
+   },
+   "blocks": [
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "reloj",
+      "periodo": "Al acostarse",
+      "texto": "Conecta su cable al adaptador y el celular empieza a cargar, con carga rápida si su equipo es compatible."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "reloj",
+      "periodo": "Al llegar al 100 %",
+      "texto": "El adaptador corta la carga solo."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "reloj",
+      "periodo": "El resto de la noche",
+      "texto": "Ya no está cargando: descansa la batería."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "calendario",
+      "periodo": "En la mañana",
+      "texto": "Lo desconecta y sale con la batería cargada."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "calendario",
+      "periodo": "Noche tras noche",
+      "texto": "Vuelve a cargar solo cada noche, y la batería del celular que le compraste pasa menos horas al 100 %."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-comparativa",
+   "settings": {
+    "etiqueta": "La diferencia",
+    "titulo": "Auto-Stop vs. <em>el cargador solo</em>",
+    "texto": "El mismo cable, con o sin el adaptador.",
+    "color_destacado": "#1f3a5f",
+    "nombre_a": "Con Auto-Stop",
+    "sub_a": "Entre el cable y el celular",
+    "nombre_b": "Solo el cargador",
+    "sub_b": "Como carga hoy",
+    "pie_izq": "Auto-Stop",
+    "pie_der": "Corta solo al 100 %"
+   },
+   "blocks": [
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Al llegar al 100 %",
+      "subtitulo": "Qué pasa",
+      "ok_a": true,
+      "valor_a": "Corta la carga",
+      "ok_b": false,
+      "valor_b": "Sigue conectado"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Toda la noche",
+      "subtitulo": "Mientras duerme",
+      "ok_a": true,
+      "valor_a": "Deja de cargar",
+      "ok_b": false,
+      "valor_b": "Cargando al 100 %"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Quién lo desconecta",
+      "subtitulo": "Cada noche",
+      "ok_a": true,
+      "valor_a": "El adaptador",
+      "ok_b": false,
+      "valor_b": "Tú, o nadie"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Carga rápida",
+      "subtitulo": "Velocidad",
+      "ok_a": true,
+      "valor_a": "Hasta 140 W compatibles",
+      "ok_b": true,
+      "valor_b": "Igual"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Cortar a mano",
+      "subtitulo": "Cuando quieras",
+      "ok_a": true,
+      "valor_a": "Con un botón",
+      "ok_b": false,
+      "valor_b": "Desenchufar"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-resenas",
+   "settings": {
+    "etiqueta": "Opiniones",
+    "titulo": "Lo conecta y <em>se duerme tranquilo</em>",
+    "nota": "4.9",
+    "cantidad": "127 reseñas",
+    "visibles": 3
+   },
+   "blocks": [
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Ya no tengo que estar pendiente",
+      "texto": "Mi hijo de 14 se dormía con el celular conectado. Ahora lo conecta al adaptador como siempre y corta solo.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Bogotá",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Carga igual de rápido",
+      "texto": "Pensé que iba a demorar la carga, pero con su cargador va igual.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Medellín",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Pedí dos",
+      "texto": "Uno para el celular de mi hija y otro para el mío, que también lo dejo toda la noche.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Barranquilla",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Se nota cuando corta",
+      "texto": "En la mañana el celular ya no muestra el ícono de carga aunque el cable siga puesto.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Cali",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Lo dejó puesto",
+      "texto": "Se lo puse en el celular y ahí se quedó. Él ni se da cuenta, conecta su cable igual que antes.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Bucaramanga",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Para el iPhone 15",
+      "texto": "Lo uso en mi iPhone 15 y funciona perfecto con el cargador que ya tenía.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Pereira",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Pequeñito",
+      "texto": "Es un cubito que casi no se nota en el celular. Pensé que iba a ser más grande.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Cartagena",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Llegó rápido",
+      "texto": "Llegó en tres días y pagué al recibir. Me escribieron por WhatsApp para confirmar.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Manizales",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "También en la tableta",
+      "texto": "Lo probé en la tableta de las tareas de mi hijo menor y también corta al llenarse.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Ibagué",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Tranquilidad de noche",
+      "texto": "Ya no me quedo pensando si el celular de mi hija sigue cargando toda la noche.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Villavicencio",
+      "verificado": false
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-garantia",
+   "settings": {
+    "color_tarjeta": "#1f3a5f",
+    "color_texto": "#ffffff",
+    "color_sello": "#1f3a5f",
+    "sello_arriba": "Garantía",
+    "sello_numero": "30",
+    "sello_abajo": "Días",
+    "etiqueta": "Compra tranquila",
+    "titulo": "30 días de garantía por WhatsApp",
+    "texto": "Si tu adaptador presenta una falla en los primeros 30 días, nos escribes por WhatsApp y la gestionamos. Envío gratis y pagas al recibir."
+   },
+   "blocks": [
+    {
+     "type": "punto",
+     "settings": {
+      "icono": "escudo",
+      "texto": "Garantía 30 días"
+     }
+    },
+    {
+     "type": "punto",
+     "settings": {
+      "icono": "pago",
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "punto",
+     "settings": {
+      "icono": "chat",
+      "texto": "Garantía por WhatsApp"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-faq",
+   "settings": {
+    "estilo": "tarjetas",
+    "fondo": "fondo-2",
+    "etiqueta": "Preguntas frecuentes",
+    "titulo": "Resolvemos tus dudas",
+    "texto": "",
+    "abrir_primera": true
+   },
+   "blocks": [
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Paola de Bogotá pregunta: ¿los celulares nuevos no se protegen solos de la sobrecarga?",
+      "respuesta": "<p>Sí, y por eso no hablamos de sobrecarga. El problema son las <strong>horas que pasa conectado al 100 %</strong>, que envejecen la batería. El adaptador corta la carga cuando se llena y esas horas se acaban.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Juliana de Manizales pregunta: mi celular ya tiene carga optimizada, ¿lo necesito?",
+      "respuesta": "<p>Si la tiene y está activada, ayuda. Pero no todos la traen ni la tienen prendida. El adaptador <strong>corta igual, sin configurar nada</strong>.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Diana de Medellín pregunta: ¿le sirve al celular de mi hijo? ¿Y al iPhone?",
+      "respuesta": "<p>Sirve para <strong>celulares, tabletas y portátiles con puerto USB-C</strong> compatibles, incluido el <strong>iPhone 15 en adelante</strong>. No sirve para iPhone con puerto Lightning, porque el adaptador va en el puerto del celular. Si tienes dudas con tu modelo, te lo confirmamos por WhatsApp cuando confirmemos tu pedido.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Carolina de Cali pregunta: ¿le quita velocidad a la carga rápida?",
+      "respuesta": "<p>No. Soporta <strong>hasta 140 W / 5 A</strong> con cargador y cable compatibles.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Natalia de Barranquilla pregunta: ¿cómo sé que de verdad cortó?",
+      "respuesta": "<p>Al llegar al 100 %, el celular <strong>deja de mostrar el ícono de carga</strong> aunque el cable siga puesto. Puedes verlo en la mañana.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Andrea de Bucaramanga pregunta: ¿y si mi hijo lo quita?",
+      "respuesta": "<p>Si lo quita, el celular carga como siempre, pero sin el corte. Como <strong>se queda puesto en el puerto del celular</strong> y vuelve a cargar solo cada noche, él conecta su cable al adaptador y no tiene que quitarlo para nada.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Laura de Pereira pregunta: ¿qué pasa si se daña?",
+      "respuesta": "<p>Tienes <strong>30 días de garantía</strong>. Si presenta una falla, nos escribes por WhatsApp y la gestionamos.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Sandra de Ibagué pregunta: ¿trae cable?",
+      "respuesta": "<p>Trae el adaptador. Usas <strong>el cable y el cargador que ya tienes</strong>.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Marta de Cartagena pregunta: ¿cómo pago y cuándo me llega?",
+      "respuesta": "<p>Pagas en efectivo cuando lo recibes. El <strong>envío express es gratis</strong> y llega en <strong>2 a 4 días</strong>. Te escribimos por WhatsApp para confirmar tu pedido.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-boton-fijo",
+   "settings": {
+    "boton_texto": "Lo quiero",
+    "subtexto": "Envío gratis · Pagas al recibir",
+    "precio_manual": 149900,
+    "aparecer": "despues_oferta"
+   }
+  }
+ ]
+}
