@@ -376,6 +376,7 @@
     font-size: 11px; font-weight: 700; color: var(--pp-texto-2);
   }
 
+  .pp .pp-hc__promesa { margin-top: -6px; font-size: 16px; font-weight: 700; line-height: 1.35; color: var(--pp-acento); }
   .pp-hc__price { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
   .pp-hc__now { font-size: 30px; font-weight: 900; line-height: 1; letter-spacing: -0.02em; }
   .pp-hc__before { font-size: 18px; font-weight: 600; color: var(--pp-texto-2); text-decoration: line-through; }
@@ -475,6 +476,10 @@
     <div class="pp-hero__info">
       {%- if section.settings.titulo != blank -%}
         <h1 class="pp-h pp-hero__title">{{ section.settings.titulo }}</h1>
+      {%- endif -%}
+
+      {%- if section.settings.promesa != blank -%}
+        <p class="pp-hc__promesa">{{ section.settings.promesa }}</p>
       {%- endif -%}
 
       {%- if pack_ini -%}
@@ -838,6 +843,11 @@
       "id": "titulo",
       "label": "Titular (lo que pongas en cursiva sale en color de acento)",
       "default": "Tu titular <em>con la parte fuerte en cursiva</em>"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "promesa",
+      "label": "Línea de promesa debajo del título (opcional)"
     },
     {
       "type": "text",

@@ -84,28 +84,28 @@
         "beneficio_1": {
           "type": "beneficio",
           "settings": {
-            "texto": "&nbsp;<strong>Duerme tranquila:</strong> tu celular no se queda cargando hasta el amanecer.&nbsp;",
+            "texto": "Corta la carga al 100 % <em>mientras duermes</em>",
             "icono": "ninguno"
           }
         },
         "beneficio_2": {
           "type": "beneficio",
           "settings": {
-            "texto": "&nbsp;<strong>Cuida tu batería</strong> y no frena la carga rápida.&nbsp;",
+            "texto": "Lo ves: <em>el celular amanece separado del adaptador</em>",
             "icono": "ninguno"
           }
         },
         "beneficio_3": {
           "type": "beneficio",
           "settings": {
-            "texto": "&nbsp;<strong>Protección contra sobrecalentamiento</strong> y cortocircuito.&nbsp;",
+            "texto": "Protege contra sobrecarga <em>y sobrecalentamiento</em>",
             "icono": "ninguno"
           }
         },
         "beneficio_4": {
           "type": "beneficio",
           "settings": {
-            "texto": "<strong>Sirve en celular, tableta y portátil</strong> USB-C.",
+            "texto": "Funciona con <em>celulares USB-C e iPhone 15 en adelante</em>",
             "icono": "ninguno"
           }
         },
@@ -182,11 +182,11 @@
         "mostrar_rating": true,
         "rating": "4.9/5",
         "rating_texto": "· 127 reseñas de clientes satisfechos",
-        "titulo": "Mientras duermes y sigue cargando el teléfono, ese sobrecalentamiento <em>no lo controlas</em>&nbsp;",
+        "titulo": "Auto-Stop: adaptador anti-sobrecarga con <em>desconexión automática</em>",
         "zonas_titulo": "",
         "zonas": "",
         "tamano_titulo": 26,
-        "texto": "&nbsp;El peligro es que no controlas el sobrecalentamiento. Al llegar al 100 %, Auto-Stop empuja el celular y deja de cargar&nbsp;",
+        "texto": "Tu cargador sigue trabajando y calentándose toda la noche, aunque el celular ya esté lleno. Auto-Stop va en tu cable: al 100 %, sus dos botones empujan el celular y cortan la carga.",
         "icono_beneficios": "✓",
         "ahorro_texto": "Ahorras",
         "oferta_label": "Oferta:",
@@ -197,7 +197,8 @@
         "boton_pulse": true,
         "ir_a_checkout": true,
         "boton_enlace": "",
-        "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar"
+        "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar",
+        "promesa": "Al 100 %, empuja el celular y corta la carga"
       }
     },
     "iconos": {

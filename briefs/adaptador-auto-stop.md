@@ -110,3 +110,12 @@ Captura: `copy/adaptador-auto-stop/hero-definido-dueno.png`.
 - Permitido: «sobrecarga» como dolor («sigue en sobrecarga», «evita la sobrecarga mientras duermes»), «se recalienta», «riesgo real», «un cargador recalentado puede causar un accidente o un incendio» (como posibilidad, en dolores y FAQ), «protege tu hogar», «riesgo de recalentamiento reducido».
 - Prohibido: «evita incendios» o cualquier garantía de que no habrá accidentes; cifras sin fuente; llamas, humo o quemaduras en imágenes.
 - Textos aplicados directamente en la plantilla en vivo el 2026-11-20 (respaldo en `respaldos/tuespaciomarket/2026-11-20-textos-peligro/`).
+
+## Hero con las reglas nuevas (2026-11-21) [Usuario] — reemplaza el hero del 2026-11-20
+Aplicado en la tienda. Captura: `copy/adaptador-auto-stop/hero-intencion-en-vivo.png`.
+- **Título:** «Auto-Stop: adaptador anti-sobrecarga con <em>desconexión automática</em>»
+- **Línea de promesa (confirmada):** «Al 100 %, empuja el celular y corta la carga» (campo nuevo `promesa` en `pp-hero-cantidad`).
+- **Precio y estrellas:** fila de precio debajo de la promesa; estrellas debajo del precio («4.9/5 · 127 reseñas de clientes satisfechos»).
+- **Subtítulo:** «Tu cargador sigue trabajando y calentándose toda la noche, aunque el celular ya esté lleno. Auto-Stop va en tu cable: al 100 %, sus dos botones empujan el celular y cortan la carga.»
+- **Bullets:** Corta la carga al 100 % *mientras duermes* · Lo ves: *el celular amanece separado del adaptador* · Protege contra sobrecarga *y sobrecalentamiento* · Funciona con *celulares USB-C e iPhone 15 en adelante*.
+- El peligro y la emoción quedan en la imagen 1 («A las 3 a. m., ya cortó») y en el anuncio.
