@@ -39,7 +39,7 @@ Escribe `copy/<producto>/vN.md` (N = número de versión) con esta estructura, e
 ## Hero
 | # | Título (producto + solución, con <em>…</em>) | Claridad | Mecanismo | Relevancia | Brevedad | Credibilidad | Total |
 (8 opciones; las 3 mejores arriba, la recomendada con ★ y su porqué en 2 líneas)
-- Línea de promesa (1 o 2 opciones, solo si es real) → [respaldo]
+- Línea de promesa (opcional: propón 1 o 2 opciones si hay un resultado o respaldo real que lo amerite; el dueño decide si va) → [respaldo]
 - Subtítulo de justificación (2 opciones, una recomendada) → [respaldo]
 - Bullets (3 o 4): verbo de resultado + calificador, o `<strong>Diferencia.</strong>` + justificación → [respaldo]
 - Calificación (debajo del precio, solo datos reales)

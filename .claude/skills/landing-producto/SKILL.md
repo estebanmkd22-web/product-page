@@ -117,7 +117,7 @@ Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
 - **Orden del hero:**
   1. galería (imagen 1 la más importante);
   2. **título**;
-  3. **línea de promesa** (opcional);
+  3. **línea de promesa** (opcional: se propone, el dueño decide si va);
   4. **fila de precio** (ver «Precio en el hero»);
   5. **estrellas debajo del precio:** calificación + número de reseñas, solo datos reales;
   6. **subtítulo**;
@@ -130,7 +130,7 @@ Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
   - **no cuenta una escena ni una historia** («Se te cayeron…», «Cansado de…» van al anuncio y a la imagen 1);
   - nunca en pregunta; neutro en género cuando el público es mixto;
   - sin arranques gastados: «Dile adiós», «Olvídate de», «Descubre», «El secreto», «Revoluciona», «Por fin».
-- **Línea de promesa** (debajo del título, una línea corta, en color de acento): el resultado principal o el respaldo más fuerte, **solo si es real y tiene respaldo** en el brief («90 días de garantía por daños de fábrica», «Resultados en la primera aplicación» solo si es verdad). Nada de promesas médicas ni de lo que exige INVIMA sin registro.
+- **Línea de promesa: opcional, no obligatoria.** El copywriter la propone (1 o 2 opciones) y el dueño decide si va; si no va, el hero queda título → precio → estrellas → subtítulo, y el director no la exige. La sección `pp-hero-cantidad` todavía no tiene campo para ella: si el dueño la aprueba, se agrega antes de armar. Qué es (debajo del título, una línea corta, en color de acento): el resultado principal o el respaldo más fuerte, **solo si es real y tiene respaldo** en el brief («90 días de garantía por daños de fábrica», «Resultados en la primera aplicación» solo si es verdad). Nada de promesas médicas ni de lo que exige INVIMA sin registro.
 - **Subtítulo = la justificación** (2 o 3 líneas cortas, máximo unas 35 palabras). Responde «¿por qué funciona y por qué te creo?» con uno o varios de estos, en este orden:
   - la creencia o el enemigo que falló («Te dijeron que era genética», «la cajita de los baratos se quiebra con la primera caída»);
   - el mecanismo, en palabras simples («equilibra el pH folicular…», «el estuche recibe el golpe con los audífonos adentro»);
