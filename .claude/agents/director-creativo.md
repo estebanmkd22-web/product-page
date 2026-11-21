@@ -20,7 +20,7 @@ Califica cada punto del 1 al 5 y justifica en una línea:
 
 | # | Criterio | Qué miras |
 |---|---|---|
-| 0 | **Hero que confirma la intención (pesa doble)** | ¿En 3 segundos se entiende qué es, qué soluciona y por qué creerle? Título: ¿producto con nombre de mecanismo + lo que soluciona, de 3 a 7 palabras, sin historia ni escena, sin pregunta? Subtítulo: ¿justifica (enemigo, mecanismo, presentación, expectativa) sin repetir el título? Bullets: ¿verbo de resultado + calificador que quita una objeción, y pasan el «¿y qué?»? ¿El precio va debajo del título y las estrellas debajo del precio? ¿La imagen 1 lleva el dolor y la emoción? ¿Nombra el mismo producto y problema que el anuncio? Si hay captura, júzgala a ella. Cualquier "no" es bloqueante. |
+| 0 | **Hero que confirma la intención (pesa doble)** | ¿En 3 segundos se entiende qué es, qué soluciona y por qué creerle? Título: ¿producto con nombre de mecanismo + lo que soluciona, de 3 a 7 palabras, sin historia ni escena, sin pregunta? Subtítulo: ¿justifica (enemigo, mecanismo, presentación, expectativa) sin repetir el título? Bullets: ¿texto corrido en una sola frase (sin «Etiqueta:» ni dos puntos), verbo de resultado + calificador que quita una objeción, y pasan el «¿y qué?»? ¿El precio va debajo del título y las estrellas debajo del precio? ¿La imagen 1 lleva el dolor y la emoción? ¿Nombra el mismo producto y problema que el anuncio? Si hay captura, júzgala a ella. Cualquier "no" es bloqueante. |
 | 1 | Claridad en 3 segundos | ¿Se entiende el hero sin leer nada más? |
 | 2 | Consciencia y sofisticación | ¿El hero empieza donde está el buyer, según el dossier? |
 | 3 | Ángulo | ¿Un solo ángulo, el de mejor evidencia, sostenido en toda la landing? |

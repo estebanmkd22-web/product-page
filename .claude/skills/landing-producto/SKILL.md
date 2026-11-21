@@ -138,9 +138,9 @@ Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
   - la expectativa honesta («la pelusa es el comienzo»).
   La garantía puede ir aquí si es el respaldo que quita el dolor.
 - **Bullets = resultado + lo que quita la objeción** (3 o 4, cada uno con ícono):
-  - empiezan con el **verbo del resultado** y terminan con un **calificador que responde una duda**: «Elimina la caspa *sin resecar el cabello*», «Calma la picazón *de inmediato*», «Frena la caída *desde la raíz*»;
-  - o, si la objeción pesa, `<strong>Resultado o diferencia corta.</strong>` + una línea de justificación: «**Sin minoxidil.** Sin dependencia y sin irritar tu piel»;
-  - máximo unas 10 palabras por bullet (sin contar la línea de justificación); sin adjetivos vacíos («increíble», «premium», «de alta calidad»);
+  - **texto corrido, una sola frase:** empiezan con el **verbo del resultado** y terminan con un **calificador que responde una duda**: «Elimina la caspa sin resecar el cabello», «Calma la picazón de inmediato», «Frena la caída desde la raíz»;
+  - **nunca el formato «Etiqueta: explicación»** (nada de «**Resisten el sudor:** gym, clase u oficina»), ni dos puntos, ni una palabra en negrita seguida de otra frase;
+  - máximo unas 10 palabras por bullet; sin adjetivos vacíos («increíble», «premium», «de alta calidad»);
   - **prueba del «¿y qué?»:** si el cliente puede pensar «¿y eso qué me importa?», se reescribe;
   - orden: el dolor #1 resuelto → la objeción principal → el diferenciador → uso o compatibilidad.
 - **Precio en el hero** (decisión del dueño, 2026-11-21; se toma del Auto-Stop solo la forma del precio, el resto del hero sigue estas reglas):

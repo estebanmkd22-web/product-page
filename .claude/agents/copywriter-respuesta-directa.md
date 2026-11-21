@@ -41,7 +41,7 @@ Escribe `copy/<producto>/vN.md` (N = número de versión) con esta estructura, e
 (8 opciones; las 3 mejores arriba, la recomendada con ★ y su porqué en 2 líneas)
 - Línea de promesa (opcional: propón 1 o 2 opciones si hay un resultado o respaldo real que lo amerite; el dueño decide si va) → [respaldo]
 - Subtítulo de justificación (2 opciones, una recomendada) → [respaldo]
-- Bullets (3 o 4): verbo de resultado + calificador, o `<strong>Diferencia.</strong>` + justificación → [respaldo]
+- Bullets (3 o 4): texto corrido en una sola frase, verbo de resultado + calificador («Elimina la caspa sin resecar el cabello»); nunca «Etiqueta: explicación» ni dos puntos → [respaldo]
 - Calificación (debajo del precio, solo datos reales)
 - Oferta del hero (`pp-hero-cantidad`): packs con `nombre`, `precio`, `precio_antes` (precio de comprarlas sueltas), `etiqueta` (dónde o para quién), `destacar` y cuál va preseleccionado; texto del botón; nota; etiquetas de «Tu pedido incluye» con su valor tachado → [brief: oferta]
 - Chips (si suman)
