@@ -3,6 +3,9 @@
 ## Regla fija para todo anuncio
 Antes de entregar cualquier anuncio, aplica `cerebro/anuncios.md`: sin "pago al recibir", sin "envío gratis" y sin "escríbenos por WhatsApp" (imagen, textos, título, descripción, CTA y guion).
 
+## Herramientas que ya existen
+- **Guiones de video UGC:** skill `guion-ugc` (`.claude/skills/guion-ugc/`), conectada al brief, al ángulo, al banco de avatares y a la revisión del director creativo.
+
 ## Ideas de agentes (por priorizar con Esteban)
 - **Carritos abandonados:** hoy hay un flujo de iComfly; un agente puede revisar resultados y ajustar mensajes.
 - **Recompra:** contacta clientes que recibieron y son buenos compradores para una nueva oferta.

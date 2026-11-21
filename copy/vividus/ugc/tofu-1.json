@@ -1,0 +1,163 @@
+{
+  "producto": "VIVIDUS 86 V2",
+  "slug": "vividus",
+  "tienda": "Tu espacio Market",
+  "etapa": "TOFU",
+  "estilo": "Demostración con el producto",
+  "avatar": "co-enfermera-01",
+  "producto_foto": "imagenes/vividus/f4.jpg",
+  "estrategia": "TOFU de dolor con demostración. Abre con la caída en vivo (el momento que todos han vivido) y el «tranqui» del hero; Camila se identifica con el dolor #3 (la cajita que deja de cargar) y el #1 (a los 3 meses un lado deja de sonar), y el producto aparece como la salida: estuche de cámara que aguanta el golpe, muestra la batería y tiene 90 días de garantía. Cierre suave, sin precio, para que sirva después del Black Friday.",
+  "hook_continua": "Hero aprobado: «Se te cayeron. / Tranqui, siguen enteros.» + «No es una cámara». Copy de Meta TOFU 2: «😬 Se te resbalaron del bolsillo…».",
+  "personaje": "Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. Acaba de llegar de su turno al pasillo de entrada de su apartamento en Colombia: piso de baldosa clara color hueso, pared blanca, una puerta de madera cerrada al fondo, un mueble bajo de entrada con llaves encima. Luz natural de tarde que entra por una ventana a la izquierda del cuadro; nada de luces de estudio. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16.",
+  "escenas": [
+    {
+      "n": 1,
+      "tipo": "Hook · la caída",
+      "rango": "0–6s",
+      "funcion": "Detener el scroll con el momento que todos han vivido (se te caen) y continuar el hero: «Se te cayeron. Tranqui».",
+      "visual": "Plano medio corto tipo selfie en el pasillo. Camila, recién llegada del turno, está metiendo el estuche marrón cerrado en el bolsillo del pecho del uniforme mientras habla. Se le resbala sin querer del borde del bolsillo y cae fuera de cuadro hacia el piso. Mira abajo un instante y vuelve a la cámara con media sonrisa, tranquila.",
+      "dialogo": "Uff, se me cayeron otra vez… tranqui, siguen enteros.",
+      "segundos_dialogo": 4.5,
+      "frame_inicial": "Plano medio corto vertical, selfie con la cámara frontal del celular sostenido con la mano izquierda (el brazo sale por el borde izquierdo del cuadro). Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. Acaba de llegar de su turno al pasillo de entrada de su apartamento en Colombia: piso de baldosa clara color hueso, pared blanca, una puerta de madera cerrada al fondo, un mueble bajo de entrada con llaves encima. Luz natural de tarde que entra por una ventana a la izquierda del cuadro; nada de luces de estudio. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16. Camila mira directo a cámara con expresión cansada de fin de turno. Con la mano derecha está metiendo el estuche de audífonos cerrado en el bolsillo del pecho del uniforme; el estuche se ve completo, apoyado solo en el borde del bolsillo, con la pantalla del lente encendida. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. No hay ningún otro objeto en sus manos. Sin textos, letreros, subtítulos ni logos agregados en la imagen.",
+      "apoyo_inicial": "Adjunta la foto de Camila (avatares/fotos/co-enfermera-01.webp) y la foto del producto (imagenes/vividus/f4.jpg: recórtala para que solo quede el estuche marrón abierto; no uses fotos con el sello IPX8 ni con textos encima). El estuche va CERRADO, con la tapa crema abajo, aunque la foto de referencia lo muestre abierto.",
+      "frame_final": "Mismo plano medio corto vertical, mismo pasillo, misma luz de tarde por la ventana izquierda, mismo celular en la mano izquierda. Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. La mano derecha está abierta y vacía, bajada a la altura de la cintura, con los dedos sueltos. Camila mira a cámara con media sonrisa tranquila y las cejas levemente levantadas, como diciendo «no pasa nada». El estuche ya no está en cuadro: quedó en el piso, fuera de la imagen. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16. Sin textos, letreros, subtítulos ni logos agregados en la imagen.",
+      "apoyo_final": "Adjunta la foto de Camila (avatares/fotos/co-enfermera-01.webp). No hace falta la foto del producto: el estuche no aparece en este frame.",
+      "video": "Duración: 6s. Inicio: plano medio corto tipo selfie con celular en la mano izquierda; Camila mira a cámara, cansada, y con la mano derecha está metiendo el estuche marrón cerrado en el bolsillo del pecho del uniforme, apoyado en el borde. Transición: desde el primer instante, Camila mira a cámara y dice: 'Uff, se me cayeron otra vez… tranqui, siguen enteros.' Mientras dice «uff», el estuche se le escapa del borde del bolsillo, sin que ella abra la mano a propósito, y cae por el borde inferior del cuadro. En «otra vez» mira un instante hacia abajo, sin agacharse. En «tranqui» vuelve a mirar a cámara, baja la mano derecha vacía a la cintura y hace media sonrisa. Final: mano derecha vacía a la altura de la cintura, media sonrisa tranquila mirando a cámara, el estuche fuera de cuadro en el piso. Audio: pasillo con baldosa, leve eco; sin sonido de golpe (el golpe lo pone el B-roll). Grabado con celular, handheld, luz natural de tarde, leve tembleque de cámara, estilo UGC, 9:16. Sin textos en pantalla."
+    },
+    {
+      "n": 2,
+      "tipo": "Identificación · la cajita de antes",
+      "rango": "6–13s",
+      "funcion": "Nombrar el dolor #3 con las palabras del cliente: una caída y el estuche deja de cargar.",
+      "visual": "Camila se agacha hacia el piso (la cámara baja con ella, ángulo un poco más bajo), recoge el estuche de la baldosa y lo levanta cerca del lente, cerrado y entero. Gesto de recuerdo molesto al hablar de los anteriores.",
+      "dialogo": "Con los que tenía antes, una caída y el estuche dejaba de cargar.",
+      "segundos_dialogo": 5.5,
+      "frame_inicial": "",
+      "frame_final": "Plano vertical más bajo y cercano, selfie con el celular en la mano izquierda. Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. Camila está agachada en cuclillas en el mismo pasillo, con la baldosa clara visible detrás y abajo, la misma luz de tarde desde la ventana izquierda. Con la mano derecha sostiene el estuche de audífonos cerrado muy cerca del lente, entero, sin rayones, con la pantalla encendida mostrando el porcentaje de batería. Cejas fruncidas y boca de lado, gesto de fastidio al recordar los audífonos anteriores, mirando a cámara. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16. Sin textos, letreros, subtítulos ni logos agregados en la imagen.",
+      "apoyo_final": "Adjunta la foto de Camila (avatares/fotos/co-enfermera-01.webp) y la foto del producto (imagenes/vividus/f4.jpg: recórtala para que solo quede el estuche marrón abierto; no uses fotos con el sello IPX8 ni con textos encima). El estuche va CERRADO, con la tapa crema abajo, aunque la foto de referencia lo muestre abierto.",
+      "video": "Duración: 7s. Inicio: Camila de pie en el pasillo, mano derecha vacía a la cintura, media sonrisa a cámara. Transición: dobla las rodillas y se agacha en cuclillas mientras la cámara del celular baja con ella; estira la mano derecha hacia el piso, donde está el estuche marrón cerrado sobre la baldosa, lo toma con los dedos y lo sube despacio hasta dejarlo muy cerca del lente, entero, con la pantalla encendida. Mientras lo sube cambia la sonrisa por un gesto de fastidio, cejas fruncidas, al recordar los anteriores. Camila mira a cámara y dice: 'Con los que tenía antes, una caída y el estuche dejaba de cargar.' Final: agachada, estuche cerrado y entero cerca del lente en la mano derecha, gesto de fastidio mirando a cámara. Audio: pasillo con baldosa, leve eco. Grabado con celular, handheld, luz natural, leve tembleque, estilo UGC, 9:16. Sin textos en pantalla."
+    },
+    {
+      "n": 3,
+      "tipo": "Dolor #1 · plata botada",
+      "rango": "13–20s",
+      "funcion": "Ampliar el dolor principal: a los 3 meses un lado deja de sonar y la plata se pierde.",
+      "visual": "Camila se pone de pie y se recuesta en la pared del pasillo. Plano medio, más relajado. El estuche cerrado queda en la mano derecha, a la altura del abdomen. Habla con la cabeza ladeada, resignada, y termina con una risa corta.",
+      "dialogo": "A los tres meses, un lado ya ni sonaba. Plata botada, la verdad.",
+      "segundos_dialogo": 5.5,
+      "frame_inicial": "",
+      "frame_final": "Plano medio vertical, selfie con el celular en la mano izquierda. Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. Camila está de pie, con la espalda y un hombro recostados en la pared blanca del pasillo, la cabeza ladeada, sonrisa resignada de medio lado, ojos en blanco a medias como diciendo «qué pereza». La misma luz de tarde desde la ventana izquierda. En la mano derecha, a la altura del abdomen, sostiene el estuche de audífonos cerrado, visible pero sin protagonismo. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16. Sin textos, letreros, subtítulos ni logos agregados en la imagen.",
+      "apoyo_final": "Adjunta la foto de Camila (avatares/fotos/co-enfermera-01.webp) y la foto del producto (imagenes/vividus/f4.jpg: recórtala para que solo quede el estuche marrón abierto; no uses fotos con el sello IPX8 ni con textos encima). El estuche va CERRADO, con la tapa crema abajo, aunque la foto de referencia lo muestre abierto.",
+      "video": "Duración: 7s. Inicio: Camila agachada, estuche cerrado cerca del lente en la mano derecha, gesto de fastidio a cámara. Transición: se pone de pie despacio mientras la cámara sube con ella, baja la mano derecha con el estuche hasta la altura del abdomen y da un paso atrás hasta apoyar la espalda y un hombro en la pared del pasillo; ladea la cabeza. Camila mira a cámara y dice: 'A los tres meses, un lado ya ni sonaba. Plata botada, la verdad.' Al terminar suelta una risa corta y resignada. Final: recostada en la pared, cabeza ladeada, sonrisa resignada, estuche cerrado en la mano derecha a la altura del abdomen. Audio: pasillo, leve eco, tono cálido. Grabado con celular, handheld, luz natural, leve tembleque, estilo UGC, 9:16. Sin textos en pantalla."
+    },
+    {
+      "n": 4,
+      "tipo": "Producto · la sorpresa",
+      "rango": "20–28s",
+      "funcion": "Continuar la sorpresa del anuncio que vendió («¿Una cámara? No… son tus audífonos») y mostrar la pantalla de batería.",
+      "visual": "Camila se despega de la pared y acerca el estuche a la cámara. Lo abre con el pulgar: la tapa crema sube y se ven los dos audífonos adentro; la pantalla del lente muestra el porcentaje de batería. Energía más alta, ojos abiertos, sonrisa genuina.",
+      "dialogo": "Mira, parece una cámara… pero son los audífonos. Y te marca la batería.",
+      "segundos_dialogo": 5.5,
+      "frame_inicial": "",
+      "frame_final": "Primer plano vertical del estuche y el rostro de Camila, selfie con el celular en la mano izquierda. Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. Camila, ya separada de la pared, sonríe con entusiasmo y mira a cámara. Con la mano derecha sostiene el estuche abierto cerca del lente, en la mitad inferior del cuadro: la tapa crema levantada, los dos audífonos blancos adentro, la pantalla del lente encendida con el porcentaje de batería en números blancos. La misma luz de tarde desde la ventana izquierda ilumina el estuche. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16. Sin textos, letreros, subtítulos ni logos agregados en la imagen.",
+      "apoyo_final": "Adjunta la foto de Camila (avatares/fotos/co-enfermera-01.webp) y la foto del producto (imagenes/vividus/f4.jpg: recórtala para que solo quede el estuche marrón abierto; no uses fotos con el sello IPX8 ni con textos encima). Para máxima fidelidad del interior, la foto debe mostrar el estuche abierto con los dos audífonos adentro (como el estuche marrón de f4).",
+      "video": "Duración: 8s. Inicio: Camila recostada en la pared, cabeza ladeada, sonrisa resignada, estuche cerrado en la mano derecha a la altura del abdomen. Transición: se despega de la pared con un pequeño impulso y sube el estuche cerrado hacia el lente, mostrándolo como si fuera una cámara. Camila mira a cámara y dice: 'Mira, parece una cámara… pero son los audífonos. Y te marca la batería.' Justo en «pero son los audífonos» apoya el pulgar derecho bajo la tapa crema y la abre hacia arriba: se ven los dos audífonos blancos adentro. En «te marca la batería» inclina un poco el estuche para que la pantalla del lente, encendida con el porcentaje en números blancos, quede de frente al lente. Su cara pasa de resignada a una sonrisa genuina. Final: estuche abierto cerca del lente en la mano derecha, audífonos adentro, pantalla visible, Camila sonriendo a cámara. Audio: clic suave de la tapa al abrir, pasillo con leve eco. Grabado con celular, handheld, luz natural, leve tembleque, estilo UGC, 9:16. Sin textos en pantalla."
+    },
+    {
+      "n": 5,
+      "tipo": "Respaldo · garantía y cierre",
+      "rango": "28–35s",
+      "funcion": "Quitar el miedo con la garantía real y cerrar con un llamado suave, sin precio.",
+      "visual": "Camila cierra la tapa con el pulgar, con los dos audífonos adentro, y sube el estuche cerrado a la altura del hombro con la pantalla hacia la cámara. Mirada directa y cómplice; asiente al final. Encuadre un poco más abierto que la escena anterior.",
+      "dialogo": "Si un lado falla de fábrica, hay 90 días de garantía. Dale, míralos.",
+      "segundos_dialogo": 5.5,
+      "frame_inicial": "",
+      "frame_final": "Plano medio corto vertical, un poco más abierto, selfie con el celular en la mano izquierda. Mujer colombiana de unos 37 años, piel clara con pecas y un lunar en la mejilla, cabello castaño rizado con mechas recogido a un lado, expresión cansada pero amable, uniforme quirúrgico azul con carné. Con la mano derecha sostiene el estuche cerrado a la altura del hombro, con la pantalla del lente encendida hacia la cámara. Mira a cámara con sonrisa cómplice y la cabeza levemente inclinada hacia adelante, asintiendo. Los dos audífonos están dentro del estuche cerrado. La misma luz de tarde desde la ventana izquierda. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Estética UGC realista: grabado con celular sostenido en la mano (selfie con la cámara frontal), luz natural, leve tembleque de cámara, casual, auténtico, sin retoque de estudio, formato vertical 9:16. Sin textos, letreros, subtítulos ni logos agregados en la imagen.",
+      "apoyo_final": "Adjunta la foto de Camila (avatares/fotos/co-enfermera-01.webp) y la foto del producto (imagenes/vividus/f4.jpg: recórtala para que solo quede el estuche marrón abierto; no uses fotos con el sello IPX8 ni con textos encima). El estuche va CERRADO, con la tapa crema abajo, aunque la foto de referencia lo muestre abierto.",
+      "video": "Duración: 7s. Inicio: estuche abierto cerca del lente en la mano derecha, dos audífonos adentro, Camila sonriendo a cámara. Transición: con el pulgar derecho baja la tapa crema y cierra el estuche, con los dos audífonos adentro; luego sube el estuche cerrado a la altura del hombro con la pantalla hacia la cámara. Camila mira a cámara y dice: 'Si un lado falla de fábrica, hay noventa días de garantía. Dale, míralos.' En «dale, míralos» asiente una vez con una sonrisa cómplice. Final: estuche cerrado a la altura del hombro con la pantalla hacia la cámara, sonrisa cómplice. Audio: clic suave de la tapa al cerrar, pasillo con leve eco. Grabado con celular, handheld, luz natural, leve tembleque, estilo UGC, 9:16. Sin textos en pantalla."
+    }
+  ],
+  "broll": [
+    {
+      "despues_de": 1,
+      "sincroniza": "«se me cayeron otra vez…»",
+      "imagen": "Cámara a ras de piso sobre baldosa clara color hueso de apartamento. El estuche de audífonos marrón con forma de cámara retro, cerrado y con los audífonos adentro, está a 5-8 cm de la baldosa, inclinado unos 20 grados, a punto de tocar el piso, con la pantalla del lente encendida. Sombra pequeña y cercana debajo. Sin manos, sin pedazos. El estuche ocupa la mitad del cuadro. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Detalle real del producto, en un pasillo con piso de baldosa clara color hueso y luz natural de tarde desde la izquierda. Grabado con celular, estilo UGC, 9:16, sin personas hablando y sin textos agregados.",
+      "apoyo": "Adjunta la foto del producto (estuche marrón recortado de imagenes/vividus/f4.jpg). Es la misma escena de la imagen 1 del hero: si ya la generaste, úsala como imagen. El estuche va CERRADO, con la tapa crema abajo, aunque la foto de referencia lo muestre abierto.",
+      "video": "Duración: 2s. Cámara de celular a ras de piso, quieta con leve tembleque. El estuche marrón cerrado cae los últimos centímetros y golpea la baldosa con un sonido seco, da un pequeño salto de un centímetro y queda quieto, cerrado y entero, con la pantalla encendida. No se abre la tapa, no se separan piezas. Audio: golpe seco de plástico sobre baldosa, leve eco de pasillo. Estilo UGC, 9:16, sin textos.",
+      "capcut": "Entra en el instante en que el estuche sale de cuadro (hacia el segundo 1), dura 1,5 a 2 s con el golpe seco y vuelve a Camila justo en «tranqui». La voz de Camila sigue sonando encima del B-roll.",
+      "objetivo": "Mostrar la caída real (la demostración) y que el estuche queda entero."
+    },
+    {
+      "despues_de": 2,
+      "sincroniza": "«una caída y el estuche dejaba de cargar»",
+      "imagen": "Sobre la misma baldosa clara color hueso, una cajita genérica de audífonos blanca y sin marca, de plástico delgado y brillante, con la tapa desprendida y la bisagra quebrada; la tapa está a unos centímetros, boca abajo. Un audífono blanco genérico afuera, al lado. Luz natural de tarde, plano cenital cercano. Ninguna marca ni logo visible. Escena en un pasillo con piso de baldosa clara color hueso y luz natural de tarde desde la izquierda. Grabado con celular, estilo UGC, 9:16, sin personas hablando y sin textos agregados.",
+      "apoyo": "No hace falta adjuntar fotos: es una cajita genérica. Verifica que no salga ninguna marca reconocible.",
+      "video": "Duración: 3s. Plano cenital cercano y casi quieto de la cajita genérica blanca rota sobre la baldosa, con la tapa desprendida al lado. Una luz de tarde se mueve muy levemente por la sombra de una cortina. Nada se mueve en la cajita. Audio: silencio de pasillo con leve eco. Estilo UGC, 9:16, sin textos.",
+      "capcut": "Inserto de 2 a 3 s sobre la voz de Camila en «el estuche dejaba de cargar».",
+      "objetivo": "Hacer visible el dolor #3 (la cajita es lo primero que falla) solo con la escena."
+    },
+    {
+      "despues_de": 3,
+      "sincroniza": "«Plata botada, la verdad»",
+      "imagen": "Un cajón de mueble de entrada abierto, visto desde arriba, con cuatro o cinco pares de audífonos inalámbricos genéricos blancos y sin marca, revueltos con sus cajitas rayadas, una tapa suelta y un cable enredado. Luz natural de tarde. Ninguna marca ni logo visible. Escena en un pasillo con piso de baldosa clara color hueso y luz natural de tarde desde la izquierda. Grabado con celular, estilo UGC, 9:16, sin personas hablando y sin textos agregados.",
+      "apoyo": "No hace falta adjuntar fotos. Verifica que ningún audífono tenga marca reconocible.",
+      "video": "Duración: 3s. Plano desde arriba, celular en mano con leve tembleque, del cajón con audífonos genéricos viejos revueltos. Una mano entra por el borde, mueve con un dedo uno de los audífonos sueltos y lo deja caer de nuevo en el cajón. Audio: plástico chocando suave dentro del cajón. Estilo UGC, 9:16, sin textos.",
+      "capcut": "Inserto sobre «Plata botada»; corte seco al volver a Camila riéndose.",
+      "objetivo": "Mostrar el dolor #2 (comprar y volver a comprar) como algo que el espectador reconoce en su propio cajón."
+    },
+    {
+      "despues_de": 4,
+      "sincroniza": "«Y te marca la batería»",
+      "imagen": "Primer plano del estuche de audífonos marrón con forma de cámara retro, abierto, sostenido en la palma de una mano, con los dos audífonos blancos adentro y la pantalla del lente encendida mostrando el porcentaje de batería en números blancos. Fondo desenfocado del pasillo con luz de tarde (profundidad de campo de cámara de celular). El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Detalle real del producto, en un pasillo con piso de baldosa clara color hueso y luz natural de tarde desde la izquierda. Grabado con celular, estilo UGC, 9:16, sin personas hablando y sin textos agregados.",
+      "apoyo": "Adjunta la foto del producto: el estuche marrón abierto con los audífonos adentro (recorte de imagenes/vividus/f4.jpg).",
+      "video": "Duración: 3s. Primer plano, celular en mano con leve tembleque. La mano inclina un poco el estuche abierto hacia la cámara para que se lea mejor la pantalla con el porcentaje de batería; los audífonos siguen adentro. Audio: ambiente suave de pasillo. Estilo UGC, 9:16, sin textos.",
+      "capcut": "Overlay o corte rápido mientras Camila dice «Y te marca la batería»; vuelve a Camila antes de la escena 5.",
+      "objetivo": "Probar la característica distinta (pantalla con %) y reforzar que es un estuche de cámara."
+    },
+    {
+      "despues_de": 5,
+      "sincroniza": "«Dale, míralos»",
+      "imagen": "El estuche de audífonos marrón con forma de cámara retro, cerrado, entrando en el bolsillo del pecho de un uniforme quirúrgico azul, sostenido por una mano; solo se ve el pecho y la mano, sin rostro. Luz natural de tarde. El estuche de los audífonos es idéntico a la foto adjunta: tiene forma de cámara de fotos retro, cuerpo forrado en cuero texturizado color marrón, franja superior color crema con «Sound by KFG / Designed of California» impreso en letra pequeña, un círculo rojo con «Hi-Fi» arriba a la derecha, un botón pequeño color crema, y al frente un lente circular con pantalla negra que muestra el porcentaje de batería en números blancos. La tapa es crema y se abre hacia arriba; adentro van dos audífonos blancos tipo earbud con varita. No cambies su forma, tamaño (cabe en la palma de la mano), colores ni detalles, y no agregues ningún otro texto. Detalle real del producto, en un pasillo con piso de baldosa clara color hueso y luz natural de tarde desde la izquierda. Grabado con celular, estilo UGC, 9:16, sin personas hablando y sin textos agregados.",
+      "apoyo": "Adjunta la foto del producto (estuche marrón recortado de imagenes/vividus/f4.jpg) y, para el uniforme, la foto de Camila (avatares/fotos/co-enfermera-01.webp). El estuche va CERRADO, con la tapa crema abajo, aunque la foto de referencia lo muestre abierto.",
+      "video": "Duración: 3s. Plano cercano del pecho, sin rostro. La mano mete el estuche cerrado en el bolsillo del uniforme azul y da una palmadita encima. Audio: tela, ambiente de pasillo. Estilo UGC, 9:16, sin textos.",
+      "capcut": "Plano final debajo del cierre de marca (end card) y del botón «Comprar».",
+      "objetivo": "Cerrar con el uso diario: lo guarda en el bolsillo sin miedo a que se caiga."
+    }
+  ],
+  "variaciones": [
+    "Versión corta (20 s): escenas 1, 4 y 5 con el B-roll de la caída al principio.",
+    "Versión contraste: pantalla dividida con la cajita genérica y el estuche VIVIDUS cayendo desde la misma altura, y Camila comentando encima (solo con la escena).",
+    "Voz en off + imágenes: solo los B-roll, con la voz de Camila contando la historia del cajón lleno de audífonos.",
+    "POV / reacción: un compañero de turno ve el estuche en la mesa del descanso, cree que es una cámara y Camila se ríe y lo abre."
+  ],
+  "edicion": [
+    "Subtítulos grandes con las mismas líneas del diálogo, en blanco con borde negro, en el tercio central.",
+    "Escena 1: el texto del hero «Se te cayeron. Tranqui, siguen enteros.» va solo sobre el B-roll de la caída; en ese tramo no se ponen subtítulos, para no tapar la imagen con dos textos.",
+    "Escena 4: etiqueta tipo sticker «No es una cámara» junto al estuche.",
+    "Escena 5: «90 días de garantía por daños de fábrica». Opcional, reseña real en pantalla: «Pensé que por el precio iban a sonar mal y no: se escuchan bien» — Juliana R., Medellín.",
+    "Cierre de 2 s: VIVIDUS 86 V2 · Marrón y verde. Sin precio ni datos de envío o pago.",
+    "Música: lo-fi suave a volumen bajo; que se oiga claro el golpe de la caída.",
+    "Si puedes, graba con tu celular una caída real del estuche y úsala como B-roll 1 en lugar de la imagen generada: la prueba real convence más. Grábala a la altura del bolsillo del pecho y sobre baldosa, para que empate con la escena 1."
+  ],
+  "copy_meta": {
+    "texto": "😬 Se te resbalaron del bolsillo.\nEscuchaste el golpe contra el piso.\nY en ese segundo ya estabas calculando cuánto cuestan otros.\n\nEse sonido lo conoce todo el que ha tenido audífonos inalámbricos 😩. La tapa sale volando, la cajita se raja y a los pocos días deja de cargar. Los audífonos pueden estar perfectos, pero sin estuche no sirven.\n\nY la mayoría de cajitas son eso: plástico delgado y una bisagra pequeñita que no aguanta la primera caída.\n\nVIVIDUS cambió esa parte. El estuche tiene forma de cámara retro 📸, es más firme y aguanta caídas con los audífonos adentro. Lo recoges del piso y sigues con tu día 🙌.\n\nAdemás, su pantallita te muestra cuánta batería te queda 🔋, para que no te quedes sin música a mitad del camino.\n\n👉 Toca «Comprar» y conoce el estuche que aguanta caídas.",
+    "titulo": "Se te cayeron. Tranqui.",
+    "descripcion": "Siguen enteros"
+  },
+  "historial": [
+    {
+      "fecha": "2026-11-20",
+      "parte": "Escenas 1, 4 y 5; B-roll 1-3; edición",
+      "cambio": "Bloqueantes 1 a 4 y mejoras de la revisión v1 del director."
+    },
+    {
+      "fecha": "2026-11-20",
+      "parte": "B-roll 4, apoyos, escena 5 diálogo",
+      "cambio": "Bloqueante y mejoras de la revisión v2 del director."
+    }
+  ],
+  "revision": {
+    "veredicto": "APROBADO",
+    "archivo": "copy/vividus/ugc/revision-tofu-1-v3.md"
+  }
+}

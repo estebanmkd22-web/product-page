@@ -1,0 +1,115 @@
+{
+ "titulo": "Adaptador Auto-Stop",
+ "moneda": "$",
+ "locale": "es-CO",
+ "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+ "producto": {
+  "title": "Adaptador Auto-Stop USB-C",
+  "selected_or_first_available_variant": {
+   "id": 1,
+   "price": 8990000,
+   "compare_at_price": null,
+   "available": true
+  },
+  "media": [
+   {
+    "preview_image": {
+     "src": "../../imagenes/adaptador-auto-stop/producto.png",
+     "alt": "Adaptador Auto-Stop"
+    }
+   }
+  ]
+ },
+ "secciones": [
+  {
+   "tipo": "pp-estilos",
+   "settings": {
+    "acento": "#1f3a5f",
+    "texto": "#1c2430",
+    "texto_2": "#5b6675",
+    "fondo": "#f5f7fa",
+    "fondo_2": "#e8edf3",
+    "boton": "#1f3a5f",
+    "boton_texto": "#ffffff",
+    "estrella": "#e0a83a",
+    "ok": "#2e8b57",
+    "radio": 16
+   }
+  },
+  {
+   "tipo": "pp-ticker",
+   "settings": {
+    "fondo": "#1f3a5f",
+    "texto": "#ffffff",
+    "separador": "✦"
+   },
+   "blocks": [
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Se desconecta solo al llegar al 100 %"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Envío express gratis a toda Colombia"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Garantía de 30 días"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-hero-oferta",
+   "settings": {
+    "fondo": "#f5f7fa",
+    "mostrar_oferta": false,
+    "mostrar_rating": false,
+    "tamano_titulo": 26,
+    "titulo": "El celular de tu hijo <em>sigue conectado toda la noche</em>",
+    "texto": "Cada hora al 100 % desgasta la batería del celular que le compraste. El Adaptador Auto-Stop va entre el cable y el celular y corta la carga solo, aunque él esté dormido.",
+    "zonas_titulo": "Funciona en",
+    "zonas": "Celulares USB-C, Tabletas USB-C, Portátiles USB-C",
+    "proporcion": "1 / 1",
+    "navegacion": "miniaturas"
+   },
+   "blocks": [
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Corta solo al llegar al 100 %:</strong> lo conecta antes de dormir y la carga se desconecta cuando la batería se llena, sin que nadie se levante."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Cuida la batería del celular que le compraste:</strong> se acaban las horas conectado al 100 % que la envejecen."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>No frena la carga rápida:</strong> soporta hasta 140 W / 5 A con cargador y cable compatibles."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Sirve para su celular y el tuyo:</strong> celulares, tabletas y portátiles USB-C compatibles."
+     }
+    }
+   ]
+  }
+ ]
+}

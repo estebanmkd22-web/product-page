@@ -1,0 +1,193 @@
+{
+ "titulo": "Adaptador Auto-Stop",
+ "moneda": "$",
+ "locale": "es-CO",
+ "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+ "producto": {
+  "title": "Adaptador Auto-Stop USB-C",
+  "selected_or_first_available_variant": {
+   "id": 1,
+   "price": 8990000,
+   "compare_at_price": 10990000,
+   "available": true
+  },
+  "media": [
+   {
+    "preview_image": {
+     "src": "../../imagenes/adaptador-auto-stop/producto.png",
+     "alt": "Adaptador Auto-Stop"
+    }
+   }
+  ]
+ },
+ "secciones": [
+  {
+   "tipo": "pp-estilos",
+   "settings": {
+    "acento": "#1f3a5f",
+    "texto": "#1c2430",
+    "texto_2": "#5b6675",
+    "fondo": "#ffffff",
+    "fondo_2": "#e8edf3",
+    "boton": "#2e8b57",
+    "boton_texto": "#ffffff",
+    "estrella": "#e0a83a",
+    "ok": "#2e8b57",
+    "radio": 16
+   }
+  },
+  {
+   "tipo": "pp-ticker",
+   "settings": {
+    "fondo": "#1f3a5f",
+    "texto": "#ffffff",
+    "separador": "✦"
+   },
+   "blocks": [
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Se desconecta solo al llegar al 100 %"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Protege tu hogar mientras duermes"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Envío gratis a toda Colombia"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Garantía de 30 días"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-hero-cantidad",
+   "settings": {
+    "fondo": "#ffffff",
+    "proporcion": "1 / 1",
+    "navegacion": "miniaturas",
+    "mostrar_rating": true,
+    "rating": "4.9/5",
+    "rating_texto": "· 127 reseñas",
+    "titulo": "Mientras duermes, tu cargador <em>sigue calentándose junto a tu cama</em>",
+    "tamano_titulo": 24,
+    "texto": "Tu celular se llena de madrugada y sigue conectado hasta que suena la alarma. Con Auto-Stop, al 100 % sus dos botones empujan el celular: la carga se corta y lo ves.",
+    "icono_beneficios": "✓",
+    "ahorro_texto": "Ahorras",
+    "oferta_label": "Oferta:",
+    "etiquetas_titulo": "Tu pedido incluye",
+    "boton_modo": "easysell",
+    "boton_texto": "COMPRA AHORA",
+    "tachado_en_boton": true,
+    "boton_pulse": true,
+    "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar",
+    "zonas_titulo": "Funciona en",
+    "zonas": "Celulares USB-C, iPhone 15 en adelante, Tabletas"
+   },
+   "blocks": [
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Corte que se ve:</strong> en la mañana lo encuentras separado del adaptador."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Duerme tranquila:</strong> tu celular no se queda cargando hasta el amanecer."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Protección contra sobrecalentamiento</strong> y cortocircuito, integrada."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "<strong>Cuida tu batería</strong> y no frena la carga rápida (hasta 140 W)."
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "1 Unidad",
+      "precio": 74900,
+      "precio_antes": 109900,
+      "cantidad": 1,
+      "etiqueta": "Para tu mesa de noche"
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "2 Unidades",
+      "precio": 99900,
+      "precio_antes": 149800,
+      "cantidad": 2,
+      "etiqueta": "Tu cuarto y el de los hijos",
+      "destacar": "Recomendado",
+      "preseleccionado": true
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "3 Unidades",
+      "precio": 114900,
+      "precio_antes": 224700,
+      "cantidad": 3,
+      "etiqueta": "Toda la casa: cuartos y sala · $38.300 c/u",
+      "destacar": "Mejor precio"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "camion",
+      "texto": "Envío express <strong>GRATIS</strong> a toda Colombia",
+      "tachado": "$21.000"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "regalo",
+      "texto": "<strong>15 % OFF</strong> en tu segunda compra (te llega por WhatsApp)"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "escudo",
+      "texto": "Garantía de <strong>30 días</strong>, la reclamas por WhatsApp"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "pago",
+      "texto": "<strong>Pagas al recibir</strong>, en efectivo"
+     }
+    }
+   ]
+  }
+ ]
+}

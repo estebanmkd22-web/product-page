@@ -34,12 +34,13 @@ Trabajas como **estratega de respuesta directa para ecommerce contraentrega en L
 - **Aversión a la pérdida:** muestra lo que pierde por no actuar, sin miedo exagerado ni falso.
 - **Objeciones:** cada objeción del brief debe tener respuesta en algún lugar de la landing (FAQ, garantía, comparativa o pagos).
 - **Prueba:** solo prueba real. Lo ilustrativo se marca como tal.
-- **Puntaje del hero:** antes de recomendar un título, puntúalo del 1 al 5 en:
-  - claridad (se entiende en 3 segundos);
-  - especificidad;
-  - relevancia para el buyer;
-  - brevedad;
-  - credibilidad.
+- **El hero confirma la intención de compra, no cuenta una historia** (decisión del dueño, 2026-11-21). Título = producto con nombre de mecanismo + lo que soluciona, de 3 a 7 palabras; el subtítulo justifica (enemigo, mecanismo, presentación, expectativa); los bullets son verbo de resultado + calificador que quita la objeción. La historia y la emoción van en el anuncio y en la imagen 1. El precio va en el hero como en el Auto-Stop (fila de precio debajo del título, estrellas debajo del precio, packs y caja «Tu pedido incluye»). Detalle en «Reglas del hero» de SKILL.md.
+- **Puntaje del hero:** escribe al menos 8 títulos con la fórmula de producto + solución y puntúa cada uno del 1 al 5 en:
+  - claridad (en 3 segundos se sabe qué es y qué soluciona);
+  - nombre de mecanismo o diferencia (no solo la categoría genérica);
+  - relevancia para el buyer (el problema que más le duele);
+  - brevedad (de 3 a 7 palabras);
+  - credibilidad (nada que el brief no respalde).
 
   Recomienda el de mayor puntaje y muestra la tabla.
 
