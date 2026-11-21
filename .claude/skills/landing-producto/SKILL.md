@@ -110,24 +110,40 @@ Con el brief confirmado, el copy lo escriben y revisan dos agentes del proyecto 
 
 Haz commit de `investigacion/`, `briefs/` y `copy/` en cada etapa.
 
-**Reglas del hero** (las aplican el copywriter y el director; tú también las verificas). Dato real que las motiva: en VIVIDUS, el 68 % de los visitantes se fue sin bajar del 10 % de la página, aunque pasaron unos 52 segundos en la primera pantalla.
-- **La primera pantalla del celular es el hero:** la franja animada, la **imagen 1** (dos tercios de la pantalla), el título y el subtítulo. Ahí se decide si el cliente baja.
-- **ATI en los primeros 3 segundos:**
-  - **Atención:** el dolor número 1 del mapa de dolor, con las palabras del cliente, para que piense "eso me pasa a mí".
-  - **Transformación:** la vida con el dolor resuelto, visible en la imagen 1.
-  - **Interés:** algo nuevo, específico o inesperado (el mecanismo, un dato, un contraste) que dé curiosidad de seguir.
-- **Hero dopamínico** (si falla uno, es bloqueante para el director):
-  - nombra un **dolor concreto del top 3** del mapa de dolor, no un beneficio genérico ni solo un deseo de estatus;
-  - **máximo 10 palabras** en el título, con tensión emocional (frustración, vergüenza, cansancio, miedo a perder) y la parte fuerte en `<em>…</em>`;
-  - **específico:** momentos, escenas o números reales ("la familia esperando a la 1"), nunca "mejora tu vida";
-  - **prueba del pulgar:** si lo ve 2 segundos mientras desliza en Instagram, ¿se detiene? Si no, no sirve.
-- **Coherencia con el anuncio:** el hero continúa la promesa del anuncio que trae el tráfico (está en el brief). Si el anuncio promete A y el hero habla de B, el cliente se va.
-- **Nunca en pregunta**, porque despierta más dudas.
-- **El subtítulo** amplía el dolor o la transformación en una línea. No repite el título.
-- **Bullets:** formato `<strong>Beneficio:</strong> explicación concreta` (3 o 4), cada uno quita un dolor o una objeción del mapa.
-- Chips (`zonas_titulo`/`zonas`) solo si suman.
-- **La franja animada de arriba** no abre vendiendo: el primer mensaje refuerza el gancho o da prueba (por ejemplo, "+500 clientes en Colombia" si es real). Lo de envío y pago va después.
-- **Revisión de la primera pantalla:** antes de dar el copy por aprobado, arma una vista previa del hero, saca una captura a 390 × 750 y pásasela al director. Él la juzga con la prueba del pulgar, no solo el texto.
+**Reglas del hero** (las aplican el copywriter y el director; tú también las verificas). Decisión del dueño (2026-11-21): **el hero de la landing confirma la intención de compra, no cuenta una historia.** Quien llega ya vio el anuncio; la historia y la emoción viven en el anuncio y en las imágenes del hero. El texto del hero dice qué es el producto, qué soluciona y por qué creerle. Referentes del dueño: «Sistema Bio-Caspa y Caída», «Elbor: Activador de folículos para barba», «Suero botánico Anti-descamación 120 ml».
+
+- **La primera pantalla del celular es el hero:** la franja animada, la **imagen 1** (dos tercios de la pantalla), la calificación, el título, la línea de promesa y el subtítulo. Ahí se decide si el cliente baja.
+- **Orden del bloque de texto:**
+  1. **Calificación arriba del título:** estrellas + calificación + reseñas, como se viene manejando (solo datos reales).
+  2. **Título.**
+  3. **Línea de promesa** (opcional).
+  4. **Subtítulo.**
+  5. **Bullets.**
+- **Título = producto + lo que soluciona:**
+  - fórmula: `[Marca:] [tipo de producto con nombre de mecanismo] + [problema que resuelve o para qué/quién] [+ presentación]`. Ejemplos: «Sistema Bio-Caspa y Caída», «Elbor: Activador de folículos para barba», «Audífonos VIVIDUS con estuche que aguanta caídas»;
+  - **corto: de 3 a 7 palabras**, literal y claro; se entiende qué es sin leer nada más;
+  - el tipo de producto se nombra con su mecanismo o su diferencia («sistema», «activador», «suero botánico», «estuche de cámara»), no solo con la categoría genérica;
+  - **no cuenta una escena ni una historia** («Se te cayeron…», «Cansado de…» van al anuncio y a la imagen 1);
+  - nunca en pregunta; neutro en género cuando el público es mixto;
+  - sin arranques gastados: «Dile adiós», «Olvídate de», «Descubre», «El secreto», «Revoluciona», «Por fin».
+- **Línea de promesa** (debajo del título, una línea corta, en color de acento): el resultado principal o el respaldo más fuerte, **solo si es real y tiene respaldo** en el brief («90 días de garantía por daños de fábrica», «Resultados en la primera aplicación» solo si es verdad). Nada de promesas médicas ni de lo que exige INVIMA sin registro.
+- **Subtítulo = la justificación** (2 o 3 líneas cortas, máximo unas 35 palabras). Responde «¿por qué funciona y por qué te creo?» con uno o varios de estos, en este orden:
+  - la creencia o el enemigo que falló («Te dijeron que era genética», «la cajita de los baratos se quiebra con la primera caída»);
+  - el mecanismo, en palabras simples («equilibra el pH folicular…», «el estuche recibe el golpe con los audífonos adentro»);
+  - qué es y su presentación («spray de 100 ml»);
+  - la expectativa honesta («la pelusa es el comienzo»).
+  La garantía puede ir aquí si es el respaldo que quita el dolor.
+- **Bullets = resultado + lo que quita la objeción** (3 o 4, cada uno con ícono):
+  - empiezan con el **verbo del resultado** y terminan con un **calificador que responde una duda**: «Elimina la caspa *sin resecar el cabello*», «Calma la picazón *de inmediato*», «Frena la caída *desde la raíz*»;
+  - o, si la objeción pesa, `<strong>Resultado o diferencia corta.</strong>` + una línea de justificación: «**Sin minoxidil.** Sin dependencia y sin irritar tu piel»;
+  - máximo unas 10 palabras por bullet (sin contar la línea de justificación); sin adjetivos vacíos («increíble», «premium», «de alta calidad»);
+  - **prueba del «¿y qué?»:** si el cliente puede pensar «¿y eso qué me importa?», se reescribe;
+  - orden: el dolor #1 resuelto → la objeción principal → el diferenciador → uso o compatibilidad.
+- **Precio en el hero: se prueba.** Además del hero sin precio (el de siempre: «el hero convence, la oferta vende»), arma una **versión B con precio, precio tachado real y ahorro debajo del título**, como el referente Elbor, para medirla en Clarity (al menos 200 visitantes por versión). Solo precios reales; nunca un tachado inventado. Las imágenes del hero siguen sin precio, pago, envío ni garantía.
+- **Coherencia con el anuncio:** el hero nombra el mismo producto y el mismo problema que promete el anuncio que trae el tráfico (está en el brief). La frase del gancho del anuncio puede ir en la imagen 1, no en el título.
+- **La imagen 1** sigue siendo la más importante: ahí van el dolor, la emoción y la comparativa, con texto y sin escribir «antes/después».
+- **La franja animada de arriba** no abre vendiendo: el primer mensaje refuerza el producto o da prueba (por ejemplo, "+500 clientes en Colombia" si es real). Lo de envío y pago va después.
+- **Revisión de la primera pantalla:** antes de dar el copy por aprobado, arma una vista previa del hero, saca una captura a 390 × 750 y pásasela al director. Él la juzga con la prueba de la intención: en 3 segundos, ¿se entiende qué es, qué soluciona y por qué creerle?
 
 ### Fase 2 · Landing (solo con el copy final aprobado)
 Antes de armar, presenta el plan y espera confirmación: secciones en orden, oferta, paleta, colores y garantía. Arma solo lo confirmado.
