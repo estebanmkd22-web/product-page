@@ -23,6 +23,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **No usar precios tachados inventados.**
 
 ## Copy
+- **(2026-11-22) SÉBORA: el buyer es hombre en las dos landings.** La landing A se había planteado mixta (avatar Paola, reseña de esposa, FAQ con nombres de mujer) y el dueño lo corrigió: todo para hombres. Regla: confirmar el género del buyer antes del copy y no asumir público mixto.
 - **ATIDCOA** en todo el copy.
 - **Respetar el alcance:** si pide cambiar un título, cambia solo ese título ("no pedí que me modificaras el resto de la landing").
 - **Claims reales:** en ARVEN Fold se quitó "sin perfume" porque tiene fragancia leve. Sin promesas médicas ni INVIMA si no existe.

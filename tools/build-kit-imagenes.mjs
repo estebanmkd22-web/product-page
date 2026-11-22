@@ -23,7 +23,7 @@ if (sobran.length) console.warn('Prompts sin espacio en la plantilla:', sobran.j
 export const promptFinal = (e, p) => [
   kit.estilo_en,
   p.producto ? kit.producto_en : '',
-  p.persona && avatar ? `The woman must be exactly the same person as in the attached character reference photos (${avatar.descripcion_en}) — same face, skin tone, hair and build.` : '',
+  p.persona && avatar ? `The ${avatar?.genero === 'hombre' ? 'man' : 'woman'} must be exactly the same person as in the attached character reference photos (${avatar.descripcion_en}) — same face, skin tone, hair and build.` : '',
   p.prompt,
   `Aspect ratio ${e.proporcion.replace(/\s/g, '')}.`,
   kit.reglas_en,
@@ -45,7 +45,7 @@ const promptV2 = (e, p) => {
     adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
     p.referente?.archivo ? `Referente de diseño: la imagen de ${p.referente.nombre} que te adjunto. Toma de ella solo ${p.referente.tomar || 'la composición, la jerarquía de los textos, la tipografía y el estilo del fondo'}; no copies su producto, su marca, sus personas ni sus textos.` : '',
     p.producto ? `Producto: ${kit.producto}` : '',
-    p.persona && avatar ? `Persona: debe ser exactamente la misma mujer de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
+    p.persona && avatar ? `Persona: debe ser exactamente ${avatar?.genero === 'hombre' ? 'el mismo hombre' : 'la misma mujer'} de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     p.comparativa ? `Comparativa: ${p.comparativa} Divide la imagen en dos lados claramente separados. El contraste lo cuentan la escena y los textos: no escribas las palabras "antes" ni "después".` : '',
     (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «${p.textos[0].split(' / ').join('» en una línea y debajo «')}»${p.textos.length > 1 ? (p.comparativa ? `; sobre el lado izquierdo, pequeño, «${p.textos[1]}»${p.textos[2] ? `; sobre el lado derecho, pequeño, «${p.textos[2]}»` : ''}` : `; ${p.textos.length > 2 ? 'etiquetas pequeñas tipo sticker' : 'etiqueta pequeña tipo sticker'} junto al producto: ${p.textos.slice(1).map((t) => `«${t}»`).join(' y ')}`) : ''}.` : '',
@@ -77,7 +77,7 @@ for (const it of items) {
 const fichaV = V2 ? { ...kit.ficha, producto: kit.producto, reglas: kit.reglas } : kit.ficha;
 const ficha = Object.entries(fichaV).map(([k, v]) => `<div class="f"><b>${esc(k[0].toUpperCase() + k.slice(1))}</b><p>${esc(v)}</p></div>`).join('');
 const refs = avatar ? Object.entries(avatar.referencias).map(([k, v]) => `<figure>${v ? `<img src="${esc(v)}" alt="">` : '<div class="vacio">Pendiente</div>'}<figcaption>${esc(k.replace('_', ' '))}</figcaption></figure>`).join('') : '';
-const bloqueAvatar = avatar ? `<div class="avatar"><h2>Avatar: ${esc(avatar.nombre)} <small>${esc(kit.avatar)} · ${esc(avatar.estado)}</small></h2><p>${esc(avatar.descripcion)}</p><div class="refs">${refs}</div>${refsAvatar.length ? '' : '<p class="aviso">Sin fotos de referencia todavía: las imágenes con la mamá no se generan hasta crear y aprobar el avatar.</p>'}</div>` : '';
+const bloqueAvatar = avatar ? `<div class="avatar"><h2>Avatar: ${esc(avatar.nombre)} <small>${esc(kit.avatar)} · ${esc(avatar.estado)}</small></h2><p>${esc(avatar.descripcion)}</p><div class="refs">${refs}</div>${refsAvatar.length ? '' : '<p class="aviso">Sin fotos de referencia todavía: las imágenes con la persona no se generan hasta crear y aprobar el avatar.</p>'}</div>` : '';
 const tarjetas = grupos.map((g) => `
 <section class="grupo">
   <h2>${esc(g.seccion)}${g.titulo ? `<small>${esc(g.titulo)}</small>` : ''}</h2>

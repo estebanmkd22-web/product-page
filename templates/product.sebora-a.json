@@ -616,8 +616,8 @@
           "type": "resena",
           "settings": {
             "estrellas": 5,
-            "titulo": "Para mi esposo también",
-            "texto": "Pedí el de 2: uno para mis cejas y otro para la barba de él.",
+            "titulo": "Para mi hermano también",
+            "texto": "Pedí el de 2: uno para mí y otro para mi hermano, que también tiene la barba con escamas.",
             "nombre": "Testimonio de ejemplo",
             "ciudad": "Barranquilla",
             "verificado": false
@@ -687,63 +687,63 @@
         "pregunta_1": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Marta de Bogotá pregunta: ya probé de todo, ¿por qué esto sería distinto?",
+            "pregunta": "Andrés de Bogotá pregunta: ya probé de todo, ¿por qué esto sería distinto?",
             "respuesta": "<p>Porque no es otra crema hidratante ni un corticoide. Es un suero sin corticoides que puedes usar <strong>todos los días</strong>, justo en la zona grasa donde salen las escamas. Y si en 60 días no te convence, <strong>te devolvemos tu dinero</strong>.</p>"
           }
         },
         "pregunta_2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Andrés de Medellín pregunta: ¿es otra crema natural más?",
+            "pregunta": "Felipe de Medellín pregunta: ¿es otra crema natural más?",
             "respuesta": "<p>No es crema: es un <strong>suero ligero de 120 ml</strong> con 8 extractos botánicos que se absorbe sin engrasar. No promete milagros: <strong>ayuda a calmar</strong> la picazón y la rojez y a reducir las escamas visibles con uso diario.</p>"
           }
         },
         "pregunta_3": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Carolina de Cali pregunta: ¿me va a arder en la cara?",
+            "pregunta": "Julián de Cali pregunta: ¿me va a arder en la cara?",
             "respuesta": "<p>No tiene fragancias ni parabenos. Igual, cada piel es distinta: <strong>pruébalo primero en una zona pequeña</strong>. Si te arde o te irrita, suspéndelo y escríbenos por WhatsApp.</p>"
           }
         },
         "pregunta_4": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Felipe de Bucaramanga pregunta: ¿me engrasa la barba?",
+            "pregunta": "Camilo de Bucaramanga pregunta: ¿me engrasa la barba?",
             "respuesta": "<p>No. Es suero, no crema ni aceite: <strong>entra entre el vello</strong>, llega a la piel y la barba queda suelta.</p>"
           }
         },
         "pregunta_5": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Juliana de Barranquilla pregunta: ¿en cuánto tiempo noto algo?",
+            "pregunta": "Diego de Barranquilla pregunta: ¿en cuánto tiempo noto algo?",
             "respuesta": "<p>Desde el primer uso lo sientes ligero. La picazón y las escamas visibles <strong>van cediendo con el uso diario y la constancia</strong>, y cada piel va a su ritmo. Por eso el pack de 2 te alcanza para <strong>6 a 8 semanas</strong> sin cortar la rutina.</p>"
           }
         },
         "pregunta_6": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Sandra de Pereira pregunta: ¿por qué pagar esto si un shampoo de droguería sale más barato?",
+            "pregunta": "Sebastián de Pereira pregunta: ¿por qué pagar esto si un shampoo de droguería sale más barato?",
             "respuesta": "<p>El shampoo está pensado para el cuero cabelludo y se enjuaga a los pocos minutos. SÉBORA es un suero que <strong>se queda en cejas, nariz y barba</strong>. Con el pack de 2, cada frasco sale a <strong>$69.950</strong> y te alcanza para 6 a 8 semanas.</p>"
           }
         },
         "pregunta_7": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Diana de Ibagué pregunta: es una marca nueva, ¿cómo confío?",
+            "pregunta": "Luis de Ibagué pregunta: es una marca nueva, ¿cómo confío?",
             "respuesta": "<p>No pagas nada por adelantado: <strong>pagas cuando lo recibes</strong>, te escribimos por WhatsApp para confirmar y tienes <strong>60 días de garantía</strong>.</p>"
           }
         },
         "pregunta_8": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Laura de Cartagena pregunta: ¿cómo pago y cuándo me llega?",
+            "pregunta": "Mateo de Cartagena pregunta: ¿cómo pago y cuándo me llega?",
             "respuesta": "<p>Pagas al recibir. El <strong>envío express es gratis</strong> y llega en <strong>3 a 5 días hábiles</strong>. Te escribimos por WhatsApp para confirmar tu pedido.</p>"
           }
         },
         "pregunta_9": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "Paula de Manizales pregunta: ¿lo puedo usar si estoy con corticoide?",
+            "pregunta": "Daniel de Manizales pregunta: ¿lo puedo usar si estoy con corticoide?",
             "respuesta": "<p>Es un cosmético sin corticoides. Si estás en un tratamiento médico, <strong>consúltalo con tu médico</strong> antes de combinarlo.</p>"
           }
         }

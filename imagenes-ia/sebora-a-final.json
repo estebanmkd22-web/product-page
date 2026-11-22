@@ -1,0 +1,262 @@
+[
+  {
+    "n": 1,
+    "id": "hero-cantidad.imagen_1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura. Se mira de cerca en el espejo, serio pero tranquilo, con el frasco en la mano.\n\nEscena: Primer plano de Andrés frente al espejo del baño, de tres cuartos. En la ceja y al lado de la nariz se ve ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado). Sostiene el frasco SÉBORA grande, en primer plano y nítido, hacia la cámara. Titular grande arriba; dos etiquetas pequeñas abajo.\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «Esas escamas no son piel seca»; etiquetas pequeñas tipo sticker junto al producto: «Cejas · nariz · barba» y «Sin corticoides».\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 2,
+    "id": "hero-cantidad.imagen_2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Imagen dividida en dos lados. Izquierda: Andrés de perfil frente al espejo, tapándose la ceja con la mano, incómodo. Derecha: Andrés de frente y tranquilo, acercándose al espejo con el frasco SÉBORA en la mano.\n\nComparativa: lado izquierdo: «Disimulando las cejas»; lado derecho: «De cerca, sin esconderte» Divide la imagen en dos lados claramente separados. El contraste lo cuentan la escena y los textos: no escribas las palabras \"antes\" ni \"después\".\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «Disimulando las cejas»; sobre el lado izquierdo, pequeño, «De cerca, sin esconderte».\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 3,
+    "id": "hero-cantidad.imagen_3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nEscena: El frasco SÉBORA al centro, de pie sobre una superficie de piedra clara, rodeado de hojas, flores secas y raíces botánicas. Tres etiquetas alrededor del frasco.\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «8 extractos botánicos»; etiquetas pequeñas tipo sticker junto al producto: «Calma» y «Limpia» y «Repara».\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 4,
+    "id": "hero-cantidad.imagen_4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Imagen dividida. Izquierda: primer plano de la barba de Andrés brillante y pegoteada, con crema blanca espesa en los dedos. Derecha: la misma barba seca y suelta, con unas gotas de suero transparente en la yema de los dedos y el frasco SÉBORA al lado.\n\nComparativa: lado izquierdo: «Crema grasosa»; lado derecho: «Suero que no engrasa» Divide la imagen en dos lados claramente separados. El contraste lo cuentan la escena y los textos: no escribas las palabras \"antes\" ni \"después\".\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «Crema grasosa»; sobre el lado izquierdo, pequeño, «Suero que no engrasa».\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 5,
+    "id": "hero-cantidad.imagen_5",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura. Se aplica el suero con calma, gesto natural de rutina.\n\nEscena: Andrés en el baño, con luz de mañana, se aplica una capa delgada de suero junto a la nariz con la yema del dedo, frente al espejo. El frasco SÉBORA sobre el lavamanos, visible.\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «Una capa delgada»; etiqueta pequeña tipo sticker junto al producto: «Todos los días».\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 6,
+    "id": "hero-cantidad.imagen_6",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Tríptico vertical de primeros planos de Andrés: su ceja, la aleta de la nariz y su barba, cada panel con piel limpia y cuidada; el frasco SÉBORA pequeño en una esquina de la imagen.\n\nTexto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «Un solo suero»; etiqueta pequeña tipo sticker junto al producto: «Cejas · nariz · barba».\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico. Excepción: esta imagen lleva únicamente los textos indicados arriba.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 7,
+    "id": "carrusel-imagenes.imagen1",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano de la mano de Andrés presionando el pump del frasco SÉBORA; una pequeña cantidad de suero transparente y ligero en la yema de los dedos.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen vertical (2:3).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:5, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 8,
+    "id": "carrusel-imagenes.imagen2",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano del rostro de Andrés mientras esparce el suero con la yema del dedo en la ceja; piel con brillo húmedo leve del producto recién puesto.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen vertical (2:3).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:5, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 9,
+    "id": "carrusel-imagenes.imagen3",
+    "proporcion": "4 / 5",
+    "pixeles": "1080 × 1350",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano de la zona de la nariz y la barba de Andrés, ya seca, mate, sin brillo graso; la barba suelta. Él se toca la barba con naturalidad.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen vertical (2:3).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:5, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 10,
+    "id": "grid-dolores.item1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Macro de la ceja y el costado de la nariz de Andrés con ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado), luz de baño frontal. Sin producto.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 11,
+    "id": "grid-dolores.item2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Andrés mirándose la frente y la nariz en el espejo con leve rojez, gesto de frustración contenida. Sin producto.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 12,
+    "id": "grid-dolores.item3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Andrés en la oficina, de noche, cansado frente al computador, rascándose la barba sin darse cuenta. Sin producto.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 13,
+    "id": "grid-dolores.item4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Sobre el lavamanos, varios tubos de crema genéricos sin marca, medio usados y abiertos; Andrés al fondo desenfocado mirándolos con cansancio. Sin el producto SÉBORA.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 14,
+    "id": "galeria-ideas.idea1",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano de las cejas de Andrés, limpias y peinadas; tercio inferior simple y más oscuro para el texto.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 15,
+    "id": "galeria-ideas.idea2",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano del pliegue al lado de la nariz de Andrés, piel pareja y calmada; tercio inferior más oscuro.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 16,
+    "id": "galeria-ideas.idea3",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Andrés de frente, luz suave, frente y entrecejo con piel pareja sin brillo graso; tercio inferior más oscuro.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 17,
+    "id": "galeria-ideas.idea4",
+    "proporcion": "4 / 3",
+    "pixeles": "1200 × 900",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano de la barba de Andrés, suelta y limpia, su mano pasando entre el vello; tercio inferior más oscuro.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen horizontal (3:2).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, recórtala a 4:3, con 1200 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 18,
+    "id": "problemas-filas.fila1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nEscena: Bodegón: ramas de artemisa y kochia frescas junto al frasco SÉBORA sobre piedra clara, luz natural suave.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 19,
+    "id": "problemas-filas.fila2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nEscena: Bodegón: raíces secas de sophora y corteza de dictamnus en un cuenco de cerámica junto al frasco SÉBORA.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 20,
+    "id": "problemas-filas.fila3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nEscena: Bodegón: flores amarillas de solidago y hojas de smilax junto al frasco SÉBORA, gotas de suero en la piedra.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 21,
+    "id": "problemas-filas.fila4",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nEscena: El frasco SÉBORA solo, limpio, sobre fondo lila muy claro, con hojas verdes alrededor; composición minimalista.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 22,
+    "id": "pasos.paso1",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto de Andrés que te adjunto.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Andrés secándose la cara con una toalla blanca con toques suaves frente al espejo.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 23,
+    "id": "pasos.paso2",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Primer plano de la mano de Andrés presionando el pump del frasco SÉBORA sobre la yema de los dedos.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 24,
+    "id": "pasos.paso3",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": "co-barba-01",
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto y la foto de Andrés que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nPersona: debe ser exactamente el mismo hombre de la foto adjunta (Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa), con la misma cara, tono de piel, cabello y contextura.\n\nEscena: Andrés masajeando suavemente la ceja con la yema del dedo, expresión relajada, frasco SÉBORA visible en el lavamanos.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 25,
+    "id": "comparativa.imagen_a",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": true,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nUsa como referencia la foto del producto que te adjunto.\n\nProducto: Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.\n\nEscena: El frasco SÉBORA de pie, limpio, con hojas botánicas, fondo lila claro.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  },
+  {
+    "n": 26,
+    "id": "comparativa.imagen_b",
+    "proporcion": "1 / 1",
+    "pixeles": "1080 × 1080",
+    "producto": false,
+    "avatar": null,
+    "referencias_avatar": [],
+    "prompt": "ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).\n\nEscena: Tubos de crema genéricos sin marca y un frasco de shampoo genérico sin etiqueta, desordenados, fondo gris neutro.\n\nAmbiente: Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día. Luz natural de mañana, suave y realista. Blancos, grises claros y acentos morados del empaque. Fotografía realista de celular de gama alta, sin aspecto de render ni de stock.\n\nFormato: imagen cuadrada (1:1).\n\nReglas: Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.\n\nPASO FINAL OBLIGATORIO — FORMATO WEBP: cuando la imagen esté lista, NO me la entregues en PNG. Usa tu herramienta de análisis (Python) para convertirla a WebP, con 1080 px de ancho y calidad 80, y dame el enlace para descargar el archivo .webp. Si no puedes convertirla, dímelo; no me entregues otro formato."
+  }
+]

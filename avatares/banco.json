@@ -82,6 +82,25 @@
         "cuerpo_entero": ""
       },
       "url_publica": ""
+    },
+    "co-barba-01": {
+      "nombre": "Andrés",
+      "mercado": "Colombia",
+      "genero": "hombre",
+      "perfil": "Hombre de 28 a 38 años con barba, trabaja en oficina, cuida su imagen; buyer de SÉBORA.",
+      "descripcion": "Hombre colombiano de unos 32 años, piel trigueña, cabello negro corto con degradado, barba negra tupida y bien perfilada de largo medio, cejas pobladas, contextura atlética, camiseta negra lisa.",
+      "descripcion_en": "Colombian man around 32 years old, olive skin, short black hair with a fade, thick well-groomed medium-length black beard, full eyebrows, athletic build, plain black t-shirt.",
+      "usos": [
+        "sebora"
+      ],
+      "estado": "pendiente",
+      "referencias": {
+        "frente": "",
+        "tres_cuartos": "",
+        "medio_cuerpo": "",
+        "cuerpo_entero": ""
+      },
+      "url_publica": ""
     }
   },
   "prompt_referencias_en": "Character reference photo of {descripcion_en} {toma}. Plain light-grey studio background, soft even daylight, photorealistic, sharp focus on the face, natural skin texture, no text, no logos.",

@@ -1,0 +1,248 @@
+{
+ "version": 2,
+ "landing": "SÉBORA A · Validada",
+ "avatar": "co-barba-01",
+ "referencia_archivo": "imagenes/sebora/producto.webp",
+ "ficha": {
+  "escenario": "Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día.",
+  "luz": "Luz natural de mañana, suave y realista.",
+  "paleta": "Blancos, grises claros y acentos morados del empaque.",
+  "estilo": "Fotografía realista de celular de gama alta, sin aspecto de render ni de stock."
+ },
+ "producto": "Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.",
+ "reglas": "Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.",
+ "espacios": {
+  "hero-cantidad.imagen_1": {
+   "que": "GANCHO (Atención). El dolor #1 con las palabras del anuncio y el producto protagonista.",
+   "producto": true,
+   "persona": true,
+   "escena": "Primer plano de Andrés frente al espejo del baño, de tres cuartos. En la ceja y al lado de la nariz se ve ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado). Sostiene el frasco SÉBORA grande, en primer plano y nítido, hacia la cámara. Titular grande arriba; dos etiquetas pequeñas abajo.",
+   "persona_accion": "Se mira de cerca en el espejo, serio pero tranquilo, con el frasco en la mano.",
+   "principal": true,
+   "textos": [
+    "Esas escamas no son piel seca",
+    "Cejas · nariz · barba",
+    "Sin corticoides"
+   ],
+   "variantes": [
+    {
+     "nombre": "B",
+     "escena": "Mismo encuadre: Andrés señala su ceja con el dedo índice (ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado)) y el frasco SÉBORA grande está al lado, sobre el lavamanos.",
+     "textos": [
+      "No es resequedad",
+      "Es piel grasa que descama"
+     ]
+    },
+    {
+     "nombre": "C",
+     "escena": "A la izquierda un tubo de crema genérico, blanco, sin marca y medio usado; a la derecha el frasco SÉBORA grande; de fondo, desenfocado, el rostro de Andrés.",
+     "textos": [
+      "La calmas y vuelve",
+      "Suero de uso diario"
+     ]
+    }
+   ],
+   "historial": []
+  },
+  "hero-cantidad.imagen_2": {
+   "que": "Comparativa emocional (Transformación).",
+   "producto": true,
+   "persona": true,
+   "escena": "Imagen dividida en dos lados. Izquierda: Andrés de perfil frente al espejo, tapándose la ceja con la mano, incómodo. Derecha: Andrés de frente y tranquilo, acercándose al espejo con el frasco SÉBORA en la mano.",
+   "textos": [
+    "Disimulando las cejas",
+    "De cerca, sin esconderte"
+   ],
+   "comparativa": "lado izquierdo: «Disimulando las cejas»; lado derecho: «De cerca, sin esconderte»",
+   "historial": []
+  },
+  "hero-cantidad.imagen_3": {
+   "que": "Mecanismo (Interés): 8 extractos en 3 grupos.",
+   "producto": true,
+   "persona": false,
+   "escena": "El frasco SÉBORA al centro, de pie sobre una superficie de piedra clara, rodeado de hojas, flores secas y raíces botánicas. Tres etiquetas alrededor del frasco.",
+   "textos": [
+    "8 extractos botánicos",
+    "Calma",
+    "Limpia",
+    "Repara"
+   ],
+   "historial": []
+  },
+  "hero-cantidad.imagen_4": {
+   "que": "Comparativa contra la alternativa: crema grasosa vs suero.",
+   "producto": true,
+   "persona": true,
+   "escena": "Imagen dividida. Izquierda: primer plano de la barba de Andrés brillante y pegoteada, con crema blanca espesa en los dedos. Derecha: la misma barba seca y suelta, con unas gotas de suero transparente en la yema de los dedos y el frasco SÉBORA al lado.",
+   "textos": [
+    "Crema grasosa",
+    "Suero que no engrasa"
+   ],
+   "comparativa": "lado izquierdo: «Crema grasosa»; lado derecho: «Suero que no engrasa»",
+   "historial": []
+  },
+  "hero-cantidad.imagen_5": {
+   "que": "Uso real (Deseo).",
+   "producto": true,
+   "persona": true,
+   "escena": "Andrés en el baño, con luz de mañana, se aplica una capa delgada de suero junto a la nariz con la yema del dedo, frente al espejo. El frasco SÉBORA sobre el lavamanos, visible.",
+   "persona_accion": "Se aplica el suero con calma, gesto natural de rutina.",
+   "textos": [
+    "Una capa delgada",
+    "Todos los días"
+   ],
+   "historial": []
+  },
+  "hero-cantidad.imagen_6": {
+   "que": "Versatilidad: un solo suero para tres zonas.",
+   "producto": true,
+   "persona": true,
+   "escena": "Tríptico vertical de primeros planos de Andrés: su ceja, la aleta de la nariz y su barba, cada panel con piel limpia y cuidada; el frasco SÉBORA pequeño en una esquina de la imagen.",
+   "textos": [
+    "Un solo suero",
+    "Cejas · nariz · barba"
+   ],
+   "historial": []
+  },
+  "carrusel-imagenes.imagen1": {
+   "que": "Textura: un poco en los dedos.",
+   "producto": true,
+   "persona": true,
+   "escena": "Primer plano de la mano de Andrés presionando el pump del frasco SÉBORA; una pequeña cantidad de suero transparente y ligero en la yema de los dedos.",
+   "historial": []
+  },
+  "carrusel-imagenes.imagen2": {
+   "que": "Textura: lo esparce en la zona.",
+   "producto": false,
+   "persona": true,
+   "escena": "Primer plano del rostro de Andrés mientras esparce el suero con la yema del dedo en la ceja; piel con brillo húmedo leve del producto recién puesto.",
+   "historial": []
+  },
+  "carrusel-imagenes.imagen3": {
+   "que": "Textura: se absorbe sin engrasar.",
+   "producto": false,
+   "persona": true,
+   "escena": "Primer plano de la zona de la nariz y la barba de Andrés, ya seca, mate, sin brillo graso; la barba suelta. Él se toca la barba con naturalidad.",
+   "historial": []
+  },
+  "grid-dolores.item1": {
+   "que": "Dolor: escamas que se notan.",
+   "producto": false,
+   "persona": true,
+   "escena": "Macro de la ceja y el costado de la nariz de Andrés con ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado), luz de baño frontal. Sin producto.",
+   "historial": []
+  },
+  "grid-dolores.item2": {
+   "que": "Dolor: rojez que no se va.",
+   "producto": false,
+   "persona": true,
+   "escena": "Andrés mirándose la frente y la nariz en el espejo con leve rojez, gesto de frustración contenida. Sin producto.",
+   "historial": []
+  },
+  "grid-dolores.item3": {
+   "que": "Dolor: vuelve con el frío y el estrés.",
+   "producto": false,
+   "persona": true,
+   "escena": "Andrés en la oficina, de noche, cansado frente al computador, rascándose la barba sin darse cuenta. Sin producto.",
+   "historial": []
+  },
+  "grid-dolores.item4": {
+   "que": "Dolor: el corticoide la apaga y vuelve.",
+   "producto": false,
+   "persona": true,
+   "escena": "Sobre el lavamanos, varios tubos de crema genéricos sin marca, medio usados y abiertos; Andrés al fondo desenfocado mirándolos con cansancio. Sin el producto SÉBORA.",
+   "historial": []
+  },
+  "galeria-ideas.idea1": {
+   "que": "Zona: cejas.",
+   "producto": false,
+   "persona": true,
+   "escena": "Primer plano de las cejas de Andrés, limpias y peinadas; tercio inferior simple y más oscuro para el texto.",
+   "historial": []
+  },
+  "galeria-ideas.idea2": {
+   "que": "Zona: al lado de la nariz.",
+   "producto": false,
+   "persona": true,
+   "escena": "Primer plano del pliegue al lado de la nariz de Andrés, piel pareja y calmada; tercio inferior más oscuro.",
+   "historial": []
+  },
+  "galeria-ideas.idea3": {
+   "que": "Zona: frente y entrecejo.",
+   "producto": false,
+   "persona": true,
+   "escena": "Andrés de frente, luz suave, frente y entrecejo con piel pareja sin brillo graso; tercio inferior más oscuro.",
+   "historial": []
+  },
+  "galeria-ideas.idea4": {
+   "que": "Zona: debajo de la barba.",
+   "producto": false,
+   "persona": true,
+   "escena": "Primer plano de la barba de Andrés, suelta y limpia, su mano pasando entre el vello; tercio inferior más oscuro.",
+   "historial": []
+  },
+  "problemas-filas.fila1": {
+   "que": "Calma: Artemisia y Kochia.",
+   "producto": true,
+   "persona": false,
+   "escena": "Bodegón: ramas de artemisa y kochia frescas junto al frasco SÉBORA sobre piedra clara, luz natural suave.",
+   "historial": []
+  },
+  "problemas-filas.fila2": {
+   "que": "Limpia: Sophora y Dictamni.",
+   "producto": true,
+   "persona": false,
+   "escena": "Bodegón: raíces secas de sophora y corteza de dictamnus en un cuenco de cerámica junto al frasco SÉBORA.",
+   "historial": []
+  },
+  "problemas-filas.fila3": {
+   "que": "Repara: Solidago y Smilax.",
+   "producto": true,
+   "persona": false,
+   "escena": "Bodegón: flores amarillas de solidago y hojas de smilax junto al frasco SÉBORA, gotas de suero en la piedra.",
+   "historial": []
+  },
+  "problemas-filas.fila4": {
+   "que": "Sin corticoides, fragancias ni parabenos.",
+   "producto": true,
+   "persona": false,
+   "escena": "El frasco SÉBORA solo, limpio, sobre fondo lila muy claro, con hojas verdes alrededor; composición minimalista.",
+   "historial": []
+  },
+  "pasos.paso1": {
+   "que": "Paso 1: lava y seca la zona.",
+   "producto": false,
+   "persona": true,
+   "escena": "Andrés secándose la cara con una toalla blanca con toques suaves frente al espejo.",
+   "historial": []
+  },
+  "pasos.paso2": {
+   "que": "Paso 2: un poco en los dedos.",
+   "producto": true,
+   "persona": true,
+   "escena": "Primer plano de la mano de Andrés presionando el pump del frasco SÉBORA sobre la yema de los dedos.",
+   "historial": []
+  },
+  "pasos.paso3": {
+   "que": "Paso 3: déjalo absorber.",
+   "producto": true,
+   "persona": true,
+   "escena": "Andrés masajeando suavemente la ceja con la yema del dedo, expresión relajada, frasco SÉBORA visible en el lavamanos.",
+   "historial": []
+  },
+  "comparativa.imagen_a": {
+   "que": "Columna SÉBORA.",
+   "producto": true,
+   "persona": false,
+   "escena": "El frasco SÉBORA de pie, limpio, con hojas botánicas, fondo lila claro.",
+   "historial": []
+  },
+  "comparativa.imagen_b": {
+   "que": "Columna «Lo de siempre».",
+   "producto": false,
+   "persona": false,
+   "escena": "Tubos de crema genéricos sin marca y un frasco de shampoo genérico sin etiqueta, desordenados, fondo gris neutro.",
+   "historial": []
+  }
+ }
+}

@@ -9,7 +9,7 @@ Tienda: Tu espacio Market (CO) · Fecha: 2026-11-20 · Estado: confirmado (2026-
 - No prometer: curar, tratar, eliminar el hongo; INVIMA está en trámite (no se menciona). [Usuario + criterio]
 
 ## 2. Buyer
-- A: hombre y mujer de 25 a 45 años en Colombia con escamas y rojez en cejas, nariz, barba o cuero cabelludo, que ya probó shampoos o corticoides. [Hipótesis]
+- A: hombre de 25 a 45 años en Colombia con escamas y rojez en cejas, nariz, barba o cuero cabelludo, que ya probó shampoos o corticoides. [Hipótesis]
 - B: hombre de 22 a 40 años con barba, que cree que tiene "caspa en la barba" o resequedad. [Hipótesis]
 - Mapa de dolor: ver investigacion/sebora/dossier.md (1. escamas visibles/vergüenza, 2. picazón y rojez que vuelve, 3. corticoide que rebota/ya probé de todo).
 - Consciencia: A consciente del problema/solución; B inconsciente o consciente del problema.
