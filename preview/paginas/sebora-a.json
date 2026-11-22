@@ -1,0 +1,707 @@
+{
+ "titulo": "SÉBORA A",
+ "moneda": "$",
+ "locale": "es-CO",
+ "head_extra": "<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap'><style>:root{--pp-font-titulos:'Poppins',sans-serif;--pp-peso-titulos:700;--pp-espaciado-titulos:-0.01em}</style>",
+ "producto": {
+  "title": "SÉBORA Suero botánico 120 ml",
+  "selected_or_first_available_variant": {
+   "id": 1,
+   "price": 8990000,
+   "compare_at_price": null,
+   "available": true
+  },
+  "media": [
+   {
+    "preview_image": {
+     "src": "../../imagenes/sebora/producto.webp",
+     "alt": "SÉBORA"
+    }
+   }
+  ]
+ },
+ "secciones": [
+  {
+   "tipo": "pp-estilos",
+   "settings": {
+    "acento": "#5b2a86",
+    "texto": "#221a2b",
+    "texto_2": "#5b6675",
+    "fondo": "#ffffff",
+    "fondo_2": "#f1ebf7",
+    "boton": "#5b2a86",
+    "boton_texto": "#ffffff",
+    "estrella": "#e0a83a",
+    "ok": "#2e8b57",
+    "radio": 16
+   }
+  },
+  {
+   "tipo": "pp-ticker",
+   "settings": {
+    "fondo": "#5b2a86",
+    "texto": "#ffffff",
+    "separador": "✦"
+   },
+   "blocks": [
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Suero botánico sin corticoides para cejas, nariz y barba"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "8 extractos botánicos · 120 ml"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Envío express gratis a toda Colombia"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "mensaje",
+     "settings": {
+      "texto": "Garantía de 60 días"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-hero-cantidad",
+   "settings": {
+    "fondo": "#ffffff",
+    "proporcion": "1 / 1",
+    "navegacion": "miniaturas",
+    "mostrar_rating": false,
+    "rating": "4.9/5",
+    "rating_texto": "· 127 reseñas",
+    "titulo": "SÉBORA: Suero botánico <em>anti-escamas sin corticoides</em>",
+    "tamano_titulo": 26,
+    "texto": "No es piel seca: es dermatitis seborreica, en la piel grasa donde vive el hongo Malassezia. El corticoide la apaga y vuelve. Este suero botánico de 120 ml ayuda a calmar escamas y rojez.",
+    "icono_beneficios": "✓",
+    "ahorro_texto": "Ahorras",
+    "oferta_label": "Oferta:",
+    "etiquetas_titulo": "Tu pedido incluye",
+    "boton_modo": "easysell",
+    "boton_texto": "COMPRA AHORA",
+    "tachado_en_boton": true,
+    "boton_pulse": true,
+    "nota": "Pagas al recibir · Te escribimos por WhatsApp para confirmar"
+   },
+   "blocks": [
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Ayuda a reducir las escamas visibles en cejas, nariz y barba."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Ayuda a calmar la picazón y la rojez sin corticoides."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Entra entre el vello de cejas y barba sin engrasar."
+     }
+    },
+    {
+     "type": "beneficio",
+     "settings": {
+      "texto": "Se usa a diario, sin fragancias ni parabenos."
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "1 Unidad",
+      "precio": 89900,
+      "precio_antes": 0,
+      "cantidad": 1,
+      "etiqueta": "Para tu rutina de cara y barba"
+     }
+    },
+    {
+     "type": "pack",
+     "settings": {
+      "nombre": "2 Unidades",
+      "precio": 139900,
+      "precio_antes": 179800,
+      "cantidad": 2,
+      "etiqueta": "Para completar 6 a 8 semanas de uso",
+      "destacar": "Recomendado",
+      "preseleccionado": true
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "camion",
+      "texto": "Envío express <strong>GRATIS</strong> a toda Colombia",
+      "tachado": "$21.000"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "regalo",
+      "texto": "<strong>15 % OFF</strong> en tu segunda compra (te llega por WhatsApp)"
+     }
+    },
+    {
+     "type": "etiqueta",
+     "settings": {
+      "icono": "escudo",
+      "texto": "Garantía de <strong>60 días</strong>, la reclamas por WhatsApp"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-iconos",
+   "settings": {
+    "estilo": "circulos",
+    "espacio": 8,
+    "titulo": ""
+   },
+   "blocks": [
+    {
+     "type": "icono",
+     "settings": {
+      "icono": "hoja",
+      "texto": "Sin corticoides"
+     }
+    },
+    {
+     "type": "icono",
+     "settings": {
+      "icono": "gota",
+      "texto": "No engrasa"
+     }
+    },
+    {
+     "type": "icono",
+     "settings": {
+      "icono": "check",
+      "texto": "Cejas, nariz y barba"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-carrusel-imagenes",
+   "settings": {
+    "titulo": "Un suero, <em>no una crema grasosa</em>",
+    "texto": "Se absorbe en cejas, nariz y barba.",
+    "proporcion": "4 / 5"
+   },
+   "blocks": [
+    {
+     "type": "imagen",
+     "settings": {
+      "etiqueta": "Un poco en los dedos"
+     }
+    },
+    {
+     "type": "imagen",
+     "settings": {
+      "etiqueta": "Lo esparces en la zona"
+     }
+    },
+    {
+     "type": "imagen",
+     "settings": {
+      "etiqueta": "Se absorbe sin engrasar"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-grid-dolores",
+   "settings": {
+    "fondo": "fondo",
+    "etiqueta": "Lo que nadie te explicó",
+    "titulo": "Parece piel seca, <em>pero no lo es</em>",
+    "texto": "Le echas crema hidratante y al otro día las escamas siguen ahí.",
+    "columnas_movil": "2",
+    "columnas_pc": "4",
+    "proporcion": "1 / 1",
+    "cierre": "No es resequedad: <em>es piel grasa que se irrita y descama.</em>"
+   },
+   "blocks": [
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "Escamas que se notan",
+      "texto": "En las cejas, al lado de la nariz y en la barba."
+     }
+    },
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "Rojez que no se va",
+      "texto": "Meses con la frente y la nariz rojas."
+     }
+    },
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "Vuelve con el frío y el estrés",
+      "texto": "Cuando crees que pasó, aparece otra vez."
+     }
+    },
+    {
+     "type": "item",
+     "settings": {
+      "titulo": "El corticoide la apaga y vuelve",
+      "texto": "La calmas unos días y regresa."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-galeria-ideas",
+   "settings": {
+    "color_fondo": "#f1ebf7",
+    "color_texto": "#221a2b",
+    "color_acento": "#5b2a86",
+    "nieve": false,
+    "etiqueta": "Dónde se usa",
+    "titulo": "Cara limpia <em>de cerca</em>",
+    "texto": "Las zonas grasas donde salen las escamas. Imágenes ilustrativas.",
+    "proporcion": "4 / 3",
+    "columnas_pc": "3"
+   },
+   "blocks": [
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Cejas",
+      "titulo": "Cejas sin escamitas",
+      "texto": "Ayuda a reducir la descamación visible entre el vello."
+     }
+    },
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Nariz",
+      "titulo": "Al lado de la nariz",
+      "texto": "Ayuda a calmar la rojez del pliegue."
+     }
+    },
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Frente",
+      "titulo": "La frente y el entrecejo",
+      "texto": "Ayuda a que la piel se vea pareja, sin brillo graso."
+     }
+    },
+    {
+     "type": "idea",
+     "settings": {
+      "etiqueta": "Barba",
+      "titulo": "Debajo de la barba",
+      "texto": "Entra entre el vello sin engrasar."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-problemas-filas",
+   "settings": {
+    "color_fondo": "#ffffff",
+    "color_tarjeta": "#f1ebf7",
+    "color_acento": "#5b2a86",
+    "color_dorado": "#5b2a86",
+    "color_texto": "#221a2b",
+    "adorno": false,
+    "titulo": "8 extractos botánicos",
+    "titulo_dorado": "que calman, limpian y reparan",
+    "titulo_fin": "",
+    "cierre": "Es piel grasa que vuelve a descamar. Por eso el cuidado es diario, no por temporadas."
+   },
+   "blocks": [
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "hoja",
+      "titulo": "Calma · Artemisia y Kochia",
+      "puntos": "Ayudan a calmar la picazón y la rojez del día a día."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "gota",
+      "titulo": "Limpia · Sophora flavescens y Dictamni cortex",
+      "puntos": "Ayudan a mantener limpia la piel grasa donde aparecen las escamas."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "escudo",
+      "titulo": "Repara · Solidago decurrens y Smilax glabra",
+      "puntos": "Ayudan a cuidar la piel irritada para que se vea más pareja."
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "icono": "check",
+      "titulo": "Sin corticoides",
+      "puntos": "Sin corticoides, fragancias ni parabenos: lo puedes usar a diario."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-pasos",
+   "settings": {
+    "estilo": "fotos",
+    "fondo": "fondo",
+    "titulo": "Así lo usas: <em>3 pasos</em>",
+    "texto": ""
+   },
+   "blocks": [
+    {
+     "type": "paso",
+     "settings": {
+      "titulo": "Lava y seca la zona",
+      "texto": "Cejas, nariz, frente o barba, con la piel limpia."
+     }
+    },
+    {
+     "type": "paso",
+     "settings": {
+      "titulo": "Un poco en los dedos",
+      "texto": "Presiona el pump y esparce una capa delgada."
+     }
+    },
+    {
+     "type": "paso",
+     "settings": {
+      "titulo": "Déjalo absorber",
+      "texto": "No se enjuaga. Úsalo todos los días."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-esperar",
+   "settings": {
+    "fondo": "fondo-2",
+    "color_acento": "#5b2a86",
+    "color_icono": "#5b2a86",
+    "etiqueta": "Con el uso diario",
+    "titulo": "Qué esperar <em>sin el rebote</em>",
+    "texto": "Cada piel es distinta. Esto es lo que el suero ayuda a lograr con uso diario."
+   },
+   "blocks": [
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "reloj",
+      "periodo": "Desde el primer uso",
+      "texto": "Lo sientes ligero, se absorbe y no deja brillo graso."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "calendario",
+      "periodo": "Con el uso diario",
+      "texto": "Ayuda a calmar la picazón y la sensación de tirantez."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "calendario",
+      "periodo": "Con constancia",
+      "texto": "Ayuda a que las escamas visibles se noten menos."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "calendario",
+      "periodo": "Para 6 a 8 semanas",
+      "texto": "El pack de 2 te alcanza para no cortar la rutina."
+     }
+    },
+    {
+     "type": "etapa",
+     "settings": {
+      "icono": "calendario",
+      "periodo": "Cuando llegan el frío o el estrés",
+      "texto": "Como no tiene corticoides, lo sigues usando sin miedo al rebote."
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-comparativa",
+   "settings": {
+    "etiqueta": "La diferencia",
+    "titulo": "SÉBORA vs. <em>lo que ya probaste</em>",
+    "texto": "Corticoide, shampoo de droguería o crema grasosa.",
+    "color_destacado": "#5b2a86",
+    "nombre_a": "SÉBORA",
+    "sub_a": "Suero botánico",
+    "nombre_b": "Lo de siempre",
+    "sub_b": "Corticoide, shampoo o crema",
+    "pie_izq": "SÉBORA",
+    "pie_der": "Sin corticoides"
+   },
+   "blocks": [
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Frente al corticoide",
+      "subtitulo": "Al dejarlo",
+      "ok_a": true,
+      "valor_a": "Sin corticoides, de uso diario",
+      "ok_b": false,
+      "valor_b": "Las escamas vuelven"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Frente al shampoo",
+      "subtitulo": "Cejas, nariz, barba",
+      "ok_a": true,
+      "valor_a": "Va justo en la zona",
+      "ok_b": false,
+      "valor_b": "Hecho para el cuero cabelludo"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Frente a la crema",
+      "subtitulo": "En el vello",
+      "ok_a": true,
+      "valor_a": "Suero que no engrasa",
+      "ok_b": false,
+      "valor_b": "Queda grasosa y pegajosa"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Fragancias y parabenos",
+      "subtitulo": "En piel irritada",
+      "ok_a": true,
+      "valor_a": "Sin ninguno",
+      "ok_b": false,
+      "valor_b": "Depende del producto"
+     }
+    },
+    {
+     "type": "fila",
+     "settings": {
+      "titulo": "Cuánto lo usas",
+      "subtitulo": "Rutina",
+      "ok_a": true,
+      "valor_a": "Todos los días",
+      "ok_b": false,
+      "valor_b": "Por temporadas"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-resenas",
+   "settings": {
+    "etiqueta": "Opiniones",
+    "titulo": "Ya no parece <em>piel seca</em>",
+    "nota": "",
+    "cantidad": "",
+    "visibles": 3
+   },
+   "blocks": [
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Pensé que era resequedad",
+      "texto": "Le echaba crema y nada. Lo uso a diario en cejas y nariz y las escamitas se notan mucho menos.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Bogotá",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Sin la crema de siempre",
+      "texto": "Quería algo sin corticoides para todos los días. Este lo uso sin pensar en cuándo dejarlo.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Medellín",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "No me engrasa",
+      "texto": "Tengo la piel grasa y las cremas me dejaban brillando. El suero se absorbe rápido.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Cali",
+      "verificado": false
+     }
+    },
+    {
+     "type": "resena",
+     "settings": {
+      "estrellas": 5,
+      "titulo": "Para mi esposo también",
+      "texto": "Pedí el de 2: uno para mis cejas y otro para la barba de él.",
+      "nombre": "Testimonio de ejemplo",
+      "ciudad": "Barranquilla",
+      "verificado": false
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-garantia",
+   "settings": {
+    "color_tarjeta": "#5b2a86",
+    "color_texto": "#ffffff",
+    "color_sello": "#5b2a86",
+    "sello_arriba": "Garantía",
+    "sello_numero": "60",
+    "sello_abajo": "Días",
+    "etiqueta": "Compra tranquila",
+    "titulo": "60 días de garantía por WhatsApp",
+    "texto": "Ya probaste de todo, y lo entendemos. Usa SÉBORA a diario; si tienes cualquier inconveniente en los primeros 60 días, nos escribes por WhatsApp y lo gestionamos. Y pagas solo cuando lo recibes."
+   },
+   "blocks": [
+    {
+     "type": "punto",
+     "settings": {
+      "icono": "escudo",
+      "texto": "Garantía 60 días"
+     }
+    },
+    {
+     "type": "punto",
+     "settings": {
+      "icono": "pago",
+      "texto": "Pagas al recibir"
+     }
+    },
+    {
+     "type": "punto",
+     "settings": {
+      "icono": "chat",
+      "texto": "Garantía por WhatsApp"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-faq",
+   "settings": {
+    "estilo": "tarjetas",
+    "fondo": "fondo-2",
+    "etiqueta": "Preguntas frecuentes",
+    "titulo": "Resolvemos tus dudas",
+    "texto": "",
+    "abrir_primera": true
+   },
+   "blocks": [
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Marta de Bogotá pregunta: ya probé de todo, ¿por qué esto sería distinto?",
+      "respuesta": "<p>Porque no es otra crema hidratante ni un corticoide. Es un suero sin corticoides que puedes usar <strong>todos los días</strong>, justo en la zona grasa donde salen las escamas. Y tienes <strong>60 días de garantía</strong>.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Andrés de Medellín pregunta: ¿es otra crema natural más?",
+      "respuesta": "<p>No es crema: es un <strong>suero ligero de 120 ml</strong> con 8 extractos botánicos que se absorbe sin engrasar. No promete milagros: <strong>ayuda a calmar</strong> la picazón y la rojez y a reducir las escamas visibles con uso diario.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Carolina de Cali pregunta: ¿me va a arder en la cara?",
+      "respuesta": "<p>No tiene fragancias ni parabenos. Igual, cada piel es distinta: <strong>pruébalo primero en una zona pequeña</strong>. Si te arde o te irrita, suspéndelo y escríbenos por WhatsApp.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Felipe de Bucaramanga pregunta: ¿me engrasa la barba?",
+      "respuesta": "<p>No. Es suero, no crema ni aceite: <strong>entra entre el vello</strong>, llega a la piel y la barba queda suelta.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Juliana de Barranquilla pregunta: ¿en cuánto tiempo noto algo?",
+      "respuesta": "<p>Desde el primer uso lo sientes ligero. La picazón y las escamas visibles <strong>van cediendo con el uso diario y la constancia</strong>, y cada piel va a su ritmo. Por eso el pack de 2 te alcanza para <strong>6 a 8 semanas</strong> sin cortar la rutina.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Sandra de Pereira pregunta: ¿por qué pagar esto si un shampoo de droguería sale más barato?",
+      "respuesta": "<p>El shampoo está pensado para el cuero cabelludo y se enjuaga a los pocos minutos. SÉBORA es un suero que <strong>se queda en cejas, nariz y barba</strong>. Con el pack de 2, cada frasco sale a <strong>$69.950</strong> y te alcanza para 6 a 8 semanas.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Diana de Ibagué pregunta: es una marca nueva, ¿cómo confío?",
+      "respuesta": "<p>No pagas nada por adelantado: <strong>pagas cuando lo recibes</strong>, te escribimos por WhatsApp para confirmar y tienes <strong>60 días de garantía</strong>.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Laura de Cartagena pregunta: ¿cómo pago y cuándo me llega?",
+      "respuesta": "<p>Pagas al recibir. El <strong>envío express es gratis</strong> y llega en <strong>3 a 5 días hábiles</strong>. Te escribimos por WhatsApp para confirmar tu pedido.</p>"
+     }
+    },
+    {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "Paula de Manizales pregunta: ¿lo puedo usar si estoy con corticoide?",
+      "respuesta": "<p>Es un cosmético sin corticoides. Si estás en un tratamiento médico, <strong>consúltalo con tu médico</strong> antes de combinarlo.</p>"
+     }
+    }
+   ]
+  },
+  {
+   "tipo": "pp-boton-fijo",
+   "settings": {
+    "boton_texto": "Lo quiero",
+    "subtexto": "Envío gratis · Pagas al recibir",
+    "precio_manual": 139900,
+    "aparecer": "despues_oferta"
+   }
+  }
+ ]
+}
