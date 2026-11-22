@@ -164,7 +164,7 @@
      "type": "etiqueta",
      "settings": {
       "icono": "escudo",
-      "texto": "Garantía de <strong>60 días</strong>, la reclamas por WhatsApp"
+      "texto": "Garantía de <strong>60 días</strong> o te devolvemos tu dinero"
      }
     }
    ]
@@ -591,8 +591,8 @@
     "sello_numero": "60",
     "sello_abajo": "Días",
     "etiqueta": "Compra tranquila",
-    "titulo": "60 días de garantía por WhatsApp",
-    "texto": "Ya probaste de todo, y lo entendemos. Usa SÉBORA a diario; si tienes cualquier inconveniente en los primeros 60 días, nos escribes por WhatsApp y lo gestionamos. Y pagas solo cuando lo recibes."
+    "titulo": "60 días o te devolvemos tu dinero",
+    "texto": "Ya probaste de todo, y lo entendemos. Usa SÉBORA a diario; si en los primeros 60 días no te convence, nos escribes por WhatsApp y te devolvemos tu dinero. Y pagas solo cuando lo recibes."
    },
    "blocks": [
     {
@@ -633,7 +633,7 @@
      "type": "pregunta",
      "settings": {
       "pregunta": "Marta de Bogotá pregunta: ya probé de todo, ¿por qué esto sería distinto?",
-      "respuesta": "<p>Porque no es otra crema hidratante ni un corticoide. Es un suero sin corticoides que puedes usar <strong>todos los días</strong>, justo en la zona grasa donde salen las escamas. Y tienes <strong>60 días de garantía</strong>.</p>"
+      "respuesta": "<p>Porque no es otra crema hidratante ni un corticoide. Es un suero sin corticoides que puedes usar <strong>todos los días</strong>, justo en la zona grasa donde salen las escamas. Y si en 60 días no te convence, <strong>te devolvemos tu dinero</strong>.</p>"
      }
     },
     {
