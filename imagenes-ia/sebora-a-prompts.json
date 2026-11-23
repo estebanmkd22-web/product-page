@@ -4,12 +4,12 @@
  "avatar": "co-barba-01",
  "referencia_archivo": "imagenes/sebora/producto.webp",
  "ficha": {
-  "escenario": "Baño moderno colombiano, limpio, azulejos claros, espejo grande; oficina en las escenas de día a día.",
-  "luz": "Luz natural de mañana, suave y realista.",
-  "paleta": "Blancos, grises claros y acentos morados del empaque.",
-  "estilo": "Fotografía realista de celular de gama alta, sin aspecto de render ni de stock."
+  "escenario": "Baño real de apartamento colombiano (azulejos sencillos, objetos cotidianos), habitación con cama destendida, oficina común. Nada de set de estudio.",
+  "luz": "Luz natural de ventana, de mañana, suave; sombras reales.",
+  "paleta": "Blancos, grises cálidos y el morado del empaque.",
+  "estilo": "Foto tomada con celular por una persona real: textura de piel natural con poros, vello y pequeñas imperfecciones, sin retoque, sin piel de plástico, sin simetría perfecta, ligero grano, encuadre algo imperfecto. Que NO parezca generada por IA ni foto de stock."
  },
- "producto": "Frasco blanco de SÉBORA con dispensador pump transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (solo el frasco, sin la caja salvo que se pida). No inventes textos en la etiqueta ni piezas de más.",
+ "producto": "Frasco blanco SÉBORA de 60 ml con dispensador pump y tapa transparente, franja morada y logo SÉBORA, idéntico a la foto adjunta (tamaño real: cabe en la mano de un hombre). Sin la caja salvo que se pida. No inventes textos en la etiqueta ni piezas de más.",
  "reglas": "Sin textos, letreros ni logos dentro de la imagen (excepto en las imágenes del hero). Manos naturales con cinco dedos. Piel realista: nunca lesiones, heridas ni aspecto médico.",
  "espacios": {
   "hero-cantidad.imagen_1": {
@@ -67,7 +67,12 @@
     "Limpia",
     "Repara"
    ],
-   "historial": []
+   "historial": [],
+   "referente": {
+    "nombre": "Gota en el pump",
+    "archivo": "imagenes/referentes/sebora-hero/ref1-gota-pump.webp",
+    "tomar": "Solo la composición: dedo presionando el pump, gota transparente cayendo, macro con fondo claro y la disposición de textos con íconos finos a un lado. No copies sus textos."
+   }
   },
   "hero-cantidad.imagen_4": {
    "que": "Comparativa contra la alternativa: crema grasosa vs suero.",
@@ -85,13 +90,18 @@
    "que": "Uso real (Deseo).",
    "producto": true,
    "persona": true,
-   "escena": "Andrés en el baño, con luz de mañana, se aplica una capa delgada de suero junto a la nariz con la yema del dedo, frente al espejo. El frasco SÉBORA sobre el lavamanos, visible.",
+   "escena": "Primer plano de perfil, muy cercano, de Andrés aplicándose el suero transparente en la barba y la mejilla con la yema de los dedos, luz natural de ventana, cama destendida desenfocada al fondo. El frasco SÉBORA en su otra mano o en la mesa de noche, visible.",
    "persona_accion": "Se aplica el suero con calma, gesto natural de rutina.",
    "textos": [
     "Una capa delgada",
     "Todos los días"
    ],
-   "historial": []
+   "historial": [],
+   "referente": {
+    "nombre": "Aplicación en la barba",
+    "archivo": "imagenes/referentes/sebora-hero/ref2-barba-aplicacion.webp",
+    "tomar": "Solo el encuadre de perfil muy cercano, la mano entrando a la barba, la luz natural y la cama de fondo desenfocada. El producto aquí es un suero transparente, no crema blanca."
+   }
   },
   "hero-cantidad.imagen_6": {
    "que": "Versatilidad: un solo suero para tres zonas.",
@@ -109,7 +119,12 @@
    "producto": true,
    "persona": true,
    "escena": "Primer plano de la mano de Andrés presionando el pump del frasco SÉBORA; una pequeña cantidad de suero transparente y ligero en la yema de los dedos.",
-   "historial": []
+   "historial": [],
+   "referente": {
+    "nombre": "Gota en el pump",
+    "archivo": "imagenes/referentes/sebora-hero/ref1-gota-pump.webp",
+    "tomar": "Solo el macro del pump con la gota transparente; sin ningún texto."
+   }
   },
   "carrusel-imagenes.imagen2": {
    "que": "Textura: lo esparce en la zona.",

@@ -3,9 +3,9 @@ Tienda: Tu espacio Market (CO) · Fecha: 2026-11-20 · Estado: confirmado (2026-
 
 ## 1. Producto
 - Qué es: un suero botánico que se aplica en la cara y la barba para calmar las escamas, la rojez y la picazón de la dermatitis seborreica. [Usuario]
-- Specs: 120 mL, dispensador pump; 8 extractos: calma (Artemisia, Kochia), limpia (Sophora flavescens, Dictamni cortex), repara (Solidago decurrens, Smilax glabra). Sin fragancias, parabenos ni corticoides. [Usuario/caja]
-- Caja: frasco 120 mL + caja (la caja se corrige de 60 a 120 mL). [Usuario]
-- Foto: imagen de brandeo del usuario (falta versión con 120 mL).
+- Specs: 60 ml, dispensador pump; 8 extractos: calma (Artemisia, Kochia), limpia (Sophora flavescens, Dictamni cortex), repara (Solidago decurrens, Smilax glabra). Sin fragancias, parabenos ni corticoides. [Usuario/caja]
+- Caja: frasco 60 ml + caja (caja de 60 ml). [Usuario]
+- Foto: imagen de brandeo del usuario (falta versión con 60 ml).
 - No prometer: curar, tratar, eliminar el hongo; INVIMA está en trámite (no se menciona). [Usuario + criterio]
 
 ## 2. Buyer

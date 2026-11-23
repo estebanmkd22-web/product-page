@@ -32,7 +32,7 @@
         "mensaje_2": {
           "type": "mensaje",
           "settings": {
-            "texto": "8 extractos botánicos · 120 ml"
+            "texto": "8 extractos botánicos · 60 ml"
           }
         },
         "mensaje_3": {
@@ -73,7 +73,7 @@
         "rating_texto": "· 127 reseñas",
         "titulo": "SÉBORA: Suero botánico <em>anti-escamas sin corticoides</em>",
         "tamano_titulo": 26,
-        "texto": "No es piel seca: es dermatitis seborreica, en la piel grasa donde vive el hongo Malassezia. El corticoide la apaga y vuelve. Este suero botánico de 120 ml ayuda a calmar escamas y rojez.",
+        "texto": "No es piel seca: es dermatitis seborreica, en la piel grasa donde vive el hongo Malassezia. El corticoide la apaga y vuelve. Este suero botánico de 60 ml ayuda a calmar escamas y rojez.",
         "icono_beneficios": "✓",
         "ahorro_texto": "Ahorras",
         "oferta_label": "Oferta:",
@@ -695,7 +695,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "Felipe de Medellín pregunta: ¿es otra crema natural más?",
-            "respuesta": "<p>No es crema: es un <strong>suero ligero de 120 ml</strong> con 8 extractos botánicos que se absorbe sin engrasar. No promete milagros: <strong>ayuda a calmar</strong> la picazón y la rojez y a reducir las escamas visibles con uso diario.</p>"
+            "respuesta": "<p>No es crema: es un <strong>suero ligero de 60 ml</strong> con 8 extractos botánicos que se absorbe sin engrasar. No promete milagros: <strong>ayuda a calmar</strong> la picazón y la rojez y a reducir las escamas visibles con uso diario.</p>"
           }
         },
         "pregunta_3": {
