@@ -16,13 +16,11 @@
    "que": "GANCHO (Atención). El dolor #1 con las palabras del anuncio y el producto protagonista.",
    "producto": true,
    "persona": true,
-   "escena": "Primer plano de Andrés frente al espejo del baño, de tres cuartos. En la ceja y al lado de la nariz se ve ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado). Sostiene el frasco SÉBORA grande, en primer plano y nítido, hacia la cámara. Titular grande arriba; dos etiquetas pequeñas abajo.",
+   "escena": "Primer plano de Andrés frente al espejo del baño, de tres cuartos. En la ceja y al lado de la nariz se ve ligero enrojecimiento y piel levemente descamada (sutil, realista, nada exagerado). Sostiene el frasco SÉBORA grande, en primer plano y nítido, hacia la cámara. Titular grande arriba; la parte de abajo de la imagen queda limpia, sin textos ni etiquetas.",
    "persona_accion": "Se mira de cerca en el espejo, serio pero tranquilo, con el frasco en la mano.",
    "principal": true,
    "textos": [
-    "Esas escamas no son piel seca",
-    "Cejas · nariz · barba",
-    "Sin corticoides"
+    "Esas escamas no son piel seca"
    ],
    "variantes": [
     {
@@ -42,7 +40,13 @@
      ]
     }
    ],
-   "historial": []
+   "historial": [
+    {
+     "fecha": "2026-11-23",
+     "parte": "textos",
+     "cambio": "Se quitan las etiquetas de abajo («Cejas · nariz · barba», «Sin corticoides»): solo queda el titular."
+    }
+   ]
   },
   "hero-cantidad.imagen_2": {
    "que": "Comparativa emocional (Transformación).",

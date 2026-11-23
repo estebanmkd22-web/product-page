@@ -11,6 +11,8 @@ const kit = JSON.parse(fs.readFileSync(fPrompts, 'utf8'));
 const banco = JSON.parse(fs.readFileSync(new URL('../avatares/banco.json', import.meta.url), 'utf8')).avatares;
 // Tipografía fija de los textos en imagen (decisión del dueño, 2026-11-23): Roboto, salvo que el kit diga otra.
 const FUENTE = kit.tipografia || 'Roboto';
+const MUESTRA_FUENTE = kit.tipografia_muestra || (FUENTE === 'Roboto' ? 'imagenes/tipografias/roboto-muestra.jpg' : '');
+const RASGOS_FUENTE = FUENTE === 'Roboto' ? ' Roboto es una sans serif neo-grotesca (la letra de Android y Google): formas algo condensadas y rectas, la «a» de dos pisos, la «g» de un piso, la «R» con la pierna recta, terminaciones horizontales. NO es una fuente geométrica redonda: no uses Poppins, Montserrat, Futura, Gotham, Avenir, Nunito ni Arial Rounded. Si dudas, imita exactamente la imagen de muestra de la fuente que te adjunto.' : '';
 const avatar = kit.avatar ? banco[kit.avatar] : null;
 if (kit.avatar && !avatar) throw new Error(`El avatar "${kit.avatar}" no está en avatares/banco.json`);
 const refsAvatar = avatar ? Object.values(avatar.referencias).filter(Boolean) : [];
@@ -37,7 +39,7 @@ const FORMATO_CHATGPT = (p) => {
   if (a === b) return { pedir: 'cuadrada (1:1)', recorte: '' };
   return a < b ? { pedir: 'vertical (2:3)', recorte: p === '2/3' ? '' : `recórtala a ${p.replace('/', ':')}` } : { pedir: 'horizontal (3:2)', recorte: p === '3/2' ? '' : `recórtala a ${p.replace('/', ':')}` };
 };
-const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avatar ? `la foto de ${avatar.nombre}` : '', p.referente?.archivo ? `la imagen del referente (${p.referente.nombre})` : ''].filter(Boolean);
+const adjuntosDe = (p) => [p.producto ? 'la foto del producto' : '', p.persona && avatar ? `la foto de ${avatar.nombre}` : '', p.referente?.archivo ? `la imagen del referente (${p.referente.nombre})` : '', (p.textos || []).length && MUESTRA_FUENTE ? `la muestra de la fuente ${FUENTE}` : ''].filter(Boolean);
 const promptV2 = (e, p) => {
   const f = FORMATO_CHATGPT(e.proporcion.replace(/\s/g, ''));
   const adj = adjuntosDe(p);
@@ -50,7 +52,7 @@ const promptV2 = (e, p) => {
     p.persona && avatar ? `Persona: debe ser exactamente ${avatar?.genero === 'hombre' ? 'el mismo hombre' : 'la misma mujer'} de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     p.comparativa ? `Comparativa: ${p.comparativa} Divide la imagen en dos lados claramente separados. El contraste lo cuentan la escena y los textos: no escribas las palabras "antes" ni "después".` : '',
-    (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía ${FUENTE} (sans serif de Google Fonts): titular en ${FUENTE} Bold o Black, etiquetas en ${FUENTE} Regular o Light; nada de letra manuscrita, serif ni cursiva; grande, limpia y legible en celular): titular grande «${p.textos[0].split(' / ').join('» en una línea y debajo «')}»${p.textos.length > 1 ? (p.comparativa ? `; sobre el lado izquierdo, pequeño, «${p.textos[1]}»${p.textos[2] ? `; sobre el lado derecho, pequeño, «${p.textos[2]}»` : ''}` : `; ${p.textos.length > 2 ? 'etiquetas pequeñas tipo sticker' : 'etiqueta pequeña tipo sticker'} junto al producto: ${p.textos.slice(1).map((t) => `«${t}»`).join(' y ')}`) : ''}.` : '',
+    (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía ${FUENTE} (sans serif de Google Fonts): titular en ${FUENTE} Bold o Black, etiquetas en ${FUENTE} Regular o Light; nada de letra manuscrita, serif ni cursiva; grande, limpia y legible en celular.${RASGOS_FUENTE}): titular grande «${p.textos[0].split(' / ').join('» en una línea y debajo «')}»${p.textos.length > 1 ? (p.comparativa ? `; sobre el lado izquierdo, pequeño, «${p.textos[1]}»${p.textos[2] ? `; sobre el lado derecho, pequeño, «${p.textos[2]}»` : ''}` : `; ${p.textos.length > 2 ? 'etiquetas pequeñas tipo sticker' : 'etiqueta pequeña tipo sticker'} junto al producto: ${p.textos.slice(1).map((t) => `«${t}»`).join(' y ')}`) : ''}.` : '',
     `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
     `Formato: imagen ${f.pedir}.`,
     `Reglas: ${kit.reglas}${(p.textos || []).length ? ' Excepción: esta imagen lleva únicamente los textos indicados arriba.' : ''}`,
@@ -126,7 +128,7 @@ button{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:8px 1
 <div class="resumen"><span>${items.length} imágenes</span><span>${items.filter((i) => i.producto).length} con foto del producto</span>${faltan.length ? `<span>${faltan.length} sin prompt</span>` : ''}</div>
 ${V2 ? `<div class="webp"><b>Todas las imágenes van en .webp.</b> Cada prompt le pide a ChatGPT convertir la imagen a WebP al final. Si igual te entrega PNG, pega este mensaje en la misma conversación:<pre>${esc(CONVERTIR)}</pre><button data-copy="${esc(CONVERTIR)}">Copiar mensaje de conversión</button></div>` : ''}
 <div class="ficha"><h2>Ficha visual</h2>${ficha}</div>
-${bloqueAvatar}
+${bloqueAvatar}${MUESTRA_FUENTE ? `<div class="avatar"><h2>Fuente de los textos: ${esc(FUENTE)}</h2><p>Descarga esta muestra y adjúntala en cada imagen que lleva texto, junto con las demás fotos.</p><img src="${esc(MUESTRA_FUENTE)}" alt="Muestra de ${esc(FUENTE)}" style="width:100%;max-width:520px;border-radius:12px"></div>` : ''}
 ${tarjetas}
 </div>
 <script>document.addEventListener('click',e=>{const b=e.target.closest('[data-copy]');if(!b)return;navigator.clipboard.writeText(b.dataset.copy).then(()=>{b.textContent='Copiado';setTimeout(()=>b.textContent='Copiar',1500)}).catch(()=>{})});</script>
