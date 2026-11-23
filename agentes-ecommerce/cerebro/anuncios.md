@@ -20,3 +20,5 @@ No pueden aparecer en ninguna parte del anuncio: **ni en la imagen, ni en el tex
 Revisa cada anuncio buscando estas palabras: *recibir, contraentrega, gratis, envío, WhatsApp*. Si aparece alguna de las prohibidas, se reescribe antes de mostrarlo.
 
 Esta regla es solo para anuncios. La landing y la atención al cliente siguen sus propias reglas.
+
+- **(2026-11-23) Tipografía de los textos en imagen: siempre Roboto** (titular Bold o Black, etiquetas Regular o Light), en anuncios estáticos y en cualquier imagen con texto. Un referente nunca cambia la fuente.

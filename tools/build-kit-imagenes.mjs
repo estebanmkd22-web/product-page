@@ -9,6 +9,8 @@ const [fEspacios, fPrompts, salida] = process.argv.slice(2);
 const espacios = JSON.parse(fs.readFileSync(fEspacios, 'utf8'));
 const kit = JSON.parse(fs.readFileSync(fPrompts, 'utf8'));
 const banco = JSON.parse(fs.readFileSync(new URL('../avatares/banco.json', import.meta.url), 'utf8')).avatares;
+// Tipografía fija de los textos en imagen (decisión del dueño, 2026-11-23): Roboto, salvo que el kit diga otra.
+const FUENTE = kit.tipografia || 'Roboto';
 const avatar = kit.avatar ? banco[kit.avatar] : null;
 if (kit.avatar && !avatar) throw new Error(`El avatar "${kit.avatar}" no está en avatares/banco.json`);
 const refsAvatar = avatar ? Object.values(avatar.referencias).filter(Boolean) : [];
@@ -43,12 +45,12 @@ const promptV2 = (e, p) => {
   return [
     'ENTREGA OBLIGATORIA: el archivo final debe ser .webp (no PNG, no JPG).',
     adj.length ? `Usa como referencia ${adj.join(' y ')} que te adjunto.` : '',
-    p.referente?.archivo ? `Referente de diseño: la imagen de ${p.referente.nombre} que te adjunto. Toma de ella solo ${p.referente.tomar || 'la composición, la jerarquía de los textos, la tipografía y el estilo del fondo'}; no copies su producto, su marca, sus personas ni sus textos.` : '',
+    p.referente?.archivo ? `Referente de diseño: la imagen de ${p.referente.nombre} que te adjunto. Toma de ella solo ${p.referente.tomar || 'la composición, la jerarquía de los textos y el estilo del fondo'}; la tipografía no se copia: siempre ${FUENTE}; no copies su producto, su marca, sus personas ni sus textos.` : '',
     p.producto ? `Producto: ${kit.producto}` : '',
     p.persona && avatar ? `Persona: debe ser exactamente ${avatar?.genero === 'hombre' ? 'el mismo hombre' : 'la misma mujer'} de la foto adjunta (${avatar.descripcion.replace(/\.$/, "")}), con la misma cara, tono de piel, cabello y contextura. ${p.persona_accion || ''}`.trim() : '',
     `Escena: ${p.escena}`,
     p.comparativa ? `Comparativa: ${p.comparativa} Divide la imagen en dos lados claramente separados. El contraste lo cuentan la escena y los textos: no escribas las palabras "antes" ni "después".` : '',
-    (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía grande, limpia y legible en celular): titular grande «${p.textos[0].split(' / ').join('» en una línea y debajo «')}»${p.textos.length > 1 ? (p.comparativa ? `; sobre el lado izquierdo, pequeño, «${p.textos[1]}»${p.textos[2] ? `; sobre el lado derecho, pequeño, «${p.textos[2]}»` : ''}` : `; ${p.textos.length > 2 ? 'etiquetas pequeñas tipo sticker' : 'etiqueta pequeña tipo sticker'} junto al producto: ${p.textos.slice(1).map((t) => `«${t}»`).join(' y ')}`) : ''}.` : '',
+    (p.textos || []).length ? `Texto dentro de la imagen (esta imagen SÍ lleva texto, solo este, copiado exacto, en español, sin errores de ortografía ni tildes faltantes, tipografía ${FUENTE} (sans serif de Google Fonts): titular en ${FUENTE} Bold o Black, etiquetas en ${FUENTE} Regular o Light; nada de letra manuscrita, serif ni cursiva; grande, limpia y legible en celular): titular grande «${p.textos[0].split(' / ').join('» en una línea y debajo «')}»${p.textos.length > 1 ? (p.comparativa ? `; sobre el lado izquierdo, pequeño, «${p.textos[1]}»${p.textos[2] ? `; sobre el lado derecho, pequeño, «${p.textos[2]}»` : ''}` : `; ${p.textos.length > 2 ? 'etiquetas pequeñas tipo sticker' : 'etiqueta pequeña tipo sticker'} junto al producto: ${p.textos.slice(1).map((t) => `«${t}»`).join(' y ')}`) : ''}.` : '',
     `Ambiente: ${Object.values(kit.ficha).join(' ')}`,
     `Formato: imagen ${f.pedir}.`,
     `Reglas: ${kit.reglas}${(p.textos || []).length ? ' Excepción: esta imagen lleva únicamente los textos indicados arriba.' : ''}`,

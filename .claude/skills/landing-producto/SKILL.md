@@ -295,6 +295,7 @@ La herramienta arma sola el prompt completo: qué adjuntar, producto, avatar, es
     - **Se entiende en 1 segundo:** qué dolor quita y por qué lo quiero.
     - **Lleva 2 variantes** (`"variantes": [{ "nombre": "B", "escena": "…", "textos": ["…"] }]`) con otro dolor del top 3 u otro encuadre, para probar cuál retiene más. Recomienda una y di por qué.
   - **Al menos 2 son comparativas** en dos lados (sin el producto vs con el producto, o la alternativa vs el producto). El contraste lo cuentan la escena y los textos; **nunca se escribe "antes" ni "después"**. Ejemplo: «Por turnos» → «Todo a la vez».
+  - **Tipografía: siempre Roboto** (titular Bold o Black, etiquetas Regular o Light). La herramienta del kit lo escribe en cada prompt; un referente nunca cambia la fuente.
   - **Textos cortos:** un titular de 2 a 6 palabras y, como máximo, 2 o 3 etiquetas de 1 a 4 palabras. Van exactos entre comillas en el prompt. El texto refuerza el ángulo del hero, no repite el título de la landing.
   - **Orden sugerido:**
     1. el gancho: el dolor que se va, con el producto protagonista;

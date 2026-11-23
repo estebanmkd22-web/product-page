@@ -34,6 +34,7 @@ Decisiones y correcciones del usuario que valen para todos los productos. Léela
 - **En la rama de 1,5 m:** mencionar el tamaño sin que parezca pequeña ("genera rechazo").
 
 ## Imágenes
+- **(2026-11-23) Los textos dentro de las imágenes van siempre en Roboto** (titular en Bold o Black, etiquetas en Regular o Light), en todas las landings y anuncios. Nada de serif, cursiva ni manuscrita. `tools/build-kit-imagenes.mjs` lo pone solo en cada prompt (campo opcional `tipografia` del kit para otra fuente, solo si el dueño lo pide). De un referente nunca se copia la tipografía.
 - **(2026-11-18) Textos prohibidos en anuncios, para cualquier producto:** "pago al recibir" (o contraentrega), "envío gratis" (o "envío express gratis") y "escríbenos por WhatsApp". En los anuncios Black Friday de VIVIDUS se colaron y el dueño lo corrigió. Regla en `agentes-ecommerce/cerebro/anuncios.md`.
 - **(2026-11-18) Los anuncios estáticos van siempre en 1:1** (1080 × 1080).
 - **(2026-11-10) Las imágenes del hero no venden.** No llevan pagos, precio, envío, garantía ni nada de venta; el precio y los bonos ya están en el texto del hero (`pp-hero-cantidad`). Solo producto, beneficio y transformación.
