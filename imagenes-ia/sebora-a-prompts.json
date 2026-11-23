@@ -94,18 +94,19 @@
    "que": "Uso real (Deseo).",
    "producto": true,
    "persona": true,
-   "escena": "Primer plano de perfil, muy cercano, de Andrés aplicándose el suero transparente en la barba y la mejilla con la yema de los dedos, luz natural de ventana, cama destendida desenfocada al fondo. El frasco SÉBORA en su otra mano o en la mesa de noche, visible.",
-   "persona_accion": "Se aplica el suero con calma, gesto natural de rutina.",
+   "escena": "Plano medio, de la cintura hacia arriba, en el baño frente al espejo, de mañana. Andrés, vestido con su camiseta negra, se pasa la yema de los dedos por la barba para esparcir unas gotas de suero transparente. El frasco SÉBORA está sobre el lavamanos, visible y nítido. Ambiente cotidiano: cepillo de dientes, toalla colgada.",
+   "persona_accion": "Gesto natural de rutina de cuidado de barba, expresión tranquila.",
    "textos": [
     "Una capa delgada",
     "Todos los días"
    ],
-   "historial": [],
-   "referente": {
-    "nombre": "Aplicación en la barba",
-    "archivo": "imagenes/referentes/sebora-hero/ref2-barba-aplicacion.webp",
-    "tomar": "Solo el encuadre de perfil muy cercano, la mano entrando a la barba, la luz natural y la cama de fondo desenfocada. El producto aquí es un suero transparente, no crema blanca."
-   }
+   "historial": [
+    {
+     "fecha": "2026-11-23",
+     "parte": "escena",
+     "cambio": "ChatGPT la rechazó. Se quita el referente (foto de otra persona en la cama) y el primer plano de perfil; pasa a plano medio en el baño, vestido, aplicándose el suero en la barba."
+    }
+   ]
   },
   "hero-cantidad.imagen_6": {
    "que": "Versatilidad: un solo suero para tres zonas.",
